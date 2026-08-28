@@ -1,0 +1,10 @@
+schema_version: 1
+profile: library
+extends: [base]
+directories:
+  - src
+  - tests
+  - docs
+  - examples
+  - specs/product
+  - specs/changes

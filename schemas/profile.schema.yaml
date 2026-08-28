@@ -1,0 +1,24 @@
+$schema: https://json-schema.org/draft/2020-12/schema
+title: Versat template profile
+type: object
+additionalProperties: false
+required: [schema_version, profile, extends]
+properties:
+  schema_version:
+    const: 1
+  profile:
+    enum: [software, agent, hybrid, library, infrastructure]
+  extends:
+    type: array
+    minItems: 1
+    uniqueItems: true
+    items:
+      type: string
+  directories:
+    type: array
+    uniqueItems: true
+    items:
+      type: string
+      minLength: 1
+  conflict_policy:
+    enum: [fail]

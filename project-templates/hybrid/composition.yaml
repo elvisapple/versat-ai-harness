@@ -1,0 +1,7 @@
+schema_version: 1
+profile: hybrid
+extends:
+  - base
+  - software
+  - agent
+conflict_policy: fail

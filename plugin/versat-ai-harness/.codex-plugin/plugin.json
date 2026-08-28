@@ -1,0 +1,30 @@
+{
+  "name": "versat-ai-harness",
+  "version": "0.1.0",
+  "description": "Governança, SDD, bootstrap e auditoria para projetos Versat assistidos por IA.",
+  "author": {
+    "name": "Versat"
+  },
+  "keywords": [
+    "architecture",
+    "governance",
+    "sdd",
+    "project-bootstrap"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Versat AI Harness",
+    "shortDescription": "Padrões, SDD e governança de projetos Versat",
+    "longDescription": "Cria, evolui e audita projetos Versat com padrões corporativos, Spec Driven Development e validação determinística.",
+    "developerName": "Versat",
+    "category": "Developer Tools",
+    "capabilities": [
+      "Write"
+    ],
+    "defaultPrompt": [
+      "Crie um novo projeto seguindo o Versat AI Harness.",
+      "Audite este projeto contra os padrões Versat.",
+      "Inicie uma mudança usando o Versat SDD."
+    ]
+  }
+}

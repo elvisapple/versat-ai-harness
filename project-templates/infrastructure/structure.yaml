@@ -1,0 +1,10 @@
+schema_version: 1
+profile: infrastructure
+extends: [base]
+directories:
+  - infra
+  - tests
+  - docs/architecture
+  - docs/runbooks
+  - specs/product
+  - specs/changes

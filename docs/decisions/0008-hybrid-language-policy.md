@@ -1,18 +1,18 @@
-# ADR-0008 — Adotar política híbrida de idiomas
+# ADR-0008 — Adopt a hybrid language policy
 
-- Status: Accepted
-- Data: 2026-08-28
+- Status: Superseded by [ADR-0010](0010-refine-language-policy.md)
+- Date: 2026-08-28
 
-## Contexto
+## Context
 
-A equipe precisa combinar interoperabilidade técnica internacional com documentação de produto acessível ao contexto corporativo.
+The team needs to combine international technical interoperability with product documentation that is accessible in the corporate context.
 
-## Decisão
+## Decision
 
-Usar inglês em código, identificadores, APIs, banco de dados, nomes técnicos e commits. Usar espanhol em especificações, requisitos, decisões e documentação de negócio. Conteúdo de interface segue o locale do produto.
+Use English in code, identifiers, APIs, database objects, technical names and commits. Use Spanish in specifications, requirements, decisions and business documentation. Interface content follows the product locale.
 
-## Consequências
+## Consequences
 
-- validadores devem distinguir artefatos técnicos de documentos de negócio;
-- termos consagrados podem permanecer no idioma técnico quando tradução reduzir precisão;
-- exceções devem ser registradas no documento canônico de linguagem.
+- validators must distinguish technical artifacts from business documents;
+- widely accepted terms may remain in the technical language when translation reduces precision;
+- exceptions must be recorded in the canonical language document.

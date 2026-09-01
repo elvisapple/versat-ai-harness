@@ -1,26 +1,26 @@
-# ADR-0002 — Separar políticas, capacidades, processo e enforcement
+# ADR-0002 — Separate policy, capability, process and enforcement
 
 - Status: Accepted
-- Data: 2026-08-28
+- Date: 2026-08-28
 
-## Contexto
+## Context
 
-Regras corporativas escondidas em Skills podem não ser carregadas. Instruções de agentes também não são garantia suficiente para controles obrigatórios.
+Corporate rules hidden in Skills might not be loaded. Agent instructions are also not a sufficient guarantee for mandatory controls.
 
-## Decisão
+## Decision
 
-Separar responsabilidades:
+Separate responsibilities:
 
-- `standards/`: políticas canônicas;
-- `plugin/versat-ai-harness/skills/`: capacidades e procedimentos;
-- `sdd/`: processo de mudança;
-- `validators/` e CI: enforcement determinístico.
+- `standards/`: canonical policies;
+- `plugin/versat-ai-harness/skills/`: capabilities and procedures;
+- `sdd/`: change process;
+- `validators/` and CI: deterministic enforcement.
 
-Skills referenciam Standards, mas não os duplicam.
+Skills reference Standards but do not duplicate them.
 
-## Consequências
+## Consequences
 
-- políticas continuam auditáveis mesmo sem um executor específico;
-- Skills permanecem pequenas e carregadas sob demanda;
-- regras críticas precisam de validadores ou controles de plataforma;
-- alterações podem exigir coordenação entre orientação e enforcement.
+- policies remain auditable even without a specific executor;
+- Skills remain small and are loaded on demand;
+- critical rules require validators or platform controls;
+- changes may require coordination between guidance and enforcement.

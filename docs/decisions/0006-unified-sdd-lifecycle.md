@@ -1,18 +1,18 @@
-# ADR-0006 — Adotar um ciclo SDD para todos os perfis
+# ADR-0006 — Adopt one SDD lifecycle for all profiles
 
 - Status: Accepted
-- Data: 2026-08-28
+- Date: 2026-08-28
 
-## Contexto
+## Context
 
-Processos separados para software, agentes e infraestrutura duplicariam governança e criariam experiências inconsistentes.
+Separate processes for software, agents and infrastructure would duplicate governance and create inconsistent experiences.
 
-## Decisão
+## Decision
 
-Adotar um único ciclo Versat SDD. O perfil do projeto seleciona módulos, documentos e critérios adicionais, mas não altera o fluxo corporativo principal.
+Adopt a single Versat SDD lifecycle. The project profile selects additional modules, documents and criteria but does not change the primary corporate workflow.
 
-## Consequências
+## Consequences
 
-- toda mudança possui intenção, especificação, implementação, validação e revisão;
-- agentes passam a ser tratados como software versionado, com testes e evals;
-- o SDD deve permitir proporcionalidade para mudanças pequenas sem remover controles essenciais.
+- every change has intent, specification, implementation, validation and review;
+- agents are treated as versioned software with tests and evals;
+- SDD must allow proportionality for small changes without removing essential controls.

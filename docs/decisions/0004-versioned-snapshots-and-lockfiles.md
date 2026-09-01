@@ -1,19 +1,19 @@
-# ADR-0004 — Distribuir snapshots versionados com lockfile
+# ADR-0004 — Distribute versioned snapshots with a lockfile
 
 - Status: Accepted
-- Data: 2026-08-28
+- Date: 2026-08-28
 
-## Contexto
+## Context
 
-Consumir `latest` faz branches antigos mudarem de comportamento sem alteração no Git. Submodules adicionam complexidade operacional para a equipe.
+Consuming `latest` causes old branches to change behavior without a Git change. Submodules add operational complexity for the team.
 
-## Decisão
+## Decision
 
-Projetos consumidores recebem snapshots versionados dos artefatos aplicáveis e registram as versões exatas em `.versat/standards.lock`. Novas releases são propostas por Pull Request automatizado. Git submodules não serão o mecanismo padrão.
+Consumer projects receive versioned snapshots of applicable artifacts and record the exact versions in `.versat/standards.lock`. New releases are proposed through automated Pull Requests. Git submodules will not be the default mechanism.
 
-## Consequências
+## Consequences
 
-- builds e execuções permanecem reprodutíveis;
-- atualizações têm diff, CI e revisão;
-- existe custo de armazenamento por snapshot;
-- automação deverá identificar consumidores desatualizados sem atualizá-los silenciosamente.
+- builds and executions remain reproducible;
+- updates have a diff, CI and review;
+- each snapshot incurs a storage cost;
+- automation must identify outdated consumers without silently updating them.

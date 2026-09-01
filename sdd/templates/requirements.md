@@ -2,19 +2,19 @@
 change: change-id
 requirements:
   - id: REQ-001
-    statement: Resultado observable requerido
+    statement: Required observable outcome
     acceptance:
-      - Escenario verificable
+      - Verifiable scenario
 ---
 
-# Requisitos
+# Requirements
 
-## Actores y contexto
+## Actors and context
 
-## Requisitos funcionales
+## Functional requirements
 
-## Requisitos no funcionales
+## Non-functional requirements
 
-## Escenarios de aceptación
+## Acceptance scenarios
 
-## Restricciones y supuestos
+## Constraints and assumptions

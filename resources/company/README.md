@@ -1,3 +1,3 @@
 # Company Context
 
-Local reservado para missão, visão, valores, glossário e outros fatos institucionais aprovados. Esses documentos devem indicar proprietário e data de revisão antes de serem tratados como contexto confiável por agentes.
+Reserved location for approved institutional facts such as mission, vision, values and glossary. These documents must identify an owner and review date before agents treat them as trusted context.

@@ -1,13 +1,13 @@
 # Enterprise Standards
 
-Documentos normativos do Versat AI Harness.
+Normative Versat AI Harness documents.
 
-## Camadas
+## Layers
 
-- `core/`: regras sempre consideradas;
-- `profiles/`: regras por tipo de artefato;
-- `domains/`: regras por área de negócio;
-- `technologies/`: regras específicas de stacks;
-- `index.yaml`: resolução declarativa das combinações aplicáveis.
+- `core/`: rules that always apply;
+- `profiles/`: rules by artifact type;
+- `domains/`: rules by business area;
+- `technologies/`: stack-specific rules;
+- `index.yaml`: declarative resolution of applicable combinations.
 
-Use os termos MUST, SHOULD e MAY para diferenciar obrigação, recomendação e permissão. Skills devem consultar estes arquivos e nunca manter cópias das políticas.
+Use MUST, SHOULD and MAY to distinguish obligations, recommendations and permissions. Skills must consult these files and never maintain copies of the policies.

@@ -1,23 +1,23 @@
-# ADR-0003 — Resolver contexto por metadados declarativos
+# ADR-0003 — Resolve context through declarative metadata
 
 - Status: Accepted
-- Data: 2026-08-28
+- Date: 2026-08-28
 
-## Contexto
+## Context
 
-Pedir que cada equipe escolha manualmente seus Standards gera lacunas e combinações inconsistentes.
+Asking each team to choose its Standards manually creates gaps and inconsistent combinations.
 
-## Decisão
+## Decision
 
-Cada projeto declara perfil, domínio, criticidade e tecnologias em `.versat/project.yaml`. O Harness resolve os documentos aplicáveis por `standards/index.yaml` na ordem:
+Each project declares its profile, domain, criticality and technologies in `.versat/project.yaml`. The Harness resolves applicable documents through `standards/index.yaml` in this order:
 
 ```text
 core + profile + domain + technologies + criticality
 ```
 
-## Consequências
+## Consequences
 
-- a experiência de bootstrap permanece simples;
-- a seleção de normas é reprodutível e testável;
-- o índice se torna um contrato crítico e deve ser validado;
-- exceções precisam ser explícitas, justificadas e versionadas.
+- the bootstrap experience remains simple;
+- standards selection is reproducible and testable;
+- the index becomes a critical contract and must be validated;
+- exceptions must be explicit, justified and versioned.

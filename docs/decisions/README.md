@@ -1,26 +1,27 @@
 # Architecture Decision Records
 
-Os ADRs preservam o contexto e as consequências das decisões estruturais do Harness.
+ADRs preserve the context and consequences of structural Harness decisions.
 
-## Estados
+## States
 
-- `Proposed`: em discussão;
-- `Accepted`: decisão vigente;
-- `Superseded`: substituída por outro ADR;
-- `Deprecated`: mantida apenas por histórico.
+- `Proposed`: under discussion;
+- `Accepted`: current decision;
+- `Superseded`: replaced by another ADR;
+- `Deprecated`: retained only for historical purposes.
 
-## Regra de evolução
+## Evolution rule
 
-Não reescreva silenciosamente uma decisão aceita. Crie um novo ADR, referencie o anterior e atualize seu estado quando uma decisão for substituída.
+Do not silently rewrite an accepted decision. Create a new ADR, reference the previous one and update its state when a decision is replaced.
 
-## Índice
+## Index
 
-- [ADR-0001 — Repositório único como fonte de verdade](0001-single-source-repository.md)
-- [ADR-0002 — Separar políticas, capacidades, processo e enforcement](0002-separate-policy-capability-process-enforcement.md)
-- [ADR-0003 — Resolver contexto por metadados declarativos](0003-declarative-context-resolution.md)
-- [ADR-0004 — Distribuir snapshots versionados com lockfile](0004-versioned-snapshots-and-lockfiles.md)
-- [ADR-0005 — Governar conhecimento em três níveis](0005-three-level-knowledge-governance.md)
-- [ADR-0006 — Adotar um ciclo SDD para todos os perfis](0006-unified-sdd-lifecycle.md)
-- [ADR-0007 — Compor templates a partir de uma base](0007-composable-project-templates.md)
-- [ADR-0008 — Adotar política híbrida de idiomas](0008-hybrid-language-policy.md)
-- [ADR-0009 — Manter o Harness independente do executor](0009-execution-adapters.md)
+- [ADR-0001 — Use a single repository as the source of truth](0001-single-source-repository.md)
+- [ADR-0002 — Separate policy, capability, process and enforcement](0002-separate-policy-capability-process-enforcement.md)
+- [ADR-0003 — Resolve context through declarative metadata](0003-declarative-context-resolution.md)
+- [ADR-0004 — Distribute versioned snapshots with a lockfile](0004-versioned-snapshots-and-lockfiles.md)
+- [ADR-0005 — Govern knowledge at three levels](0005-three-level-knowledge-governance.md)
+- [ADR-0006 — Adopt one SDD lifecycle for all profiles](0006-unified-sdd-lifecycle.md)
+- [ADR-0007 — Compose templates from a base](0007-composable-project-templates.md)
+- [ADR-0008 — Adopt a hybrid language policy](0008-hybrid-language-policy.md) (superseded by ADR-0010)
+- [ADR-0009 — Keep the Harness executor-independent](0009-execution-adapters.md)
+- [ADR-0010 — Refine the language policy](0010-refine-language-policy.md)

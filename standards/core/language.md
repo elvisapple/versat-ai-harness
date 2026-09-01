@@ -1,16 +1,38 @@
 # Language Standard
 
-## Source code
+## Required language by artifact
 
-English MUST be used for identifiers, classes, methods, variables, database objects, APIs, technical names and Git commits.
+| Artifact | Required language |
+|---|---|
+| GitHub organization names | English |
+| Repository names | English |
+| Directories | English |
+| Structural files | English |
+| Classes, functions, methods and variables | English |
+| APIs and endpoints | English |
+| DTOs, schemas and contracts | English |
+| Events | English |
+| New database tables and columns | English |
+| Code comments | English |
+| Technical READMEs | English |
+| ADRs and architecture documentation | English |
+| Skills reusable across systems | English |
+| `AGENTS.md` files and agent instructions | English |
+| SDD technical specifications and business rules | English |
+| Internal Finance, HR, Customer Success, Sales and other business playbooks | Spanish |
+| Internal issues and pull requests | Spanish |
+| Discussions between collaborators | Spanish |
+| Slack, meetings and other corporate communication | Spanish |
+| Product user interfaces | Canonical English, with Portuguese and Spanish translations |
+| Community-facing documentation | Canonical English, with Portuguese and Spanish translations |
 
-## Documentation
+## Translation requirements
 
-Spanish MUST be used for product specifications, requirements, design documents, architecture decisions and business documentation.
+For product user interfaces and community-facing documentation, English MUST be the canonical source. Portuguese and Spanish translations MUST be provided and kept aligned with the canonical English content.
 
 ## Exceptions
 
-- User-facing content MUST follow the application's locale.
-- Widely accepted technical terms MAY remain in English when translation reduces precision.
+- Widely accepted technical terms MAY remain in English in Spanish content when translation reduces precision.
 - Generated or imported third-party artifacts MAY retain their original language when modification is unsafe.
+- Existing database objects MAY retain their current names when renaming them would introduce compatibility or migration risk.
 - Any project-wide exception MUST be documented in an ADR.

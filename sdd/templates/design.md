@@ -3,23 +3,23 @@ change: change-id
 requirements: [REQ-001]
 adrs: []
 validation:
-  - Verificación observable
+  - Observable verification
 ---
 
-# Diseño
+# Design
 
-## Estado actual
+## Current state
 
-## Diseño propuesto
+## Proposed design
 
-## Límites y contratos
+## Boundaries and contracts
 
-## Datos, seguridad y permisos
+## Data, security and permissions
 
-## Operación y observabilidad
+## Operations and observability
 
-## Migración, rollout y rollback
+## Migration, rollout and rollback
 
-## Alternativas consideradas
+## Alternatives considered
 
-## Plan de validación
+## Validation plan

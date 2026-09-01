@@ -1,25 +1,26 @@
 # Versat AI Harness
 
-Este repositório é a fonte de verdade para os padrões e workflows de desenvolvimento assistido por IA da Versat.
+This repository is the source of truth for Versat's AI-assisted development standards and workflows.
 
-## Regras obrigatórias
+## Mandatory rules
 
-- Leia `docs/architecture/overview.md` e os ADRs relacionados antes de alterar limites arquiteturais.
-- Não duplique padrões dentro de Skills. Skills devem localizar e aplicar os documentos canônicos de `standards/`.
-- Mantenha separadas as responsabilidades: `plugin/versat-ai-harness/` define capacidades, `standards/` define políticas, `sdd/` define o processo e `validators/` define enforcement determinístico.
-- Trate alterações de política corporativa como mudanças governadas: branch, Pull Request e revisão obrigatória.
-- Use o índice `standards/index.yaml` para resolver contexto; não codifique listas paralelas de padrões nas Skills.
-- Preserve a composição dos templates. Um perfil estende `base` em vez de copiar seus arquivos.
-- Não atualize consumidores silenciosamente para `latest`. Releases devem ser versionadas semanticamente e consumidas por referência exata.
-- Registre decisões arquiteturais significativas em `docs/decisions/`.
-- Execute `./scripts/validate/run.sh` antes de concluir uma mudança.
+- Read `docs/architecture/overview.md` and the related ADRs before changing architectural boundaries.
+- Do not duplicate standards inside Skills. Skills must locate and apply the canonical documents under `standards/`.
+- Keep responsibilities separate: `plugin/versat-ai-harness/` defines capabilities, `standards/` defines policies, `sdd/` defines the process and `validators/` defines deterministic enforcement.
+- Treat corporate policy updates as governed changes: branch, Pull Request and mandatory review.
+- Use `standards/index.yaml` to resolve context; do not hard-code parallel lists of standards in Skills.
+- Preserve template composition. A profile extends `base` instead of copying its files.
+- Do not silently update consumers to `latest`. Releases must use semantic versioning and be consumed by exact reference.
+- Record significant architectural decisions under `docs/decisions/`.
+- Run `./scripts/validate/run.sh` before completing a change.
 
-## Idiomas
+## Languages
 
-- Código, identificadores, APIs, objetos de banco, commits e nomes técnicos: inglês.
-- Especificações, requisitos, decisões e documentação de negócio: espanhol.
-- Este repositório de bootstrap foi consolidado em português a partir do projeto Architecture. Novas especificações normativas devem seguir `standards/core/language.md`.
+- Follow `standards/core/language.md` as the canonical language policy.
+- Use English for code, identifiers, APIs, database objects, commits, technical names, technical documentation, ADRs, architecture documentation, Skills, agent instructions and SDD artifacts.
+- Use Spanish for internal business playbooks, issues, Pull Requests and corporate communication.
+- Maintain English as the canonical source for product interfaces and community documentation, with aligned Portuguese and Spanish translations.
 
-## Autoridade
+## Authority
 
-Orientações de LLM ajudam a produzir resultados aderentes, mas não substituem validação mecânica, revisão humana, GitHub Rulesets ou checks obrigatórios.
+LLM guidance helps produce compliant results, but it does not replace mechanical validation, human review, GitHub Rulesets or required checks.

@@ -1,18 +1,18 @@
-# ADR-0009 — Manter o Harness independente do executor
+# ADR-0009 — Keep the Harness executor-independent
 
 - Status: Accepted
-- Data: 2026-08-28
+- Date: 2026-08-28
 
-## Contexto
+## Context
 
-Standards e SDD têm vida útil maior que qualquer agente, IDE ou fornecedor específico.
+Standards and SDD have a longer lifespan than any specific agent, IDE or vendor.
 
-## Decisão
+## Decision
 
-Tratar Codex Plugin, CI/CD, CLI e futuras integrações como adaptadores de execução sobre o mesmo núcleo versionado. O Marketplace distribui capacidades, mas não é a fonte de autoridade.
+Treat the Codex Plugin, CI/CD, CLI and future integrations as execution adapters over the same versioned core. The Marketplace distributes capabilities but is not the source of authority.
 
-## Consequências
+## Consequences
 
-- novos executores podem reutilizar Standards, SDD e validadores;
-- integrações específicas não podem contaminar contratos canônicos;
-- o primeiro adaptador será o Plugin Codex, sem impedir outros.
+- new executors can reuse Standards, SDD and validators;
+- specific integrations cannot contaminate canonical contracts;
+- the first adapter will be the Codex Plugin, without preventing others.

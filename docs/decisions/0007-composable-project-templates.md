@@ -1,18 +1,18 @@
-# ADR-0007 — Compor templates a partir de uma base
+# ADR-0007 — Compose templates from a base
 
 - Status: Accepted
-- Data: 2026-08-28
+- Date: 2026-08-28
 
-## Contexto
+## Context
 
-Templates completos por perfil repetiriam arquivos comuns e divergiriam ao longo do tempo.
+Complete templates for each profile would repeat common files and diverge over time.
 
-## Decisão
+## Decision
 
-Definir uma camada `base` e módulos incrementais por perfil. Um projeto `agent` é `base + agent`; um projeto `hybrid` é `base + software + agent`.
+Define a `base` layer and incremental modules for each profile. An `agent` project is `base + agent`; a `hybrid` project is `base + software + agent`.
 
-## Consequências
+## Consequences
 
-- regras comuns são mantidas uma única vez;
-- conflitos de composição precisam ser detectados;
-- o bootstrap deve registrar quais módulos e versões foram aplicados.
+- common rules are maintained once;
+- composition conflicts must be detected;
+- the bootstrap must record which modules and versions were applied.

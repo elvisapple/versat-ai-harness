@@ -1,5 +1,5 @@
 # Execution Adapter
 
-Esta camada descreve como agentes executam capacidades do Harness. O pacote instalável está em `plugin/versat-ai-harness/`; seu manifesto e suas Skills seguem a estrutura nativa do Plugin.
+This layer describes how agents execute Harness capabilities. The installable package is under `plugin/versat-ai-harness/`; its manifest and Skills follow the native Plugin structure.
 
-As Skills devem resolver e consultar os artefatos canônicos de `standards/`, `sdd/` e `project-templates/`. Nenhuma regra corporativa deve ser copiada para dentro de uma Skill.
+Skills must resolve and consult the canonical artifacts under `standards/`, `sdd/` and `project-templates/`. Corporate rules must not be copied into a Skill.

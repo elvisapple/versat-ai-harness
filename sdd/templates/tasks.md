@@ -2,15 +2,15 @@
 change: change-id
 tasks:
   - id: TASK-001
-    description: Entregable verificable
+    description: Verifiable deliverable
     requirements: [REQ-001]
     status: pending
 ---
 
-# Tareas
+# Tasks
 
-- [ ] TASK-001 — Entregable verificable
+- [ ] TASK-001 — Verifiable deliverable
 
-## Dependencias
+## Dependencies
 
-## Evidencia de validación
+## Validation evidence

@@ -1,19 +1,19 @@
-# ADR-0001 — Repositório único como fonte de verdade
+# ADR-0001 — Use a single repository as the source of truth
 
 - Status: Accepted
-- Data: 2026-08-28
+- Date: 2026-08-28
 
-## Contexto
+## Context
 
-Plugin, Standards, SDD, templates e validadores evoluem juntos e precisam permanecer coerentes. Separá-los prematuramente criaria releases coordenadas, descoberta distribuída e risco de divergência.
+Plugin, Standards, SDD, templates and validators evolve together and must remain consistent. Separating them prematurely would create coordinated releases, distributed discovery and divergence risk.
 
-## Decisão
+## Decision
 
-Manter todos os componentes do Versat AI Harness em um único repositório versionado. O pacote em `plugin/versat-ai-harness/` é a raiz instalável do Plugin dentro deste repositório.
+Keep all Versat AI Harness components in a single versioned repository. The package under `plugin/versat-ai-harness/` is the installable Plugin root within this repository.
 
-## Consequências
+## Consequences
 
-- mudanças transversais podem ser revisadas atomicamente;
-- a versão do Harness identifica um conjunto coerente de artefatos;
-- limites internos precisam continuar explícitos para evitar acoplamento indevido;
-- uma separação futura em pacotes continua possível quando houver necessidade demonstrada.
+- cross-cutting changes can be reviewed atomically;
+- the Harness version identifies a consistent set of artifacts;
+- internal boundaries must remain explicit to avoid improper coupling;
+- future separation into packages remains possible when a demonstrated need arises.

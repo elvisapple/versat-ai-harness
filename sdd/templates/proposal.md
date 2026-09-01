@@ -6,16 +6,16 @@ summary: One-sentence outcome
 risk: medium
 ---
 
-# Propuesta
+# Proposal
 
-## Contexto y problema
+## Context and problem
 
-## Resultado esperado
+## Expected outcome
 
-## Alcance
+## Scope
 
-## Fuera de alcance
+## Out of scope
 
-## Impacto y riesgos
+## Impact and risks
 
-## Criterio para aceptar la propuesta
+## Proposal acceptance criterion

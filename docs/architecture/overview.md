@@ -1,10 +1,10 @@
-# Visão arquitetural
+# Architecture overview
 
-## Propósito
+## Purpose
 
-O Versat AI Harness é a runtime de governança que conecta agentes, Enterprise Standards, Versat SDD, projetos locais e GitHub. O repositório é simultaneamente a fonte de verdade do produto e a unidade instalável do Plugin.
+Versat AI Harness is the governance runtime that connects agents, Enterprise Standards, Versat SDD, local projects and GitHub. The repository is both the product's source of truth and the installable Plugin unit.
 
-## Componentes
+## Components
 
 ```text
                     VERSAT AI HARNESS
@@ -13,7 +13,7 @@ O Versat AI Harness é a runtime de governança que conecta agentes, Enterprise 
           +---------------------+---------------------+
           |                     |                     |
       Standards                SDD               Validators
-       (regras)             (processo)           (enforcement)
+        (rules)              (process)           (enforcement)
           |                     |                     |
           +---------------------+---------------------+
                                 |
@@ -21,18 +21,18 @@ O Versat AI Harness é a runtime de governança que conecta agentes, Enterprise 
                                 |
                 +---------------+---------------+
                 |               |               |
-          Codex Plugin        CI/CD        ferramentas futuras
+          Codex Plugin        CI/CD          future tools
                 |
          project-bootstrap
                 |
          standards resolver
                 |
-       repositório de projeto
+        project repository
 ```
 
-## Modelo de contexto
+## Context model
 
-Cada projeto declara apenas sua identidade:
+Each project declares only its identity:
 
 ```yaml
 project:
@@ -43,15 +43,15 @@ technologies:
   - python
 ```
 
-O resolver usa `standards/index.yaml` para compor:
+The resolver uses `standards/index.yaml` to compose:
 
 ```text
 core + profile + domain + technologies + criticality
 ```
 
-As versões efetivamente resolvidas são registradas em `.versat/standards.lock`. O consumidor não seleciona manualmente pacotes de normas e não segue `latest` silenciosamente.
+The exact resolved versions are recorded in `.versat/standards.lock`. Consumers do not manually select standards packages and do not silently follow `latest`.
 
-## Ciclo de vida unificado
+## Unified lifecycle
 
 ```text
 Intent -> Proposal -> Requirements -> Design -> Tasks
@@ -59,24 +59,24 @@ Intent -> Proposal -> Requirements -> Design -> Tasks
        -> Pull Request -> Merge -> Living Specification
 ```
 
-O mesmo ciclo vale para software, agente, biblioteca, automação, infraestrutura ou projeto híbrido. O perfil altera os módulos e critérios aplicáveis, não o processo corporativo.
+The same lifecycle applies to software, agent, library, automation, infrastructure and hybrid projects. The profile changes the applicable modules and criteria, not the corporate process.
 
-## Governança do conhecimento
+## Knowledge governance
 
-| Nível | Exemplo | Mudança permitida |
+| Level | Example | Allowed change |
 |---|---|---|
-| Memória operacional | preferência contextual de um cliente | aprendizagem automática dentro dos limites de retenção |
-| Skill | como preparar uma análise recorrente | proposta e aprovação humana |
-| Política corporativa | segurança, linguagem, Git, `AGENTS.md` | branch, PR, revisão e checks obrigatórios |
+| Operational memory | contextual customer preference | automatic learning within retention boundaries |
+| Skill | how to prepare a recurring analysis | proposal and human approval |
+| Corporate policy | security, language, Git, `AGENTS.md` | branch, PR, review and required checks |
 
-## Distribuição e enforcement
+## Distribution and enforcement
 
-- O Plugin distribui capacidades e instruções sob demanda.
-- Snapshots versionados e lockfiles tornam a aplicação de Standards reprodutível.
-- Pull Requests propagam novas releases aos repositórios consumidores.
-- GitHub Rulesets e workflows reutilizáveis impõem políticas que não podem depender apenas de agentes.
-- Marketplace é um canal de distribuição, não a autoridade normativa.
+- The Plugin distributes capabilities and instructions on demand.
+- Versioned snapshots and lockfiles make Standards application reproducible.
+- Pull Requests propagate new releases to consumer repositories.
+- GitHub Rulesets and reusable workflows enforce policies that cannot rely on agents alone.
+- The Marketplace is a distribution channel, not the normative authority.
 
-## Limites da versão 0.1.0
+## Version 0.1.0 boundaries
 
-Esta versão define contratos, conteúdo basal e validação estrutural. Criação remota de repositórios, resolução de releases, configuração da organização GitHub e validadores semânticos por tecnologia ainda não fazem parte da implementação executável.
+This version defines contracts, baseline content and structural validation. Remote repository creation, release resolution, GitHub organization configuration and technology-specific semantic validators are not yet part of the executable implementation.

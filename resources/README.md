@@ -1,3 +1,3 @@
 # Resources
 
-Conhecimento institucional de apoio que não constitui política normativa. Somente conteúdo verificado deve ser adicionado; fatos provisórios ou inferidos devem permanecer fora deste diretório.
+Supporting institutional knowledge that does not constitute normative policy. Only verified content should be added; provisional or inferred facts must remain outside this directory.

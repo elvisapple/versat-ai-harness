@@ -1,41 +1,41 @@
 # Versat AI Harness
 
-Fonte de verdade da Versat para desenvolvimento assistido por IA. Este repositório reúne padrões corporativos, o processo de Spec Driven Development (SDD), capacidades distribuídas como Plugin, templates de projetos e validações determinísticas.
+Versat's source of truth for AI-assisted development. This repository brings together corporate standards, the Spec Driven Development (SDD) process, capabilities distributed as a Plugin, project templates and deterministic validation.
 
-## Princípios
+## Principles
 
-- o repositório define as políticas;
-- as Skills fornecem capacidades reutilizáveis;
-- o SDD define o processo de mudança;
-- validadores e GitHub aplicam as regras que precisam de enforcement;
-- memória operacional, Skills e políticas possuem níveis de governança distintos;
-- um único bootstrap atende software, agentes, projetos híbridos, bibliotecas e infraestrutura.
+- the repository defines the policies;
+- Skills provide reusable capabilities;
+- SDD defines the change process;
+- validators and GitHub enforce rules that require deterministic controls;
+- operational memory, Skills and policies have distinct governance levels;
+- a single bootstrap supports software, agent, hybrid, library and infrastructure projects.
 
-## Mapa do repositório
+## Repository map
 
-| Caminho | Responsabilidade |
+| Path | Responsibility |
 |---|---|
-| `plugin/versat-ai-harness/` | Pacote instalável com as capacidades do Harness |
-| `standards/` | Quais regras corporativas devem ser obedecidas |
-| `sdd/` | Como mudanças são especificadas, implementadas e arquivadas |
-| `project-templates/` | Estruturas compostas usadas no nascimento de projetos |
-| `validators/` | Contratos de validação determinística |
-| `scripts/` | Entradas operacionais para bootstrap, validação e release |
-| `schemas/` | Contratos dos metadados do Harness |
-| `resources/` | Conhecimento institucional verificado, não normativo |
-| `docs/architecture/` | Visão arquitetural vigente |
+| `plugin/versat-ai-harness/` | Installable package containing Harness capabilities |
+| `standards/` | Corporate rules that must be followed |
+| `sdd/` | How changes are specified, implemented and archived |
+| `project-templates/` | Composable structures used to create projects |
+| `validators/` | Deterministic validation contracts |
+| `scripts/` | Operational entry points for bootstrap, validation and release |
+| `schemas/` | Harness metadata contracts |
+| `resources/` | Verified, non-normative institutional knowledge |
+| `docs/architecture/` | Current architecture overview |
 | `docs/decisions/` | Architecture Decision Records (ADRs) |
 
-## Estado inicial
+## Initial state
 
-Esta versão materializa a arquitetura e os contratos iniciais. As Skills, padrões, schemas, templates e o pipeline mínimo de validação já são versionados; integrações externas e validadores específicos por tecnologia serão implementados incrementalmente via SDD.
+This version materializes the initial architecture and contracts. Skills, standards, schemas, templates and the minimum validation pipeline are already versioned; external integrations and technology-specific validators will be implemented incrementally through SDD.
 
-## Validação local
+## Local validation
 
 ```bash
 ./scripts/validate/run.sh
 ```
 
-## Evolução
+## Evolution
 
-Toda mudança relevante começa por uma proposta SDD e, quando altera uma decisão estrutural, por um ADR. Consulte `AGENTS.md`, `sdd/process.md` e `docs/decisions/README.md` antes de modificar o Harness.
+Every material change starts with an SDD proposal and, when it changes a structural decision, an ADR. Read `AGENTS.md`, `sdd/process.md` and `docs/decisions/README.md` before modifying the Harness.

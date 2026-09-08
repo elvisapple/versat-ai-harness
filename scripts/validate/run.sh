@@ -8,12 +8,16 @@ required_files=(
   "AGENTS.md"
   "README.md"
   "VERSION"
-  "plugin/versat-ai-harness/.codex-plugin/plugin.json"
+  "plugin.json"
+  ".codex-plugin/plugin.json"
+  ".agents/plugins/marketplace.json"
   "standards/index.yaml"
   "sdd/process.md"
   "schemas/project.schema.yaml"
   "docs/architecture/overview.md"
   "docs/decisions/README.md"
+  "docs/decisions/0011-root-portable-plugin-package.md"
+  "validators/plugin/validate.py"
 )
 
 for relative_path in "${required_files[@]}"; do
@@ -32,7 +36,7 @@ skill_names=(
 )
 
 for skill_name in "${skill_names[@]}"; do
-  skill_file="plugin/versat-ai-harness/skills/${skill_name}/SKILL.md"
+  skill_file="skills/${skill_name}/SKILL.md"
   if [[ ! -s "${repo_root}/${skill_file}" ]]; then
     echo "FAIL missing or empty: ${skill_file}"
     failures=$((failures + 1))
@@ -45,10 +49,12 @@ if ! grep -Eq '^[0-9]+\.[0-9]+\.[0-9]+([.-][0-9A-Za-z.-]+)?$' "${repo_root}/VERS
 fi
 
 if command -v python3 >/dev/null 2>&1; then
-  if ! python3 -m json.tool "${repo_root}/plugin/versat-ai-harness/.codex-plugin/plugin.json" >/dev/null; then
-    echo "FAIL invalid JSON: plugin/versat-ai-harness/.codex-plugin/plugin.json"
+  if ! python3 "${repo_root}/validators/plugin/validate.py"; then
     failures=$((failures + 1))
   fi
+else
+  echo "FAIL python3 is required for Plugin validation"
+  failures=$((failures + 1))
 fi
 
 if [[ "${failures}" -gt 0 ]]; then

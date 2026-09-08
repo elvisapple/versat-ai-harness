@@ -1,6 +1,6 @@
 # ADR-0001 — Use a single repository as the source of truth
 
-- Status: Accepted
+- Status: Superseded by ADR-0011
 - Date: 2026-08-28
 
 ## Context

@@ -15,8 +15,8 @@ Do not silently rewrite an accepted decision. Create a new ADR, reference the pr
 
 ## Index
 
-- [ADR-0001 — Use a single repository as the source of truth](0001-single-source-repository.md)
-- [ADR-0002 — Separate policy, capability, process and enforcement](0002-separate-policy-capability-process-enforcement.md)
+- [ADR-0001 — Use a single repository as the source of truth](0001-single-source-repository.md) (superseded by ADR-0011)
+- [ADR-0002 — Separate policy, capability, process and enforcement](0002-separate-policy-capability-process-enforcement.md) (superseded by ADR-0011)
 - [ADR-0003 — Resolve context through declarative metadata](0003-declarative-context-resolution.md)
 - [ADR-0004 — Distribute versioned snapshots with a lockfile](0004-versioned-snapshots-and-lockfiles.md)
 - [ADR-0005 — Govern knowledge at three levels](0005-three-level-knowledge-governance.md)
@@ -25,3 +25,4 @@ Do not silently rewrite an accepted decision. Create a new ADR, reference the pr
 - [ADR-0008 — Adopt a hybrid language policy](0008-hybrid-language-policy.md) (superseded by ADR-0010)
 - [ADR-0009 — Keep the Harness executor-independent](0009-execution-adapters.md)
 - [ADR-0010 — Refine the language policy](0010-refine-language-policy.md)
+- [ADR-0011 — Make the repository root the portable Plugin package](0011-root-portable-plugin-package.md)

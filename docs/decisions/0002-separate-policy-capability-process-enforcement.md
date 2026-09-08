@@ -1,6 +1,6 @@
 # ADR-0002 — Separate policy, capability, process and enforcement
 
-- Status: Accepted
+- Status: Superseded by ADR-0011
 - Date: 2026-08-28
 
 ## Context

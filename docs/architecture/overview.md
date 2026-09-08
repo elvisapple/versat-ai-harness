@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Versat AI Harness is the governance runtime that connects agents, Enterprise Standards, Versat SDD, local projects and GitHub. The repository is both the product's source of truth and the installable Plugin unit.
+Versat AI Harness is the governance runtime that connects agents, Enterprise Standards, Versat SDD, local projects and GitHub. The repository root is both the product's source of truth and the portable installable Plugin boundary.
 
 ## Components
 
@@ -51,6 +51,23 @@ core + profile + domain + technologies + criticality
 
 The exact resolved versions are recorded in `.versat/standards.lock`. Consumers do not manually select standards packages and do not silently follow `latest`.
 
+## Package boundary
+
+```text
+versat-ai-harness/
+├── plugin.json                 portable package manifest
+├── .codex-plugin/plugin.json   Codex compatibility overlay
+├── skills/                     capabilities and procedures
+├── agents/                     reusable execution roles
+├── standards/                  canonical policies
+├── sdd/                        canonical change process
+├── project-templates/          composable project structures
+├── schemas/                    metadata contracts
+└── validators/                 deterministic enforcement
+```
+
+Keeping the canonical core and its execution capabilities inside one package boundary prevents an installed Skill from losing access to its version-matched Standards, process or templates. Directory responsibilities remain separate even though they share the portable package root.
+
 ## Unified lifecycle
 
 ```text
@@ -72,11 +89,12 @@ The same lifecycle applies to software, agent, library, automation, infrastructu
 ## Distribution and enforcement
 
 - The Plugin distributes capabilities and instructions on demand.
+- The repository marketplace selects an exact semantic Plugin release from GitHub.
 - Versioned snapshots and lockfiles make Standards application reproducible.
 - Pull Requests propagate new releases to consumer repositories.
 - GitHub Rulesets and reusable workflows enforce policies that cannot rely on agents alone.
 - The Marketplace is a distribution channel, not the normative authority.
 
-## Version 0.1.0 boundaries
+## Version 0.2.0 boundaries
 
-This version defines contracts, baseline content and structural validation. Remote repository creation, release resolution, GitHub organization configuration and technology-specific semantic validators are not yet part of the executable implementation.
+This version makes the source repository a self-contained portable Plugin package and defines workspace distribution metadata. Remote repository creation, automated workspace import, consumer release resolution, GitHub organization configuration and technology-specific semantic validators are not yet part of the executable implementation.

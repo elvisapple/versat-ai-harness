@@ -5,7 +5,7 @@ description: Review a proposed or implemented Versat architecture for boundary c
 
 # Architecture Review
 
-Review the relevant SDD proposal, requirements and design before the implementation details.
+Locate the installed Plugin root two directories above this file. Review the relevant SDD proposal, requirements and design against the Plugin root [SDD process](../../sdd/process.md) and [Standards index](../../standards/index.yaml) before the implementation details.
 
 Check:
 

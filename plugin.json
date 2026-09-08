@@ -1,0 +1,35 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "versat-ai-harness",
+  "version": "0.2.0",
+  "description": "Governance, SDD, bootstrap and audits for AI-assisted Versat projects.",
+  "author": {
+    "name": "Versat"
+  },
+  "repository": "https://github.com/versat-private/versat-ai-harness",
+  "keywords": [
+    "architecture",
+    "governance",
+    "sdd",
+    "project-bootstrap"
+  ],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Versat AI Harness",
+        "shortDescription": "Standards, SDD and governance for Versat projects",
+        "longDescription": "Create, evolve and audit Versat projects with corporate standards, Spec Driven Development and deterministic validation.",
+        "developerName": "Versat",
+        "category": "Developer Tools",
+        "capabilities": [
+          "Write"
+        ],
+        "defaultPrompt": [
+          "Create a new project following Versat AI Harness.",
+          "Audit this project against Versat Standards.",
+          "Start a change using Versat SDD."
+        ]
+      }
+    }
+  }
+}

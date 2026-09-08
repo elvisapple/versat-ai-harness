@@ -6,10 +6,23 @@ The format follows Keep a Changelog, and the project follows Semantic Versioning
 
 ## [Unreleased]
 
+## [0.2.0] - 2026-09-08
+
+### Added
+
+- portable Agent Plugins manifest at the repository root;
+- private GitHub marketplace metadata for ChatGPT workspace distribution;
+- deterministic validation for portable and compatibility manifests, marketplace pinning and version agreement;
+- ADR-0011 and SDD artifacts governing the package-boundary migration.
+
 ### Changed
 
+- made the repository root the installable Plugin package boundary;
+- moved Skills and reusable agent roles to root-level directories;
+- updated Skills to resolve canonical artifacts from the installed Plugin root;
 - aligned legacy technical documentation, ADRs, SDD templates and Plugin metadata with the canonical language standard;
-- superseded ADR-0008 with ADR-0010 to record the refined language policy.
+- superseded ADR-0008 with ADR-0010 to record the refined language policy;
+- superseded ADR-0001 and ADR-0002 with ADR-0011.
 
 ## [0.1.0] - 2026-08-28
 

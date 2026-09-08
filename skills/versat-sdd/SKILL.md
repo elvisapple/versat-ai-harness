@@ -5,7 +5,7 @@ description: Specify and deliver a Versat project change through proposal, requi
 
 # Versat SDD
 
-Use `sdd/process.md` as the canonical lifecycle and the matching artifacts in `sdd/templates/`.
+Locate the installed Plugin root two directories above this file and use its [SDD process](../../sdd/process.md) as the canonical lifecycle with the matching artifacts in `sdd/templates/`.
 
 ## Outcome
 
@@ -14,7 +14,7 @@ Produce a change directory whose documents stay consistent with one another and 
 ## Rules
 
 - Start from observable need and scope, not a preferred implementation.
-- Resolve applicable Standards before design.
+- Resolve applicable Standards from the same versioned Plugin root before design.
 - Record alternatives and significant tradeoffs in design; create an ADR for durable structural decisions.
 - Keep tasks independently verifiable and update their status truthfully.
 - Run tests, evals and validators required by the project profile.

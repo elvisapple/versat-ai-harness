@@ -6,6 +6,8 @@
 |---|---|
 | GitHub organization names | English |
 | Repository names | English |
+| Git branch descriptions | English |
+| Commit subjects and bodies | English |
 | Directories | English |
 | Structural files | English |
 | Classes, functions, methods and variables | English |

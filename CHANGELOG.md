@@ -6,6 +6,11 @@ The format follows Keep a Changelog, and the project follows Semantic Versioning
 
 ## [Unreleased]
 
+### Changed
+
+- defined Shortcut-linked branch names and typed commit messages in the canonical Git Standard, preserving English technical descriptions and gradual adoption;
+- added Story traceability prompts to SDD and PR review, with explicit squash, parser compatibility and validation guidance.
+
 ## [0.2.0] - 2026-09-08
 
 ### Added

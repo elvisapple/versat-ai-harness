@@ -10,6 +10,7 @@ Locate the installed Plugin root two directories above this file. Review the rel
 Check:
 
 - ownership and system boundaries;
+- artifact responsibilities and executor contracts under the resolved Standards, distinguishing Plugin packaging, consumer capabilities and operational workflows;
 - data, trust and authorization boundaries;
 - failure modes, recovery and observability;
 - deterministic versus model-driven responsibilities;

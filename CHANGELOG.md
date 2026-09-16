@@ -8,6 +8,10 @@ The format follows Keep a Changelog, and the project follows Semantic Versioning
 
 ### Changed
 
+- separated consumer Skills, Codex custom agents and Versat operational workflows through a canonical artifact Standard and updated agent/hybrid template guidance;
+- added explicit authoring templates, a supplier-payment workflow example and reviewed migration guidance while preserving the Harness Plugin package layout;
+- clarified Plugin role guidance, SDD procedures and validation limits; recorded ADR-0012 and the `agent-project-layout` SDD change.
+- replaced the obsolete nested Plugin CODEOWNERS path with current Skills, role guidance and project-template ownership.
 - defined Shortcut-linked branch names and typed commit messages in the canonical Git Standard, preserving English technical descriptions and gradual adoption;
 - added Story traceability prompts to SDD and PR review, with explicit squash, parser compatibility and validation guidance.
 

@@ -18,7 +18,7 @@ Versat's source of truth for AI-assisted development. This repository is also th
 | `plugin.json` | Portable Plugin identity and package entry point |
 | `.codex-plugin/plugin.json` | Codex compatibility manifest |
 | `skills/` | Installable Harness capabilities and procedures |
-| `agents/` | Reusable execution role guidance |
+| [`agents/`](agents/README.md) | Reusable execution role guidance |
 | `standards/` | Corporate rules that must be followed |
 | `sdd/` | How changes are specified, implemented and archived |
 | `project-templates/` | Composable structures used to create projects |
@@ -30,6 +30,18 @@ Versat's source of truth for AI-assisted development. This repository is also th
 | `docs/decisions/` | Architecture Decision Records (ADRs) |
 
 The repository root is the installable Plugin boundary. Consequently, installed Skills and the canonical artifacts they resolve always come from the same version.
+
+## Consumer project artifacts
+
+The Plugin map above is not the layout generated for consumer projects. The agent template uses:
+
+| Consumer path | Responsibility |
+|---|---|
+| `.agents/skills/<skill-name>/SKILL.md` | Local reusable capability |
+| `.codex/agents/<agent-name>.toml` | Native Codex custom agent |
+| `workflows/<workflow-name>/workflow.md` | Versat operational flow composing Skills |
+
+These artifacts can serve business operations as well as development. Workflows require an explicit executor; the Markdown convention does not add an execution engine. Root Harness `agents/*.md` files are reusable role guidance, not native Codex registrations. See the [canonical contract](standards/core/agent-artifacts.md), [templates and migration guidance](project-templates/README.md) and [supplier-payment example](project-templates/examples/supplier-payment/workflow.md).
 
 ## Current state
 

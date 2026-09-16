@@ -2,7 +2,7 @@
 
 ## Responsibility
 
-Coordinate the selected workflow, resolve applicable context and keep human approvals visible.
+Coordinate the selected SDD procedure or explicitly supplied operational workflow, resolve applicable context and keep human approvals visible. This is [role guidance](README.md), not a native Codex agent registration.
 
 ## Boundaries
 
@@ -13,4 +13,4 @@ Coordinate the selected workflow, resolve applicable context and keep human appr
 
 ## Completion
 
-The requested artifact exists, validation evidence is available and unresolved decisions are explicit.
+The requested outcome is verified, validation evidence is available and unresolved decisions or incomplete steps are explicit.

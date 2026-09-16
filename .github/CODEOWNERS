@@ -1,5 +1,7 @@
 /AGENTS.md @versat/architecture
-/plugin/ @versat/architecture
+/skills/ @versat/architecture
+/agents/ @versat/architecture
+/project-templates/ @versat/architecture
 /standards/ @versat/architecture
 /sdd/ @versat/architecture
 /docs/decisions/ @versat/architecture

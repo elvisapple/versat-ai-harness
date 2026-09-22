@@ -91,12 +91,18 @@ The Harness root `agents/*.md` files remain reusable role guidance requiring exp
 ## Unified lifecycle
 
 ```text
-Intent -> Proposal -> Requirements -> Design -> Tasks
-       -> Implementation -> Tests/Evals -> Validation
-       -> Pull Request -> Merge -> Living Specification
+Intent -> Proposal/Requirements -> human approval
+       -> Design -> human approval -> Tasks -> human approval
+       -> Implementation + Living Specifications -> Validation
+       -> Documentary Archive Preparation -> PR Review / Required Checks
+       -> Merge -> Read-only Delivery Confirmation
 ```
 
 The same lifecycle applies to software, agent, library, automation, infrastructure and hybrid projects. The profile changes the applicable modules and criteria, not the corporate process.
+
+The public `versat-sdd` Skill explicitly routes developer intent to one of four canonical procedures in `sdd/workflows/`. Shared gates and state transitions live in [the SDD process](../../sdd/process.md); the [developer guide](../../sdd/README.md) describes invocation and deliverables. Skills are adapters, not alternate policy sources.
+
+As recorded in [ADR-0013](../decisions/0013-consolidated-sdd-workflow.md), documentary closure is prepared in the implementation branch so code, living specifications and historical artifacts enter the default branch together. PR state remains the authority for merge; an archive path alone conveys no delivery claim. Local SDD checks validate recorded metadata, revision binding and traceability, not human identity, semantic correctness or remote CI. Legacy exceptions are explicit and immutable until governed migration.
 
 ## Knowledge governance
 
@@ -119,4 +125,6 @@ The same lifecycle applies to software, agent, library, automation, infrastructu
 
 This version makes the source repository a self-contained portable Plugin package and defines workspace distribution metadata. Remote repository creation, automated workspace import, consumer release resolution, GitHub organization configuration and technology-specific semantic validators are not yet part of the executable implementation.
 
-The unreleased consumer artifact revision changes templates and guidance. Automated project composition, operational workflow execution and semantic validation of consumer agent artifacts are not implemented by it. The existing repository validator checks Plugin structure; consumer loading and workflow behavior require separate verification.
+The unreleased consolidation adds local SDD contract validation and executable regression tests. It does not add a workflow engine, GitHub approval integration or automatic release publication. Installed consumers are not changed by edits to this source checkout.
+
+The unreleased consumer artifact revision changes templates and guidance. Automated project composition, operational workflow execution and semantic validation of consumer agent artifacts are not implemented by it. Local validation checks Plugin structure and recorded SDD consistency; consumer loading and workflow behavior require separate verification.

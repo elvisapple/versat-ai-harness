@@ -1,8 +1,16 @@
 # Validate change
 
-1. Trace every requirement to observable evidence.
-2. Run project tests, agent evals and Harness validators.
-3. Confirm security, observability, rollout and rollback obligations.
-4. Record gaps explicitly; do not convert an unverified item into a pass.
-5. Prepare the Pull Request summary from the accepted change artifacts.
-6. Review branch naming, commit messages, Story traceability and any squash commit subject against the resolved Git Standard. Record any external integration checks that remain unverified separately from repository validation.
+Use to assess a change's actual acceptance evidence. Read the [process](../process.md), [metadata](../metadata.md), current artifacts and applicable Standards. A validation-only request authorizes relevant diagnostics and evidence recording, not implementation fixes. A request solely for status remains read-only.
+
+## Procedure
+
+1. Locate the unique active/archive dossier. Check current planning approvals and compare requirements, design, tasks, implementation and living specifications. Report premature validation or stale planning as a gap, not implicit approval to bypass a gate.
+2. Trace every requirement to the Design validation plan and its required checks. Execute the relevant project tests, agent evals and Harness validators, including security, operations, rollout and rollback obligations selected by the resolved Standards. Use observed commands and results; never infer a pass from a planned test name.
+3. Record results in Tasks `validation` using the [evidence contract](../metadata.md#validation-evidence). Bind the results to the current Tasks plan digest; record each check's actual tested revision or run and durable evidence. Use a stable repository-relative evidence path outside the movable dossier, or an observed HTTPS run/report URL. Keep a concise human-readable Validation evidence section.
+4. Rerun affected checks after code changes even if the plan digest is unchanged. Missing credentials, environment or external access produce `unverified` and an explanation. Record actual failures as `fail`; do not mark pending tasks completed simply to satisfy delivery checks.
+5. Run the SDD validator with `--change <change-id> --phase delivery` to assess completion and evidence readiness before archive preparation. Report its `pass`, `fail` or `unable-to-verify` result with actual gaps. Local schema/evidence consistency cannot prove semantic test adequacy, human identity, remote CI or merge.
+6. Review branch naming, commit messages, work tracking and any proposed squash subject against the resolved Git Standard. Prepare a PR summary with approved scope, changes, actual checks and known limitations. Keep remote integration/check observations distinct from repository validation. Prepare text without publishing it unless publication is authorized.
+
+## Exit
+
+Return requirement coverage, executed checks, failures, unknowns and evidence links. When fixes were not authorized, describe them and stop; do not modify product code. A passing local result permits preparation of documentary closure when requested, not a claim of completed delivery. If that preparation is authorized, read [Archive change](archive-change.md); otherwise state the next permitted action.

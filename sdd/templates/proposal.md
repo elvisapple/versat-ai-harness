@@ -1,9 +1,16 @@
 ---
+sdd_version: 2
 change: change-id
 status: draft
 owner: team-or-person
 summary: One-sentence outcome
 risk: medium
+review:
+  revision: 1
+  state: draft
+  blockers: []
+  upstream: {}
+  approval: null
 ---
 
 # Proposal
@@ -23,3 +30,7 @@ Record the Shortcut Story ID, type and URL when applicable. Otherwise, state tha
 ## Impact and risks
 
 ## Proposal acceptance criterion
+
+## Planning review
+
+Present Proposal and Requirements together. Record the actual human response and its source after review; never infer approval from the document status. Use the canonical digest command before recording an approval. This section is review bookkeeping, not a place for requirements or design decisions.

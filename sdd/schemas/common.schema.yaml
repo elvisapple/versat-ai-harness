@@ -1,0 +1,75 @@
+$schema: https://json-schema.org/draft/2020-12/schema
+$id: urn:versat:sdd:common
+title: Shared Versat SDD version 2 metadata
+$defs:
+  text:
+    type: string
+    minLength: 1
+    pattern: '\S'
+  change:
+    type: string
+    pattern: '^[a-z0-9]+(?:-[a-z0-9]+)*$'
+  digest:
+    type: string
+    pattern: '^[a-f0-9]{64}$'
+  requirementIds:
+    type: array
+    minItems: 1
+    uniqueItems: true
+    items:
+      type: string
+      pattern: '^REQ-[0-9]{3,}$'
+  review:
+    type: object
+    additionalProperties: false
+    required: [revision, state, blockers, upstream, approval]
+    properties:
+      revision:
+        type: integer
+        minimum: 1
+      state:
+        enum: [draft, awaiting-approval, approved, blocked, superseded]
+      blockers:
+        type: array
+        uniqueItems: true
+        items:
+          $ref: '#/$defs/text'
+      upstream:
+        type: object
+        additionalProperties: false
+        properties:
+          proposal:
+            $ref: '#/$defs/digest'
+          design:
+            $ref: '#/$defs/digest'
+      approval:
+        oneOf:
+          - type: 'null'
+          - type: object
+            additionalProperties: false
+            required: [source, quote, revision, digest]
+            properties:
+              source:
+                $ref: '#/$defs/text'
+              quote:
+                $ref: '#/$defs/text'
+              revision:
+                type: integer
+                minimum: 1
+              digest:
+                $ref: '#/$defs/digest'
+              reviewer:
+                $ref: '#/$defs/text'
+              date:
+                $ref: '#/$defs/text'
+    allOf:
+      - if:
+          properties:
+            state: {const: approved}
+        then:
+          properties:
+            blockers: {maxItems: 0}
+            approval: {type: object}
+        else:
+          properties:
+            approval: {type: 'null'}

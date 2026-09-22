@@ -1,11 +1,13 @@
 $schema: https://json-schema.org/draft/2020-12/schema
-title: Versat SDD task collection
+$id: urn:versat:sdd:tasks
+title: Versat SDD version 2 task collection
 type: object
 additionalProperties: false
-required: [change, tasks]
+required: [sdd_version, change, tasks, review, validation, closure]
 properties:
+  sdd_version: {const: 2}
   change:
-    type: string
+    $ref: 'urn:versat:sdd:common#/$defs/change'
   tasks:
     type: array
     minItems: 1
@@ -18,13 +20,41 @@ properties:
           type: string
           pattern: '^TASK-[0-9]{3,}$'
         description:
-          type: string
-          minLength: 1
+          $ref: 'urn:versat:sdd:common#/$defs/text'
         requirements:
-          type: array
-          minItems: 1
-          items:
-            type: string
-            pattern: '^REQ-[0-9]{3,}$'
+          $ref: 'urn:versat:sdd:common#/$defs/requirementIds'
         status:
           enum: [pending, in-progress, blocked, completed]
+  review:
+    allOf:
+      - $ref: 'urn:versat:sdd:common#/$defs/review'
+      - properties:
+          upstream:
+            required: [proposal, design]
+  validation:
+    type: object
+    additionalProperties: false
+    required: [plan_digest, results]
+    properties:
+      plan_digest:
+        oneOf:
+          - type: 'null'
+          - $ref: 'urn:versat:sdd:common#/$defs/digest'
+      results:
+        type: array
+        items:
+          type: object
+          additionalProperties: false
+          required: [check, result, evidence, revision]
+          properties:
+            check:
+              type: string
+              pattern: '^CHECK-[0-9]{3,}$'
+            result:
+              enum: [pass, fail, unverified]
+            evidence:
+              $ref: 'urn:versat:sdd:common#/$defs/text'
+            revision:
+              $ref: 'urn:versat:sdd:common#/$defs/text'
+  closure:
+    enum: [active, prepared]

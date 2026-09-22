@@ -25,6 +25,12 @@ Read and follow a procedure when entering its phase. These Markdown files are in
 
 Use the project's selected Harness release, resolved Standards and applicable repository instructions. Resolve Standards through `standards/index.yaml`; do not reproduce Git, language, security or other policies here. Follow the resolved Git Standard for branches, commits, work tracking and PRs. Keep a real issue or Story reference when available; never invent one. Missing project/Standards context can be recorded while drafting intent, but must be resolved before accepting Design.
 
+## Workflow terminology
+
+The procedures in `sdd/workflows/` implement this development lifecycle. Consumer operational workflows compose Skills under the [Agent Artifact Standard](../standards/core/agent-artifacts.md); their definitions and changes pass through SDD but do not replace it. A workflow document describes execution and dependencies, not an automatically installed runtime.
+
+## Directory convention
+
 Every change has one stable lowercase hyphen-case ID and one dossier in either `specs/changes/<change-id>/` or `specs/archive/<change-id>/`. Never retain duplicate active and archive copies. The four primary files are:
 
 - `proposal.md`: need, expected outcome, scope, exclusions, impact and the combined Proposal/Requirements review.

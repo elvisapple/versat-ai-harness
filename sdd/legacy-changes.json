@@ -10,6 +10,15 @@
         "tasks.md": "1f52d803dcbe8e01c75925e8dc4837dbc093a2f6245d2992689d042f6f11a695"
       }
     },
+    "agent-project-layout": {
+      "reason": "Merged into main before SDD v2 and preserved unchanged; this exemption does not assert retrospective review approvals or validation evidence.",
+      "files": {
+        "proposal.md": "c08c163362e8b1bff2c866dc36246c7190489c6282d55a05f226cbd597948004",
+        "requirements.md": "adfbc40aa715fdc90b4b91c49d9b47b68c9d4ddabd0d6fa2e58ade7228a347f3",
+        "design.md": "9a38eff99ee1e5cfcd80a6b490e79e91d6c66719a0a2a9a565a6e60e1a2595b2",
+        "tasks.md": "f3fefbfe7063546c131d267225967ab54432aa0358e5aa17f096329a560b169b"
+      }
+    },
     "root-plugin-package": {
       "reason": "Completed before SDD v2; preserved unchanged rather than inventing review approvals or validation evidence.",
       "files": {
@@ -33,7 +42,7 @@
       "files": {
         "proposal.md": "54a43a4ae3cc7f7abb55a6e0138b3710b91e49a042760aecd07c5ac28284ec5b",
         "requirements.md": "8b5e0a431926866a1edfb45293cbd9d67af4f68742cae39c2d661ea07a32c539",
-        "design.md": "24f152ac31f12335a51699cff0c78ed59487755b4a2cebbe5f6eb498ecbaba35",
+        "design.md": "660895d86b3e08a4a247dfa5fa41dac074f89d18ee83212ac4ab7def43c27996",
         "tasks.md": "69dc3a9f0ecf2b755148de1a78cc10429f358d75de22736894fad3bd663c70de"
       }
     }

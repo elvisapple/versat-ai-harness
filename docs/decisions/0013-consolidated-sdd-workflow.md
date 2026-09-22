@@ -1,4 +1,4 @@
-# ADR-0012 — Consolidate SDD routing and prepare documentary closure before merge
+# ADR-0013 — Consolidate SDD routing and prepare documentary closure before merge
 
 - Status: Accepted
 - Date: 2026-09-22

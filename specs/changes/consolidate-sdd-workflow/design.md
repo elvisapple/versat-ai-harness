@@ -1,7 +1,7 @@
 ---
 change: consolidate-sdd-workflow
 requirements: [REQ-001, REQ-002, REQ-003, REQ-004, REQ-005, REQ-006]
-adrs: [ADR-0012]
+adrs: [ADR-0013]
 validation:
   - Repository package and SDD validator execution
   - SDD validator behavioral test suite
@@ -28,7 +28,7 @@ Legacy schemas remain under `sdd/schemas/legacy/`. `sdd/legacy-changes.json` all
 - `sdd/process.md` is lifecycle authority; skills route to it.
 - `sdd/workflows/` is procedural guidance, not an executable engine.
 - `sdd/schemas/` and `validators/sdd/` form the local data contract.
-- `docs/decisions/0012-consolidated-sdd-workflow.md` records the architectural decision.
+- `docs/decisions/0013-consolidated-sdd-workflow.md` records the architectural decision.
 - Archive preparation is documentary branch work; remote merge confirmation remains outside the validator.
 
 ## Data, security and permissions

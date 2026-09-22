@@ -68,6 +68,26 @@ versat-ai-harness/
 
 Keeping the canonical core and its execution capabilities inside one package boundary prevents an installed Skill from losing access to its version-matched Standards, process or templates. Directory responsibilities remain separate even though they share the portable package root.
 
+## Consumer artifacts and execution
+
+The consumer contract is defined in the [Agent Artifact Standard](../../standards/core/agent-artifacts.md) and resolved through `standards/index.yaml`. It separates capabilities, execution roles and operational composition:
+
+```text
+consumer-project/
+├── AGENTS.md
+├── .agents/skills/<skill-name>/SKILL.md
+├── .codex/agents/<agent-name>.toml
+├── workflows/<workflow-name>/workflow.md
+├── evals/
+└── tests/
+```
+
+A workflow explicitly calls Skills and passes their results between steps. The chosen executor loads the workflow document and provides the tool access and execution state. Codex agents use the TOML adapter; the workflow convention does not itself register agents, schedule runs or implement integrations. These artifacts may implement business operations or development assistance. Separately deployed application agents retain the architecture of their application runtime.
+
+The agent template extends `base`; hybrid composition adds the software module and its application source directories. Authoring templates and illustrative examples are supplied separately and are not automatically installed as active capabilities. See [template composition](../../project-templates/README.md) and [ADR-0012](../decisions/0012-consumer-agent-artifacts.md).
+
+The Harness root `agents/*.md` files remain reusable role guidance requiring explicit loading or conversion; they are not native Codex custom-agent registrations. `sdd/workflows/` contains development lifecycle procedures, while consumer `workflows/` describes operational flows. GitHub Actions retain their separate `.github/workflows/` contract.
+
 ## Unified lifecycle
 
 ```text
@@ -82,7 +102,7 @@ The same lifecycle applies to software, agent, library, automation, infrastructu
 
 The public `versat-sdd` Skill explicitly routes developer intent to one of four canonical procedures in `sdd/workflows/`. Shared gates and state transitions live in [the SDD process](../../sdd/process.md); the [developer guide](../../sdd/README.md) describes invocation and deliverables. Skills are adapters, not alternate policy sources.
 
-As recorded in [ADR-0012](../decisions/0012-consolidated-sdd-workflow.md), documentary closure is prepared in the implementation branch so code, living specifications and historical artifacts enter the default branch together. PR state remains the authority for merge; an archive path alone conveys no delivery claim. Local SDD checks validate recorded metadata, revision binding and traceability, not human identity, semantic correctness or remote CI. Legacy exceptions are explicit and immutable until governed migration.
+As recorded in [ADR-0013](../decisions/0013-consolidated-sdd-workflow.md), documentary closure is prepared in the implementation branch so code, living specifications and historical artifacts enter the default branch together. PR state remains the authority for merge; an archive path alone conveys no delivery claim. Local SDD checks validate recorded metadata, revision binding and traceability, not human identity, semantic correctness or remote CI. Legacy exceptions are explicit and immutable until governed migration.
 
 ## Knowledge governance
 
@@ -106,3 +126,5 @@ As recorded in [ADR-0012](../decisions/0012-consolidated-sdd-workflow.md), docum
 This version makes the source repository a self-contained portable Plugin package and defines workspace distribution metadata. Remote repository creation, automated workspace import, consumer release resolution, GitHub organization configuration and technology-specific semantic validators are not yet part of the executable implementation.
 
 The unreleased consolidation adds local SDD contract validation and executable regression tests. It does not add a workflow engine, GitHub approval integration or automatic release publication. Installed consumers are not changed by edits to this source checkout.
+
+The unreleased consumer artifact revision changes templates and guidance. Automated project composition, operational workflow execution and semantic validation of consumer agent artifacts are not implemented by it. Local validation checks Plugin structure and recorded SDD consistency; consumer loading and workflow behavior require separate verification.

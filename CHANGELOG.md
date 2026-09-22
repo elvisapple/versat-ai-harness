@@ -10,13 +10,17 @@ The format follows Keep a Changelog, and the project follows Semantic Versioning
 
 - central SDD developer guide, structured review/evidence contracts and a stage-aware JSON Schema validator;
 - regression cases for approval freshness, traceability, delivery readiness and explicit legacy migration;
-- ADR-0012 governing single-Skill routing and documentary closure in the implementation PR.
+- ADR-0013 governing single-Skill routing and documentary closure in the implementation PR.
 
 ### Changed
 
 - consolidated SDD access in `versat-sdd`, with explicit routing to canonical workflows and three human planning gates;
 - prepared documentary archival alongside code and living specifications before merge, with read-only delivery confirmation;
 - included SDD validation and regression tests in the local and CI entry points, and corrected Skill review ownership;
+- separated consumer Skills, Codex custom agents and Versat operational workflows through a canonical artifact Standard and updated agent/hybrid template guidance;
+- added explicit authoring templates, a supplier-payment workflow example and reviewed migration guidance while preserving the Harness Plugin package layout;
+- clarified Plugin role guidance, SDD procedures and validation limits; recorded ADR-0012 for consumer artifacts and the `agent-project-layout` SDD change.
+- replaced the obsolete nested Plugin CODEOWNERS path with current Skills, role guidance and project-template ownership.
 - defined Shortcut-linked branch names and typed commit messages in the canonical Git Standard, preserving English technical descriptions and gradual adoption;
 - added Story traceability prompts to SDD and PR review, with explicit squash, parser compatibility and validation guidance.
 

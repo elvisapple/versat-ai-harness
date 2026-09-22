@@ -13,10 +13,10 @@ Create one reviewable bootstrap change rather than assembling a project manually
 2. Collect only missing identity fields required by the project schema.
 3. Classify the project as software, agent, hybrid, library or infrastructure.
 4. Resolve applicable context from the Plugin root [Standards index](../../standards/index.yaml); do not let the caller hand-pick mandatory Standards.
-5. Compose the Plugin root [base template](../../project-templates/base/) with the selected profile modules.
+5. Read the Plugin root [template composition guide](../../project-templates/README.md) and compose the [base template](../../project-templates/base/) with the selected profile modules. Use the matching authoring artifacts only for concrete capabilities requested by the project; keep illustrative examples out of active execution paths.
 6. Initialize the `project-bootstrap` change using the Plugin root [SDD process](../../sdd/process.md) and its templates.
 7. Generate `.versat/project.yaml` and an exact `.versat/standards.lock` in the target project.
-8. Run the Plugin root validation entry point and report gaps without hiding or bypassing them.
+8. Run the Plugin root validation entry point, then verify the generated project against the resolved artifact contracts and its documented validation commands. Report executor loading and integration readiness separately; package validation alone does not verify the consumer.
 9. Prepare a bootstrap branch and Pull Request only when the user has authorized remote repository changes.
 
 ## Constraints

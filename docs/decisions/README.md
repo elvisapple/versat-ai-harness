@@ -26,4 +26,5 @@ Do not silently rewrite an accepted decision. Create a new ADR, reference the pr
 - [ADR-0009 — Keep the Harness executor-independent](0009-execution-adapters.md)
 - [ADR-0010 — Refine the language policy](0010-refine-language-policy.md)
 - [ADR-0011 — Make the repository root the portable Plugin package](0011-root-portable-plugin-package.md)
-- [ADR-0012 — Consolidate SDD routing and prepare documentary closure before merge](0012-consolidated-sdd-workflow.md)
+- [ADR-0012 — Separate consumer agent artifacts from Plugin packaging](0012-consumer-agent-artifacts.md) (proposed; policy review pending)
+- [ADR-0013 — Consolidate SDD routing and prepare documentary closure before merge](0013-consolidated-sdd-workflow.md)

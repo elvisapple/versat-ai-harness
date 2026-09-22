@@ -7,6 +7,7 @@ This repository is the source of truth for Versat's AI-assisted development stan
 - Read `docs/architecture/overview.md` and the related ADRs before changing architectural boundaries.
 - Do not duplicate standards inside Skills. Skills must locate and apply the canonical documents under `standards/`.
 - Keep responsibilities separate: `skills/` defines capabilities, `standards/` defines policies, `sdd/` defines the process and `validators/` defines deterministic enforcement.
+- Those root paths describe this Plugin package. For consumer project artifacts, apply the contract resolved through `standards/index.yaml`; see `project-templates/README.md` for composition and migration.
 - Treat corporate policy updates as governed changes: branch, Pull Request and mandatory review.
 - Use `standards/index.yaml` to resolve context; do not hard-code parallel lists of standards in Skills.
 - Preserve template composition. A profile extends `base` instead of copying its files.

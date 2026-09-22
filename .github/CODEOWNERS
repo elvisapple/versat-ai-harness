@@ -1,6 +1,9 @@
 /AGENTS.md @versat/architecture
-/plugin/ @versat/architecture
+/skills/ @versat/architecture
 /standards/ @versat/architecture
 /sdd/ @versat/architecture
 /docs/decisions/ @versat/architecture
 /validators/ @versat/architecture
+/tests/ @versat/architecture
+/scripts/validate/ @versat/architecture
+/requirements-validation.txt @versat/architecture

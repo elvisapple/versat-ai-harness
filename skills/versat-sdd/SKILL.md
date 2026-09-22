@@ -1,22 +1,30 @@
 ---
 name: versat-sdd
-description: Specify and deliver a Versat project change through proposal, requirements, design, tasks, implementation, validation and archival. Use for material product, agent, infrastructure or policy changes.
+description: Plan, implement, validate or prepare documentary archival of a Versat SDD change, with human planning gates and explicit workflow routing. Use for material product, agent, infrastructure or policy changes and for resuming their lifecycle.
 ---
 
 # Versat SDD
 
-Locate the installed Plugin root two directories above this file and use its [SDD process](../../sdd/process.md) as the canonical lifecycle with the matching artifacts in `sdd/templates/`.
+Use this single public entry point for the lifecycle. The four workflow documents are internal procedures, not independently registered skills or commands. The [developer guide](../../sdd/README.md) provides prompts and deliverables.
 
-## Outcome
+## Resolve and route
 
-Produce a change directory whose documents stay consistent with one another and with the implementation. Scale detail to risk, but never omit intent, acceptance criteria or validation.
+1. Identify the target repository and read its applicable `AGENTS.md`, project identity, Standards lockfile/snapshot, relevant living specifications and existing change. Preserve unrelated work. Resolve the same Harness version selected by that project; do not silently upgrade it.
+2. The packaged Harness root is two directories above this skill's directory. Verify `VERSION`, `sdd/process.md`, `sdd/templates/` and `standards/index.yaml`. Read the version-matched [process](../../sdd/process.md). Resolve Standards through its index, not a parallel list in this skill. If matching resources are unavailable, report the missing dependency instead of substituting another release.
+3. Reuse the intended change ID and inspect artifacts in both `specs/changes/` and `specs/archive/`. Reconcile current approvals and evidence before choosing the next action. File existence, proposal status and archive location do not establish readiness or delivery.
+4. Select, **read and follow** the workflow below for the authorized intent. Announce the selected phase and its stopping condition. Load only that workflow, its needed templates and [metadata contract](../../sdd/metadata.md); read another workflow when actually transitioning to it.
 
-## Rules
+| Intent | Required workflow |
+|---|---|
+| Start, plan, revise planning, or implement an intent without a current approved plan | [New change](../../sdd/workflows/new-change.md) |
+| Implement a current approved plan | [Implement change](../../sdd/workflows/implement-change.md) |
+| Validate, inspect acceptance evidence or report validation gaps | [Validate change](../../sdd/workflows/validate-change.md) |
+| Prepare documentary archive/delivery, or confirm merge after delivery | [Archive change](../../sdd/workflows/archive-change.md) |
 
-- Start from observable need and scope, not a preferred implementation.
-- Resolve applicable Standards from the same versioned Plugin root before design.
-- Record alternatives and significant tradeoffs in design; create an ADR for durable structural decisions.
-- Keep tasks independently verifiable and update their status truthfully.
-- Run tests, evals and validators required by the project profile.
-- Archive only after implementation, validation and living specifications agree.
-- Do not mutate remote branches or Pull Requests unless the user authorized that workflow.
+For “resume” or status, inspect state first. Report-only requests stay read-only; otherwise resume only the authorized next action. When context cannot disambiguate the repository, change or missing approval, ask one focused question.
+
+## Boundaries and handoff
+
+Follow the canonical human gates and revision rules in the process. Planning approval alone does not authorize implementation. After reviewing Tasks, the developer may combine its approval with an explicit implementation request. Validation-only does not authorize code fixes. Scoped authorization for PR creation, merge or deployment is separate from specification approval; never infer it from skill selection.
+
+Run the phase-appropriate checks documented by the selected workflow and [SDD validator](../../validators/sdd/README.md). Report actual results and unknown external state separately. End with the change ID, phase/revision, linked deliverables, blockers and next permitted action. At a pending planning gate, present the reviewable files and ask for that stage's approval, then stop.

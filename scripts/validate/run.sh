@@ -3,6 +3,7 @@ set -euo pipefail
 
 repo_root="$(cd "$(dirname "${BASH_SOURCE[0]}")/../.." && pwd)"
 failures=0
+validation_python="${PYTHON:-python3}"
 
 required_files=(
   "AGENTS.md"
@@ -18,6 +19,15 @@ required_files=(
   "docs/decisions/README.md"
   "docs/decisions/0011-root-portable-plugin-package.md"
   "validators/plugin/validate.py"
+  "sdd/README.md"
+  "sdd/metadata.md"
+  "sdd/workflows/new-change.md"
+  "sdd/workflows/implement-change.md"
+  "sdd/workflows/validate-change.md"
+  "sdd/workflows/archive-change.md"
+  "validators/sdd/validate.py"
+  "requirements-validation.txt"
+  "tests/validators/test_sdd.py"
 )
 
 for relative_path in "${required_files[@]}"; do
@@ -48,12 +58,24 @@ if ! grep -Eq '^[0-9]+\.[0-9]+\.[0-9]+([.-][0-9A-Za-z.-]+)?$' "${repo_root}/VERS
   failures=$((failures + 1))
 fi
 
-if command -v python3 >/dev/null 2>&1; then
-  if ! python3 "${repo_root}/validators/plugin/validate.py"; then
+if command -v "${validation_python}" >/dev/null 2>&1; then
+  if ! "${validation_python}" "${repo_root}/validators/plugin/validate.py"; then
+    failures=$((failures + 1))
+  fi
+  if "${validation_python}" -c 'import yaml, jsonschema' >/dev/null 2>&1; then
+    if ! PYTHONDONTWRITEBYTECODE=1 "${validation_python}" "${repo_root}/validators/sdd/validate.py" --root "${repo_root}"; then
+      failures=$((failures + 1))
+    fi
+    if ! PYTHONDONTWRITEBYTECODE=1 "${validation_python}" -m unittest discover -s "${repo_root}/tests/validators" -p 'test_*.py'; then
+      failures=$((failures + 1))
+    fi
+  else
+    echo "FAIL install validation dependencies in a virtual environment: python -m pip install -r requirements-validation.txt"
+    echo "Then activate that environment or set PYTHON to its interpreter path."
     failures=$((failures + 1))
   fi
 else
-  echo "FAIL python3 is required for Plugin validation"
+  echo "FAIL Python is required; activate a virtual environment or set PYTHON to its interpreter path."
   failures=$((failures + 1))
 fi
 
@@ -62,4 +84,4 @@ if [[ "${failures}" -gt 0 ]]; then
   exit 1
 fi
 
-echo "Versat AI Harness structural validation passed."
+echo "Versat AI Harness package, SDD contract and validator tests passed."

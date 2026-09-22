@@ -6,10 +6,23 @@ The format follows Keep a Changelog, and the project follows Semantic Versioning
 
 ## [Unreleased]
 
+### Added
+
+- central SDD developer guide, structured review/evidence contracts and a stage-aware JSON Schema validator;
+- regression cases for approval freshness, traceability, delivery readiness and explicit legacy migration;
+- ADR-0012 governing single-Skill routing and documentary closure in the implementation PR.
+
 ### Changed
 
+- consolidated SDD access in `versat-sdd`, with explicit routing to canonical workflows and three human planning gates;
+- prepared documentary archival alongside code and living specifications before merge, with read-only delivery confirmation;
+- included SDD validation and regression tests in the local and CI entry points, and corrected Skill review ownership;
 - defined Shortcut-linked branch names and typed commit messages in the canonical Git Standard, preserving English technical descriptions and gradual adoption;
 - added Story traceability prompts to SDD and PR review, with explicit squash, parser compatibility and validation guidance.
+
+### Removed
+
+- the standalone `new-change` Skill; its planning behavior and developer guidance now belong to the canonical SDD process.
 
 ## [0.2.0] - 2026-09-08
 

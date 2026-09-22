@@ -1,0 +1,41 @@
+{
+  "version": 1,
+  "changes": {
+    "align-language-standard": {
+      "reason": "Completed before SDD v2; preserved unchanged rather than inventing review approvals or validation evidence.",
+      "files": {
+        "proposal.md": "128dec3f10a4140b9e7116557db869ddbd3c2fb82a223c9ef41ef5eb01471035",
+        "requirements.md": "3e911039f72a0f19c8a110d92bdb31bed8f66c9f3800f9289a4753eb31133589",
+        "design.md": "a25796d9502682dd25f72e4ab931477c896b36ed395a8ca6c011bb6de40d2279",
+        "tasks.md": "1f52d803dcbe8e01c75925e8dc4837dbc093a2f6245d2992689d042f6f11a695"
+      }
+    },
+    "root-plugin-package": {
+      "reason": "Completed before SDD v2; preserved unchanged rather than inventing review approvals or validation evidence.",
+      "files": {
+        "proposal.md": "416f824feafd051b15c2abd587a9ae1abecaa817be9dc7de3a9cd61d2774434b",
+        "requirements.md": "333624d3ccff3c0efa051e92ae88f691ecc8d7005f305a92e3126d19f5e148fc",
+        "design.md": "21333833d7640cd86c06eac798dd29c1f5150f352ad34f1cee3fa024ecbb3af0",
+        "tasks.md": "88ce50426524f2abc1aff4f3a48dcae6efabce6fc0251cfc9b908365f437dfc8"
+      }
+    },
+    "shortcut-git-convention": {
+      "reason": "Completed before SDD v2; preserved unchanged rather than inventing review approvals or validation evidence.",
+      "files": {
+        "proposal.md": "4c3c9dcd989c7f8b6ac35a3f4af4a6cb18df99a4d70e0781e772290d26774ee5",
+        "requirements.md": "f95066a893aab2d610e5f766dd117261ee2c8bd8332f8fb351c686f9990f1730",
+        "design.md": "7377a6ecbb5b6f20c65aa57febbf80ea1b493cf7abff6144303205eb46cc555c",
+        "tasks.md": "aff62268c1dca616f4030b65228eeb6cef0b9f42db35120fa522db48231c06d0"
+      }
+    },
+    "consolidate-sdd-workflow": {
+      "reason": "Transitional dossier authorized in conversation before individual SDD v2 artifacts were presented at separate human gates; it records the decision without asserting retrospective approvals.",
+      "files": {
+        "proposal.md": "54a43a4ae3cc7f7abb55a6e0138b3710b91e49a042760aecd07c5ac28284ec5b",
+        "requirements.md": "8b5e0a431926866a1edfb45293cbd9d67af4f68742cae39c2d661ea07a32c539",
+        "design.md": "24f152ac31f12335a51699cff0c78ed59487755b4a2cebbe5f6eb498ecbaba35",
+        "tasks.md": "69dc3a9f0ecf2b755148de1a78cc10429f358d75de22736894fad3bd663c70de"
+      }
+    }
+  }
+}

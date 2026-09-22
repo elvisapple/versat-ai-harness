@@ -37,9 +37,22 @@ Version `0.2.0` makes this repository a self-contained portable Plugin package. 
 
 ## Local validation
 
+Use Python 3.11 or later in a virtual environment:
+
 ```bash
+python3 -m venv .venv
+source .venv/bin/activate
+python -m pip install -r requirements-validation.txt
 ./scripts/validate/run.sh
 ```
+
+The entry point checks the Plugin package, SDD metadata/gates/traceability and the validator regression suite. Explicit immutable legacy exceptions are reported separately; passing local checks does not authenticate human approval or prove a remote merge. An existing environment can also be selected with `PYTHON=/absolute/path/to/python ./scripts/validate/run.sh`.
+
+## Developing a change
+
+Use the single `$versat-sdd` Skill to plan, implement, validate or prepare documentary archival. It reads the relevant canonical workflow instead of maintaining a parallel process. See the [SDD developer guide](sdd/README.md) for example requests, phase deliverables, human approvals and PR/merge handling, and [SDD metadata](sdd/metadata.md) for validation commands and migration rules.
+
+The consolidated process is an unreleased change. It prepares living specifications and the documentary archive in the same delivery PR; a directory or local status is never proof of merge. Previously generated `new-change` instructions are superseded by this single entry point. Consumers retain their pinned released version until a separately reviewed release update.
 
 ## Workspace installation
 

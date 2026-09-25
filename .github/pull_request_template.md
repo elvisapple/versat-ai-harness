@@ -23,6 +23,8 @@ Revisa la convención de ramas y commits en el [Git Standard](https://github.com
 ## Validación
 
 - [ ] `./scripts/validate/run.sh`
+- [ ] Gates SDD vigentes y evidencias vinculadas a la revisión actual, o excepción histórica explícita
+- [ ] Especificaciones vigentes coherentes con la implementación; archivo documental preparado cuando corresponde
 - [ ] Tests y evals aplicables
 - [ ] Standards resueltos y revisados
 - [ ] ADR creado o actualizado cuando corresponde
@@ -32,3 +34,5 @@ Revisa la convención de ramas y commits en el [Git Standard](https://github.com
 ## Aprobaciones
 
 Indica acciones de alto impacto, cambios de política o límites que requieren revisión específica.
+
+El archivo documental en esta rama no demuestra que el cambio ya esté integrado. La aprobación del plan no reemplaza la revisión del PR ni los checks requeridos.

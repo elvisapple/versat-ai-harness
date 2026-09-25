@@ -18,7 +18,7 @@ Versat's source of truth for AI-assisted development. This repository is also th
 | `plugin.json` | Portable Plugin identity and package entry point |
 | `.codex-plugin/plugin.json` | Codex compatibility manifest |
 | `skills/` | Installable Harness capabilities and procedures |
-| `agents/` | Reusable execution role guidance |
+| [`agents/`](agents/README.md) | Reusable execution role guidance |
 | `standards/` | Corporate rules that must be followed |
 | `sdd/` | How changes are specified, implemented and archived |
 | `project-templates/` | Composable structures used to create projects |
@@ -31,15 +31,40 @@ Versat's source of truth for AI-assisted development. This repository is also th
 
 The repository root is the installable Plugin boundary. Consequently, installed Skills and the canonical artifacts they resolve always come from the same version.
 
+## Consumer project artifacts
+
+The Plugin map above is not the layout generated for consumer projects. The agent template uses:
+
+| Consumer path | Responsibility |
+|---|---|
+| `.agents/skills/<skill-name>/SKILL.md` | Local reusable capability |
+| `.codex/agents/<agent-name>.toml` | Native Codex custom agent |
+| `workflows/<workflow-name>/workflow.md` | Versat operational flow composing Skills |
+
+These artifacts can serve business operations as well as development. Workflows require an explicit executor; the Markdown convention does not add an execution engine. Root Harness `agents/*.md` files are reusable role guidance, not native Codex registrations. See the [canonical contract](standards/core/agent-artifacts.md), [templates and migration guidance](project-templates/README.md) and [supplier-payment example](project-templates/examples/supplier-payment/workflow.md).
+
 ## Current state
 
 Version `0.2.0` makes this repository a self-contained portable Plugin package. Skills, standards, schemas, templates and the minimum validation pipeline are versioned together; external integrations and technology-specific validators will be implemented incrementally through SDD.
 
 ## Local validation
 
+Use Python 3.11 or later in a virtual environment:
+
 ```bash
+python3 -m venv .venv
+source .venv/bin/activate
+python -m pip install -r requirements-validation.txt
 ./scripts/validate/run.sh
 ```
+
+The entry point checks the Plugin package, SDD metadata/gates/traceability and the validator regression suite. Explicit immutable legacy exceptions are reported separately; passing local checks does not authenticate human approval or prove a remote merge. An existing environment can also be selected with `PYTHON=/absolute/path/to/python ./scripts/validate/run.sh`.
+
+## Developing a change
+
+Use the single `$versat-sdd` Skill to plan, implement, validate or prepare documentary archival. It reads the relevant canonical workflow instead of maintaining a parallel process. See the [SDD developer guide](sdd/README.md) for example requests, phase deliverables, human approvals and PR/merge handling, and [SDD metadata](sdd/metadata.md) for validation commands and migration rules.
+
+The consolidated process is an unreleased change. It prepares living specifications and the documentary archive in the same delivery PR; a directory or local status is never proof of merge. Previously generated `new-change` instructions are superseded by this single entry point. Consumers retain their pinned released version until a separately reviewed release update.
 
 ## Workspace installation
 

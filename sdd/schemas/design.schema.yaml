@@ -1,25 +1,40 @@
 $schema: https://json-schema.org/draft/2020-12/schema
-title: Versat SDD design metadata
+$id: urn:versat:sdd:design
+title: Versat SDD version 2 design metadata
 type: object
 additionalProperties: false
-required: [change, requirements, validation]
+required: [sdd_version, change, requirements, validation, review]
 properties:
+  sdd_version: {const: 2}
   change:
-    type: string
+    $ref: 'urn:versat:sdd:common#/$defs/change'
   requirements:
-    type: array
-    minItems: 1
-    uniqueItems: true
-    items:
-      type: string
-      pattern: '^REQ-[0-9]{3,}$'
+    $ref: 'urn:versat:sdd:common#/$defs/requirementIds'
   adrs:
     type: array
     uniqueItems: true
     items:
-      type: string
+      $ref: 'urn:versat:sdd:common#/$defs/text'
   validation:
     type: array
     minItems: 1
     items:
-      type: string
+      type: object
+      additionalProperties: false
+      required: [id, description, requirements, required]
+      properties:
+        id:
+          type: string
+          pattern: '^CHECK-[0-9]{3,}$'
+        description:
+          $ref: 'urn:versat:sdd:common#/$defs/text'
+        requirements:
+          $ref: 'urn:versat:sdd:common#/$defs/requirementIds'
+        required: {type: boolean}
+  review:
+    allOf:
+      - $ref: 'urn:versat:sdd:common#/$defs/review'
+      - properties:
+          upstream:
+            required: [proposal]
+            maxProperties: 1

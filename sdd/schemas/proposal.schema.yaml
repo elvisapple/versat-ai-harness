@@ -1,19 +1,23 @@
 $schema: https://json-schema.org/draft/2020-12/schema
-title: Versat SDD proposal metadata
+$id: urn:versat:sdd:proposal
+title: Versat SDD version 2 proposal metadata
 type: object
 additionalProperties: false
-required: [change, status, owner, summary]
+required: [sdd_version, change, status, owner, summary, review]
 properties:
+  sdd_version: {const: 2}
   change:
-    type: string
-    pattern: '^[a-z0-9]+(?:-[a-z0-9]+)*$'
+    $ref: 'urn:versat:sdd:common#/$defs/change'
   status:
     enum: [draft, proposed, accepted, rejected, implemented, archived]
   owner:
-    type: string
-    minLength: 1
+    $ref: 'urn:versat:sdd:common#/$defs/text'
   summary:
-    type: string
-    minLength: 1
+    $ref: 'urn:versat:sdd:common#/$defs/text'
   risk:
     enum: [low, medium, high]
+  review:
+    allOf:
+      - $ref: 'urn:versat:sdd:common#/$defs/review'
+      - properties:
+          upstream: {maxProperties: 0}

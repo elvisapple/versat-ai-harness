@@ -4,6 +4,8 @@
 
 Describe the problem, users and expected outcome.
 
+See the [product overview](specs/product/overview.md) for the product context and open discovery questions.
+
 ## Ownership
 
 Identify the accountable team and operational contact.

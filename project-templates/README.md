@@ -10,6 +10,7 @@ library        = base + library
 infrastructure = base + infrastructure
 ```
 
+The base includes [the product overview template](base/specs/product/overview.md) for all profiles. During bootstrap, populate it through the project-bootstrap Skill's guided discovery. Supporting product documents are created only when the collected content warrants them; profile modules do not copy or redefine the shared overview.
 ## Composition
 
 Structure manifests describe directories to create. Copy the base files, then overlay the selected modules' content at project-relative paths, including hidden directories. `structure.yaml` and `composition.yaml` are composition metadata, not generated project files. Identical shared directories are allowed; conflicting file destinations must fail rather than overwrite content. Preserve project-specific content during upgrades.

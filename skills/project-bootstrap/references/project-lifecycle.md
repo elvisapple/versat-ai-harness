@@ -2,11 +2,11 @@
 
 ## 1. Intake
 
-Capture sponsor, objective, expected users, data sensitivity, operational criticality, profile and technologies. Record unknown information explicitly.
+Capture sponsor, objective, expected users, data sensitivity, operational criticality, profile and technologies. Use [guided product discovery](product-discovery.md) to develop the product context with the developer, reusing supplied information and recording unknowns explicitly.
 
 ## 2. Bootstrap
 
-Create the repository from the composed template, add the project identity and lockfile, initialize the first SDD change and run baseline validation.
+Create the repository from the composed template, populate `specs/product/overview.md` and supporting files when needed, add the project identity and lockfile, initialize the first SDD change with references to the product context, and run baseline validation. Present the product draft and evidence gaps for review separately from structural readiness.
 
 Use the version-matched [composition guide](../../../project-templates/README.md) to distinguish consumer artifacts from the installed Plugin package. Record artifact purpose, executor and dependencies in the generated architecture documentation. Keep authoring placeholders and examples separate from active project capabilities.
 

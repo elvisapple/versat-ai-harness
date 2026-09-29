@@ -79,6 +79,8 @@ I approve Design R1. Proceed to Tasks.
 
 The chat generates `tasks.md` after Design approval. Each task has a stable ID, requirement references, dependencies and a verifiable completion condition. The plan covers implementation, testing and documentation actually needed for the change.
 
+First-use documentation follows the resolved [Documentation Standard](../standards/core/documentation.md): plan updates to the existing guide or create one when useful product behavior needs explanation. Keep this work with the affected functionality. The [Testing Standard](../standards/core/testing.md) guides coverage of relevant acceptance scenarios, including errors and boundaries. Existing scenarios, checks and tasks carry this work without additional SDD artifacts or gates.
+
 ```text
 I approve Tasks R1. Conclude planning.
 ```
@@ -99,7 +101,7 @@ If you concluded planning without authorizing execution:
 Use $versat-sdd to implement the approved home-greeting change.
 ```
 
-The skill checks that the approvals and upstream revisions are current, reads the implementation workflow, performs the tasks and runs appropriate development checks. It maintains task status and updates living product/architecture specifications alongside the implemented behavior.
+The skill checks that the approvals and upstream revisions are current, reads the implementation workflow, performs the tasks and runs appropriate development checks. It maintains task status and updates living product/architecture specifications and affected usage instructions alongside the implemented behavior.
 
 A material requirements or design change reopens the affected gate. Routine fixes inside the approved approach continue under the existing execution request. At handoff, the chat distinguishes completed implementation, pending validation, PR status and actual delivery.
 
@@ -110,6 +112,8 @@ Use $versat-sdd to validate home-greeting against its approved requirements.
 ```
 
 The skill traces requirements to Design's check plan, runs applicable tests/evals/validators, records actual evidence in `tasks.md` and prepares a PR summary. Check results identify what ran and its actual revision/run. The validation plan and the validation result are separate records.
+
+Validation also exercises changed documented commands or UI steps and checks their expected outcomes. Functional checks can supply the same evidence. Relevant scenarios with missing coverage or unavailable verification remain explicit gaps even when structural validation passes.
 
 A validation-only request produces findings and evidence; it does not authorize code fixes. You can request implementation and validation together when you want both. There is no additional mandatory human gate between those authorized phases.
 

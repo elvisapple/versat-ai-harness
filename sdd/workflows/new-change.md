@@ -12,6 +12,8 @@ Use the matching [templates](../templates/) and [schemas](../schemas/). Record r
 
 Create only `proposal.md` and `requirements.md`. Establish the observable need, actors, intended outcome, scope, exclusions, constraints, risks and acceptance scenarios. Use stable requirement IDs. Separate repository-backed facts from assumptions and unresolved decisions; clarify material ambiguities before approval. For a greeting button, establish its screen, label and accessible presentation rather than silently choosing a screen or blocking alert.
 
+Consider relevant success, error and boundary scenarios under the resolved [Testing Standard](../../standards/core/testing.md), keeping their depth proportional to risk.
+
 Set the combined review on Proposal to `awaiting-approval` when reviewable, or `blocked` with actual blockers. Check document consistency and run the planning validator for this change. Present both files and their current revision, then stop at Gate 1. Record the actual approval and matching Proposal/Requirements digest only after the developer accepts that revision. Approval unlocks Design.
 
 ## Stage 2: Design
@@ -20,11 +22,15 @@ Prerequisites: current Gate 1 approval, no material blockers, and resolved appli
 
 Map all approved requirements to the design and at least one required, identifiable check per requirement in `validation`. Identify actual test/eval/validator entry points and distinguish proposed checks from existing ones. Reference the applicable Standards/version. For significant structural decisions, follow the project's ADR convention; prepare and present real ADR drafts and references with this review. A required unresolved ADR remains a blocker.
 
+Explain how the checks cover relevant acceptance scenarios and affected documented usage under the resolved [Documentation Standard](../../standards/core/documentation.md). Reuse adequate existing checks; one method can cover multiple scenarios or serve both functional and documentation validation without new identifiers or reports.
+
 Set Design's upstream Proposal digest, check references/coverage, and run the planning validator. Present Design, checks, alternatives and ADRs; stop at Gate 2. Record approval for the reviewed Design digest before proceeding. If design discovery changes requirements, reopen Gate 1 using the process's revision rules.
 
 ## Stage 3: Tasks
 
 Prerequisite: current Gate 2 approval and its current upstream approval. Create `tasks.md` with ordered, independently verifiable tasks, stable task IDs, valid requirement references, dependencies and completion conditions. Cover the implementation, testing and documentation required by the approved scope. Do not add a task that can only complete after merge to the pre-merge completion gate; record authorized post-delivery operational follow-up separately.
+
+Include affected usage instructions and examples with the work that changes their behavior. Reuse living guides and existing task completion checks; changes without documented usage impact need no documentation task solely for ceremony.
 
 Keep future tasks `pending` and unchecked; use `blocked` with explanation for an actual unavailable prerequisite. Writing a plan completes no implementation task. Keep validation results empty and closure `active`. Bind Tasks to the current Proposal and Design digests, check requirement coverage and run the planning validator. Present the tasks, checks, dependencies and risks; stop at Gate 3.
 

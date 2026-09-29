@@ -10,6 +10,10 @@ See the [product overview](specs/product/overview.md) for the product context an
 
 Identify the accountable team and operational contact.
 
+## Getting started
+
+Apply the project's resolved Documentation Standard: replace this prompt with a descriptive link to the actual first-use guide or README section when meaningful usage instructions exist. Omit this section otherwise; do not leave a placeholder link.
+
 ## Development
 
 Document setup, validation and release entry points.

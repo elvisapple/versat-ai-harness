@@ -19,6 +19,15 @@
         "tasks.md": "f3fefbfe7063546c131d267225967ab54432aa0358e5aa17f096329a560b169b"
       }
     },
+    "bootstrap-product-context": {
+      "reason": "Authored against the pre-v2 SDD contract on a parallel branch and integrated after v2 without migration; preserved unchanged without asserting retrospective review approvals or validation evidence.",
+      "files": {
+        "proposal.md": "dfa94dc048c584df3174cea65c94bd67096ab814c58d1d1739a5ddfe7362bce1",
+        "requirements.md": "47f20aac41d0da41d13352e99894d816339561f7ec0db97d11b4f86e1871815e",
+        "design.md": "eb4c8357ecc214489aa1847141fd0283aee7391b1eefb021dbee2814cabf84fd",
+        "tasks.md": "ac65d6c4bee644765d49edb4d24c5d9a8e3396aae3172de7e550acdb0b22576a"
+      }
+    },
     "root-plugin-package": {
       "reason": "Completed before SDD v2; preserved unchanged rather than inventing review approvals or validation evidence.",
       "files": {

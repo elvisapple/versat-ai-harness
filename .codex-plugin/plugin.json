@@ -1,6 +1,6 @@
 {
   "name": "versat-ai-harness",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Governance, SDD, bootstrap and audits for AI-assisted Versat projects.",
   "author": {
     "name": "Versat"

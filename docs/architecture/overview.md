@@ -125,6 +125,8 @@ As recorded in [ADR-0013](../decisions/0013-consolidated-sdd-workflow.md), docum
 
 This version makes the source repository a self-contained portable Plugin package and defines workspace distribution metadata. Remote repository creation, automated workspace import, consumer release resolution, GitHub organization configuration and technology-specific semantic validators are not yet part of the executable implementation.
 
-The unreleased consolidation adds local SDD contract validation and executable regression tests. It does not add a workflow engine, GitHub approval integration or automatic release publication. Installed consumers are not changed by edits to this source checkout.
+## Version 0.3.0 boundaries
 
-The unreleased consumer artifact revision changes templates and guidance. Automated project composition, operational workflow execution and semantic validation of consumer agent artifacts are not implemented by it. Local validation checks Plugin structure and recorded SDD consistency; consumer loading and workflow behavior require separate verification.
+The SDD consolidation adds local contract validation and executable regression tests. It does not add a workflow engine, GitHub approval integration or automatic release publication. Installed consumers are not changed by edits to this source checkout.
+
+The consumer artifact revision changes templates and guidance. Automated project composition, operational workflow execution and semantic validation of consumer agent artifacts are not implemented by it. Local validation checks Plugin structure and recorded SDD consistency; consumer loading and workflow behavior require separate verification.

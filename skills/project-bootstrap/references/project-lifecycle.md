@@ -10,9 +10,13 @@ Create the repository from the composed template, populate `specs/product/overvi
 
 Use the version-matched [composition guide](../../../project-templates/README.md) to distinguish consumer artifacts from the installed Plugin package. Record artifact purpose, executor and dependencies in the generated architecture documentation. Keep authoring placeholders and examples separate from active project capabilities.
 
+Apply the resolved [Documentation Standard](../../../standards/core/documentation.md) to actual usable behavior when populating the base README's first-use entry point. Follow the composition guide's conditional authoring instructions; product ambitions alone do not supply runnable usage content.
+
 ## 3. Repository readiness
 
 Verify ownership, default branch protection, required checks, secret scanning, dependency update policy and access boundaries before normal delivery begins.
+
+Verify any emitted README guide link and affected documented steps against actual behavior under the resolved Standards. Report unavailable verification separately from a successful structural check.
 
 For projects with operational workflows, verify their bindings and executor support under the resolved Standards. A successful Plugin validation does not establish that external integrations or consumer agents work.
 

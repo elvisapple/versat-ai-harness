@@ -11,6 +11,9 @@ infrastructure = base + infrastructure
 ```
 
 The base includes [the product overview template](base/specs/product/overview.md) for all profiles. During bootstrap, populate it through the project-bootstrap Skill's guided discovery. Supporting product documents are created only when the collected content warrants them; profile modules do not copy or redefine the shared overview.
+
+The base README's Getting started prompt is conditional. Apply the resolved [Documentation Standard](../standards/core/documentation.md#first-use-guides) to actual usable behavior: populate the link to existing first-use content or omit the section. Do not copy the authoring prompt into a finished README, generate an empty guide or add guide directories to every profile. Create useful content and its README link together when behavior is available; preserve existing documentation conventions during adoption.
+
 ## Composition
 
 Structure manifests describe directories to create. Copy the base files, then overlay the selected modules' content at project-relative paths, including hidden directories. `structure.yaml` and `composition.yaml` are composition metadata, not generated project files. Identical shared directories are allowed; conflicting file destinations must fail rather than overwrite content. Preserve project-specific content during upgrades.

@@ -14,3 +14,5 @@ Use to assess a change's actual acceptance evidence. Read the [process](../proce
 ## Exit
 
 Return requirement coverage, executed checks, failures, unknowns and evidence links. When fixes were not authorized, describe them and stop; do not modify product code. A passing local result permits preparation of documentary closure when requested, not a claim of completed delivery. If that preparation is authorized, read [Archive change](archive-change.md); otherwise state the next permitted action.
+
+A request to submit a completed implementation for PR review includes its routine documentary archive preparation. Follow Archive change before publishing the delivery PR or marking an existing draft ready. An explicitly limited request for a planning/draft PR or validation report may retain an active dossier; state the remaining closure work without presenting it as ready for delivery.

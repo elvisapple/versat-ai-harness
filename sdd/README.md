@@ -130,6 +130,8 @@ The skill checks current approvals, completed tasks, passing required checks and
 
 This prepares the dossier in the implementation branch before merge. The archive folder is not evidence of delivery. A draft PR may already exist; preparation belongs to that same PR. Publication occurs when explicitly requested or already included in the authorized delivery scope. PR review and final required checks follow the repository's policies; planning approval does not replace them.
 
+When you ask to submit a completed implementation for PR review, this archive preparation is part of the request. The agent confirms the archive path, `closure: prepared` and passing delivery validation in the existing PR summary. A planning/draft PR may still have an active dossier, with the remaining closure work stated explicitly.
+
 Review feedback stays in the same branch and change ID. An unmerged archived dossier can be revised. Scope/design changes reopen gates; checks must be rerun after implementation changes. The dossier can move back to active storage while replanning. It cannot claim delivery readiness with stale approvals or evidence simply because it was previously archived.
 
 ## 5. Confirm delivery after merge
@@ -144,6 +146,19 @@ and summarize its delivery status.
 This is a read-only confirmation. Actual Git/PR evidence and final checks establish delivery status. If those cannot be observed, the chat says unverified. It does not infer delivery from completed tasks, a proposal status or the archive path. Deployment is reported separately.
 
 Record actual tested revisions/runs; do not require a document to contain the SHA of the commit that contains that same document. The platform records the final merge. Migration/closure of older changes may need a maintenance PR, but it does not recursively create another functional SDD change. New behavior after delivery receives a new change ID.
+
+Use the existing sources to distinguish delivery states:
+
+| State | Evidence |
+|---|---|
+| Documentary closure prepared | Dossier in `specs/archive/<change-id>/`, `closure: prepared` and passing delivery checks. |
+| Integrated into the default branch | Observed merged PR and merge commit. |
+| Published | A release or artifact version containing that change. |
+| Available in an environment | Observed deployment or installed version, including feature enablement where applicable. |
+
+Keep living product specifications and usage guides in their normal locations; archive only the change dossier. For the Harness itself, a merge does not update installed plugins or consumer projects: they adopt an explicit release.
+
+After merge, cleanup follows the [Git Standard](../standards/core/git.md#branch-and-worktree-cleanup). A branch created from a worktree can be deleted on GitHub; that does not remove its local branch or worktree. Reuse a suitable active worktree or retire it through the managing app when no longer needed. Cleanup can be included in the delivery request; a request only to inspect status remains read-only.
 
 ## Approvals, changes and resumption
 

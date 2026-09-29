@@ -9,7 +9,7 @@ Prerequisites: authorized preparation, current planning approvals, no material b
 1. Review the implementation and living specifications against the approved scope and recorded evidence. Preserve history, actual approval records, stable IDs and ADR links. Resolve unfinished required work; do not relabel it as future work merely to pass closure.
 2. Move the unique dossier from `specs/changes/<change-id>/` to `specs/archive/<change-id>/` in the same working branch. Set Tasks `closure: prepared`. Keep evidence at stable locations and update affected repository links. Do not create a second copy or fabricate a merge record.
 3. Recheck all affected references and rerun the applicable checks, including SDD delivery validation, on the resulting branch content. A changed plan/link that participates in a digest follows the normal reapproval rules; prefer stable references to avoid needless invalidation. Report readiness only after the final checks pass.
-4. Prepare the delivery summary. If a draft PR already exists and publication is authorized, use that same PR. Otherwise publish only when authorized. Keep PR review and final required CI checks as separate delivery requirements.
+4. Before submitting the completed implementation for PR review, confirm that its unique dossier is in `specs/archive/<change-id>/`, Tasks has `closure: prepared`, living documentation remains outside the dossier and delivery validation passes on the resulting content. A package-wide validation pass alone does not establish that this preparation happened. Include the dossier path and validation result in the existing PR summary; no separate checklist file is needed. If a draft PR already exists and publication is authorized, use that same PR. Otherwise publish only when authorized. Keep PR review and final required CI checks as separate delivery requirements.
 
 An unmerged archived dossier remains revisable in the same change and branch. Review fixes rerun the affected checks; material planning changes reopen the relevant gates and can move the dossier back to active storage with `closure: active`. Archive location/prepared closure enforces delivery eligibility, so a dossier with newly stale approvals or evidence fails until corrected. Do not treat the prior archival move as permission to bypass review.
 
@@ -20,6 +20,8 @@ When asked to check delivery, inspect actual Git/PR merge evidence and final che
 Merge brings code, living specifications and the dossier to the default branch together. No mandatory second branch, commit or PR is needed to write that the first PR merged. Do not require a self-referential final commit SHA in the dossier. Preserve recorded tested revisions/runs; the platform records the actual merge result.
 
 Administrative migration/closure of existing changes can use a reviewed maintenance PR without recursively creating another functional SDD change. New behavior or an out-of-scope defect after delivery starts a new change ID. Preserve the delivered dossier's history.
+
+When post-merge cleanup is requested or included in the authorized delivery scope, apply the resolved [Git Standard](../../standards/core/git.md#branch-and-worktree-cleanup) to remote branches, local branches and worktrees. Report what was retired or retained and any remaining dependency. A status-only request remains read-only.
 
 ## Handoff
 

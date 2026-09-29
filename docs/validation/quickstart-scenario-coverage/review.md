@@ -6,8 +6,9 @@ This is evidence for the approved change, not a reusable report template or a co
 - Base commit: `0b0471f7b0fcaa0e4784892197439f8c61ffba48`
 - Tested source snapshot: `671e90e76e44aced6859b8f5a8abd20b244b6ae016ea3aedcb4fa07ab3cfa406`
 - Approved Tasks plan digest: `aa7006716772e96fa2f356a714418c03af7f3d9adcca09998bbf3eee6f14ce67`
+- Compatibility recheck: 2026-09-29T21:22:56Z; `sdd/legacy-changes.json` SHA-256 `65f3ba86bffe56116c65ba07123d2281eeb2e0ce649bb7881a82dede934ae097`
 
-The snapshot is SHA-256 of Python `json.dumps(files, sort_keys=True).encode()` for the source file/hash mapping below. It covers the nine implementation files, not this evidence file or SDD bookkeeping. No merge, remote CI or consumer adoption is claimed.
+The source snapshot is SHA-256 of Python `json.dumps(files, sort_keys=True).encode()` for the source file/hash mapping below. It covers the nine implementation files, not this evidence file or SDD bookkeeping. The later compatibility manifest is identified by its own hash. No merge, remote CI or consumer adoption is claimed.
 
 ## CHECK-001 — First-use decisions and illustrative layouts: pass
 
@@ -70,19 +71,38 @@ The numerical examples are review inputs, not executed product tests or normativ
 
 ## CHECK-004 — Scope, composition and links: pass
 
-- Exactly the nine approved implementation files changed. The change dossier and this evidence file are additional records, not new consumer artifacts.
+- The original implementation changed exactly the nine approved guidance files. The change dossier and this evidence file are additional records, not new consumer artifacts. A later authorized correction registered one historical dossier in the existing legacy manifest; its four files remain byte-for-byte unchanged.
 - Forty-five local Markdown links/anchors in those files resolve. Temporary consumer README/guide links were also checked as described above.
 - Software, agent, library and infrastructure still extend base; hybrid still composes base, software and agent. No profile content was copied to introduce first-use rules.
 - `git diff --check` passed; new dossier/evidence files are reviewed separately for whitespace and links during final bookkeeping verification.
-- SDD schemas/templates, validators, tests, profile modules/manifests, VERSION, the legacy exemption manifest and the baseline failing dossier are unchanged.
+- SDD schemas/templates, validators, tests, profile modules/manifests, VERSION and the historical dossier are unchanged. The legacy exemption manifest now has the exact `bootstrap-product-context` ID, its four SHA-256 digests and the governance reason.
 - Policy is defined in Standards; procedures and bootstrap reference it. No new gate, report type, quickstart template, mandatory directory, language/security exception or consumer pin update was introduced.
 - The bootstrap Skill's preexisting duplicate workflow numbering is unchanged and outside this scope.
 
-## CHECK-005 — Required repository checks: fail
+## CHECK-005 — Required repository checks: pass after compatibility correction
 
-The package structure check and all 48 existing validator tests passed. This change's implementation-phase SDD validation passed. The full required entry point exited 1 because the existing `bootstrap-product-context` dossier lacks v2 metadata and has legacy-shaped Design checks. This failure was present before this implementation and its files are unchanged. It is not hidden, exempted or repaired by this change.
+The developer authorized the proposed correction with "Ok execute." The `bootstrap-product-context` dossier was authored against the pre-v2 contract on a parallel branch and integrated after v2 without migration. Its exact hashes now qualify it for the already documented legacy path. This warning does not verify historical approvals or evidence. No historical artifact or validation rule was modified.
 
-TASK-005 cannot complete until the required package-wide validation genuinely passes. The other four tasks can complete because their edits and focused checks passed. No delivery readiness is claimed.
+Command: `PYTHON=/private/tmp/versat-quickstart-validation/bin/python ./scripts/validate/run.sh`
+
+Exit status: `0`
+
+```text
+Portable Plugin package validation passed.
+SDD validation: pass
+WARNING LEGACY_EXEMPT: specs/changes/bootstrap-product-context: Immutable legacy dossier: v2 approval and evidence gates were not verified
+Ran 48 tests in 2.967s
+OK
+Versat AI Harness package, SDD contract and validator tests passed.
+```
+
+`git diff --check` and delivery-phase validation were repeated after the result and task status were updated. The approved Tasks digest remains `aa7006716772e96fa2f356a714418c03af7f3d9adcca09998bbf3eee6f14ce67`.
+
+### Earlier failure, retained for traceability
+
+The package structure check and all 48 existing validator tests passed. This change's implementation-phase SDD validation passed. The full required entry point exited 1 because the existing `bootstrap-product-context` dossier lacks v2 metadata and has legacy-shaped Design checks. This failure was present before this implementation and its files are unchanged. At that point it was not yet registered as a legacy dossier.
+
+At that point TASK-005 could not complete. The later authorized compatibility correction and passing package check supersede that status. Remote CI and human review remain outstanding.
 
 ### package
 
@@ -145,9 +165,9 @@ SDD validation: pass
 }
 ```
 
-## Final bookkeeping verification
+## Earlier bookkeeping verification
 
-Source hashes and all three approved planning digests are unchanged. Whitespace and local links in the four new dossier files and this evidence file were checked. After recording CHECK-005 as failed, implementation-phase validation correctly reports that failure too; the earlier pass above preceded result recording. Delivery assessment also rejects the blocked task. These results reflect the known package-wide failure, not stale approvals or malformed new metadata.
+Source hashes and all three approved planning digests were unchanged. Whitespace and local links in the four new dossier files and this evidence file were checked. After recording CHECK-005 as failed, implementation-phase validation correctly reported that failure too; the earlier pass above preceded result recording. Delivery assessment also rejected the blocked task. These are retained as the observed result before the authorized correction.
 
 ### Final implementation assessment
 
@@ -167,3 +187,16 @@ SDD validation: fail
 TASK_INCOMPLETE: specs/changes/quickstart-scenario-coverage/tasks.md: TASK-005 is not completed
 VALIDATION_FAILED: specs/changes/quickstart-scenario-coverage/tasks.md: CHECK-005 has a recorded failure
 ```
+
+## Current local delivery assessment
+
+After the separately authorized compatibility correction, TASK-005 is completed and CHECK-005 records the observed passing package run. The current Tasks plan digest remains `aa7006716772e96fa2f356a714418c03af7f3d9adcca09998bbf3eee6f14ce67`.
+
+```text
+PASS: git diff --check
+PASS: PYTHON=/private/tmp/versat-quickstart-validation/bin/python ./scripts/validate/run.sh
+PASS: /private/tmp/versat-quickstart-validation/bin/python validators/sdd/validate.py --root . --change quickstart-scenario-coverage --phase delivery
+PASS: Tasks approval digest matches the current task plan
+```
+
+The package entry point reports the expected `LEGACY_EXEMPT` warnings for immutable historical dossiers. Local delivery assessment does not assert that remote CI or a required human review has passed.

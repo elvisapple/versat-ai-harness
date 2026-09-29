@@ -46,7 +46,7 @@ tasks:
   - REQ-004
   - REQ-005
   - REQ-006
-  status: blocked
+  status: completed
 review:
   revision: 1
   state: approved
@@ -77,11 +77,11 @@ validation:
   - check: CHECK-004
     result: pass
     evidence: docs/validation/quickstart-scenario-coverage/review.md
-    revision: working-tree source snapshot 671e90e76e44aced6859b8f5a8abd20b244b6ae016ea3aedcb4fa07ab3cfa406; base 0b0471f7b0fcaa0e4784892197439f8c61ffba48
+    revision: source snapshot 671e90e76e44aced6859b8f5a8abd20b244b6ae016ea3aedcb4fa07ab3cfa406; compatibility manifest SHA-256 65f3ba86bffe56116c65ba07123d2281eeb2e0ce649bb7881a82dede934ae097
   - check: CHECK-005
-    result: fail
+    result: pass
     evidence: docs/validation/quickstart-scenario-coverage/review.md
-    revision: working-tree source snapshot 671e90e76e44aced6859b8f5a8abd20b244b6ae016ea3aedcb4fa07ab3cfa406; base 0b0471f7b0fcaa0e4784892197439f8c61ffba48
+    revision: source snapshot 671e90e76e44aced6859b8f5a8abd20b244b6ae016ea3aedcb4fa07ab3cfa406; compatibility manifest SHA-256 65f3ba86bffe56116c65ba07123d2281eeb2e0ce649bb7881a82dede934ae097
 closure: active
 ---
 
@@ -91,7 +91,7 @@ closure: active
 - [x] TASK-002 — Clarify proportional acceptance-scenario coverage in the Testing Standard and review coverage gaps and test reuse.
 - [x] TASK-003 — Apply documentation and scenario-coverage policy in existing SDD procedures and the developer guide, then verify representative change paths.
 - [x] TASK-004 — Align shared README and bootstrap guidance and verify conditional first-use links across base/profile composition.
-- [ ] TASK-005 — Complete integrated scope and link review, run required repository checks and record actual evidence without concealing baseline failures.
+- [x] TASK-005 — Complete integrated scope and link review, run required repository checks and record actual evidence without concealing baseline failures.
 
 ## Dependencies
 
@@ -139,12 +139,12 @@ The developer approved the presented Tasks R1 and explicitly authorized implemen
 
 ## Progress
 
-TASK-001 through TASK-004 are implemented and their focused checks passed. Nine existing source files changed; no new template, validator or consumer file was created. TASK-005 is blocked after the integrated checks ran: the preexisting `bootstrap-product-context` SDD schema failure still prevents a passing package-wide result. Its remediation remains outside this scope.
+TASK-001 through TASK-004 are implemented and their focused checks passed. Nine existing source files changed; no new template, validator or consumer file was created. The first integrated run left TASK-005 blocked by the preexisting `bootstrap-product-context` SDD schema failure. The developer subsequently authorized the proposed compatibility correction with "Ok execute." The exact historical dossier hashes were registered in the existing legacy manifest; no historical artifact or validator changed. The full package check then passed, completing TASK-005.
 
 ## Validation evidence
 
-CHECK-001 through CHECK-004 passed for the current source snapshot. CHECK-005 failed on the observed baseline issue; the package structure check and all 48 validator tests passed. This change's implementation-phase SDD validation passed before result recording and now correctly reports the recorded CHECK-005 failure; delivery validation also reports the blocked TASK-005. See [observations and command results](../../../docs/validation/quickstart-scenario-coverage/review.md) for the source manifest, illustrative layout checks, manual instruction walkthroughs and limitations. Evidence uses the approved Tasks plan digest and actual working-tree source snapshot, not an inferred merge revision.
+CHECK-001 through CHECK-004 passed for the current source snapshot. CHECK-004 was reviewed again after the authorized compatibility correction. CHECK-005 passed on the complete repository check: package structure, SDD contract and all 48 validator tests. The earlier failure remains in the [observations and command results](../../../docs/validation/quickstart-scenario-coverage/review.md), along with the source manifest, illustrative layout checks, manual instruction walkthroughs and limitations. Evidence uses the approved Tasks plan digest, actual working-tree source snapshot and the exact compatibility manifest hash, not an inferred merge revision.
 
 ## Delivery
 
-Closure remains active. Implementation and the task plan's checks are authorized. PR publication, documentary archive preparation, merge and release remain outside the authorized scope. Planning approval and local evidence do not assert delivery readiness or authorize those actions.
+Closure remains active while PR #8 receives its final CI run and required review. Implementation, the historical compatibility correction and PR publication were authorized in this conversation. Local checks do not assert remote CI or human review; merge and release remain separate decisions.

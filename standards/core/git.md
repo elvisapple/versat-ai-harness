@@ -10,6 +10,12 @@
 - Policy and Skill changes MUST identify reviewers through CODEOWNERS or equivalent organization rules.
 - Force pushes to protected branches MUST be disabled.
 
+## Branch and worktree cleanup
+
+- After a confirmed merge, work branches SHOULD be deleted when no unfinished work or dependent PR needs them. Default, release and other intentionally long-lived branches are excluded. Repository administrators MAY enable automatic deletion of merged PR head branches.
+- Remote branches, local branches and worktrees MUST be assessed separately. Deleting a remote branch does not remove a local branch or checkout. Before local cleanup, account for uncommitted changes, unpushed commits, needed ignored files and other users or processes relying on the checkout. Detach or switch an associated worktree before deleting its local branch.
+- A suitable active worktree MAY be reused for later work from the appropriate base. When retiring an app-managed worktree, use its supported archive/cleanup mechanism and preserve recoverable work. A merge alone does not require retiring a worktree or closing its chat; preserve worktrees that remain in use, pinned or shared.
+
 ## Story branch names
 
 New branches associated with a Shortcut Story MUST use:

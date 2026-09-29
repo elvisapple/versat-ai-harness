@@ -82,7 +82,7 @@ validation:
     result: pass
     evidence: docs/validation/quickstart-scenario-coverage/review.md
     revision: source snapshot 671e90e76e44aced6859b8f5a8abd20b244b6ae016ea3aedcb4fa07ab3cfa406; compatibility manifest SHA-256 65f3ba86bffe56116c65ba07123d2281eeb2e0ce649bb7881a82dede934ae097
-closure: active
+closure: prepared
 ---
 
 # Tasks
@@ -147,4 +147,4 @@ CHECK-001 through CHECK-004 passed for the current source snapshot. CHECK-004 wa
 
 ## Delivery
 
-Closure remains active while PR #8 receives its final CI run and required review. Implementation, the historical compatibility correction and PR publication were authorized in this conversation. Local checks do not assert remote CI or human review; merge and release remain separate decisions.
+The developer authorized this administrative closure after observing that PR #8 had merged with the dossier still active. PR #8 merged into `main` as commit `8980b93fa33d22e2e9d992d8b7b80c52c1e0c1cc`; its [final validation run](https://github.com/versat-private/versat-ai-harness/actions/runs/36633115202) passed. This maintenance change moves the existing dossier to documentary archive and records `closure: prepared` without changing its approved plan or historical check results. The archive is not evidence of a release, installation or deployment.

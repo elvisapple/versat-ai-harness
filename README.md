@@ -45,7 +45,7 @@ These artifacts can serve business operations as well as development. Workflows 
 
 ## Current state
 
-Version `0.2.0` makes this repository a self-contained portable Plugin package. Skills, standards, schemas, templates and the minimum validation pipeline are versioned together; external integrations and technology-specific validators will be implemented incrementally through SDD.
+Version `0.3.0` adds product discovery, first-use documentation and scenario coverage guidance to the portable Plugin package. It also consolidates SDD routing and local validation. Skills, standards, schemas, templates and validators remain versioned together; external integrations and technology-specific validators will be implemented incrementally through SDD.
 
 ## Local validation
 
@@ -64,13 +64,13 @@ The entry point checks the Plugin package, SDD metadata/gates/traceability and t
 
 Use the single `$versat-sdd` Skill to plan, implement, validate or prepare documentary archival. It reads the relevant canonical workflow instead of maintaining a parallel process. See the [SDD developer guide](sdd/README.md) for example requests, phase deliverables, human approvals and PR/merge handling, and [SDD metadata](sdd/metadata.md) for validation commands and migration rules.
 
-The consolidated process is an unreleased change. It prepares living specifications and the documentary archive in the same delivery PR; a directory or local status is never proof of merge. Previously generated `new-change` instructions are superseded by this single entry point. Consumers retain their pinned released version until a separately reviewed release update.
+The consolidated process prepares living specifications and the documentary archive in the same delivery PR; a directory or local status is never proof of merge. Previously generated `new-change` instructions are superseded by this single entry point. Consumers retain their pinned released version until a separately reviewed release update.
 
 ## Workspace installation
 
 The repository contains a private workspace marketplace at `.agents/plugins/marketplace.json`. Its Plugin entry selects an exact semantic release tag rather than a moving branch.
 
-After release `v0.2.0` is tagged, a ChatGPT Business workspace administrator can distribute it as follows:
+After release `v0.3.0` is tagged, a ChatGPT Business workspace administrator can distribute it as follows:
 
 1. Open **Admin > Plugins** and select **Add > Import marketplace**.
 2. Use `https://github.com/versat-private/versat-ai-harness` as the source repository and leave the marketplace path empty.

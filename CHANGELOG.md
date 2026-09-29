@@ -6,11 +6,15 @@ The format follows Keep a Changelog, and the project follows Semantic Versioning
 
 ## [Unreleased]
 
+## [0.3.0] - 2026-09-29
+
 ### Added
 
 - central SDD developer guide, structured review/evidence contracts and a stage-aware JSON Schema validator;
 - regression cases for approval freshness, traceability, delivery readiness and explicit legacy migration;
-- ADR-0013 governing single-Skill routing and documentary closure in the implementation PR.
+- ADR-0013 governing single-Skill routing and documentary closure in the implementation PR;
+- product discovery guidance and an overview template for project bootstrap;
+- a first-use quickstart in consumer project templates and explicit scenario coverage guidance for SDD validation.
 
 ### Changed
 
@@ -22,7 +26,8 @@ The format follows Keep a Changelog, and the project follows Semantic Versioning
 - clarified Plugin role guidance, SDD procedures and validation limits; recorded ADR-0012 for consumer artifacts and the `agent-project-layout` SDD change.
 - replaced the obsolete nested Plugin CODEOWNERS path with current Skills, role guidance and project-template ownership.
 - defined Shortcut-linked branch names and typed commit messages in the canonical Git Standard, preserving English technical descriptions and gradual adoption;
-- added Story traceability prompts to SDD and PR review, with explicit squash, parser compatibility and validation guidance.
+- added Story traceability prompts to SDD and PR review, with explicit squash, parser compatibility and validation guidance;
+- clarified merged-branch and worktree cleanup without treating a documentary archive path as proof of delivery.
 
 ### Removed
 

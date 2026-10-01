@@ -4,7 +4,7 @@ Use to prepare documentary closure in the implementation branch/PR, or to confir
 
 ## Prepare documentary closure before merge
 
-Prerequisites: authorized preparation, current planning approvals, no material blockers, completed tasks, consistent living specifications and actual passing required checks. Run `--change <change-id> --phase delivery` using the [SDD validator](../../validators/sdd/README.md). Failure or inability to verify blocks a readiness claim and the archival move. An exact legacy exemption is not enough; migrate with real records before closure.
+Prerequisites: authorized preparation, current planning approvals, no material blockers, completed tasks, consistent living specifications and actual passing required checks. Run `--change <change-id> --phase delivery` using the [SDD validator](../../validators/sdd/README.md). Failure or inability to verify blocks a readiness claim and the archival move for new delivery. An exact legacy exemption is not enough; migrate with real records before preparing delivery. For already merged legacy history, use the administrative procedure below.
 
 1. Review the implementation and living specifications against the approved scope and recorded evidence. Preserve history, actual approval records, stable IDs and ADR links. Resolve unfinished required work; do not relabel it as future work merely to pass closure.
 2. Move the unique dossier from `specs/changes/<change-id>/` to `specs/archive/<change-id>/` in the same working branch. Set Tasks `closure: prepared`. Keep evidence at stable locations and update affected repository links. Do not create a second copy or fabricate a merge record.
@@ -22,6 +22,12 @@ Merge brings code, living specifications and the dossier to the default branch t
 Administrative migration/closure of existing changes can use a reviewed maintenance PR without recursively creating another functional SDD change. New behavior or an out-of-scope defect after delivery starts a new change ID. Preserve the delivered dossier's history.
 
 When post-merge cleanup is requested or included in the authorized delivery scope, apply the resolved [Git Standard](../../standards/core/git.md#branch-and-worktree-cleanup) to remote branches, local branches and worktrees. Report what was retired or retained and any remaining dependency. A status-only request remains read-only.
+
+## Relocate already merged legacy history
+
+When authorized to correct historical storage, verify each legacy change's merge in the default branch and record the observed commit and evidence in its manifest entry using the [historical archive contract](../metadata.md#legacy-dossiers). Preserve dossier bytes, hashes and IDs; move the unique dossier to `specs/archive/` and update live incoming links. Preserve historical transcripts and validation logs as recorded.
+
+Run package validation and the default SDD check after the move. Review the maintenance diff and merge evidence through the normal PR controls. Report the result as historical archival, with v2 readiness unverified. Do not synthesize planning approvals, change old task evidence or claim `closure: prepared`. Explicit implementation/delivery validation must continue to report `unable-to-verify` for these legacy dossiers. New delivery and resumed execution follow the current contract above.
 
 ## Handoff
 

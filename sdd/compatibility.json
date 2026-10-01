@@ -1,0 +1,24 @@
+{
+  "version": 1,
+  "historical": {
+    "quickstart-scenario-coverage": {
+      "reason": "Delivered v2 scenario-coverage history preserved under ADR-0014; no v3 readiness claim.",
+      "files": {
+        "proposal.md": "3d1a90c15948ad32649992914307e5855ce76e0372eeac35afdc6c102324a1b5",
+        "requirements.md": "df4be0af2c453be8eab93b6122df2d4e658516f03b6ca5d2fd0b098ad682f23e",
+        "design.md": "7b346e616bae6212b5466f3b9d1957a803336059f265af6aaa6d8b3f01109614",
+        "tasks.md": "ace1b597daedae22a7b4545302a087911d9d466a0e8222560f571048279457b0"
+      }
+    }
+  },
+  "in_flight": {
+    "sdd-acceptance-regression": {
+      "reason": "ADR-0014 bounded introducing change; developer approved all three stages and authorized implementation. The developer explicitly authorized the presented relocation-only Proposal link amendment while preserving the approved plan; its previous digest remains in Proposal review history.",
+      "digests": {
+        "proposal": "f94ce3cf326057fa19ba58542c9e8ccbfa2226b9d916eb07f7367ceb4e5d9b66",
+        "design": "f04ed5cc2df7bac8f5a4181f9a9dabc9f99ee11260189ab71df5e96c195faaf4",
+        "tasks": "88506d87af07148903a82779fad85b6a2f3f6def79697aa809ce0d1b095b84ed"
+      }
+    }
+  }
+}

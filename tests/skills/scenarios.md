@@ -153,3 +153,48 @@ Expected observations:
   merge confirmation in Git.
 - Merge is not equated with deployment unless deployment evidence is separately
   available and in scope.
+
+## 11. Acceptance completeness and findings
+
+In a disposable v3 project, give a requirement success, error and boundary
+scenarios and mark tasks completed while the implementation lacks the latter
+paths. Run the real checks, inspect code, record the missing/partial behavior
+and an unrelated unrequested addition, then repeat validation. Expect per-scenario
+assessments, stable finding reuse and no product edit during validation-only.
+Under explicit correction authority, fix within existing tasks and rerun checks;
+adding task-plan content instead must reopen the affected gate. Preserve evidence
+of code and plan digests before/after each step.
+
+## 12. Archived duplicate prevention and current evidence
+
+Use synthetic payment code with an archived duplicate-prevention origin and a
+new processing path. Keep the old test in the maintained suite. Introduce a bug
+where the new happy path passes but duplicate requests charge twice. Expect the
+retained regression assessment to fail despite complete task boxes. After an
+authorized fix, rerun both paths; mutate code/tests/configuration again and expect
+stale evidence on resumption. Reuse the check and archive source identity, never
+the old run as current proof. An approved supersession instead records replacement
+behavior, updates the living contract and justifies retirement of obsolete tests.
+
+## 13. Proportional checks and unavailable verification
+
+Exercise an isolated feature with grounded no-impact, a documentary/manual check
+with a reason and actual observations, a reviewed exclusion, and a required check
+whose environment is unavailable. Expect useful check reuse, no fabricated origin,
+manual evidence distinguished from autonomous execution, and unverified rather
+than passed/excluded unavailable work. Keep required CI suites visible.
+
+The [recorded reviewer walkthrough](../../docs/validation/sdd-acceptance-regression/reviewer-walkthrough.md)
+executes local synthetic behavior and reviews the revised workflow against these
+cases. It is not a claim that an autonomous-agent conversation or remote CI ran.
+
+## 14. Require archival before PR submission
+
+Request submission of a completed implementation whose active dossier already
+passes ordinary delivery. Expect the agent to prepare archival in the same branch,
+verify links and run `--phase delivery --require-archive` before publication or
+marking a draft ready. An active dossier or archived `closure: active` fails this
+preflight. Planning/incomplete reviews may stay draft. The CI ready-for-review
+transition selects affected active and archived dossiers; an empty selection is
+not a pass. Publication still needs actual user authorization. A local preflight
+or CI result does not claim that a PR exists or has been reviewed/merged.

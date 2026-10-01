@@ -16,7 +16,7 @@ Intent -> Proposal + Requirements -> approval -> Design -> approval -> Tasks -> 
 |---|---|---|
 | Planning | [New change](workflows/new-change.md) | Three current human approvals; no material unresolved decision. |
 | Implementation | [Implement change](workflows/implement-change.md) | Approved tasks implemented, task progress truthful and living specifications consistent. |
-| Validation | [Validate change](workflows/validate-change.md) | Requirement coverage and actual required check results recorded; failures and unknowns reported. |
+| Validation | [Validate change](workflows/validate-change.md) | Every applicable scenario and retained regression assessed against current evidence; findings, failures and unknowns reported. |
 | Documentary closure | [Archive change](workflows/archive-change.md) | Delivery checks pass and dossier prepared in the same branch; merge remains a separate external fact. |
 
 Read and follow a procedure when entering its phase. These Markdown files are instructions, not commands that execute automatically. The same change can be resumed in another session; status-only requests do not authorize the next phase. Appropriate development checks are part of implementation. An explicitly requested implementation-and-validation workflow can continue between those phases without inventing a fourth planning gate.
@@ -38,7 +38,7 @@ Every change has one stable lowercase hyphen-case ID and one dossier in either `
 - `design.md`: requirement coverage, approach, relevant alternatives/risks, ADR references, planned checks and Design review.
 - `tasks.md`: requirement-linked tasks, dependencies, completion conditions, Tasks review, actual validation evidence and documentary closure state.
 
-Create only the current stage's files. A new change starts with Proposal and Requirements; Design and Tasks are absent until their upstream gate is approved. Templates and schemas in this release use the [v2 metadata contract](metadata.md). Drafts of necessary ADRs accompany Design. Current product/architecture documentation is updated with implementation, not to portray a proposed feature as delivered.
+Create only the current stage's files. A new change starts with Proposal and Requirements; Design and Tasks are absent until their upstream gate is approved. Templates and schemas in this release use the [v3 metadata contract](metadata.md). Drafts of necessary ADRs accompany Design. Current product/architecture documentation is updated with implementation, not to portray a proposed feature as delivered.
 
 Small changes may use concise documents and explain why a concern is not applicable. Higher risk requires deeper alternatives, rollout, rollback and observability analysis. Proportionality changes depth, not the gates or traceability.
 
@@ -78,4 +78,22 @@ Administrative closure of an already governed change references that change and 
 
 Use the [SDD validator](../validators/sdd/README.md) with `planning`, `implementation` or `delivery` phase as appropriate. Planning allows missing later-stage files; implementation requires the complete approved plan; delivery additionally requires completion and actual evidence. `fail` and `unable-to-verify` both prevent a readiness claim. Archive location and prepared closure enforce delivery eligibility even in the default planning check.
 
-Exact legacy dossiers may be grandfathered through the explicitly reviewed manifest described in [metadata](metadata.md#legacy-dossiers). That exemption preserves history and is never proof of current approvals or readiness. Starting or resuming execution on a legacy dossier requires a reviewable v2 migration with real approval/evidence records. Do not fabricate retrospective approvals or silently weaken gates to make CI pass.
+Exact legacy dossiers may be grandfathered through the explicitly reviewed manifest described in [metadata](metadata.md#legacy-dossiers). That exemption preserves history and is never proof of current approvals or readiness. Starting or resuming execution on a legacy dossier requires a reviewable v3 migration with real approval/evidence records. Do not fabricate retrospective approvals or silently weaken gates to make CI pass.
+
+## Acceptance, regression and evidence
+
+Proposal records reviewed impact on effective contracts, with qualified historical origins when available. Design maps every acceptance array position and preserve/extend obligation to checks, or an approved local exclusion. Scenarios remain positions bound to the approved requirement revision; there is no separate catalog. Required suites remain in the plan.
+
+Validation compares actual code and documented behavior with all scenarios, records individual assessments and tracks stable findings. Ordinary authorized corrections reuse approved tasks; new task content reopens Tasks, and broader changes reopen the earliest affected gate. A validation-only request records gaps without fixing product code. Missing environments remain unverified. Use the existing workflow for correction and revalidation, without an extra public command or approval gate.
+
+v3 results bind before/after declared input snapshots. Live validation compares them with current files; historical archive inventory checks stored consistency without rehashing obsolete inputs. Explicit selected delivery is always live. CI supplies a trusted baseline to select new/changed archive dossiers; an absent baseline object fails. Inventory without a baseline does not certify changed archives for delivery.
+
+Existing v2 dossiers require exact reviewed compatibility in `sdd/compatibility.json`: historical bytes or in-flight approved stage digests. Neither exemption establishes v3 assurance. New work uses v3, and substantive v2 replanning requires reviewed migration. See [compatibility](metadata.md#v2-compatibility).
+
+## Enforcement before PR submission
+
+Submitting completed implementation for PR review, or marking its draft PR ready, includes documentary archive preparation. Before that remote action, run selected delivery with `--require-archive`; it requires the unique dossier under `specs/archive/<id>/`, Tasks `closure: prepared`, current approvals, completion and current passing evidence. Ordinary `--phase delivery` deliberately remains usable before the move to establish its prerequisites; it alone does not certify archive preparation.
+
+Planning or incomplete implementation reviews stay in a draft PR and may retain an active dossier. The CI guard runs for non-draft PRs, when a draft becomes ready, and for pushes to main. Its trusted baseline selects affected dossiers from both active and archive paths, so leaving a completed dossier active cannot escape selection. Empty selection, missing dossiers or unavailable baseline objects fail explicitly. Unchanged historical/active dossiers remain inventory, not forced migration or archival.
+
+The existing required-check/platform controls must require the validation job before merge. Local preflight supplies the pre-publication check; CI can reject an already-created noncompliant PR but cannot prevent every client from creating one. Neither check grants remote publication authority. A draft flag alone is not permission to submit completed work without preparing it.

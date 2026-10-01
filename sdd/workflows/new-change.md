@@ -39,3 +39,11 @@ After approval, record the actual source, quote and matching Tasks digest, then 
 ## Corrections and handoff
 
 Use the process's gate and revision rules for feedback and resumption; do not create later-stage placeholders to satisfy validation. Keep only the earliest unfinished stage active while dependent drafts are superseded. Every handoff states change ID, stage/revision, files, unresolved decisions, the requested approval and what it unlocks. Do not claim implementation or test success from a completed planning phase.
+
+## v3 planning records
+
+At Gate 1, populate Proposal `impact`: inspect affected living contracts, code and maintained tests, then related active/archive requirements. Record a qualified source and canonical Requirements digest when available, plus the current contract path/locator and pre-change file digest, or a captured Proposal baseline. Classify preserve, extend or intentional supersede with local targets and reasons. A reviewed no-impact conclusion uses assessed/empty items with a concrete summary; unresolved impact cannot advance readiness.
+
+At Gate 2, map all one-based acceptance positions in Design `coverage`, including justified not-applicable rows. Map every preserved/extended source scenario in `regression` by impact item position and source scenario (use zero only without a historical source). Specify check method, expected observations, input roots/exclusions, output paths and local/CI context. Reuse adequate maintained tests; plan missing regression work. Supersession needs reviewed replacement behavior/checks, not merely removal of failing tests. Inspect scope adequacy; the validator only verifies declared relationships.
+
+At Gate 3, keep `validation.results`, `assessments` and `findings` empty until actual execution/review. Changes to any substantive mapping reopen the relevant gate. An existing bounded v2 plan can finish unchanged, but new or materially replanned work adopts v3 through genuine review.

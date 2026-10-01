@@ -1,0 +1,130 @@
+$schema: https://json-schema.org/draft/2020-12/schema
+$id: urn:versat:sdd:v3:proposal
+title: Versat SDD version 3 proposal metadata
+type: object
+additionalProperties: false
+required:
+- sdd_version
+- change
+- status
+- owner
+- summary
+- review
+- impact
+properties:
+  sdd_version:
+    const: 3
+  change:
+    $ref: urn:versat:sdd:common#/$defs/change
+  status:
+    enum:
+    - draft
+    - proposed
+    - accepted
+    - rejected
+    - implemented
+    - archived
+  owner:
+    $ref: urn:versat:sdd:common#/$defs/text
+  summary:
+    $ref: urn:versat:sdd:common#/$defs/text
+  risk:
+    enum:
+    - low
+    - medium
+    - high
+  review:
+    allOf:
+    - $ref: urn:versat:sdd:common#/$defs/review
+    - properties:
+        upstream:
+          maxProperties: 0
+  impact:
+    type: object
+    additionalProperties: false
+    required:
+    - state
+    - summary
+    - items
+    properties:
+      state:
+        enum:
+        - assessed
+        - unresolved
+      summary: &id001
+        type: string
+        minLength: 1
+        pattern: \S
+      items:
+        type: array
+        minItems: 0
+        items:
+          type: object
+          additionalProperties: false
+          required:
+          - current_contract
+          - effect
+          - targets
+          - reason
+          properties:
+            source:
+              type: object
+              additionalProperties: false
+              required:
+              - change
+              - requirement
+              - scenarios
+              - requirements_digest
+              properties:
+                change: &id003
+                  type: string
+                  pattern: ^[a-z0-9]+(?:-[a-z0-9]+)*$
+                requirement:
+                  type: string
+                  pattern: ^REQ-[0-9]{3,}$
+                scenarios:
+                  type: array
+                  minItems: 1
+                  items:
+                    type: integer
+                    minimum: 1
+                  uniqueItems: true
+                requirements_digest: &id002
+                  type: string
+                  pattern: ^[a-f0-9]{64}$
+            current_contract:
+              oneOf:
+              - type: object
+                additionalProperties: false
+                required:
+                - path
+                - locator
+                - digest
+                properties:
+                  path: *id001
+                  locator: *id001
+                  digest: *id002
+              - type: object
+                additionalProperties: false
+                required:
+                - change
+                - artifact
+                - locator
+                properties:
+                  change: *id003
+                  artifact:
+                    const: proposal
+                  locator: *id001
+            effect:
+              enum:
+              - preserve
+              - extend
+              - supersede
+            targets:
+              type: array
+              minItems: 1
+              items:
+                type: string
+                pattern: ^REQ-[0-9]{3,}$
+              uniqueItems: true
+            reason: *id001

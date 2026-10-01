@@ -2,6 +2,7 @@ name: Validate Harness
 
 on:
   pull_request:
+    types: [opened, synchronize, reopened, ready_for_review, converted_to_draft]
   push:
     branches: [main]
 
@@ -13,6 +14,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
@@ -21,4 +24,13 @@ jobs:
       - name: Install validation dependencies
         run: python -m pip install -r requirements-validation.txt
       - name: Validate repository contracts
-        run: ./scripts/validate/run.sh
+        env:
+          SDD_REQUIRE_ARCHIVE: ${{ github.event_name == 'push' || github.event.pull_request.draft == false }}
+          SDD_BASELINE: ${{ github.event.pull_request.base.sha || github.event.before }}
+        run: |
+          test -n "$SDD_BASELINE"
+          if [[ "$SDD_REQUIRE_ARCHIVE" == "true" ]]; then
+            ./scripts/validate/run.sh --baseline "$SDD_BASELINE" --require-archive
+          else
+            ./scripts/validate/run.sh --baseline "$SDD_BASELINE"
+          fi

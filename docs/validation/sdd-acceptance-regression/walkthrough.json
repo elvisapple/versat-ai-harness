@@ -1,0 +1,665 @@
+{
+  "kind": "Executed local reviewer walkthrough; not an autonomous-agent evaluation",
+  "environment": {
+    "python": "3.11.4",
+    "platform": "macOS-26.5.2-arm64-arm-64bit"
+  },
+  "synthetic_approval_notice": "All disposable approval records are synthetic test data.",
+  "steps": [
+    {
+      "action": "Validation-only: execute checks, inspect code, record and reuse findings; no product edits.",
+      "checks": [
+        {
+          "check": "CHECK-001",
+          "outcome": "pass",
+          "before": "6ef66262d80cdb4bf23e29c449864bc42414dc141df9ca5d7e1ce069e6258ecf",
+          "after": "6ef66262d80cdb4bf23e29c449864bc42414dc141df9ca5d7e1ce069e6258ecf",
+          "command": [
+            "/private/tmp/versat-sdd-acceptance-venv/bin/python",
+            "-m",
+            "unittest",
+            "discover",
+            "-s",
+            "tests",
+            "-p",
+            "test_payments.py",
+            "-k",
+            "success"
+          ],
+          "exit": 0,
+          "stdout": "",
+          "stderr": ".\n----------------------------------------------------------------------\nRan 1 test in 0.000s\n\nOK\n"
+        },
+        {
+          "check": "CHECK-002",
+          "outcome": "fail",
+          "before": "6ef66262d80cdb4bf23e29c449864bc42414dc141df9ca5d7e1ce069e6258ecf",
+          "after": "6ef66262d80cdb4bf23e29c449864bc42414dc141df9ca5d7e1ce069e6258ecf",
+          "command": [
+            "/private/tmp/versat-sdd-acceptance-venv/bin/python",
+            "-m",
+            "unittest",
+            "discover",
+            "-s",
+            "tests",
+            "-p",
+            "test_payments.py",
+            "-k",
+            "error_boundary"
+          ],
+          "exit": 1,
+          "stdout": "",
+          "stderr": "F\n======================================================================\nFAIL: test_error_boundary (test_payments.Payments.test_error_boundary)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/private/var/folders/np/9dxskpmn3yx_ccmygffzkz9h0000gn/T/versat-sdd-test-0noc1wwf/tests/test_payments.py\", line 13, in test_error_boundary\n    with self.assertRaises(ValueError):\nAssertionError: ValueError not raised\n\n----------------------------------------------------------------------\nRan 1 test in 0.000s\n\nFAILED (failures=1)\n"
+        },
+        {
+          "check": "CHECK-003",
+          "outcome": "fail",
+          "before": "6ef66262d80cdb4bf23e29c449864bc42414dc141df9ca5d7e1ce069e6258ecf",
+          "after": "6ef66262d80cdb4bf23e29c449864bc42414dc141df9ca5d7e1ce069e6258ecf",
+          "command": [
+            "/private/tmp/versat-sdd-acceptance-venv/bin/python",
+            "-m",
+            "unittest",
+            "discover",
+            "-s",
+            "tests",
+            "-p",
+            "test_payments.py",
+            "-k",
+            "duplicate"
+          ],
+          "exit": 1,
+          "stdout": "",
+          "stderr": "F\n======================================================================\nFAIL: test_duplicate (test_payments.Payments.test_duplicate)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/private/var/folders/np/9dxskpmn3yx_ccmygffzkz9h0000gn/T/versat-sdd-test-0noc1wwf/tests/test_payments.py\", line 19, in test_duplicate\n    self.assertEqual(10, payments.pay(\"synthetic-1\", 10))\nAssertionError: 10 != 20\n\n----------------------------------------------------------------------\nRan 1 test in 0.000s\n\nFAILED (failures=1)\n"
+        }
+      ],
+      "findings": [
+        {
+          "id": "FIND-001",
+          "source": {
+            "local": {
+              "requirement": "REQ-001",
+              "scenario": 2
+            }
+          },
+          "category": "partial",
+          "state": "open",
+          "evidence": "docs/evidence/payment.txt",
+          "description": "Zero and negative amounts are accepted; error handling is absent.",
+          "tasks": [
+            "TASK-001"
+          ],
+          "checks": [
+            "CHECK-002"
+          ]
+        },
+        {
+          "id": "FIND-002",
+          "source": {
+            "regression": {
+              "impact": 1,
+              "scenario": 1
+            }
+          },
+          "category": "contradicts",
+          "state": "open",
+          "evidence": "docs/evidence/payment.txt",
+          "description": "A repeated request charges twice despite the retained contract.",
+          "tasks": [
+            "TASK-001"
+          ],
+          "checks": [
+            "CHECK-003"
+          ]
+        },
+        {
+          "id": "FIND-003",
+          "source": {
+            "plan": "Proposal baseline excludes export and requires auditing."
+          },
+          "category": "unrequested",
+          "state": "open",
+          "evidence": "docs/evidence/payment.txt",
+          "description": "AUDIT_DISABLED and export_all_customers contradict/exceed the approved scope.",
+          "tasks": [
+            "TASK-001"
+          ],
+          "checks": [
+            "CHECK-001"
+          ]
+        }
+      ],
+      "validator": {
+        "status": "fail",
+        "phase": "delivery",
+        "checked": [
+          "greeting-button"
+        ],
+        "findings": [
+          {
+            "code": "VALIDATION_FAILED",
+            "message": "CHECK-002 has a recorded failure",
+            "path": "/private/var/folders/np/9dxskpmn3yx_ccmygffzkz9h0000gn/T/versat-sdd-test-0noc1wwf/specs/changes/greeting-button/tasks.md",
+            "severity": "error"
+          },
+          {
+            "code": "VALIDATION_FAILED",
+            "message": "CHECK-003 has a recorded failure",
+            "path": "/private/var/folders/np/9dxskpmn3yx_ccmygffzkz9h0000gn/T/versat-sdd-test-0noc1wwf/specs/changes/greeting-button/tasks.md",
+            "severity": "error"
+          },
+          {
+            "code": "ACCEPTANCE_FAILED",
+            "message": "{\"local\":{\"requirement\":\"REQ-001\",\"scenario\":2}}",
+            "path": "/private/var/folders/np/9dxskpmn3yx_ccmygffzkz9h0000gn/T/versat-sdd-test-0noc1wwf/specs/changes/greeting-button/tasks.md",
+            "severity": "error"
+          },
+          {
+            "code": "ACCEPTANCE_FAILED",
+            "message": "{\"regression\":{\"impact\":1,\"scenario\":1}}",
+            "path": "/private/var/folders/np/9dxskpmn3yx_ccmygffzkz9h0000gn/T/versat-sdd-test-0noc1wwf/specs/changes/greeting-button/tasks.md",
+            "severity": "error"
+          },
+          {
+            "code": "ACCEPTANCE_GAP",
+            "message": "FIND-001: Zero and negative amounts are accepted; error handling is absent.",
+            "path": "/private/var/folders/np/9dxskpmn3yx_ccmygffzkz9h0000gn/T/versat-sdd-test-0noc1wwf/specs/changes/greeting-button/tasks.md",
+            "severity": "error"
+          },
+          {
+            "code": "ACCEPTANCE_GAP",
+            "message": "FIND-002: A repeated request charges twice despite the retained contract.",
+            "path": "/private/var/folders/np/9dxskpmn3yx_ccmygffzkz9h0000gn/T/versat-sdd-test-0noc1wwf/specs/changes/greeting-button/tasks.md",
+            "severity": "error"
+          },
+          {
+            "code": "ACCEPTANCE_GAP",
+            "message": "FIND-003: AUDIT_DISABLED and export_all_customers contradict/exceed the approved scope.",
+            "path": "/private/var/folders/np/9dxskpmn3yx_ccmygffzkz9h0000gn/T/versat-sdd-test-0noc1wwf/specs/changes/greeting-button/tasks.md",
+            "severity": "error"
+          }
+        ],
+        "warnings": [],
+        "metrics": {
+          "greeting-button": {
+            "local_scenarios": 2,
+            "regression_obligations": 1,
+            "assessed": 3,
+            "results": 3,
+            "open_findings": 3,
+            "stale_results": 0,
+            "requirements": {
+              "REQ-001": "fail"
+            }
+          }
+        },
+        "live_archives": [],
+        "archive_required": [],
+        "scope": "Declared contract checks only; archive inventory is historical unless selected for live delivery. No proof of semantic adequacy, execution authenticity, human identity, remote CI, merge or deployment."
+      },
+      "source_unchanged": true,
+      "finding_count_after_repeat": 3
+    },
+    {
+      "action": "Authorized correction within the existing task; remove unrequested behavior, retain tests and rerun.",
+      "diff": "--- before.py\n+++ after.py\n@@ -1,9 +1,8 @@\n balances = {}\n-AUDIT_DISABLED = True\n \n def pay(request_id, amount):\n-    balances[request_id] = balances.get(request_id, 0) + amount\n+    if amount <= 0:\n+        raise ValueError(\"amount must be positive\")\n+    if request_id not in balances:\n+        balances[request_id] = amount\n     return balances[request_id]\n-\n-def export_all_customers():\n-    return [\"synthetic-customer\"]\n",
+      "stale_before_rerun": {
+        "status": "fail",
+        "phase": "delivery",
+        "checked": [
+          "greeting-button"
+        ],
+        "findings": [
+          {
+            "code": "VALIDATION_FAILED",
+            "message": "CHECK-002 has a recorded failure",
+            "path": "/private/var/folders/np/9dxskpmn3yx_ccmygffzkz9h0000gn/T/versat-sdd-test-0noc1wwf/specs/changes/greeting-button/tasks.md",
+            "severity": "error"
+          },
+          {
+            "code": "VALIDATION_FAILED",
+            "message": "CHECK-003 has a recorded failure",
+            "path": "/private/var/folders/np/9dxskpmn3yx_ccmygffzkz9h0000gn/T/versat-sdd-test-0noc1wwf/specs/changes/greeting-button/tasks.md",
+            "severity": "error"
+          },
+          {
+            "code": "INPUT_STALE",
+            "message": "Rerun affected check, do not relabel old evidence: CHECK-001",
+            "path": "/private/var/folders/np/9dxskpmn3yx_ccmygffzkz9h0000gn/T/versat-sdd-test-0noc1wwf/specs/changes/greeting-button/tasks.md",
+            "severity": "unverified"
+          },
+          {
+            "code": "INPUT_STALE",
+            "message": "Rerun affected check, do not relabel old evidence: CHECK-002",
+            "path": "/private/var/folders/np/9dxskpmn3yx_ccmygffzkz9h0000gn/T/versat-sdd-test-0noc1wwf/specs/changes/greeting-button/tasks.md",
+            "severity": "unverified"
+          },
+          {
+            "code": "INPUT_STALE",
+            "message": "Rerun affected check, do not relabel old evidence: CHECK-003",
+            "path": "/private/var/folders/np/9dxskpmn3yx_ccmygffzkz9h0000gn/T/versat-sdd-test-0noc1wwf/specs/changes/greeting-button/tasks.md",
+            "severity": "unverified"
+          },
+          {
+            "code": "ACCEPTANCE_UNVERIFIED",
+            "message": "No current required passing evidence: {\"local\":{\"requirement\":\"REQ-001\",\"scenario\":1}}",
+            "path": "/private/var/folders/np/9dxskpmn3yx_ccmygffzkz9h0000gn/T/versat-sdd-test-0noc1wwf/specs/changes/greeting-button/tasks.md",
+            "severity": "unverified"
+          },
+          {
+            "code": "ACCEPTANCE_FAILED",
+            "message": "{\"local\":{\"requirement\":\"REQ-001\",\"scenario\":2}}",
+            "path": "/private/var/folders/np/9dxskpmn3yx_ccmygffzkz9h0000gn/T/versat-sdd-test-0noc1wwf/specs/changes/greeting-button/tasks.md",
+            "severity": "error"
+          },
+          {
+            "code": "ACCEPTANCE_FAILED",
+            "message": "{\"regression\":{\"impact\":1,\"scenario\":1}}",
+            "path": "/private/var/folders/np/9dxskpmn3yx_ccmygffzkz9h0000gn/T/versat-sdd-test-0noc1wwf/specs/changes/greeting-button/tasks.md",
+            "severity": "error"
+          },
+          {
+            "code": "ACCEPTANCE_GAP",
+            "message": "FIND-001: Zero and negative amounts are accepted; error handling is absent.",
+            "path": "/private/var/folders/np/9dxskpmn3yx_ccmygffzkz9h0000gn/T/versat-sdd-test-0noc1wwf/specs/changes/greeting-button/tasks.md",
+            "severity": "error"
+          },
+          {
+            "code": "ACCEPTANCE_GAP",
+            "message": "FIND-002: A repeated request charges twice despite the retained contract.",
+            "path": "/private/var/folders/np/9dxskpmn3yx_ccmygffzkz9h0000gn/T/versat-sdd-test-0noc1wwf/specs/changes/greeting-button/tasks.md",
+            "severity": "error"
+          },
+          {
+            "code": "ACCEPTANCE_GAP",
+            "message": "FIND-003: AUDIT_DISABLED and export_all_customers contradict/exceed the approved scope.",
+            "path": "/private/var/folders/np/9dxskpmn3yx_ccmygffzkz9h0000gn/T/versat-sdd-test-0noc1wwf/specs/changes/greeting-button/tasks.md",
+            "severity": "error"
+          }
+        ],
+        "warnings": [],
+        "metrics": {
+          "greeting-button": {
+            "local_scenarios": 2,
+            "regression_obligations": 1,
+            "assessed": 3,
+            "results": 3,
+            "open_findings": 3,
+            "stale_results": 3,
+            "requirements": {
+              "REQ-001": "fail"
+            }
+          }
+        },
+        "live_archives": [],
+        "archive_required": [],
+        "scope": "Declared contract checks only; archive inventory is historical unless selected for live delivery. No proof of semantic adequacy, execution authenticity, human identity, remote CI, merge or deployment."
+      },
+      "checks": [
+        {
+          "check": "CHECK-001",
+          "outcome": "pass",
+          "before": "84e4acbbc59d51d6df03f6e00f1d24d6101c8c5aecee3927b3f2ec89f326833b",
+          "after": "84e4acbbc59d51d6df03f6e00f1d24d6101c8c5aecee3927b3f2ec89f326833b",
+          "command": [
+            "/private/tmp/versat-sdd-acceptance-venv/bin/python",
+            "-m",
+            "unittest",
+            "discover",
+            "-s",
+            "tests",
+            "-p",
+            "test_payments.py",
+            "-k",
+            "success"
+          ],
+          "exit": 0,
+          "stdout": "",
+          "stderr": ".\n----------------------------------------------------------------------\nRan 1 test in 0.000s\n\nOK\n"
+        },
+        {
+          "check": "CHECK-002",
+          "outcome": "pass",
+          "before": "84e4acbbc59d51d6df03f6e00f1d24d6101c8c5aecee3927b3f2ec89f326833b",
+          "after": "84e4acbbc59d51d6df03f6e00f1d24d6101c8c5aecee3927b3f2ec89f326833b",
+          "command": [
+            "/private/tmp/versat-sdd-acceptance-venv/bin/python",
+            "-m",
+            "unittest",
+            "discover",
+            "-s",
+            "tests",
+            "-p",
+            "test_payments.py",
+            "-k",
+            "error_boundary"
+          ],
+          "exit": 0,
+          "stdout": "",
+          "stderr": ".\n----------------------------------------------------------------------\nRan 1 test in 0.000s\n\nOK\n"
+        },
+        {
+          "check": "CHECK-003",
+          "outcome": "pass",
+          "before": "84e4acbbc59d51d6df03f6e00f1d24d6101c8c5aecee3927b3f2ec89f326833b",
+          "after": "84e4acbbc59d51d6df03f6e00f1d24d6101c8c5aecee3927b3f2ec89f326833b",
+          "command": [
+            "/private/tmp/versat-sdd-acceptance-venv/bin/python",
+            "-m",
+            "unittest",
+            "discover",
+            "-s",
+            "tests",
+            "-p",
+            "test_payments.py",
+            "-k",
+            "duplicate"
+          ],
+          "exit": 0,
+          "stdout": "",
+          "stderr": ".\n----------------------------------------------------------------------\nRan 1 test in 0.000s\n\nOK\n"
+        }
+      ],
+      "validator": {
+        "status": "pass",
+        "phase": "delivery",
+        "checked": [
+          "greeting-button"
+        ],
+        "findings": [],
+        "warnings": [],
+        "metrics": {
+          "greeting-button": {
+            "local_scenarios": 2,
+            "regression_obligations": 1,
+            "assessed": 3,
+            "results": 3,
+            "open_findings": 0,
+            "stale_results": 0,
+            "requirements": {
+              "REQ-001": "pass"
+            }
+          }
+        },
+        "live_archives": [],
+        "archive_required": [],
+        "scope": "Declared contract checks only; archive inventory is historical unless selected for live delivery. No proof of semantic adequacy, execution authenticity, human identity, remote CI, merge or deployment."
+      },
+      "maintained_test_unchanged": true,
+      "approved_task_digest_unchanged": true
+    },
+    {
+      "action": "Resume after configuration edit, then propose a task-plan scope edit.",
+      "resumed_validation": {
+        "status": "unable-to-verify",
+        "phase": "delivery",
+        "checked": [
+          "greeting-button"
+        ],
+        "findings": [
+          {
+            "code": "INPUT_STALE",
+            "message": "Rerun affected check, do not relabel old evidence: CHECK-001",
+            "path": "/private/var/folders/np/9dxskpmn3yx_ccmygffzkz9h0000gn/T/versat-sdd-test-0noc1wwf/specs/changes/greeting-button/tasks.md",
+            "severity": "unverified"
+          },
+          {
+            "code": "INPUT_STALE",
+            "message": "Rerun affected check, do not relabel old evidence: CHECK-002",
+            "path": "/private/var/folders/np/9dxskpmn3yx_ccmygffzkz9h0000gn/T/versat-sdd-test-0noc1wwf/specs/changes/greeting-button/tasks.md",
+            "severity": "unverified"
+          },
+          {
+            "code": "INPUT_STALE",
+            "message": "Rerun affected check, do not relabel old evidence: CHECK-003",
+            "path": "/private/var/folders/np/9dxskpmn3yx_ccmygffzkz9h0000gn/T/versat-sdd-test-0noc1wwf/specs/changes/greeting-button/tasks.md",
+            "severity": "unverified"
+          },
+          {
+            "code": "ACCEPTANCE_UNVERIFIED",
+            "message": "No current required passing evidence: {\"local\":{\"requirement\":\"REQ-001\",\"scenario\":1}}",
+            "path": "/private/var/folders/np/9dxskpmn3yx_ccmygffzkz9h0000gn/T/versat-sdd-test-0noc1wwf/specs/changes/greeting-button/tasks.md",
+            "severity": "unverified"
+          },
+          {
+            "code": "ACCEPTANCE_UNVERIFIED",
+            "message": "No current required passing evidence: {\"local\":{\"requirement\":\"REQ-001\",\"scenario\":2}}",
+            "path": "/private/var/folders/np/9dxskpmn3yx_ccmygffzkz9h0000gn/T/versat-sdd-test-0noc1wwf/specs/changes/greeting-button/tasks.md",
+            "severity": "unverified"
+          },
+          {
+            "code": "ACCEPTANCE_UNVERIFIED",
+            "message": "No current required passing evidence: {\"regression\":{\"impact\":1,\"scenario\":1}}",
+            "path": "/private/var/folders/np/9dxskpmn3yx_ccmygffzkz9h0000gn/T/versat-sdd-test-0noc1wwf/specs/changes/greeting-button/tasks.md",
+            "severity": "unverified"
+          },
+          {
+            "code": "RESOLUTION_UNVERIFIED",
+            "message": "FIND-001 needs a disposition and current evidence",
+            "path": "/private/var/folders/np/9dxskpmn3yx_ccmygffzkz9h0000gn/T/versat-sdd-test-0noc1wwf/specs/changes/greeting-button/tasks.md",
+            "severity": "unverified"
+          },
+          {
+            "code": "RESOLUTION_UNVERIFIED",
+            "message": "FIND-002 needs a disposition and current evidence",
+            "path": "/private/var/folders/np/9dxskpmn3yx_ccmygffzkz9h0000gn/T/versat-sdd-test-0noc1wwf/specs/changes/greeting-button/tasks.md",
+            "severity": "unverified"
+          },
+          {
+            "code": "RESOLUTION_UNVERIFIED",
+            "message": "FIND-003 needs a disposition and current evidence",
+            "path": "/private/var/folders/np/9dxskpmn3yx_ccmygffzkz9h0000gn/T/versat-sdd-test-0noc1wwf/specs/changes/greeting-button/tasks.md",
+            "severity": "unverified"
+          }
+        ],
+        "warnings": [],
+        "metrics": {
+          "greeting-button": {
+            "local_scenarios": 2,
+            "regression_obligations": 1,
+            "assessed": 3,
+            "results": 3,
+            "open_findings": 0,
+            "stale_results": 3,
+            "requirements": {
+              "REQ-001": "unverified"
+            }
+          }
+        },
+        "live_archives": [],
+        "archive_required": [],
+        "scope": "Declared contract checks only; archive inventory is historical unless selected for live delivery. No proof of semantic adequacy, execution authenticity, human identity, remote CI, merge or deployment."
+      },
+      "changed_plan_validation": {
+        "status": "fail",
+        "phase": "implementation",
+        "checked": [
+          "greeting-button"
+        ],
+        "findings": [
+          {
+            "code": "APPROVAL_STALE",
+            "message": "tasks approval does not match the current content/revision",
+            "path": "/private/var/folders/np/9dxskpmn3yx_ccmygffzkz9h0000gn/T/versat-sdd-test-0noc1wwf/specs/changes/greeting-button/tasks.md",
+            "severity": "error"
+          },
+          {
+            "code": "APPROVAL_REQUIRED",
+            "message": "Current tasks approval is required for execution or delivery",
+            "path": "/private/var/folders/np/9dxskpmn3yx_ccmygffzkz9h0000gn/T/versat-sdd-test-0noc1wwf/specs/changes/greeting-button/tasks.md",
+            "severity": "error"
+          },
+          {
+            "code": "VALIDATION_STALE",
+            "message": "Evidence must identify the current Tasks plan digest",
+            "path": "/private/var/folders/np/9dxskpmn3yx_ccmygffzkz9h0000gn/T/versat-sdd-test-0noc1wwf/specs/changes/greeting-button/tasks.md",
+            "severity": "unverified"
+          }
+        ],
+        "warnings": [],
+        "metrics": {
+          "greeting-button": {
+            "local_scenarios": 2,
+            "regression_obligations": 1,
+            "assessed": 3,
+            "results": 3,
+            "open_findings": 0,
+            "stale_results": 0,
+            "requirements": {
+              "REQ-001": "pass"
+            }
+          }
+        },
+        "live_archives": [],
+        "archive_required": [],
+        "scope": "Declared contract checks only; archive inventory is historical unless selected for live delivery. No proof of semantic adequacy, execution authenticity, human identity, remote CI, merge or deployment."
+      },
+      "dependent_implementation_stopped": true
+    },
+    {
+      "action": "Review isolated new greeting scope: no related contract declared in this synthetic empty project.",
+      "observation": "def greet(): return \"Hello world\"\n",
+      "validator": {
+        "status": "pass",
+        "phase": "planning",
+        "checked": [
+          "greeting-button"
+        ],
+        "findings": [],
+        "warnings": [],
+        "metrics": {
+          "greeting-button": {
+            "local_scenarios": 1,
+            "regression_obligations": 0
+          }
+        },
+        "live_archives": [],
+        "archive_required": [],
+        "scope": "Declared contract checks only; archive inventory is historical unless selected for live delivery. No proof of semantic adequacy, execution authenticity, human identity, remote CI, merge or deployment."
+      },
+      "limit": "The reviewer grounds no-impact; the validator does not discover dependencies."
+    },
+    {
+      "action": "Actual manual source review with justified method.",
+      "observation": "def greet(): return \"Hello world\"\n",
+      "before": "646f0d49075d0f57275ddc99f0d2531abacd3ce7a6b74a7c911437f00267c72f",
+      "after": "646f0d49075d0f57275ddc99f0d2531abacd3ce7a6b74a7c911437f00267c72f",
+      "validator": {
+        "status": "pass",
+        "phase": "delivery",
+        "checked": [
+          "greeting-button"
+        ],
+        "findings": [],
+        "warnings": [],
+        "metrics": {
+          "greeting-button": {
+            "local_scenarios": 1,
+            "regression_obligations": 0,
+            "assessed": 1,
+            "results": 1,
+            "open_findings": 0,
+            "stale_results": 0,
+            "requirements": {
+              "REQ-001": "pass"
+            }
+          }
+        },
+        "live_archives": [],
+        "archive_required": [],
+        "scope": "Declared contract checks only; archive inventory is historical unless selected for live delivery. No proof of semantic adequacy, execution authenticity, human identity, remote CI, merge or deployment."
+      }
+    },
+    {
+      "action": "Attempt execution with an unavailable synthetic prerequisite.",
+      "observation": "The configured synthetic runtime does not exist; execution was not observed.",
+      "validator": {
+        "status": "unable-to-verify",
+        "phase": "delivery",
+        "checked": [
+          "greeting-button"
+        ],
+        "findings": [
+          {
+            "code": "VALIDATION_MISSING",
+            "message": "CHECK-001 requires a passing result with evidence",
+            "path": "/private/var/folders/np/9dxskpmn3yx_ccmygffzkz9h0000gn/T/versat-sdd-test-oumlbhp7/specs/changes/greeting-button/tasks.md",
+            "severity": "unverified"
+          },
+          {
+            "code": "ACCEPTANCE_UNVERIFIED",
+            "message": "{\"local\":{\"requirement\":\"REQ-001\",\"scenario\":1}}",
+            "path": "/private/var/folders/np/9dxskpmn3yx_ccmygffzkz9h0000gn/T/versat-sdd-test-oumlbhp7/specs/changes/greeting-button/tasks.md",
+            "severity": "unverified"
+          }
+        ],
+        "warnings": [],
+        "metrics": {
+          "greeting-button": {
+            "local_scenarios": 1,
+            "regression_obligations": 0,
+            "assessed": 1,
+            "results": 1,
+            "open_findings": 0,
+            "stale_results": 0,
+            "requirements": {
+              "REQ-001": "unverified"
+            }
+          }
+        },
+        "live_archives": [],
+        "archive_required": [],
+        "scope": "Declared contract checks only; archive inventory is historical unless selected for live delivery. No proof of semantic adequacy, execution authenticity, human identity, remote CI, merge or deployment."
+      }
+    },
+    {
+      "action": "Reviewed synthetic supersession: replace the contract and execute its replacement assertion.",
+      "stdout": "Welcome\n",
+      "exit": 0,
+      "before": "73afb86c7d17e875a4c1ba25b6ecce8e7b207941252eeaaa38706c49b671a7c8",
+      "after": "73afb86c7d17e875a4c1ba25b6ecce8e7b207941252eeaaa38706c49b671a7c8",
+      "historical_bytes_unchanged": true,
+      "living_contract": "# Greeting\nActivation displays Welcome.\n",
+      "validator": {
+        "status": "pass",
+        "phase": "delivery",
+        "checked": [
+          "greeting-button"
+        ],
+        "findings": [],
+        "warnings": [],
+        "metrics": {
+          "greeting-button": {
+            "local_scenarios": 1,
+            "regression_obligations": 0,
+            "assessed": 1,
+            "results": 1,
+            "open_findings": 0,
+            "stale_results": 0,
+            "requirements": {
+              "REQ-001": "pass"
+            }
+          }
+        },
+        "live_archives": [],
+        "archive_required": [],
+        "scope": "Declared contract checks only; archive inventory is historical unless selected for live delivery. No proof of semantic adequacy, execution authenticity, human identity, remote CI, merge or deployment."
+      },
+      "scope": "Synthetic planning approvals only; no human approval claim."
+    }
+  ],
+  "approved_plan_digests": {
+    "proposal": "33a850de38e442ee5640fe03992d5e06e7a3ad82ba7c418f15a3e26c92b298cf",
+    "design": "a8d41be0d8d7ace6f5cafbe1499cd874a95bc6f57a86aaa03353f462ca00d66f",
+    "tasks": "04d5ba5491f71939390ee6872543ab71bb3e87f6970c2db36fe37f1626990f9f"
+  },
+  "original_implementation": "balances = {}\nAUDIT_DISABLED = True\n\ndef pay(request_id, amount):\n    balances[request_id] = balances.get(request_id, 0) + amount\n    return balances[request_id]\n\ndef export_all_customers():\n    return [\"synthetic-customer\"]\n",
+  "maintained_test": "import unittest\nfrom src import payments\n\nclass Payments(unittest.TestCase):\n    def setUp(self):\n        payments.balances.clear()\n\n    def test_success(self):\n        self.assertEqual(10, payments.pay(\"synthetic-1\", 10))\n\n    def test_error_boundary(self):\n        for amount in (-1, 0):\n            with self.assertRaises(ValueError):\n                payments.pay(\"synthetic-1\", amount)\n        self.assertEqual({}, payments.balances)\n\n    def test_duplicate(self):\n        payments.pay(\"synthetic-1\", 10)\n        self.assertEqual(10, payments.pay(\"synthetic-1\", 10))\n",
+  "origin_requirements": "---\nsdd_version: 3\nchange: prevent-duplicates\nrequirements:\n- id: REQ-001\n  statement: Prevent duplicate payments.\n  acceptance:\n  - Submitting the same request twice charges once.\n---\n# Synthetic historical origin\n",
+  "final_fixture_artifacts": {
+    "proposal": "---\nsdd_version: 3\nchange: greeting-button\nstatus: proposed\nowner: Synthetic developer\nsummary: Add a greeting button to the home screen.\nrisk: low\nreview:\n  revision: 1\n  state: approved\n  blockers: []\n  upstream: {}\n  approval:\n    source: synthetic-chat/proposal/message-1\n    quote: I approve the proposal presented in this synthetic test.\n    revision: 1\n    digest: 33a850de38e442ee5640fe03992d5e06e7a3ad82ba7c418f15a3e26c92b298cf\nimpact:\n  state: assessed\n  summary: New isolated greeting behavior; no earlier contracts affected.\n  items:\n  - source:\n      change: prevent-duplicates\n      requirement: REQ-001\n      scenarios:\n      - 1\n      requirements_digest: 1202cf363a0713272f38111259a9b13a69bea99ffb5e986549bed9aee0b58d23\n    current_contract:\n      change: greeting-button\n      artifact: proposal\n      locator: '## Baseline'\n    effect: preserve\n    targets:\n    - REQ-001\n    reason: Preserve the existing observable greeting unless explicitly replaced.\n---\n\n# Proposal\n\n## Baseline\nDuplicate requests charge once. Audit must remain enabled; customer export is out of scope.\n",
+    "requirements": "---\nsdd_version: 3\nchange: greeting-button\nrequirements:\n- id: REQ-001\n  statement: Process positive payments, reject invalid amounts and retain duplicate\n    prevention.\n  acceptance:\n  - A positive payment succeeds.\n  - Negative and zero amounts raise without modifying balances.\n---\n\n# Requirements\n\nREQ-001 defines the greeting interaction.\n",
+    "design": "---\nsdd_version: 3\nchange: greeting-button\nrequirements:\n- REQ-001\nadrs: []\nvalidation:\n- id: CHECK-001\n  description: Observe positive synthetic payment.\n  requirements:\n  - REQ-001\n  required: true\n  method:\n    kind: automated\n    procedure: python -m unittest discover -s tests -p test_payments.py -k success;\n      expect one accepted payment.\n  inputs:\n    include:\n    - src\n    - tests\n    - fixtures\n    - config.txt\n    exclude: []\n  outputs:\n  - docs/evidence\n  execution: local\n- id: CHECK-002\n  description: Reject negative and zero amounts.\n  requirements:\n  - REQ-001\n  required: true\n  method:\n    kind: automated\n    procedure: python -m unittest discover -s tests -p test_payments.py -k error_boundary;\n      expect contract assertions to pass.\n  inputs:\n    include:\n    - src\n    - tests\n    - fixtures\n    - config.txt\n    exclude: []\n  outputs:\n  - docs/evidence\n  execution: local\n- id: CHECK-003\n  description: Reuse maintained duplicate prevention.\n  requirements:\n  - REQ-001\n  required: true\n  method:\n    kind: automated\n    procedure: python -m unittest discover -s tests -p test_payments.py -k duplicate;\n      expect contract assertions to pass.\n  inputs:\n    include:\n    - src\n    - tests\n    - fixtures\n    - config.txt\n    exclude: []\n  outputs:\n  - docs/evidence\n  execution: local\nreview:\n  revision: 1\n  state: approved\n  blockers: []\n  upstream:\n    proposal: 33a850de38e442ee5640fe03992d5e06e7a3ad82ba7c418f15a3e26c92b298cf\n  approval:\n    source: synthetic-chat/design/message-1\n    quote: I approve the design presented in this synthetic test.\n    revision: 1\n    digest: a8d41be0d8d7ace6f5cafbe1499cd874a95bc6f57a86aaa03353f462ca00d66f\ncoverage:\n- scenario:\n    requirement: REQ-001\n    scenario: 1\n  applicability: required\n  checks:\n  - CHECK-001\n- scenario:\n    requirement: REQ-001\n    scenario: 2\n  applicability: required\n  checks:\n  - CHECK-002\nregression:\n- obligation:\n    impact: 1\n    scenario: 1\n  checks:\n  - CHECK-003\n  rationale: Existing test covers the retained behavior.\n---\n\n# Design\n\nReuse the existing button and message components.\n",
+    "tasks": "---\nsdd_version: 3\nchange: greeting-button\ntasks:\n- id: TASK-001\n  description: Add the greeting button and interaction test.\n  requirements:\n  - REQ-001\n  status: completed\nreview:\n  revision: 1\n  state: approved\n  blockers: []\n  upstream:\n    proposal: 33a850de38e442ee5640fe03992d5e06e7a3ad82ba7c418f15a3e26c92b298cf\n    design: a8d41be0d8d7ace6f5cafbe1499cd874a95bc6f57a86aaa03353f462ca00d66f\n  approval:\n    source: synthetic-chat/tasks/message-1\n    quote: I approve the tasks presented in this synthetic test.\n    revision: 1\n    digest: 04d5ba5491f71939390ee6872543ab71bb3e87f6970c2db36fe37f1626990f9f\nvalidation:\n  plan_digest: 04d5ba5491f71939390ee6872543ab71bb3e87f6970c2db36fe37f1626990f9f\n  results:\n  - check: CHECK-001\n    result: pass\n    evidence: docs/evidence/payment.txt\n    revision: authorized-in-scope-correction:6632f467655b2ce7ba0b8a51993c609965cf560bd07dbdd89d525842e75ddd7c\n    input_digest_before: 84e4acbbc59d51d6df03f6e00f1d24d6101c8c5aecee3927b3f2ec89f326833b\n    input_digest_after: 84e4acbbc59d51d6df03f6e00f1d24d6101c8c5aecee3927b3f2ec89f326833b\n    context:\n      execution: local\n      environment: '{''python'': ''3.11.4'', ''platform'': ''macOS-26.5.2-arm64-arm-64bit''}'\n      observed: true\n  - check: CHECK-002\n    result: pass\n    evidence: docs/evidence/payment.txt\n    revision: authorized-in-scope-correction:6632f467655b2ce7ba0b8a51993c609965cf560bd07dbdd89d525842e75ddd7c\n    input_digest_before: 84e4acbbc59d51d6df03f6e00f1d24d6101c8c5aecee3927b3f2ec89f326833b\n    input_digest_after: 84e4acbbc59d51d6df03f6e00f1d24d6101c8c5aecee3927b3f2ec89f326833b\n    context:\n      execution: local\n      environment: '{''python'': ''3.11.4'', ''platform'': ''macOS-26.5.2-arm64-arm-64bit''}'\n      observed: true\n  - check: CHECK-003\n    result: pass\n    evidence: docs/evidence/payment.txt\n    revision: authorized-in-scope-correction:6632f467655b2ce7ba0b8a51993c609965cf560bd07dbdd89d525842e75ddd7c\n    input_digest_before: 84e4acbbc59d51d6df03f6e00f1d24d6101c8c5aecee3927b3f2ec89f326833b\n    input_digest_after: 84e4acbbc59d51d6df03f6e00f1d24d6101c8c5aecee3927b3f2ec89f326833b\n    context:\n      execution: local\n      environment: '{''python'': ''3.11.4'', ''platform'': ''macOS-26.5.2-arm64-arm-64bit''}'\n      observed: true\n  assessments:\n  - obligation:\n      local:\n        requirement: REQ-001\n        scenario: 1\n    result: pass\n    checks:\n    - CHECK-001\n    evidence: docs/evidence/payment.txt\n    explanation: 'Observed assertion outcome in the maintained synthetic test: success'\n  - obligation:\n      local:\n        requirement: REQ-001\n        scenario: 2\n    result: pass\n    checks:\n    - CHECK-002\n    evidence: docs/evidence/payment.txt\n    explanation: 'Observed assertion outcome in the maintained synthetic test: error_boundary'\n  - obligation:\n      regression:\n        impact: 1\n        scenario: 1\n    result: pass\n    checks:\n    - CHECK-003\n    evidence: docs/evidence/payment.txt\n    explanation: 'Observed assertion outcome in the maintained synthetic test: duplicate'\n  findings:\n  - id: FIND-001\n    source:\n      local:\n        requirement: REQ-001\n        scenario: 2\n    category: partial\n    state: resolved\n    evidence: docs/evidence/payment.txt\n    description: Zero and negative amounts are accepted; error handling is absent.\n    tasks:\n    - TASK-001\n    checks:\n    - CHECK-002\n    resolution: Reviewer inspected the correction/removal under the existing task\n      and observed current passing tests.\n  - id: FIND-002\n    source:\n      regression:\n        impact: 1\n        scenario: 1\n    category: contradicts\n    state: resolved\n    evidence: docs/evidence/payment.txt\n    description: A repeated request charges twice despite the retained contract.\n    tasks:\n    - TASK-001\n    checks:\n    - CHECK-003\n    resolution: Reviewer inspected the correction/removal under the existing task\n      and observed current passing tests.\n  - id: FIND-003\n    source:\n      plan: Proposal baseline excludes export and requires auditing.\n    category: unrequested\n    state: resolved\n    evidence: docs/evidence/payment.txt\n    description: AUDIT_DISABLED and export_all_customers contradict/exceed the approved\n      scope.\n    tasks:\n    - TASK-001\n    checks:\n    - CHECK-001\n    resolution: Reviewer inspected the correction/removal under the existing task\n      and observed current passing tests.\nclosure: active\n---\n\n# Tasks\n\n- [x] TASK-001 \u2014 Add the greeting button and interaction test.\n"
+  }
+}

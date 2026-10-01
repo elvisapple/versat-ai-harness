@@ -130,3 +130,13 @@ This version makes the source repository a self-contained portable Plugin packag
 The SDD consolidation adds local contract validation and executable regression tests. It does not add a workflow engine, GitHub approval integration or automatic release publication. Installed consumers are not changed by edits to this source checkout.
 
 The consumer artifact revision changes templates and guidance. Automated project composition, operational workflow execution and semantic validation of consumer agent artifacts are not implemented by it. Local validation checks Plugin structure and recorded SDD consistency; consumer loading and workflow behavior require separate verification.
+
+## Acceptance and regression validation in the current source
+
+[ADR-0014](../decisions/0014-sdd-acceptance-and-regression.md) adds v3 scenario mappings, qualified impact origins, retained regression obligations and semantic assessment records within the existing four-file lifecycle and three human gates. Policies remain in Standards; SDD defines records/workflows; the existing validator entry point delegates bounded checks to internal assurance and input-snapshot helpers. Skills continue routing through the canonical procedures.
+
+Execution evidence binds reviewed source/test/configuration scopes with before/after snapshots. Maintained regression suites remain outside archived dossiers and run against the effective current contract. The validator checks declared consistency and freshness; agents/reviewers assess assertion adequacy and behavior. Historical inventory preserves older snapshots, while selected delivery and trusted CI-baseline candidates require live checks. Full required suites continue to run.
+
+Compatibility is explicit: immutable historical v2 bytes and bounded approved in-flight v2 plans coexist with unchanged pre-v2 exceptions. New work uses v3. This source revision does not authenticate execution, add automatic check execution, publish a release or migrate installed consumers.
+
+The existing pre-PR archival rule is mechanically checked with `--require-archive`: local selected preflight checks location, prepared closure and live delivery; trusted CI baseline selection covers affected active and archived dossiers for non-draft PRs and main pushes. Planning drafts retain inventory behavior. Ordinary delivery remains a pre-move eligibility check. This refines ADR-0013/0014 enforcement within the existing validator/CI boundaries, without a new planning gate or remote-publication capability.

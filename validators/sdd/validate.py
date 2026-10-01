@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Validate versioned SDD documents without performing Git or network operations."""
+"""Validate versioned SDD documents with offline records and optional read-only Git baseline selection."""
 
 from __future__ import annotations
 
@@ -27,6 +27,10 @@ PHASES = ("planning", "implementation", "delivery")
 CHANGE_ID = re.compile(r"^[a-z0-9]+(?:-[a-z0-9]+)*$")
 DIGEST = re.compile(r"^[a-f0-9]{64}$")
 SCHEMA_ROOT = Path(__file__).resolve().parents[2] / "sdd" / "schemas"
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from sdd_inputs import input_digest, changed_archives, changed_dossiers
+import sdd_assurance
+
 BOOKKEEPING = {"Planning review", "Validation evidence", "Progress", "Delivery"}
 CHECKBOX = re.compile(r"^\s*[-*+]\s+\[([ xX])\]\s+(TASK-[0-9]{3,})\b", re.MULTILINE)
 
@@ -183,6 +187,10 @@ def _schemas():
         document = yaml.load((SCHEMA_ROOT / "legacy" / f"{name}.schema.yaml").read_text(), Loader=UniqueKeyLoader)
         Draft202012Validator.check_schema(document)
         validators["legacy_" + name] = Draft202012Validator(document, registry=registry)
+    for name in ARTIFACTS:
+        document = yaml.load((SCHEMA_ROOT / "v3" / f"{name}.schema.yaml").read_text(), Loader=UniqueKeyLoader)
+        Draft202012Validator.check_schema(document)
+        validators["v3_" + name] = Draft202012Validator(document, registry=registry)
     return validators
 
 
@@ -196,8 +204,16 @@ def _unique_json(pairs):
 
 
 class RepositoryValidator:
-    def __init__(self, root, phase, change_id):
+    def __init__(self, root, phase, change_id, baseline=None, require_archive=False):
         self.root = root
+        self.api = sys.modules[__name__]
+        self.baseline = baseline
+        self.require_archive = require_archive
+        self.archive_required = set()
+        self.live_archives = set()
+        self.metrics = {}
+        self.input_cache = {}
+        self.compatibility = {"historical": {}, "in_flight": {}}
         self.phase = phase
         self.change_id = change_id
         self.findings = []
@@ -258,6 +274,57 @@ class RepositoryValidator:
             self.add("LEGACY_MANIFEST", str(exc), path)
             return {}
 
+    def load_compatibility(self, changes, legacy):
+        path = self.root / "sdd" / "compatibility.json"
+        try:
+            _safe_path(self.root, path)
+            if not path.exists():
+                return
+            data = json.loads(path.read_text(), object_pairs_hook=_unique_json)
+            if not isinstance(data, dict) or set(data) != {"version", "historical", "in_flight"} or type(data["version"]) is not int or data["version"] != 1:
+                raise ValueError("Expected compatibility manifest version 1")
+            seen = set(legacy)
+            for kind in ("historical", "in_flight"):
+                if not isinstance(data[kind], dict):
+                    raise ValueError("Compatibility entries must be mappings")
+                for identifier, entry in data[kind].items():
+                    field = "files" if kind == "historical" else "digests"
+                    required = {f"{n}.md" for n in ARTIFACTS} if kind == "historical" else set(STAGES)
+                    if not CHANGE_ID.fullmatch(identifier) or identifier in seen or identifier not in changes:
+                        raise ValueError("Duplicate or unknown compatibility ID: " + identifier)
+                    if not isinstance(entry, dict) or set(entry) != {"reason", field} or not isinstance(entry['reason'], str) or not entry['reason'].strip():
+                        raise ValueError("Compatibility entry needs a reason and content bindings")
+                    if not isinstance(entry[field], dict) or set(entry[field]) != required or any(not isinstance(d, str) or not DIGEST.fullmatch(d) for d in entry[field].values()):
+                        raise ValueError("Invalid compatibility content bindings")
+                    seen.add(identifier)
+            self.compatibility = data
+        except (OSError, ValueError, TypeError) as exc:
+            self.add("COMPATIBILITY_MANIFEST", str(exc), path)
+
+    def compatible(self, directory, artifacts, version):
+        identifier = directory.name
+        historical = self.compatibility["historical"].get(identifier)
+        ongoing = self.compatibility["in_flight"].get(identifier)
+        if version == 3:
+            if historical or ongoing:
+                self.add("COMPATIBILITY_VERSION", "Remove obsolete exemption when migrating to v3", directory)
+            return
+        if not historical and not ongoing:
+            self.add("V2_UNLISTED", "New work requires v3; v2 needs reviewed compatibility", directory)
+            return
+        if historical:
+            for name, expected in historical['files'].items():
+                path = _safe_path(self.root, directory / name)
+                if not path.is_file() or hashlib.sha256(path.read_bytes()).hexdigest() != expected:
+                    self.add("HISTORY_CHANGED", "Historical v2 dossier must remain immutable", path)
+            if self.phase != 'planning' or identifier in self.live_archives or identifier in self.archive_required:
+                self.add("HISTORY_ONLY", "Historical compatibility does not establish current readiness", directory, True)
+        else:
+            for stage in STAGES:
+                if stage in artifacts and _digest_artifacts(artifacts, stage) != ongoing['digests'][stage]:
+                    self.add("COMPATIBILITY_STALE", "Changed v2 plan requires explicit v3 migration", directory / f"{stage}.md")
+        self.warnings.append({"code": "V2_COMPATIBILITY", "message": "Reviewed v2 contract only; v3 acceptance/regression assurance not verified", "path": str(directory)})
+
     def artifacts(self, directory, legacy):
         artifacts = {}
         valid = True
@@ -272,7 +339,9 @@ class RepositoryValidator:
                     continue
                 artifact = _read_artifact(path)
                 artifacts[name] = artifact
-                validator = self.validators[("legacy_" if legacy else "") + name]
+                version = artifact["metadata"].get("sdd_version")
+                prefix = "legacy_" if legacy else "v3_" if version == 3 else ""
+                validator = self.validators[prefix + name]
                 for error in validator.iter_errors(artifact["metadata"]):
                     field = ".".join(str(part) for part in error.absolute_path) or "frontmatter"
                     self.add("SCHEMA", f"{field}: {error.message}", path)
@@ -283,6 +352,9 @@ class RepositoryValidator:
             except (OSError, ValueError, TypeError, RecursionError, yaml.YAMLError) as exc:
                 self.add("PARSE", str(exc), path)
                 valid = False
+        if not legacy and len({a["metadata"].get("sdd_version") for a in artifacts.values()}) > 1:
+            self.add("MIXED_VERSION", "Every artifact must use the same SDD version", directory)
+            valid = False
         return artifacts if valid else None
 
     def unique(self, items, key, path, label):
@@ -400,21 +472,30 @@ class RepositoryValidator:
                     _safe_path(self.root, path)
                     actual = hashlib.sha256(path.read_bytes()).hexdigest()
                     if actual != expected:
-                        self.add("LEGACY_CHANGED", "Allowlisted legacy artifacts must remain byte-for-byte unchanged; explicitly migrate to v2", path)
+                        self.add("LEGACY_CHANGED", "Allowlisted legacy artifacts must remain byte-for-byte unchanged; explicitly migrate to v3", path)
                 except (OSError, ValueError) as exc:
                     self.add("LEGACY_CHANGED", str(exc), path)
         artifacts = self.artifacts(directory, legacy)
         if artifacts is None:
             return
+        if directory.name in self.archive_required:
+            if directory.parent.name != "archive":
+                self.add("ARCHIVE_REQUIRED", "Archive the dossier before submitting the completed implementation for PR review", directory)
+            tasks = artifacts.get("tasks")
+            if not tasks or tasks["metadata"].get("closure") != "prepared":
+                self.add("CLOSURE_REQUIRED", "PR submission requires Tasks closure: prepared", directory / "tasks.md")
         self.traceability(artifacts, legacy)
+        version = artifacts["proposal"]["metadata"].get("sdd_version")
+        if not legacy:
+            self.compatible(directory, artifacts, version)
         if legacy:
             self.warnings.append({"code": "LEGACY_EXEMPT", "message": "Immutable legacy dossier: v2 approval and evidence gates were not verified", "path": str(directory)})
-            if self.phase != "planning" or directory.parent.name == "archive":
+            if self.phase != "planning" or directory.parent.name == "archive" or directory.name in self.archive_required:
                 self.add("LEGACY_UNVERIFIED", "Migrate this legacy dossier explicitly before implementation or delivery readiness can be verified", directory, unverified=True)
             return
         digests, approved = self.reviews(artifacts)
         tasks = artifacts.get("tasks")
-        delivery = self.phase == "delivery" or directory.parent.name == "archive" or bool(tasks and tasks["metadata"]["closure"] == "prepared")
+        delivery = directory.name in self.archive_required or directory.name in self.live_archives or self.phase == "delivery" or directory.parent.name == "archive" or bool(tasks and tasks["metadata"]["closure"] == "prepared")
         executing = bool(tasks and any(task["status"] != "pending" for task in tasks["metadata"]["tasks"]))
         if self.phase == "implementation" or delivery or executing:
             for stage in STAGES:
@@ -428,14 +509,41 @@ class RepositoryValidator:
                 if task["status"] != "completed":
                     self.add("TASK_INCOMPLETE", f"{task['id']} is not completed", tasks["path"])
         self.evidence(artifacts, digests, delivery)
+        if version == 3:
+            live = directory.name in self.archive_required or directory.parent.name != "archive" or self.phase == "delivery" or directory.name in self.live_archives
+            sdd_assurance.inspect(self, artifacts, delivery, live, approved)
 
     def run(self):
         changes = self.discover()
+        self.changes = changes
         manifest = self.legacy_manifest(changes)
+        self.load_compatibility(changes, manifest)
+        if self.baseline is not None:
+            try:
+                self.live_archives = set(changed_archives(self.root, self.baseline))
+                for identifier in self.live_archives:
+                    if identifier not in changes or changes[identifier].parent.name != "archive":
+                        self.add("ARCHIVE_REMOVED", "Changed archive was removed or reopened; review retirement/replanning: " + identifier, self.root / "specs")
+            except (OSError, ValueError) as exc:
+                self.add("BASELINE", str(exc), self.root)
+        if self.require_archive:
+            if not self.change_id and self.baseline is None:
+                self.add("ARCHIVE_SELECTION", "--require-archive needs --change or a trusted --baseline", self.root)
+            if self.change_id:
+                self.archive_required.add(self.change_id)
+            if self.baseline is not None:
+                try:
+                    self.archive_required.update(changed_dossiers(self.root, self.baseline))
+                except (OSError, ValueError) as exc:
+                    self.add("BASELINE", str(exc), self.root)
+            if not self.archive_required:
+                self.add("ARCHIVE_SELECTION", "No affected dossier selected; declare the delivery change before PR submission", self.root / "specs")
+            for identifier in self.archive_required - changes.keys():
+                self.add("ARCHIVE_REQUIRED", "Affected dossier is missing: " + identifier, self.root / "specs")
         if self.change_id and self.change_id not in changes:
             self.add("CHANGE_NOT_FOUND", f"Change not found: {self.change_id}", self.root / "specs")
         for identifier, directory in changes.items():
-            if self.change_id and identifier != self.change_id:
+            if self.change_id and identifier != self.change_id and identifier not in self.live_archives and identifier not in self.archive_required:
                 continue
             self.checked.append(identifier)
             self.dossier(directory, manifest.get(identifier))
@@ -445,11 +553,13 @@ class RepositoryValidator:
         elif self.findings:
             status = "unable-to-verify"
         return {"status": status, "phase": self.phase, "checked": self.checked,
-                "findings": self.findings, "warnings": self.warnings,
-                "scope": "Local documentary checks only; no assertion of human identity, remote CI, merge or deployment."}
+                "findings": self.findings, "warnings": self.warnings, "metrics": self.metrics,
+                "live_archives": sorted(self.live_archives),
+                "archive_required": sorted(self.archive_required),
+                "scope": "Declared contract checks only; archive inventory is historical unless selected for live delivery. No proof of semantic adequacy, execution authenticity, human identity, remote CI, merge or deployment."}
 
 
-def validate_repository(root: Path, phase="planning", change_id=None) -> dict:
+def validate_repository(root: Path, phase="planning", change_id=None, baseline=None, require_archive=False) -> dict:
     """Validate local dossiers. Missing external evidence remains explicitly unverified."""
     root = Path(root)
     try:
@@ -459,7 +569,7 @@ def validate_repository(root: Path, phase="planning", change_id=None) -> dict:
             raise ValueError("Invalid change identifier")
         if root.is_symlink() or not root.is_dir():
             raise ValueError("Repository root must be a real directory")
-        return RepositoryValidator(root.resolve(), phase, change_id).run()
+        return RepositoryValidator(root.resolve(), phase, change_id, baseline, require_archive).run()
     except (OSError, ValueError, TypeError, RecursionError) as exc:
         return {"status": "fail", "phase": phase, "checked": [], "warnings": [],
                 "findings": [{"code": "CONFIGURATION", "message": str(exc), "path": str(root), "severity": "error"}]}
@@ -471,9 +581,17 @@ def main(argv=None):
     parser.add_argument("--change", help="Select a change identifier")
     parser.add_argument("--phase", choices=PHASES, default="planning")
     parser.add_argument("--digest", choices=STAGES, help="Print the content digest for one change stage")
+    parser.add_argument("--baseline", help="Trusted local Git base revision for live changed-archive checks")
+    parser.add_argument("--require-archive", action="store_true", help="Require selected delivery dossiers archived/prepared before PR submission")
+    parser.add_argument("--input-digest", metavar="CHECK-ID", help="Read-only input snapshot for an approved check")
+    parser.add_argument("--source-digest", action="store_true", help="Print canonical Requirements origin digest")
     parser.add_argument("--json", action="store_true", help="Emit structured JSON")
     args = parser.parse_args(argv)
-    if args.digest:
+    if sum(bool(value) for value in (args.digest, args.input_digest, args.source_digest)) > 1:
+        parser.error("Choose only one digest operation")
+    if args.require_archive and (args.digest or args.input_digest or args.source_digest):
+        parser.error("--require-archive validates readiness; it cannot be combined with digest-only operations")
+    if args.digest or args.input_digest or args.source_digest:
         try:
             if not args.change or not CHANGE_ID.fullmatch(args.change):
                 raise ValueError("--digest requires --change with a valid identifier")
@@ -487,7 +605,25 @@ def main(argv=None):
                     matches.append(directory)
             if len(matches) != 1:
                 raise ValueError("Expected exactly one matching active or archived change")
-            digest = stage_digest(matches[0], args.digest)
+            if args.input_digest:
+                validator = RepositoryValidator(root, "implementation", args.change)
+                readiness = validator.run()
+                # Stale execution evidence does not prevent taking a new snapshot;
+                # invalid records or approvals do. Execution itself is never done here.
+                allowed = {"INPUT_STALE", "VALIDATION_STALE", "ACCEPTANCE_UNVERIFIED", "ACCEPTANCE_GAP", "ACCEPTANCE_FAILED", "VALIDATION_FAILED", "RESOLUTION_UNVERIFIED", "EXECUTION_UNVERIFIED", "ASSESSMENT_MISSING", "TASK_INCOMPLETE", "VALIDATION_MISSING"}
+                if any(f["code"] not in allowed for f in readiness["findings"]):
+                    raise ValueError("Input snapshot requires a structurally valid approved plan: " + _json(readiness["findings"]))
+                design = _read_artifact(matches[0] / "design.md")["metadata"]
+                if design.get("sdd_version") != 3:
+                    raise ValueError("Input snapshots require v3 checks")
+                checks = [c for c in design['validation'] if c['id'] == args.input_digest]
+                if len(checks) != 1:
+                    raise ValueError("Check must resolve uniquely")
+                digest = input_digest(root, matches[0], checks[0])
+            elif args.source_digest:
+                digest = sdd_assurance.requirements_digest(sys.modules[__name__], _read_artifact(_safe_path(root, matches[0] / 'requirements.md')))
+            else:
+                digest = stage_digest(matches[0], args.digest)
             print(_json({"change": args.change, "stage": args.digest, "digest": digest}) if args.json else digest)
             return 0
         except (OSError, ValueError, TypeError, RecursionError) as exc:
@@ -496,11 +632,15 @@ def main(argv=None):
             # PyYAML parse errors are handled here even when optional imports failed.
             result = {"status": "fail", "findings": [{"code": "DIGEST", "message": str(exc), "path": str(args.root)}]}
     else:
-        result = validate_repository(args.root, args.phase, args.change)
+        result = validate_repository(args.root, args.phase, args.change, args.baseline, args.require_archive)
     if args.json:
         print(json.dumps(result, indent=2, ensure_ascii=False))
     else:
         print(f"SDD validation: {result['status']}")
+        if result.get("scope"):
+            print(result["scope"])
+        for identifier, metrics in result.get("metrics", {}).items():
+            print(f"{identifier}: " + _json(metrics))
         for finding in result["findings"]:
             print(f"{finding['code']}: {finding['path']}: {finding['message']}")
         for warning in result.get("warnings", []):

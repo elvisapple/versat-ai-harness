@@ -1,5 +1,5 @@
 ---
-sdd_version: 2
+sdd_version: 3
 change: change-id
 requirements:
   - id: REQ-001

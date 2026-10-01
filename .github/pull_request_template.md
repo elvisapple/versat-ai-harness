@@ -5,6 +5,8 @@ Describe el resultado observable de este cambio.
 ## Cambio SDD
 
 - Change ID:
+- Ruta del expediente (`specs/archive/<id>/` para implementación terminada):
+- Estado `closure` (`prepared` para implementación terminada):
 - Requisitos cubiertos:
 
 ## Trazabilidad
@@ -24,7 +26,9 @@ Revisa la convención de ramas y commits en el [Git Standard](https://github.com
 
 - [ ] `./scripts/validate/run.sh`
 - [ ] Gates SDD vigentes y evidencias vinculadas a la revisión actual, o excepción histórica explícita
-- [ ] Especificaciones vigentes coherentes con la implementación; archivo documental preparado cuando corresponde
+- [ ] Especificaciones vigentes coherentes con la implementación
+- [ ] Antes de enviar la implementación terminada a revisión o marcar el borrador como listo: expediente en `archive`, `closure: prepared` y `--change <id> --phase delivery --require-archive` aprobado
+- [ ] Si este PR es de planificación o trabajo incompleto, permanece en borrador y declara el archivo pendiente
 - [ ] Tests y evals aplicables
 - [ ] Standards resueltos y revisados
 - [ ] ADR creado o actualizado cuando corresponde

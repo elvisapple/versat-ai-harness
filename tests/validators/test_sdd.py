@@ -467,6 +467,79 @@ class SddValidationTests(unittest.TestCase):
         self.write("proposal")
         self.assert_status("fail")
 
+    def historical_archive(self):
+        self.data["tasks"]["tasks"][0]["status"] = "completed"
+        self.body["tasks"] = self.body["tasks"].replace("- [ ]", "- [x]")
+        manifest = self.make_legacy()
+        archive = self.root / "specs" / "archive" / self.change_id
+        archive.parent.mkdir(parents=True)
+        self.change.rename(archive)
+        self.change = archive
+        evidence = self.root / "historical-merge.md"
+        evidence.write_text("Synthetic merge record, not real approval evidence.\n")
+        manifest["changes"][self.change_id]["historical_archive"] = {
+            "merge_commit": "a" * 40,
+            "evidence": "historical-merge.md",
+        }
+        (self.root / "sdd" / "legacy-changes.json").write_text(json.dumps(manifest))
+        return manifest
+
+    def test_historical_archive_preserves_history_without_verifying_readiness(self):
+        self.historical_archive()
+        result = self.assert_status("pass")
+        self.assertIn("LEGACY_HISTORICAL_ARCHIVE", {item["code"] for item in result["warnings"]})
+        for phase in ("implementation", "delivery"):
+            with self.subTest(phase=phase):
+                self.assert_status("unable-to-verify", phase)
+
+    def test_legacy_archive_without_historical_record_is_unverified(self):
+        self.make_legacy()
+        archive = self.root / "specs" / "archive" / self.change_id
+        archive.parent.mkdir(parents=True)
+        self.change.rename(archive)
+        self.change = archive
+        self.assert_status("unable-to-verify")
+
+    def test_historical_archive_cannot_hide_changed_artifacts(self):
+        self.historical_archive()
+        self.body["proposal"] += "\nNew unreviewed scope.\n"
+        self.write("proposal")
+        self.assert_status("fail")
+
+    def test_historical_archive_cannot_be_used_in_active_storage(self):
+        self.historical_archive()
+        active = self.root / "specs" / "changes" / self.change_id
+        self.change.rename(active)
+        self.change = active
+        self.assert_status("fail")
+
+    def test_historical_archive_requires_valid_record_and_safe_evidence(self):
+        manifest = self.historical_archive()
+        invalid_records = [
+            None, {}, True,
+            {"merge_commit": "not-a-commit", "evidence": "historical-merge.md"},
+            {"merge_commit": "a" * 40, "evidence": ""},
+            {"merge_commit": "a" * 40, "evidence": "missing.md"},
+            {"merge_commit": "a" * 40, "evidence": "../outside.md"},
+            {"merge_commit": "a" * 40, "evidence": "historical-merge.md", "approved": True},
+        ]
+        for record in invalid_records:
+            with self.subTest(record=record):
+                manifest["changes"][self.change_id]["historical_archive"] = record
+                (self.root / "sdd" / "legacy-changes.json").write_text(json.dumps(manifest))
+                self.assert_status("fail")
+
+    def test_historical_archive_cannot_hide_unfinished_tasks(self):
+        manifest = self.historical_archive()
+        self.data["tasks"]["tasks"][0]["status"] = "pending"
+        self.body["tasks"] = self.body["tasks"].replace("- [x]", "- [ ]")
+        self.write("tasks")
+        manifest["changes"][self.change_id]["files"]["tasks.md"] = hashlib.sha256(
+            (self.change / "tasks.md").read_bytes()
+        ).hexdigest()
+        (self.root / "sdd" / "legacy-changes.json").write_text(json.dumps(manifest))
+        self.assert_status("fail")
+
     def test_missing_legacy_allowlist_cannot_bypass_v2(self):
         self.make_legacy()
         (self.root / "sdd" / "legacy-changes.json").unlink()

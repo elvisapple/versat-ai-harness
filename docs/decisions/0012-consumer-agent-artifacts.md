@@ -35,4 +35,4 @@ Retain the Harness root Plugin layout from ADR-0011. Its `agents/*.md` files are
 
 - [Codex Skills](https://learn.chatgpt.com/docs/build-skills)
 - [Codex custom agents](https://learn.chatgpt.com/docs/agent-configuration/subagents#custom-agents)
-- [SDD change](../../specs/changes/agent-project-layout/proposal.md)
+- [SDD change](../../specs/archive/agent-project-layout/proposal.md)

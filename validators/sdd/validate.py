@@ -261,12 +261,23 @@ class RepositoryValidator:
             entries = data["changes"]
             expected = {f"{name}.md" for name in ARTIFACTS}
             for identifier, entry in entries.items():
-                if not CHANGE_ID.fullmatch(identifier) or not isinstance(entry, dict) or set(entry) != {"reason", "files"}:
+                if not CHANGE_ID.fullmatch(identifier) or not isinstance(entry, dict) or set(entry) not in ({"reason", "files"}, {"reason", "files", "historical_archive"}):
                     raise ValueError(f"Invalid legacy manifest entry: {identifier}")
                 if not isinstance(entry["reason"], str) or not entry["reason"].strip() or not isinstance(entry["files"], dict) or set(entry["files"]) != expected:
                     raise ValueError(f"Legacy entry needs a reason and hashes for all four artifacts: {identifier}")
                 if any(not isinstance(value, str) or not DIGEST.fullmatch(value) for value in entry["files"].values()):
                     raise ValueError(f"Invalid legacy content hash: {identifier}")
+                if "historical_archive" in entry:
+                    archive = entry["historical_archive"]
+                    if not isinstance(archive, dict) or set(archive) != {"merge_commit", "evidence"}:
+                        raise ValueError(f"Historical archive needs a merge commit and evidence: {identifier}")
+                    if not isinstance(archive["merge_commit"], str) or not re.fullmatch(r"[a-f0-9]{40}(?:[a-f0-9]{24})?", archive["merge_commit"]):
+                        raise ValueError(f"Invalid historical merge commit: {identifier}")
+                    if not isinstance(archive["evidence"], str) or not archive["evidence"].strip():
+                        raise ValueError(f"Historical archive needs an evidence reference: {identifier}")
+                    _reference(self.root, archive["evidence"])
+                    if identifier in changes and changes[identifier].parent.name != "archive":
+                        raise ValueError(f"Historical archive record requires archive storage: {identifier}")
                 if identifier not in changes:
                     self.add("LEGACY_UNKNOWN", f"Legacy entry has no matching dossier: {identifier}", path)
             return entries
@@ -490,7 +501,13 @@ class RepositoryValidator:
             self.compatible(directory, artifacts, version)
         if legacy:
             self.warnings.append({"code": "LEGACY_EXEMPT", "message": "Immutable legacy dossier: v2 approval and evidence gates were not verified", "path": str(directory)})
-            if self.phase != "planning" or directory.parent.name == "archive" or directory.name in self.archive_required:
+            historical_archive = "historical_archive" in legacy_entry
+            if historical_archive:
+                self.warnings.append({"code": "LEGACY_HISTORICAL_ARCHIVE", "message": "Historical archive record preserved; merge evidence requires human review and v2 readiness remains unverified", "path": str(directory)})
+                for task in artifacts["tasks"]["metadata"]["tasks"]:
+                    if task["status"] != "completed":
+                        self.add("TASK_INCOMPLETE", f"{task['id']} is not completed", artifacts["tasks"]["path"])
+            if self.phase != "planning" or (directory.parent.name == "archive" and not historical_archive) or directory.name in self.archive_required:
                 self.add("LEGACY_UNVERIFIED", "Migrate this legacy dossier explicitly before implementation or delivery readiness can be verified", directory, unverified=True)
             return
         digests, approved = self.reviews(artifacts)

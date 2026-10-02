@@ -8,6 +8,10 @@
         "requirements.md": "3e911039f72a0f19c8a110d92bdb31bed8f66c9f3800f9289a4753eb31133589",
         "design.md": "a25796d9502682dd25f72e4ab931477c896b36ed395a8ca6c011bb6de40d2279",
         "tasks.md": "1f52d803dcbe8e01c75925e8dc4837dbc093a2f6245d2992689d042f6f11a695"
+      },
+      "historical_archive": {
+        "merge_commit": "776b8235326fc892e75d06167e5b342672a1011d",
+        "evidence": "docs/validation/legacy-archive.md"
       }
     },
     "agent-project-layout": {
@@ -17,6 +21,10 @@
         "requirements.md": "adfbc40aa715fdc90b4b91c49d9b47b68c9d4ddabd0d6fa2e58ade7228a347f3",
         "design.md": "9a38eff99ee1e5cfcd80a6b490e79e91d6c66719a0a2a9a565a6e60e1a2595b2",
         "tasks.md": "f3fefbfe7063546c131d267225967ab54432aa0358e5aa17f096329a560b169b"
+      },
+      "historical_archive": {
+        "merge_commit": "5e303dbd007977ec010e5863f35402ff305399d9",
+        "evidence": "docs/validation/legacy-archive.md"
       }
     },
     "bootstrap-product-context": {
@@ -26,6 +34,10 @@
         "requirements.md": "47f20aac41d0da41d13352e99894d816339561f7ec0db97d11b4f86e1871815e",
         "design.md": "eb4c8357ecc214489aa1847141fd0283aee7391b1eefb021dbee2814cabf84fd",
         "tasks.md": "ac65d6c4bee644765d49edb4d24c5d9a8e3396aae3172de7e550acdb0b22576a"
+      },
+      "historical_archive": {
+        "merge_commit": "0b0471f7b0fcaa0e4784892197439f8c61ffba48",
+        "evidence": "docs/validation/legacy-archive.md"
       }
     },
     "root-plugin-package": {
@@ -35,6 +47,10 @@
         "requirements.md": "333624d3ccff3c0efa051e92ae88f691ecc8d7005f305a92e3126d19f5e148fc",
         "design.md": "21333833d7640cd86c06eac798dd29c1f5150f352ad34f1cee3fa024ecbb3af0",
         "tasks.md": "88ce50426524f2abc1aff4f3a48dcae6efabce6fc0251cfc9b908365f437dfc8"
+      },
+      "historical_archive": {
+        "merge_commit": "85194bf7fb6c708de6a0f29acabb90eaaa1d055f",
+        "evidence": "docs/validation/legacy-archive.md"
       }
     },
     "shortcut-git-convention": {
@@ -44,6 +60,10 @@
         "requirements.md": "f95066a893aab2d610e5f766dd117261ee2c8bd8332f8fb351c686f9990f1730",
         "design.md": "7377a6ecbb5b6f20c65aa57febbf80ea1b493cf7abff6144303205eb46cc555c",
         "tasks.md": "aff62268c1dca616f4030b65228eeb6cef0b9f42db35120fa522db48231c06d0"
+      },
+      "historical_archive": {
+        "merge_commit": "5a383f7e74b823f4cf972672216aa2ee4fcfd449",
+        "evidence": "docs/validation/legacy-archive.md"
       }
     },
     "consolidate-sdd-workflow": {
@@ -53,6 +73,10 @@
         "requirements.md": "8b5e0a431926866a1edfb45293cbd9d67af4f68742cae39c2d661ea07a32c539",
         "design.md": "660895d86b3e08a4a247dfa5fa41dac074f89d18ee83212ac4ab7def43c27996",
         "tasks.md": "69dc3a9f0ecf2b755148de1a78cc10429f358d75de22736894fad3bd663c70de"
+      },
+      "historical_archive": {
+        "merge_commit": "bd6d3b311da3d0b7e4d7828fdc19c21536ad4685",
+        "evidence": "docs/validation/legacy-archive.md"
       }
     }
   }

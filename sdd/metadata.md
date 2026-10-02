@@ -127,6 +127,10 @@ The validator reports legacy exemptions as warnings, never as verified planning 
 
 Migration is a deliberate reviewed update: retain genuine historical context, adopt v3 fields, present the current plan for real approvals and obtain current validation evidence. Remove the corresponding exemption when migration is complete. Do not synthesize retrospective approvals or automatically archive legacy work from a descriptive status. Existing delivered history need not be rewritten merely to pass new fields; continuing its execution or documentary closure does require the current contract.
 
+For administrative relocation of already merged history, a reviewed legacy entry may additionally carry `historical_archive` with exactly `merge_commit` (a full lowercase 40- or 64-character Git object ID) and `evidence` (an existing repository-relative file or an HTTPS reference documenting the observed merge). Verify the merge against the default branch before recording it. Preserve all four artifact hashes and bytes, require completed historical tasks, and keep the dossier only under `specs/archive/`. Do not add v2 approvals or `closure: prepared` to this immutable record.
+
+This explicit record permits historical storage during the default `planning` check, with warnings. Missing or malformed records, changed artifacts and incomplete tasks do not qualify. Explicit `implementation` and `delivery` checks still return `unable-to-verify` for these legacy dossiers. The validator checks recorded structure and local references, not Git ancestry or remote evidence authenticity; the maintenance PR must review those facts. See the provider's [historical archive evidence](../docs/validation/legacy-archive.md).
+
 ## Impact and coverage
 
 Proposal `impact` has `state: assessed | unresolved`, a nonempty `summary` and `items`. Empty items with an assessed summary means a reviewed no-impact conclusion. Unresolved is a draft state and blocks approval readiness. Each item contains:
@@ -224,3 +228,4 @@ The introducing `sdd-acceptance-regression` change finishes under its actual v2 
 `--require-archive` adds a submission precondition without adding another planning phase. Use `--change <id>` for a local pre-publication check, or `--baseline <trusted-ref>` for affected dossiers. Every selected dossier must exist in archive storage with Tasks `closure: prepared` and pass live delivery checks. With both selectors, their union is checked. Invalid/empty selection fails rather than accepting a vacuous success.
 
 Baseline selection for this guard includes both `specs/changes/` and `specs/archive/`, including removed paths. Unchanged active/history records remain ordinary inventory. Without the flag, existing planning, implementation and pre-move delivery behavior stays available. Digest-only helper operations cannot substitute for the guard. CI enables it for non-draft PRs, ready-for-review transitions and pushes to main; drafts retain inventory plus the existing live checks for changed archives.
+

@@ -1,0 +1,65 @@
+{
+  "status": "pass",
+  "phase": "planning",
+  "checked": [
+    "agent-project-layout",
+    "align-language-standard",
+    "bootstrap-product-context",
+    "consolidate-sdd-workflow",
+    "root-plugin-package",
+    "shortcut-git-convention",
+    "quickstart-scenario-coverage",
+    "sdd-acceptance-regression"
+  ],
+  "findings": [],
+  "warnings": [
+    {
+      "code": "LEGACY_EXEMPT",
+      "message": "Immutable legacy dossier: v2 approval and evidence gates were not verified",
+      "path": "/Users/elviszoz/.codex/worktrees/e592/versat-ai-harness/specs/changes/agent-project-layout"
+    },
+    {
+      "code": "LEGACY_EXEMPT",
+      "message": "Immutable legacy dossier: v2 approval and evidence gates were not verified",
+      "path": "/Users/elviszoz/.codex/worktrees/e592/versat-ai-harness/specs/changes/align-language-standard"
+    },
+    {
+      "code": "LEGACY_EXEMPT",
+      "message": "Immutable legacy dossier: v2 approval and evidence gates were not verified",
+      "path": "/Users/elviszoz/.codex/worktrees/e592/versat-ai-harness/specs/changes/bootstrap-product-context"
+    },
+    {
+      "code": "LEGACY_EXEMPT",
+      "message": "Immutable legacy dossier: v2 approval and evidence gates were not verified",
+      "path": "/Users/elviszoz/.codex/worktrees/e592/versat-ai-harness/specs/changes/consolidate-sdd-workflow"
+    },
+    {
+      "code": "LEGACY_EXEMPT",
+      "message": "Immutable legacy dossier: v2 approval and evidence gates were not verified",
+      "path": "/Users/elviszoz/.codex/worktrees/e592/versat-ai-harness/specs/changes/root-plugin-package"
+    },
+    {
+      "code": "LEGACY_EXEMPT",
+      "message": "Immutable legacy dossier: v2 approval and evidence gates were not verified",
+      "path": "/Users/elviszoz/.codex/worktrees/e592/versat-ai-harness/specs/changes/shortcut-git-convention"
+    },
+    {
+      "code": "V2_COMPATIBILITY",
+      "message": "Reviewed v2 contract only; v3 acceptance/regression assurance not verified",
+      "path": "/Users/elviszoz/.codex/worktrees/e592/versat-ai-harness/specs/archive/quickstart-scenario-coverage"
+    },
+    {
+      "code": "V2_COMPATIBILITY",
+      "message": "Reviewed v2 contract only; v3 acceptance/regression assurance not verified",
+      "path": "/Users/elviszoz/.codex/worktrees/e592/versat-ai-harness/specs/archive/sdd-acceptance-regression"
+    }
+  ],
+  "metrics": {},
+  "live_archives": [
+    "sdd-acceptance-regression"
+  ],
+  "archive_required": [
+    "sdd-acceptance-regression"
+  ],
+  "scope": "Declared contract checks only; archive inventory is historical unless selected for live delivery. No proof of semantic adequacy, execution authenticity, human identity, remote CI, merge or deployment."
+}

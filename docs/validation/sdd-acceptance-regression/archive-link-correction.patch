@@ -1,0 +1,5 @@
+--- a/specs/changes/sdd-acceptance-regression/proposal.md
++++ b/specs/changes/sdd-acceptance-regression/proposal.md
+@@ -80 +80 @@
+-- [ADR-0013](../../../docs/decisions/0013-consolidated-sdd-workflow.md) and [consolidate-sdd-workflow](../consolidate-sdd-workflow/requirements.md), especially REQ-004 through REQ-006, establish the existing metadata and governance controls to preserve.
++- [ADR-0013](../../../docs/decisions/0013-consolidated-sdd-workflow.md) and [consolidate-sdd-workflow](../../changes/consolidate-sdd-workflow/requirements.md), especially REQ-004 through REQ-006, establish the existing metadata and governance controls to preserve.

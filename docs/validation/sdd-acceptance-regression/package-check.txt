@@ -1,0 +1,17 @@
+Portable Plugin package validation passed.
+SDD validation: pass
+Declared contract checks only; archive inventory is historical unless selected for live delivery. No proof of semantic adequacy, execution authenticity, human identity, remote CI, merge or deployment.
+WARNING LEGACY_EXEMPT: /Users/elviszoz/.codex/worktrees/e592/versat-ai-harness/specs/changes/agent-project-layout: Immutable legacy dossier: v2 approval and evidence gates were not verified
+WARNING LEGACY_EXEMPT: /Users/elviszoz/.codex/worktrees/e592/versat-ai-harness/specs/changes/align-language-standard: Immutable legacy dossier: v2 approval and evidence gates were not verified
+WARNING LEGACY_EXEMPT: /Users/elviszoz/.codex/worktrees/e592/versat-ai-harness/specs/changes/bootstrap-product-context: Immutable legacy dossier: v2 approval and evidence gates were not verified
+WARNING LEGACY_EXEMPT: /Users/elviszoz/.codex/worktrees/e592/versat-ai-harness/specs/changes/consolidate-sdd-workflow: Immutable legacy dossier: v2 approval and evidence gates were not verified
+WARNING LEGACY_EXEMPT: /Users/elviszoz/.codex/worktrees/e592/versat-ai-harness/specs/changes/root-plugin-package: Immutable legacy dossier: v2 approval and evidence gates were not verified
+WARNING LEGACY_EXEMPT: /Users/elviszoz/.codex/worktrees/e592/versat-ai-harness/specs/changes/shortcut-git-convention: Immutable legacy dossier: v2 approval and evidence gates were not verified
+WARNING V2_COMPATIBILITY: /Users/elviszoz/.codex/worktrees/e592/versat-ai-harness/specs/archive/quickstart-scenario-coverage: Reviewed v2 contract only; v3 acceptance/regression assurance not verified
+WARNING V2_COMPATIBILITY: /Users/elviszoz/.codex/worktrees/e592/versat-ai-harness/specs/archive/sdd-acceptance-regression: Reviewed v2 contract only; v3 acceptance/regression assurance not verified
+.............................................................................................................................
+----------------------------------------------------------------------
+Ran 125 tests in 21.038s
+
+OK
+Versat AI Harness package, SDD contract and validator tests passed.

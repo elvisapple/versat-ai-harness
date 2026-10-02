@@ -1,0 +1,34 @@
+{
+  "status": "fail",
+  "phase": "delivery",
+  "checked": [
+    "sdd-acceptance-regression"
+  ],
+  "findings": [
+    {
+      "code": "ARCHIVE_REQUIRED",
+      "message": "Archive the dossier before submitting the completed implementation for PR review",
+      "path": "/Users/elviszoz/.codex/worktrees/e592/versat-ai-harness/specs/changes/sdd-acceptance-regression",
+      "severity": "error"
+    },
+    {
+      "code": "CLOSURE_REQUIRED",
+      "message": "PR submission requires Tasks closure: prepared",
+      "path": "/Users/elviszoz/.codex/worktrees/e592/versat-ai-harness/specs/changes/sdd-acceptance-regression/tasks.md",
+      "severity": "error"
+    }
+  ],
+  "warnings": [
+    {
+      "code": "V2_COMPATIBILITY",
+      "message": "Reviewed v2 contract only; v3 acceptance/regression assurance not verified",
+      "path": "/Users/elviszoz/.codex/worktrees/e592/versat-ai-harness/specs/changes/sdd-acceptance-regression"
+    }
+  ],
+  "metrics": {},
+  "live_archives": [],
+  "archive_required": [
+    "sdd-acceptance-regression"
+  ],
+  "scope": "Declared contract checks only; archive inventory is historical unless selected for live delivery. No proof of semantic adequacy, execution authenticity, human identity, remote CI, merge or deployment."
+}

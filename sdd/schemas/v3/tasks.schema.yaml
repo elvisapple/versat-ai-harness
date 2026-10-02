@@ -1,0 +1,236 @@
+$schema: https://json-schema.org/draft/2020-12/schema
+$id: urn:versat:sdd:v3:tasks
+title: Versat SDD version 3 task collection
+type: object
+additionalProperties: false
+required:
+- sdd_version
+- change
+- tasks
+- review
+- validation
+- closure
+properties:
+  sdd_version:
+    const: 3
+  change:
+    $ref: urn:versat:sdd:common#/$defs/change
+  tasks:
+    type: array
+    minItems: 1
+    items:
+      type: object
+      additionalProperties: false
+      required:
+      - id
+      - description
+      - requirements
+      - status
+      properties:
+        id:
+          type: string
+          pattern: ^TASK-[0-9]{3,}$
+        description:
+          $ref: urn:versat:sdd:common#/$defs/text
+        requirements:
+          $ref: urn:versat:sdd:common#/$defs/requirementIds
+        status:
+          enum:
+          - pending
+          - in-progress
+          - blocked
+          - completed
+  review:
+    allOf:
+    - $ref: urn:versat:sdd:common#/$defs/review
+    - properties:
+        upstream:
+          required:
+          - proposal
+          - design
+  validation:
+    type: object
+    additionalProperties: false
+    required:
+    - plan_digest
+    - results
+    - assessments
+    - findings
+    properties:
+      plan_digest:
+        oneOf:
+        - type: 'null'
+        - $ref: urn:versat:sdd:common#/$defs/digest
+      results:
+        type: array
+        items:
+          type: object
+          additionalProperties: false
+          required:
+          - check
+          - result
+          - evidence
+          - revision
+          - input_digest_before
+          - input_digest_after
+          - context
+          properties:
+            check:
+              type: string
+              pattern: ^CHECK-[0-9]{3,}$
+            result:
+              enum:
+              - pass
+              - fail
+              - unverified
+            evidence:
+              $ref: urn:versat:sdd:common#/$defs/text
+            revision:
+              $ref: urn:versat:sdd:common#/$defs/text
+            input_digest_before: &id001
+              type: string
+              pattern: ^[a-f0-9]{64}$
+            input_digest_after: *id001
+            context:
+              type: object
+              additionalProperties: false
+              required:
+              - execution
+              - environment
+              - observed
+              properties:
+                execution:
+                  enum:
+                  - local
+                  - ci
+                environment: &id002
+                  type: string
+                  minLength: 1
+                  pattern: \S
+                observed:
+                  type: boolean
+      assessments:
+        type: array
+        minItems: 0
+        items:
+          type: object
+          additionalProperties: false
+          required:
+          - obligation
+          - result
+          - checks
+          - evidence
+          - explanation
+          properties:
+            obligation: &id003
+              oneOf:
+              - type: object
+                additionalProperties: false
+                required:
+                - local
+                properties:
+                  local:
+                    type: object
+                    additionalProperties: false
+                    required:
+                    - requirement
+                    - scenario
+                    properties:
+                      requirement:
+                        type: string
+                        pattern: ^REQ-[0-9]{3,}$
+                      scenario:
+                        type: integer
+                        minimum: 1
+              - type: object
+                additionalProperties: false
+                required:
+                - regression
+                properties:
+                  regression:
+                    type: object
+                    additionalProperties: false
+                    required:
+                    - impact
+                    - scenario
+                    properties:
+                      impact:
+                        type: integer
+                        minimum: 1
+                      scenario:
+                        type: integer
+                        minimum: 0
+            result:
+              enum:
+              - pass
+              - fail
+              - unverified
+              - not-applicable
+            checks:
+              type: array
+              minItems: 0
+              items:
+                type: string
+                pattern: ^CHECK-[0-9]{3,}$
+              uniqueItems: true
+            evidence: *id002
+            explanation: *id002
+      findings:
+        type: array
+        minItems: 0
+        items:
+          type: object
+          additionalProperties: false
+          required:
+          - id
+          - source
+          - category
+          - state
+          - evidence
+          - description
+          - tasks
+          - checks
+          properties:
+            id:
+              type: string
+              pattern: ^FIND-[0-9]{3,}$
+            source:
+              oneOf:
+              - *id003
+              - type: object
+                additionalProperties: false
+                required:
+                - plan
+                properties:
+                  plan: *id002
+            category:
+              enum:
+              - missing
+              - partial
+              - contradicts
+              - unrequested
+            state:
+              enum:
+              - open
+              - resolved
+            evidence: *id002
+            description: *id002
+            tasks:
+              type: array
+              minItems: 0
+              items:
+                type: string
+                pattern: ^TASK-[0-9]{3,}$
+              uniqueItems: true
+            resolution: *id002
+            checks:
+              type: array
+              minItems: 0
+              items:
+                type: string
+                pattern: ^CHECK-[0-9]{3,}$
+              uniqueItems: true
+  closure:
+    enum:
+    - active
+    - prepared

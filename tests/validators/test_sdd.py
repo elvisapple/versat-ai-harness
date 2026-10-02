@@ -83,6 +83,7 @@ class SddValidationTests(unittest.TestCase):
                 "closure": "active",
             },
         }
+        self.compat_bindings = {}
         self.body = {
             "proposal": "# Greeting button\n\nAdd a greeting in the existing home screen.\n",
             "requirements": "# Requirements\n\nREQ-001 defines the greeting interaction.\n",
@@ -105,6 +106,21 @@ class SddValidationTests(unittest.TestCase):
         (self.change / f"{name}.md").write_text(
             f"---\n{metadata}---\n\n{self.body[name]}", encoding="utf-8"
         )
+        self.bind_v2_fixture()
+
+    def bind_v2_fixture(self):
+        """Explicit synthetic in-flight admission; never update a captured digest."""
+        if self.data['proposal'].get('sdd_version') != 2:
+            return
+        for stage in ('proposal', 'design', 'tasks'):
+            needed = ('proposal', 'requirements') if stage == 'proposal' else (stage,)
+            if stage not in self.compat_bindings and all((self.change / f'{n}.md').exists() for n in needed):
+                self.compat_bindings[stage] = self.digest(stage)
+        path = self.root / 'sdd' / 'compatibility.json'
+        path.parent.mkdir(parents=True, exist_ok=True)
+        path.write_text(json.dumps({'version': 1, 'historical': {}, 'in_flight': {
+            self.change_id: {'reason': 'Synthetic v2 in-flight contract fixture, not actual human approval.',
+                             'digests': {n: self.compat_bindings.get(n, '0' * 64) for n in ('proposal', 'design', 'tasks')}}}}))
 
     def begin(self):
         self.write("proposal")
@@ -173,6 +189,9 @@ class SddValidationTests(unittest.TestCase):
         return result
 
     def make_legacy(self):
+        compatibility = self.root / 'sdd' / 'compatibility.json'
+        if compatibility.exists():
+            compatibility.unlink()
         for name in self.data:
             self.data[name].pop("sdd_version", None)
             self.data[name].pop("review", None)
@@ -193,7 +212,7 @@ class SddValidationTests(unittest.TestCase):
             }},
         }
         path = self.root / "sdd" / "legacy-changes.json"
-        path.parent.mkdir(parents=True)
+        path.parent.mkdir(parents=True, exist_ok=True)
         path.write_text(json.dumps(manifest), encoding="utf-8")
         return manifest
 
@@ -287,7 +306,7 @@ class SddValidationTests(unittest.TestCase):
         self.write("design")
         self.assert_status("fail", "implementation")
 
-    def test_upstream_reopening_allows_superseded_downstream_drafts(self):
+    def test_v2_replanning_requires_explicit_migration(self):
         self.approved_plan()
         proposal = self.data["proposal"]["review"]
         proposal.update(state="awaiting-approval", approval=None, revision=2)
@@ -297,7 +316,7 @@ class SddValidationTests(unittest.TestCase):
         for stage in ("design", "tasks"):
             self.data[stage]["review"].update(state="superseded", approval=None)
             self.write(stage)
-        self.assert_status("pass")
+        self.assert_status("fail")  # Changed in-flight v2 scope now requires migration.
         self.assertNotEqual("pass", self.result("implementation")["status"])
 
     def test_progress_and_evidence_do_not_invalidate_task_approval(self):

@@ -4,6 +4,27 @@ set -euo pipefail
 repo_root="$(cd "$(dirname "${BASH_SOURCE[0]}")/../.." && pwd)"
 failures=0
 validation_python="${PYTHON:-python3}"
+sdd_args=(--phase planning)
+while [[ "$#" -gt 0 ]]; do
+  case "$1" in
+    --baseline)
+      if [[ "$#" -lt 2 || -z "$2" || "$2" == --* ]]; then
+        echo "--baseline requires a trusted Git revision" >&2
+        exit 1
+      fi
+      sdd_args+=(--baseline "$2")
+      shift 2
+      ;;
+    --require-archive)
+      sdd_args+=(--require-archive)
+      shift
+      ;;
+    *)
+      echo "Usage: $0 [--baseline trusted-git-revision] [--require-archive]" >&2
+      exit 1
+      ;;
+  esac
+done
 
 required_files=(
   "AGENTS.md"
@@ -63,7 +84,7 @@ if command -v "${validation_python}" >/dev/null 2>&1; then
     failures=$((failures + 1))
   fi
   if "${validation_python}" -c 'import yaml, jsonschema' >/dev/null 2>&1; then
-    if ! PYTHONDONTWRITEBYTECODE=1 "${validation_python}" "${repo_root}/validators/sdd/validate.py" --root "${repo_root}"; then
+    if ! PYTHONDONTWRITEBYTECODE=1 "${validation_python}" "${repo_root}/validators/sdd/validate.py" --root "${repo_root}" "${sdd_args[@]}"; then
       failures=$((failures + 1))
     fi
     if ! PYTHONDONTWRITEBYTECODE=1 "${validation_python}" -m unittest discover -s "${repo_root}/tests/validators" -p 'test_*.py'; then

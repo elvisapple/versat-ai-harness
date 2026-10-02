@@ -1,0 +1,35 @@
+$schema: https://json-schema.org/draft/2020-12/schema
+$id: urn:versat:sdd:v3:requirements
+title: Versat SDD version 3 requirement collection
+type: object
+additionalProperties: false
+required:
+- sdd_version
+- change
+- requirements
+properties:
+  sdd_version:
+    const: 3
+  change:
+    $ref: urn:versat:sdd:common#/$defs/change
+  requirements:
+    type: array
+    minItems: 1
+    items:
+      type: object
+      additionalProperties: false
+      required:
+      - id
+      - statement
+      - acceptance
+      properties:
+        id:
+          type: string
+          pattern: ^REQ-[0-9]{3,}$
+        statement:
+          $ref: urn:versat:sdd:common#/$defs/text
+        acceptance:
+          type: array
+          minItems: 1
+          items:
+            $ref: urn:versat:sdd:common#/$defs/text

@@ -184,7 +184,7 @@ The skill verifies existing records and reuses valid approvals; opening a new ch
 
 ## Existing changes and verification limits
 
-Older dossiers can remain exact, explicitly grandfathered records. Exemption preserves history and is not current execution or closure approval. Resuming implementation or preparing archival of an exempt change requires a reviewed migration to v2 metadata with actual approvals and evidence. Consumer projects do not inherit exemptions from the provider repository.
+Older dossiers can remain exact, explicitly grandfathered records. Exemption preserves history and is not current execution or closure approval. Resuming implementation or preparing archival of an exempt change requires a reviewed migration to v3 metadata with actual approvals and evidence. Consumer projects do not inherit exemptions from the provider repository.
 
 The agent workflow supplies human interaction; local checks enforce artifact consistency; the repository platform supplies trusted PR review, required checks and merge evidence. None replaces the other. See [metadata](metadata.md) and the [validator guide](../validators/sdd/README.md) for the exact contract and limits.
 
@@ -196,3 +196,46 @@ The agent workflow supplies human interaction; local checks enforce artifact con
 - [Standards index](../standards/index.yaml): policy selection for the project.
 - [Validator](../validators/sdd/README.md): deterministic checks and adoption behavior.
 - [Public skill](../skills/versat-sdd/SKILL.md): context resolution, routing and handoff.
+
+## Worked acceptance and regression examples
+
+New dossiers use v3. Continue using the same skill and four files; the agent maintains the structured records described in [metadata](metadata.md).
+
+| Situation | Planning and observed validation |
+|---|---|
+| New greeting feature | Proposal explains assessed no-impact when grounded in the project. Requirements include success, empty input and repeated activation. Design maps every acceptance position; one adequate maintained test can cover multiple positions. Missing boundary behavior blocks completion even with every task checked. |
+| Payment retry extending archived duplicate prevention | Proposal cites `prevent-duplicates/REQ-001`, its source Requirements digest, and the effective current contract. Preserve maps the old scenario to a current CHECK using the existing duplicate test in the normal suite. Run both the new success path and duplicate prevention. An old archived pass cannot substitute. |
+| Intentional supersession | Proposal explicitly replaces the old contract, records why and targets the new local requirement. Design verifies the replacement. Update the living specification and retire only obsolete assertions under that approved scope; preserve delivered dossier bytes. |
+| Unavailable environment | Keep the applicable scenario mapped; record unverified with the unavailable prerequisite. Do not use not-applicable, pretend a local run satisfied a required CI context or copy another run's input hash. |
+| Manual documentary check | Design gives concrete inspection steps, expected observations and why useful automation is unavailable. Record the actual review and matching input snapshots. It is a reviewer observation, not an autonomous-agent evaluation. |
+
+For the payment example, from the selected Harness root:
+
+```sh
+python validators/sdd/validate.py --root /path/to/project --change prevent-duplicates --source-digest
+python validators/sdd/validate.py --root /path/to/project --change payment-retry --phase implementation
+python validators/sdd/validate.py --root /path/to/project --change payment-retry --input-digest CHECK-002
+# Actually run CHECK-002's approved maintained test in the project, then:
+python validators/sdd/validate.py --root /path/to/project --change payment-retry --input-digest CHECK-002
+python validators/sdd/validate.py --root /path/to/project --change payment-retry --phase delivery --json
+```
+
+Record both snapshots around execution; matching hashes alone are not a test run. Missing/failed results or assessments block delivery. A later source/test/configuration edit invalidates affected evidence without changing task planning. On resumption, rerun and reassess. Do not merely replace the stored hashes.
+
+If validation finds missing or contradictory behavior, record/reuse a FIND entry and the affected scenario. Validation-only reports it without a product edit. Existing implementation authorization permits a routine correction within approved tasks and revalidation. Adding new task-plan scope reopens Tasks; broader changes reopen the earliest affected gate. Completed checkboxes never waive unresolved findings.
+
+After documentary archival, `--change payment-retry --phase delivery` is still live. Default inventory preserves historical results; `--baseline <trusted-base>` additionally selects changed archives for live checks. The [validator guide](../validators/sdd/README.md) explains CI's event-derived baseline and exit codes. Run profile-required suites as well as targeted tests.
+
+The introducing change has [recorded reviewer walkthroughs](../docs/validation/sdd-acceptance-regression/reviewer-walkthrough.md), with executable synthetic payment behavior and separate deterministic cases. These show what was actually observed and the remaining trust limits.
+
+## Mandatory archive check before submitting completed work
+
+A completed implementation must be archived before its PR is submitted for review or an existing draft becomes ready. The local command is:
+
+```sh
+python validators/sdd/validate.py --root /path/to/project --change home-greeting --phase delivery --require-archive
+```
+
+This fails if the dossier is still in `changes`, if `closure` is not `prepared`, or if live delivery requirements fail. Plain delivery remains the pre-move eligibility check. The agent performs archive preparation as part of an authorized submission request; it does not need another functional change to do so. An implementation/validation-only handoff must state archival pending until prepared.
+
+CI uses `./scripts/validate/run.sh --baseline <event-base> --require-archive` for non-draft PRs and pushes to main, including a draft-to-ready event. It selects changed active and archived dossiers and rejects an empty selection. Planning/incomplete reviews use a draft PR. Existing unchanged history is not required to migrate. Required platform checks enforce merge eligibility; CI alone cannot stop all clients from opening a PR.

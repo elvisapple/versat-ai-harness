@@ -58,7 +58,7 @@ python -m pip install -r requirements-validation.txt
 ./scripts/validate/run.sh
 ```
 
-The entry point checks the Plugin package, SDD metadata/gates/traceability and the validator regression suite. Explicit immutable legacy exceptions are reported separately; passing local checks does not authenticate human approval or prove a remote merge. An existing environment can also be selected with `PYTHON=/absolute/path/to/python ./scripts/validate/run.sh`.
+The entry point checks the Plugin package, SDD metadata/gates/traceability and the validator regression suite. The current source adds v3 scenario/regression assessments and input freshness; CI supplies a trusted baseline for live checks of changed archives. See the [validator guide](validators/sdd/README.md) for historical inventory limits and explicit compatibility. Explicit immutable legacy exceptions are reported separately; passing local checks does not authenticate human approval or prove a remote merge. An existing environment can also be selected with `PYTHON=/absolute/path/to/python ./scripts/validate/run.sh`.
 
 ## Developing a change
 

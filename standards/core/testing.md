@@ -9,3 +9,10 @@
 - Agent projects MUST include evals for critical behavior and approval boundaries.
 - Test fixtures MUST NOT contain production secrets or personal data.
 - Required test and eval suites MUST run in CI before merge.
+
+- Impact assessment MUST distinguish historical requirement origins from the effective current contract. Preserved or extended behavior MUST retain regression coverage in maintained project suites, independent of whether its originating dossier is active or archived. A missing historical test is work to address, not evidence of no impact.
+- Intentional supersession or retirement of behavior/tests MUST have a reviewed rationale, affected requirement references and replacement checks where applicable. A failing regression alone is not grounds to delete or exclude it.
+- Manual/review checks MUST specify reproducible steps, expected observations and a reason when substituting for useful automation. Not-applicable scenarios require an approved justification; unavailable execution is unverified, never not-applicable or passed.
+- Validation MUST assess each applicable acceptance scenario and retained regression obligation against current implementation and observed evidence. Complete task checkboxes alone do not establish acceptance. Missing, partial, contradictory or unrequested behavior MUST remain visible until resolved or reviewed through the planning gates.
+- Execution evidence MUST identify the tested inputs and relevant environment. Rerun affected checks after implementation, test, fixture, configuration or known external dependency changes. Historical runs, editable revision labels and structural success do not prove current behavior. Declared scopes and hashes do not authenticate execution or discover undeclared dependencies.
+- Targeted checks complement required profile suites and final CI; they MUST NOT silently replace them.

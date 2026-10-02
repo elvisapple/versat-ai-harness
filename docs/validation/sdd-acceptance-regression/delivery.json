@@ -1,0 +1,21 @@
+{
+  "status": "pass",
+  "phase": "delivery",
+  "checked": [
+    "sdd-acceptance-regression"
+  ],
+  "findings": [],
+  "warnings": [
+    {
+      "code": "V2_COMPATIBILITY",
+      "message": "Reviewed v2 contract only; v3 acceptance/regression assurance not verified",
+      "path": "/Users/elviszoz/.codex/worktrees/e592/versat-ai-harness/specs/archive/sdd-acceptance-regression"
+    }
+  ],
+  "metrics": {},
+  "live_archives": [],
+  "archive_required": [
+    "sdd-acceptance-regression"
+  ],
+  "scope": "Declared contract checks only; archive inventory is historical unless selected for live delivery. No proof of semantic adequacy, execution authenticity, human identity, remote CI, merge or deployment."
+}

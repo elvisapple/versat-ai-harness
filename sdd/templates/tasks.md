@@ -1,5 +1,5 @@
 ---
-sdd_version: 2
+sdd_version: 3
 change: change-id
 tasks:
   - id: TASK-001
@@ -17,6 +17,8 @@ review:
 validation:
   plan_digest: null
   results: []
+  assessments: []
+  findings: []
 closure: active
 ---
 
@@ -38,7 +40,7 @@ Record execution notes here without changing the approved task scope.
 
 ## Validation evidence
 
-Populate metadata results using the Design CHECK identifiers and the current Tasks digest. Record real evidence at stable repository-relative paths or HTTPS URLs, with the observed revision. A recorded pass is not proof that remote CI, human review or merge occurred.
+Populate metadata results using the Design CHECK identifiers, current Tasks digest, matching input snapshots taken before/after execution and observed context. Assess each local scenario and retained regression obligation against current implementation, even with every task checked. Reuse stable findings until resolved; new task-plan content reopens the appropriate gate. Record real evidence at stable repository-relative paths or HTTPS URLs, with the observed revision. A recorded pass is not proof that remote CI, human review or merge occurred.
 
 ## Delivery
 

@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "/Users/elviszoz/.codex/worktrees/6f00/versat-ai-harness/scripts/testing/run.py", line 15, in <module>
+    from common import PACKAGE, atomic_json, clean_environment, contract, digest_file, execute, provider_digest, sdd
+  File "/Users/elviszoz/.codex/worktrees/6f00/versat-ai-harness/scripts/testing/common.py", line 26, in <module>
+    contract = load_module('testing_contract', PACKAGE/'validators/testing/validate.py')
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/elviszoz/.codex/worktrees/6f00/versat-ai-harness/scripts/testing/common.py", line 22, in load_module
+    spec.loader.exec_module(module)
+  File "/Users/elviszoz/.codex/worktrees/6f00/versat-ai-harness/validators/testing/validate.py", line 13, in <module>
+    from jsonschema import Draft202012Validator
+ModuleNotFoundError: No module named 'jsonschema'

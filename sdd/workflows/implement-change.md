@@ -19,3 +19,7 @@ Apply the resolved Standards, including Git workflow and work tracking. Preserve
 ## Exit and next action
 
 Report completed tasks, remaining work, changed living specifications and actual checks. Distinguish implementation complete from delivery-ready and merged. If validation was also authorized, read and follow [Validate change](validate-change.md). Otherwise hand off the implementation and identify validation as the next action; do not silently publish, archive or merge.
+
+## Executable project checks
+
+Use the index-resolved Testing Standard to create/update assertions for changed behavior and uncovered retained obligations, or record adequate reuse/manual rationale. Consult [project validation](../../docs/guides/project-validation.md) when adopting or using the explicit executor. Inspect configured commands, run targeted checks while developing and run complete required suites before claiming readiness. Review exported SDD fragments and record actual evidence; do not treat a fragment as task completion or semantic approval. For Harness Skill changes, use [supervised Skill evaluations](../../docs/guides/skill-evaluations.md) where required by the approved plan.

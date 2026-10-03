@@ -1,0 +1,26 @@
+{
+  "status": "pass",
+  "phase": "delivery",
+  "checked": [
+    "payment-validation"
+  ],
+  "findings": [],
+  "warnings": [],
+  "metrics": {
+    "payment-validation": {
+      "local_scenarios": 3,
+      "regression_obligations": 1,
+      "assessed": 4,
+      "results": 1,
+      "open_findings": 0,
+      "stale_results": 0,
+      "requirements": {
+        "REQ-001": "pass",
+        "REQ-002": "pass"
+      }
+    }
+  },
+  "live_archives": [],
+  "archive_required": [],
+  "scope": "Declared contract checks only; archive inventory is historical unless selected for live delivery. No proof of semantic adequacy, execution authenticity, human identity, remote CI, merge or deployment."
+}

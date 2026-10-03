@@ -1,0 +1,5 @@
+{
+  "schema_version": 1,
+  "id": "adequate-reuse",
+  "prompt": "Implement and validate the existing approved payment-validation plan. Reuse adequate existing tests, avoid redundant new tests, run the full configured suite and record actual SDD evidence. The fixture approvals are synthetic."
+}

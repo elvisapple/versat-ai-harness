@@ -1,0 +1,19 @@
+{
+  "observed_at": "2026-10-03T14:54:53.986779+00:00",
+  "authorization": "Developer requested: Realize arquivamento, publica\u00e7\u00e3o da PR e CI remoto.",
+  "dossier": "specs/archive/automated-test-execution",
+  "closure": "prepared",
+  "preflight": "archive-preflight-r2.json",
+  "package_command": "PYTHONDONTWRITEBYTECODE=1 PYTHON=/private/tmp/versat-sdd-acceptance-venv/bin/python ./scripts/validate/run.sh --baseline 8e826cbca74c4cc2a873fea3cf1b52576ba3fe8f --require-archive",
+  "package_exit_code": 0,
+  "validator_tests": 131,
+  "execution_tests": 48,
+  "baseline": "8e826cbca74c4cc2a873fea3cf1b52576ba3fe8f",
+  "canonical_input": "dccff2044a4fd4062f6f8cca6edb348f746abe86f7d80ec81e5eed8cbded5955",
+  "tasks_digest": "619ef3158d34627629a85e91c80bab1ff3898152a86e43a4bcea50309f350458",
+  "remote_controls": {
+    "branch_protection": "HTTP 403: GitHub plan feature unavailable for private repository",
+    "effective_rules": "HTTP 403: GitHub plan feature unavailable for private repository"
+  },
+  "merge": "not authorized or performed"
+}

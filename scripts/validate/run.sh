@@ -90,6 +90,9 @@ if command -v "${validation_python}" >/dev/null 2>&1; then
     if ! PYTHONDONTWRITEBYTECODE=1 "${validation_python}" -m unittest discover -s "${repo_root}/tests/validators" -p 'test_*.py'; then
       failures=$((failures + 1))
     fi
+    if ! PYTHONDONTWRITEBYTECODE=1 "${validation_python}" -m unittest discover -s "${repo_root}/tests/execution" -p 'test_*.py'; then
+      failures=$((failures + 1))
+    fi
   else
     echo "FAIL install validation dependencies in a virtual environment: python -m pip install -r requirements-validation.txt"
     echo "Then activate that environment or set PYTHON to its interpreter path."

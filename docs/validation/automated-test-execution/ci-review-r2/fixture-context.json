@@ -1,0 +1,171 @@
+{
+  "purpose": "Synthetic declaration test: simulated automated CHECK-001 pass with required local review CHECK-002 missing/unverified; not an actual model or GitHub execution",
+  "design": {
+    "sdd_version": 3,
+    "change": "greeting-button",
+    "requirements": [
+      "REQ-001"
+    ],
+    "adrs": [],
+    "validation": [
+      {
+        "id": "CHECK-001",
+        "description": "Check the greeting button interaction.",
+        "requirements": [
+          "REQ-001"
+        ],
+        "required": true,
+        "method": {
+          "kind": "automated",
+          "procedure": "Run the greeting interaction test; expect Hello world."
+        },
+        "inputs": {
+          "include": [
+            "src",
+            "tests",
+            "fixtures",
+            "config.txt"
+          ],
+          "exclude": []
+        },
+        "outputs": [
+          "docs/evidence"
+        ],
+        "execution": "local"
+      },
+      {
+        "id": "CHECK-002",
+        "description": "Required supervised behavior",
+        "requirements": [
+          "REQ-001"
+        ],
+        "required": true,
+        "method": {
+          "kind": "review",
+          "procedure": "Review observed scenario and independent replay.",
+          "reason": "Native supervision."
+        },
+        "inputs": {
+          "include": [
+            "src",
+            "tests",
+            "fixtures",
+            "config.txt"
+          ],
+          "exclude": []
+        },
+        "outputs": [
+          "docs/evidence"
+        ],
+        "execution": "local"
+      }
+    ],
+    "review": {
+      "revision": 1,
+      "state": "approved",
+      "blockers": [],
+      "upstream": {
+        "proposal": "b30c999792a4565a5c22798e3e75aaa9341480b14daa81d13c8274435e8a571b"
+      },
+      "approval": {
+        "source": "synthetic-chat/design/message-1",
+        "quote": "I approve the design presented in this synthetic test.",
+        "revision": 1,
+        "digest": "903a4f41b533665bb27b1c924d2792dffb20ac10e2e27e3243b80e86ee38356a"
+      }
+    },
+    "coverage": [
+      {
+        "scenario": {
+          "requirement": "REQ-001",
+          "scenario": 1
+        },
+        "applicability": "required",
+        "checks": [
+          "CHECK-001",
+          "CHECK-002"
+        ]
+      }
+    ],
+    "regression": []
+  },
+  "tasks": {
+    "sdd_version": 3,
+    "change": "greeting-button",
+    "tasks": [
+      {
+        "id": "TASK-001",
+        "description": "Add the greeting button and interaction test.",
+        "requirements": [
+          "REQ-001"
+        ],
+        "status": "completed"
+      }
+    ],
+    "review": {
+      "revision": 1,
+      "state": "approved",
+      "blockers": [],
+      "upstream": {
+        "proposal": "b30c999792a4565a5c22798e3e75aaa9341480b14daa81d13c8274435e8a571b",
+        "design": "903a4f41b533665bb27b1c924d2792dffb20ac10e2e27e3243b80e86ee38356a"
+      },
+      "approval": {
+        "source": "synthetic-chat/tasks/message-1",
+        "quote": "I approve the tasks presented in this synthetic test.",
+        "revision": 1,
+        "digest": "04d5ba5491f71939390ee6872543ab71bb3e87f6970c2db36fe37f1626990f9f"
+      }
+    },
+    "validation": {
+      "plan_digest": "04d5ba5491f71939390ee6872543ab71bb3e87f6970c2db36fe37f1626990f9f",
+      "results": [
+        {
+          "check": "CHECK-001",
+          "result": "pass",
+          "evidence": "docs/evidence/greeting.txt",
+          "revision": "synthetic-working-tree-1",
+          "input_digest_before": "646f0d49075d0f57275ddc99f0d2531abacd3ce7a6b74a7c911437f00267c72f",
+          "input_digest_after": "646f0d49075d0f57275ddc99f0d2531abacd3ce7a6b74a7c911437f00267c72f",
+          "context": {
+            "execution": "local",
+            "environment": "Synthetic fixture runtime",
+            "observed": true
+          }
+        },
+        {
+          "check": "CHECK-002",
+          "result": "unverified",
+          "evidence": "docs/evidence/greeting.txt",
+          "revision": "synthetic-working-tree-1",
+          "input_digest_before": "646f0d49075d0f57275ddc99f0d2531abacd3ce7a6b74a7c911437f00267c72f",
+          "input_digest_after": "646f0d49075d0f57275ddc99f0d2531abacd3ce7a6b74a7c911437f00267c72f",
+          "context": {
+            "execution": "local",
+            "environment": "Synthetic fixture runtime",
+            "observed": true
+          }
+        }
+      ],
+      "assessments": [
+        {
+          "obligation": {
+            "local": {
+              "requirement": "REQ-001",
+              "scenario": 1
+            }
+          },
+          "result": "pass",
+          "checks": [
+            "CHECK-001",
+            "CHECK-002"
+          ],
+          "evidence": "docs/evidence/greeting.txt",
+          "explanation": "Synthetic observed interaction; not a production execution claim."
+        }
+      ],
+      "findings": []
+    },
+    "closure": "active"
+  }
+}

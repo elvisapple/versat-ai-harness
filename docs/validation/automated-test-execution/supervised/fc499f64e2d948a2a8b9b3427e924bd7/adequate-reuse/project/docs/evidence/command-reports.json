@@ -1,0 +1,86 @@
+[
+  {
+    "argv": [
+      "/private/tmp/versat-sdd-acceptance-venv/bin/python",
+      "/Users/elviszoz/.codex/worktrees/6f00/versat-ai-harness/validators/sdd/validate.py",
+      "--root",
+      ".",
+      "--change",
+      "payment-validation",
+      "--phase",
+      "implementation",
+      "--json"
+    ],
+    "exit_code": 0,
+    "stdout": "{\n  \"status\": \"pass\",\n  \"phase\": \"implementation\",\n  \"checked\": [\n    \"payment-validation\"\n  ],\n  \"findings\": [],\n  \"warnings\": [],\n  \"metrics\": {\n    \"payment-validation\": {\n      \"local_scenarios\": 3,\n      \"regression_obligations\": 1,\n      \"assessed\": 4,\n      \"results\": 1,\n      \"open_findings\": 0,\n      \"stale_results\": 0,\n      \"requirements\": {\n        \"REQ-001\": \"pass\",\n        \"REQ-002\": \"pass\"\n      }\n    }\n  },\n  \"live_archives\": [],\n  \"archive_required\": [],\n  \"scope\": \"Declared contract checks only; archive inventory is historical unless selected for live delivery. No proof of semantic adequacy, execution authenticity, human identity, remote CI, merge or deployment.\"\n}\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "/private/tmp/versat-sdd-acceptance-venv/bin/python",
+      "/Users/elviszoz/.codex/worktrees/6f00/versat-ai-harness/scripts/testing/run.py",
+      "inspect",
+      "--root",
+      "."
+    ],
+    "exit_code": 0,
+    "stdout": "{\"result\": \"pass\", \"required_suites\": [\"unit\"], \"executed\": false}\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "/private/tmp/versat-sdd-acceptance-venv/bin/python",
+      "/Users/elviszoz/.codex/worktrees/6f00/versat-ai-harness/validators/sdd/validate.py",
+      "--root",
+      ".",
+      "--change",
+      "payment-validation",
+      "--phase",
+      "delivery",
+      "--json"
+    ],
+    "exit_code": 0,
+    "stdout": "{\n  \"status\": \"pass\",\n  \"phase\": \"delivery\",\n  \"checked\": [\n    \"payment-validation\"\n  ],\n  \"findings\": [],\n  \"warnings\": [],\n  \"metrics\": {\n    \"payment-validation\": {\n      \"local_scenarios\": 3,\n      \"regression_obligations\": 1,\n      \"assessed\": 4,\n      \"results\": 1,\n      \"open_findings\": 0,\n      \"stale_results\": 0,\n      \"requirements\": {\n        \"REQ-001\": \"pass\",\n        \"REQ-002\": \"pass\"\n      }\n    }\n  },\n  \"live_archives\": [],\n  \"archive_required\": [],\n  \"scope\": \"Declared contract checks only; archive inventory is historical unless selected for live delivery. No proof of semantic adequacy, execution authenticity, human identity, remote CI, merge or deployment.\"\n}\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "/private/tmp/versat-sdd-acceptance-venv/bin/python",
+      "/Users/elviszoz/.codex/worktrees/6f00/versat-ai-harness/validators/sdd/validate.py",
+      "--root",
+      ".",
+      "--change",
+      "payment-validation",
+      "--digest",
+      "tasks"
+    ],
+    "exit_code": 0,
+    "stdout": "3af858f25557503d9f0bd34c3d628fe10d5eb3b1574414b292ebae9c945b4294\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "/private/tmp/versat-sdd-acceptance-venv/bin/python",
+      "/Users/elviszoz/.codex/worktrees/6f00/versat-ai-harness/validators/sdd/validate.py",
+      "--root",
+      ".",
+      "--change",
+      "payment-validation",
+      "--input-digest",
+      "CHECK-001"
+    ],
+    "exit_code": 0,
+    "stdout": "34936bc58a455f40813452b1401e5a22b0da2d8ac3e5b209616b76267e2625d9\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "git",
+      "branch",
+      "--show-current"
+    ],
+    "exit_code": 0,
+    "stdout": "codex/payment-validation\n",
+    "stderr": ""
+  }
+]

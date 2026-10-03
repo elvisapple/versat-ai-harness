@@ -1,0 +1,6 @@
+{
+  "agent": "/root/eval_adequate_reuse",
+  "result": "pass",
+  "reviewed_at": "2026-10-03T14:01:48.005794+00:00",
+  "basis": "Four original tests reused without source/test changes; original full-run reports and independent replay pass. Three controlled defects fail unchanged assertions. Approved plan and fixture controls preserved; assessments and reuse rationale supplied."
+}

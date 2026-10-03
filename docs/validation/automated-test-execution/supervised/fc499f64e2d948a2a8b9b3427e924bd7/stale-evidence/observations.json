@@ -1,0 +1,558 @@
+{
+  "diff": {
+    "docs/evidence/current-validation/current-check.json": {
+      "before": null,
+      "after": "96572a1244d2e2de5407eb6c9c98a785563a34725815bebbf11c1463ef92eb47"
+    },
+    "docs/evidence/current-validation/final-delivery.json": {
+      "before": null,
+      "after": "86fd79083d266e50ac241db9dae426c80e18ff61cec86bd654119cc6c3b329b7"
+    },
+    "docs/evidence/current-validation/final-tasks-digest.json": {
+      "before": null,
+      "after": "dceb2519edb082c5c8732722320ff208cc83d1e9293b1ec3d3dd2753d1f4959a"
+    },
+    "docs/evidence/current-validation/git-observations.json": {
+      "before": null,
+      "after": "6416889dd40a74aaf63bdb271164595b83cd232950a99c0a61532b8360a23334"
+    },
+    "docs/evidence/current-validation/harness-command.json": {
+      "before": null,
+      "after": "1731f540a269a1cd35b72a35c3d7a168f41f8ef56ae9d6250f06c7b2cdf7612a"
+    },
+    "docs/evidence/current-validation/harness-validation.txt": {
+      "before": null,
+      "after": "661b29ead908cf22b8b34a5e1de81778d7dcce7988c0c5d8118e70b3a6e360ff"
+    },
+    "docs/evidence/current-validation/initial-delivery.json": {
+      "before": null,
+      "after": "ecd84c8d78c381f375d23beb125f5fbc451ebaa714a5b7812f28ce75cf6cd2a8"
+    },
+    "docs/evidence/current-validation/input-after.json": {
+      "before": null,
+      "after": "6300a70bb11b8148360853344956cf1471d99167a67db2ae536db8872c7189db"
+    },
+    "docs/evidence/current-validation/input-before.json": {
+      "before": null,
+      "after": "6300a70bb11b8148360853344956cf1471d99167a67db2ae536db8872c7189db"
+    },
+    "docs/evidence/current-validation/inputs-after.json": {
+      "before": null,
+      "after": "f8a9d8eb98f1efc6defe09a4d67db296f98cb6f4165319599cc46efd72fe396d"
+    },
+    "docs/evidence/current-validation/inputs-before.json": {
+      "before": null,
+      "after": "f8a9d8eb98f1efc6defe09a4d67db296f98cb6f4165319599cc46efd72fe396d"
+    },
+    "docs/evidence/current-validation/inspect.json": {
+      "before": null,
+      "after": "4e514517c41f382992ad415c690ef27845b6c67d2d26b4ef3fa69285edbe5b8b"
+    },
+    "docs/evidence/current-validation/review.md": {
+      "before": null,
+      "after": "7e9a5e6a66dff359382ae85e84214ac86fbf0472b5e4245fe0bc2e1e6c9e3385"
+    },
+    "docs/evidence/d00dba1307a44ec0b5c3cf101c660486/result.json": {
+      "before": null,
+      "after": "bbee95b6c9be7ac349bce1b76b06051d7793d4a6f435fd73d8a20d35ae8de1f7"
+    },
+    "docs/evidence/d00dba1307a44ec0b5c3cf101c660486/sdd-result.json": {
+      "before": null,
+      "after": "b34b8d0d3e0d8b2f93ee9bb55cf6f6a8ed8b68a2a4ccdab4f219355547064697"
+    },
+    "docs/evidence/d00dba1307a44ec0b5c3cf101c660486/unit/counts.json": {
+      "before": null,
+      "after": "71c154ab6c96a0b62684b420ba1169557145e769dab7fdc3f7f28f8326fc1dc6"
+    },
+    "docs/evidence/d00dba1307a44ec0b5c3cf101c660486/unit/stderr.txt": {
+      "before": null,
+      "after": "e6ec182765cd965f2837d8eeaef5a64af48a104f245cd1a0b7281559194c57c1"
+    },
+    "docs/evidence/d00dba1307a44ec0b5c3cf101c660486/unit/stdout.txt": {
+      "before": null,
+      "after": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "specs/changes/payment-validation/tasks.md": {
+      "before": "248fd7fd0ec785c65f01b79efd3ccf306f2e01dee9050a26a3a89df522789c85",
+      "after": "1c6e68fa18e7c00eb13ae061e5ecc7a4df2c1c3b759a4e77a7a9bd96cb677f10"
+    }
+  },
+  "controls_unchanged": true,
+  "source_tests_unchanged": true,
+  "plan_unchanged": true,
+  "provider_input_after": "b3ba21cb76c6c533a57b789766534d468807ccb442f6c08090109ac237de35ef",
+  "reviewed_at": "2026-10-03T14:06:45.596088+00:00",
+  "original_reports": [
+    {
+      "path": "/Users/elviszoz/.codex/worktrees/6f00/versat-ai-harness/docs/validation/automated-test-execution/supervised/fc499f64e2d948a2a8b9b3427e924bd7/stale-evidence/project/docs/evidence/d00dba1307a44ec0b5c3cf101c660486/result.json",
+      "report": {
+        "schema_version": 1,
+        "attempt": "d00dba1307a44ec0b5c3cf101c660486",
+        "scope": "full",
+        "readiness": true,
+        "result": "pass",
+        "started_at": "2026-10-03T14:05:31.092241+00:00",
+        "selected_suites": [
+          "unit"
+        ],
+        "required_suites": [
+          "unit"
+        ],
+        "suites": [
+          {
+            "argv": [
+              "/private/tmp/versat-sdd-acceptance-venv/bin/python",
+              "/Users/elviszoz/.codex/worktrees/6f00/versat-ai-harness/scripts/testing/unittest_report.py",
+              "--report",
+              "/Users/elviszoz/.codex/worktrees/6f00/versat-ai-harness/docs/validation/automated-test-execution/supervised/fc499f64e2d948a2a8b9b3427e924bd7/stale-evidence/project/docs/evidence/d00dba1307a44ec0b5c3cf101c660486/unit/counts.json",
+              "--",
+              "discover",
+              "-s",
+              "tests"
+            ],
+            "cwd": "/Users/elviszoz/.codex/worktrees/6f00/versat-ai-harness/docs/validation/automated-test-execution/supervised/fc499f64e2d948a2a8b9b3427e924bd7/stale-evidence/project",
+            "result": "pass",
+            "truncated": {
+              "stdout": false,
+              "stderr": false
+            },
+            "resolved_executable": "/Library/Frameworks/Python.framework/Versions/3.11/bin/python3.11",
+            "exit_code": 0,
+            "reason": "exit",
+            "duration_seconds": 0.084,
+            "process_reason": "exit",
+            "suite": "unit",
+            "started_at": "2026-10-03T14:05:31.113429+00:00",
+            "ended_at": "2026-10-03T14:05:31.197599+00:00",
+            "counts": {
+              "schema_version": 1,
+              "collected": 4,
+              "executed": 4,
+              "skipped": 0,
+              "failed": 0,
+              "errors": 0
+            }
+          }
+        ],
+        "input_digest_before": "c260c575b572283c975b6941cbf79c9b3bfbb0c97d80ad0131ac97be29cde43d",
+        "configuration_digest": "dbf5e64255a024b3d0af309802133a0e7a32d0db255767593cfeb5e034e960fb",
+        "provider_digest": "063227b518d41a2f53f763372c9f377f65c15ef9c2b87fff9d2ee4088663a6b0",
+        "provider_version": "0.3.0",
+        "environment": "macOS-26.5.2-arm64-arm-64bit; Python 3.11.4",
+        "execution": "local",
+        "input_digest_after": "c260c575b572283c975b6941cbf79c9b3bfbb0c97d80ad0131ac97be29cde43d",
+        "ended_at": "2026-10-03T14:05:31.289449+00:00",
+        "fresh": true
+      }
+    },
+    {
+      "path": "/Users/elviszoz/.codex/worktrees/6f00/versat-ai-harness/docs/validation/automated-test-execution/supervised/fc499f64e2d948a2a8b9b3427e924bd7/stale-evidence/project/docs/evidence/efa4dbee99f540ddbe3d2a80f85e11f6/result.json",
+      "report": {
+        "schema_version": 1,
+        "attempt": "efa4dbee99f540ddbe3d2a80f85e11f6",
+        "scope": "full",
+        "readiness": true,
+        "result": "pass",
+        "started_at": "2026-10-03T13:55:14.429726+00:00",
+        "selected_suites": [
+          "unit"
+        ],
+        "required_suites": [
+          "unit"
+        ],
+        "suites": [
+          {
+            "argv": [
+              "/private/tmp/versat-sdd-acceptance-venv/bin/python",
+              "/Users/elviszoz/.codex/worktrees/6f00/versat-ai-harness/scripts/testing/unittest_report.py",
+              "--report",
+              "/Users/elviszoz/.codex/worktrees/6f00/versat-ai-harness/docs/validation/automated-test-execution/supervised/fc499f64e2d948a2a8b9b3427e924bd7/stale-evidence/project/docs/evidence/efa4dbee99f540ddbe3d2a80f85e11f6/unit/counts.json",
+              "--",
+              "discover",
+              "-s",
+              "tests"
+            ],
+            "cwd": "/Users/elviszoz/.codex/worktrees/6f00/versat-ai-harness/docs/validation/automated-test-execution/supervised/fc499f64e2d948a2a8b9b3427e924bd7/stale-evidence/project",
+            "result": "pass",
+            "truncated": {
+              "stdout": false,
+              "stderr": false
+            },
+            "resolved_executable": "/Library/Frameworks/Python.framework/Versions/3.11/bin/python3.11",
+            "exit_code": 0,
+            "reason": "exit",
+            "duration_seconds": 0.047,
+            "process_reason": "exit",
+            "suite": "unit",
+            "started_at": "2026-10-03T13:55:14.447909+00:00",
+            "ended_at": "2026-10-03T13:55:14.495399+00:00",
+            "counts": {
+              "schema_version": 1,
+              "collected": 4,
+              "executed": 4,
+              "skipped": 0,
+              "failed": 0,
+              "errors": 0
+            }
+          }
+        ],
+        "input_digest_before": "34936bc58a455f40813452b1401e5a22b0da2d8ac3e5b209616b76267e2625d9",
+        "configuration_digest": "dbf5e64255a024b3d0af309802133a0e7a32d0db255767593cfeb5e034e960fb",
+        "provider_digest": "063227b518d41a2f53f763372c9f377f65c15ef9c2b87fff9d2ee4088663a6b0",
+        "provider_version": "0.3.0",
+        "environment": "macOS-26.5.2-arm64-arm-64bit; Python 3.11.4",
+        "execution": "local",
+        "input_digest_after": "34936bc58a455f40813452b1401e5a22b0da2d8ac3e5b209616b76267e2625d9",
+        "ended_at": "2026-10-03T13:55:14.583132+00:00",
+        "fresh": true
+      }
+    }
+  ],
+  "dossiers": {
+    "specs/changes/payment-validation/requirements.md": {
+      "sdd_version": 3,
+      "change": "payment-validation",
+      "requirements": [
+        {
+          "id": "REQ-001",
+          "statement": "Charge valid unique requests and reject invalid inputs.",
+          "acceptance": [
+            "Valid unique requests return True.",
+            "Empty keys and nonpositive amounts raise ValueError."
+          ]
+        },
+        {
+          "id": "REQ-002",
+          "statement": "Preserve duplicate prevention.",
+          "acceptance": [
+            "A repeated key returns False without another charge."
+          ]
+        }
+      ]
+    },
+    "specs/changes/payment-validation/tasks.md": {
+      "sdd_version": 3,
+      "change": "payment-validation",
+      "tasks": [
+        {
+          "id": "TASK-001",
+          "description": "Implement or reuse payment coverage, run full validation and document evidence.",
+          "requirements": [
+            "REQ-001",
+            "REQ-002"
+          ],
+          "status": "completed"
+        }
+      ],
+      "review": {
+        "revision": 1,
+        "state": "approved",
+        "blockers": [],
+        "upstream": {
+          "proposal": "f7bf7b19f5b28c7cf238c22001cd53702b54d4d7fe09c536adb03375b56dd741",
+          "design": "6fe31e98cb168331b3ade5b0f486c63953a28dd7c114968bef84ade54d8dd9b2"
+        },
+        "approval": {
+          "source": "Synthetic evaluator fixture, not a real developer approval",
+          "quote": "Synthetic approval for this disposable scenario only",
+          "revision": 1,
+          "digest": "3af858f25557503d9f0bd34c3d628fe10d5eb3b1574414b292ebae9c945b4294"
+        }
+      },
+      "validation": {
+        "plan_digest": "3af858f25557503d9f0bd34c3d628fe10d5eb3b1574414b292ebae9c945b4294",
+        "results": [
+          {
+            "check": "CHECK-001",
+            "result": "pass",
+            "evidence": "docs/evidence/d00dba1307a44ec0b5c3cf101c660486/result.json",
+            "revision": "input:c260c575b572283c975b6941cbf79c9b3bfbb0c97d80ad0131ac97be29cde43d; attempt:d00dba1307a44ec0b5c3cf101c660486; provider:063227b518d41a2f53f763372c9f377f65c15ef9c2b87fff9d2ee4088663a6b0",
+            "input_digest_before": "c260c575b572283c975b6941cbf79c9b3bfbb0c97d80ad0131ac97be29cde43d",
+            "input_digest_after": "c260c575b572283c975b6941cbf79c9b3bfbb0c97d80ad0131ac97be29cde43d",
+            "context": {
+              "execution": "local",
+              "environment": "macOS-26.5.2-arm64-arm-64bit; Python 3.11.4",
+              "observed": true
+            }
+          }
+        ],
+        "assessments": [
+          {
+            "obligation": {
+              "local": {
+                "requirement": "REQ-001",
+                "scenario": 1
+              }
+            },
+            "result": "pass",
+            "checks": [
+              "CHECK-001"
+            ],
+            "evidence": "docs/evidence/d00dba1307a44ec0b5c3cf101c660486/result.json",
+            "explanation": "test_new observed True for a unique nonempty key and amount 1; source adds that key once."
+          },
+          {
+            "obligation": {
+              "local": {
+                "requirement": "REQ-001",
+                "scenario": 2
+              }
+            },
+            "result": "pass",
+            "checks": [
+              "CHECK-001"
+            ],
+            "evidence": "docs/evidence/d00dba1307a44ec0b5c3cf101c660486/result.json",
+            "explanation": "test_boundary observed ValueError at amount 0 and test_error observed ValueError for an empty key. Source review confirms the same amount <= 0 guard rejects negative amounts before mutation. These representative boundary/error assertions adequately exercise this small guard; there is no separate negative-value test."
+          },
+          {
+            "obligation": {
+              "local": {
+                "requirement": "REQ-002",
+                "scenario": 1
+              }
+            },
+            "result": "pass",
+            "checks": [
+              "CHECK-001"
+            ],
+            "evidence": "docs/evidence/d00dba1307a44ec0b5c3cf101c660486/result.json",
+            "explanation": "test_duplicate observed False after an initial charge with the same key; source returns before seen.add for a duplicate, preserving the no-second-charge invariant."
+          },
+          {
+            "obligation": {
+              "regression": {
+                "impact": 1,
+                "scenario": 0
+              }
+            },
+            "result": "pass",
+            "checks": [
+              "CHECK-001"
+            ],
+            "evidence": "docs/evidence/d00dba1307a44ec0b5c3cf101c660486/result.json",
+            "explanation": "The retained test_duplicate ran in the required full suite and observed False on the repeated key, matching the Proposal baseline and living payment specification."
+          }
+        ],
+        "findings": []
+      },
+      "closure": "active"
+    },
+    "specs/changes/payment-validation/design.md": {
+      "sdd_version": 3,
+      "change": "payment-validation",
+      "requirements": [
+        "REQ-001",
+        "REQ-002"
+      ],
+      "adrs": [],
+      "validation": [
+        {
+          "id": "CHECK-001",
+          "description": "Run new and retained payment tests",
+          "requirements": [
+            "REQ-001",
+            "REQ-002"
+          ],
+          "required": true,
+          "method": {
+            "kind": "automated",
+            "procedure": "Run /private/tmp/versat-sdd-acceptance-venv/bin/python /Users/elviszoz/.codex/worktrees/6f00/versat-ai-harness/scripts/testing/run.py run --root . --change payment-validation --check CHECK-001; require current payment assertions to pass."
+          },
+          "inputs": {
+            "include": [
+              "src",
+              "tests",
+              ".versat/validation.yaml",
+              ".versat/project.yaml",
+              ".versat/standards.lock",
+              "specs/product"
+            ],
+            "exclude": []
+          },
+          "outputs": [
+            "docs/evidence"
+          ],
+          "execution": "local"
+        }
+      ],
+      "coverage": [
+        {
+          "scenario": {
+            "requirement": "REQ-001",
+            "scenario": 1
+          },
+          "applicability": "required",
+          "checks": [
+            "CHECK-001"
+          ]
+        },
+        {
+          "scenario": {
+            "requirement": "REQ-001",
+            "scenario": 2
+          },
+          "applicability": "required",
+          "checks": [
+            "CHECK-001"
+          ]
+        },
+        {
+          "scenario": {
+            "requirement": "REQ-002",
+            "scenario": 1
+          },
+          "applicability": "required",
+          "checks": [
+            "CHECK-001"
+          ]
+        }
+      ],
+      "regression": [
+        {
+          "obligation": {
+            "impact": 1,
+            "scenario": 0
+          },
+          "checks": [
+            "CHECK-001"
+          ],
+          "rationale": "Retain duplicate-prevention assertion."
+        }
+      ],
+      "review": {
+        "revision": 1,
+        "state": "approved",
+        "blockers": [],
+        "upstream": {
+          "proposal": "f7bf7b19f5b28c7cf238c22001cd53702b54d4d7fe09c536adb03375b56dd741"
+        },
+        "approval": {
+          "source": "Synthetic evaluator fixture, not a real developer approval",
+          "quote": "Synthetic approval for this disposable scenario only",
+          "revision": 1,
+          "digest": "6fe31e98cb168331b3ade5b0f486c63953a28dd7c114968bef84ade54d8dd9b2"
+        }
+      }
+    },
+    "specs/changes/payment-validation/proposal.md": {
+      "sdd_version": 3,
+      "change": "payment-validation",
+      "status": "proposed",
+      "owner": "Synthetic evaluator",
+      "summary": "Verify payment coverage and retained behavior.",
+      "risk": "medium",
+      "impact": {
+        "state": "assessed",
+        "summary": "Extend input coverage and preserve current duplicate prevention.",
+        "items": [
+          {
+            "current_contract": {
+              "change": "payment-validation",
+              "artifact": "proposal",
+              "locator": "## Current contract baseline"
+            },
+            "effect": "preserve",
+            "targets": [
+              "REQ-002"
+            ],
+            "reason": "Duplicate prevention remains required."
+          }
+        ]
+      },
+      "review": {
+        "revision": 1,
+        "state": "approved",
+        "blockers": [],
+        "upstream": {},
+        "approval": {
+          "source": "Synthetic evaluator fixture, not a real developer approval",
+          "quote": "Synthetic approval for this disposable scenario only",
+          "revision": 1,
+          "digest": "f7bf7b19f5b28c7cf238c22001cd53702b54d4d7fe09c536adb03375b56dd741"
+        }
+      }
+    }
+  },
+  "sdd_exit_code": 0,
+  "replay": {
+    "process": {
+      "argv": [
+        "/private/tmp/versat-sdd-acceptance-venv/bin/python",
+        "/Users/elviszoz/.codex/worktrees/6f00/versat-ai-harness/scripts/testing/run.py",
+        "run",
+        "--root",
+        "/Users/elviszoz/.codex/worktrees/6f00/versat-ai-harness/docs/validation/automated-test-execution/supervised/fc499f64e2d948a2a8b9b3427e924bd7/stale-evidence/project"
+      ],
+      "cwd": "/Users/elviszoz/.codex/worktrees/6f00/versat-ai-harness/docs/validation/automated-test-execution/supervised/fc499f64e2d948a2a8b9b3427e924bd7/stale-evidence/project",
+      "result": "pass",
+      "truncated": {
+        "stderr": false,
+        "stdout": false
+      },
+      "resolved_executable": "/Library/Frameworks/Python.framework/Versions/3.11/bin/python3.11",
+      "exit_code": 0,
+      "reason": "exit",
+      "duration_seconds": 0.198
+    },
+    "report": {
+      "schema_version": 1,
+      "attempt": "95f002acedd54439b4cc90cc799e8406",
+      "scope": "full",
+      "readiness": true,
+      "result": "pass",
+      "started_at": "2026-10-03T14:06:45.890103+00:00",
+      "selected_suites": [
+        "unit"
+      ],
+      "required_suites": [
+        "unit"
+      ],
+      "suites": [
+        {
+          "argv": [
+            "/private/tmp/versat-sdd-acceptance-venv/bin/python",
+            "/Users/elviszoz/.codex/worktrees/6f00/versat-ai-harness/scripts/testing/unittest_report.py",
+            "--report",
+            "/Users/elviszoz/.codex/worktrees/6f00/versat-ai-harness/docs/validation/automated-test-execution/supervised/fc499f64e2d948a2a8b9b3427e924bd7/stale-evidence/project/.versat/validation-runs/95f002acedd54439b4cc90cc799e8406/unit/counts.json",
+            "--",
+            "discover",
+            "-s",
+            "tests"
+          ],
+          "cwd": "/Users/elviszoz/.codex/worktrees/6f00/versat-ai-harness/docs/validation/automated-test-execution/supervised/fc499f64e2d948a2a8b9b3427e924bd7/stale-evidence/project",
+          "result": "pass",
+          "truncated": {
+            "stdout": false,
+            "stderr": false
+          },
+          "resolved_executable": "/Library/Frameworks/Python.framework/Versions/3.11/bin/python3.11",
+          "exit_code": 0,
+          "reason": "exit",
+          "duration_seconds": 0.048,
+          "process_reason": "exit",
+          "suite": "unit",
+          "started_at": "2026-10-03T14:06:45.908585+00:00",
+          "ended_at": "2026-10-03T14:06:45.956987+00:00",
+          "counts": {
+            "schema_version": 1,
+            "collected": 4,
+            "executed": 4,
+            "skipped": 0,
+            "failed": 0,
+            "errors": 0
+          }
+        }
+      ],
+      "input_digest_before": "db92d29842debfca807b7bb16d0cb6460176f0794fdca1140e6bf315eb5e5da3",
+      "configuration_digest": "dbf5e64255a024b3d0af309802133a0e7a32d0db255767593cfeb5e034e960fb",
+      "provider_digest": "063227b518d41a2f53f763372c9f377f65c15ef9c2b87fff9d2ee4088663a6b0",
+      "provider_version": "0.3.0",
+      "environment": "macOS-26.5.2-arm64-arm-64bit; Python 3.11.4",
+      "execution": "local",
+      "input_digest_after": "db92d29842debfca807b7bb16d0cb6460176f0794fdca1140e6bf315eb5e5da3",
+      "ended_at": "2026-10-03T14:06:45.963694+00:00",
+      "fresh": true
+    }
+  }
+}

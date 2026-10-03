@@ -1,0 +1,17 @@
+{
+  "argv": [
+    "/private/tmp/versat-sdd-acceptance-venv/bin/python",
+    "/Users/elviszoz/.codex/worktrees/6f00/versat-ai-harness/validators/sdd/validate.py",
+    "--root",
+    "/Users/elviszoz/.codex/worktrees/6f00/versat-ai-harness/docs/validation/automated-test-execution/supervised/fc499f64e2d948a2a8b9b3427e924bd7/retained-failure/project",
+    "--change",
+    "payment-validation",
+    "--phase",
+    "implementation",
+    "--json"
+  ],
+  "cwd": "/Users/elviszoz/.codex/worktrees/6f00/versat-ai-harness/docs/validation/automated-test-execution/supervised/fc499f64e2d948a2a8b9b3427e924bd7/retained-failure/project",
+  "exit_code": 0,
+  "stdout": "{\n  \"status\": \"pass\",\n  \"phase\": \"implementation\",\n  \"checked\": [\n    \"payment-validation\"\n  ],\n  \"findings\": [],\n  \"warnings\": [],\n  \"metrics\": {\n    \"payment-validation\": {\n      \"local_scenarios\": 3,\n      \"regression_obligations\": 1,\n      \"assessed\": 0,\n      \"results\": 0,\n      \"open_findings\": 0,\n      \"stale_results\": 0,\n      \"requirements\": {\n        \"REQ-001\": \"unverified\",\n        \"REQ-002\": \"unverified\"\n      }\n    }\n  },\n  \"live_archives\": [],\n  \"archive_required\": [],\n  \"scope\": \"Declared contract checks only; archive inventory is historical unless selected for live delivery. No proof of semantic adequacy, execution authenticity, human identity, remote CI, merge or deployment.\"\n}\n",
+  "stderr": ""
+}

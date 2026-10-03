@@ -1,0 +1,29 @@
+Portable Plugin package validation passed.
+SDD validation: pass
+Declared contract checks only; archive inventory is historical unless selected for live delivery. No proof of semantic adequacy, execution authenticity, human identity, remote CI, merge or deployment.
+automated-test-execution: {"assessed":0,"local_scenarios":27,"open_findings":0,"regression_obligations":23,"requirements":{"REQ-001":"unverified","REQ-002":"unverified","REQ-003":"unverified","REQ-004":"unverified","REQ-005":"unverified","REQ-006":"unverified","REQ-007":"unverified","REQ-008":"unverified"},"results":0,"stale_results":0}
+WARNING LEGACY_EXEMPT: /Users/elviszoz/.codex/worktrees/6f00/versat-ai-harness/specs/archive/agent-project-layout: Immutable legacy dossier: v2 approval and evidence gates were not verified
+WARNING LEGACY_HISTORICAL_ARCHIVE: /Users/elviszoz/.codex/worktrees/6f00/versat-ai-harness/specs/archive/agent-project-layout: Historical archive record preserved; merge evidence requires human review and v2 readiness remains unverified
+WARNING LEGACY_EXEMPT: /Users/elviszoz/.codex/worktrees/6f00/versat-ai-harness/specs/archive/align-language-standard: Immutable legacy dossier: v2 approval and evidence gates were not verified
+WARNING LEGACY_HISTORICAL_ARCHIVE: /Users/elviszoz/.codex/worktrees/6f00/versat-ai-harness/specs/archive/align-language-standard: Historical archive record preserved; merge evidence requires human review and v2 readiness remains unverified
+WARNING LEGACY_EXEMPT: /Users/elviszoz/.codex/worktrees/6f00/versat-ai-harness/specs/archive/bootstrap-product-context: Immutable legacy dossier: v2 approval and evidence gates were not verified
+WARNING LEGACY_HISTORICAL_ARCHIVE: /Users/elviszoz/.codex/worktrees/6f00/versat-ai-harness/specs/archive/bootstrap-product-context: Historical archive record preserved; merge evidence requires human review and v2 readiness remains unverified
+WARNING LEGACY_EXEMPT: /Users/elviszoz/.codex/worktrees/6f00/versat-ai-harness/specs/archive/consolidate-sdd-workflow: Immutable legacy dossier: v2 approval and evidence gates were not verified
+WARNING LEGACY_HISTORICAL_ARCHIVE: /Users/elviszoz/.codex/worktrees/6f00/versat-ai-harness/specs/archive/consolidate-sdd-workflow: Historical archive record preserved; merge evidence requires human review and v2 readiness remains unverified
+WARNING V2_COMPATIBILITY: /Users/elviszoz/.codex/worktrees/6f00/versat-ai-harness/specs/archive/quickstart-scenario-coverage: Reviewed v2 contract only; v3 acceptance/regression assurance not verified
+WARNING LEGACY_EXEMPT: /Users/elviszoz/.codex/worktrees/6f00/versat-ai-harness/specs/archive/root-plugin-package: Immutable legacy dossier: v2 approval and evidence gates were not verified
+WARNING LEGACY_HISTORICAL_ARCHIVE: /Users/elviszoz/.codex/worktrees/6f00/versat-ai-harness/specs/archive/root-plugin-package: Historical archive record preserved; merge evidence requires human review and v2 readiness remains unverified
+WARNING V2_COMPATIBILITY: /Users/elviszoz/.codex/worktrees/6f00/versat-ai-harness/specs/archive/sdd-acceptance-regression: Reviewed v2 contract only; v3 acceptance/regression assurance not verified
+WARNING LEGACY_EXEMPT: /Users/elviszoz/.codex/worktrees/6f00/versat-ai-harness/specs/archive/shortcut-git-convention: Immutable legacy dossier: v2 approval and evidence gates were not verified
+WARNING LEGACY_HISTORICAL_ARCHIVE: /Users/elviszoz/.codex/worktrees/6f00/versat-ai-harness/specs/archive/shortcut-git-convention: Historical archive record preserved; merge evidence requires human review and v2 readiness remains unverified
+Versat AI Harness package, SDD contract and validator tests passed.
+...................................................................................................................................
+----------------------------------------------------------------------
+Ran 131 tests in 21.691s
+
+OK
+...................................................
+----------------------------------------------------------------------
+Ran 51 tests in 7.674s
+
+OK

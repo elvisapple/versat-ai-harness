@@ -1,0 +1,13 @@
+.F..
+======================================================================
+FAIL: test_duplicate (test_payment.Payment.test_duplicate)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/private/var/folders/np/9dxskpmn3yx_ccmygffzkz9h0000gn/T/versat-firstuse-r2-0g72_rw9/consumer/tests/test_payment.py", line 7, in test_duplicate
+    self.assertFalse(charge(seen,'a',1))
+AssertionError: True is not false
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.000s
+
+FAILED (failures=1)

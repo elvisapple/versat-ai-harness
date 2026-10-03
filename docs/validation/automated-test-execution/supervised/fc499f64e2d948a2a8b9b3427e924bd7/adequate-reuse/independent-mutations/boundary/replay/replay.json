@@ -1,0 +1,80 @@
+{
+  "process": {
+    "argv": [
+      "/private/tmp/versat-sdd-acceptance-venv/bin/python",
+      "/Users/elviszoz/.codex/worktrees/6f00/versat-ai-harness/scripts/testing/run.py",
+      "run",
+      "--root",
+      "/Users/elviszoz/.codex/worktrees/6f00/versat-ai-harness/docs/validation/automated-test-execution/supervised/fc499f64e2d948a2a8b9b3427e924bd7/adequate-reuse/independent-mutations/boundary/project"
+    ],
+    "cwd": "/Users/elviszoz/.codex/worktrees/6f00/versat-ai-harness/docs/validation/automated-test-execution/supervised/fc499f64e2d948a2a8b9b3427e924bd7/adequate-reuse/independent-mutations/boundary/project",
+    "result": "fail",
+    "truncated": {
+      "stderr": false,
+      "stdout": false
+    },
+    "resolved_executable": "/Library/Frameworks/Python.framework/Versions/3.11/bin/python3.11",
+    "exit_code": 1,
+    "reason": "exit",
+    "duration_seconds": 0.204
+  },
+  "report": {
+    "schema_version": 1,
+    "attempt": "93f0eebecea84629b26d339b0f813532",
+    "scope": "full",
+    "readiness": false,
+    "result": "fail",
+    "started_at": "2026-10-03T14:01:37.979060+00:00",
+    "selected_suites": [
+      "unit"
+    ],
+    "required_suites": [
+      "unit"
+    ],
+    "suites": [
+      {
+        "argv": [
+          "/private/tmp/versat-sdd-acceptance-venv/bin/python",
+          "/Users/elviszoz/.codex/worktrees/6f00/versat-ai-harness/scripts/testing/unittest_report.py",
+          "--report",
+          "/Users/elviszoz/.codex/worktrees/6f00/versat-ai-harness/docs/validation/automated-test-execution/supervised/fc499f64e2d948a2a8b9b3427e924bd7/adequate-reuse/independent-mutations/boundary/project/.versat/validation-runs/93f0eebecea84629b26d339b0f813532/unit/counts.json",
+          "--",
+          "discover",
+          "-s",
+          "tests"
+        ],
+        "cwd": "/Users/elviszoz/.codex/worktrees/6f00/versat-ai-harness/docs/validation/automated-test-execution/supervised/fc499f64e2d948a2a8b9b3427e924bd7/adequate-reuse/independent-mutations/boundary/project",
+        "result": "fail",
+        "truncated": {
+          "stdout": false,
+          "stderr": false
+        },
+        "resolved_executable": "/Library/Frameworks/Python.framework/Versions/3.11/bin/python3.11",
+        "exit_code": 1,
+        "reason": "Test assertions failed",
+        "duration_seconds": 0.049,
+        "process_reason": "exit",
+        "suite": "unit",
+        "started_at": "2026-10-03T14:01:37.993059+00:00",
+        "ended_at": "2026-10-03T14:01:38.041698+00:00",
+        "counts": {
+          "schema_version": 1,
+          "collected": 4,
+          "executed": 4,
+          "skipped": 0,
+          "failed": 1,
+          "errors": 0
+        }
+      }
+    ],
+    "input_digest_before": "0c52fcc8bf36324a5c33fb9cc2c6090070e8c9f8c21ff9a7dd72db09ed0c425e",
+    "configuration_digest": "dbf5e64255a024b3d0af309802133a0e7a32d0db255767593cfeb5e034e960fb",
+    "provider_digest": "063227b518d41a2f53f763372c9f377f65c15ef9c2b87fff9d2ee4088663a6b0",
+    "provider_version": "0.3.0",
+    "environment": "macOS-26.5.2-arm64-arm-64bit; Python 3.11.4",
+    "execution": "local",
+    "input_digest_after": "0c52fcc8bf36324a5c33fb9cc2c6090070e8c9f8c21ff9a7dd72db09ed0c425e",
+    "ended_at": "2026-10-03T14:01:38.049129+00:00",
+    "fresh": true
+  }
+}

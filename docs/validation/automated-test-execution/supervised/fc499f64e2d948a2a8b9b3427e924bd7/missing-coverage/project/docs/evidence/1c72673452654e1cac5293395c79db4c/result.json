@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "attempt": "1c72673452654e1cac5293395c79db4c",
+  "scope": "full",
+  "readiness": true,
+  "result": "pass",
+  "started_at": "2026-10-03T13:58:13.558070+00:00",
+  "selected_suites": [
+    "unit"
+  ],
+  "required_suites": [
+    "unit"
+  ],
+  "suites": [
+    {
+      "argv": [
+        "/private/tmp/versat-sdd-acceptance-venv/bin/python",
+        "/Users/elviszoz/.codex/worktrees/6f00/versat-ai-harness/scripts/testing/unittest_report.py",
+        "--report",
+        "/Users/elviszoz/.codex/worktrees/6f00/versat-ai-harness/docs/validation/automated-test-execution/supervised/fc499f64e2d948a2a8b9b3427e924bd7/missing-coverage/project/docs/evidence/1c72673452654e1cac5293395c79db4c/unit/counts.json",
+        "--",
+        "discover",
+        "-s",
+        "tests"
+      ],
+      "cwd": "/Users/elviszoz/.codex/worktrees/6f00/versat-ai-harness/docs/validation/automated-test-execution/supervised/fc499f64e2d948a2a8b9b3427e924bd7/missing-coverage/project",
+      "result": "pass",
+      "truncated": {
+        "stdout": false,
+        "stderr": false
+      },
+      "resolved_executable": "/Library/Frameworks/Python.framework/Versions/3.11/bin/python3.11",
+      "exit_code": 0,
+      "reason": "exit",
+      "duration_seconds": 0.049,
+      "process_reason": "exit",
+      "suite": "unit",
+      "started_at": "2026-10-03T13:58:13.584487+00:00",
+      "ended_at": "2026-10-03T13:58:13.634184+00:00",
+      "counts": {
+        "schema_version": 1,
+        "collected": 7,
+        "executed": 7,
+        "skipped": 0,
+        "failed": 0,
+        "errors": 0
+      }
+    }
+  ],
+  "input_digest_before": "26469bf57ba7cf7ccbb6eee2ba1730310d82b6cbd3ebb74d70379e188e8a43b1",
+  "configuration_digest": "dbf5e64255a024b3d0af309802133a0e7a32d0db255767593cfeb5e034e960fb",
+  "provider_digest": "063227b518d41a2f53f763372c9f377f65c15ef9c2b87fff9d2ee4088663a6b0",
+  "provider_version": "0.3.0",
+  "environment": "macOS-26.5.2-arm64-arm-64bit; Python 3.11.4",
+  "execution": "local",
+  "input_digest_after": "26469bf57ba7cf7ccbb6eee2ba1730310d82b6cbd3ebb74d70379e188e8a43b1",
+  "ended_at": "2026-10-03T13:58:13.719974+00:00",
+  "fresh": true
+}

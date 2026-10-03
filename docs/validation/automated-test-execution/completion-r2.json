@@ -1,0 +1,15 @@
+{
+  "observed_at": "2026-10-03T14:10:34.586617+00:00",
+  "package_command": "PYTHONDONTWRITEBYTECODE=1 PYTHON=/private/tmp/versat-sdd-acceptance-venv/bin/python ./scripts/validate/run.sh",
+  "package_exit_code": 0,
+  "validator_tests": 131,
+  "execution_tests": 48,
+  "supervised_cases": 6,
+  "delivery_report": "delivery-r2.json",
+  "canonical_input_before": "dccff2044a4fd4062f6f8cca6edb348f746abe86f7d80ec81e5eed8cbded5955",
+  "canonical_input_after": "dccff2044a4fd4062f6f8cca6edb348f746abe86f7d80ec81e5eed8cbded5955",
+  "task_plan_digest": "619ef3158d34627629a85e91c80bab1ff3898152a86e43a4bcea50309f350458",
+  "remote_ci": "not observed",
+  "publication": "not performed",
+  "closure": "active"
+}

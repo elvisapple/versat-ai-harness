@@ -1,0 +1,67 @@
+{
+  "run": "/Users/elviszoz/.codex/worktrees/6f00/versat-ai-harness/docs/validation/automated-test-execution/supervised/fc499f64e2d948a2a8b9b3427e924bd7",
+  "started": "2026-10-03T13:55:14.022181+00:00",
+  "provider_input_before": "b3ba21cb76c6c533a57b789766534d468807ccb442f6c08090109ac237de35ef",
+  "runtime": {
+    "selection": "inherited native session",
+    "actual_model": "not exposed by collaboration API",
+    "reasoning": "inherited; not independently exposed",
+    "usage": "not exposed"
+  },
+  "cases": [
+    {
+      "case": "new-intent",
+      "attempt": "/Users/elviszoz/.codex/worktrees/6f00/versat-ai-harness/docs/validation/automated-test-execution/supervised/fc499f64e2d948a2a8b9b3427e924bd7/new-intent",
+      "status": "pass",
+      "elapsed_seconds": 121.253,
+      "verdict": "docs/validation/automated-test-execution/supervised/fc499f64e2d948a2a8b9b3427e924bd7/new-intent/verdict.json",
+      "observations": "docs/validation/automated-test-execution/supervised/fc499f64e2d948a2a8b9b3427e924bd7/new-intent/observations.json"
+    },
+    {
+      "case": "missing-coverage",
+      "attempt": "/Users/elviszoz/.codex/worktrees/6f00/versat-ai-harness/docs/validation/automated-test-execution/supervised/fc499f64e2d948a2a8b9b3427e924bd7/missing-coverage",
+      "status": "pass",
+      "elapsed_seconds": 125.625,
+      "verdict": "docs/validation/automated-test-execution/supervised/fc499f64e2d948a2a8b9b3427e924bd7/missing-coverage/verdict.json",
+      "observations": "docs/validation/automated-test-execution/supervised/fc499f64e2d948a2a8b9b3427e924bd7/missing-coverage/observations.json"
+    },
+    {
+      "case": "adequate-reuse",
+      "attempt": "/Users/elviszoz/.codex/worktrees/6f00/versat-ai-harness/docs/validation/automated-test-execution/supervised/fc499f64e2d948a2a8b9b3427e924bd7/adequate-reuse",
+      "status": "pass",
+      "elapsed_seconds": 147.106,
+      "verdict": "docs/validation/automated-test-execution/supervised/fc499f64e2d948a2a8b9b3427e924bd7/adequate-reuse/verdict.json",
+      "observations": "docs/validation/automated-test-execution/supervised/fc499f64e2d948a2a8b9b3427e924bd7/adequate-reuse/observations.json"
+    },
+    {
+      "case": "retained-failure",
+      "attempt": "/Users/elviszoz/.codex/worktrees/6f00/versat-ai-harness/docs/validation/automated-test-execution/supervised/fc499f64e2d948a2a8b9b3427e924bd7/retained-failure",
+      "status": "pass",
+      "elapsed_seconds": 182.122,
+      "verdict": "docs/validation/automated-test-execution/supervised/fc499f64e2d948a2a8b9b3427e924bd7/retained-failure/verdict.json",
+      "observations": "docs/validation/automated-test-execution/supervised/fc499f64e2d948a2a8b9b3427e924bd7/retained-failure/observations.json"
+    },
+    {
+      "case": "stale-evidence",
+      "attempt": "/Users/elviszoz/.codex/worktrees/6f00/versat-ai-harness/docs/validation/automated-test-execution/supervised/fc499f64e2d948a2a8b9b3427e924bd7/stale-evidence",
+      "status": "pass",
+      "elapsed_seconds": 130.274,
+      "verdict": "docs/validation/automated-test-execution/supervised/fc499f64e2d948a2a8b9b3427e924bd7/stale-evidence/verdict.json",
+      "observations": "docs/validation/automated-test-execution/supervised/fc499f64e2d948a2a8b9b3427e924bd7/stale-evidence/observations.json"
+    },
+    {
+      "case": "validation-only",
+      "attempt": "/Users/elviszoz/.codex/worktrees/6f00/versat-ai-harness/docs/validation/automated-test-execution/supervised/fc499f64e2d948a2a8b9b3427e924bd7/validation-only",
+      "status": "pass",
+      "elapsed_seconds": 152.977,
+      "verdict": "docs/validation/automated-test-execution/supervised/fc499f64e2d948a2a8b9b3427e924bd7/validation-only/verdict.json",
+      "observations": "docs/validation/automated-test-execution/supervised/fc499f64e2d948a2a8b9b3427e924bd7/validation-only/observations.json"
+    }
+  ],
+  "ended": "2026-10-03T14:09:33.476474+00:00",
+  "elapsed_seconds": 859.454,
+  "provider_input_after": "b3ba21cb76c6c533a57b789766534d468807ccb442f6c08090109ac237de35ef",
+  "result": "pass",
+  "invocations": 6,
+  "retries": 0
+}

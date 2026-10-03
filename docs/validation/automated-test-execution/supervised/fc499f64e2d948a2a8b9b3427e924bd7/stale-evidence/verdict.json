@@ -1,0 +1,6 @@
+{
+  "agent": "/root/eval_stale_evidence",
+  "result": "pass",
+  "reviewed_at": "2026-10-03T14:07:00.401294+00:00",
+  "basis": "Original stale attempt preserved; new full four-test run records changed current input digest. Independent replay passes. Source/tests, approved plan and controls unchanged. Initial stale delivery and current passing delivery reports inspected."
+}

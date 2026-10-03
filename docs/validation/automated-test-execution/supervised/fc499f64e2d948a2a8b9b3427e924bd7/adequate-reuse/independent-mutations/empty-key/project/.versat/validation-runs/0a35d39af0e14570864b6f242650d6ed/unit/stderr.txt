@@ -1,0 +1,13 @@
+..F.
+======================================================================
+FAIL: test_error (test_payment.Payment.test_error)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/elviszoz/.codex/worktrees/6f00/versat-ai-harness/docs/validation/automated-test-execution/supervised/fc499f64e2d948a2a8b9b3427e924bd7/adequate-reuse/independent-mutations/empty-key/project/tests/test_payment.py", line 11, in test_error
+    with self.assertRaises(ValueError): charge(set(),'',1)
+AssertionError: ValueError not raised
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.000s
+
+FAILED (failures=1)

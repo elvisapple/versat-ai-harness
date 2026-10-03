@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "cli": "codex",
+  "model": "gpt-6-astra",
+  "reasoning": "high",
+  "isolated_environment": true,
+  "case_timeout_seconds": 600,
+  "suite_timeout_seconds": 7200,
+  "repetitions": 2,
+  "max_invocations": 12,
+  "usage_limit_tokens": 200000
+}

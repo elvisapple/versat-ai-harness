@@ -1,0 +1,512 @@
+{
+  "diff": {
+    "docs/evidence/payment-validation/delivery.json": {
+      "before": null,
+      "after": "c0382d255910d30ad9cdd0a9c83ec1bcbed21eb9090e860f0ab4256d9d289a70"
+    },
+    "docs/evidence/payment-validation/full-run.json": {
+      "before": null,
+      "after": "a3065f5aeaa045fe88329e0473ada57fbd90e557da3ab4d7ffd4224e57845f2d"
+    },
+    "docs/evidence/payment-validation/implementation.json": {
+      "before": null,
+      "after": "942d1c671b0fa32b266842e59702fe23c42a1931e1954712ab17d41b322ade6a"
+    },
+    "docs/evidence/payment-validation/input-after.json": {
+      "before": null,
+      "after": "f472d9dcc9e2ced4c6e09848568ba8f53fddc9979800ae1e189e5292106c1a0e"
+    },
+    "docs/evidence/payment-validation/input-before.json": {
+      "before": null,
+      "after": "f472d9dcc9e2ced4c6e09848568ba8f53fddc9979800ae1e189e5292106c1a0e"
+    },
+    "docs/evidence/payment-validation/inspect.json": {
+      "before": null,
+      "after": "a5aa43c733adaf2c5f313abfda48adc4c181b08a214486031702815fa874bff6"
+    },
+    "docs/evidence/payment-validation/review.md": {
+      "before": null,
+      "after": "149c2df1056840672051677e76bd7373f43ae0298d7d2bfca8472e024e8b68c6"
+    },
+    "docs/evidence/payment-validation/runs/5080276d1371404da9d4bf488424eb3e/result.json": {
+      "before": null,
+      "after": "de88ffe220b5479750d91e9a4af87368cbfe4545a2c8b800736ed05b8d921056"
+    },
+    "docs/evidence/payment-validation/runs/5080276d1371404da9d4bf488424eb3e/sdd-result.json": {
+      "before": null,
+      "after": "d2bc5440a2e1d2d779373ab913ee6d300109789b60be959b26fe35a02f12bf70"
+    },
+    "docs/evidence/payment-validation/runs/5080276d1371404da9d4bf488424eb3e/unit/counts.json": {
+      "before": null,
+      "after": "2402eacf2739efdcb872e91ef426e65066276812858e026aebd9c5060060b16d"
+    },
+    "docs/evidence/payment-validation/runs/5080276d1371404da9d4bf488424eb3e/unit/stderr.txt": {
+      "before": null,
+      "after": "cf4267bcdc01eef4ced84e8460a5dfe104ce2bca6cf83c7ab34dc8b294a81e67"
+    },
+    "docs/evidence/payment-validation/runs/5080276d1371404da9d4bf488424eb3e/unit/stdout.txt": {
+      "before": null,
+      "after": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/evidence/payment-validation/source-before.json": {
+      "before": null,
+      "after": "e71eb9f91794a366aaf9ce2b0c145c065563fa1f43fb565d13b653975e86309e"
+    },
+    "docs/evidence/payment-validation/source-integrity.json": {
+      "before": null,
+      "after": "c8a74d7b59be70370c469369442513365cf1187ecb8284803508580250e9ddb3"
+    },
+    "docs/evidence/payment-validation/standards-resolution.json": {
+      "before": null,
+      "after": "9eb825a668e5ee090722673d10082e5ae97dbebb14507c42872a7fb009d6c454"
+    },
+    "docs/evidence/payment-validation/tasks-digest-after.json": {
+      "before": null,
+      "after": "8edd9c6585750545a8164833a062d7906c870186279e8a7fd2681df6f17d4ed3"
+    },
+    "docs/evidence/payment-validation/tasks-digest.json": {
+      "before": null,
+      "after": "8edd9c6585750545a8164833a062d7906c870186279e8a7fd2681df6f17d4ed3"
+    },
+    "specs/changes/payment-validation/tasks.md": {
+      "before": "6a75dd3a415357d8c394c89c93fb31dc0e3ce6bcb2dc0b0813669f1cc81494ef",
+      "after": "38966239f198db63441b2e4cbe32ab3199002961b4dc78de1b24fcda5cb9ed76"
+    }
+  },
+  "controls_unchanged": true,
+  "source_tests_unchanged": true,
+  "plan_unchanged": true,
+  "provider_input_after": "b3ba21cb76c6c533a57b789766534d468807ccb442f6c08090109ac237de35ef",
+  "reviewed_at": "2026-10-03T14:04:34.839666+00:00",
+  "original_reports": [
+    {
+      "path": "/Users/elviszoz/.codex/worktrees/6f00/versat-ai-harness/docs/validation/automated-test-execution/supervised/fc499f64e2d948a2a8b9b3427e924bd7/retained-failure/project/docs/evidence/payment-validation/runs/5080276d1371404da9d4bf488424eb3e/result.json",
+      "report": {
+        "schema_version": 1,
+        "attempt": "5080276d1371404da9d4bf488424eb3e",
+        "scope": "full",
+        "readiness": false,
+        "result": "fail",
+        "started_at": "2026-10-03T14:02:31.484429+00:00",
+        "selected_suites": [
+          "unit"
+        ],
+        "required_suites": [
+          "unit"
+        ],
+        "suites": [
+          {
+            "argv": [
+              "/private/tmp/versat-sdd-acceptance-venv/bin/python",
+              "/Users/elviszoz/.codex/worktrees/6f00/versat-ai-harness/scripts/testing/unittest_report.py",
+              "--report",
+              "/Users/elviszoz/.codex/worktrees/6f00/versat-ai-harness/docs/validation/automated-test-execution/supervised/fc499f64e2d948a2a8b9b3427e924bd7/retained-failure/project/docs/evidence/payment-validation/runs/5080276d1371404da9d4bf488424eb3e/unit/counts.json",
+              "--",
+              "discover",
+              "-s",
+              "tests"
+            ],
+            "cwd": "/Users/elviszoz/.codex/worktrees/6f00/versat-ai-harness/docs/validation/automated-test-execution/supervised/fc499f64e2d948a2a8b9b3427e924bd7/retained-failure/project",
+            "result": "fail",
+            "truncated": {
+              "stdout": false,
+              "stderr": false
+            },
+            "resolved_executable": "/Library/Frameworks/Python.framework/Versions/3.11/bin/python3.11",
+            "exit_code": 1,
+            "reason": "Test assertions failed",
+            "duration_seconds": 0.048,
+            "process_reason": "exit",
+            "suite": "unit",
+            "started_at": "2026-10-03T14:02:31.504426+00:00",
+            "ended_at": "2026-10-03T14:02:31.552185+00:00",
+            "counts": {
+              "schema_version": 1,
+              "collected": 4,
+              "executed": 4,
+              "skipped": 0,
+              "failed": 1,
+              "errors": 0
+            }
+          }
+        ],
+        "input_digest_before": "42848a6e347b13222d2bf078aff55e2cbea376d6c08e1237aca8f74e0797a80a",
+        "configuration_digest": "dbf5e64255a024b3d0af309802133a0e7a32d0db255767593cfeb5e034e960fb",
+        "provider_digest": "063227b518d41a2f53f763372c9f377f65c15ef9c2b87fff9d2ee4088663a6b0",
+        "provider_version": "0.3.0",
+        "environment": "macOS-26.5.2-arm64-arm-64bit; Python 3.11.4",
+        "execution": "local",
+        "input_digest_after": "42848a6e347b13222d2bf078aff55e2cbea376d6c08e1237aca8f74e0797a80a",
+        "ended_at": "2026-10-03T14:02:31.638094+00:00",
+        "fresh": true
+      }
+    }
+  ],
+  "dossiers": {
+    "specs/changes/payment-validation/requirements.md": {
+      "sdd_version": 3,
+      "change": "payment-validation",
+      "requirements": [
+        {
+          "id": "REQ-001",
+          "statement": "Charge valid unique requests and reject invalid inputs.",
+          "acceptance": [
+            "Valid unique requests return True.",
+            "Empty keys and nonpositive amounts raise ValueError."
+          ]
+        },
+        {
+          "id": "REQ-002",
+          "statement": "Preserve duplicate prevention.",
+          "acceptance": [
+            "A repeated key returns False without another charge."
+          ]
+        }
+      ]
+    },
+    "specs/changes/payment-validation/tasks.md": {
+      "sdd_version": 3,
+      "change": "payment-validation",
+      "tasks": [
+        {
+          "id": "TASK-001",
+          "description": "Implement or reuse payment coverage, run full validation and document evidence.",
+          "requirements": [
+            "REQ-001",
+            "REQ-002"
+          ],
+          "status": "pending"
+        }
+      ],
+      "review": {
+        "revision": 1,
+        "state": "approved",
+        "blockers": [],
+        "upstream": {
+          "proposal": "f7bf7b19f5b28c7cf238c22001cd53702b54d4d7fe09c536adb03375b56dd741",
+          "design": "6fe31e98cb168331b3ade5b0f486c63953a28dd7c114968bef84ade54d8dd9b2"
+        },
+        "approval": {
+          "source": "Synthetic evaluator fixture, not a real developer approval",
+          "quote": "Synthetic approval for this disposable scenario only",
+          "revision": 1,
+          "digest": "3af858f25557503d9f0bd34c3d628fe10d5eb3b1574414b292ebae9c945b4294"
+        }
+      },
+      "validation": {
+        "plan_digest": "3af858f25557503d9f0bd34c3d628fe10d5eb3b1574414b292ebae9c945b4294",
+        "results": [
+          {
+            "check": "CHECK-001",
+            "result": "fail",
+            "evidence": "docs/evidence/payment-validation/runs/5080276d1371404da9d4bf488424eb3e/result.json",
+            "revision": "input:42848a6e347b13222d2bf078aff55e2cbea376d6c08e1237aca8f74e0797a80a; attempt:5080276d1371404da9d4bf488424eb3e; provider:063227b518d41a2f53f763372c9f377f65c15ef9c2b87fff9d2ee4088663a6b0",
+            "input_digest_before": "42848a6e347b13222d2bf078aff55e2cbea376d6c08e1237aca8f74e0797a80a",
+            "input_digest_after": "42848a6e347b13222d2bf078aff55e2cbea376d6c08e1237aca8f74e0797a80a",
+            "context": {
+              "execution": "local",
+              "environment": "macOS-26.5.2-arm64-arm-64bit; Python 3.11.4",
+              "observed": true
+            }
+          }
+        ],
+        "assessments": [
+          {
+            "obligation": {
+              "local": {
+                "requirement": "REQ-001",
+                "scenario": 1
+              }
+            },
+            "result": "unverified",
+            "checks": [
+              "CHECK-001"
+            ],
+            "evidence": "docs/evidence/payment-validation/review.md",
+            "explanation": "test_new passed and the current implementation returns True for a valid unique request. The shared required CHECK-001 failed, so this observation cannot establish an overall passing required check for this scenario."
+          },
+          {
+            "obligation": {
+              "local": {
+                "requirement": "REQ-001",
+                "scenario": 2
+              }
+            },
+            "result": "unverified",
+            "checks": [
+              "CHECK-001"
+            ],
+            "evidence": "docs/evidence/payment-validation/review.md",
+            "explanation": "test_boundary and test_error passed for zero amount and empty key; source review confirms the nonpositive amount guard. The shared required CHECK-001 failed. Negative amounts have no separate maintained assertion; zero exercises the meaningful nonpositive boundary."
+          },
+          {
+            "obligation": {
+              "local": {
+                "requirement": "REQ-002",
+                "scenario": 1
+              }
+            },
+            "result": "fail",
+            "checks": [
+              "CHECK-001"
+            ],
+            "evidence": "docs/evidence/payment-validation/review.md",
+            "explanation": "test_duplicate failed: a repeated key returned True rather than False. Current source disables the duplicate guard with if False."
+          },
+          {
+            "obligation": {
+              "regression": {
+                "impact": 1,
+                "scenario": 0
+              }
+            },
+            "result": "fail",
+            "checks": [
+              "CHECK-001"
+            ],
+            "evidence": "docs/evidence/payment-validation/review.md",
+            "explanation": "The preserved duplicate-prevention baseline and living specification require False for repeated keys. The maintained regression test observed True and failed."
+          }
+        ],
+        "findings": [
+          {
+            "id": "FIND-001",
+            "source": {
+              "local": {
+                "requirement": "REQ-002",
+                "scenario": 1
+              }
+            },
+            "category": "contradicts",
+            "state": "open",
+            "evidence": "docs/evidence/payment-validation/review.md",
+            "description": "Repeated keys return True because the duplicate guard is disabled. This also violates retained regression obligation impact 1/scenario 0 and the living payment specification. Restore duplicate prevention within TASK-001 and rerun the complete required suite under separate implementation authorization.",
+            "tasks": [
+              "TASK-001"
+            ],
+            "checks": [
+              "CHECK-001"
+            ]
+          }
+        ]
+      },
+      "closure": "active"
+    },
+    "specs/changes/payment-validation/design.md": {
+      "sdd_version": 3,
+      "change": "payment-validation",
+      "requirements": [
+        "REQ-001",
+        "REQ-002"
+      ],
+      "adrs": [],
+      "validation": [
+        {
+          "id": "CHECK-001",
+          "description": "Run new and retained payment tests",
+          "requirements": [
+            "REQ-001",
+            "REQ-002"
+          ],
+          "required": true,
+          "method": {
+            "kind": "automated",
+            "procedure": "Run /private/tmp/versat-sdd-acceptance-venv/bin/python /Users/elviszoz/.codex/worktrees/6f00/versat-ai-harness/scripts/testing/run.py run --root . --change payment-validation --check CHECK-001; require current payment assertions to pass."
+          },
+          "inputs": {
+            "include": [
+              "src",
+              "tests",
+              ".versat/validation.yaml",
+              ".versat/project.yaml",
+              ".versat/standards.lock",
+              "specs/product"
+            ],
+            "exclude": []
+          },
+          "outputs": [
+            "docs/evidence"
+          ],
+          "execution": "local"
+        }
+      ],
+      "coverage": [
+        {
+          "scenario": {
+            "requirement": "REQ-001",
+            "scenario": 1
+          },
+          "applicability": "required",
+          "checks": [
+            "CHECK-001"
+          ]
+        },
+        {
+          "scenario": {
+            "requirement": "REQ-001",
+            "scenario": 2
+          },
+          "applicability": "required",
+          "checks": [
+            "CHECK-001"
+          ]
+        },
+        {
+          "scenario": {
+            "requirement": "REQ-002",
+            "scenario": 1
+          },
+          "applicability": "required",
+          "checks": [
+            "CHECK-001"
+          ]
+        }
+      ],
+      "regression": [
+        {
+          "obligation": {
+            "impact": 1,
+            "scenario": 0
+          },
+          "checks": [
+            "CHECK-001"
+          ],
+          "rationale": "Retain duplicate-prevention assertion."
+        }
+      ],
+      "review": {
+        "revision": 1,
+        "state": "approved",
+        "blockers": [],
+        "upstream": {
+          "proposal": "f7bf7b19f5b28c7cf238c22001cd53702b54d4d7fe09c536adb03375b56dd741"
+        },
+        "approval": {
+          "source": "Synthetic evaluator fixture, not a real developer approval",
+          "quote": "Synthetic approval for this disposable scenario only",
+          "revision": 1,
+          "digest": "6fe31e98cb168331b3ade5b0f486c63953a28dd7c114968bef84ade54d8dd9b2"
+        }
+      }
+    },
+    "specs/changes/payment-validation/proposal.md": {
+      "sdd_version": 3,
+      "change": "payment-validation",
+      "status": "proposed",
+      "owner": "Synthetic evaluator",
+      "summary": "Verify payment coverage and retained behavior.",
+      "risk": "medium",
+      "impact": {
+        "state": "assessed",
+        "summary": "Extend input coverage and preserve current duplicate prevention.",
+        "items": [
+          {
+            "current_contract": {
+              "change": "payment-validation",
+              "artifact": "proposal",
+              "locator": "## Current contract baseline"
+            },
+            "effect": "preserve",
+            "targets": [
+              "REQ-002"
+            ],
+            "reason": "Duplicate prevention remains required."
+          }
+        ]
+      },
+      "review": {
+        "revision": 1,
+        "state": "approved",
+        "blockers": [],
+        "upstream": {},
+        "approval": {
+          "source": "Synthetic evaluator fixture, not a real developer approval",
+          "quote": "Synthetic approval for this disposable scenario only",
+          "revision": 1,
+          "digest": "f7bf7b19f5b28c7cf238c22001cd53702b54d4d7fe09c536adb03375b56dd741"
+        }
+      }
+    }
+  },
+  "sdd_exit_code": 1,
+  "replay": {
+    "process": {
+      "argv": [
+        "/private/tmp/versat-sdd-acceptance-venv/bin/python",
+        "/Users/elviszoz/.codex/worktrees/6f00/versat-ai-harness/scripts/testing/run.py",
+        "run",
+        "--root",
+        "/Users/elviszoz/.codex/worktrees/6f00/versat-ai-harness/docs/validation/automated-test-execution/supervised/fc499f64e2d948a2a8b9b3427e924bd7/retained-failure/project"
+      ],
+      "cwd": "/Users/elviszoz/.codex/worktrees/6f00/versat-ai-harness/docs/validation/automated-test-execution/supervised/fc499f64e2d948a2a8b9b3427e924bd7/retained-failure/project",
+      "result": "fail",
+      "truncated": {
+        "stderr": false,
+        "stdout": false
+      },
+      "resolved_executable": "/Library/Frameworks/Python.framework/Versions/3.11/bin/python3.11",
+      "exit_code": 1,
+      "reason": "exit",
+      "duration_seconds": 0.192
+    },
+    "report": {
+      "schema_version": 1,
+      "attempt": "6f718f4f5e3c4139a10f4ce530551ba2",
+      "scope": "full",
+      "readiness": false,
+      "result": "fail",
+      "started_at": "2026-10-03T14:04:35.132163+00:00",
+      "selected_suites": [
+        "unit"
+      ],
+      "required_suites": [
+        "unit"
+      ],
+      "suites": [
+        {
+          "argv": [
+            "/private/tmp/versat-sdd-acceptance-venv/bin/python",
+            "/Users/elviszoz/.codex/worktrees/6f00/versat-ai-harness/scripts/testing/unittest_report.py",
+            "--report",
+            "/Users/elviszoz/.codex/worktrees/6f00/versat-ai-harness/docs/validation/automated-test-execution/supervised/fc499f64e2d948a2a8b9b3427e924bd7/retained-failure/project/.versat/validation-runs/6f718f4f5e3c4139a10f4ce530551ba2/unit/counts.json",
+            "--",
+            "discover",
+            "-s",
+            "tests"
+          ],
+          "cwd": "/Users/elviszoz/.codex/worktrees/6f00/versat-ai-harness/docs/validation/automated-test-execution/supervised/fc499f64e2d948a2a8b9b3427e924bd7/retained-failure/project",
+          "result": "fail",
+          "truncated": {
+            "stdout": false,
+            "stderr": false
+          },
+          "resolved_executable": "/Library/Frameworks/Python.framework/Versions/3.11/bin/python3.11",
+          "exit_code": 1,
+          "reason": "Test assertions failed",
+          "duration_seconds": 0.048,
+          "process_reason": "exit",
+          "suite": "unit",
+          "started_at": "2026-10-03T14:04:35.152289+00:00",
+          "ended_at": "2026-10-03T14:04:35.200562+00:00",
+          "counts": {
+            "schema_version": 1,
+            "collected": 4,
+            "executed": 4,
+            "skipped": 0,
+            "failed": 1,
+            "errors": 0
+          }
+        }
+      ],
+      "input_digest_before": "d068f93508667582f7d5a232164672358f8043d56b8ee627c2bec7e501715395",
+      "configuration_digest": "dbf5e64255a024b3d0af309802133a0e7a32d0db255767593cfeb5e034e960fb",
+      "provider_digest": "063227b518d41a2f53f763372c9f377f65c15ef9c2b87fff9d2ee4088663a6b0",
+      "provider_version": "0.3.0",
+      "environment": "macOS-26.5.2-arm64-arm-64bit; Python 3.11.4",
+      "execution": "local",
+      "input_digest_after": "d068f93508667582f7d5a232164672358f8043d56b8ee627c2bec7e501715395",
+      "ended_at": "2026-10-03T14:04:35.207399+00:00",
+      "fresh": true
+    }
+  }
+}

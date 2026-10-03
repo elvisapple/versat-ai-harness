@@ -1,0 +1,93 @@
+{
+  "status": "fail",
+  "phase": "planning",
+  "checked": [
+    "automated-test-execution"
+  ],
+  "findings": [
+    {
+      "code": "APPROVAL_REQUIRED",
+      "message": "Current design approval is required for execution or delivery",
+      "path": "/Users/elviszoz/.codex/worktrees/6f00/versat-ai-harness/specs/changes/automated-test-execution/design.md",
+      "severity": "error"
+    },
+    {
+      "code": "APPROVAL_REQUIRED",
+      "message": "Current tasks approval is required for execution or delivery",
+      "path": "/Users/elviszoz/.codex/worktrees/6f00/versat-ai-harness/specs/changes/automated-test-execution/tasks.md",
+      "severity": "error"
+    },
+    {
+      "code": "COVERAGE_CHECK",
+      "message": "Scenario check must reference its requirement",
+      "path": "/Users/elviszoz/.codex/worktrees/6f00/versat-ai-harness/specs/changes/automated-test-execution/design.md",
+      "severity": "error"
+    },
+    {
+      "code": "INPUT_STALE",
+      "message": "Rerun affected check, do not relabel old evidence: CHECK-001",
+      "path": "/Users/elviszoz/.codex/worktrees/6f00/versat-ai-harness/specs/changes/automated-test-execution/tasks.md",
+      "severity": "unverified"
+    },
+    {
+      "code": "INPUT_STALE",
+      "message": "Rerun affected check, do not relabel old evidence: CHECK-002",
+      "path": "/Users/elviszoz/.codex/worktrees/6f00/versat-ai-harness/specs/changes/automated-test-execution/tasks.md",
+      "severity": "unverified"
+    },
+    {
+      "code": "INPUT_STALE",
+      "message": "Rerun affected check, do not relabel old evidence: CHECK-003",
+      "path": "/Users/elviszoz/.codex/worktrees/6f00/versat-ai-harness/specs/changes/automated-test-execution/tasks.md",
+      "severity": "unverified"
+    },
+    {
+      "code": "INPUT_STALE",
+      "message": "Rerun affected check, do not relabel old evidence: CHECK-004",
+      "path": "/Users/elviszoz/.codex/worktrees/6f00/versat-ai-harness/specs/changes/automated-test-execution/tasks.md",
+      "severity": "unverified"
+    },
+    {
+      "code": "INPUT_STALE",
+      "message": "Rerun affected check, do not relabel old evidence: CHECK-005",
+      "path": "/Users/elviszoz/.codex/worktrees/6f00/versat-ai-harness/specs/changes/automated-test-execution/tasks.md",
+      "severity": "unverified"
+    },
+    {
+      "code": "INPUT_STALE",
+      "message": "Rerun affected check, do not relabel old evidence: CHECK-006",
+      "path": "/Users/elviszoz/.codex/worktrees/6f00/versat-ai-harness/specs/changes/automated-test-execution/tasks.md",
+      "severity": "unverified"
+    },
+    {
+      "code": "INPUT_STALE",
+      "message": "Rerun affected check, do not relabel old evidence: CHECK-007",
+      "path": "/Users/elviszoz/.codex/worktrees/6f00/versat-ai-harness/specs/changes/automated-test-execution/tasks.md",
+      "severity": "unverified"
+    }
+  ],
+  "warnings": [],
+  "metrics": {
+    "automated-test-execution": {
+      "local_scenarios": 27,
+      "regression_obligations": 23,
+      "assessed": 0,
+      "results": 7,
+      "open_findings": 0,
+      "stale_results": 7,
+      "requirements": {
+        "REQ-001": "unverified",
+        "REQ-002": "unverified",
+        "REQ-003": "unverified",
+        "REQ-004": "unverified",
+        "REQ-005": "unverified",
+        "REQ-006": "unverified",
+        "REQ-007": "unverified",
+        "REQ-008": "unverified"
+      }
+    }
+  },
+  "live_archives": [],
+  "archive_required": [],
+  "scope": "Declared contract checks only; archive inventory is historical unless selected for live delivery. No proof of semantic adequacy, execution authenticity, human identity, remote CI, merge or deployment."
+}

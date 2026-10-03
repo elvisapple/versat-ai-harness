@@ -1,0 +1,18 @@
+{
+  "argv": [
+    "/private/tmp/versat-sdd-acceptance-venv/bin/python",
+    "/Users/elviszoz/.codex/worktrees/6f00/versat-ai-harness/validators/sdd/validate.py",
+    "--root",
+    ".",
+    "--change",
+    "payment-validation",
+    "--phase",
+    "delivery",
+    "--json"
+  ],
+  "cwd": "/Users/elviszoz/.codex/worktrees/6f00/versat-ai-harness/docs/validation/automated-test-execution/supervised/fc499f64e2d948a2a8b9b3427e924bd7/missing-coverage/project",
+  "exit_code": 0,
+  "stdout": "docs/evidence/delivery.json",
+  "stderr": "",
+  "standards_verified": 10
+}

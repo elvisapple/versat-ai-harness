@@ -1,0 +1,776 @@
+[
+  {
+    "obligation": {
+      "local": {
+        "requirement": "REQ-001",
+        "scenario": 1
+      }
+    },
+    "result": "pass",
+    "checks": [
+      "CHECK-001",
+      "CHECK-003"
+    ],
+    "evidence": "docs/validation/automated-test-execution/review-r2.md",
+    "explanation": "Clean first-use exact-commit provider and base-composed Python consumer executed the documented wrapper with four observed passing tests; runner tests independently verify full required selection."
+  },
+  {
+    "obligation": {
+      "local": {
+        "requirement": "REQ-001",
+        "scenario": 2
+      }
+    },
+    "result": "pass",
+    "checks": [
+      "CHECK-003",
+      "CHECK-006"
+    ],
+    "evidence": "docs/validation/automated-test-execution/review-r2.md",
+    "explanation": "Custom-command first-use execution preserved configuration bytes and passed; rollback restored the original passing command. Consumer tests reject unresolved provider pins rather than guessing integration."
+  },
+  {
+    "obligation": {
+      "local": {
+        "requirement": "REQ-001",
+        "scenario": 3
+      }
+    },
+    "result": "pass",
+    "checks": [
+      "CHECK-001",
+      "CHECK-003"
+    ],
+    "evidence": "docs/validation/automated-test-execution/review-r2.md",
+    "explanation": "Invalid configuration and empty/all-skipped selection are rejected by real runner tests; the first-use missing interpreter reports exit 2 without installation or overall success."
+  },
+  {
+    "obligation": {
+      "local": {
+        "requirement": "REQ-002",
+        "scenario": 1
+      }
+    },
+    "result": "pass",
+    "checks": [
+      "CHECK-003",
+      "CHECK-004",
+      "CHECK-006"
+    ],
+    "evidence": "docs/validation/automated-test-execution/review-r2.md",
+    "explanation": "The missing-coverage native agent added meaningful state, error and boundary assertions. Seven tests passed; independent duplicate, zero-boundary and empty-key mutants each failed their intended assertions."
+  },
+  {
+    "obligation": {
+      "local": {
+        "requirement": "REQ-002",
+        "scenario": 2
+      }
+    },
+    "result": "pass",
+    "checks": [
+      "CHECK-003",
+      "CHECK-004"
+    ],
+    "evidence": "docs/validation/automated-test-execution/review-r2.md",
+    "explanation": "The adequate-reuse native agent preserved all four original tests and source bytes, mapped them and executed them. Independent replay passed and three seeded defects failed without redundant tests."
+  },
+  {
+    "obligation": {
+      "local": {
+        "requirement": "REQ-002",
+        "scenario": 3
+      }
+    },
+    "result": "pass",
+    "checks": [
+      "CHECK-003",
+      "CHECK-006"
+    ],
+    "evidence": "docs/validation/automated-test-execution/review-r2.md",
+    "explanation": "Consumer tests show a duplicate defect escapes an insufficient historical happy path but fails after retained coverage is added. Canonical tests reject unapproved exclusions and require reasons/outcomes for manual and replacement dispositions."
+  },
+  {
+    "obligation": {
+      "local": {
+        "requirement": "REQ-003",
+        "scenario": 1
+      }
+    },
+    "result": "pass",
+    "checks": [
+      "CHECK-001",
+      "CHECK-003",
+      "CHECK-004"
+    ],
+    "evidence": "docs/validation/automated-test-execution/review-r2.md",
+    "explanation": "Native retained-failure validation and independent replay execute four tests including the failing retained duplicate assertion. The local reference CI command also executes new passing and separate retained failing suites and returns failure."
+  },
+  {
+    "obligation": {
+      "local": {
+        "requirement": "REQ-003",
+        "scenario": 2
+      }
+    },
+    "result": "pass",
+    "checks": [
+      "CHECK-001",
+      "CHECK-005"
+    ],
+    "evidence": "docs/validation/automated-test-execution/review-r2.md",
+    "explanation": "Runner and SDD export tests label targeted scope and reject its use as full readiness evidence. Reviewed workflow commands always select the complete required suite set."
+  },
+  {
+    "obligation": {
+      "local": {
+        "requirement": "REQ-003",
+        "scenario": 3
+      }
+    },
+    "result": "pass",
+    "checks": [
+      "CHECK-001"
+    ],
+    "evidence": "docs/validation/automated-test-execution/review-r2.md",
+    "explanation": "Real bounded subprocess tests retain reports for timeout, interruption with descendant termination, nonzero exit, zero/all-skipped tests and unavailable execution; attempt directories are exclusive, preserving earlier outcomes."
+  },
+  {
+    "obligation": {
+      "local": {
+        "requirement": "REQ-003",
+        "scenario": 4
+      }
+    },
+    "result": "pass",
+    "checks": [
+      "CHECK-001",
+      "CHECK-004"
+    ],
+    "evidence": "docs/validation/automated-test-execution/review-r2.md",
+    "explanation": "Configuration inspection and SDD validators do not execute procedure prose. The native new-intent case stopped at Proposal/Requirements approval, and validation-only cases preserved source, tests and plan identity."
+  },
+  {
+    "obligation": {
+      "local": {
+        "requirement": "REQ-004",
+        "scenario": 1
+      }
+    },
+    "result": "pass",
+    "checks": [
+      "CHECK-002",
+      "CHECK-006"
+    ],
+    "evidence": "docs/validation/automated-test-execution/review-r2.md",
+    "explanation": "Actual runner reports and fragments contain command arguments, environment, counts, output and stable before/after digests. Current R2 results bind the approved Tasks digest; the runner leaves dossier bookkeeping to the coordinator."
+  },
+  {
+    "obligation": {
+      "local": {
+        "requirement": "REQ-004",
+        "scenario": 2
+      }
+    },
+    "result": "pass",
+    "checks": [
+      "CHECK-002",
+      "CHECK-004"
+    ],
+    "evidence": "docs/validation/automated-test-execution/review-r2.md",
+    "explanation": "SDD execution tests withhold fresh fragments after source or plan mutation and retain old attempts. Native stale-evidence validation reran the current inputs while preserving the earlier stale report; independent replay verified current behavior."
+  },
+  {
+    "obligation": {
+      "local": {
+        "requirement": "REQ-004",
+        "scenario": 3
+      }
+    },
+    "result": "pass",
+    "checks": [
+      "CHECK-002",
+      "CHECK-006"
+    ],
+    "evidence": "docs/validation/automated-test-execution/review-r2.md",
+    "explanation": "Manual/export rejection tests preserve method boundaries; missing prerequisite first-use execution remains unavailable. Synthetic missing/unverified supervised delivery records stay non-passing despite a declared automated pass."
+  },
+  {
+    "obligation": {
+      "local": {
+        "requirement": "REQ-004",
+        "scenario": 4
+      }
+    },
+    "result": "pass",
+    "checks": [
+      "CHECK-002"
+    ],
+    "evidence": "docs/validation/automated-test-execution/review-r2.md",
+    "explanation": "The archive relocation regression preserves evidence resolution and input identity. Export tests confirm no approval, assessment, finding or task status changes; local reports make no merge/deployment claim."
+  },
+  {
+    "obligation": {
+      "local": {
+        "requirement": "REQ-005",
+        "scenario": 1
+      }
+    },
+    "result": "pass",
+    "checks": [
+      "CHECK-003",
+      "CHECK-005",
+      "CHECK-008"
+    ],
+    "evidence": "docs/validation/automated-test-execution/review-r2.md",
+    "explanation": "The actual reference CI step, executed locally with controlled consumer fixtures, runs both new and retained suites and exposes the failing retained suite with exit 1. This verifies command integration, not a remote GitHub run."
+  },
+  {
+    "obligation": {
+      "local": {
+        "requirement": "REQ-005",
+        "scenario": 2
+      }
+    },
+    "result": "pass",
+    "checks": [
+      "CHECK-005",
+      "CHECK-007",
+      "CHECK-008"
+    ],
+    "evidence": "docs/validation/automated-test-execution/review-r2.md",
+    "explanation": "Actual workflow shell branches preserve baseline arguments and add the archive guard for ready/push behavior; missing baseline and nonzero validation stop the job. All 131 existing validator regressions pass in the full package suite."
+  },
+  {
+    "obligation": {
+      "local": {
+        "requirement": "REQ-005",
+        "scenario": 3
+      }
+    },
+    "result": "pass",
+    "checks": [
+      "CHECK-005",
+      "CHECK-008",
+      "CHECK-006"
+    ],
+    "evidence": "docs/validation/automated-test-execution/review-r2.md",
+    "explanation": "Synthetic delivery checks show missing and unverified required supervised evidence remain gaps alongside a declared passing automated result. Canonical policy requires both evidence types; the privileged model workflow was removed."
+  },
+  {
+    "obligation": {
+      "local": {
+        "requirement": "REQ-006",
+        "scenario": 1
+      }
+    },
+    "result": "pass",
+    "checks": [
+      "CHECK-004",
+      "CHECK-006"
+    ],
+    "evidence": "docs/validation/automated-test-execution/review-r2.md",
+    "explanation": "Six fresh native agents received only their saved scenario prompt and fixture with the versioned Skill, using fork_turns=none. Inputs, artifacts, available messages and unknown model/usage fields are retained; shared permissions are explicit."
+  },
+  {
+    "obligation": {
+      "local": {
+        "requirement": "REQ-006",
+        "scenario": 2
+      }
+    },
+    "result": "pass",
+    "checks": [
+      "CHECK-004",
+      "CHECK-006"
+    ],
+    "evidence": "docs/validation/automated-test-execution/review-r2.md",
+    "explanation": "Coordinator inspections verify the first approval gate, meaningful missing coverage, adequate reuse and truthful retained failure. Independent replays and three separate mutation copies per coverage case substantiate the verdicts beyond native narratives."
+  },
+  {
+    "obligation": {
+      "local": {
+        "requirement": "REQ-006",
+        "scenario": 3
+      }
+    },
+    "result": "pass",
+    "checks": [
+      "CHECK-004",
+      "CHECK-006"
+    ],
+    "evidence": "docs/validation/automated-test-execution/review-r2.md",
+    "explanation": "Native stale-evidence and validation-only artifacts are compared to pre-dispatch source/tests, controls and approved plan snapshots. Current replay and original command reports verify rerunning and failure reporting without unauthorized code fixes."
+  },
+  {
+    "obligation": {
+      "local": {
+        "requirement": "REQ-006",
+        "scenario": 4
+      }
+    },
+    "result": "pass",
+    "checks": [
+      "CHECK-004",
+      "CHECK-006"
+    ],
+    "evidence": "docs/validation/automated-test-execution/review-r2.md",
+    "explanation": "One invocation per case was retained under monitored 600-second case and 3600-second suite bounds, without retries. The guide requires unavailable/over-budget results to stay unverified; helper tests exercise actual bounded replay and missing observations. Runtime outage was not forced; model/usage telemetry remains unknown."
+  },
+  {
+    "obligation": {
+      "local": {
+        "requirement": "REQ-007",
+        "scenario": 1
+      }
+    },
+    "result": "pass",
+    "checks": [
+      "CHECK-003",
+      "CHECK-006"
+    ],
+    "evidence": "docs/validation/automated-test-execution/review-r2.md",
+    "explanation": "Clean first-use applied the optional Python validation artifact on base, resolved canonical Standards and an exact synthetic provider commit, then ran the usable wrapper. Template placeholders are authoring inputs, not claimed execution."
+  },
+  {
+    "obligation": {
+      "local": {
+        "requirement": "REQ-007",
+        "scenario": 2
+      }
+    },
+    "result": "pass",
+    "checks": [
+      "CHECK-003",
+      "CHECK-006"
+    ],
+    "evidence": "docs/validation/automated-test-execution/review-r2.md",
+    "explanation": "Provider tests reject unresolved or changed identities; maintenance guidance requires reviewed conflict handling and exact pins. Actual custom-command preservation and rollback succeeded without rewriting historical dossiers."
+  },
+  {
+    "obligation": {
+      "local": {
+        "requirement": "REQ-007",
+        "scenario": 3
+      }
+    },
+    "result": "pass",
+    "checks": [
+      "CHECK-003",
+      "CHECK-006",
+      "CHECK-004"
+    ],
+    "evidence": "docs/validation/automated-test-execution/review-r2.md",
+    "explanation": "First-use observed wrapper success, retained regression failure, unavailable prerequisite and rollback. The six native scenarios use session collaboration without a dedicated API key; their evidence remains separate from deterministic CI."
+  },
+  {
+    "obligation": {
+      "local": {
+        "requirement": "REQ-008",
+        "scenario": 1
+      }
+    },
+    "result": "pass",
+    "checks": [
+      "CHECK-001",
+      "CHECK-002",
+      "CHECK-005",
+      "CHECK-007"
+    ],
+    "evidence": "docs/validation/automated-test-execution/review-r2.md",
+    "explanation": "Complete current validation passes 131 existing governance/SDD regressions and 48 execution/consumer/CI/helper tests, including real success, failure, interruption, unsafe inputs and the venv interpreter regression."
+  },
+  {
+    "obligation": {
+      "local": {
+        "requirement": "REQ-008",
+        "scenario": 2
+      }
+    },
+    "result": "pass",
+    "checks": [
+      "CHECK-001",
+      "CHECK-002"
+    ],
+    "evidence": "docs/validation/automated-test-execution/review-r2.md",
+    "explanation": "Runner/SDD tests reject escaping paths, overlapping unsafe outputs and narrative execution. Subprocess argument data is not shell-expanded, and execution preserves caller permissions without claiming isolation."
+  },
+  {
+    "obligation": {
+      "local": {
+        "requirement": "REQ-008",
+        "scenario": 3
+      }
+    },
+    "result": "pass",
+    "checks": [
+      "CHECK-006",
+      "CHECK-007",
+      "CHECK-008"
+    ],
+    "evidence": "docs/validation/automated-test-execution/review-r2.md",
+    "explanation": "The approved R2/R3/R2 chain governs the canonical Testing Standard revision. Existing gate, compatibility and freshness tests pass; exact adoption and preserved history remain explicit. Supervised local review does not waive automated application evaluations."
+  },
+  {
+    "obligation": {
+      "regression": {
+        "impact": 1,
+        "scenario": 1
+      }
+    },
+    "result": "pass",
+    "checks": [
+      "CHECK-003",
+      "CHECK-004",
+      "CHECK-006"
+    ],
+    "evidence": "docs/validation/automated-test-execution/review-r2.md",
+    "explanation": "Canonical coverage tests require each success/error/boundary scenario to be mapped; native missing-coverage adds actual missing assertions and independent mutants expose defects."
+  },
+  {
+    "obligation": {
+      "regression": {
+        "impact": 1,
+        "scenario": 2
+      }
+    },
+    "result": "pass",
+    "checks": [
+      "CHECK-003",
+      "CHECK-004",
+      "CHECK-006"
+    ],
+    "evidence": "docs/validation/automated-test-execution/review-r2.md",
+    "explanation": "Canonical reuse tests and the native adequate-reuse case retain the same four maintained tests while mapping multiple obligations, with no duplicate catalog or test quota."
+  },
+  {
+    "obligation": {
+      "regression": {
+        "impact": 1,
+        "scenario": 3
+      }
+    },
+    "result": "pass",
+    "checks": [
+      "CHECK-003",
+      "CHECK-004",
+      "CHECK-006"
+    ],
+    "evidence": "docs/validation/automated-test-execution/review-r2.md",
+    "explanation": "Canonical and consumer integration tests reject unapproved exclusions and require a scope reason for inapplicability; required current obligations remain assessed."
+  },
+  {
+    "obligation": {
+      "regression": {
+        "impact": 2,
+        "scenario": 1
+      }
+    },
+    "result": "pass",
+    "checks": [
+      "CHECK-003",
+      "CHECK-005",
+      "CHECK-007"
+    ],
+    "evidence": "docs/validation/automated-test-execution/review-r2.md",
+    "explanation": "Consumer tests and the actual local reference CI step execute a passing new test together with failed retained duplicate/regression checks; overall failure is preserved."
+  },
+  {
+    "obligation": {
+      "regression": {
+        "impact": 2,
+        "scenario": 2
+      }
+    },
+    "result": "pass",
+    "checks": [
+      "CHECK-003",
+      "CHECK-005",
+      "CHECK-007"
+    ],
+    "evidence": "docs/validation/automated-test-execution/review-r2.md",
+    "explanation": "Adequate existing tests remain in the consumer tests directory and are reused unchanged in the native case; independent replay and mutation verification confirm retained behavior."
+  },
+  {
+    "obligation": {
+      "regression": {
+        "impact": 2,
+        "scenario": 3
+      }
+    },
+    "result": "pass",
+    "checks": [
+      "CHECK-003",
+      "CHECK-005",
+      "CHECK-007"
+    ],
+    "evidence": "docs/validation/automated-test-execution/review-r2.md",
+    "explanation": "Approved regression mapping and explicit required_suites preserve selection rationale; CI command tests run the full set even after another required suite fails."
+  },
+  {
+    "obligation": {
+      "regression": {
+        "impact": 2,
+        "scenario": 4
+      }
+    },
+    "result": "pass",
+    "checks": [
+      "CHECK-003",
+      "CHECK-005",
+      "CHECK-007"
+    ],
+    "evidence": "docs/validation/automated-test-execution/review-r2.md",
+    "explanation": "Canonical manual-check tests require a reason and observed outcome, while unverified supervised delivery fixtures remain non-passing. Review methods are not exported as automated executions."
+  },
+  {
+    "obligation": {
+      "regression": {
+        "impact": 2,
+        "scenario": 5
+      }
+    },
+    "result": "pass",
+    "checks": [
+      "CHECK-003",
+      "CHECK-005",
+      "CHECK-007"
+    ],
+    "evidence": "docs/validation/automated-test-execution/review-r2.md",
+    "explanation": "Canonical supersession tests require local replacement and approval. The explicit retirement map defers only unshipped CLI/protected-CI responsibilities and retains failing-regression assertions."
+  },
+  {
+    "obligation": {
+      "regression": {
+        "impact": 3,
+        "scenario": 1
+      }
+    },
+    "result": "pass",
+    "checks": [
+      "CHECK-002",
+      "CHECK-007"
+    ],
+    "evidence": "docs/validation/automated-test-execution/review-r2.md",
+    "explanation": "SDD evidence tests and current native stale-evidence artifacts show source changes invalidate prior results with unchanged Tasks planning; only actual current execution supplies new evidence."
+  },
+  {
+    "obligation": {
+      "regression": {
+        "impact": 3,
+        "scenario": 2
+      }
+    },
+    "result": "pass",
+    "checks": [
+      "CHECK-002",
+      "CHECK-007"
+    ],
+    "evidence": "docs/validation/automated-test-execution/review-r2.md",
+    "explanation": "Gate and evidence regressions reject modified requirements/mappings and stale plan digests. Historical R1 results remain in their original snapshots rather than being rebound to R2."
+  },
+  {
+    "obligation": {
+      "regression": {
+        "impact": 3,
+        "scenario": 3
+      }
+    },
+    "result": "pass",
+    "checks": [
+      "CHECK-002",
+      "CHECK-007"
+    ],
+    "evidence": "docs/validation/automated-test-execution/review-r2.md",
+    "explanation": "Actual reports identify command, environment and input snapshots. Validator warnings distinguish declared references from authenticated execution; supervised observations are locally reviewed, not remote attestations."
+  },
+  {
+    "obligation": {
+      "regression": {
+        "impact": 3,
+        "scenario": 4
+      }
+    },
+    "result": "pass",
+    "checks": [
+      "CHECK-002",
+      "CHECK-007"
+    ],
+    "evidence": "docs/validation/automated-test-execution/review-r2.md",
+    "explanation": "Archive relocation tests keep report references and freshness intact while unchanged history remains inventory-only; local delivery does not establish merge or deployment."
+  },
+  {
+    "obligation": {
+      "regression": {
+        "impact": 4,
+        "scenario": 1
+      }
+    },
+    "result": "pass",
+    "checks": [
+      "CHECK-001",
+      "CHECK-002",
+      "CHECK-007"
+    ],
+    "evidence": "docs/validation/automated-test-execution/review-r2.md",
+    "explanation": "The maintained validator suite rejects duplicate, dangling, malformed and ambiguous references with source-specific findings; the execution integration preserves those validators."
+  },
+  {
+    "obligation": {
+      "regression": {
+        "impact": 4,
+        "scenario": 2
+      }
+    },
+    "result": "pass",
+    "checks": [
+      "CHECK-001",
+      "CHECK-002",
+      "CHECK-007"
+    ],
+    "evidence": "docs/validation/automated-test-execution/review-r2.md",
+    "explanation": "Full deterministic regressions plus retained-failure native evidence demonstrate failed, missing, unverified and stale records block delivery rather than passing structural readiness."
+  },
+  {
+    "obligation": {
+      "regression": {
+        "impact": 4,
+        "scenario": 3
+      }
+    },
+    "result": "pass",
+    "checks": [
+      "CHECK-001",
+      "CHECK-002",
+      "CHECK-007"
+    ],
+    "evidence": "docs/validation/automated-test-execution/review-r2.md",
+    "explanation": "Partial planning regressions and the actual new-intent agent allow Proposal/Requirements without premature Design, Tasks or execution results, and stop for the first human gate."
+  },
+  {
+    "obligation": {
+      "regression": {
+        "impact": 4,
+        "scenario": 4
+      }
+    },
+    "result": "pass",
+    "checks": [
+      "CHECK-001",
+      "CHECK-002",
+      "CHECK-007"
+    ],
+    "evidence": "docs/validation/automated-test-execution/review-r2.md",
+    "explanation": "Structural output preserves its semantic/authenticity limitation; inadequate test coverage can pass execution in the consumer fixture until meaningful assertions are added. Coordinator mutation review supplies the separate assessment."
+  },
+  {
+    "obligation": {
+      "regression": {
+        "impact": 5,
+        "scenario": 1
+      }
+    },
+    "result": "pass",
+    "checks": [
+      "CHECK-003",
+      "CHECK-006",
+      "CHECK-007"
+    ],
+    "evidence": "docs/validation/automated-test-execution/review-r2.md",
+    "explanation": "Legacy and historical archive compatibility regressions pass with preserved bytes; the R1 task/evidence snapshot remains readable and unchanged under the revised approved plan."
+  },
+  {
+    "obligation": {
+      "regression": {
+        "impact": 5,
+        "scenario": 2
+      }
+    },
+    "result": "pass",
+    "checks": [
+      "CHECK-003",
+      "CHECK-006",
+      "CHECK-007"
+    ],
+    "evidence": "docs/validation/automated-test-execution/review-r2.md",
+    "explanation": "Missing historical coverage is exposed by the consumer duplicate mutant and addressed in current native implementation. Synthetic fixture approvals are labeled and never portrayed as real retrospective approvals."
+  },
+  {
+    "obligation": {
+      "regression": {
+        "impact": 5,
+        "scenario": 3
+      }
+    },
+    "result": "pass",
+    "checks": [
+      "CHECK-003",
+      "CHECK-006",
+      "CHECK-007"
+    ],
+    "evidence": "docs/validation/automated-test-execution/review-r2.md",
+    "explanation": "All 131 maintained validator tests pass, retaining positive and negative coverage for references, regression evidence, freshness, gate sequencing and archives alongside new execution tests."
+  },
+  {
+    "obligation": {
+      "regression": {
+        "impact": 5,
+        "scenario": 4
+      }
+    },
+    "result": "pass",
+    "checks": [
+      "CHECK-003",
+      "CHECK-006",
+      "CHECK-007"
+    ],
+    "evidence": "docs/validation/automated-test-execution/review-r2.md",
+    "explanation": "Reviewed guides retain one public versat-sdd Skill and four dossier files. Actual native scenarios follow planning, implementation and validation routes, preserve failures and report the required next authorization."
+  },
+  {
+    "obligation": {
+      "regression": {
+        "impact": 5,
+        "scenario": 5
+      }
+    },
+    "result": "pass",
+    "checks": [
+      "CHECK-003",
+      "CHECK-006",
+      "CHECK-007"
+    ],
+    "evidence": "docs/validation/automated-test-execution/review-r2.md",
+    "explanation": "Clean consumer setup resolves base composition and an exact synthetic provider commit. Guides require a reviewed real release pin for adoption; no consumer or Marketplace release is updated automatically."
+  },
+  {
+    "obligation": {
+      "regression": {
+        "impact": 6,
+        "scenario": 0
+      }
+    },
+    "result": "pass",
+    "checks": [
+      "CHECK-004",
+      "CHECK-006"
+    ],
+    "evidence": "docs/validation/automated-test-execution/review-r2.md",
+    "explanation": "All six versioned critical scenario intents were exercised through fresh native agents with original artifacts and coordinator replay. Narrative-only and old scripted walkthrough evidence were not used as substitutes."
+  },
+  {
+    "obligation": {
+      "regression": {
+        "impact": 7,
+        "scenario": 0
+      }
+    },
+    "result": "pass",
+    "checks": [
+      "CHECK-003",
+      "CHECK-006"
+    ],
+    "evidence": "docs/validation/automated-test-execution/review-r2.md",
+    "explanation": "Optional validation artifacts extend base; clean first-use exercised usable configuration, custom commands and rollback with an exact provider pin. Scaffolding and adoption remain separate from observed execution."
+  }
+]

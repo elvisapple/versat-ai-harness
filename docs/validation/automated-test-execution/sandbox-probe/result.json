@@ -1,0 +1,11 @@
+{
+  "result": "pass",
+  "observed_at": "2026-10-02",
+  "cli_version": "codex-cli 0.159.2",
+  "command": "codex sandbox --permission-profile :workspace -c sandbox_workspace_write.network_access=false --cd <disposable nested Git root> -- <prepared Python probe>",
+  "execution": "local macOS, escalated from the calling Codex tool sandbox; no model request or API credential",
+  "inside_write": "observed at inside.txt",
+  "outside_write": "denied by the nested CLI sandbox",
+  "network_bind": "denied by the nested CLI sandbox",
+  "limitations": "This probe verifies the CLI sandbox on this host. It does not provision the separate disposable evaluation environment or transport authentication."
+}

@@ -1,0 +1,13 @@
+{
+  "argv": [
+    "/private/tmp/versat-sdd-acceptance-venv/bin/python",
+    "/Users/elviszoz/.codex/worktrees/6f00/versat-ai-harness/scripts/testing/run.py",
+    "inspect",
+    "--root",
+    "/Users/elviszoz/.codex/worktrees/6f00/versat-ai-harness/docs/validation/automated-test-execution/supervised/fc499f64e2d948a2a8b9b3427e924bd7/retained-failure/project"
+  ],
+  "cwd": "/Users/elviszoz/.codex/worktrees/6f00/versat-ai-harness/docs/validation/automated-test-execution/supervised/fc499f64e2d948a2a8b9b3427e924bd7/retained-failure/project",
+  "exit_code": 0,
+  "stdout": "{\"result\": \"pass\", \"required_suites\": [\"unit\"], \"executed\": false}\n",
+  "stderr": ""
+}

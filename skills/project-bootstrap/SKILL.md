@@ -14,16 +14,11 @@ Create one reviewable bootstrap change rather than assembling a project manually
 3. Classify the project as software, agent, hybrid, library or infrastructure.
 4. Resolve applicable context from the Plugin root [Standards index](../../standards/index.yaml); do not let the caller hand-pick mandatory Standards.
 5. Read [product discovery](references/product-discovery.md) and guide the developer through the [product overview template](../../project-templates/base/specs/product/overview.md). Ask about missing product context in short rounds; use the resolved language policy for the generated artifacts.
-6. Compose the Plugin root [base template](../../project-templates/base/) with the selected profile modules. Populate `specs/product/overview.md` in the target repository and create supporting product files only when the discovery guidance warrants them. Keep unknowns explicit and present the draft and remaining questions for developer review without claiming approval.
+6. Read the [template composition guide](../../project-templates/README.md), including optional validation adoption, then compose the Plugin root [base template](../../project-templates/base/) with the selected profile modules. Populate `specs/product/overview.md` in the target repository and create supporting product files only when the discovery guidance warrants them. Keep unknowns explicit and present the draft and remaining questions for developer review without claiming approval.
 7. Initialize the `project-bootstrap` change using the Plugin root [SDD process](../../sdd/process.md) and its templates. Link its proposal to the product overview and relevant supporting sections; distinguish product ambitions from the scope of the repository bootstrap.
 8. Generate `.versat/project.yaml` and an exact `.versat/standards.lock` in the target project.
-9. Review product coverage using the discovery guidance, then run the Plugin root validation entry point and report gaps without hiding or bypassing them. Structural validation does not establish product evidence or approval.
+9. Review product coverage using the discovery guidance, then run the Plugin root validation entry point and report gaps without hiding or bypassing them. Follow the template guide to verify the consumer's exact provider and execute its actual configured suites. Report empty scaffolds and unavailable runtime honestly. Structural validation does not establish product evidence or approval.
 10. Prepare a bootstrap branch and Pull Request only when the user has authorized remote repository changes.
-5. Read the Plugin root [template composition guide](../../project-templates/README.md) and compose the [base template](../../project-templates/base/) with the selected profile modules. Use the matching authoring artifacts only for concrete capabilities requested by the project; keep illustrative examples out of active execution paths.
-6. Initialize the `project-bootstrap` change using the Plugin root [SDD process](../../sdd/process.md) and its templates.
-7. Generate `.versat/project.yaml` and an exact `.versat/standards.lock` in the target project.
-8. Run the Plugin root validation entry point, then verify the generated project against the resolved artifact contracts and its documented validation commands. Report executor loading and integration readiness separately; package validation alone does not verify the consumer.
-9. Prepare a bootstrap branch and Pull Request only when the user has authorized remote repository changes.
 
 ## Constraints
 

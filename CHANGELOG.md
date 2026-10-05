@@ -6,6 +6,18 @@ The format follows Keep a Changelog, and the project follows Semantic Versioning
 
 ## [Unreleased]
 
+### Added
+
+- explicit configured project suite execution, structured test counts, bounded attempt logs and current SDD evidence fragments;
+- optional consumer validation assets and first-use guides with exact provider verification and migration/rollback guidance;
+- supervised native-subagent Skill evaluation procedure, synthetic cases and independent verification helpers alongside complete deterministic CI;
+- offline regression tests for execution, evidence, consumer adoption, evaluation and CI eligibility.
+
+### Changed
+
+- integrated coverage creation/reuse and full regression execution into canonical testing and SDD guidance;
+- extended package validation with execution/adapter tests while preserving existing SDD regression and archive checks.
+
 ## [0.3.0] - 2026-09-29
 
 ### Added

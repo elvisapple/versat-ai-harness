@@ -1,0 +1,36 @@
+[
+  {
+    "argv": [
+      "git",
+      "rev-parse",
+      "--show-toplevel"
+    ],
+    "cwd": "/Users/elviszoz/.codex/worktrees/6f00/versat-ai-harness/docs/validation/automated-test-execution/supervised/fc499f64e2d948a2a8b9b3427e924bd7/stale-evidence/project",
+    "exit_code": 0,
+    "stdout": "/Users/elviszoz/.codex/worktrees/6f00/versat-ai-harness/docs/validation/automated-test-execution/supervised/fc499f64e2d948a2a8b9b3427e924bd7/stale-evidence/project\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "git",
+      "branch",
+      "--show-current"
+    ],
+    "cwd": "/Users/elviszoz/.codex/worktrees/6f00/versat-ai-harness/docs/validation/automated-test-execution/supervised/fc499f64e2d948a2a8b9b3427e924bd7/stale-evidence/project",
+    "exit_code": 0,
+    "stdout": "main\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "git",
+      "log",
+      "-1",
+      "--format=%h %s"
+    ],
+    "cwd": "/Users/elviszoz/.codex/worktrees/6f00/versat-ai-harness/docs/validation/automated-test-execution/supervised/fc499f64e2d948a2a8b9b3427e924bd7/stale-evidence/project",
+    "exit_code": 128,
+    "stdout": "",
+    "stderr": "fatal: your current branch 'main' does not have any commits yet\n"
+  }
+]

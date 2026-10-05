@@ -53,3 +53,7 @@ Adopt a reviewed exact Harness release and record the target version. Do not bli
 5. Preserve project-specific content, surface destination conflicts, review the diff and run consumer tests/evals and integration checks. Retain a reviewed rollback path and update the exact lockfile only with the migration.
 
 The Harness package keeps root `skills/` and `agents/`, and its SDD lifecycle procedures stay under `sdd/workflows/`. Those package paths are not consumer migration targets.
+
+## Optional project validation
+
+After composing base and the selected profile, adopt [validation assets](artifacts/validation/README.md) only for a usable project execution integration. Follow [project validation](../docs/guides/project-validation.md) to select an exact provider, resolve identity/Standards, preserve custom commands, configure complete required suites and execute them. Include hidden files; a copied CI placeholder or empty tests directory is not readiness. Bootstrap reports these gaps. Maintenance reviews destination conflicts and keeps the prior wrapper/configuration/CI/lockfile together for rollback. Neither flow silently selects a newer Harness release.

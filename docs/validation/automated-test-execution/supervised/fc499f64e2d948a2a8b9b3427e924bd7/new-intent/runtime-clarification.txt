@@ -1,0 +1,1 @@
+Set PYTHONDONTWRITEBYTECODE=1 on Python commands to avoid implicit bytecode writes in the read-only provider. This is an execution-environment clarification, not scenario acceptance guidance.

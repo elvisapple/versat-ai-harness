@@ -1,0 +1,375 @@
+{
+  "status": "fail",
+  "phase": "delivery",
+  "checked": [
+    "automated-test-execution"
+  ],
+  "findings": [
+    {
+      "code": "TASK_INCOMPLETE",
+      "message": "TASK-005 is not completed",
+      "path": "/Users/elviszoz/.codex/worktrees/6f00/versat-ai-harness/specs/changes/automated-test-execution/tasks.md",
+      "severity": "error"
+    },
+    {
+      "code": "TASK_INCOMPLETE",
+      "message": "TASK-008 is not completed",
+      "path": "/Users/elviszoz/.codex/worktrees/6f00/versat-ai-harness/specs/changes/automated-test-execution/tasks.md",
+      "severity": "error"
+    },
+    {
+      "code": "TASK_INCOMPLETE",
+      "message": "TASK-009 is not completed",
+      "path": "/Users/elviszoz/.codex/worktrees/6f00/versat-ai-harness/specs/changes/automated-test-execution/tasks.md",
+      "severity": "error"
+    },
+    {
+      "code": "TASK_INCOMPLETE",
+      "message": "TASK-010 is not completed",
+      "path": "/Users/elviszoz/.codex/worktrees/6f00/versat-ai-harness/specs/changes/automated-test-execution/tasks.md",
+      "severity": "error"
+    },
+    {
+      "code": "VALIDATION_MISSING",
+      "message": "CHECK-004 requires a passing result with evidence",
+      "path": "/Users/elviszoz/.codex/worktrees/6f00/versat-ai-harness/specs/changes/automated-test-execution/tasks.md",
+      "severity": "unverified"
+    },
+    {
+      "code": "VALIDATION_MISSING",
+      "message": "CHECK-006 requires a passing result with evidence",
+      "path": "/Users/elviszoz/.codex/worktrees/6f00/versat-ai-harness/specs/changes/automated-test-execution/tasks.md",
+      "severity": "unverified"
+    },
+    {
+      "code": "VALIDATION_MISSING",
+      "message": "CHECK-008 requires a passing result with evidence",
+      "path": "/Users/elviszoz/.codex/worktrees/6f00/versat-ai-harness/specs/changes/automated-test-execution/tasks.md",
+      "severity": "unverified"
+    },
+    {
+      "code": "ASSESSMENT_MISSING",
+      "message": "{\"regression\":{\"impact\":2,\"scenario\":5}}",
+      "path": "/Users/elviszoz/.codex/worktrees/6f00/versat-ai-harness/specs/changes/automated-test-execution/tasks.md",
+      "severity": "unverified"
+    },
+    {
+      "code": "ASSESSMENT_MISSING",
+      "message": "{\"local\":{\"requirement\":\"REQ-004\",\"scenario\":3}}",
+      "path": "/Users/elviszoz/.codex/worktrees/6f00/versat-ai-harness/specs/changes/automated-test-execution/tasks.md",
+      "severity": "unverified"
+    },
+    {
+      "code": "ASSESSMENT_MISSING",
+      "message": "{\"regression\":{\"impact\":4,\"scenario\":1}}",
+      "path": "/Users/elviszoz/.codex/worktrees/6f00/versat-ai-harness/specs/changes/automated-test-execution/tasks.md",
+      "severity": "unverified"
+    },
+    {
+      "code": "ASSESSMENT_MISSING",
+      "message": "{\"regression\":{\"impact\":5,\"scenario\":5}}",
+      "path": "/Users/elviszoz/.codex/worktrees/6f00/versat-ai-harness/specs/changes/automated-test-execution/tasks.md",
+      "severity": "unverified"
+    },
+    {
+      "code": "ASSESSMENT_MISSING",
+      "message": "{\"local\":{\"requirement\":\"REQ-002\",\"scenario\":2}}",
+      "path": "/Users/elviszoz/.codex/worktrees/6f00/versat-ai-harness/specs/changes/automated-test-execution/tasks.md",
+      "severity": "unverified"
+    },
+    {
+      "code": "ASSESSMENT_MISSING",
+      "message": "{\"local\":{\"requirement\":\"REQ-004\",\"scenario\":1}}",
+      "path": "/Users/elviszoz/.codex/worktrees/6f00/versat-ai-harness/specs/changes/automated-test-execution/tasks.md",
+      "severity": "unverified"
+    },
+    {
+      "code": "ASSESSMENT_MISSING",
+      "message": "{\"local\":{\"requirement\":\"REQ-004\",\"scenario\":4}}",
+      "path": "/Users/elviszoz/.codex/worktrees/6f00/versat-ai-harness/specs/changes/automated-test-execution/tasks.md",
+      "severity": "unverified"
+    },
+    {
+      "code": "ASSESSMENT_MISSING",
+      "message": "{\"local\":{\"requirement\":\"REQ-007\",\"scenario\":1}}",
+      "path": "/Users/elviszoz/.codex/worktrees/6f00/versat-ai-harness/specs/changes/automated-test-execution/tasks.md",
+      "severity": "unverified"
+    },
+    {
+      "code": "ASSESSMENT_MISSING",
+      "message": "{\"regression\":{\"impact\":1,\"scenario\":3}}",
+      "path": "/Users/elviszoz/.codex/worktrees/6f00/versat-ai-harness/specs/changes/automated-test-execution/tasks.md",
+      "severity": "unverified"
+    },
+    {
+      "code": "ASSESSMENT_MISSING",
+      "message": "{\"regression\":{\"impact\":4,\"scenario\":3}}",
+      "path": "/Users/elviszoz/.codex/worktrees/6f00/versat-ai-harness/specs/changes/automated-test-execution/tasks.md",
+      "severity": "unverified"
+    },
+    {
+      "code": "ASSESSMENT_MISSING",
+      "message": "{\"regression\":{\"impact\":5,\"scenario\":2}}",
+      "path": "/Users/elviszoz/.codex/worktrees/6f00/versat-ai-harness/specs/changes/automated-test-execution/tasks.md",
+      "severity": "unverified"
+    },
+    {
+      "code": "ASSESSMENT_MISSING",
+      "message": "{\"regression\":{\"impact\":5,\"scenario\":3}}",
+      "path": "/Users/elviszoz/.codex/worktrees/6f00/versat-ai-harness/specs/changes/automated-test-execution/tasks.md",
+      "severity": "unverified"
+    },
+    {
+      "code": "ASSESSMENT_MISSING",
+      "message": "{\"local\":{\"requirement\":\"REQ-006\",\"scenario\":4}}",
+      "path": "/Users/elviszoz/.codex/worktrees/6f00/versat-ai-harness/specs/changes/automated-test-execution/tasks.md",
+      "severity": "unverified"
+    },
+    {
+      "code": "ASSESSMENT_MISSING",
+      "message": "{\"regression\":{\"impact\":2,\"scenario\":2}}",
+      "path": "/Users/elviszoz/.codex/worktrees/6f00/versat-ai-harness/specs/changes/automated-test-execution/tasks.md",
+      "severity": "unverified"
+    },
+    {
+      "code": "ASSESSMENT_MISSING",
+      "message": "{\"regression\":{\"impact\":5,\"scenario\":1}}",
+      "path": "/Users/elviszoz/.codex/worktrees/6f00/versat-ai-harness/specs/changes/automated-test-execution/tasks.md",
+      "severity": "unverified"
+    },
+    {
+      "code": "ASSESSMENT_MISSING",
+      "message": "{\"local\":{\"requirement\":\"REQ-003\",\"scenario\":4}}",
+      "path": "/Users/elviszoz/.codex/worktrees/6f00/versat-ai-harness/specs/changes/automated-test-execution/tasks.md",
+      "severity": "unverified"
+    },
+    {
+      "code": "ASSESSMENT_MISSING",
+      "message": "{\"regression\":{\"impact\":5,\"scenario\":4}}",
+      "path": "/Users/elviszoz/.codex/worktrees/6f00/versat-ai-harness/specs/changes/automated-test-execution/tasks.md",
+      "severity": "unverified"
+    },
+    {
+      "code": "ASSESSMENT_MISSING",
+      "message": "{\"local\":{\"requirement\":\"REQ-007\",\"scenario\":3}}",
+      "path": "/Users/elviszoz/.codex/worktrees/6f00/versat-ai-harness/specs/changes/automated-test-execution/tasks.md",
+      "severity": "unverified"
+    },
+    {
+      "code": "ASSESSMENT_MISSING",
+      "message": "{\"local\":{\"requirement\":\"REQ-003\",\"scenario\":1}}",
+      "path": "/Users/elviszoz/.codex/worktrees/6f00/versat-ai-harness/specs/changes/automated-test-execution/tasks.md",
+      "severity": "unverified"
+    },
+    {
+      "code": "ASSESSMENT_MISSING",
+      "message": "{\"regression\":{\"impact\":1,\"scenario\":2}}",
+      "path": "/Users/elviszoz/.codex/worktrees/6f00/versat-ai-harness/specs/changes/automated-test-execution/tasks.md",
+      "severity": "unverified"
+    },
+    {
+      "code": "ASSESSMENT_MISSING",
+      "message": "{\"local\":{\"requirement\":\"REQ-008\",\"scenario\":2}}",
+      "path": "/Users/elviszoz/.codex/worktrees/6f00/versat-ai-harness/specs/changes/automated-test-execution/tasks.md",
+      "severity": "unverified"
+    },
+    {
+      "code": "ASSESSMENT_MISSING",
+      "message": "{\"local\":{\"requirement\":\"REQ-001\",\"scenario\":2}}",
+      "path": "/Users/elviszoz/.codex/worktrees/6f00/versat-ai-harness/specs/changes/automated-test-execution/tasks.md",
+      "severity": "unverified"
+    },
+    {
+      "code": "ASSESSMENT_MISSING",
+      "message": "{\"local\":{\"requirement\":\"REQ-003\",\"scenario\":2}}",
+      "path": "/Users/elviszoz/.codex/worktrees/6f00/versat-ai-harness/specs/changes/automated-test-execution/tasks.md",
+      "severity": "unverified"
+    },
+    {
+      "code": "ASSESSMENT_MISSING",
+      "message": "{\"local\":{\"requirement\":\"REQ-008\",\"scenario\":1}}",
+      "path": "/Users/elviszoz/.codex/worktrees/6f00/versat-ai-harness/specs/changes/automated-test-execution/tasks.md",
+      "severity": "unverified"
+    },
+    {
+      "code": "ASSESSMENT_MISSING",
+      "message": "{\"regression\":{\"impact\":3,\"scenario\":1}}",
+      "path": "/Users/elviszoz/.codex/worktrees/6f00/versat-ai-harness/specs/changes/automated-test-execution/tasks.md",
+      "severity": "unverified"
+    },
+    {
+      "code": "ASSESSMENT_MISSING",
+      "message": "{\"regression\":{\"impact\":1,\"scenario\":1}}",
+      "path": "/Users/elviszoz/.codex/worktrees/6f00/versat-ai-harness/specs/changes/automated-test-execution/tasks.md",
+      "severity": "unverified"
+    },
+    {
+      "code": "ASSESSMENT_MISSING",
+      "message": "{\"regression\":{\"impact\":3,\"scenario\":3}}",
+      "path": "/Users/elviszoz/.codex/worktrees/6f00/versat-ai-harness/specs/changes/automated-test-execution/tasks.md",
+      "severity": "unverified"
+    },
+    {
+      "code": "ASSESSMENT_MISSING",
+      "message": "{\"regression\":{\"impact\":4,\"scenario\":2}}",
+      "path": "/Users/elviszoz/.codex/worktrees/6f00/versat-ai-harness/specs/changes/automated-test-execution/tasks.md",
+      "severity": "unverified"
+    },
+    {
+      "code": "ASSESSMENT_MISSING",
+      "message": "{\"local\":{\"requirement\":\"REQ-006\",\"scenario\":1}}",
+      "path": "/Users/elviszoz/.codex/worktrees/6f00/versat-ai-harness/specs/changes/automated-test-execution/tasks.md",
+      "severity": "unverified"
+    },
+    {
+      "code": "ASSESSMENT_MISSING",
+      "message": "{\"regression\":{\"impact\":2,\"scenario\":3}}",
+      "path": "/Users/elviszoz/.codex/worktrees/6f00/versat-ai-harness/specs/changes/automated-test-execution/tasks.md",
+      "severity": "unverified"
+    },
+    {
+      "code": "ASSESSMENT_MISSING",
+      "message": "{\"local\":{\"requirement\":\"REQ-008\",\"scenario\":3}}",
+      "path": "/Users/elviszoz/.codex/worktrees/6f00/versat-ai-harness/specs/changes/automated-test-execution/tasks.md",
+      "severity": "unverified"
+    },
+    {
+      "code": "ASSESSMENT_MISSING",
+      "message": "{\"local\":{\"requirement\":\"REQ-005\",\"scenario\":1}}",
+      "path": "/Users/elviszoz/.codex/worktrees/6f00/versat-ai-harness/specs/changes/automated-test-execution/tasks.md",
+      "severity": "unverified"
+    },
+    {
+      "code": "ASSESSMENT_MISSING",
+      "message": "{\"local\":{\"requirement\":\"REQ-002\",\"scenario\":3}}",
+      "path": "/Users/elviszoz/.codex/worktrees/6f00/versat-ai-harness/specs/changes/automated-test-execution/tasks.md",
+      "severity": "unverified"
+    },
+    {
+      "code": "ASSESSMENT_MISSING",
+      "message": "{\"local\":{\"requirement\":\"REQ-006\",\"scenario\":2}}",
+      "path": "/Users/elviszoz/.codex/worktrees/6f00/versat-ai-harness/specs/changes/automated-test-execution/tasks.md",
+      "severity": "unverified"
+    },
+    {
+      "code": "ASSESSMENT_MISSING",
+      "message": "{\"local\":{\"requirement\":\"REQ-002\",\"scenario\":1}}",
+      "path": "/Users/elviszoz/.codex/worktrees/6f00/versat-ai-harness/specs/changes/automated-test-execution/tasks.md",
+      "severity": "unverified"
+    },
+    {
+      "code": "ASSESSMENT_MISSING",
+      "message": "{\"local\":{\"requirement\":\"REQ-005\",\"scenario\":2}}",
+      "path": "/Users/elviszoz/.codex/worktrees/6f00/versat-ai-harness/specs/changes/automated-test-execution/tasks.md",
+      "severity": "unverified"
+    },
+    {
+      "code": "ASSESSMENT_MISSING",
+      "message": "{\"regression\":{\"impact\":2,\"scenario\":4}}",
+      "path": "/Users/elviszoz/.codex/worktrees/6f00/versat-ai-harness/specs/changes/automated-test-execution/tasks.md",
+      "severity": "unverified"
+    },
+    {
+      "code": "ASSESSMENT_MISSING",
+      "message": "{\"regression\":{\"impact\":6,\"scenario\":0}}",
+      "path": "/Users/elviszoz/.codex/worktrees/6f00/versat-ai-harness/specs/changes/automated-test-execution/tasks.md",
+      "severity": "unverified"
+    },
+    {
+      "code": "ASSESSMENT_MISSING",
+      "message": "{\"local\":{\"requirement\":\"REQ-001\",\"scenario\":1}}",
+      "path": "/Users/elviszoz/.codex/worktrees/6f00/versat-ai-harness/specs/changes/automated-test-execution/tasks.md",
+      "severity": "unverified"
+    },
+    {
+      "code": "ASSESSMENT_MISSING",
+      "message": "{\"local\":{\"requirement\":\"REQ-005\",\"scenario\":3}}",
+      "path": "/Users/elviszoz/.codex/worktrees/6f00/versat-ai-harness/specs/changes/automated-test-execution/tasks.md",
+      "severity": "unverified"
+    },
+    {
+      "code": "ASSESSMENT_MISSING",
+      "message": "{\"local\":{\"requirement\":\"REQ-006\",\"scenario\":3}}",
+      "path": "/Users/elviszoz/.codex/worktrees/6f00/versat-ai-harness/specs/changes/automated-test-execution/tasks.md",
+      "severity": "unverified"
+    },
+    {
+      "code": "ASSESSMENT_MISSING",
+      "message": "{\"regression\":{\"impact\":3,\"scenario\":4}}",
+      "path": "/Users/elviszoz/.codex/worktrees/6f00/versat-ai-harness/specs/changes/automated-test-execution/tasks.md",
+      "severity": "unverified"
+    },
+    {
+      "code": "ASSESSMENT_MISSING",
+      "message": "{\"local\":{\"requirement\":\"REQ-004\",\"scenario\":2}}",
+      "path": "/Users/elviszoz/.codex/worktrees/6f00/versat-ai-harness/specs/changes/automated-test-execution/tasks.md",
+      "severity": "unverified"
+    },
+    {
+      "code": "ASSESSMENT_MISSING",
+      "message": "{\"local\":{\"requirement\":\"REQ-007\",\"scenario\":2}}",
+      "path": "/Users/elviszoz/.codex/worktrees/6f00/versat-ai-harness/specs/changes/automated-test-execution/tasks.md",
+      "severity": "unverified"
+    },
+    {
+      "code": "ASSESSMENT_MISSING",
+      "message": "{\"regression\":{\"impact\":7,\"scenario\":0}}",
+      "path": "/Users/elviszoz/.codex/worktrees/6f00/versat-ai-harness/specs/changes/automated-test-execution/tasks.md",
+      "severity": "unverified"
+    },
+    {
+      "code": "ASSESSMENT_MISSING",
+      "message": "{\"regression\":{\"impact\":3,\"scenario\":2}}",
+      "path": "/Users/elviszoz/.codex/worktrees/6f00/versat-ai-harness/specs/changes/automated-test-execution/tasks.md",
+      "severity": "unverified"
+    },
+    {
+      "code": "ASSESSMENT_MISSING",
+      "message": "{\"local\":{\"requirement\":\"REQ-003\",\"scenario\":3}}",
+      "path": "/Users/elviszoz/.codex/worktrees/6f00/versat-ai-harness/specs/changes/automated-test-execution/tasks.md",
+      "severity": "unverified"
+    },
+    {
+      "code": "ASSESSMENT_MISSING",
+      "message": "{\"regression\":{\"impact\":2,\"scenario\":1}}",
+      "path": "/Users/elviszoz/.codex/worktrees/6f00/versat-ai-harness/specs/changes/automated-test-execution/tasks.md",
+      "severity": "unverified"
+    },
+    {
+      "code": "ASSESSMENT_MISSING",
+      "message": "{\"regression\":{\"impact\":4,\"scenario\":4}}",
+      "path": "/Users/elviszoz/.codex/worktrees/6f00/versat-ai-harness/specs/changes/automated-test-execution/tasks.md",
+      "severity": "unverified"
+    },
+    {
+      "code": "ASSESSMENT_MISSING",
+      "message": "{\"local\":{\"requirement\":\"REQ-001\",\"scenario\":3}}",
+      "path": "/Users/elviszoz/.codex/worktrees/6f00/versat-ai-harness/specs/changes/automated-test-execution/tasks.md",
+      "severity": "unverified"
+    }
+  ],
+  "warnings": [],
+  "metrics": {
+    "automated-test-execution": {
+      "local_scenarios": 27,
+      "regression_obligations": 23,
+      "assessed": 0,
+      "results": 6,
+      "open_findings": 0,
+      "stale_results": 0,
+      "requirements": {
+        "REQ-001": "unverified",
+        "REQ-002": "unverified",
+        "REQ-003": "unverified",
+        "REQ-004": "unverified",
+        "REQ-005": "unverified",
+        "REQ-006": "unverified",
+        "REQ-007": "unverified",
+        "REQ-008": "unverified"
+      }
+    }
+  },
+  "live_archives": [],
+  "archive_required": [],
+  "scope": "Declared contract checks only; archive inventory is historical unless selected for live delivery. No proof of semantic adequacy, execution authenticity, human identity, remote CI, merge or deployment."
+}

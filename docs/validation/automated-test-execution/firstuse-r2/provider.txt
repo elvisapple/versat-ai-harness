@@ -1,0 +1,1 @@
+{"result": "pass", "version": "0.3.0", "commit": "0a2c85af7d013b02a1b6f4d761c1707297cf7b0c", "standards": ["core/agent-artifacts.md", "core/documentation.md", "core/git.md", "core/language.md", "core/observability.md", "core/security.md", "core/testing.md", "domains/finance.md", "profiles/software.md", "technologies/python.md"]}

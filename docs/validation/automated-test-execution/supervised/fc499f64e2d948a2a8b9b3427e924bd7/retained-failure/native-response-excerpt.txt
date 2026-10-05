@@ -1,0 +1,1 @@
+Native final: full required suite 4 executed, 3 passed, 1 failed; duplicate prevention returned True. FIND-001 open. Source/tests unchanged; delivery blocked, task pending. Original reports retained in project/docs/evidence/payment-validation.

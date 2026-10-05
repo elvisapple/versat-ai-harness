@@ -1,0 +1,5 @@
+{
+  "schema_version": 1,
+  "id": "new-intent",
+  "prompt": "Plan a new change to test payment validation, including empty keys, nonpositive amounts and duplicate prevention. Use the existing product specification. Present only the first planning stage for approval."
+}

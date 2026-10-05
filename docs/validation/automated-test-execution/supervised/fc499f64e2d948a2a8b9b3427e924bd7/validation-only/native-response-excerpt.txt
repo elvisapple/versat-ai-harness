@@ -1,0 +1,1 @@
+Native final: four tests executed, one failure, no skips/errors; duplicate guard disabled. Delivery fail, all four obligations assessed, FIND-001 open, zero stale results. Code/tests/criteria/plan unchanged; task pending and closure active. Implementation authorization required before repair.

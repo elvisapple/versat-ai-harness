@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "attempt": "58975c47fafe4590a1045bf3a67d9abb",
+  "scope": "full",
+  "readiness": true,
+  "result": "pass",
+  "started_at": "2026-10-03T14:00:05.173265+00:00",
+  "selected_suites": [
+    "unit"
+  ],
+  "required_suites": [
+    "unit"
+  ],
+  "suites": [
+    {
+      "argv": [
+        "/private/tmp/versat-sdd-acceptance-venv/bin/python",
+        "/Users/elviszoz/.codex/worktrees/6f00/versat-ai-harness/scripts/testing/unittest_report.py",
+        "--report",
+        "/Users/elviszoz/.codex/worktrees/6f00/versat-ai-harness/docs/validation/automated-test-execution/supervised/fc499f64e2d948a2a8b9b3427e924bd7/adequate-reuse/project/docs/evidence/58975c47fafe4590a1045bf3a67d9abb/unit/counts.json",
+        "--",
+        "discover",
+        "-s",
+        "tests"
+      ],
+      "cwd": "/Users/elviszoz/.codex/worktrees/6f00/versat-ai-harness/docs/validation/automated-test-execution/supervised/fc499f64e2d948a2a8b9b3427e924bd7/adequate-reuse/project",
+      "result": "pass",
+      "truncated": {
+        "stdout": false,
+        "stderr": false
+      },
+      "resolved_executable": "/Library/Frameworks/Python.framework/Versions/3.11/bin/python3.11",
+      "exit_code": 0,
+      "reason": "exit",
+      "duration_seconds": 0.048,
+      "process_reason": "exit",
+      "suite": "unit",
+      "started_at": "2026-10-03T14:00:05.190724+00:00",
+      "ended_at": "2026-10-03T14:00:05.238842+00:00",
+      "counts": {
+        "schema_version": 1,
+        "collected": 4,
+        "executed": 4,
+        "skipped": 0,
+        "failed": 0,
+        "errors": 0
+      }
+    }
+  ],
+  "input_digest_before": "34936bc58a455f40813452b1401e5a22b0da2d8ac3e5b209616b76267e2625d9",
+  "configuration_digest": "dbf5e64255a024b3d0af309802133a0e7a32d0db255767593cfeb5e034e960fb",
+  "provider_digest": "063227b518d41a2f53f763372c9f377f65c15ef9c2b87fff9d2ee4088663a6b0",
+  "provider_version": "0.3.0",
+  "environment": "macOS-26.5.2-arm64-arm-64bit; Python 3.11.4",
+  "execution": "local",
+  "input_digest_after": "34936bc58a455f40813452b1401e5a22b0da2d8ac3e5b209616b76267e2625d9",
+  "ended_at": "2026-10-03T14:00:05.325028+00:00",
+  "fresh": true
+}

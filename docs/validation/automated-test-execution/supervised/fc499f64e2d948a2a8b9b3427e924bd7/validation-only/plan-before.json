@@ -1,0 +1,52 @@
+{
+  "proposal": {
+    "digest": "f7bf7b19f5b28c7cf238c22001cd53702b54d4d7fe09c536adb03375b56dd741",
+    "review": {
+      "revision": 1,
+      "state": "approved",
+      "blockers": [],
+      "upstream": {},
+      "approval": {
+        "source": "Synthetic evaluator fixture, not a real developer approval",
+        "quote": "Synthetic approval for this disposable scenario only",
+        "revision": 1,
+        "digest": "f7bf7b19f5b28c7cf238c22001cd53702b54d4d7fe09c536adb03375b56dd741"
+      }
+    }
+  },
+  "design": {
+    "digest": "6fe31e98cb168331b3ade5b0f486c63953a28dd7c114968bef84ade54d8dd9b2",
+    "review": {
+      "revision": 1,
+      "state": "approved",
+      "blockers": [],
+      "upstream": {
+        "proposal": "f7bf7b19f5b28c7cf238c22001cd53702b54d4d7fe09c536adb03375b56dd741"
+      },
+      "approval": {
+        "source": "Synthetic evaluator fixture, not a real developer approval",
+        "quote": "Synthetic approval for this disposable scenario only",
+        "revision": 1,
+        "digest": "6fe31e98cb168331b3ade5b0f486c63953a28dd7c114968bef84ade54d8dd9b2"
+      }
+    }
+  },
+  "tasks": {
+    "digest": "3af858f25557503d9f0bd34c3d628fe10d5eb3b1574414b292ebae9c945b4294",
+    "review": {
+      "revision": 1,
+      "state": "approved",
+      "blockers": [],
+      "upstream": {
+        "proposal": "f7bf7b19f5b28c7cf238c22001cd53702b54d4d7fe09c536adb03375b56dd741",
+        "design": "6fe31e98cb168331b3ade5b0f486c63953a28dd7c114968bef84ade54d8dd9b2"
+      },
+      "approval": {
+        "source": "Synthetic evaluator fixture, not a real developer approval",
+        "quote": "Synthetic approval for this disposable scenario only",
+        "revision": 1,
+        "digest": "3af858f25557503d9f0bd34c3d628fe10d5eb3b1574414b292ebae9c945b4294"
+      }
+    }
+  }
+}

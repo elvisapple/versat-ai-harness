@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "result": "unverified",
+  "runtime": {
+    "schema_version": 1,
+    "cli": "codex",
+    "model": "gpt-6-astra",
+    "reasoning": "high",
+    "isolated_environment": true,
+    "case_timeout_seconds": 600,
+    "suite_timeout_seconds": 7200,
+    "repetitions": 2,
+    "max_invocations": 12,
+    "usage_limit_tokens": 200000
+  },
+  "runtime_digest": "81d17102a2798a1e254db6bc4838cba63143c5a0f111bdac6803b40ad47ff819",
+  "source_digest": "4634641bfe6ea71e155f7f65f4d31654289cbfec7aa9e398a5f4f16f20c41b95",
+  "attempts": [],
+  "usage_tokens": 0,
+  "reason": "A dedicated isolated evaluation environment must be provisioned and explicitly attested"
+}

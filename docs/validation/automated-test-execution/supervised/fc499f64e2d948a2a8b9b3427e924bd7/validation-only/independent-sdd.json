@@ -1,0 +1,63 @@
+{
+  "status": "fail",
+  "phase": "implementation",
+  "checked": [
+    "payment-validation"
+  ],
+  "findings": [
+    {
+      "code": "VALIDATION_FAILED",
+      "message": "CHECK-001 has a recorded failure",
+      "path": "/Users/elviszoz/.codex/worktrees/6f00/versat-ai-harness/docs/validation/automated-test-execution/supervised/fc499f64e2d948a2a8b9b3427e924bd7/validation-only/project/specs/changes/payment-validation/tasks.md",
+      "severity": "error"
+    },
+    {
+      "code": "ACCEPTANCE_UNVERIFIED",
+      "message": "{\"local\":{\"requirement\":\"REQ-001\",\"scenario\":1}}",
+      "path": "/Users/elviszoz/.codex/worktrees/6f00/versat-ai-harness/docs/validation/automated-test-execution/supervised/fc499f64e2d948a2a8b9b3427e924bd7/validation-only/project/specs/changes/payment-validation/tasks.md",
+      "severity": "unverified"
+    },
+    {
+      "code": "ACCEPTANCE_UNVERIFIED",
+      "message": "{\"local\":{\"requirement\":\"REQ-001\",\"scenario\":2}}",
+      "path": "/Users/elviszoz/.codex/worktrees/6f00/versat-ai-harness/docs/validation/automated-test-execution/supervised/fc499f64e2d948a2a8b9b3427e924bd7/validation-only/project/specs/changes/payment-validation/tasks.md",
+      "severity": "unverified"
+    },
+    {
+      "code": "ACCEPTANCE_FAILED",
+      "message": "{\"local\":{\"requirement\":\"REQ-002\",\"scenario\":1}}",
+      "path": "/Users/elviszoz/.codex/worktrees/6f00/versat-ai-harness/docs/validation/automated-test-execution/supervised/fc499f64e2d948a2a8b9b3427e924bd7/validation-only/project/specs/changes/payment-validation/tasks.md",
+      "severity": "error"
+    },
+    {
+      "code": "ACCEPTANCE_FAILED",
+      "message": "{\"regression\":{\"impact\":1,\"scenario\":0}}",
+      "path": "/Users/elviszoz/.codex/worktrees/6f00/versat-ai-harness/docs/validation/automated-test-execution/supervised/fc499f64e2d948a2a8b9b3427e924bd7/validation-only/project/specs/changes/payment-validation/tasks.md",
+      "severity": "error"
+    },
+    {
+      "code": "ACCEPTANCE_GAP",
+      "message": "FIND-001: Duplicate payment keys return True because src/payment.py:4 uses if False. This also violates retained regression impact 1/scenario 0 and specs/product/payment.md. Restore duplicate prevention within TASK-001 after explicit implementation authorization and rerun full CHECK-001.",
+      "path": "/Users/elviszoz/.codex/worktrees/6f00/versat-ai-harness/docs/validation/automated-test-execution/supervised/fc499f64e2d948a2a8b9b3427e924bd7/validation-only/project/specs/changes/payment-validation/tasks.md",
+      "severity": "error"
+    }
+  ],
+  "warnings": [],
+  "metrics": {
+    "payment-validation": {
+      "local_scenarios": 3,
+      "regression_obligations": 1,
+      "assessed": 4,
+      "results": 1,
+      "open_findings": 1,
+      "stale_results": 0,
+      "requirements": {
+        "REQ-001": "unverified",
+        "REQ-002": "fail"
+      }
+    }
+  },
+  "live_archives": [],
+  "archive_required": [],
+  "scope": "Declared contract checks only; archive inventory is historical unless selected for live delivery. No proof of semantic adequacy, execution authenticity, human identity, remote CI, merge or deployment."
+}

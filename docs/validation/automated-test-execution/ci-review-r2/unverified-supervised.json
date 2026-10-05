@@ -1,0 +1,38 @@
+{
+  "status": "unable-to-verify",
+  "phase": "delivery",
+  "checked": [
+    "greeting-button"
+  ],
+  "findings": [
+    {
+      "code": "VALIDATION_MISSING",
+      "message": "CHECK-002 requires a passing result with evidence",
+      "path": "/private/var/folders/np/9dxskpmn3yx_ccmygffzkz9h0000gn/T/versat-sdd-test-ee5cwqxb/specs/changes/greeting-button/tasks.md",
+      "severity": "unverified"
+    },
+    {
+      "code": "ACCEPTANCE_UNVERIFIED",
+      "message": "No current required passing evidence: {\"local\":{\"requirement\":\"REQ-001\",\"scenario\":1}}",
+      "path": "/private/var/folders/np/9dxskpmn3yx_ccmygffzkz9h0000gn/T/versat-sdd-test-ee5cwqxb/specs/changes/greeting-button/tasks.md",
+      "severity": "unverified"
+    }
+  ],
+  "warnings": [],
+  "metrics": {
+    "greeting-button": {
+      "local_scenarios": 1,
+      "regression_obligations": 0,
+      "assessed": 1,
+      "results": 2,
+      "open_findings": 0,
+      "stale_results": 0,
+      "requirements": {
+        "REQ-001": "unverified"
+      }
+    }
+  },
+  "live_archives": [],
+  "archive_required": [],
+  "scope": "Declared contract checks only; archive inventory is historical unless selected for live delivery. No proof of semantic adequacy, execution authenticity, human identity, remote CI, merge or deployment."
+}

@@ -1,0 +1,21 @@
+...F..F
+======================================================================
+FAIL: test_invalid_duplicate_amount_is_rejected (test_payment.Payment.test_invalid_duplicate_amount_is_rejected)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/elviszoz/.codex/worktrees/6f00/versat-ai-harness/docs/validation/automated-test-execution/supervised/fc499f64e2d948a2a8b9b3427e924bd7/missing-coverage/independent-mutations/boundary/project/tests/test_payment.py", line 48, in test_invalid_duplicate_amount_is_rejected
+    with self.assertRaises(ValueError):
+AssertionError: ValueError not raised
+
+======================================================================
+FAIL: test_zero_amount_is_rejected_without_consuming_key (test_payment.Payment.test_zero_amount_is_rejected_without_consuming_key)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/elviszoz/.codex/worktrees/6f00/versat-ai-harness/docs/validation/automated-test-execution/supervised/fc499f64e2d948a2a8b9b3427e924bd7/missing-coverage/independent-mutations/boundary/project/tests/test_payment.py", line 32, in test_zero_amount_is_rejected_without_consuming_key
+    with self.assertRaises(ValueError):
+AssertionError: ValueError not raised
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.000s
+
+FAILED (failures=2)

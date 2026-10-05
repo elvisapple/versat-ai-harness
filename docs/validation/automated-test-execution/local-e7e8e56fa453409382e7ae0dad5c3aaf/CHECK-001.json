@@ -1,0 +1,28 @@
+{
+  "command": [
+    "/private/tmp/versat-sdd-acceptance-venv/bin/python",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "tests/execution",
+    "-p",
+    "test_runner.py"
+  ],
+  "started": "2026-10-03T13:55:13.388018+00:00",
+  "ended": "2026-10-03T13:55:16.581225+00:00",
+  "exit_code": 0,
+  "result": {
+    "check": "CHECK-001",
+    "result": "pass",
+    "evidence": "docs/validation/automated-test-execution/local-e7e8e56fa453409382e7ae0dad5c3aaf/CHECK-001.txt",
+    "revision": "input:dccff2044a4fd4062f6f8cca6edb348f746abe86f7d80ec81e5eed8cbded5955; attempt:local-e7e8e56fa453409382e7ae0dad5c3aaf",
+    "input_digest_before": "dccff2044a4fd4062f6f8cca6edb348f746abe86f7d80ec81e5eed8cbded5955",
+    "input_digest_after": "dccff2044a4fd4062f6f8cca6edb348f746abe86f7d80ec81e5eed8cbded5955",
+    "context": {
+      "execution": "local",
+      "environment": "macOS-26.5.2-arm64-arm-64bit; Python 3.11.4",
+      "observed": true
+    }
+  }
+}

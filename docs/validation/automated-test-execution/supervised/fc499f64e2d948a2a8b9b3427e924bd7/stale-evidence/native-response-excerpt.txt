@@ -1,0 +1,1 @@
+Native final: current full suite four tests pass, zero errors/failures/skips; old evidence retained; no code/tests changed. Selected delivery passes with zero stale results. Dossier active; remote CI/merge/deployment not verified.

@@ -1,0 +1,17 @@
+{
+  "label": "plan-digest",
+  "argv": [
+    "/private/tmp/versat-sdd-acceptance-venv/bin/python",
+    "/Users/elviszoz/.codex/worktrees/6f00/versat-ai-harness/validators/sdd/validate.py",
+    "--root",
+    ".",
+    "--change",
+    "payment-validation",
+    "--digest",
+    "tasks"
+  ],
+  "cwd": "/Users/elviszoz/.codex/worktrees/6f00/versat-ai-harness/docs/validation/automated-test-execution/supervised/fc499f64e2d948a2a8b9b3427e924bd7/validation-only/project",
+  "exit_code": 0,
+  "stdout": "3af858f25557503d9f0bd34c3d628fe10d5eb3b1574414b292ebae9c945b4294\n",
+  "stderr": ""
+}

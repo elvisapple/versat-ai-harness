@@ -83,3 +83,7 @@ Workspace installation policy is configured by the administrator and is not inhe
 ## Evolution
 
 Every material change starts with an SDD proposal and, when it changes a structural decision, an ADR. Read `AGENTS.md`, `sdd/process.md` and `docs/decisions/README.md` before modifying the Harness.
+
+## Explicit test execution (unreleased source)
+
+The package validation entry point now includes the existing validator regressions and deterministic execution/helper tests. For consumer adoption and full regression execution, see [Project validation](docs/guides/project-validation.md). For critical Skill behavior and independently verified local evidence, see [Supervised Skill evaluations](docs/guides/skill-evaluations.md). These capabilities require an exact provider containing this source change; they do not update installed consumers or establish a published release.

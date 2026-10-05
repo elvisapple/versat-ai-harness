@@ -1,0 +1,23 @@
+{
+  "process": {
+    "argv": [
+      "/private/tmp/versat-sdd-acceptance-venv/bin/python",
+      "/Users/elviszoz/.codex/worktrees/6f00/versat-ai-harness/scripts/testing/run.py",
+      "run",
+      "--root",
+      "/private/var/folders/np/9dxskpmn3yx_ccmygffzkz9h0000gn/T/versat-replay-debug-xnk90q_1/project"
+    ],
+    "cwd": "/private/var/folders/np/9dxskpmn3yx_ccmygffzkz9h0000gn/T/versat-replay-debug-xnk90q_1/project",
+    "result": "fail",
+    "truncated": {
+      "stdout": false,
+      "stderr": false
+    },
+    "resolved_executable": "/Library/Frameworks/Python.framework/Versions/3.11/bin/python3.11",
+    "exit_code": 1,
+    "reason": "exit",
+    "duration_seconds": 0.091
+  },
+  "report": null,
+  "observation_error": "list index out of range"
+}

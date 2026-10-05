@@ -1,0 +1,2 @@
+{"result": "pass", "version": "0.3.0", "commit": "0a2c85af7d013b02a1b6f4d761c1707297cf7b0c", "standards": ["core/agent-artifacts.md", "core/documentation.md", "core/git.md", "core/language.md", "core/observability.md", "core/security.md", "core/testing.md", "domains/finance.md", "profiles/software.md", "technologies/python.md"]}
+{"result": "fail", "scope": "full", "report": "/private/var/folders/np/9dxskpmn3yx_ccmygffzkz9h0000gn/T/versat-firstuse-r2-0g72_rw9/consumer/.versat/validation-runs/73df0aeced5a45f58a83c90f8fabc9b1/result.json"}

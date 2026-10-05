@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "attempt": "bb1c8db57d444c70bef666d09b57ba6e",
+  "scope": "full",
+  "readiness": true,
+  "result": "pass",
+  "started_at": "2026-10-03T13:56:24.913341+00:00",
+  "selected_suites": [
+    "unit"
+  ],
+  "required_suites": [
+    "unit"
+  ],
+  "suites": [
+    {
+      "argv": [
+        "/private/tmp/versat-sdd-acceptance-venv/bin/python",
+        "/private/var/folders/np/9dxskpmn3yx_ccmygffzkz9h0000gn/T/versat-firstuse-r2-0g72_rw9/provider/scripts/testing/unittest_report.py",
+        "--report",
+        "/private/var/folders/np/9dxskpmn3yx_ccmygffzkz9h0000gn/T/versat-firstuse-r2-0g72_rw9/consumer/.versat/validation-runs/bb1c8db57d444c70bef666d09b57ba6e/unit/counts.json",
+        "--",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_payment.py"
+      ],
+      "cwd": "/private/var/folders/np/9dxskpmn3yx_ccmygffzkz9h0000gn/T/versat-firstuse-r2-0g72_rw9/consumer",
+      "result": "pass",
+      "truncated": {
+        "stdout": false,
+        "stderr": false
+      },
+      "resolved_executable": "/Library/Frameworks/Python.framework/Versions/3.11/bin/python3.11",
+      "exit_code": 0,
+      "reason": "exit",
+      "duration_seconds": 0.047,
+      "process_reason": "exit",
+      "suite": "unit",
+      "started_at": "2026-10-03T13:56:24.926201+00:00",
+      "ended_at": "2026-10-03T13:56:24.973164+00:00",
+      "counts": {
+        "schema_version": 1,
+        "collected": 4,
+        "executed": 4,
+        "skipped": 0,
+        "failed": 0,
+        "errors": 0
+      }
+    }
+  ],
+  "input_digest_before": "4f7ddbf2090abb7ae9d6934ee876c9f89f1fd38645234155962e6c9b1ef08a3b",
+  "configuration_digest": "5291b95da98b881217722845d265c44b3d1996ef29a38f85962f5e6815e60397",
+  "provider_digest": "063227b518d41a2f53f763372c9f377f65c15ef9c2b87fff9d2ee4088663a6b0",
+  "provider_version": "0.3.0",
+  "environment": "macOS-26.5.2-arm64-arm-64bit; Python 3.11.4",
+  "execution": "local",
+  "input_digest_after": "4f7ddbf2090abb7ae9d6934ee876c9f89f1fd38645234155962e6c9b1ef08a3b",
+  "ended_at": "2026-10-03T13:56:24.978743+00:00",
+  "fresh": true
+}

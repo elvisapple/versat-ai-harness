@@ -1,0 +1,1 @@
+{"result": "fail", "scope": "full", "report": "/Users/elviszoz/.codex/worktrees/6f00/versat-ai-harness/docs/validation/automated-test-execution/supervised/fc499f64e2d948a2a8b9b3427e924bd7/missing-coverage/independent-mutations/duplicate/project/.versat/validation-runs/83bdb8a2f7604cefb97edc17517a9d36/result.json"}

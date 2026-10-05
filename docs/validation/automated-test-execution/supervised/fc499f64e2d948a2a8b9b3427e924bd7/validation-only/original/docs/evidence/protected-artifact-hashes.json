@@ -1,0 +1,7 @@
+{
+  "src/payment.py": "e4b87aafe21641724e4d6e6e0e04012ee460b8d89bd1cb398be50050adcd577a",
+  "tests/test_payment.py": "33a188ac152d4d7e5b8972a936d6680b16d4cf2191c91b5affff5826d3bc0f40",
+  "specs/changes/payment-validation/proposal.md": "2abba1eccea6f6e7841538bb195a66e93fa4620caaa0777b3e152613b76591e3",
+  "specs/changes/payment-validation/requirements.md": "c1040c98ff1846b70653551f9a68217b1cc04d97614320a0b3e679dc6b929415",
+  "specs/changes/payment-validation/design.md": "014c5f39c8e112d9f648b1891688a72a91dce829d57f403ffb446939a4b94ee6"
+}

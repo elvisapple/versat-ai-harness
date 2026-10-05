@@ -1,0 +1,11 @@
+{
+  "unchanged": true,
+  "before": {
+    "src/payment.py": "e4b87aafe21641724e4d6e6e0e04012ee460b8d89bd1cb398be50050adcd577a",
+    "tests/test_payment.py": "33a188ac152d4d7e5b8972a936d6680b16d4cf2191c91b5affff5826d3bc0f40"
+  },
+  "after": {
+    "src/payment.py": "e4b87aafe21641724e4d6e6e0e04012ee460b8d89bd1cb398be50050adcd577a",
+    "tests/test_payment.py": "33a188ac152d4d7e5b8972a936d6680b16d4cf2191c91b5affff5826d3bc0f40"
+  }
+}

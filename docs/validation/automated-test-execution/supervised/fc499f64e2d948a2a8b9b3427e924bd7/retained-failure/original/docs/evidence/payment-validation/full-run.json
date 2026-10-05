@@ -1,0 +1,19 @@
+{
+  "argv": [
+    "/private/tmp/versat-sdd-acceptance-venv/bin/python",
+    "/Users/elviszoz/.codex/worktrees/6f00/versat-ai-harness/scripts/testing/run.py",
+    "run",
+    "--root",
+    "/Users/elviszoz/.codex/worktrees/6f00/versat-ai-harness/docs/validation/automated-test-execution/supervised/fc499f64e2d948a2a8b9b3427e924bd7/retained-failure/project",
+    "--change",
+    "payment-validation",
+    "--check",
+    "CHECK-001",
+    "--output",
+    "docs/evidence/payment-validation/runs"
+  ],
+  "cwd": "/Users/elviszoz/.codex/worktrees/6f00/versat-ai-harness/docs/validation/automated-test-execution/supervised/fc499f64e2d948a2a8b9b3427e924bd7/retained-failure/project",
+  "exit_code": 1,
+  "stdout": "{\"result\": \"fail\", \"scope\": \"full\", \"report\": \"/Users/elviszoz/.codex/worktrees/6f00/versat-ai-harness/docs/validation/automated-test-execution/supervised/fc499f64e2d948a2a8b9b3427e924bd7/retained-failure/project/docs/evidence/payment-validation/runs/5080276d1371404da9d4bf488424eb3e/result.json\"}\n",
+  "stderr": ""
+}

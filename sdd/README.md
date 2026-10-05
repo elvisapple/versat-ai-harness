@@ -239,3 +239,7 @@ python validators/sdd/validate.py --root /path/to/project --change home-greeting
 This fails if the dossier is still in `changes`, if `closure` is not `prepared`, or if live delivery requirements fail. Plain delivery remains the pre-move eligibility check. The agent performs archive preparation as part of an authorized submission request; it does not need another functional change to do so. An implementation/validation-only handoff must state archival pending until prepared.
 
 CI uses `./scripts/validate/run.sh --baseline <event-base> --require-archive` for non-draft PRs and pushes to main, including a draft-to-ready event. It selects changed active and archived dossiers and rejects an empty selection. Planning/incomplete reviews use a draft PR. Existing unchanged history is not required to migrate. Required platform checks enforce merge eligibility; CI alone cannot stop all clients from opening a PR.
+
+## Project tests and real skill evaluations
+
+Implementation uses the resolved Testing Standard to add missing coverage and reuse adequate tests. [Project validation](../docs/guides/project-validation.md) documents explicit suite configuration, full/targeted execution and reviewed SDD evidence fragments. [Supervised Skill evaluations](../docs/guides/skill-evaluations.md) documents native scenario agents, independent verification and local evidence. Full automated CI, supervised observations, archival, final required CI and merge remain separately assessed facts.

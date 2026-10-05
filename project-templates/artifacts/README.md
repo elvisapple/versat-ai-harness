@@ -11,3 +11,7 @@ Use these templates explicitly after project composition. This directory is not 
 Replace illustrative names, instructions and placeholders before use. Verify capabilities against the target executor and installed integrations. Do not copy a Plugin Skill already provided by an exact installed release merely to populate the local directory.
 
 The [supplier-payment example](../examples/supplier-payment/workflow.md) demonstrates workflow composition. Its named dependencies are illustrative and are not supplied as working integrations by this package.
+
+## Project validation
+
+The optional [validation assets](validation/README.md) supply a Python suite configuration, thin wrapper and CI example. Compose them only after resolving the exact provider and reviewing conflicts; they do not install tests or claim that an empty scaffold is validated.

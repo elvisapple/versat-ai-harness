@@ -1,0 +1,70 @@
+{
+  "plan_digest": "e092fe22186c0bdbd9ffc49bad5d8e9cc2771ab4d1332d888cd5e328134c84eb",
+  "results": [
+    {
+      "check": "CHECK-001",
+      "result": "pass",
+      "evidence": "docs/validation/automated-test-execution/local-e9f35bafe37c4e50996de2d3f303406e/CHECK-001.txt",
+      "revision": "input:bf4d1e7951da1bcc030bf23647151fcf77d4b137618440c965c5b641968f0e4a; attempt:local-e9f35bafe37c4e50996de2d3f303406e",
+      "input_digest_before": "bf4d1e7951da1bcc030bf23647151fcf77d4b137618440c965c5b641968f0e4a",
+      "input_digest_after": "bf4d1e7951da1bcc030bf23647151fcf77d4b137618440c965c5b641968f0e4a",
+      "context": {
+        "execution": "local",
+        "environment": "macOS-26.5.2-arm64-arm-64bit; Python 3.11.4",
+        "observed": true
+      }
+    },
+    {
+      "check": "CHECK-002",
+      "result": "pass",
+      "evidence": "docs/validation/automated-test-execution/local-e9f35bafe37c4e50996de2d3f303406e/CHECK-002.txt",
+      "revision": "input:bf4d1e7951da1bcc030bf23647151fcf77d4b137618440c965c5b641968f0e4a; attempt:local-e9f35bafe37c4e50996de2d3f303406e",
+      "input_digest_before": "bf4d1e7951da1bcc030bf23647151fcf77d4b137618440c965c5b641968f0e4a",
+      "input_digest_after": "bf4d1e7951da1bcc030bf23647151fcf77d4b137618440c965c5b641968f0e4a",
+      "context": {
+        "execution": "local",
+        "environment": "macOS-26.5.2-arm64-arm-64bit; Python 3.11.4",
+        "observed": true
+      }
+    },
+    {
+      "check": "CHECK-003",
+      "result": "pass",
+      "evidence": "docs/validation/automated-test-execution/local-e9f35bafe37c4e50996de2d3f303406e/CHECK-003.txt",
+      "revision": "input:bf4d1e7951da1bcc030bf23647151fcf77d4b137618440c965c5b641968f0e4a; attempt:local-e9f35bafe37c4e50996de2d3f303406e",
+      "input_digest_before": "bf4d1e7951da1bcc030bf23647151fcf77d4b137618440c965c5b641968f0e4a",
+      "input_digest_after": "bf4d1e7951da1bcc030bf23647151fcf77d4b137618440c965c5b641968f0e4a",
+      "context": {
+        "execution": "local",
+        "environment": "macOS-26.5.2-arm64-arm-64bit; Python 3.11.4",
+        "observed": true
+      }
+    },
+    {
+      "check": "CHECK-005",
+      "result": "pass",
+      "evidence": "docs/validation/automated-test-execution/local-e9f35bafe37c4e50996de2d3f303406e/CHECK-005.txt",
+      "revision": "input:bf4d1e7951da1bcc030bf23647151fcf77d4b137618440c965c5b641968f0e4a; attempt:local-e9f35bafe37c4e50996de2d3f303406e",
+      "input_digest_before": "bf4d1e7951da1bcc030bf23647151fcf77d4b137618440c965c5b641968f0e4a",
+      "input_digest_after": "bf4d1e7951da1bcc030bf23647151fcf77d4b137618440c965c5b641968f0e4a",
+      "context": {
+        "execution": "local",
+        "environment": "macOS-26.5.2-arm64-arm-64bit; Python 3.11.4",
+        "observed": true
+      }
+    },
+    {
+      "check": "CHECK-007",
+      "result": "pass",
+      "evidence": "docs/validation/automated-test-execution/local-e9f35bafe37c4e50996de2d3f303406e/CHECK-007.txt",
+      "revision": "input:bf4d1e7951da1bcc030bf23647151fcf77d4b137618440c965c5b641968f0e4a; attempt:local-e9f35bafe37c4e50996de2d3f303406e",
+      "input_digest_before": "bf4d1e7951da1bcc030bf23647151fcf77d4b137618440c965c5b641968f0e4a",
+      "input_digest_after": "bf4d1e7951da1bcc030bf23647151fcf77d4b137618440c965c5b641968f0e4a",
+      "context": {
+        "execution": "local",
+        "environment": "macOS-26.5.2-arm64-arm-64bit; Python 3.11.4",
+        "observed": true
+      }
+    }
+  ]
+}

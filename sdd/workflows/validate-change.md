@@ -20,3 +20,7 @@ A request to submit a completed implementation for PR review includes its routin
 ## PR handoff check
 
 Do not equate an ordinary delivery pass with prepared archival: that phase is also used to authorize the move. For submission of completed work, follow Archive change and require `--change <id> --phase delivery --require-archive` after moving the dossier and checking its links. Report both archive path and closure. Planning/incomplete reviews remain draft PRs; a draft becoming ready reruns the CI archive guard. Requests limited to validation still report archival pending instead of implying PR readiness.
+
+## Execution adapters
+
+For projects adopting explicit execution, follow [project validation](../../docs/guides/project-validation.md). Use a full configured run with an approved automated check/context to obtain a result fragment; inspect it before copying current evidence into Tasks. Manual checks remain actual reviewed procedures. Keep failed attempts and report prerequisite failures as unverified. Assess assertions and retained behavior even when all configured suites pass. Follow [supervised Skill evaluations](../../docs/guides/skill-evaluations.md) for approved agent checks; deterministic helper tests never substitute for observed supervised behavior.

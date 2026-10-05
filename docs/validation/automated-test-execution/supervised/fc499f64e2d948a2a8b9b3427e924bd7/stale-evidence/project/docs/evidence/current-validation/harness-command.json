@@ -1,0 +1,16 @@
+{
+  "argv": [
+    "./scripts/validate/run.sh"
+  ],
+  "cwd": "/Users/elviszoz/.codex/worktrees/6f00/versat-ai-harness",
+  "environment": {
+    "PYTHONDONTWRITEBYTECODE": "1",
+    "PYTHON": "/private/tmp/versat-sdd-acceptance-venv/bin/python"
+  },
+  "exit_code": 0,
+  "output": "docs/evidence/current-validation/harness-validation.txt",
+  "observed_tests": {
+    "validators": 131,
+    "execution": 48
+  }
+}

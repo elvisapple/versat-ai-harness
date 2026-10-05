@@ -1,0 +1,16 @@
+{
+  "plan_digest": "3af858f25557503d9f0bd34c3d628fe10d5eb3b1574414b292ebae9c945b4294",
+  "result": {
+    "check": "CHECK-001",
+    "result": "pass",
+    "evidence": "docs/evidence/58975c47fafe4590a1045bf3a67d9abb/result.json",
+    "revision": "input:34936bc58a455f40813452b1401e5a22b0da2d8ac3e5b209616b76267e2625d9; attempt:58975c47fafe4590a1045bf3a67d9abb; provider:063227b518d41a2f53f763372c9f377f65c15ef9c2b87fff9d2ee4088663a6b0",
+    "input_digest_before": "34936bc58a455f40813452b1401e5a22b0da2d8ac3e5b209616b76267e2625d9",
+    "input_digest_after": "34936bc58a455f40813452b1401e5a22b0da2d8ac3e5b209616b76267e2625d9",
+    "context": {
+      "execution": "local",
+      "environment": "macOS-26.5.2-arm64-arm-64bit; Python 3.11.4",
+      "observed": true
+    }
+  }
+}

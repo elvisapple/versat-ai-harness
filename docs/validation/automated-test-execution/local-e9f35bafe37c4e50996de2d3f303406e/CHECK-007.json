@@ -1,0 +1,21 @@
+{
+  "command": [
+    "./scripts/validate/run.sh"
+  ],
+  "started": "2026-10-02T18:41:03.175042+00:00",
+  "ended": "2026-10-02T18:41:49.046655+00:00",
+  "exit_code": 0,
+  "result": {
+    "check": "CHECK-007",
+    "result": "pass",
+    "evidence": "docs/validation/automated-test-execution/local-e9f35bafe37c4e50996de2d3f303406e/CHECK-007.txt",
+    "revision": "input:bf4d1e7951da1bcc030bf23647151fcf77d4b137618440c965c5b641968f0e4a; attempt:local-e9f35bafe37c4e50996de2d3f303406e",
+    "input_digest_before": "bf4d1e7951da1bcc030bf23647151fcf77d4b137618440c965c5b641968f0e4a",
+    "input_digest_after": "bf4d1e7951da1bcc030bf23647151fcf77d4b137618440c965c5b641968f0e4a",
+    "context": {
+      "execution": "local",
+      "environment": "macOS-26.5.2-arm64-arm-64bit; Python 3.11.4",
+      "observed": true
+    }
+  }
+}

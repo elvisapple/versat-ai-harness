@@ -1,0 +1,47 @@
+{
+  "index_resolution_matches_lock": true,
+  "version": "0.3.0",
+  "standards": [
+    {
+      "path": "core/agent-artifacts.md",
+      "digest_matches": true
+    },
+    {
+      "path": "core/documentation.md",
+      "digest_matches": true
+    },
+    {
+      "path": "core/git.md",
+      "digest_matches": true
+    },
+    {
+      "path": "core/language.md",
+      "digest_matches": true
+    },
+    {
+      "path": "core/observability.md",
+      "digest_matches": true
+    },
+    {
+      "path": "core/security.md",
+      "digest_matches": true
+    },
+    {
+      "path": "core/testing.md",
+      "digest_matches": true
+    },
+    {
+      "path": "domains/finance.md",
+      "digest_matches": true
+    },
+    {
+      "path": "profiles/software.md",
+      "digest_matches": true
+    },
+    {
+      "path": "technologies/python.md",
+      "digest_matches": true
+    }
+  ],
+  "provider_mode": "supplied development snapshot; not a released consumer provenance claim"
+}

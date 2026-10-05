@@ -1,0 +1,5 @@
+{
+  "schema_version": 1,
+  "id": "missing-coverage",
+  "prompt": "Implement and validate the existing approved payment-validation plan. The fixture approvals are synthetic and valid only in this disposable test fixture. Add any missing meaningful boundary/error tests, retain duplicate prevention, run the full configured suite and record actual SDD evidence."
+}

@@ -73,7 +73,7 @@ The repository contains a private workspace marketplace at `.agents/plugins/mark
 After release `v0.3.0` is tagged, a ChatGPT Business workspace administrator can distribute it as follows:
 
 1. Open **Admin > Plugins** and select **Add > Import marketplace**.
-2. Use `https://github.com/versat-private/versat-ai-harness` as the source repository and leave the marketplace path empty.
+2. Use `https://github.com/versat-labs/versat-ai-harness` as the source repository and leave the marketplace path empty.
 3. Authorize a GitHub account with read access to the private repository.
 4. Review the import result and set the Plugin installation policy to **Installed** for the intended workspace roles.
 5. Ask members to start a new conversation after installation.

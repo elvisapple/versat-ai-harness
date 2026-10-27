@@ -15,7 +15,7 @@ jobs:
           python-version: '3.11'
       - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
         with:
-          repository: versat-private/versat-ai-harness
+          repository: versat-labs/versat-ai-harness
           ref: REPLACE_WITH_REVIEWED_FULL_COMMIT_SHA
           path: .harness-provider
           persist-credentials: false

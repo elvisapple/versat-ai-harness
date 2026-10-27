@@ -178,7 +178,7 @@ def validate() -> list[str]:
                     require_equal(source.get("source"), "url", "marketplace source type", errors)
                     require_equal(
                         source.get("url"),
-                        "https://github.com/versat-private/versat-ai-harness.git",
+                        "https://github.com/versat-labs/versat-ai-harness.git",
                         "marketplace repository URL",
                         errors,
                     )

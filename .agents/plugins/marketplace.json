@@ -8,7 +8,7 @@
       "name": "versat-ai-harness",
       "source": {
         "source": "url",
-        "url": "https://github.com/versat-private/versat-ai-harness.git",
+        "url": "https://github.com/versat-labs/versat-ai-harness.git",
         "ref": "v0.3.0"
       },
       "policy": {

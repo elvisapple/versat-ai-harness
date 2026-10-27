@@ -14,7 +14,7 @@ Describe el resultado observable de este cambio.
 - Historia Shortcut (ID, tipo y enlace), si corresponde:
 - Si no hay una historia asociada, indícalo sin inventar un ID:
 
-Revisa la convención de ramas y commits en el [Git Standard](https://github.com/versat-private/versat-ai-harness/blob/main/standards/core/git.md). El título y la descripción de este PR deben seguir el idioma definido para PRs internos.
+Revisa la convención de ramas y commits en el [Git Standard](https://github.com/versat-labs/versat-ai-harness/blob/main/standards/core/git.md). El título y la descripción de este PR deben seguir el idioma definido para PRs internos.
 
 ## Riesgo y operación
 

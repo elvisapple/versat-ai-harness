@@ -25,7 +25,7 @@ tasks:
   - id: TASK-006
     description: Review the prepared content, exercise first use and resolve documentation defects.
     requirements: [REQ-001, REQ-002, REQ-003, REQ-004, REQ-005, REQ-006, REQ-007]
-    status: in-progress
+    status: blocked
   - id: TASK-007
     description: Bind organization links to an authorized published Harness content revision and verify targets.
     requirements: [REQ-001, REQ-003, REQ-005, REQ-006, REQ-007]
@@ -217,7 +217,7 @@ The developer replied "sim" to the combined request to approve Tasks R1 and auth
 
 ## Progress
 
-Tasks 001–005 are complete: all 33 Harness user pages and the organization candidate are written. TASK-006 is in progress. The same-session synthetic quickstart exercise produced only Proposal/Requirements, passed planning validation and preserved the home page. Local links and whitespace passed for both candidates; the full package suite passed (131 validator and 48 execution tests). Browser preview remains unavailable until the requested setting change takes effect. TASK-007 still requires scoped source publication authorization; no remote changes have been made. Organization preparation uses a local connector export, not a full remote clone; the supplied patch must be reapplied against a fresh remote baseline before actual publication.
+Tasks 001–005 are complete: all 33 Harness user pages and the organization candidate are written. TASK-006 is blocked on rendered review: the browser tool still reports local browser use disabled after the user indicated they would enable it. The same-session synthetic quickstart exercise produced only Proposal/Requirements, passed planning validation and preserved the home page. Local links and whitespace passed for both candidates; the full package suite passed (131 validator and 48 execution tests). Browser preview remains unavailable until the requested setting change takes effect. Harness content commit 27735687a37e896cd6b0c95cd9d2d848ee166d90 is recorded locally; the 21 organization destination URLs now resolve against that exact local Git tree. TASK-007 still requires scoped source publication authorization and observed remote access; no remote changes have been made. Organization preparation uses a local connector export, not a full remote clone; the supplied patch must be reapplied against a fresh remote baseline before actual publication.
 
 ## Validation evidence
 

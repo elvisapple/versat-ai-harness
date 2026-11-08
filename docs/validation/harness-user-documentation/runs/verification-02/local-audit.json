@@ -1,0 +1,10 @@
+{
+  "pages": 39,
+  "harness_pages": 33,
+  "organization_pages": 6,
+  "pinned_local_destinations": 21,
+  "errors": [],
+  "snapshots_match_working_copy": true,
+  "visual_review": "unverified: CUA reports Mac locked and local browser disabled even after user confirmation and runtime reset",
+  "published_ref": "unverified: GitHub connector returned 404 No commit found"
+}

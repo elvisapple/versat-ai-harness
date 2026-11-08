@@ -2,42 +2,97 @@
 sdd_version: 3
 change: harness-user-documentation
 tasks:
-  - id: TASK-001
-    description: Refresh source baselines and prepare the two repository working copies.
-    requirements: [REQ-001, REQ-003, REQ-004, REQ-006, REQ-007]
-    status: completed
-  - id: TASK-002
-    description: Write the canonical product overview, workspace setup and first-use guide.
-    requirements: [REQ-002, REQ-003, REQ-004, REQ-006]
-    status: completed
-  - id: TASK-003
-    description: Write the remaining seven canonical workflow guides using existing references.
-    requirements: [REQ-002, REQ-003, REQ-006, REQ-007]
-    status: completed
-  - id: TASK-004
-    description: Complete the Harness README, navigation and all Portuguese and Spanish siblings.
-    requirements: [REQ-001, REQ-002, REQ-003, REQ-004, REQ-005, REQ-006]
-    status: completed
-  - id: TASK-005
-    description: Prepare the organization contribution consolidation and translated entry pages.
-    requirements: [REQ-001, REQ-003, REQ-005, REQ-006, REQ-007]
-    status: completed
-  - id: TASK-006
-    description: Review the prepared content, exercise first use and resolve documentation defects.
-    requirements: [REQ-001, REQ-002, REQ-003, REQ-004, REQ-005, REQ-006, REQ-007]
-    status: blocked
-  - id: TASK-007
-    description: Bind organization links to an authorized published Harness content revision and verify targets.
-    requirements: [REQ-001, REQ-003, REQ-005, REQ-006, REQ-007]
-    status: pending
-  - id: TASK-008
-    description: Execute all final checks against stable inputs and record scenario and regression assessments.
-    requirements: [REQ-001, REQ-002, REQ-003, REQ-004, REQ-005, REQ-006, REQ-007]
-    status: pending
-  - id: TASK-009
-    description: Prepare the coordinated delivery handoff and verify documentary closure prerequisites.
-    requirements: [REQ-001, REQ-005, REQ-006, REQ-007]
-    status: pending
+- id: TASK-001
+  description: Refresh source baselines and prepare the two repository working copies.
+  requirements:
+  - REQ-001
+  - REQ-003
+  - REQ-004
+  - REQ-006
+  - REQ-007
+  status: completed
+- id: TASK-002
+  description: Write the canonical product overview, workspace setup and first-use
+    guide.
+  requirements:
+  - REQ-002
+  - REQ-003
+  - REQ-004
+  - REQ-006
+  status: completed
+- id: TASK-003
+  description: Write the remaining seven canonical workflow guides using existing
+    references.
+  requirements:
+  - REQ-002
+  - REQ-003
+  - REQ-006
+  - REQ-007
+  status: completed
+- id: TASK-004
+  description: Complete the Harness README, navigation and all Portuguese and Spanish
+    siblings.
+  requirements:
+  - REQ-001
+  - REQ-002
+  - REQ-003
+  - REQ-004
+  - REQ-005
+  - REQ-006
+  status: completed
+- id: TASK-005
+  description: Prepare the organization contribution consolidation and translated
+    entry pages.
+  requirements:
+  - REQ-001
+  - REQ-003
+  - REQ-005
+  - REQ-006
+  - REQ-007
+  status: completed
+- id: TASK-006
+  description: Review the prepared content, exercise first use and resolve documentation
+    defects.
+  requirements:
+  - REQ-001
+  - REQ-002
+  - REQ-003
+  - REQ-004
+  - REQ-005
+  - REQ-006
+  - REQ-007
+  status: blocked
+- id: TASK-007
+  description: Bind organization links to an authorized published Harness content
+    revision and verify targets.
+  requirements:
+  - REQ-001
+  - REQ-003
+  - REQ-005
+  - REQ-006
+  - REQ-007
+  status: pending
+- id: TASK-008
+  description: Execute all final checks against stable inputs and record scenario
+    and regression assessments.
+  requirements:
+  - REQ-001
+  - REQ-002
+  - REQ-003
+  - REQ-004
+  - REQ-005
+  - REQ-006
+  - REQ-007
+  status: pending
+- id: TASK-009
+  description: Prepare the coordinated delivery handoff and verify documentary closure
+    prerequisites.
+  requirements:
+  - REQ-001
+  - REQ-005
+  - REQ-006
+  - REQ-007
+  status: pending
 review:
   revision: 1
   state: approved
@@ -46,15 +101,628 @@ review:
     proposal: 1ca3de32bdea8b921030786aea349b2dc5a50a3a265aa75ee25a39e1b3308f24
     design: a0f7141be1f9302d1824c2c181457d1c243bf7c2f5722db505bcdd755af4652a
   approval:
-    source: Developer reply in this chat after Tasks R1 approval and implementation authorization were requested together.
+    source: Developer reply in this chat after Tasks R1 approval and implementation
+      authorization were requested together.
     quote: sim
     revision: 1
     digest: 3cfecbf06713997419537a7de6ab0e33e308641b0c37ad3ee68b078cf6e20a33
 validation:
-  plan_digest: null
-  results: []
-  assessments: []
-  findings: []
+  plan_digest: 3cfecbf06713997419537a7de6ab0e33e308641b0c37ad3ee68b078cf6e20a33
+  results:
+  - check: CHECK-001
+    result: pass
+    evidence: docs/validation/harness-user-documentation/runs/verification-02/content-review.md
+    revision: ec1324c with unchanged source; verification-02 current working-tree
+      review
+    input_digest_before: 0d7fefb7cf9a66f598503235df386dc19dbae2c6f2ab78fe6b7e578ab4b46037
+    input_digest_after: 0d7fefb7cf9a66f598503235df386dc19dbae2c6f2ab78fe6b7e578ab4b46037
+    context:
+      execution: local
+      environment: Python 3.11.4, Darwin; Codex local shell available; CUA reports
+        Mac locked/browser disabled; GitHub target ref returns 404
+      observed: true
+  - check: CHECK-002
+    result: unverified
+    evidence: docs/validation/harness-user-documentation/runs/verification-02/navigation-translations.md
+    revision: ec1324c with unchanged source; verification-02 current working-tree
+      review
+    input_digest_before: 0d7fefb7cf9a66f598503235df386dc19dbae2c6f2ab78fe6b7e578ab4b46037
+    input_digest_after: 0d7fefb7cf9a66f598503235df386dc19dbae2c6f2ab78fe6b7e578ab4b46037
+    context:
+      execution: local
+      environment: Python 3.11.4, Darwin; Codex local shell available; CUA reports
+        Mac locked/browser disabled; GitHub target ref returns 404
+      observed: true
+  - check: CHECK-003
+    result: unverified
+    evidence: docs/validation/harness-user-documentation/runs/verification-02/usage-walkthrough.md
+    revision: ec1324c with unchanged source; verification-02 current working-tree
+      review
+    input_digest_before: 0d7fefb7cf9a66f598503235df386dc19dbae2c6f2ab78fe6b7e578ab4b46037
+    input_digest_after: 0d7fefb7cf9a66f598503235df386dc19dbae2c6f2ab78fe6b7e578ab4b46037
+    context:
+      execution: local
+      environment: Python 3.11.4, Darwin; Codex local shell available; CUA reports
+        Mac locked/browser disabled; GitHub target ref returns 404
+      observed: true
+  - check: CHECK-004
+    result: unverified
+    evidence: docs/validation/harness-user-documentation/runs/verification-02/organization-review.md
+    revision: ec1324c with unchanged source; verification-02 current working-tree
+      review
+    input_digest_before: 0d7fefb7cf9a66f598503235df386dc19dbae2c6f2ab78fe6b7e578ab4b46037
+    input_digest_after: 0d7fefb7cf9a66f598503235df386dc19dbae2c6f2ab78fe6b7e578ab4b46037
+    context:
+      execution: local
+      environment: Python 3.11.4, Darwin; Codex local shell available; CUA reports
+        Mac locked/browser disabled; GitHub target ref returns 404
+      observed: true
+  - check: CHECK-005
+    result: pass
+    evidence: docs/validation/harness-user-documentation/runs/verification-02/package-validation.txt
+    revision: ec1324c with unchanged source; verification-02 current working-tree
+      review
+    input_digest_before: 0d7fefb7cf9a66f598503235df386dc19dbae2c6f2ab78fe6b7e578ab4b46037
+    input_digest_after: 0d7fefb7cf9a66f598503235df386dc19dbae2c6f2ab78fe6b7e578ab4b46037
+    context:
+      execution: local
+      environment: Python 3.11.4, Darwin; Codex local shell available; CUA reports
+        Mac locked/browser disabled; GitHub target ref returns 404
+      observed: true
+  assessments:
+  - obligation:
+      local:
+        requirement: REQ-001
+        scenario: 1
+    result: pass
+    checks:
+    - CHECK-001
+    evidence: docs/validation/harness-user-documentation/runs/verification-02/content-review.md
+    explanation: Reviewed content matches the stated scenario.
+  - obligation:
+      local:
+        requirement: REQ-001
+        scenario: 2
+    result: unverified
+    checks:
+    - CHECK-002
+    evidence: docs/validation/harness-user-documentation/runs/verification-02/navigation-translations.md
+    explanation: Local content/navigation evidence exists, but one or more required
+      rendered, usage or published-target observations remain unavailable; see mapped
+      check reports.
+  - obligation:
+      local:
+        requirement: REQ-001
+        scenario: 3
+    result: unverified
+    checks:
+    - CHECK-001
+    - CHECK-004
+    evidence: docs/validation/harness-user-documentation/runs/verification-02/content-review.md
+    explanation: Local content/navigation evidence exists, but one or more required
+      rendered, usage or published-target observations remain unavailable; see mapped
+      check reports.
+  - obligation:
+      local:
+        requirement: REQ-002
+        scenario: 1
+    result: unverified
+    checks:
+    - CHECK-001
+    - CHECK-003
+    evidence: docs/validation/harness-user-documentation/runs/verification-02/content-review.md
+    explanation: Local content/navigation evidence exists, but one or more required
+      rendered, usage or published-target observations remain unavailable; see mapped
+      check reports.
+  - obligation:
+      local:
+        requirement: REQ-002
+        scenario: 2
+    result: unverified
+    checks:
+    - CHECK-003
+    evidence: docs/validation/harness-user-documentation/runs/verification-02/usage-walkthrough.md
+    explanation: Local content/navigation evidence exists, but one or more required
+      rendered, usage or published-target observations remain unavailable; see mapped
+      check reports.
+  - obligation:
+      local:
+        requirement: REQ-002
+        scenario: 3
+    result: unverified
+    checks:
+    - CHECK-001
+    - CHECK-002
+    evidence: docs/validation/harness-user-documentation/runs/verification-02/content-review.md
+    explanation: Local content/navigation evidence exists, but one or more required
+      rendered, usage or published-target observations remain unavailable; see mapped
+      check reports.
+  - obligation:
+      local:
+        requirement: REQ-003
+        scenario: 1
+    result: unverified
+    checks:
+    - CHECK-001
+    - CHECK-003
+    evidence: docs/validation/harness-user-documentation/runs/verification-02/content-review.md
+    explanation: Local content/navigation evidence exists, but one or more required
+      rendered, usage or published-target observations remain unavailable; see mapped
+      check reports.
+  - obligation:
+      local:
+        requirement: REQ-003
+        scenario: 2
+    result: unverified
+    checks:
+    - CHECK-001
+    - CHECK-002
+    evidence: docs/validation/harness-user-documentation/runs/verification-02/content-review.md
+    explanation: Local content/navigation evidence exists, but one or more required
+      rendered, usage or published-target observations remain unavailable; see mapped
+      check reports.
+  - obligation:
+      local:
+        requirement: REQ-003
+        scenario: 3
+    result: unverified
+    checks:
+    - CHECK-001
+    - CHECK-004
+    evidence: docs/validation/harness-user-documentation/runs/verification-02/content-review.md
+    explanation: Local content/navigation evidence exists, but one or more required
+      rendered, usage or published-target observations remain unavailable; see mapped
+      check reports.
+  - obligation:
+      local:
+        requirement: REQ-003
+        scenario: 4
+    result: unverified
+    checks:
+    - CHECK-001
+    - CHECK-003
+    evidence: docs/validation/harness-user-documentation/runs/verification-02/content-review.md
+    explanation: Local content/navigation evidence exists, but one or more required
+      rendered, usage or published-target observations remain unavailable; see mapped
+      check reports.
+  - obligation:
+      local:
+        requirement: REQ-004
+        scenario: 1
+    result: pass
+    checks:
+    - CHECK-001
+    evidence: docs/validation/harness-user-documentation/runs/verification-02/content-review.md
+    explanation: Reviewed content matches the stated scenario.
+  - obligation:
+      local:
+        requirement: REQ-004
+        scenario: 2
+    result: pass
+    checks:
+    - CHECK-001
+    evidence: docs/validation/harness-user-documentation/runs/verification-02/content-review.md
+    explanation: Reviewed content matches the stated scenario.
+  - obligation:
+      local:
+        requirement: REQ-004
+        scenario: 3
+    result: pass
+    checks:
+    - CHECK-001
+    evidence: docs/validation/harness-user-documentation/runs/verification-02/content-review.md
+    explanation: Reviewed content matches the stated scenario.
+  - obligation:
+      local:
+        requirement: REQ-005
+        scenario: 1
+    result: unverified
+    checks:
+    - CHECK-002
+    evidence: docs/validation/harness-user-documentation/runs/verification-02/navigation-translations.md
+    explanation: Local content/navigation evidence exists, but one or more required
+      rendered, usage or published-target observations remain unavailable; see mapped
+      check reports.
+  - obligation:
+      local:
+        requirement: REQ-005
+        scenario: 2
+    result: unverified
+    checks:
+    - CHECK-002
+    evidence: docs/validation/harness-user-documentation/runs/verification-02/navigation-translations.md
+    explanation: Local content/navigation evidence exists, but one or more required
+      rendered, usage or published-target observations remain unavailable; see mapped
+      check reports.
+  - obligation:
+      local:
+        requirement: REQ-005
+        scenario: 3
+    result: unverified
+    checks:
+    - CHECK-002
+    evidence: docs/validation/harness-user-documentation/runs/verification-02/navigation-translations.md
+    explanation: Local content/navigation evidence exists, but one or more required
+      rendered, usage or published-target observations remain unavailable; see mapped
+      check reports.
+  - obligation:
+      local:
+        requirement: REQ-005
+        scenario: 4
+    result: unverified
+    checks:
+    - CHECK-002
+    - CHECK-004
+    evidence: docs/validation/harness-user-documentation/runs/verification-02/navigation-translations.md
+    explanation: Local content/navigation evidence exists, but one or more required
+      rendered, usage or published-target observations remain unavailable; see mapped
+      check reports.
+  - obligation:
+      local:
+        requirement: REQ-006
+        scenario: 1
+    result: pass
+    checks:
+    - CHECK-001
+    evidence: docs/validation/harness-user-documentation/runs/verification-02/content-review.md
+    explanation: Reviewed content matches the stated scenario.
+  - obligation:
+      local:
+        requirement: REQ-006
+        scenario: 2
+    result: unverified
+    checks:
+    - CHECK-003
+    evidence: docs/validation/harness-user-documentation/runs/verification-02/usage-walkthrough.md
+    explanation: Local content/navigation evidence exists, but one or more required
+      rendered, usage or published-target observations remain unavailable; see mapped
+      check reports.
+  - obligation:
+      local:
+        requirement: REQ-006
+        scenario: 3
+    result: unverified
+    checks:
+    - CHECK-001
+    - CHECK-002
+    - CHECK-005
+    evidence: docs/validation/harness-user-documentation/runs/verification-02/content-review.md
+    explanation: Local content/navigation evidence exists, but one or more required
+      rendered, usage or published-target observations remain unavailable; see mapped
+      check reports.
+  - obligation:
+      local:
+        requirement: REQ-006
+        scenario: 4
+    result: unverified
+    checks:
+    - CHECK-002
+    evidence: docs/validation/harness-user-documentation/runs/verification-02/navigation-translations.md
+    explanation: Local content/navigation evidence exists, but one or more required
+      rendered, usage or published-target observations remain unavailable; see mapped
+      check reports.
+  - obligation:
+      local:
+        requirement: REQ-007
+        scenario: 1
+    result: unverified
+    checks:
+    - CHECK-001
+    - CHECK-004
+    evidence: docs/validation/harness-user-documentation/runs/verification-02/content-review.md
+    explanation: Local content/navigation evidence exists, but one or more required
+      rendered, usage or published-target observations remain unavailable; see mapped
+      check reports.
+  - obligation:
+      local:
+        requirement: REQ-007
+        scenario: 2
+    result: unverified
+    checks:
+    - CHECK-004
+    evidence: docs/validation/harness-user-documentation/runs/verification-02/organization-review.md
+    explanation: Local content/navigation evidence exists, but one or more required
+      rendered, usage or published-target observations remain unavailable; see mapped
+      check reports.
+  - obligation:
+      local:
+        requirement: REQ-007
+        scenario: 3
+    result: unverified
+    checks:
+    - CHECK-004
+    evidence: docs/validation/harness-user-documentation/runs/verification-02/organization-review.md
+    explanation: Local content/navigation evidence exists, but one or more required
+      rendered, usage or published-target observations remain unavailable; see mapped
+      check reports.
+  - obligation:
+      local:
+        requirement: REQ-007
+        scenario: 4
+    result: unverified
+    checks:
+    - CHECK-001
+    - CHECK-003
+    - CHECK-004
+    evidence: docs/validation/harness-user-documentation/runs/verification-02/content-review.md
+    explanation: Local content/navigation evidence exists, but one or more required
+      rendered, usage or published-target observations remain unavailable; see mapped
+      check reports.
+  - obligation:
+      local:
+        requirement: REQ-007
+        scenario: 5
+    result: unverified
+    checks:
+    - CHECK-002
+    - CHECK-004
+    - CHECK-005
+    evidence: docs/validation/harness-user-documentation/runs/verification-02/navigation-translations.md
+    explanation: Local content/navigation evidence exists, but one or more required
+      rendered, usage or published-target observations remain unavailable; see mapped
+      check reports.
+  - obligation:
+      local:
+        requirement: REQ-007
+        scenario: 6
+    result: unverified
+    checks:
+    - CHECK-004
+    evidence: docs/validation/harness-user-documentation/runs/verification-02/organization-review.md
+    explanation: Local content/navigation evidence exists, but one or more required
+      rendered, usage or published-target observations remain unavailable; see mapped
+      check reports.
+  - obligation:
+      regression:
+        impact: 1
+        scenario: 1
+    result: unverified
+    checks:
+    - CHECK-001
+    - CHECK-003
+    evidence: docs/validation/harness-user-documentation/runs/verification-02/content-review.md
+    explanation: Retain useful first-use coverage, reuse and avoidance of empty or
+      fictional guidance. Retained obligation remains unverified because a required
+      mapped observation is missing.
+  - obligation:
+      regression:
+        impact: 1
+        scenario: 2
+    result: unverified
+    checks:
+    - CHECK-001
+    - CHECK-003
+    evidence: docs/validation/harness-user-documentation/runs/verification-02/content-review.md
+    explanation: Retain useful first-use coverage, reuse and avoidance of empty or
+      fictional guidance. Retained obligation remains unverified because a required
+      mapped observation is missing.
+  - obligation:
+      regression:
+        impact: 1
+        scenario: 3
+    result: unverified
+    checks:
+    - CHECK-001
+    - CHECK-003
+    evidence: docs/validation/harness-user-documentation/runs/verification-02/content-review.md
+    explanation: Retain useful first-use coverage, reuse and avoidance of empty or
+      fictional guidance. Retained obligation remains unverified because a required
+      mapped observation is missing.
+  - obligation:
+      regression:
+        impact: 2
+        scenario: 1
+    result: unverified
+    checks:
+    - CHECK-002
+    evidence: docs/validation/harness-user-documentation/runs/verification-02/navigation-translations.md
+    explanation: Retain actual README destinations, proportional guide structure,
+      shared setup links and archive-independent navigation. Retained obligation remains
+      unverified because a required mapped observation is missing.
+  - obligation:
+      regression:
+        impact: 2
+        scenario: 2
+    result: unverified
+    checks:
+    - CHECK-002
+    evidence: docs/validation/harness-user-documentation/runs/verification-02/navigation-translations.md
+    explanation: Retain actual README destinations, proportional guide structure,
+      shared setup links and archive-independent navigation. Retained obligation remains
+      unverified because a required mapped observation is missing.
+  - obligation:
+      regression:
+        impact: 2
+        scenario: 3
+    result: unverified
+    checks:
+    - CHECK-002
+    evidence: docs/validation/harness-user-documentation/runs/verification-02/navigation-translations.md
+    explanation: Retain actual README destinations, proportional guide structure,
+      shared setup links and archive-independent navigation. Retained obligation remains
+      unverified because a required mapped observation is missing.
+  - obligation:
+      regression:
+        impact: 2
+        scenario: 4
+    result: unverified
+    checks:
+    - CHECK-002
+    evidence: docs/validation/harness-user-documentation/runs/verification-02/navigation-translations.md
+    explanation: Retain actual README destinations, proportional guide structure,
+      shared setup links and archive-independent navigation. Retained obligation remains
+      unverified because a required mapped observation is missing.
+  - obligation:
+      regression:
+        impact: 3
+        scenario: 1
+    result: unverified
+    checks:
+    - CHECK-001
+    - CHECK-003
+    evidence: docs/validation/harness-user-documentation/runs/verification-02/content-review.md
+    explanation: Retain the single SDD entry point and phase-specific expected outcomes.
+      Retained obligation remains unverified because a required mapped observation
+      is missing.
+  - obligation:
+      regression:
+        impact: 3
+        scenario: 2
+    result: unverified
+    checks:
+    - CHECK-001
+    - CHECK-003
+    evidence: docs/validation/harness-user-documentation/runs/verification-02/content-review.md
+    explanation: Retain the single SDD entry point and phase-specific expected outcomes.
+      Retained obligation remains unverified because a required mapped observation
+      is missing.
+  - obligation:
+      regression:
+        impact: 4
+        scenario: 1
+    result: unverified
+    checks:
+    - CHECK-001
+    - CHECK-002
+    - CHECK-003
+    evidence: docs/validation/harness-user-documentation/runs/verification-02/content-review.md
+    explanation: Retain real human approval and separate execution authority in English
+      and translations. Retained obligation remains unverified because a required
+      mapped observation is missing.
+  - obligation:
+      regression:
+        impact: 4
+        scenario: 2
+    result: unverified
+    checks:
+    - CHECK-001
+    - CHECK-002
+    - CHECK-003
+    evidence: docs/validation/harness-user-documentation/runs/verification-02/content-review.md
+    explanation: Retain real human approval and separate execution authority in English
+      and translations. Retained obligation remains unverified because a required
+      mapped observation is missing.
+  - obligation:
+      regression:
+        impact: 5
+        scenario: 1
+    result: unverified
+    checks:
+    - CHECK-001
+    - CHECK-004
+    evidence: docs/validation/harness-user-documentation/runs/verification-02/content-review.md
+    explanation: Retain pre-submission archive prerequisites and separate observed
+      merge from local readiness. Retained obligation remains unverified because a
+      required mapped observation is missing.
+  - obligation:
+      regression:
+        impact: 5
+        scenario: 2
+    result: unverified
+    checks:
+    - CHECK-001
+    - CHECK-004
+    evidence: docs/validation/harness-user-documentation/runs/verification-02/content-review.md
+    explanation: Retain pre-submission archive prerequisites and separate observed
+      merge from local readiness. Retained obligation remains unverified because a
+      required mapped observation is missing.
+  - obligation:
+      regression:
+        impact: 6
+        scenario: 0
+    result: unverified
+    checks:
+    - CHECK-002
+    evidence: docs/validation/harness-user-documentation/runs/verification-02/navigation-translations.md
+    explanation: Retain the current English/PT/ES translation contract. Retained obligation
+      remains unverified because a required mapped observation is missing.
+  - obligation:
+      regression:
+        impact: 7
+        scenario: 1
+    result: unverified
+    checks:
+    - CHECK-003
+    - CHECK-004
+    evidence: docs/validation/harness-user-documentation/runs/verification-02/usage-walkthrough.md
+    explanation: Retain observed command/UI verification, honest unavailable evidence
+      and adequate evidence reuse. Retained obligation remains unverified because
+      a required mapped observation is missing.
+  - obligation:
+      regression:
+        impact: 7
+        scenario: 2
+    result: unverified
+    checks:
+    - CHECK-003
+    - CHECK-004
+    evidence: docs/validation/harness-user-documentation/runs/verification-02/usage-walkthrough.md
+    explanation: Retain observed command/UI verification, honest unavailable evidence
+      and adequate evidence reuse. Retained obligation remains unverified because
+      a required mapped observation is missing.
+  - obligation:
+      regression:
+        impact: 7
+        scenario: 3
+    result: unverified
+    checks:
+    - CHECK-003
+    - CHECK-004
+    evidence: docs/validation/harness-user-documentation/runs/verification-02/usage-walkthrough.md
+    explanation: Retain observed command/UI verification, honest unavailable evidence
+      and adequate evidence reuse. Retained obligation remains unverified because
+      a required mapped observation is missing.
+  - obligation:
+      regression:
+        impact: 7
+        scenario: 4
+    result: unverified
+    checks:
+    - CHECK-003
+    - CHECK-004
+    evidence: docs/validation/harness-user-documentation/runs/verification-02/usage-walkthrough.md
+    explanation: Retain observed command/UI verification, honest unavailable evidence
+      and adequate evidence reuse. Retained obligation remains unverified because
+      a required mapped observation is missing.
+  - obligation:
+      regression:
+        impact: 8
+        scenario: 0
+    result: unverified
+    checks:
+    - CHECK-002
+    - CHECK-004
+    evidence: docs/validation/harness-user-documentation/runs/verification-02/navigation-translations.md
+    explanation: Retain organization-specific and public contribution behavior while
+      consolidating detailed instructions. Retained obligation remains unverified
+      because a required mapped observation is missing.
+  findings:
+  - id: FIND-001
+    source:
+      plan: Rendered navigation and desktop usage observations
+    category: partial
+    state: open
+    evidence: docs/validation/harness-user-documentation/runs/verification-02/navigation-translations.md
+    description: After user confirmation and runtime reset, CUA still reports Mac
+      locked and local browser use disabled; representative visual and complete usage
+      observations are unavailable.
+    tasks:
+    - TASK-006
+    checks:
+    - CHECK-002
+    - CHECK-003
+  - id: FIND-002
+    source:
+      plan: Published immutable Harness destinations and intended-reader access
+    category: missing
+    state: open
+    evidence: docs/validation/harness-user-documentation/runs/verification-02/organization-review.md
+    description: GitHub returned 404 No commit found for the candidate target ref.
+      Scoped publication and remote destination/access verification remain pending.
+    tasks:
+    - TASK-007
+    checks:
+    - CHECK-004
 closure: active
 ---
 
@@ -217,11 +885,11 @@ The developer replied "sim" to the combined request to approve Tasks R1 and auth
 
 ## Progress
 
-Tasks 001–005 are complete: all 33 Harness user pages and the organization candidate are written. TASK-006 is blocked on rendered review: the browser tool still reports local browser use disabled after the user indicated they would enable it. The same-session synthetic quickstart exercise produced only Proposal/Requirements, passed planning validation and preserved the home page. Local links and whitespace passed for both candidates; the full package suite passed (131 validator and 48 execution tests). Browser preview remains unavailable until the requested setting change takes effect. Harness content commit 27735687a37e896cd6b0c95cd9d2d848ee166d90 is recorded locally; the 21 organization destination URLs now resolve against that exact local Git tree. TASK-007 still requires scoped source publication authorization and observed remote access; no remote changes have been made. Organization preparation uses a local connector export, not a full remote clone; the supplied patch must be reapplied against a fresh remote baseline before actual publication.
+Tasks 001–005 are complete: all 33 Harness user pages and the organization candidate are written. TASK-006 is blocked on rendered review: the browser tool still reports local browser use disabled after the user indicated they would enable it. The same-session synthetic quickstart exercise produced only Proposal/Requirements, passed planning validation and preserved the home page. Local links and whitespace passed for both candidates; the full package suite passed (131 validator and 48 execution tests). The user confirmed both unlock and configuration, but the tool still returned the same errors after a runtime reset; the tool connection remains the concrete visual blocker. Harness content commit 27735687a37e896cd6b0c95cd9d2d848ee166d90 is recorded locally; the 21 organization destination URLs now resolve against that exact local Git tree. TASK-007 still requires scoped source publication authorization and observed remote access; no remote changes have been made. Organization preparation uses a local connector export, not a full remote clone; the supplied patch must be reapplied against a fresh remote baseline before actual publication.
 
 ## Validation evidence
 
-No implementation checks have run for this Tasks plan. Results, assessments and findings remain empty. Planning-validator and repository regression runs performed while drafting this document validate the plan/current repository only; they are not CHECK-001 through CHECK-005 acceptance evidence for future documentation.
+Current verification-02 records five check results and all 46 local/regression assessments, with matching before/after input snapshots. CHECK-001 and CHECK-005 pass; CHECK-002, CHECK-003 and CHECK-004 remain unverified. Two open findings retain the visual/usage and source-publication dependencies. The complete package suite passed again with 131 validator and 48 execution tests. Evidence is under docs/validation/harness-user-documentation/runs/verification-02/. Results are actual partial validation, not delivery readiness.
 
 ## Delivery
 

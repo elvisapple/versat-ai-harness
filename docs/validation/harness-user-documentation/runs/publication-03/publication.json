@@ -1,0 +1,28 @@
+{
+  "harness_pr": "https://github.com/versat-labs/versat-ai-harness/pull/33",
+  "organization_pr": "https://github.com/versat-labs/.github/pull/3",
+  "draft": true,
+  "content_commit": "27735687a37e896cd6b0c95cd9d2d848ee166d90",
+  "published_files_compared": [
+    "docs/user-docs/quickstart.pt.md",
+    "docs/user-docs/quickstart.md",
+    "docs/user-docs/quickstart.es.md",
+    "docs/user-docs/guides/github-delivery.pt.md",
+    "docs/user-docs/guides/validation-and-evaluations.md",
+    "docs/user-docs/guides/validation-and-evaluations.pt.md",
+    "docs/user-docs/guides/sdd-with-codex.md",
+    "docs/user-docs/guides/sdd-with-codex.es.md",
+    "docs/user-docs/guides/github-delivery.md",
+    "docs/user-docs/guides/workspace-setup.pt.md",
+    "docs/user-docs/guides/workspace-setup.md",
+    "docs/user-docs/guides/sdd-with-codex.pt.md",
+    "docs/user-docs/guides/workspace-setup.es.md",
+    "docs/user-docs/guides/validation-and-evaluations.es.md",
+    "docs/user-docs/guides/github-delivery.es.md",
+    "standards/core/language.md"
+  ],
+  "organization_base": "45e43d2b203cce4a0fa5bcf3974c2d7630f092b0",
+  "organization_head": "1b6a0a127c85e2c928f4437423be5aaa6f72ae30",
+  "candidate_matches_fresh_remote_checkout": true,
+  "visual_review": "unverified; user authorized draft submission despite unavailable office Mac"
+}

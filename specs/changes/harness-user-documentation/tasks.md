@@ -71,7 +71,7 @@ tasks:
   - REQ-005
   - REQ-006
   - REQ-007
-  status: pending
+  status: in-progress
 - id: TASK-008
   description: Execute all final checks against stable inputs and record scenario
     and regression assessments.
@@ -716,9 +716,11 @@ validation:
       plan: Published immutable Harness destinations and intended-reader access
     category: missing
     state: open
-    evidence: docs/validation/harness-user-documentation/runs/verification-02/organization-review.md
-    description: GitHub returned 404 No commit found for the candidate target ref.
-      Scoped publication and remote destination/access verification remain pending.
+    evidence: docs/validation/harness-user-documentation/runs/publication-03/publication.json
+    description: Source publication is now authorized and observed; all 16 unique
+      linked files were fetched at the exact commit and compared with local content.
+      Full CHECK-004 evidence, intended-reader/public-path observations and coordinated
+      delivery assessment remain pending.
     tasks:
     - TASK-007
     checks:
@@ -885,7 +887,7 @@ The developer replied "sim" to the combined request to approve Tasks R1 and auth
 
 ## Progress
 
-Tasks 001–005 are complete: all 33 Harness user pages and the organization candidate are written. TASK-006 is blocked on rendered review: the browser tool still reports local browser use disabled after the user indicated they would enable it. The same-session synthetic quickstart exercise produced only Proposal/Requirements, passed planning validation and preserved the home page. Local links and whitespace passed for both candidates; the full package suite passed (131 validator and 48 execution tests). The user confirmed both unlock and configuration, but the tool still returned the same errors after a runtime reset; the tool connection remains the concrete visual blocker. Harness content commit 27735687a37e896cd6b0c95cd9d2d848ee166d90 is recorded locally; the 21 organization destination URLs now resolve against that exact local Git tree. TASK-007 still requires scoped source publication authorization and observed remote access; no remote changes have been made. Organization preparation uses a local connector export, not a full remote clone; the supplied patch must be reapplied against a fresh remote baseline before actual publication.
+Tasks 001–005 are complete; TASK-006 remains blocked on rendered/complete usage review. The developer cannot access the office Mac and explicitly authorized commit/PR publication despite that limit. Both branches were published and draft PRs created: Harness #33 and organization #3, cross-linked to Issue #22 and each other. The organization patch applied cleanly on actual origin/main 45e43d2b203cce4a0fa5bcf3974c2d7630f092b0; its committed candidate matches the retained snapshot. All 16 unique Harness targets (21 references) were fetched from GitHub at 27735687a37e896cd6b0c95cd9d2d848ee166d90 and compared with local content. TASK-007 is in progress; full external/check evidence is not silently completed. Observations are retained under docs/validation/harness-user-documentation/runs/publication-03/. No merge, release or archive readiness is claimed.
 
 ## Validation evidence
 
@@ -893,4 +895,4 @@ Current verification-02 records five check results and all 46 local/regression a
 
 ## Delivery
 
-Closure remains active. Archival, PR publication, final remote checks, merge and organization activation are pending their prerequisites and authorization.
+Closure remains active. Draft PRs: https://github.com/versat-labs/versat-ai-harness/pull/33 and https://github.com/versat-labs/.github/pull/3. User authorization covers publication despite missing visual verification; it does not fabricate acceptance evidence. Resolve remaining required verification and prepare archival before marking completed work ready for review/merge. Integrate Harness before the organization change under actual review and final-check authority.

@@ -1,0 +1,272 @@
+{
+  "status": "fail",
+  "phase": "delivery",
+  "checked": [
+    "harness-user-documentation"
+  ],
+  "findings": [
+    {
+      "code": "TASK_INCOMPLETE",
+      "message": "TASK-006 is not completed",
+      "path": "/Users/elviszoz/.codex/worktrees/de89/versat-ai-harness/specs/changes/harness-user-documentation/tasks.md",
+      "severity": "error"
+    },
+    {
+      "code": "TASK_INCOMPLETE",
+      "message": "TASK-008 is not completed",
+      "path": "/Users/elviszoz/.codex/worktrees/de89/versat-ai-harness/specs/changes/harness-user-documentation/tasks.md",
+      "severity": "error"
+    },
+    {
+      "code": "TASK_INCOMPLETE",
+      "message": "TASK-009 is not completed",
+      "path": "/Users/elviszoz/.codex/worktrees/de89/versat-ai-harness/specs/changes/harness-user-documentation/tasks.md",
+      "severity": "error"
+    },
+    {
+      "code": "VALIDATION_MISSING",
+      "message": "CHECK-002 requires a passing result with evidence",
+      "path": "/Users/elviszoz/.codex/worktrees/de89/versat-ai-harness/specs/changes/harness-user-documentation/tasks.md",
+      "severity": "unverified"
+    },
+    {
+      "code": "VALIDATION_MISSING",
+      "message": "CHECK-003 requires a passing result with evidence",
+      "path": "/Users/elviszoz/.codex/worktrees/de89/versat-ai-harness/specs/changes/harness-user-documentation/tasks.md",
+      "severity": "unverified"
+    },
+    {
+      "code": "VALIDATION_MISSING",
+      "message": "CHECK-005 requires a passing result with evidence",
+      "path": "/Users/elviszoz/.codex/worktrees/de89/versat-ai-harness/specs/changes/harness-user-documentation/tasks.md",
+      "severity": "unverified"
+    },
+    {
+      "code": "ACCEPTANCE_UNVERIFIED",
+      "message": "{\"local\":{\"requirement\":\"REQ-001\",\"scenario\":2}}",
+      "path": "/Users/elviszoz/.codex/worktrees/de89/versat-ai-harness/specs/changes/harness-user-documentation/tasks.md",
+      "severity": "unverified"
+    },
+    {
+      "code": "ACCEPTANCE_UNVERIFIED",
+      "message": "{\"local\":{\"requirement\":\"REQ-002\",\"scenario\":1}}",
+      "path": "/Users/elviszoz/.codex/worktrees/de89/versat-ai-harness/specs/changes/harness-user-documentation/tasks.md",
+      "severity": "unverified"
+    },
+    {
+      "code": "ACCEPTANCE_UNVERIFIED",
+      "message": "{\"local\":{\"requirement\":\"REQ-002\",\"scenario\":2}}",
+      "path": "/Users/elviszoz/.codex/worktrees/de89/versat-ai-harness/specs/changes/harness-user-documentation/tasks.md",
+      "severity": "unverified"
+    },
+    {
+      "code": "ACCEPTANCE_UNVERIFIED",
+      "message": "{\"local\":{\"requirement\":\"REQ-002\",\"scenario\":3}}",
+      "path": "/Users/elviszoz/.codex/worktrees/de89/versat-ai-harness/specs/changes/harness-user-documentation/tasks.md",
+      "severity": "unverified"
+    },
+    {
+      "code": "ACCEPTANCE_UNVERIFIED",
+      "message": "{\"local\":{\"requirement\":\"REQ-003\",\"scenario\":1}}",
+      "path": "/Users/elviszoz/.codex/worktrees/de89/versat-ai-harness/specs/changes/harness-user-documentation/tasks.md",
+      "severity": "unverified"
+    },
+    {
+      "code": "ACCEPTANCE_UNVERIFIED",
+      "message": "{\"local\":{\"requirement\":\"REQ-003\",\"scenario\":2}}",
+      "path": "/Users/elviszoz/.codex/worktrees/de89/versat-ai-harness/specs/changes/harness-user-documentation/tasks.md",
+      "severity": "unverified"
+    },
+    {
+      "code": "ACCEPTANCE_UNVERIFIED",
+      "message": "{\"local\":{\"requirement\":\"REQ-003\",\"scenario\":4}}",
+      "path": "/Users/elviszoz/.codex/worktrees/de89/versat-ai-harness/specs/changes/harness-user-documentation/tasks.md",
+      "severity": "unverified"
+    },
+    {
+      "code": "ACCEPTANCE_UNVERIFIED",
+      "message": "{\"local\":{\"requirement\":\"REQ-005\",\"scenario\":1}}",
+      "path": "/Users/elviszoz/.codex/worktrees/de89/versat-ai-harness/specs/changes/harness-user-documentation/tasks.md",
+      "severity": "unverified"
+    },
+    {
+      "code": "ACCEPTANCE_UNVERIFIED",
+      "message": "{\"local\":{\"requirement\":\"REQ-005\",\"scenario\":2}}",
+      "path": "/Users/elviszoz/.codex/worktrees/de89/versat-ai-harness/specs/changes/harness-user-documentation/tasks.md",
+      "severity": "unverified"
+    },
+    {
+      "code": "ACCEPTANCE_UNVERIFIED",
+      "message": "{\"local\":{\"requirement\":\"REQ-005\",\"scenario\":3}}",
+      "path": "/Users/elviszoz/.codex/worktrees/de89/versat-ai-harness/specs/changes/harness-user-documentation/tasks.md",
+      "severity": "unverified"
+    },
+    {
+      "code": "ACCEPTANCE_UNVERIFIED",
+      "message": "{\"local\":{\"requirement\":\"REQ-005\",\"scenario\":4}}",
+      "path": "/Users/elviszoz/.codex/worktrees/de89/versat-ai-harness/specs/changes/harness-user-documentation/tasks.md",
+      "severity": "unverified"
+    },
+    {
+      "code": "ACCEPTANCE_UNVERIFIED",
+      "message": "{\"local\":{\"requirement\":\"REQ-006\",\"scenario\":2}}",
+      "path": "/Users/elviszoz/.codex/worktrees/de89/versat-ai-harness/specs/changes/harness-user-documentation/tasks.md",
+      "severity": "unverified"
+    },
+    {
+      "code": "ACCEPTANCE_UNVERIFIED",
+      "message": "{\"local\":{\"requirement\":\"REQ-006\",\"scenario\":3}}",
+      "path": "/Users/elviszoz/.codex/worktrees/de89/versat-ai-harness/specs/changes/harness-user-documentation/tasks.md",
+      "severity": "unverified"
+    },
+    {
+      "code": "ACCEPTANCE_UNVERIFIED",
+      "message": "{\"local\":{\"requirement\":\"REQ-006\",\"scenario\":4}}",
+      "path": "/Users/elviszoz/.codex/worktrees/de89/versat-ai-harness/specs/changes/harness-user-documentation/tasks.md",
+      "severity": "unverified"
+    },
+    {
+      "code": "ACCEPTANCE_UNVERIFIED",
+      "message": "{\"local\":{\"requirement\":\"REQ-007\",\"scenario\":4}}",
+      "path": "/Users/elviszoz/.codex/worktrees/de89/versat-ai-harness/specs/changes/harness-user-documentation/tasks.md",
+      "severity": "unverified"
+    },
+    {
+      "code": "ACCEPTANCE_UNVERIFIED",
+      "message": "{\"local\":{\"requirement\":\"REQ-007\",\"scenario\":5}}",
+      "path": "/Users/elviszoz/.codex/worktrees/de89/versat-ai-harness/specs/changes/harness-user-documentation/tasks.md",
+      "severity": "unverified"
+    },
+    {
+      "code": "ACCEPTANCE_UNVERIFIED",
+      "message": "{\"regression\":{\"impact\":1,\"scenario\":1}}",
+      "path": "/Users/elviszoz/.codex/worktrees/de89/versat-ai-harness/specs/changes/harness-user-documentation/tasks.md",
+      "severity": "unverified"
+    },
+    {
+      "code": "ACCEPTANCE_UNVERIFIED",
+      "message": "{\"regression\":{\"impact\":1,\"scenario\":2}}",
+      "path": "/Users/elviszoz/.codex/worktrees/de89/versat-ai-harness/specs/changes/harness-user-documentation/tasks.md",
+      "severity": "unverified"
+    },
+    {
+      "code": "ACCEPTANCE_UNVERIFIED",
+      "message": "{\"regression\":{\"impact\":1,\"scenario\":3}}",
+      "path": "/Users/elviszoz/.codex/worktrees/de89/versat-ai-harness/specs/changes/harness-user-documentation/tasks.md",
+      "severity": "unverified"
+    },
+    {
+      "code": "ACCEPTANCE_UNVERIFIED",
+      "message": "{\"regression\":{\"impact\":2,\"scenario\":1}}",
+      "path": "/Users/elviszoz/.codex/worktrees/de89/versat-ai-harness/specs/changes/harness-user-documentation/tasks.md",
+      "severity": "unverified"
+    },
+    {
+      "code": "ACCEPTANCE_UNVERIFIED",
+      "message": "{\"regression\":{\"impact\":2,\"scenario\":2}}",
+      "path": "/Users/elviszoz/.codex/worktrees/de89/versat-ai-harness/specs/changes/harness-user-documentation/tasks.md",
+      "severity": "unverified"
+    },
+    {
+      "code": "ACCEPTANCE_UNVERIFIED",
+      "message": "{\"regression\":{\"impact\":2,\"scenario\":3}}",
+      "path": "/Users/elviszoz/.codex/worktrees/de89/versat-ai-harness/specs/changes/harness-user-documentation/tasks.md",
+      "severity": "unverified"
+    },
+    {
+      "code": "ACCEPTANCE_UNVERIFIED",
+      "message": "{\"regression\":{\"impact\":2,\"scenario\":4}}",
+      "path": "/Users/elviszoz/.codex/worktrees/de89/versat-ai-harness/specs/changes/harness-user-documentation/tasks.md",
+      "severity": "unverified"
+    },
+    {
+      "code": "ACCEPTANCE_UNVERIFIED",
+      "message": "{\"regression\":{\"impact\":3,\"scenario\":1}}",
+      "path": "/Users/elviszoz/.codex/worktrees/de89/versat-ai-harness/specs/changes/harness-user-documentation/tasks.md",
+      "severity": "unverified"
+    },
+    {
+      "code": "ACCEPTANCE_UNVERIFIED",
+      "message": "{\"regression\":{\"impact\":3,\"scenario\":2}}",
+      "path": "/Users/elviszoz/.codex/worktrees/de89/versat-ai-harness/specs/changes/harness-user-documentation/tasks.md",
+      "severity": "unverified"
+    },
+    {
+      "code": "ACCEPTANCE_UNVERIFIED",
+      "message": "{\"regression\":{\"impact\":4,\"scenario\":1}}",
+      "path": "/Users/elviszoz/.codex/worktrees/de89/versat-ai-harness/specs/changes/harness-user-documentation/tasks.md",
+      "severity": "unverified"
+    },
+    {
+      "code": "ACCEPTANCE_UNVERIFIED",
+      "message": "{\"regression\":{\"impact\":4,\"scenario\":2}}",
+      "path": "/Users/elviszoz/.codex/worktrees/de89/versat-ai-harness/specs/changes/harness-user-documentation/tasks.md",
+      "severity": "unverified"
+    },
+    {
+      "code": "ACCEPTANCE_UNVERIFIED",
+      "message": "{\"regression\":{\"impact\":6,\"scenario\":0}}",
+      "path": "/Users/elviszoz/.codex/worktrees/de89/versat-ai-harness/specs/changes/harness-user-documentation/tasks.md",
+      "severity": "unverified"
+    },
+    {
+      "code": "ACCEPTANCE_UNVERIFIED",
+      "message": "{\"regression\":{\"impact\":7,\"scenario\":1}}",
+      "path": "/Users/elviszoz/.codex/worktrees/de89/versat-ai-harness/specs/changes/harness-user-documentation/tasks.md",
+      "severity": "unverified"
+    },
+    {
+      "code": "ACCEPTANCE_UNVERIFIED",
+      "message": "{\"regression\":{\"impact\":7,\"scenario\":2}}",
+      "path": "/Users/elviszoz/.codex/worktrees/de89/versat-ai-harness/specs/changes/harness-user-documentation/tasks.md",
+      "severity": "unverified"
+    },
+    {
+      "code": "ACCEPTANCE_UNVERIFIED",
+      "message": "{\"regression\":{\"impact\":7,\"scenario\":3}}",
+      "path": "/Users/elviszoz/.codex/worktrees/de89/versat-ai-harness/specs/changes/harness-user-documentation/tasks.md",
+      "severity": "unverified"
+    },
+    {
+      "code": "ACCEPTANCE_UNVERIFIED",
+      "message": "{\"regression\":{\"impact\":7,\"scenario\":4}}",
+      "path": "/Users/elviszoz/.codex/worktrees/de89/versat-ai-harness/specs/changes/harness-user-documentation/tasks.md",
+      "severity": "unverified"
+    },
+    {
+      "code": "ACCEPTANCE_UNVERIFIED",
+      "message": "{\"regression\":{\"impact\":8,\"scenario\":0}}",
+      "path": "/Users/elviszoz/.codex/worktrees/de89/versat-ai-harness/specs/changes/harness-user-documentation/tasks.md",
+      "severity": "unverified"
+    },
+    {
+      "code": "ACCEPTANCE_GAP",
+      "message": "FIND-001: After user confirmation and runtime reset, CUA still reports Mac locked and local browser use disabled; representative visual and complete usage observations are unavailable.",
+      "path": "/Users/elviszoz/.codex/worktrees/de89/versat-ai-harness/specs/changes/harness-user-documentation/tasks.md",
+      "severity": "error"
+    }
+  ],
+  "warnings": [],
+  "metrics": {
+    "harness-user-documentation": {
+      "local_scenarios": 27,
+      "regression_obligations": 19,
+      "assessed": 46,
+      "results": 5,
+      "open_findings": 1,
+      "stale_results": 0,
+      "requirements": {
+        "REQ-001": "unverified",
+        "REQ-002": "unverified",
+        "REQ-003": "unverified",
+        "REQ-004": "pass",
+        "REQ-005": "unverified",
+        "REQ-006": "unverified",
+        "REQ-007": "unverified"
+      }
+    }
+  },
+  "live_archives": [],
+  "archive_required": [],
+  "scope": "Declared contract checks only; archive inventory is historical unless selected for live delivery. No proof of semantic adequacy, execution authenticity, human identity, remote CI, merge or deployment."
+}

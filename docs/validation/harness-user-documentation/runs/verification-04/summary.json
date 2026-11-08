@@ -1,0 +1,22 @@
+{
+  "passed_checks": [
+    "CHECK-001",
+    "CHECK-004"
+  ],
+  "unverified_checks": [
+    "CHECK-002",
+    "CHECK-003",
+    "CHECK-005"
+  ],
+  "assessments": 46,
+  "passed_assessments": 13,
+  "open_findings": [
+    "FIND-001"
+  ],
+  "resolved_findings": [
+    "FIND-002"
+  ],
+  "maintained_tests_passed": 179,
+  "aggregate_package_exit": 1,
+  "input_digest": "b3355bcb615e3b2020f9302c7764ccb7fff134564c6be93377965bf2e293086a"
+}

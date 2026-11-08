@@ -1,0 +1,71 @@
+{
+  "repository": "versat-labs/versat-ai-harness",
+  "ref": "27735687a37e896cd6b0c95cd9d2d848ee166d90",
+  "transport": "authenticated GitHub connector",
+  "files": [
+    {
+      "path": "docs/user-docs/guides/github-delivery.md",
+      "blob": "f2d9d35a05355ed3575c80dd5e927a6a524314ba"
+    },
+    {
+      "path": "docs/user-docs/guides/github-delivery.pt.md",
+      "blob": "7063f318c704c8bac07d4b689d5f9194b0888ffa"
+    },
+    {
+      "path": "docs/user-docs/guides/github-delivery.es.md",
+      "blob": "bbc3597bff27c16d38fc26c30aaa344bbeeaeec3"
+    },
+    {
+      "path": "docs/user-docs/guides/sdd-with-codex.md",
+      "blob": "38d1fae4db04ec92b7fbfe3a434a0c686dfa75bd"
+    },
+    {
+      "path": "docs/user-docs/guides/sdd-with-codex.pt.md",
+      "blob": "d4f7329c6bb83f8de75510f10013db7a1b2f83af"
+    },
+    {
+      "path": "docs/user-docs/guides/sdd-with-codex.es.md",
+      "blob": "17f3caa1fd71d92836283bb68aa29b564b10a3ae"
+    },
+    {
+      "path": "docs/user-docs/guides/validation-and-evaluations.md",
+      "blob": "9f791cae2e84f677f620b858fa6d2fc4e5d08878"
+    },
+    {
+      "path": "docs/user-docs/guides/validation-and-evaluations.pt.md",
+      "blob": "1e3e9daae8fa780d6b59665b7a65541399b074b9"
+    },
+    {
+      "path": "docs/user-docs/guides/validation-and-evaluations.es.md",
+      "blob": "b983b7d36273bdc03a75d54017674df69f9d228b"
+    },
+    {
+      "path": "docs/user-docs/guides/workspace-setup.md",
+      "blob": "6a221acba07c55b11d2c0697cc0d6f48bd30465a"
+    },
+    {
+      "path": "docs/user-docs/guides/workspace-setup.pt.md",
+      "blob": "cf2503b6b22ce9431b0d7988dc352e168e86ff3b"
+    },
+    {
+      "path": "docs/user-docs/guides/workspace-setup.es.md",
+      "blob": "31c10f058ceed6f18c5dc9ac1f8489783a8bf66a"
+    },
+    {
+      "path": "docs/user-docs/quickstart.md",
+      "blob": "9659dc0cf86748cd7dd3282c0792aeea0b04b0c4"
+    },
+    {
+      "path": "docs/user-docs/quickstart.pt.md",
+      "blob": "d379a0d704a4641b0cf33a2db589383be8623bb7"
+    },
+    {
+      "path": "docs/user-docs/quickstart.es.md",
+      "blob": "dbdb9672c837bac0f06c0332017577caa7796134"
+    },
+    {
+      "path": "standards/core/language.md",
+      "blob": "de0fcdaab513fe15c4ea1a6550ccc046b0f4ae85"
+    }
+  ]
+}

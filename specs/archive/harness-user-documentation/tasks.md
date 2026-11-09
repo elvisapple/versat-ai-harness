@@ -12,8 +12,7 @@ tasks:
   - REQ-007
   status: completed
 - id: TASK-002
-  description: Write the canonical product overview, workspace setup and first-use
-    guide.
+  description: Write the canonical product overview, workspace setup and first-use guide.
   requirements:
   - REQ-002
   - REQ-003
@@ -21,8 +20,7 @@ tasks:
   - REQ-006
   status: completed
 - id: TASK-003
-  description: Write the remaining seven canonical workflow guides using existing
-    references.
+  description: Write the remaining seven canonical workflow guides using existing references.
   requirements:
   - REQ-002
   - REQ-003
@@ -30,8 +28,7 @@ tasks:
   - REQ-007
   status: completed
 - id: TASK-004
-  description: Complete the Harness README, navigation and all Portuguese and Spanish
-    siblings.
+  description: Complete the Harness README, navigation and all Portuguese and Spanish siblings.
   requirements:
   - REQ-001
   - REQ-002
@@ -41,8 +38,7 @@ tasks:
   - REQ-006
   status: completed
 - id: TASK-005
-  description: Prepare the organization contribution consolidation and translated
-    entry pages.
+  description: Prepare the organization contribution consolidation and translated entry pages.
   requirements:
   - REQ-001
   - REQ-003
@@ -51,8 +47,7 @@ tasks:
   - REQ-007
   status: completed
 - id: TASK-006
-  description: Review the prepared content, exercise first use and resolve documentation
-    defects.
+  description: Review the prepared content, exercise first use and resolve documentation defects.
   requirements:
   - REQ-001
   - REQ-002
@@ -61,10 +56,10 @@ tasks:
   - REQ-005
   - REQ-006
   - REQ-007
-  status: blocked
+  status: completed
 - id: TASK-007
-  description: Bind organization links to an authorized published Harness content
-    revision and verify targets.
+  description: Bind organization links to an authorized published Harness content revision and verify
+    targets.
   requirements:
   - REQ-001
   - REQ-003
@@ -73,8 +68,7 @@ tasks:
   - REQ-007
   status: completed
 - id: TASK-008
-  description: Execute all final checks against stable inputs and record scenario
-    and regression assessments.
+  description: Execute all final checks against stable inputs and record scenario and regression assessments.
   requirements:
   - REQ-001
   - REQ-002
@@ -83,16 +77,15 @@ tasks:
   - REQ-005
   - REQ-006
   - REQ-007
-  status: in-progress
+  status: completed
 - id: TASK-009
-  description: Prepare the coordinated delivery handoff and verify documentary closure
-    prerequisites.
+  description: Prepare the coordinated delivery handoff and verify documentary closure prerequisites.
   requirements:
   - REQ-001
   - REQ-005
   - REQ-006
   - REQ-007
-  status: pending
+  status: completed
 review:
   revision: 1
   state: approved
@@ -101,8 +94,8 @@ review:
     proposal: 1ca3de32bdea8b921030786aea349b2dc5a50a3a265aa75ee25a39e1b3308f24
     design: a0f7141be1f9302d1824c2c181457d1c243bf7c2f5722db505bcdd755af4652a
   approval:
-    source: Developer reply in this chat after Tasks R1 approval and implementation
-      authorization were requested together.
+    source: Developer reply in this chat after Tasks R1 approval and implementation authorization were
+      requested together.
     quote: sim
     revision: 1
     digest: 3cfecbf06713997419537a7de6ab0e33e308641b0c37ad3ee68b078cf6e20a33
@@ -117,33 +110,30 @@ validation:
     input_digest_after: b3355bcb615e3b2020f9302c7764ccb7fff134564c6be93377965bf2e293086a
     context:
       execution: local
-      environment: macOS Python 3.11; authenticated GitHub connector verified 16 exact
-        targets; anonymous curl HTTPS 200 for public candidate; CUA reports host locked/browser
-        disabled
+      environment: macOS Python 3.11; authenticated GitHub connector verified 16 exact targets; anonymous
+        curl HTTPS 200 for public candidate; CUA reports host locked/browser disabled
       observed: true
   - check: CHECK-002
-    result: unverified
-    evidence: docs/validation/harness-user-documentation/runs/verification-04/navigation-translations.md
-    revision: f28ac5c with observed published-target input snapshots; verification-04
+    result: pass
+    evidence: docs/validation/harness-user-documentation/runs/verification-05/navigation-translations.md
+    revision: 49e1160 source plus verification-05 evidence bookkeeping; 2026-11-09
     input_digest_before: b3355bcb615e3b2020f9302c7764ccb7fff134564c6be93377965bf2e293086a
     input_digest_after: b3355bcb615e3b2020f9302c7764ccb7fff134564c6be93377965bf2e293086a
     context:
       execution: local
-      environment: macOS Python 3.11; authenticated GitHub connector verified 16 exact
-        targets; anonymous curl HTTPS 200 for public candidate; CUA reports host locked/browser
-        disabled
+      environment: macOS, Chrome GitHub rendered previews, current Codex app session with app-reported
+        cwd, Python 3.11; same-session synthetic walkthrough; native app control unavailable and not claimed
       observed: true
   - check: CHECK-003
-    result: unverified
-    evidence: docs/validation/harness-user-documentation/runs/verification-04/usage-walkthrough.md
-    revision: f28ac5c with observed published-target input snapshots; verification-04
+    result: pass
+    evidence: docs/validation/harness-user-documentation/runs/verification-05/usage-walkthrough.md
+    revision: 49e1160 source plus verification-05 evidence bookkeeping; 2026-11-09
     input_digest_before: b3355bcb615e3b2020f9302c7764ccb7fff134564c6be93377965bf2e293086a
     input_digest_after: b3355bcb615e3b2020f9302c7764ccb7fff134564c6be93377965bf2e293086a
     context:
       execution: local
-      environment: macOS Python 3.11; authenticated GitHub connector verified 16 exact
-        targets; anonymous curl HTTPS 200 for public candidate; CUA reports host locked/browser
-        disabled
+      environment: macOS, Chrome GitHub rendered previews, current Codex app session with app-reported
+        cwd, Python 3.11; same-session synthetic walkthrough; native app control unavailable and not claimed
       observed: true
   - check: CHECK-004
     result: pass
@@ -153,21 +143,19 @@ validation:
     input_digest_after: b3355bcb615e3b2020f9302c7764ccb7fff134564c6be93377965bf2e293086a
     context:
       execution: local
-      environment: macOS Python 3.11; authenticated GitHub connector verified 16 exact
-        targets; anonymous curl HTTPS 200 for public candidate; CUA reports host locked/browser
-        disabled
+      environment: macOS Python 3.11; authenticated GitHub connector verified 16 exact targets; anonymous
+        curl HTTPS 200 for public candidate; CUA reports host locked/browser disabled
       observed: true
   - check: CHECK-005
-    result: unverified
-    evidence: docs/validation/harness-user-documentation/runs/verification-04/package-validation.txt
-    revision: f28ac5c with observed published-target input snapshots; verification-04
+    result: pass
+    evidence: docs/validation/harness-user-documentation/runs/verification-05/package-validation.txt
+    revision: 49e1160 source plus verification-05 evidence bookkeeping; 2026-11-09
     input_digest_before: b3355bcb615e3b2020f9302c7764ccb7fff134564c6be93377965bf2e293086a
     input_digest_after: b3355bcb615e3b2020f9302c7764ccb7fff134564c6be93377965bf2e293086a
     context:
       execution: local
-      environment: macOS Python 3.11; authenticated GitHub connector verified 16 exact
-        targets; anonymous curl HTTPS 200 for public candidate; CUA reports host locked/browser
-        disabled
+      environment: macOS Python 3.11 virtual environment with pinned validation dependencies; full run.sh
+        and both maintained suites
       observed: true
   assessments:
   - obligation:
@@ -178,19 +166,18 @@ validation:
     checks:
     - CHECK-001
     evidence: docs/validation/harness-user-documentation/runs/verification-04/content-review.md
-    explanation: Current reviewed content and/or observed published/public destination
-      behavior matches this obligation.
+    explanation: README retains purpose, persona, owners, version/adoption limits and the runnable package
+      validation entry.
   - obligation:
       local:
         requirement: REQ-001
         scenario: 2
-    result: unverified
+    result: pass
     checks:
     - CHECK-002
-    evidence: docs/validation/harness-user-documentation/runs/verification-04/navigation-translations.md
-    explanation: Required mapped rendered or complete desktop-usage evidence remains
-      unavailable. The aggregate package command has not passed acceptance; see current
-      reports.
+    evidence: docs/validation/harness-user-documentation/runs/verification-05/navigation-translations.md
+    explanation: Current 39-page link traversal and rendered README locale navigation reach real quickstart/product/guide/SDD
+      destinations.
   - obligation:
       local:
         requirement: REQ-001
@@ -200,67 +187,62 @@ validation:
     - CHECK-001
     - CHECK-004
     evidence: docs/validation/harness-user-documentation/runs/verification-04/content-review.md
-    explanation: Current reviewed content and/or observed published/public destination
-      behavior matches this obligation.
+    explanation: README and setup preserve exact provider and package/consumer boundaries; unchanged reviewed
+      content remains bound to the same input digest.
   - obligation:
       local:
         requirement: REQ-002
         scenario: 1
-    result: unverified
+    result: pass
     checks:
     - CHECK-001
     - CHECK-003
-    evidence: docs/validation/harness-user-documentation/runs/verification-04/content-review.md
-    explanation: Required mapped rendered or complete desktop-usage evidence remains
-      unavailable. The aggregate package command has not passed acceptance; see current
-      reports.
+    evidence: docs/validation/harness-user-documentation/runs/verification-05/usage-walkthrough.md
+    explanation: Prepared identity/lock and existing Home page support the bounded planning walkthrough;
+      only Proposal/Requirements exist and app cwd is verified.
   - obligation:
       local:
         requirement: REQ-002
         scenario: 2
-    result: unverified
+    result: pass
     checks:
     - CHECK-003
-    evidence: docs/validation/harness-user-documentation/runs/verification-04/usage-walkthrough.md
-    explanation: Required mapped rendered or complete desktop-usage evidence remains
-      unavailable. The aggregate package command has not passed acceptance; see current
-      reports.
+    evidence: docs/validation/harness-user-documentation/runs/verification-05/usage-walkthrough.md
+    explanation: Missing provider path was observed absent and reported as a setup/owner dependency; no
+      replacement pin or fabricated approval was used.
   - obligation:
       local:
         requirement: REQ-002
         scenario: 3
-    result: unverified
+    result: pass
     checks:
     - CHECK-001
     - CHECK-002
-    evidence: docs/validation/harness-user-documentation/runs/verification-04/content-review.md
-    explanation: Required mapped rendered or complete desktop-usage evidence remains
-      unavailable. The aggregate package command has not passed acceptance; see current
-      reports.
+    evidence: docs/validation/harness-user-documentation/runs/verification-05/navigation-translations.md
+    explanation: Rendered quickstart links reach localized focused guides and canonical SDD; organization
+      CONTRIBUTING remains the real external entry.
   - obligation:
       local:
         requirement: REQ-003
         scenario: 1
-    result: unverified
+    result: pass
     checks:
     - CHECK-001
     - CHECK-003
-    evidence: docs/validation/harness-user-documentation/runs/verification-04/content-review.md
-    explanation: Required mapped rendered or complete desktop-usage evidence remains
-      unavailable. The aggregate package command has not passed acceptance; see current
-      reports.
+    evidence: docs/validation/harness-user-documentation/runs/verification-05/usage-walkthrough.md
+    explanation: All eight guide requests were exercised within their documented bounds; workflow-observations
+      records inputs, outputs and recovery.
   - obligation:
       local:
         requirement: REQ-003
         scenario: 2
-    result: unverified
+    result: pass
     checks:
     - CHECK-001
     - CHECK-002
-    evidence: docs/validation/harness-user-documentation/runs/verification-04/content-review.md
-    explanation: Required mapped rendered or complete desktop-usage evidence remains
-      unavailable. The aggregate package command has not passed acceptance; see current
-      reports.
+    evidence: docs/validation/harness-user-documentation/runs/verification-05/navigation-translations.md
+    explanation: Guides retain focused context and links to canonical Skills, process and specialized
+      validation references; traversal reports no invalid destination.
   - obligation:
       local:
         requirement: REQ-003
@@ -270,20 +252,19 @@ validation:
     - CHECK-001
     - CHECK-004
     evidence: docs/validation/harness-user-documentation/runs/verification-04/content-review.md
-    explanation: Current reviewed content and/or observed published/public destination
-      behavior matches this obligation.
+    explanation: Unapproved fixture passes planning and fails delivery; current submission still requires
+      archive, PR review and final CI separately.
   - obligation:
       local:
         requirement: REQ-003
         scenario: 4
-    result: unverified
+    result: pass
     checks:
     - CHECK-001
     - CHECK-003
-    evidence: docs/validation/harness-user-documentation/runs/verification-04/content-review.md
-    explanation: Required mapped rendered or complete desktop-usage evidence remains
-      unavailable. The aggregate package command has not passed acceptance; see current
-      reports.
+    evidence: docs/validation/harness-user-documentation/runs/verification-05/usage-walkthrough.md
+    explanation: Observed missing-provider and missing-validation-config cases remain explicit; source-only
+      capability and consumer pin limits are preserved.
   - obligation:
       local:
         requirement: REQ-004
@@ -292,8 +273,8 @@ validation:
     checks:
     - CHECK-001
     evidence: docs/validation/harness-user-documentation/runs/verification-04/content-review.md
-    explanation: Current reviewed content and/or observed published/public destination
-      behavior matches this obligation.
+    explanation: English product overview identifies ownership, Issue 22, team persona, JTBD and current
+      capabilities; rendered locale peers match.
   - obligation:
       local:
         requirement: REQ-004
@@ -302,8 +283,8 @@ validation:
     checks:
     - CHECK-001
     evidence: docs/validation/harness-user-documentation/runs/verification-04/content-review.md
-    explanation: Current reviewed content and/or observed published/public destination
-      behavior matches this obligation.
+    explanation: Product topic review retains proportionate alternatives, timing, scalability and impacts;
+      market/revenue metrics are explicitly not established.
   - obligation:
       local:
         requirement: REQ-004
@@ -312,53 +293,49 @@ validation:
     checks:
     - CHECK-001
     evidence: docs/validation/harness-user-documentation/runs/verification-04/content-review.md
-    explanation: Current reviewed content and/or observed published/public destination
-      behavior matches this obligation.
+    explanation: Product page distinguishes evidence, unknowns and next validation actions; restricted
+      videos are supplemental and not claimed reviewed.
   - obligation:
       local:
         requirement: REQ-005
         scenario: 1
-    result: unverified
+    result: pass
     checks:
     - CHECK-002
-    evidence: docs/validation/harness-user-documentation/runs/verification-04/navigation-translations.md
-    explanation: Required mapped rendered or complete desktop-usage evidence remains
-      unavailable. The aggregate package command has not passed acceptance; see current
-      reports.
+    evidence: docs/validation/harness-user-documentation/runs/verification-05/navigation-translations.md
+    explanation: Current inventory confirms eleven Harness and two organization EN/PT/ES sets with matching
+      siblings.
   - obligation:
       local:
         requirement: REQ-005
         scenario: 2
-    result: unverified
+    result: pass
     checks:
     - CHECK-002
-    evidence: docs/validation/harness-user-documentation/runs/verification-04/navigation-translations.md
-    explanation: Required mapped rendered or complete desktop-usage evidence remains
-      unavailable. The aggregate package command has not passed acceptance; see current
-      reports.
+    evidence: docs/validation/harness-user-documentation/runs/verification-05/navigation-translations.md
+    explanation: Locale switches were clicked on rendered README and every local link/anchor was traversed;
+      technical English references are labeled.
   - obligation:
       local:
         requirement: REQ-005
         scenario: 3
-    result: unverified
+    result: pass
     checks:
     - CHECK-002
-    evidence: docs/validation/harness-user-documentation/runs/verification-04/navigation-translations.md
-    explanation: Required mapped rendered or complete desktop-usage evidence remains
-      unavailable. The aggregate package command has not passed acceptance; see current
-      reports.
+    evidence: docs/validation/harness-user-documentation/runs/verification-05/navigation-translations.md
+    explanation: Unchanged translated sections retain reviewed command identifiers, approval meaning and
+      exact-version boundaries; rendered representatives are readable.
   - obligation:
       local:
         requirement: REQ-005
         scenario: 4
-    result: unverified
+    result: pass
     checks:
     - CHECK-002
     - CHECK-004
-    evidence: docs/validation/harness-user-documentation/runs/verification-04/navigation-translations.md
-    explanation: Required mapped rendered or complete desktop-usage evidence remains
-      unavailable. The aggregate package command has not passed acceptance; see current
-      reports.
+    evidence: docs/validation/harness-user-documentation/runs/verification-05/navigation-translations.md
+    explanation: Organization contribution and README locale sets render the same ownership, public route
+      and private-access boundary; target snapshots match.
   - obligation:
       local:
         requirement: REQ-006
@@ -367,43 +344,40 @@ validation:
     checks:
     - CHECK-001
     evidence: docs/validation/harness-user-documentation/runs/verification-04/content-review.md
-    explanation: Current reviewed content and/or observed published/public destination
-      behavior matches this obligation.
+    explanation: Issue 22 and the two exact supplemental Slack source URLs remain unchanged and explicitly
+      access restricted/unreviewed.
   - obligation:
       local:
         requirement: REQ-006
         scenario: 2
-    result: unverified
+    result: pass
     checks:
     - CHECK-003
-    evidence: docs/validation/harness-user-documentation/runs/verification-04/usage-walkthrough.md
-    explanation: Required mapped rendered or complete desktop-usage evidence remains
-      unavailable. The aggregate package command has not passed acceptance; see current
-      reports.
+    evidence: docs/validation/harness-user-documentation/runs/verification-05/usage-walkthrough.md
+    explanation: Current browser actions, app cwd metadata, synthetic artifact assertions and negative
+      prerequisite runs supply observed usage evidence with explicit limits.
   - obligation:
       local:
         requirement: REQ-006
         scenario: 3
-    result: unverified
+    result: pass
     checks:
     - CHECK-001
     - CHECK-002
     - CHECK-005
-    evidence: docs/validation/harness-user-documentation/runs/verification-04/content-review.md
-    explanation: Required mapped rendered or complete desktop-usage evidence remains
-      unavailable. The aggregate package command has not passed acceptance; see current
-      reports.
+    evidence: docs/validation/harness-user-documentation/runs/verification-05/handoff.md
+    explanation: Current links/translations/rendered previews pass; the actual complete package command
+      passed with 131 validator and 48 execution tests.
   - obligation:
       local:
         requirement: REQ-006
         scenario: 4
-    result: unverified
+    result: pass
     checks:
     - CHECK-002
-    evidence: docs/validation/harness-user-documentation/runs/verification-04/navigation-translations.md
-    explanation: Required mapped rendered or complete desktop-usage evidence remains
-      unavailable. The aggregate package command has not passed acceptance; see current
-      reports.
+    evidence: docs/validation/harness-user-documentation/runs/verification-05/navigation-translations.md
+    explanation: Living pages contain neither active nor archive dossier dependencies; local traversal
+      is rerun after the move.
   - obligation:
       local:
         requirement: REQ-007
@@ -413,8 +387,8 @@ validation:
     - CHECK-001
     - CHECK-004
     evidence: docs/validation/harness-user-documentation/runs/verification-04/content-review.md
-    explanation: Current reviewed content and/or observed published/public destination
-      behavior matches this obligation.
+    explanation: Organization candidate replaces duplicate internal procedures with reviewed pinned Harness
+      links and retains its own local responsibilities.
   - obligation:
       local:
         requirement: REQ-007
@@ -423,8 +397,8 @@ validation:
     checks:
     - CHECK-004
     evidence: docs/validation/harness-user-documentation/runs/verification-04/organization-review.md
-    explanation: Current reviewed content and/or observed published/public destination
-      behavior matches this obligation.
+    explanation: Organization snapshot still matches the actual clean checkout; original profile and issue
+      forms are unchanged.
   - obligation:
       local:
         requirement: REQ-007
@@ -433,34 +407,33 @@ validation:
     checks:
     - CHECK-004
     evidence: docs/validation/harness-user-documentation/runs/verification-04/organization-review.md
-    explanation: Current reviewed content and/or observed published/public destination
-      behavior matches this obligation.
+    explanation: Public CONTRIBUTING snapshot is available without credentials in retained evidence; current
+      rendered page shows repository precedence and a usable public issue route.
   - obligation:
       local:
         requirement: REQ-007
         scenario: 4
-    result: unverified
+    result: pass
     checks:
     - CHECK-001
     - CHECK-003
     - CHECK-004
-    evidence: docs/validation/harness-user-documentation/runs/verification-04/content-review.md
-    explanation: Required mapped rendered or complete desktop-usage evidence remains
-      unavailable. The aggregate package command has not passed acceptance; see current
-      reports.
+    evidence: docs/validation/harness-user-documentation/runs/verification-05/usage-walkthrough.md
+    explanation: Setup uses verified app cwd/source paths and official folder documentation; no automatic
+      installation or unobserved native-app operation is claimed.
   - obligation:
       local:
         requirement: REQ-007
         scenario: 5
-    result: unverified
+    result: pass
     checks:
     - CHECK-002
     - CHECK-004
     - CHECK-005
-    evidence: docs/validation/harness-user-documentation/runs/verification-04/navigation-translations.md
-    explanation: Required mapped rendered or complete desktop-usage evidence remains
-      unavailable. The aggregate package command has not passed acceptance; see current
-      reports.
+    evidence: docs/validation/harness-user-documentation/runs/verification-05/handoff.md
+    explanation: Both drafts retain Issue 22 linkage and immutable content targets; actual candidate bytes
+      match; local Markdown/diff checks and full package tests passed; archival is the next administrative
+      checkpoint and remote review/CI/activation remain separate.
   - obligation:
       local:
         requirement: REQ-007
@@ -469,138 +442,127 @@ validation:
     checks:
     - CHECK-004
     evidence: docs/validation/harness-user-documentation/runs/verification-04/organization-review.md
-    explanation: Current reviewed content and/or observed published/public destination
-      behavior matches this obligation.
+    explanation: Both PRs remain unmerged; earlier missing-target 404/withheld activation is preserved;
+      ordered rollout remains Harness then organization.
   - obligation:
       regression:
         impact: 1
         scenario: 1
-    result: unverified
+    result: pass
     checks:
     - CHECK-001
     - CHECK-003
-    evidence: docs/validation/harness-user-documentation/runs/verification-04/content-review.md
-    explanation: Required mapped rendered or complete desktop-usage evidence remains
-      unavailable. The aggregate package command has not passed acceptance; see current
-      reports.
+    evidence: docs/validation/harness-user-documentation/runs/verification-05/usage-walkthrough.md
+    explanation: Bounded quickstart and bootstrap observations preserve useful first-use behavior; empty-scaffold
+      runtime gaps remain explicit.
   - obligation:
       regression:
         impact: 1
         scenario: 2
-    result: unverified
+    result: pass
     checks:
     - CHECK-001
     - CHECK-003
-    evidence: docs/validation/harness-user-documentation/runs/verification-04/content-review.md
-    explanation: Required mapped rendered or complete desktop-usage evidence remains
-      unavailable. The aggregate package command has not passed acceptance; see current
-      reports.
+    evidence: docs/validation/harness-user-documentation/runs/verification-05/usage-walkthrough.md
+    explanation: Bounded quickstart and bootstrap observations preserve useful first-use behavior; empty-scaffold
+      runtime gaps remain explicit.
   - obligation:
       regression:
         impact: 1
         scenario: 3
-    result: unverified
+    result: pass
     checks:
     - CHECK-001
     - CHECK-003
-    evidence: docs/validation/harness-user-documentation/runs/verification-04/content-review.md
-    explanation: Required mapped rendered or complete desktop-usage evidence remains
-      unavailable. The aggregate package command has not passed acceptance; see current
-      reports.
+    evidence: docs/validation/harness-user-documentation/runs/verification-05/usage-walkthrough.md
+    explanation: Bounded quickstart and bootstrap observations preserve useful first-use behavior; empty-scaffold
+      runtime gaps remain explicit.
   - obligation:
       regression:
         impact: 2
         scenario: 1
-    result: unverified
+    result: pass
     checks:
     - CHECK-002
-    evidence: docs/validation/harness-user-documentation/runs/verification-04/navigation-translations.md
-    explanation: Required mapped rendered or complete desktop-usage evidence remains
-      unavailable. The aggregate package command has not passed acceptance; see current
-      reports.
+    evidence: docs/validation/harness-user-documentation/runs/verification-05/navigation-translations.md
+    explanation: Current 39-page local traversal, locale previews and archive-independent paths preserve
+      focused living-guide navigation.
   - obligation:
       regression:
         impact: 2
         scenario: 2
-    result: unverified
+    result: pass
     checks:
     - CHECK-002
-    evidence: docs/validation/harness-user-documentation/runs/verification-04/navigation-translations.md
-    explanation: Required mapped rendered or complete desktop-usage evidence remains
-      unavailable. The aggregate package command has not passed acceptance; see current
-      reports.
+    evidence: docs/validation/harness-user-documentation/runs/verification-05/navigation-translations.md
+    explanation: Current 39-page local traversal, locale previews and archive-independent paths preserve
+      focused living-guide navigation.
   - obligation:
       regression:
         impact: 2
         scenario: 3
-    result: unverified
+    result: pass
     checks:
     - CHECK-002
-    evidence: docs/validation/harness-user-documentation/runs/verification-04/navigation-translations.md
-    explanation: Required mapped rendered or complete desktop-usage evidence remains
-      unavailable. The aggregate package command has not passed acceptance; see current
-      reports.
+    evidence: docs/validation/harness-user-documentation/runs/verification-05/navigation-translations.md
+    explanation: Current 39-page local traversal, locale previews and archive-independent paths preserve
+      focused living-guide navigation.
   - obligation:
       regression:
         impact: 2
         scenario: 4
-    result: unverified
+    result: pass
     checks:
     - CHECK-002
-    evidence: docs/validation/harness-user-documentation/runs/verification-04/navigation-translations.md
-    explanation: Required mapped rendered or complete desktop-usage evidence remains
-      unavailable. The aggregate package command has not passed acceptance; see current
-      reports.
+    evidence: docs/validation/harness-user-documentation/runs/verification-05/navigation-translations.md
+    explanation: Current 39-page local traversal, locale previews and archive-independent paths preserve
+      focused living-guide navigation.
   - obligation:
       regression:
         impact: 3
         scenario: 1
-    result: unverified
+    result: pass
     checks:
     - CHECK-001
     - CHECK-003
-    evidence: docs/validation/harness-user-documentation/runs/verification-04/content-review.md
-    explanation: Required mapped rendered or complete desktop-usage evidence remains
-      unavailable. The aggregate package command has not passed acceptance; see current
-      reports.
+    evidence: docs/validation/harness-user-documentation/runs/verification-05/usage-walkthrough.md
+    explanation: Status and planning requests use the single versat-sdd entry, read the matching canonical
+      phase and stop at the actual approval gate.
   - obligation:
       regression:
         impact: 3
         scenario: 2
-    result: unverified
+    result: pass
     checks:
     - CHECK-001
     - CHECK-003
-    evidence: docs/validation/harness-user-documentation/runs/verification-04/content-review.md
-    explanation: Required mapped rendered or complete desktop-usage evidence remains
-      unavailable. The aggregate package command has not passed acceptance; see current
-      reports.
+    evidence: docs/validation/harness-user-documentation/runs/verification-05/usage-walkthrough.md
+    explanation: Status and planning requests use the single versat-sdd entry, read the matching canonical
+      phase and stop at the actual approval gate.
   - obligation:
       regression:
         impact: 4
         scenario: 1
-    result: unverified
+    result: pass
     checks:
     - CHECK-001
     - CHECK-002
     - CHECK-003
-    evidence: docs/validation/harness-user-documentation/runs/verification-04/content-review.md
-    explanation: Required mapped rendered or complete desktop-usage evidence remains
-      unavailable. The aggregate package command has not passed acceptance; see current
-      reports.
+    evidence: docs/validation/harness-user-documentation/runs/verification-05/usage-walkthrough.md
+    explanation: Fixture output has null approval and no Design/Tasks; delivery rejects execution without
+      approvals, while translations retain the same boundary.
   - obligation:
       regression:
         impact: 4
         scenario: 2
-    result: unverified
+    result: pass
     checks:
     - CHECK-001
     - CHECK-002
     - CHECK-003
-    evidence: docs/validation/harness-user-documentation/runs/verification-04/content-review.md
-    explanation: Required mapped rendered or complete desktop-usage evidence remains
-      unavailable. The aggregate package command has not passed acceptance; see current
-      reports.
+    evidence: docs/validation/harness-user-documentation/runs/verification-05/usage-walkthrough.md
+    explanation: Fixture output has null approval and no Design/Tasks; delivery rejects execution without
+      approvals, while translations retain the same boundary.
   - obligation:
       regression:
         impact: 5
@@ -610,8 +572,8 @@ validation:
     - CHECK-001
     - CHECK-004
     evidence: docs/validation/harness-user-documentation/runs/verification-04/content-review.md
-    explanation: Current reviewed content and/or observed published/public destination
-      behavior matches this obligation.
+    explanation: Delivery-summary check identifies missing approvals/archive, and the real final preflight
+      remains required; local closure is not merge.
   - obligation:
       regression:
         impact: 5
@@ -621,112 +583,106 @@ validation:
     - CHECK-001
     - CHECK-004
     evidence: docs/validation/harness-user-documentation/runs/verification-04/content-review.md
-    explanation: Current reviewed content and/or observed published/public destination
-      behavior matches this obligation.
+    explanation: Delivery-summary check identifies missing approvals/archive, and the real final preflight
+      remains required; local closure is not merge.
   - obligation:
       regression:
         impact: 6
         scenario: 0
-    result: unverified
+    result: pass
     checks:
     - CHECK-002
-    evidence: docs/validation/harness-user-documentation/runs/verification-04/navigation-translations.md
-    explanation: Required mapped rendered or complete desktop-usage evidence remains
-      unavailable. The aggregate package command has not passed acceptance; see current
-      reports.
+    evidence: docs/validation/harness-user-documentation/runs/verification-05/navigation-translations.md
+    explanation: All thirteen locale sets retain reviewed semantic parity; representative page types in
+      each language were visually inspected.
   - obligation:
       regression:
         impact: 7
         scenario: 1
-    result: unverified
+    result: pass
     checks:
     - CHECK-003
     - CHECK-004
-    evidence: docs/validation/harness-user-documentation/runs/verification-04/usage-walkthrough.md
-    explanation: Required mapped rendered or complete desktop-usage evidence remains
-      unavailable. The aggregate package command has not passed acceptance; see current
-      reports.
+    evidence: docs/validation/harness-user-documentation/runs/verification-05/usage-walkthrough.md
+    explanation: Current observed browser/runtime actions and independent artifacts replace earlier unavailable
+      observations; unavailable native control is explicit, with app metadata used only for the cwd fact.
   - obligation:
       regression:
         impact: 7
         scenario: 2
-    result: unverified
+    result: pass
     checks:
     - CHECK-003
     - CHECK-004
-    evidence: docs/validation/harness-user-documentation/runs/verification-04/usage-walkthrough.md
-    explanation: Required mapped rendered or complete desktop-usage evidence remains
-      unavailable. The aggregate package command has not passed acceptance; see current
-      reports.
+    evidence: docs/validation/harness-user-documentation/runs/verification-05/usage-walkthrough.md
+    explanation: Current observed browser/runtime actions and independent artifacts replace earlier unavailable
+      observations; unavailable native control is explicit, with app metadata used only for the cwd fact.
   - obligation:
       regression:
         impact: 7
         scenario: 3
-    result: unverified
+    result: pass
     checks:
     - CHECK-003
     - CHECK-004
-    evidence: docs/validation/harness-user-documentation/runs/verification-04/usage-walkthrough.md
-    explanation: Required mapped rendered or complete desktop-usage evidence remains
-      unavailable. The aggregate package command has not passed acceptance; see current
-      reports.
+    evidence: docs/validation/harness-user-documentation/runs/verification-05/usage-walkthrough.md
+    explanation: Current observed browser/runtime actions and independent artifacts replace earlier unavailable
+      observations; unavailable native control is explicit, with app metadata used only for the cwd fact.
   - obligation:
       regression:
         impact: 7
         scenario: 4
-    result: unverified
+    result: pass
     checks:
     - CHECK-003
     - CHECK-004
-    evidence: docs/validation/harness-user-documentation/runs/verification-04/usage-walkthrough.md
-    explanation: Required mapped rendered or complete desktop-usage evidence remains
-      unavailable. The aggregate package command has not passed acceptance; see current
-      reports.
+    evidence: docs/validation/harness-user-documentation/runs/verification-05/usage-walkthrough.md
+    explanation: Current observed browser/runtime actions and independent artifacts replace earlier unavailable
+      observations; unavailable native control is explicit, with app metadata used only for the cwd fact.
   - obligation:
       regression:
         impact: 8
         scenario: 0
-    result: unverified
+    result: pass
     checks:
     - CHECK-002
     - CHECK-004
-    evidence: docs/validation/harness-user-documentation/runs/verification-04/navigation-translations.md
-    explanation: Required mapped rendered or complete desktop-usage evidence remains
-      unavailable. The aggregate package command has not passed acceptance; see current
-      reports.
+    evidence: docs/validation/harness-user-documentation/runs/verification-05/navigation-translations.md
+    explanation: Organization identity, public entry and exact private targets remain coherent and byte-bound;
+      activation still waits for both reviewed deliveries.
   findings:
   - id: FIND-001
     source:
       plan: Rendered navigation and desktop usage observations
     category: partial
-    state: open
-    evidence: docs/validation/harness-user-documentation/runs/verification-02/navigation-translations.md
-    description: After user confirmation and runtime reset, CUA still reports Mac
-      locked and local browser use disabled; representative visual and complete usage
-      observations are unavailable.
+    state: resolved
+    evidence: docs/validation/harness-user-documentation/runs/verification-05/usage-walkthrough.md
+    description: After user confirmation and runtime reset, CUA still reports Mac locked and local browser
+      use disabled; representative visual and complete usage observations are unavailable.
     tasks:
     - TASK-006
     checks:
     - CHECK-002
     - CHECK-003
+    resolution: Chrome rendered navigation and same-session guide usage now have observed evidence. The
+      supported app integration confirms the intended chat cwd; native app control remains denied and
+      is not claimed. CHECK-002 and CHECK-003 pass against unchanged matching inputs.
   - id: FIND-002
     source:
       plan: Published immutable Harness destinations and intended-reader access
     category: missing
     state: resolved
     evidence: docs/validation/harness-user-documentation/runs/verification-04/organization-review.md
-    description: Published destination snapshots, organization candidate consistency,
-      internal reviewer access, public fallback, traceability and fail-closed rollout
-      were verified.
+    description: Published destination snapshots, organization candidate consistency, internal reviewer
+      access, public fallback, traceability and fail-closed rollout were verified.
     tasks:
     - TASK-007
     checks:
     - CHECK-004
-    resolution: CHECK-004 passed against current before/after inputs. Sixteen GitHub
-      file reads match the exact content revision; anonymous public CONTRIBUTING HTTP
-      200 matches the organization candidate. This does not claim visual review or
-      merge.
-closure: active
+    resolution: CHECK-004 passed against current before/after inputs. Sixteen GitHub file reads match
+      the exact content revision; anonymous public CONTRIBUTING HTTP 200 matches the organization candidate.
+      This does not claim visual review or merge.
+closure: prepared
 ---
 
 # Tasks
@@ -740,10 +696,10 @@ This plan implements approved Proposal/Requirements R2 and Design R1. All nine t
 - [x] TASK-003 — Write the remaining seven canonical workflow guides using existing references.
 - [x] TASK-004 — Complete the Harness README, navigation and all Portuguese and Spanish siblings.
 - [x] TASK-005 — Prepare the organization contribution consolidation and translated entry pages.
-- [ ] TASK-006 — Review the prepared content, exercise first use and resolve documentation defects.
+- [x] TASK-006 — Review the prepared content, exercise first use and resolve documentation defects.
 - [x] TASK-007 — Bind organization links to an authorized published Harness content revision and verify targets.
-- [ ] TASK-008 — Execute all final checks against stable inputs and record scenario and regression assessments.
-- [ ] TASK-009 — Prepare the coordinated delivery handoff and verify documentary closure prerequisites.
+- [x] TASK-008 — Execute all final checks against stable inputs and record scenario and regression assessments.
+- [x] TASK-009 — Prepare the coordinated delivery handoff and verify documentary closure prerequisites.
 
 ## Dependencies and completion conditions
 
@@ -888,12 +844,12 @@ The developer replied "sim" to the combined request to approve Tasks R1 and auth
 
 ## Progress
 
-Tasks 001–005 and TASK-007 are complete. TASK-006 remains blocked only on required rendered/complete UI observations: CUA still reports the office host locked and local browser disabled. TASK-008 is in progress. Current verification-04 closes FIND-002 with authenticated reads of all 16 exact destination files, an anonymous HTTP 200 public contribution route, snapshot/candidate byte comparisons and coordinated draft PR traceability. All 179 maintained tests passed again; the aggregate package entry point still exits 1 because stored acceptance prerequisites were incomplete. No overall validation pass is claimed. PRs remain drafts; no archive or merge is prepared.
+All nine tasks are complete. Verification-05 records current rendered navigation, app working-directory confirmation, bounded same-session usage examples, independent artifact assertions, complete package tests and coordinated delivery handoff. Both findings are resolved. Documentary archival is being prepared in the same implementation PR; no merge is claimed.
 
 ## Validation evidence
 
-Current verification-04 records all five check dispositions and all 46 local/regression assessments with matching input snapshots. CHECK-001 and CHECK-004 pass. CHECK-002 and CHECK-003 are unverified because rendered/complete UI observation is unavailable. CHECK-005 remains unverified as a combined check: its 131 validator and 48 execution tests passed, but the aggregate command returned 1 while acceptance evidence was incomplete. Previous results are preserved in runs/verification-04/previous-validation.json, including the earlier passing package invocation. FIND-002 is resolved with actual current remote/public-access evidence; FIND-001 remains open. No pending observation is replaced with structural success.
+All five required checks pass with matching current input snapshots and all 46 local/regression assessments. CHECK-001/004 retain valid verification-04 evidence against unchanged inputs. CHECK-002/003 have verification-05 rendered-page and actual usage evidence. CHECK-005 ran the full package entry point: 131 validator tests and 48 execution tests passed. Previous failed/unverified attempts remain preserved. Before this package execution, its two dependent assessments were explicitly pending rather than assigned an unobserved pass; they are now completed from the actual result. The final archive preflight and post-move checks are recorded in the same verification-05 directory.
 
 ## Delivery
 
-Closure remains active. Draft PRs: https://github.com/versat-labs/versat-ai-harness/pull/33 and https://github.com/versat-labs/.github/pull/3. User authorization covers publication despite missing visual verification; it does not fabricate acceptance evidence. Resolve remaining required verification and prepare archival before marking completed work ready for review/merge. Integrate Harness before the organization change under actual review and final-check authority.
+Coordinated handoff: docs/validation/harness-user-documentation/runs/verification-05/handoff.md. Existing draft PRs are https://github.com/versat-labs/versat-ai-harness/pull/33 and https://github.com/versat-labs/.github/pull/3. The immutable organization documentation target remains 27735687a37e896cd6b0c95cd9d2d848ee166d90. Documentary archive preparation does not claim human PR approval, final remote CI, merge, release or consumer updates. Integrate Harness before the organization change under each repository's actual review and checks; retain the public contribution route and original snapshots for rollback.

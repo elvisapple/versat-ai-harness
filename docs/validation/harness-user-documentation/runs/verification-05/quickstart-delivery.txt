@@ -1,0 +1,6 @@
+SDD validation: fail
+Declared contract checks only; archive inventory is historical unless selected for live delivery. No proof of semantic adequacy, execution authenticity, human identity, remote CI, merge or deployment.
+welcome-message: {"local_scenarios":3,"regression_obligations":1}
+APPROVAL_REQUIRED: /private/tmp/pr33-usage-project/specs/changes/welcome-message/proposal.md: Current proposal approval is required for execution or delivery
+APPROVAL_REQUIRED: /private/tmp/pr33-usage-project/specs/changes/welcome-message/design.md: Current design approval is required for execution or delivery
+APPROVAL_REQUIRED: /private/tmp/pr33-usage-project/specs/changes/welcome-message/tasks.md: Current tasks approval is required for execution or delivery

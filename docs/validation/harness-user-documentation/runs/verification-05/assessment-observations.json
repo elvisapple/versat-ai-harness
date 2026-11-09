@@ -1,0 +1,677 @@
+[
+  {
+    "obligation": {
+      "local": {
+        "requirement": "REQ-001",
+        "scenario": 1
+      }
+    },
+    "result": "pass",
+    "checks": [
+      "CHECK-001"
+    ],
+    "evidence": "docs/validation/harness-user-documentation/runs/verification-04/content-review.md",
+    "explanation": "README retains purpose, persona, owners, version/adoption limits and the runnable package validation entry."
+  },
+  {
+    "obligation": {
+      "local": {
+        "requirement": "REQ-001",
+        "scenario": 2
+      }
+    },
+    "result": "pass",
+    "checks": [
+      "CHECK-002"
+    ],
+    "evidence": "docs/validation/harness-user-documentation/runs/verification-05/navigation-translations.md",
+    "explanation": "Current 39-page link traversal and rendered README locale navigation reach real quickstart/product/guide/SDD destinations."
+  },
+  {
+    "obligation": {
+      "local": {
+        "requirement": "REQ-001",
+        "scenario": 3
+      }
+    },
+    "result": "pass",
+    "checks": [
+      "CHECK-001",
+      "CHECK-004"
+    ],
+    "evidence": "docs/validation/harness-user-documentation/runs/verification-04/content-review.md",
+    "explanation": "README and setup preserve exact provider and package/consumer boundaries; unchanged reviewed content remains bound to the same input digest."
+  },
+  {
+    "obligation": {
+      "local": {
+        "requirement": "REQ-002",
+        "scenario": 1
+      }
+    },
+    "result": "pass",
+    "checks": [
+      "CHECK-001",
+      "CHECK-003"
+    ],
+    "evidence": "docs/validation/harness-user-documentation/runs/verification-05/usage-walkthrough.md",
+    "explanation": "Prepared identity/lock and existing Home page support the bounded planning walkthrough; only Proposal/Requirements exist and app cwd is verified."
+  },
+  {
+    "obligation": {
+      "local": {
+        "requirement": "REQ-002",
+        "scenario": 2
+      }
+    },
+    "result": "pass",
+    "checks": [
+      "CHECK-003"
+    ],
+    "evidence": "docs/validation/harness-user-documentation/runs/verification-05/usage-walkthrough.md",
+    "explanation": "Missing provider path was observed absent and reported as a setup/owner dependency; no replacement pin or fabricated approval was used."
+  },
+  {
+    "obligation": {
+      "local": {
+        "requirement": "REQ-002",
+        "scenario": 3
+      }
+    },
+    "result": "pass",
+    "checks": [
+      "CHECK-001",
+      "CHECK-002"
+    ],
+    "evidence": "docs/validation/harness-user-documentation/runs/verification-05/navigation-translations.md",
+    "explanation": "Rendered quickstart links reach localized focused guides and canonical SDD; organization CONTRIBUTING remains the real external entry."
+  },
+  {
+    "obligation": {
+      "local": {
+        "requirement": "REQ-003",
+        "scenario": 1
+      }
+    },
+    "result": "pass",
+    "checks": [
+      "CHECK-001",
+      "CHECK-003"
+    ],
+    "evidence": "docs/validation/harness-user-documentation/runs/verification-05/usage-walkthrough.md",
+    "explanation": "All eight guide requests were exercised within their documented bounds; workflow-observations records inputs, outputs and recovery."
+  },
+  {
+    "obligation": {
+      "local": {
+        "requirement": "REQ-003",
+        "scenario": 2
+      }
+    },
+    "result": "pass",
+    "checks": [
+      "CHECK-001",
+      "CHECK-002"
+    ],
+    "evidence": "docs/validation/harness-user-documentation/runs/verification-05/navigation-translations.md",
+    "explanation": "Guides retain focused context and links to canonical Skills, process and specialized validation references; traversal reports no invalid destination."
+  },
+  {
+    "obligation": {
+      "local": {
+        "requirement": "REQ-003",
+        "scenario": 3
+      }
+    },
+    "result": "pass",
+    "checks": [
+      "CHECK-001",
+      "CHECK-004"
+    ],
+    "evidence": "docs/validation/harness-user-documentation/runs/verification-04/content-review.md",
+    "explanation": "Unapproved fixture passes planning and fails delivery; current submission still requires archive, PR review and final CI separately."
+  },
+  {
+    "obligation": {
+      "local": {
+        "requirement": "REQ-003",
+        "scenario": 4
+      }
+    },
+    "result": "pass",
+    "checks": [
+      "CHECK-001",
+      "CHECK-003"
+    ],
+    "evidence": "docs/validation/harness-user-documentation/runs/verification-05/usage-walkthrough.md",
+    "explanation": "Observed missing-provider and missing-validation-config cases remain explicit; source-only capability and consumer pin limits are preserved."
+  },
+  {
+    "obligation": {
+      "local": {
+        "requirement": "REQ-004",
+        "scenario": 1
+      }
+    },
+    "result": "pass",
+    "checks": [
+      "CHECK-001"
+    ],
+    "evidence": "docs/validation/harness-user-documentation/runs/verification-04/content-review.md",
+    "explanation": "English product overview identifies ownership, Issue 22, team persona, JTBD and current capabilities; rendered locale peers match."
+  },
+  {
+    "obligation": {
+      "local": {
+        "requirement": "REQ-004",
+        "scenario": 2
+      }
+    },
+    "result": "pass",
+    "checks": [
+      "CHECK-001"
+    ],
+    "evidence": "docs/validation/harness-user-documentation/runs/verification-04/content-review.md",
+    "explanation": "Product topic review retains proportionate alternatives, timing, scalability and impacts; market/revenue metrics are explicitly not established."
+  },
+  {
+    "obligation": {
+      "local": {
+        "requirement": "REQ-004",
+        "scenario": 3
+      }
+    },
+    "result": "pass",
+    "checks": [
+      "CHECK-001"
+    ],
+    "evidence": "docs/validation/harness-user-documentation/runs/verification-04/content-review.md",
+    "explanation": "Product page distinguishes evidence, unknowns and next validation actions; restricted videos are supplemental and not claimed reviewed."
+  },
+  {
+    "obligation": {
+      "local": {
+        "requirement": "REQ-005",
+        "scenario": 1
+      }
+    },
+    "result": "pass",
+    "checks": [
+      "CHECK-002"
+    ],
+    "evidence": "docs/validation/harness-user-documentation/runs/verification-05/navigation-translations.md",
+    "explanation": "Current inventory confirms eleven Harness and two organization EN/PT/ES sets with matching siblings."
+  },
+  {
+    "obligation": {
+      "local": {
+        "requirement": "REQ-005",
+        "scenario": 2
+      }
+    },
+    "result": "pass",
+    "checks": [
+      "CHECK-002"
+    ],
+    "evidence": "docs/validation/harness-user-documentation/runs/verification-05/navigation-translations.md",
+    "explanation": "Locale switches were clicked on rendered README and every local link/anchor was traversed; technical English references are labeled."
+  },
+  {
+    "obligation": {
+      "local": {
+        "requirement": "REQ-005",
+        "scenario": 3
+      }
+    },
+    "result": "pass",
+    "checks": [
+      "CHECK-002"
+    ],
+    "evidence": "docs/validation/harness-user-documentation/runs/verification-05/navigation-translations.md",
+    "explanation": "Unchanged translated sections retain reviewed command identifiers, approval meaning and exact-version boundaries; rendered representatives are readable."
+  },
+  {
+    "obligation": {
+      "local": {
+        "requirement": "REQ-005",
+        "scenario": 4
+      }
+    },
+    "result": "pass",
+    "checks": [
+      "CHECK-002",
+      "CHECK-004"
+    ],
+    "evidence": "docs/validation/harness-user-documentation/runs/verification-05/navigation-translations.md",
+    "explanation": "Organization contribution and README locale sets render the same ownership, public route and private-access boundary; target snapshots match."
+  },
+  {
+    "obligation": {
+      "local": {
+        "requirement": "REQ-006",
+        "scenario": 1
+      }
+    },
+    "result": "pass",
+    "checks": [
+      "CHECK-001"
+    ],
+    "evidence": "docs/validation/harness-user-documentation/runs/verification-04/content-review.md",
+    "explanation": "Issue 22 and the two exact supplemental Slack source URLs remain unchanged and explicitly access restricted/unreviewed."
+  },
+  {
+    "obligation": {
+      "local": {
+        "requirement": "REQ-006",
+        "scenario": 2
+      }
+    },
+    "result": "pass",
+    "checks": [
+      "CHECK-003"
+    ],
+    "evidence": "docs/validation/harness-user-documentation/runs/verification-05/usage-walkthrough.md",
+    "explanation": "Current browser actions, app cwd metadata, synthetic artifact assertions and negative prerequisite runs supply observed usage evidence with explicit limits."
+  },
+  {
+    "obligation": {
+      "local": {
+        "requirement": "REQ-006",
+        "scenario": 3
+      }
+    },
+    "result": "pass",
+    "checks": [
+      "CHECK-001",
+      "CHECK-002",
+      "CHECK-005"
+    ],
+    "evidence": "docs/validation/harness-user-documentation/runs/verification-05/navigation-translations.md",
+    "explanation": "Current links/translations/rendered previews pass; complete package command must pass before this obligation is finalized."
+  },
+  {
+    "obligation": {
+      "local": {
+        "requirement": "REQ-006",
+        "scenario": 4
+      }
+    },
+    "result": "pass",
+    "checks": [
+      "CHECK-002"
+    ],
+    "evidence": "docs/validation/harness-user-documentation/runs/verification-05/navigation-translations.md",
+    "explanation": "Living pages contain neither active nor archive dossier dependencies; local traversal is rerun after the move."
+  },
+  {
+    "obligation": {
+      "local": {
+        "requirement": "REQ-007",
+        "scenario": 1
+      }
+    },
+    "result": "pass",
+    "checks": [
+      "CHECK-001",
+      "CHECK-004"
+    ],
+    "evidence": "docs/validation/harness-user-documentation/runs/verification-04/content-review.md",
+    "explanation": "Organization candidate replaces duplicate internal procedures with reviewed pinned Harness links and retains its own local responsibilities."
+  },
+  {
+    "obligation": {
+      "local": {
+        "requirement": "REQ-007",
+        "scenario": 2
+      }
+    },
+    "result": "pass",
+    "checks": [
+      "CHECK-004"
+    ],
+    "evidence": "docs/validation/harness-user-documentation/runs/verification-04/organization-review.md",
+    "explanation": "Organization snapshot still matches the actual clean checkout; original profile and issue forms are unchanged."
+  },
+  {
+    "obligation": {
+      "local": {
+        "requirement": "REQ-007",
+        "scenario": 3
+      }
+    },
+    "result": "pass",
+    "checks": [
+      "CHECK-004"
+    ],
+    "evidence": "docs/validation/harness-user-documentation/runs/verification-04/organization-review.md",
+    "explanation": "Public CONTRIBUTING snapshot is available without credentials in retained evidence; current rendered page shows repository precedence and a usable public issue route."
+  },
+  {
+    "obligation": {
+      "local": {
+        "requirement": "REQ-007",
+        "scenario": 4
+      }
+    },
+    "result": "pass",
+    "checks": [
+      "CHECK-001",
+      "CHECK-003",
+      "CHECK-004"
+    ],
+    "evidence": "docs/validation/harness-user-documentation/runs/verification-05/usage-walkthrough.md",
+    "explanation": "Setup uses verified app cwd/source paths and official folder documentation; no automatic installation or unobserved native-app operation is claimed."
+  },
+  {
+    "obligation": {
+      "local": {
+        "requirement": "REQ-007",
+        "scenario": 5
+      }
+    },
+    "result": "pass",
+    "checks": [
+      "CHECK-002",
+      "CHECK-004",
+      "CHECK-005"
+    ],
+    "evidence": "docs/validation/harness-user-documentation/runs/verification-05/navigation-translations.md",
+    "explanation": "Both drafts retain Issue 22 linkage and immutable content targets; actual candidate bytes match; local checks/archival precede separately pending review, CI and activation."
+  },
+  {
+    "obligation": {
+      "local": {
+        "requirement": "REQ-007",
+        "scenario": 6
+      }
+    },
+    "result": "pass",
+    "checks": [
+      "CHECK-004"
+    ],
+    "evidence": "docs/validation/harness-user-documentation/runs/verification-04/organization-review.md",
+    "explanation": "Both PRs remain unmerged; earlier missing-target 404/withheld activation is preserved; ordered rollout remains Harness then organization."
+  },
+  {
+    "obligation": {
+      "regression": {
+        "impact": 1,
+        "scenario": 1
+      }
+    },
+    "result": "pass",
+    "checks": [
+      "CHECK-001",
+      "CHECK-003"
+    ],
+    "evidence": "docs/validation/harness-user-documentation/runs/verification-05/usage-walkthrough.md",
+    "explanation": "Bounded quickstart and bootstrap observations preserve useful first-use behavior; empty-scaffold runtime gaps remain explicit."
+  },
+  {
+    "obligation": {
+      "regression": {
+        "impact": 1,
+        "scenario": 2
+      }
+    },
+    "result": "pass",
+    "checks": [
+      "CHECK-001",
+      "CHECK-003"
+    ],
+    "evidence": "docs/validation/harness-user-documentation/runs/verification-05/usage-walkthrough.md",
+    "explanation": "Bounded quickstart and bootstrap observations preserve useful first-use behavior; empty-scaffold runtime gaps remain explicit."
+  },
+  {
+    "obligation": {
+      "regression": {
+        "impact": 1,
+        "scenario": 3
+      }
+    },
+    "result": "pass",
+    "checks": [
+      "CHECK-001",
+      "CHECK-003"
+    ],
+    "evidence": "docs/validation/harness-user-documentation/runs/verification-05/usage-walkthrough.md",
+    "explanation": "Bounded quickstart and bootstrap observations preserve useful first-use behavior; empty-scaffold runtime gaps remain explicit."
+  },
+  {
+    "obligation": {
+      "regression": {
+        "impact": 2,
+        "scenario": 1
+      }
+    },
+    "result": "pass",
+    "checks": [
+      "CHECK-002"
+    ],
+    "evidence": "docs/validation/harness-user-documentation/runs/verification-05/navigation-translations.md",
+    "explanation": "Current 39-page local traversal, locale previews and archive-independent paths preserve focused living-guide navigation."
+  },
+  {
+    "obligation": {
+      "regression": {
+        "impact": 2,
+        "scenario": 2
+      }
+    },
+    "result": "pass",
+    "checks": [
+      "CHECK-002"
+    ],
+    "evidence": "docs/validation/harness-user-documentation/runs/verification-05/navigation-translations.md",
+    "explanation": "Current 39-page local traversal, locale previews and archive-independent paths preserve focused living-guide navigation."
+  },
+  {
+    "obligation": {
+      "regression": {
+        "impact": 2,
+        "scenario": 3
+      }
+    },
+    "result": "pass",
+    "checks": [
+      "CHECK-002"
+    ],
+    "evidence": "docs/validation/harness-user-documentation/runs/verification-05/navigation-translations.md",
+    "explanation": "Current 39-page local traversal, locale previews and archive-independent paths preserve focused living-guide navigation."
+  },
+  {
+    "obligation": {
+      "regression": {
+        "impact": 2,
+        "scenario": 4
+      }
+    },
+    "result": "pass",
+    "checks": [
+      "CHECK-002"
+    ],
+    "evidence": "docs/validation/harness-user-documentation/runs/verification-05/navigation-translations.md",
+    "explanation": "Current 39-page local traversal, locale previews and archive-independent paths preserve focused living-guide navigation."
+  },
+  {
+    "obligation": {
+      "regression": {
+        "impact": 3,
+        "scenario": 1
+      }
+    },
+    "result": "pass",
+    "checks": [
+      "CHECK-001",
+      "CHECK-003"
+    ],
+    "evidence": "docs/validation/harness-user-documentation/runs/verification-05/usage-walkthrough.md",
+    "explanation": "Status and planning requests use the single versat-sdd entry, read the matching canonical phase and stop at the actual approval gate."
+  },
+  {
+    "obligation": {
+      "regression": {
+        "impact": 3,
+        "scenario": 2
+      }
+    },
+    "result": "pass",
+    "checks": [
+      "CHECK-001",
+      "CHECK-003"
+    ],
+    "evidence": "docs/validation/harness-user-documentation/runs/verification-05/usage-walkthrough.md",
+    "explanation": "Status and planning requests use the single versat-sdd entry, read the matching canonical phase and stop at the actual approval gate."
+  },
+  {
+    "obligation": {
+      "regression": {
+        "impact": 4,
+        "scenario": 1
+      }
+    },
+    "result": "pass",
+    "checks": [
+      "CHECK-001",
+      "CHECK-002",
+      "CHECK-003"
+    ],
+    "evidence": "docs/validation/harness-user-documentation/runs/verification-05/usage-walkthrough.md",
+    "explanation": "Fixture output has null approval and no Design/Tasks; delivery rejects execution without approvals, while translations retain the same boundary."
+  },
+  {
+    "obligation": {
+      "regression": {
+        "impact": 4,
+        "scenario": 2
+      }
+    },
+    "result": "pass",
+    "checks": [
+      "CHECK-001",
+      "CHECK-002",
+      "CHECK-003"
+    ],
+    "evidence": "docs/validation/harness-user-documentation/runs/verification-05/usage-walkthrough.md",
+    "explanation": "Fixture output has null approval and no Design/Tasks; delivery rejects execution without approvals, while translations retain the same boundary."
+  },
+  {
+    "obligation": {
+      "regression": {
+        "impact": 5,
+        "scenario": 1
+      }
+    },
+    "result": "pass",
+    "checks": [
+      "CHECK-001",
+      "CHECK-004"
+    ],
+    "evidence": "docs/validation/harness-user-documentation/runs/verification-04/content-review.md",
+    "explanation": "Delivery-summary check identifies missing approvals/archive, and the real final preflight remains required; local closure is not merge."
+  },
+  {
+    "obligation": {
+      "regression": {
+        "impact": 5,
+        "scenario": 2
+      }
+    },
+    "result": "pass",
+    "checks": [
+      "CHECK-001",
+      "CHECK-004"
+    ],
+    "evidence": "docs/validation/harness-user-documentation/runs/verification-04/content-review.md",
+    "explanation": "Delivery-summary check identifies missing approvals/archive, and the real final preflight remains required; local closure is not merge."
+  },
+  {
+    "obligation": {
+      "regression": {
+        "impact": 6,
+        "scenario": 0
+      }
+    },
+    "result": "pass",
+    "checks": [
+      "CHECK-002"
+    ],
+    "evidence": "docs/validation/harness-user-documentation/runs/verification-05/navigation-translations.md",
+    "explanation": "All thirteen locale sets retain reviewed semantic parity; representative page types in each language were visually inspected."
+  },
+  {
+    "obligation": {
+      "regression": {
+        "impact": 7,
+        "scenario": 1
+      }
+    },
+    "result": "pass",
+    "checks": [
+      "CHECK-003",
+      "CHECK-004"
+    ],
+    "evidence": "docs/validation/harness-user-documentation/runs/verification-05/usage-walkthrough.md",
+    "explanation": "Current observed browser/runtime actions and independent artifacts replace earlier unavailable observations; unavailable native control is explicit, with app metadata used only for the cwd fact."
+  },
+  {
+    "obligation": {
+      "regression": {
+        "impact": 7,
+        "scenario": 2
+      }
+    },
+    "result": "pass",
+    "checks": [
+      "CHECK-003",
+      "CHECK-004"
+    ],
+    "evidence": "docs/validation/harness-user-documentation/runs/verification-05/usage-walkthrough.md",
+    "explanation": "Current observed browser/runtime actions and independent artifacts replace earlier unavailable observations; unavailable native control is explicit, with app metadata used only for the cwd fact."
+  },
+  {
+    "obligation": {
+      "regression": {
+        "impact": 7,
+        "scenario": 3
+      }
+    },
+    "result": "pass",
+    "checks": [
+      "CHECK-003",
+      "CHECK-004"
+    ],
+    "evidence": "docs/validation/harness-user-documentation/runs/verification-05/usage-walkthrough.md",
+    "explanation": "Current observed browser/runtime actions and independent artifacts replace earlier unavailable observations; unavailable native control is explicit, with app metadata used only for the cwd fact."
+  },
+  {
+    "obligation": {
+      "regression": {
+        "impact": 7,
+        "scenario": 4
+      }
+    },
+    "result": "pass",
+    "checks": [
+      "CHECK-003",
+      "CHECK-004"
+    ],
+    "evidence": "docs/validation/harness-user-documentation/runs/verification-05/usage-walkthrough.md",
+    "explanation": "Current observed browser/runtime actions and independent artifacts replace earlier unavailable observations; unavailable native control is explicit, with app metadata used only for the cwd fact."
+  },
+  {
+    "obligation": {
+      "regression": {
+        "impact": 8,
+        "scenario": 0
+      }
+    },
+    "result": "pass",
+    "checks": [
+      "CHECK-002",
+      "CHECK-004"
+    ],
+    "evidence": "docs/validation/harness-user-documentation/runs/verification-05/navigation-translations.md",
+    "explanation": "Organization identity, public entry and exact private targets remain coherent and byte-bound; activation still waits for both reviewed deliveries."
+  }
+]

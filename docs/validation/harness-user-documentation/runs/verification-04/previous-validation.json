@@ -1,0 +1,782 @@
+{
+  "plan_digest": "3cfecbf06713997419537a7de6ab0e33e308641b0c37ad3ee68b078cf6e20a33",
+  "results": [
+    {
+      "check": "CHECK-001",
+      "result": "pass",
+      "evidence": "docs/validation/harness-user-documentation/runs/verification-02/content-review.md",
+      "revision": "ec1324c with unchanged source; verification-02 current working-tree review",
+      "input_digest_before": "0d7fefb7cf9a66f598503235df386dc19dbae2c6f2ab78fe6b7e578ab4b46037",
+      "input_digest_after": "0d7fefb7cf9a66f598503235df386dc19dbae2c6f2ab78fe6b7e578ab4b46037",
+      "context": {
+        "execution": "local",
+        "environment": "Python 3.11.4, Darwin; Codex local shell available; CUA reports Mac locked/browser disabled; GitHub target ref returns 404",
+        "observed": true
+      }
+    },
+    {
+      "check": "CHECK-002",
+      "result": "unverified",
+      "evidence": "docs/validation/harness-user-documentation/runs/verification-02/navigation-translations.md",
+      "revision": "ec1324c with unchanged source; verification-02 current working-tree review",
+      "input_digest_before": "0d7fefb7cf9a66f598503235df386dc19dbae2c6f2ab78fe6b7e578ab4b46037",
+      "input_digest_after": "0d7fefb7cf9a66f598503235df386dc19dbae2c6f2ab78fe6b7e578ab4b46037",
+      "context": {
+        "execution": "local",
+        "environment": "Python 3.11.4, Darwin; Codex local shell available; CUA reports Mac locked/browser disabled; GitHub target ref returns 404",
+        "observed": true
+      }
+    },
+    {
+      "check": "CHECK-003",
+      "result": "unverified",
+      "evidence": "docs/validation/harness-user-documentation/runs/verification-02/usage-walkthrough.md",
+      "revision": "ec1324c with unchanged source; verification-02 current working-tree review",
+      "input_digest_before": "0d7fefb7cf9a66f598503235df386dc19dbae2c6f2ab78fe6b7e578ab4b46037",
+      "input_digest_after": "0d7fefb7cf9a66f598503235df386dc19dbae2c6f2ab78fe6b7e578ab4b46037",
+      "context": {
+        "execution": "local",
+        "environment": "Python 3.11.4, Darwin; Codex local shell available; CUA reports Mac locked/browser disabled; GitHub target ref returns 404",
+        "observed": true
+      }
+    },
+    {
+      "check": "CHECK-004",
+      "result": "unverified",
+      "evidence": "docs/validation/harness-user-documentation/runs/verification-02/organization-review.md",
+      "revision": "ec1324c with unchanged source; verification-02 current working-tree review",
+      "input_digest_before": "0d7fefb7cf9a66f598503235df386dc19dbae2c6f2ab78fe6b7e578ab4b46037",
+      "input_digest_after": "0d7fefb7cf9a66f598503235df386dc19dbae2c6f2ab78fe6b7e578ab4b46037",
+      "context": {
+        "execution": "local",
+        "environment": "Python 3.11.4, Darwin; Codex local shell available; CUA reports Mac locked/browser disabled; GitHub target ref returns 404",
+        "observed": true
+      }
+    },
+    {
+      "check": "CHECK-005",
+      "result": "pass",
+      "evidence": "docs/validation/harness-user-documentation/runs/verification-02/package-validation.txt",
+      "revision": "ec1324c with unchanged source; verification-02 current working-tree review",
+      "input_digest_before": "0d7fefb7cf9a66f598503235df386dc19dbae2c6f2ab78fe6b7e578ab4b46037",
+      "input_digest_after": "0d7fefb7cf9a66f598503235df386dc19dbae2c6f2ab78fe6b7e578ab4b46037",
+      "context": {
+        "execution": "local",
+        "environment": "Python 3.11.4, Darwin; Codex local shell available; CUA reports Mac locked/browser disabled; GitHub target ref returns 404",
+        "observed": true
+      }
+    }
+  ],
+  "assessments": [
+    {
+      "obligation": {
+        "local": {
+          "requirement": "REQ-001",
+          "scenario": 1
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-001"
+      ],
+      "evidence": "docs/validation/harness-user-documentation/runs/verification-02/content-review.md",
+      "explanation": "Reviewed content matches the stated scenario."
+    },
+    {
+      "obligation": {
+        "local": {
+          "requirement": "REQ-001",
+          "scenario": 2
+        }
+      },
+      "result": "unverified",
+      "checks": [
+        "CHECK-002"
+      ],
+      "evidence": "docs/validation/harness-user-documentation/runs/verification-02/navigation-translations.md",
+      "explanation": "Local content/navigation evidence exists, but one or more required rendered, usage or published-target observations remain unavailable; see mapped check reports."
+    },
+    {
+      "obligation": {
+        "local": {
+          "requirement": "REQ-001",
+          "scenario": 3
+        }
+      },
+      "result": "unverified",
+      "checks": [
+        "CHECK-001",
+        "CHECK-004"
+      ],
+      "evidence": "docs/validation/harness-user-documentation/runs/verification-02/content-review.md",
+      "explanation": "Local content/navigation evidence exists, but one or more required rendered, usage or published-target observations remain unavailable; see mapped check reports."
+    },
+    {
+      "obligation": {
+        "local": {
+          "requirement": "REQ-002",
+          "scenario": 1
+        }
+      },
+      "result": "unverified",
+      "checks": [
+        "CHECK-001",
+        "CHECK-003"
+      ],
+      "evidence": "docs/validation/harness-user-documentation/runs/verification-02/content-review.md",
+      "explanation": "Local content/navigation evidence exists, but one or more required rendered, usage or published-target observations remain unavailable; see mapped check reports."
+    },
+    {
+      "obligation": {
+        "local": {
+          "requirement": "REQ-002",
+          "scenario": 2
+        }
+      },
+      "result": "unverified",
+      "checks": [
+        "CHECK-003"
+      ],
+      "evidence": "docs/validation/harness-user-documentation/runs/verification-02/usage-walkthrough.md",
+      "explanation": "Local content/navigation evidence exists, but one or more required rendered, usage or published-target observations remain unavailable; see mapped check reports."
+    },
+    {
+      "obligation": {
+        "local": {
+          "requirement": "REQ-002",
+          "scenario": 3
+        }
+      },
+      "result": "unverified",
+      "checks": [
+        "CHECK-001",
+        "CHECK-002"
+      ],
+      "evidence": "docs/validation/harness-user-documentation/runs/verification-02/content-review.md",
+      "explanation": "Local content/navigation evidence exists, but one or more required rendered, usage or published-target observations remain unavailable; see mapped check reports."
+    },
+    {
+      "obligation": {
+        "local": {
+          "requirement": "REQ-003",
+          "scenario": 1
+        }
+      },
+      "result": "unverified",
+      "checks": [
+        "CHECK-001",
+        "CHECK-003"
+      ],
+      "evidence": "docs/validation/harness-user-documentation/runs/verification-02/content-review.md",
+      "explanation": "Local content/navigation evidence exists, but one or more required rendered, usage or published-target observations remain unavailable; see mapped check reports."
+    },
+    {
+      "obligation": {
+        "local": {
+          "requirement": "REQ-003",
+          "scenario": 2
+        }
+      },
+      "result": "unverified",
+      "checks": [
+        "CHECK-001",
+        "CHECK-002"
+      ],
+      "evidence": "docs/validation/harness-user-documentation/runs/verification-02/content-review.md",
+      "explanation": "Local content/navigation evidence exists, but one or more required rendered, usage or published-target observations remain unavailable; see mapped check reports."
+    },
+    {
+      "obligation": {
+        "local": {
+          "requirement": "REQ-003",
+          "scenario": 3
+        }
+      },
+      "result": "unverified",
+      "checks": [
+        "CHECK-001",
+        "CHECK-004"
+      ],
+      "evidence": "docs/validation/harness-user-documentation/runs/verification-02/content-review.md",
+      "explanation": "Local content/navigation evidence exists, but one or more required rendered, usage or published-target observations remain unavailable; see mapped check reports."
+    },
+    {
+      "obligation": {
+        "local": {
+          "requirement": "REQ-003",
+          "scenario": 4
+        }
+      },
+      "result": "unverified",
+      "checks": [
+        "CHECK-001",
+        "CHECK-003"
+      ],
+      "evidence": "docs/validation/harness-user-documentation/runs/verification-02/content-review.md",
+      "explanation": "Local content/navigation evidence exists, but one or more required rendered, usage or published-target observations remain unavailable; see mapped check reports."
+    },
+    {
+      "obligation": {
+        "local": {
+          "requirement": "REQ-004",
+          "scenario": 1
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-001"
+      ],
+      "evidence": "docs/validation/harness-user-documentation/runs/verification-02/content-review.md",
+      "explanation": "Reviewed content matches the stated scenario."
+    },
+    {
+      "obligation": {
+        "local": {
+          "requirement": "REQ-004",
+          "scenario": 2
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-001"
+      ],
+      "evidence": "docs/validation/harness-user-documentation/runs/verification-02/content-review.md",
+      "explanation": "Reviewed content matches the stated scenario."
+    },
+    {
+      "obligation": {
+        "local": {
+          "requirement": "REQ-004",
+          "scenario": 3
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-001"
+      ],
+      "evidence": "docs/validation/harness-user-documentation/runs/verification-02/content-review.md",
+      "explanation": "Reviewed content matches the stated scenario."
+    },
+    {
+      "obligation": {
+        "local": {
+          "requirement": "REQ-005",
+          "scenario": 1
+        }
+      },
+      "result": "unverified",
+      "checks": [
+        "CHECK-002"
+      ],
+      "evidence": "docs/validation/harness-user-documentation/runs/verification-02/navigation-translations.md",
+      "explanation": "Local content/navigation evidence exists, but one or more required rendered, usage or published-target observations remain unavailable; see mapped check reports."
+    },
+    {
+      "obligation": {
+        "local": {
+          "requirement": "REQ-005",
+          "scenario": 2
+        }
+      },
+      "result": "unverified",
+      "checks": [
+        "CHECK-002"
+      ],
+      "evidence": "docs/validation/harness-user-documentation/runs/verification-02/navigation-translations.md",
+      "explanation": "Local content/navigation evidence exists, but one or more required rendered, usage or published-target observations remain unavailable; see mapped check reports."
+    },
+    {
+      "obligation": {
+        "local": {
+          "requirement": "REQ-005",
+          "scenario": 3
+        }
+      },
+      "result": "unverified",
+      "checks": [
+        "CHECK-002"
+      ],
+      "evidence": "docs/validation/harness-user-documentation/runs/verification-02/navigation-translations.md",
+      "explanation": "Local content/navigation evidence exists, but one or more required rendered, usage or published-target observations remain unavailable; see mapped check reports."
+    },
+    {
+      "obligation": {
+        "local": {
+          "requirement": "REQ-005",
+          "scenario": 4
+        }
+      },
+      "result": "unverified",
+      "checks": [
+        "CHECK-002",
+        "CHECK-004"
+      ],
+      "evidence": "docs/validation/harness-user-documentation/runs/verification-02/navigation-translations.md",
+      "explanation": "Local content/navigation evidence exists, but one or more required rendered, usage or published-target observations remain unavailable; see mapped check reports."
+    },
+    {
+      "obligation": {
+        "local": {
+          "requirement": "REQ-006",
+          "scenario": 1
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-001"
+      ],
+      "evidence": "docs/validation/harness-user-documentation/runs/verification-02/content-review.md",
+      "explanation": "Reviewed content matches the stated scenario."
+    },
+    {
+      "obligation": {
+        "local": {
+          "requirement": "REQ-006",
+          "scenario": 2
+        }
+      },
+      "result": "unverified",
+      "checks": [
+        "CHECK-003"
+      ],
+      "evidence": "docs/validation/harness-user-documentation/runs/verification-02/usage-walkthrough.md",
+      "explanation": "Local content/navigation evidence exists, but one or more required rendered, usage or published-target observations remain unavailable; see mapped check reports."
+    },
+    {
+      "obligation": {
+        "local": {
+          "requirement": "REQ-006",
+          "scenario": 3
+        }
+      },
+      "result": "unverified",
+      "checks": [
+        "CHECK-001",
+        "CHECK-002",
+        "CHECK-005"
+      ],
+      "evidence": "docs/validation/harness-user-documentation/runs/verification-02/content-review.md",
+      "explanation": "Local content/navigation evidence exists, but one or more required rendered, usage or published-target observations remain unavailable; see mapped check reports."
+    },
+    {
+      "obligation": {
+        "local": {
+          "requirement": "REQ-006",
+          "scenario": 4
+        }
+      },
+      "result": "unverified",
+      "checks": [
+        "CHECK-002"
+      ],
+      "evidence": "docs/validation/harness-user-documentation/runs/verification-02/navigation-translations.md",
+      "explanation": "Local content/navigation evidence exists, but one or more required rendered, usage or published-target observations remain unavailable; see mapped check reports."
+    },
+    {
+      "obligation": {
+        "local": {
+          "requirement": "REQ-007",
+          "scenario": 1
+        }
+      },
+      "result": "unverified",
+      "checks": [
+        "CHECK-001",
+        "CHECK-004"
+      ],
+      "evidence": "docs/validation/harness-user-documentation/runs/verification-02/content-review.md",
+      "explanation": "Local content/navigation evidence exists, but one or more required rendered, usage or published-target observations remain unavailable; see mapped check reports."
+    },
+    {
+      "obligation": {
+        "local": {
+          "requirement": "REQ-007",
+          "scenario": 2
+        }
+      },
+      "result": "unverified",
+      "checks": [
+        "CHECK-004"
+      ],
+      "evidence": "docs/validation/harness-user-documentation/runs/verification-02/organization-review.md",
+      "explanation": "Local content/navigation evidence exists, but one or more required rendered, usage or published-target observations remain unavailable; see mapped check reports."
+    },
+    {
+      "obligation": {
+        "local": {
+          "requirement": "REQ-007",
+          "scenario": 3
+        }
+      },
+      "result": "unverified",
+      "checks": [
+        "CHECK-004"
+      ],
+      "evidence": "docs/validation/harness-user-documentation/runs/verification-02/organization-review.md",
+      "explanation": "Local content/navigation evidence exists, but one or more required rendered, usage or published-target observations remain unavailable; see mapped check reports."
+    },
+    {
+      "obligation": {
+        "local": {
+          "requirement": "REQ-007",
+          "scenario": 4
+        }
+      },
+      "result": "unverified",
+      "checks": [
+        "CHECK-001",
+        "CHECK-003",
+        "CHECK-004"
+      ],
+      "evidence": "docs/validation/harness-user-documentation/runs/verification-02/content-review.md",
+      "explanation": "Local content/navigation evidence exists, but one or more required rendered, usage or published-target observations remain unavailable; see mapped check reports."
+    },
+    {
+      "obligation": {
+        "local": {
+          "requirement": "REQ-007",
+          "scenario": 5
+        }
+      },
+      "result": "unverified",
+      "checks": [
+        "CHECK-002",
+        "CHECK-004",
+        "CHECK-005"
+      ],
+      "evidence": "docs/validation/harness-user-documentation/runs/verification-02/navigation-translations.md",
+      "explanation": "Local content/navigation evidence exists, but one or more required rendered, usage or published-target observations remain unavailable; see mapped check reports."
+    },
+    {
+      "obligation": {
+        "local": {
+          "requirement": "REQ-007",
+          "scenario": 6
+        }
+      },
+      "result": "unverified",
+      "checks": [
+        "CHECK-004"
+      ],
+      "evidence": "docs/validation/harness-user-documentation/runs/verification-02/organization-review.md",
+      "explanation": "Local content/navigation evidence exists, but one or more required rendered, usage or published-target observations remain unavailable; see mapped check reports."
+    },
+    {
+      "obligation": {
+        "regression": {
+          "impact": 1,
+          "scenario": 1
+        }
+      },
+      "result": "unverified",
+      "checks": [
+        "CHECK-001",
+        "CHECK-003"
+      ],
+      "evidence": "docs/validation/harness-user-documentation/runs/verification-02/content-review.md",
+      "explanation": "Retain useful first-use coverage, reuse and avoidance of empty or fictional guidance. Retained obligation remains unverified because a required mapped observation is missing."
+    },
+    {
+      "obligation": {
+        "regression": {
+          "impact": 1,
+          "scenario": 2
+        }
+      },
+      "result": "unverified",
+      "checks": [
+        "CHECK-001",
+        "CHECK-003"
+      ],
+      "evidence": "docs/validation/harness-user-documentation/runs/verification-02/content-review.md",
+      "explanation": "Retain useful first-use coverage, reuse and avoidance of empty or fictional guidance. Retained obligation remains unverified because a required mapped observation is missing."
+    },
+    {
+      "obligation": {
+        "regression": {
+          "impact": 1,
+          "scenario": 3
+        }
+      },
+      "result": "unverified",
+      "checks": [
+        "CHECK-001",
+        "CHECK-003"
+      ],
+      "evidence": "docs/validation/harness-user-documentation/runs/verification-02/content-review.md",
+      "explanation": "Retain useful first-use coverage, reuse and avoidance of empty or fictional guidance. Retained obligation remains unverified because a required mapped observation is missing."
+    },
+    {
+      "obligation": {
+        "regression": {
+          "impact": 2,
+          "scenario": 1
+        }
+      },
+      "result": "unverified",
+      "checks": [
+        "CHECK-002"
+      ],
+      "evidence": "docs/validation/harness-user-documentation/runs/verification-02/navigation-translations.md",
+      "explanation": "Retain actual README destinations, proportional guide structure, shared setup links and archive-independent navigation. Retained obligation remains unverified because a required mapped observation is missing."
+    },
+    {
+      "obligation": {
+        "regression": {
+          "impact": 2,
+          "scenario": 2
+        }
+      },
+      "result": "unverified",
+      "checks": [
+        "CHECK-002"
+      ],
+      "evidence": "docs/validation/harness-user-documentation/runs/verification-02/navigation-translations.md",
+      "explanation": "Retain actual README destinations, proportional guide structure, shared setup links and archive-independent navigation. Retained obligation remains unverified because a required mapped observation is missing."
+    },
+    {
+      "obligation": {
+        "regression": {
+          "impact": 2,
+          "scenario": 3
+        }
+      },
+      "result": "unverified",
+      "checks": [
+        "CHECK-002"
+      ],
+      "evidence": "docs/validation/harness-user-documentation/runs/verification-02/navigation-translations.md",
+      "explanation": "Retain actual README destinations, proportional guide structure, shared setup links and archive-independent navigation. Retained obligation remains unverified because a required mapped observation is missing."
+    },
+    {
+      "obligation": {
+        "regression": {
+          "impact": 2,
+          "scenario": 4
+        }
+      },
+      "result": "unverified",
+      "checks": [
+        "CHECK-002"
+      ],
+      "evidence": "docs/validation/harness-user-documentation/runs/verification-02/navigation-translations.md",
+      "explanation": "Retain actual README destinations, proportional guide structure, shared setup links and archive-independent navigation. Retained obligation remains unverified because a required mapped observation is missing."
+    },
+    {
+      "obligation": {
+        "regression": {
+          "impact": 3,
+          "scenario": 1
+        }
+      },
+      "result": "unverified",
+      "checks": [
+        "CHECK-001",
+        "CHECK-003"
+      ],
+      "evidence": "docs/validation/harness-user-documentation/runs/verification-02/content-review.md",
+      "explanation": "Retain the single SDD entry point and phase-specific expected outcomes. Retained obligation remains unverified because a required mapped observation is missing."
+    },
+    {
+      "obligation": {
+        "regression": {
+          "impact": 3,
+          "scenario": 2
+        }
+      },
+      "result": "unverified",
+      "checks": [
+        "CHECK-001",
+        "CHECK-003"
+      ],
+      "evidence": "docs/validation/harness-user-documentation/runs/verification-02/content-review.md",
+      "explanation": "Retain the single SDD entry point and phase-specific expected outcomes. Retained obligation remains unverified because a required mapped observation is missing."
+    },
+    {
+      "obligation": {
+        "regression": {
+          "impact": 4,
+          "scenario": 1
+        }
+      },
+      "result": "unverified",
+      "checks": [
+        "CHECK-001",
+        "CHECK-002",
+        "CHECK-003"
+      ],
+      "evidence": "docs/validation/harness-user-documentation/runs/verification-02/content-review.md",
+      "explanation": "Retain real human approval and separate execution authority in English and translations. Retained obligation remains unverified because a required mapped observation is missing."
+    },
+    {
+      "obligation": {
+        "regression": {
+          "impact": 4,
+          "scenario": 2
+        }
+      },
+      "result": "unverified",
+      "checks": [
+        "CHECK-001",
+        "CHECK-002",
+        "CHECK-003"
+      ],
+      "evidence": "docs/validation/harness-user-documentation/runs/verification-02/content-review.md",
+      "explanation": "Retain real human approval and separate execution authority in English and translations. Retained obligation remains unverified because a required mapped observation is missing."
+    },
+    {
+      "obligation": {
+        "regression": {
+          "impact": 5,
+          "scenario": 1
+        }
+      },
+      "result": "unverified",
+      "checks": [
+        "CHECK-001",
+        "CHECK-004"
+      ],
+      "evidence": "docs/validation/harness-user-documentation/runs/verification-02/content-review.md",
+      "explanation": "Retain pre-submission archive prerequisites and separate observed merge from local readiness. Retained obligation remains unverified because a required mapped observation is missing."
+    },
+    {
+      "obligation": {
+        "regression": {
+          "impact": 5,
+          "scenario": 2
+        }
+      },
+      "result": "unverified",
+      "checks": [
+        "CHECK-001",
+        "CHECK-004"
+      ],
+      "evidence": "docs/validation/harness-user-documentation/runs/verification-02/content-review.md",
+      "explanation": "Retain pre-submission archive prerequisites and separate observed merge from local readiness. Retained obligation remains unverified because a required mapped observation is missing."
+    },
+    {
+      "obligation": {
+        "regression": {
+          "impact": 6,
+          "scenario": 0
+        }
+      },
+      "result": "unverified",
+      "checks": [
+        "CHECK-002"
+      ],
+      "evidence": "docs/validation/harness-user-documentation/runs/verification-02/navigation-translations.md",
+      "explanation": "Retain the current English/PT/ES translation contract. Retained obligation remains unverified because a required mapped observation is missing."
+    },
+    {
+      "obligation": {
+        "regression": {
+          "impact": 7,
+          "scenario": 1
+        }
+      },
+      "result": "unverified",
+      "checks": [
+        "CHECK-003",
+        "CHECK-004"
+      ],
+      "evidence": "docs/validation/harness-user-documentation/runs/verification-02/usage-walkthrough.md",
+      "explanation": "Retain observed command/UI verification, honest unavailable evidence and adequate evidence reuse. Retained obligation remains unverified because a required mapped observation is missing."
+    },
+    {
+      "obligation": {
+        "regression": {
+          "impact": 7,
+          "scenario": 2
+        }
+      },
+      "result": "unverified",
+      "checks": [
+        "CHECK-003",
+        "CHECK-004"
+      ],
+      "evidence": "docs/validation/harness-user-documentation/runs/verification-02/usage-walkthrough.md",
+      "explanation": "Retain observed command/UI verification, honest unavailable evidence and adequate evidence reuse. Retained obligation remains unverified because a required mapped observation is missing."
+    },
+    {
+      "obligation": {
+        "regression": {
+          "impact": 7,
+          "scenario": 3
+        }
+      },
+      "result": "unverified",
+      "checks": [
+        "CHECK-003",
+        "CHECK-004"
+      ],
+      "evidence": "docs/validation/harness-user-documentation/runs/verification-02/usage-walkthrough.md",
+      "explanation": "Retain observed command/UI verification, honest unavailable evidence and adequate evidence reuse. Retained obligation remains unverified because a required mapped observation is missing."
+    },
+    {
+      "obligation": {
+        "regression": {
+          "impact": 7,
+          "scenario": 4
+        }
+      },
+      "result": "unverified",
+      "checks": [
+        "CHECK-003",
+        "CHECK-004"
+      ],
+      "evidence": "docs/validation/harness-user-documentation/runs/verification-02/usage-walkthrough.md",
+      "explanation": "Retain observed command/UI verification, honest unavailable evidence and adequate evidence reuse. Retained obligation remains unverified because a required mapped observation is missing."
+    },
+    {
+      "obligation": {
+        "regression": {
+          "impact": 8,
+          "scenario": 0
+        }
+      },
+      "result": "unverified",
+      "checks": [
+        "CHECK-002",
+        "CHECK-004"
+      ],
+      "evidence": "docs/validation/harness-user-documentation/runs/verification-02/navigation-translations.md",
+      "explanation": "Retain organization-specific and public contribution behavior while consolidating detailed instructions. Retained obligation remains unverified because a required mapped observation is missing."
+    }
+  ],
+  "findings": [
+    {
+      "id": "FIND-001",
+      "source": {
+        "plan": "Rendered navigation and desktop usage observations"
+      },
+      "category": "partial",
+      "state": "open",
+      "evidence": "docs/validation/harness-user-documentation/runs/verification-02/navigation-translations.md",
+      "description": "After user confirmation and runtime reset, CUA still reports Mac locked and local browser use disabled; representative visual and complete usage observations are unavailable.",
+      "tasks": [
+        "TASK-006"
+      ],
+      "checks": [
+        "CHECK-002",
+        "CHECK-003"
+      ]
+    },
+    {
+      "id": "FIND-002",
+      "source": {
+        "plan": "Published immutable Harness destinations and intended-reader access"
+      },
+      "category": "missing",
+      "state": "open",
+      "evidence": "docs/validation/harness-user-documentation/runs/publication-03/publication.json",
+      "description": "Source publication is now authorized and observed; all 16 unique linked files were fetched at the exact commit and compared with local content. Full CHECK-004 evidence, intended-reader/public-path observations and coordinated delivery assessment remain pending.",
+      "tasks": [
+        "TASK-007"
+      ],
+      "checks": [
+        "CHECK-004"
+      ]
+    }
+  ]
+}

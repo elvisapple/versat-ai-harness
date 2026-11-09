@@ -1,0 +1,28 @@
+{
+  "repository": "versat-labs/.github",
+  "source": "GitHub connector default-branch file exports, 2026-11-08",
+  "working_copy": "/tmp/versat-issue22-organization",
+  "local_base_is_export_not_remote_commit": true,
+  "candidate_files": {
+    "README.es.md": "6f348544e6ca51a0ef523f8de5d54cee4ec9aef93b480285e7c6417f7a5e3f6c",
+    "CONTRIBUTING.es.md": "61c07ffab3f5c444a824bec4fdc7882102a38ba2220666b87f493f455cdbc465",
+    "CONTRIBUTING.pt.md": "0ea27ac2d74885ecfa29957d46843b418f4af27d26f45bc85a7ddf9e7db06d1b",
+    "README.md": "9e8146d9ac7beec68bb91d4e2a3baddd1028e30c20017fa92fb56bd2dd129a36",
+    ".gitignore": "520b2119df8cf47aa9533237314859bb50ce5d4f927ac665270310c15e0ee6c7",
+    "CONTRIBUTING.md": "b2260af52b83364d4c7b3f13f3befbb4110b6f1d389f1cda7720696683c86bf1",
+    "README.pt.md": "872e4f3d22f78e4c4268e57a2e6fe669f3a8d1ff4a9b4016e160ad6dfc8a7d2c",
+    "AGENTS.md": "32712e0dd8fac7cae467fece85fb553fcc6f7995a83be3b8d5a16fd2e5b7e7d5",
+    "profile/README.md": "aa5d51b889d36b2fb301ddf87cb4cadce97a1a0e0f1fcf82a668a6426533e98c",
+    ".github/ISSUE_TEMPLATE/bug_report.yaml": "d2d81baffa9a6ddb4a2af16ccba7a889dcd2f93654eacf280bed11ff1687c622",
+    ".github/ISSUE_TEMPLATE/chore.yaml": "6496caaa3eb28c9dbbe58ec471cc61d2938fb15f2fa92a89154e29dc3c3c1eb6",
+    ".github/ISSUE_TEMPLATE/feature_request.yaml": "9426e3de0fa1a2c0d843fa3d5c5432ef2618a17190c632bcff26686565134722"
+  },
+  "unchanged": {
+    "profile/README.md": true,
+    ".github/ISSUE_TEMPLATE/bug_report.yaml": true,
+    ".github/ISSUE_TEMPLATE/chore.yaml": true,
+    ".github/ISSUE_TEMPLATE/feature_request.yaml": true
+  },
+  "harness_target_commit": "27735687a37e896cd6b0c95cd9d2d848ee166d90",
+  "target_is_published": false
+}

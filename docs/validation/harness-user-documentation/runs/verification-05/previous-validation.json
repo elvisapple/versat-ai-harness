@@ -1,0 +1,783 @@
+{
+  "plan_digest": "3cfecbf06713997419537a7de6ab0e33e308641b0c37ad3ee68b078cf6e20a33",
+  "results": [
+    {
+      "check": "CHECK-001",
+      "result": "pass",
+      "evidence": "docs/validation/harness-user-documentation/runs/verification-04/content-review.md",
+      "revision": "f28ac5c with observed published-target input snapshots; verification-04",
+      "input_digest_before": "b3355bcb615e3b2020f9302c7764ccb7fff134564c6be93377965bf2e293086a",
+      "input_digest_after": "b3355bcb615e3b2020f9302c7764ccb7fff134564c6be93377965bf2e293086a",
+      "context": {
+        "execution": "local",
+        "environment": "macOS Python 3.11; authenticated GitHub connector verified 16 exact targets; anonymous curl HTTPS 200 for public candidate; CUA reports host locked/browser disabled",
+        "observed": true
+      }
+    },
+    {
+      "check": "CHECK-002",
+      "result": "unverified",
+      "evidence": "docs/validation/harness-user-documentation/runs/verification-04/navigation-translations.md",
+      "revision": "f28ac5c with observed published-target input snapshots; verification-04",
+      "input_digest_before": "b3355bcb615e3b2020f9302c7764ccb7fff134564c6be93377965bf2e293086a",
+      "input_digest_after": "b3355bcb615e3b2020f9302c7764ccb7fff134564c6be93377965bf2e293086a",
+      "context": {
+        "execution": "local",
+        "environment": "macOS Python 3.11; authenticated GitHub connector verified 16 exact targets; anonymous curl HTTPS 200 for public candidate; CUA reports host locked/browser disabled",
+        "observed": true
+      }
+    },
+    {
+      "check": "CHECK-003",
+      "result": "unverified",
+      "evidence": "docs/validation/harness-user-documentation/runs/verification-04/usage-walkthrough.md",
+      "revision": "f28ac5c with observed published-target input snapshots; verification-04",
+      "input_digest_before": "b3355bcb615e3b2020f9302c7764ccb7fff134564c6be93377965bf2e293086a",
+      "input_digest_after": "b3355bcb615e3b2020f9302c7764ccb7fff134564c6be93377965bf2e293086a",
+      "context": {
+        "execution": "local",
+        "environment": "macOS Python 3.11; authenticated GitHub connector verified 16 exact targets; anonymous curl HTTPS 200 for public candidate; CUA reports host locked/browser disabled",
+        "observed": true
+      }
+    },
+    {
+      "check": "CHECK-004",
+      "result": "pass",
+      "evidence": "docs/validation/harness-user-documentation/runs/verification-04/organization-review.md",
+      "revision": "f28ac5c with observed published-target input snapshots; verification-04",
+      "input_digest_before": "b3355bcb615e3b2020f9302c7764ccb7fff134564c6be93377965bf2e293086a",
+      "input_digest_after": "b3355bcb615e3b2020f9302c7764ccb7fff134564c6be93377965bf2e293086a",
+      "context": {
+        "execution": "local",
+        "environment": "macOS Python 3.11; authenticated GitHub connector verified 16 exact targets; anonymous curl HTTPS 200 for public candidate; CUA reports host locked/browser disabled",
+        "observed": true
+      }
+    },
+    {
+      "check": "CHECK-005",
+      "result": "unverified",
+      "evidence": "docs/validation/harness-user-documentation/runs/verification-04/package-validation.txt",
+      "revision": "f28ac5c with observed published-target input snapshots; verification-04",
+      "input_digest_before": "b3355bcb615e3b2020f9302c7764ccb7fff134564c6be93377965bf2e293086a",
+      "input_digest_after": "b3355bcb615e3b2020f9302c7764ccb7fff134564c6be93377965bf2e293086a",
+      "context": {
+        "execution": "local",
+        "environment": "macOS Python 3.11; authenticated GitHub connector verified 16 exact targets; anonymous curl HTTPS 200 for public candidate; CUA reports host locked/browser disabled",
+        "observed": true
+      }
+    }
+  ],
+  "assessments": [
+    {
+      "obligation": {
+        "local": {
+          "requirement": "REQ-001",
+          "scenario": 1
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-001"
+      ],
+      "evidence": "docs/validation/harness-user-documentation/runs/verification-04/content-review.md",
+      "explanation": "Current reviewed content and/or observed published/public destination behavior matches this obligation."
+    },
+    {
+      "obligation": {
+        "local": {
+          "requirement": "REQ-001",
+          "scenario": 2
+        }
+      },
+      "result": "unverified",
+      "checks": [
+        "CHECK-002"
+      ],
+      "evidence": "docs/validation/harness-user-documentation/runs/verification-04/navigation-translations.md",
+      "explanation": "Required mapped rendered or complete desktop-usage evidence remains unavailable. The aggregate package command has not passed acceptance; see current reports."
+    },
+    {
+      "obligation": {
+        "local": {
+          "requirement": "REQ-001",
+          "scenario": 3
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-001",
+        "CHECK-004"
+      ],
+      "evidence": "docs/validation/harness-user-documentation/runs/verification-04/content-review.md",
+      "explanation": "Current reviewed content and/or observed published/public destination behavior matches this obligation."
+    },
+    {
+      "obligation": {
+        "local": {
+          "requirement": "REQ-002",
+          "scenario": 1
+        }
+      },
+      "result": "unverified",
+      "checks": [
+        "CHECK-001",
+        "CHECK-003"
+      ],
+      "evidence": "docs/validation/harness-user-documentation/runs/verification-04/content-review.md",
+      "explanation": "Required mapped rendered or complete desktop-usage evidence remains unavailable. The aggregate package command has not passed acceptance; see current reports."
+    },
+    {
+      "obligation": {
+        "local": {
+          "requirement": "REQ-002",
+          "scenario": 2
+        }
+      },
+      "result": "unverified",
+      "checks": [
+        "CHECK-003"
+      ],
+      "evidence": "docs/validation/harness-user-documentation/runs/verification-04/usage-walkthrough.md",
+      "explanation": "Required mapped rendered or complete desktop-usage evidence remains unavailable. The aggregate package command has not passed acceptance; see current reports."
+    },
+    {
+      "obligation": {
+        "local": {
+          "requirement": "REQ-002",
+          "scenario": 3
+        }
+      },
+      "result": "unverified",
+      "checks": [
+        "CHECK-001",
+        "CHECK-002"
+      ],
+      "evidence": "docs/validation/harness-user-documentation/runs/verification-04/content-review.md",
+      "explanation": "Required mapped rendered or complete desktop-usage evidence remains unavailable. The aggregate package command has not passed acceptance; see current reports."
+    },
+    {
+      "obligation": {
+        "local": {
+          "requirement": "REQ-003",
+          "scenario": 1
+        }
+      },
+      "result": "unverified",
+      "checks": [
+        "CHECK-001",
+        "CHECK-003"
+      ],
+      "evidence": "docs/validation/harness-user-documentation/runs/verification-04/content-review.md",
+      "explanation": "Required mapped rendered or complete desktop-usage evidence remains unavailable. The aggregate package command has not passed acceptance; see current reports."
+    },
+    {
+      "obligation": {
+        "local": {
+          "requirement": "REQ-003",
+          "scenario": 2
+        }
+      },
+      "result": "unverified",
+      "checks": [
+        "CHECK-001",
+        "CHECK-002"
+      ],
+      "evidence": "docs/validation/harness-user-documentation/runs/verification-04/content-review.md",
+      "explanation": "Required mapped rendered or complete desktop-usage evidence remains unavailable. The aggregate package command has not passed acceptance; see current reports."
+    },
+    {
+      "obligation": {
+        "local": {
+          "requirement": "REQ-003",
+          "scenario": 3
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-001",
+        "CHECK-004"
+      ],
+      "evidence": "docs/validation/harness-user-documentation/runs/verification-04/content-review.md",
+      "explanation": "Current reviewed content and/or observed published/public destination behavior matches this obligation."
+    },
+    {
+      "obligation": {
+        "local": {
+          "requirement": "REQ-003",
+          "scenario": 4
+        }
+      },
+      "result": "unverified",
+      "checks": [
+        "CHECK-001",
+        "CHECK-003"
+      ],
+      "evidence": "docs/validation/harness-user-documentation/runs/verification-04/content-review.md",
+      "explanation": "Required mapped rendered or complete desktop-usage evidence remains unavailable. The aggregate package command has not passed acceptance; see current reports."
+    },
+    {
+      "obligation": {
+        "local": {
+          "requirement": "REQ-004",
+          "scenario": 1
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-001"
+      ],
+      "evidence": "docs/validation/harness-user-documentation/runs/verification-04/content-review.md",
+      "explanation": "Current reviewed content and/or observed published/public destination behavior matches this obligation."
+    },
+    {
+      "obligation": {
+        "local": {
+          "requirement": "REQ-004",
+          "scenario": 2
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-001"
+      ],
+      "evidence": "docs/validation/harness-user-documentation/runs/verification-04/content-review.md",
+      "explanation": "Current reviewed content and/or observed published/public destination behavior matches this obligation."
+    },
+    {
+      "obligation": {
+        "local": {
+          "requirement": "REQ-004",
+          "scenario": 3
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-001"
+      ],
+      "evidence": "docs/validation/harness-user-documentation/runs/verification-04/content-review.md",
+      "explanation": "Current reviewed content and/or observed published/public destination behavior matches this obligation."
+    },
+    {
+      "obligation": {
+        "local": {
+          "requirement": "REQ-005",
+          "scenario": 1
+        }
+      },
+      "result": "unverified",
+      "checks": [
+        "CHECK-002"
+      ],
+      "evidence": "docs/validation/harness-user-documentation/runs/verification-04/navigation-translations.md",
+      "explanation": "Required mapped rendered or complete desktop-usage evidence remains unavailable. The aggregate package command has not passed acceptance; see current reports."
+    },
+    {
+      "obligation": {
+        "local": {
+          "requirement": "REQ-005",
+          "scenario": 2
+        }
+      },
+      "result": "unverified",
+      "checks": [
+        "CHECK-002"
+      ],
+      "evidence": "docs/validation/harness-user-documentation/runs/verification-04/navigation-translations.md",
+      "explanation": "Required mapped rendered or complete desktop-usage evidence remains unavailable. The aggregate package command has not passed acceptance; see current reports."
+    },
+    {
+      "obligation": {
+        "local": {
+          "requirement": "REQ-005",
+          "scenario": 3
+        }
+      },
+      "result": "unverified",
+      "checks": [
+        "CHECK-002"
+      ],
+      "evidence": "docs/validation/harness-user-documentation/runs/verification-04/navigation-translations.md",
+      "explanation": "Required mapped rendered or complete desktop-usage evidence remains unavailable. The aggregate package command has not passed acceptance; see current reports."
+    },
+    {
+      "obligation": {
+        "local": {
+          "requirement": "REQ-005",
+          "scenario": 4
+        }
+      },
+      "result": "unverified",
+      "checks": [
+        "CHECK-002",
+        "CHECK-004"
+      ],
+      "evidence": "docs/validation/harness-user-documentation/runs/verification-04/navigation-translations.md",
+      "explanation": "Required mapped rendered or complete desktop-usage evidence remains unavailable. The aggregate package command has not passed acceptance; see current reports."
+    },
+    {
+      "obligation": {
+        "local": {
+          "requirement": "REQ-006",
+          "scenario": 1
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-001"
+      ],
+      "evidence": "docs/validation/harness-user-documentation/runs/verification-04/content-review.md",
+      "explanation": "Current reviewed content and/or observed published/public destination behavior matches this obligation."
+    },
+    {
+      "obligation": {
+        "local": {
+          "requirement": "REQ-006",
+          "scenario": 2
+        }
+      },
+      "result": "unverified",
+      "checks": [
+        "CHECK-003"
+      ],
+      "evidence": "docs/validation/harness-user-documentation/runs/verification-04/usage-walkthrough.md",
+      "explanation": "Required mapped rendered or complete desktop-usage evidence remains unavailable. The aggregate package command has not passed acceptance; see current reports."
+    },
+    {
+      "obligation": {
+        "local": {
+          "requirement": "REQ-006",
+          "scenario": 3
+        }
+      },
+      "result": "unverified",
+      "checks": [
+        "CHECK-001",
+        "CHECK-002",
+        "CHECK-005"
+      ],
+      "evidence": "docs/validation/harness-user-documentation/runs/verification-04/content-review.md",
+      "explanation": "Required mapped rendered or complete desktop-usage evidence remains unavailable. The aggregate package command has not passed acceptance; see current reports."
+    },
+    {
+      "obligation": {
+        "local": {
+          "requirement": "REQ-006",
+          "scenario": 4
+        }
+      },
+      "result": "unverified",
+      "checks": [
+        "CHECK-002"
+      ],
+      "evidence": "docs/validation/harness-user-documentation/runs/verification-04/navigation-translations.md",
+      "explanation": "Required mapped rendered or complete desktop-usage evidence remains unavailable. The aggregate package command has not passed acceptance; see current reports."
+    },
+    {
+      "obligation": {
+        "local": {
+          "requirement": "REQ-007",
+          "scenario": 1
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-001",
+        "CHECK-004"
+      ],
+      "evidence": "docs/validation/harness-user-documentation/runs/verification-04/content-review.md",
+      "explanation": "Current reviewed content and/or observed published/public destination behavior matches this obligation."
+    },
+    {
+      "obligation": {
+        "local": {
+          "requirement": "REQ-007",
+          "scenario": 2
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-004"
+      ],
+      "evidence": "docs/validation/harness-user-documentation/runs/verification-04/organization-review.md",
+      "explanation": "Current reviewed content and/or observed published/public destination behavior matches this obligation."
+    },
+    {
+      "obligation": {
+        "local": {
+          "requirement": "REQ-007",
+          "scenario": 3
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-004"
+      ],
+      "evidence": "docs/validation/harness-user-documentation/runs/verification-04/organization-review.md",
+      "explanation": "Current reviewed content and/or observed published/public destination behavior matches this obligation."
+    },
+    {
+      "obligation": {
+        "local": {
+          "requirement": "REQ-007",
+          "scenario": 4
+        }
+      },
+      "result": "unverified",
+      "checks": [
+        "CHECK-001",
+        "CHECK-003",
+        "CHECK-004"
+      ],
+      "evidence": "docs/validation/harness-user-documentation/runs/verification-04/content-review.md",
+      "explanation": "Required mapped rendered or complete desktop-usage evidence remains unavailable. The aggregate package command has not passed acceptance; see current reports."
+    },
+    {
+      "obligation": {
+        "local": {
+          "requirement": "REQ-007",
+          "scenario": 5
+        }
+      },
+      "result": "unverified",
+      "checks": [
+        "CHECK-002",
+        "CHECK-004",
+        "CHECK-005"
+      ],
+      "evidence": "docs/validation/harness-user-documentation/runs/verification-04/navigation-translations.md",
+      "explanation": "Required mapped rendered or complete desktop-usage evidence remains unavailable. The aggregate package command has not passed acceptance; see current reports."
+    },
+    {
+      "obligation": {
+        "local": {
+          "requirement": "REQ-007",
+          "scenario": 6
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-004"
+      ],
+      "evidence": "docs/validation/harness-user-documentation/runs/verification-04/organization-review.md",
+      "explanation": "Current reviewed content and/or observed published/public destination behavior matches this obligation."
+    },
+    {
+      "obligation": {
+        "regression": {
+          "impact": 1,
+          "scenario": 1
+        }
+      },
+      "result": "unverified",
+      "checks": [
+        "CHECK-001",
+        "CHECK-003"
+      ],
+      "evidence": "docs/validation/harness-user-documentation/runs/verification-04/content-review.md",
+      "explanation": "Required mapped rendered or complete desktop-usage evidence remains unavailable. The aggregate package command has not passed acceptance; see current reports."
+    },
+    {
+      "obligation": {
+        "regression": {
+          "impact": 1,
+          "scenario": 2
+        }
+      },
+      "result": "unverified",
+      "checks": [
+        "CHECK-001",
+        "CHECK-003"
+      ],
+      "evidence": "docs/validation/harness-user-documentation/runs/verification-04/content-review.md",
+      "explanation": "Required mapped rendered or complete desktop-usage evidence remains unavailable. The aggregate package command has not passed acceptance; see current reports."
+    },
+    {
+      "obligation": {
+        "regression": {
+          "impact": 1,
+          "scenario": 3
+        }
+      },
+      "result": "unverified",
+      "checks": [
+        "CHECK-001",
+        "CHECK-003"
+      ],
+      "evidence": "docs/validation/harness-user-documentation/runs/verification-04/content-review.md",
+      "explanation": "Required mapped rendered or complete desktop-usage evidence remains unavailable. The aggregate package command has not passed acceptance; see current reports."
+    },
+    {
+      "obligation": {
+        "regression": {
+          "impact": 2,
+          "scenario": 1
+        }
+      },
+      "result": "unverified",
+      "checks": [
+        "CHECK-002"
+      ],
+      "evidence": "docs/validation/harness-user-documentation/runs/verification-04/navigation-translations.md",
+      "explanation": "Required mapped rendered or complete desktop-usage evidence remains unavailable. The aggregate package command has not passed acceptance; see current reports."
+    },
+    {
+      "obligation": {
+        "regression": {
+          "impact": 2,
+          "scenario": 2
+        }
+      },
+      "result": "unverified",
+      "checks": [
+        "CHECK-002"
+      ],
+      "evidence": "docs/validation/harness-user-documentation/runs/verification-04/navigation-translations.md",
+      "explanation": "Required mapped rendered or complete desktop-usage evidence remains unavailable. The aggregate package command has not passed acceptance; see current reports."
+    },
+    {
+      "obligation": {
+        "regression": {
+          "impact": 2,
+          "scenario": 3
+        }
+      },
+      "result": "unverified",
+      "checks": [
+        "CHECK-002"
+      ],
+      "evidence": "docs/validation/harness-user-documentation/runs/verification-04/navigation-translations.md",
+      "explanation": "Required mapped rendered or complete desktop-usage evidence remains unavailable. The aggregate package command has not passed acceptance; see current reports."
+    },
+    {
+      "obligation": {
+        "regression": {
+          "impact": 2,
+          "scenario": 4
+        }
+      },
+      "result": "unverified",
+      "checks": [
+        "CHECK-002"
+      ],
+      "evidence": "docs/validation/harness-user-documentation/runs/verification-04/navigation-translations.md",
+      "explanation": "Required mapped rendered or complete desktop-usage evidence remains unavailable. The aggregate package command has not passed acceptance; see current reports."
+    },
+    {
+      "obligation": {
+        "regression": {
+          "impact": 3,
+          "scenario": 1
+        }
+      },
+      "result": "unverified",
+      "checks": [
+        "CHECK-001",
+        "CHECK-003"
+      ],
+      "evidence": "docs/validation/harness-user-documentation/runs/verification-04/content-review.md",
+      "explanation": "Required mapped rendered or complete desktop-usage evidence remains unavailable. The aggregate package command has not passed acceptance; see current reports."
+    },
+    {
+      "obligation": {
+        "regression": {
+          "impact": 3,
+          "scenario": 2
+        }
+      },
+      "result": "unverified",
+      "checks": [
+        "CHECK-001",
+        "CHECK-003"
+      ],
+      "evidence": "docs/validation/harness-user-documentation/runs/verification-04/content-review.md",
+      "explanation": "Required mapped rendered or complete desktop-usage evidence remains unavailable. The aggregate package command has not passed acceptance; see current reports."
+    },
+    {
+      "obligation": {
+        "regression": {
+          "impact": 4,
+          "scenario": 1
+        }
+      },
+      "result": "unverified",
+      "checks": [
+        "CHECK-001",
+        "CHECK-002",
+        "CHECK-003"
+      ],
+      "evidence": "docs/validation/harness-user-documentation/runs/verification-04/content-review.md",
+      "explanation": "Required mapped rendered or complete desktop-usage evidence remains unavailable. The aggregate package command has not passed acceptance; see current reports."
+    },
+    {
+      "obligation": {
+        "regression": {
+          "impact": 4,
+          "scenario": 2
+        }
+      },
+      "result": "unverified",
+      "checks": [
+        "CHECK-001",
+        "CHECK-002",
+        "CHECK-003"
+      ],
+      "evidence": "docs/validation/harness-user-documentation/runs/verification-04/content-review.md",
+      "explanation": "Required mapped rendered or complete desktop-usage evidence remains unavailable. The aggregate package command has not passed acceptance; see current reports."
+    },
+    {
+      "obligation": {
+        "regression": {
+          "impact": 5,
+          "scenario": 1
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-001",
+        "CHECK-004"
+      ],
+      "evidence": "docs/validation/harness-user-documentation/runs/verification-04/content-review.md",
+      "explanation": "Current reviewed content and/or observed published/public destination behavior matches this obligation."
+    },
+    {
+      "obligation": {
+        "regression": {
+          "impact": 5,
+          "scenario": 2
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-001",
+        "CHECK-004"
+      ],
+      "evidence": "docs/validation/harness-user-documentation/runs/verification-04/content-review.md",
+      "explanation": "Current reviewed content and/or observed published/public destination behavior matches this obligation."
+    },
+    {
+      "obligation": {
+        "regression": {
+          "impact": 6,
+          "scenario": 0
+        }
+      },
+      "result": "unverified",
+      "checks": [
+        "CHECK-002"
+      ],
+      "evidence": "docs/validation/harness-user-documentation/runs/verification-04/navigation-translations.md",
+      "explanation": "Required mapped rendered or complete desktop-usage evidence remains unavailable. The aggregate package command has not passed acceptance; see current reports."
+    },
+    {
+      "obligation": {
+        "regression": {
+          "impact": 7,
+          "scenario": 1
+        }
+      },
+      "result": "unverified",
+      "checks": [
+        "CHECK-003",
+        "CHECK-004"
+      ],
+      "evidence": "docs/validation/harness-user-documentation/runs/verification-04/usage-walkthrough.md",
+      "explanation": "Required mapped rendered or complete desktop-usage evidence remains unavailable. The aggregate package command has not passed acceptance; see current reports."
+    },
+    {
+      "obligation": {
+        "regression": {
+          "impact": 7,
+          "scenario": 2
+        }
+      },
+      "result": "unverified",
+      "checks": [
+        "CHECK-003",
+        "CHECK-004"
+      ],
+      "evidence": "docs/validation/harness-user-documentation/runs/verification-04/usage-walkthrough.md",
+      "explanation": "Required mapped rendered or complete desktop-usage evidence remains unavailable. The aggregate package command has not passed acceptance; see current reports."
+    },
+    {
+      "obligation": {
+        "regression": {
+          "impact": 7,
+          "scenario": 3
+        }
+      },
+      "result": "unverified",
+      "checks": [
+        "CHECK-003",
+        "CHECK-004"
+      ],
+      "evidence": "docs/validation/harness-user-documentation/runs/verification-04/usage-walkthrough.md",
+      "explanation": "Required mapped rendered or complete desktop-usage evidence remains unavailable. The aggregate package command has not passed acceptance; see current reports."
+    },
+    {
+      "obligation": {
+        "regression": {
+          "impact": 7,
+          "scenario": 4
+        }
+      },
+      "result": "unverified",
+      "checks": [
+        "CHECK-003",
+        "CHECK-004"
+      ],
+      "evidence": "docs/validation/harness-user-documentation/runs/verification-04/usage-walkthrough.md",
+      "explanation": "Required mapped rendered or complete desktop-usage evidence remains unavailable. The aggregate package command has not passed acceptance; see current reports."
+    },
+    {
+      "obligation": {
+        "regression": {
+          "impact": 8,
+          "scenario": 0
+        }
+      },
+      "result": "unverified",
+      "checks": [
+        "CHECK-002",
+        "CHECK-004"
+      ],
+      "evidence": "docs/validation/harness-user-documentation/runs/verification-04/navigation-translations.md",
+      "explanation": "Required mapped rendered or complete desktop-usage evidence remains unavailable. The aggregate package command has not passed acceptance; see current reports."
+    }
+  ],
+  "findings": [
+    {
+      "id": "FIND-001",
+      "source": {
+        "plan": "Rendered navigation and desktop usage observations"
+      },
+      "category": "partial",
+      "state": "open",
+      "evidence": "docs/validation/harness-user-documentation/runs/verification-02/navigation-translations.md",
+      "description": "After user confirmation and runtime reset, CUA still reports Mac locked and local browser use disabled; representative visual and complete usage observations are unavailable.",
+      "tasks": [
+        "TASK-006"
+      ],
+      "checks": [
+        "CHECK-002",
+        "CHECK-003"
+      ]
+    },
+    {
+      "id": "FIND-002",
+      "source": {
+        "plan": "Published immutable Harness destinations and intended-reader access"
+      },
+      "category": "missing",
+      "state": "resolved",
+      "evidence": "docs/validation/harness-user-documentation/runs/verification-04/organization-review.md",
+      "description": "Published destination snapshots, organization candidate consistency, internal reviewer access, public fallback, traceability and fail-closed rollout were verified.",
+      "tasks": [
+        "TASK-007"
+      ],
+      "checks": [
+        "CHECK-004"
+      ],
+      "resolution": "CHECK-004 passed against current before/after inputs. Sixteen GitHub file reads match the exact content revision; anonymous public CONTRIBUTING HTTP 200 matches the organization candidate. This does not claim visual review or merge."
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+[
+  {
+    "obligation": {
+      "local": {
+        "requirement": "REQ-006",
+        "scenario": 3
+      }
+    },
+    "result": "pass",
+    "checks": [
+      "CHECK-001",
+      "CHECK-002",
+      "CHECK-005"
+    ],
+    "evidence": "docs/validation/harness-user-documentation/runs/verification-05/navigation-translations.md",
+    "explanation": "Current links/translations/rendered previews pass; complete package command must pass before this obligation is finalized."
+  },
+  {
+    "obligation": {
+      "local": {
+        "requirement": "REQ-007",
+        "scenario": 5
+      }
+    },
+    "result": "pass",
+    "checks": [
+      "CHECK-002",
+      "CHECK-004",
+      "CHECK-005"
+    ],
+    "evidence": "docs/validation/harness-user-documentation/runs/verification-05/navigation-translations.md",
+    "explanation": "Both drafts retain Issue 22 linkage and immutable content targets; actual candidate bytes match; local checks/archival precede separately pending review, CI and activation."
+  }
+]

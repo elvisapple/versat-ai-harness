@@ -1,0 +1,14 @@
+{
+  "identity_schema": "pass",
+  "lock_schema": "pass",
+  "resolved_standards": 8,
+  "standards_hashes": "pass",
+  "home_unchanged": true,
+  "design_absent": true,
+  "tasks_absent": true,
+  "approval": null,
+  "phase": "Gate 1 awaiting approval",
+  "missing_provider_detected": true,
+  "maintenance_read_only": true,
+  "mode": "same-session walkthrough; existing plan content reused after inspecting matching home-page baseline"
+}

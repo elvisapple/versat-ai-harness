@@ -1,0 +1,17 @@
+{
+  "checks": {
+    "CHECK-001": "pass",
+    "CHECK-002": "unverified",
+    "CHECK-003": "unverified",
+    "CHECK-004": "unverified",
+    "CHECK-005": "pass"
+  },
+  "assessments": 46,
+  "passed_assessments": 5,
+  "unverified_assessments": 41,
+  "input_digest": "0d7fefb7cf9a66f598503235df386dc19dbae2c6f2ab78fe6b7e578ab4b46037",
+  "blocking_findings": [
+    "FIND-001",
+    "FIND-002"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "project": "/private/tmp/pr33-usage-project",
+  "provider": "/Users/elviszoz/.codex/worktrees/50bb/versat-ai-harness",
+  "provider_commit": "49e1160d30b8459efabc913bd06df25d64bb168c",
+  "standards": [
+    "core/language.md",
+    "core/documentation.md",
+    "core/agent-artifacts.md",
+    "core/git.md",
+    "core/security.md",
+    "core/testing.md",
+    "core/observability.md",
+    "profiles/software.md"
+  ],
+  "home_before": "5e6797818fe76452595a4c61b1313fa98c5eb381cc7b94648c823aecf0418a83",
+  "mode": "same-session supervised documentation walkthrough; no independent agent invocation"
+}

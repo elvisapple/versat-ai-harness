@@ -1,0 +1,33 @@
+{
+  "status": "pass",
+  "phase": "delivery",
+  "checked": [
+    "harness-user-documentation"
+  ],
+  "findings": [],
+  "warnings": [],
+  "metrics": {
+    "harness-user-documentation": {
+      "local_scenarios": 27,
+      "regression_obligations": 19,
+      "assessed": 46,
+      "results": 5,
+      "open_findings": 0,
+      "stale_results": 0,
+      "requirements": {
+        "REQ-001": "pass",
+        "REQ-002": "pass",
+        "REQ-003": "pass",
+        "REQ-004": "pass",
+        "REQ-005": "pass",
+        "REQ-006": "pass",
+        "REQ-007": "pass"
+      }
+    }
+  },
+  "live_archives": [],
+  "archive_required": [
+    "harness-user-documentation"
+  ],
+  "scope": "Declared contract checks only; archive inventory is historical unless selected for live delivery. No proof of semantic adequacy, execution authenticity, human identity, remote CI, merge or deployment."
+}

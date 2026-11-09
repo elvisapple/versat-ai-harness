@@ -1,0 +1,3 @@
+SDD validation: pass
+Declared contract checks only; archive inventory is historical unless selected for live delivery. No proof of semantic adequacy, execution authenticity, human identity, remote CI, merge or deployment.
+welcome-message: {"local_scenarios":3,"regression_obligations":1}

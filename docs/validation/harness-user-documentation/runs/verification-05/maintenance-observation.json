@@ -1,0 +1,14 @@
+{
+  "target": {
+    "version": "0.3.0",
+    "commit": "49e1160d30b8459efabc913bd06df25d64bb168c"
+  },
+  "standards_drift": [],
+  "preserved_local_files": [
+    "README.md",
+    "index.html",
+    "docs/architecture/overview.md"
+  ],
+  "action": "No pin or file migration: exact provider and eight resolved snapshots match. Preserve fixture-specific content; optional execution integration is not adopted.",
+  "rollback": "No update applied. For a future reviewed migration, restore original Standards lock, snapshots and validation wrapper/configuration together and rerun original checks."
+}

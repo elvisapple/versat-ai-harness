@@ -1,0 +1,83 @@
+Portable Plugin package validation passed.
+SDD validation: fail
+Declared contract checks only; archive inventory is historical unless selected for live delivery. No proof of semantic adequacy, execution authenticity, human identity, remote CI, merge or deployment.
+harness-user-documentation: {"assessed":46,"local_scenarios":27,"open_findings":2,"regression_obligations":19,"requirements":{"REQ-001":"unverified","REQ-002":"unverified","REQ-003":"unverified","REQ-004":"unverified","REQ-005":"unverified","REQ-006":"unverified","REQ-007":"unverified"},"results":5,"stale_results":5}
+automated-test-execution: {"assessed":50,"local_scenarios":27,"open_findings":0,"regression_obligations":23,"requirements":{"REQ-001":"pass","REQ-002":"pass","REQ-003":"pass","REQ-004":"pass","REQ-005":"pass","REQ-006":"pass","REQ-007":"pass","REQ-008":"pass"},"results":8,"stale_results":0}
+INPUT_STALE: /Users/elviszoz/.codex/worktrees/de89/versat-ai-harness/specs/changes/harness-user-documentation/tasks.md: Rerun affected check, do not relabel old evidence: CHECK-001
+INPUT_STALE: /Users/elviszoz/.codex/worktrees/de89/versat-ai-harness/specs/changes/harness-user-documentation/tasks.md: Rerun affected check, do not relabel old evidence: CHECK-002
+INPUT_STALE: /Users/elviszoz/.codex/worktrees/de89/versat-ai-harness/specs/changes/harness-user-documentation/tasks.md: Rerun affected check, do not relabel old evidence: CHECK-003
+INPUT_STALE: /Users/elviszoz/.codex/worktrees/de89/versat-ai-harness/specs/changes/harness-user-documentation/tasks.md: Rerun affected check, do not relabel old evidence: CHECK-004
+INPUT_STALE: /Users/elviszoz/.codex/worktrees/de89/versat-ai-harness/specs/changes/harness-user-documentation/tasks.md: Rerun affected check, do not relabel old evidence: CHECK-005
+ACCEPTANCE_UNVERIFIED: /Users/elviszoz/.codex/worktrees/de89/versat-ai-harness/specs/changes/harness-user-documentation/tasks.md: No current required passing evidence: {"local":{"requirement":"REQ-001","scenario":1}}
+ACCEPTANCE_UNVERIFIED: /Users/elviszoz/.codex/worktrees/de89/versat-ai-harness/specs/changes/harness-user-documentation/tasks.md: {"local":{"requirement":"REQ-001","scenario":2}}
+ACCEPTANCE_UNVERIFIED: /Users/elviszoz/.codex/worktrees/de89/versat-ai-harness/specs/changes/harness-user-documentation/tasks.md: {"local":{"requirement":"REQ-001","scenario":3}}
+ACCEPTANCE_UNVERIFIED: /Users/elviszoz/.codex/worktrees/de89/versat-ai-harness/specs/changes/harness-user-documentation/tasks.md: {"local":{"requirement":"REQ-002","scenario":1}}
+ACCEPTANCE_UNVERIFIED: /Users/elviszoz/.codex/worktrees/de89/versat-ai-harness/specs/changes/harness-user-documentation/tasks.md: {"local":{"requirement":"REQ-002","scenario":2}}
+ACCEPTANCE_UNVERIFIED: /Users/elviszoz/.codex/worktrees/de89/versat-ai-harness/specs/changes/harness-user-documentation/tasks.md: {"local":{"requirement":"REQ-002","scenario":3}}
+ACCEPTANCE_UNVERIFIED: /Users/elviszoz/.codex/worktrees/de89/versat-ai-harness/specs/changes/harness-user-documentation/tasks.md: {"local":{"requirement":"REQ-003","scenario":1}}
+ACCEPTANCE_UNVERIFIED: /Users/elviszoz/.codex/worktrees/de89/versat-ai-harness/specs/changes/harness-user-documentation/tasks.md: {"local":{"requirement":"REQ-003","scenario":2}}
+ACCEPTANCE_UNVERIFIED: /Users/elviszoz/.codex/worktrees/de89/versat-ai-harness/specs/changes/harness-user-documentation/tasks.md: {"local":{"requirement":"REQ-003","scenario":3}}
+ACCEPTANCE_UNVERIFIED: /Users/elviszoz/.codex/worktrees/de89/versat-ai-harness/specs/changes/harness-user-documentation/tasks.md: {"local":{"requirement":"REQ-003","scenario":4}}
+ACCEPTANCE_UNVERIFIED: /Users/elviszoz/.codex/worktrees/de89/versat-ai-harness/specs/changes/harness-user-documentation/tasks.md: No current required passing evidence: {"local":{"requirement":"REQ-004","scenario":1}}
+ACCEPTANCE_UNVERIFIED: /Users/elviszoz/.codex/worktrees/de89/versat-ai-harness/specs/changes/harness-user-documentation/tasks.md: No current required passing evidence: {"local":{"requirement":"REQ-004","scenario":2}}
+ACCEPTANCE_UNVERIFIED: /Users/elviszoz/.codex/worktrees/de89/versat-ai-harness/specs/changes/harness-user-documentation/tasks.md: No current required passing evidence: {"local":{"requirement":"REQ-004","scenario":3}}
+ACCEPTANCE_UNVERIFIED: /Users/elviszoz/.codex/worktrees/de89/versat-ai-harness/specs/changes/harness-user-documentation/tasks.md: {"local":{"requirement":"REQ-005","scenario":1}}
+ACCEPTANCE_UNVERIFIED: /Users/elviszoz/.codex/worktrees/de89/versat-ai-harness/specs/changes/harness-user-documentation/tasks.md: {"local":{"requirement":"REQ-005","scenario":2}}
+ACCEPTANCE_UNVERIFIED: /Users/elviszoz/.codex/worktrees/de89/versat-ai-harness/specs/changes/harness-user-documentation/tasks.md: {"local":{"requirement":"REQ-005","scenario":3}}
+ACCEPTANCE_UNVERIFIED: /Users/elviszoz/.codex/worktrees/de89/versat-ai-harness/specs/changes/harness-user-documentation/tasks.md: {"local":{"requirement":"REQ-005","scenario":4}}
+ACCEPTANCE_UNVERIFIED: /Users/elviszoz/.codex/worktrees/de89/versat-ai-harness/specs/changes/harness-user-documentation/tasks.md: No current required passing evidence: {"local":{"requirement":"REQ-006","scenario":1}}
+ACCEPTANCE_UNVERIFIED: /Users/elviszoz/.codex/worktrees/de89/versat-ai-harness/specs/changes/harness-user-documentation/tasks.md: {"local":{"requirement":"REQ-006","scenario":2}}
+ACCEPTANCE_UNVERIFIED: /Users/elviszoz/.codex/worktrees/de89/versat-ai-harness/specs/changes/harness-user-documentation/tasks.md: {"local":{"requirement":"REQ-006","scenario":3}}
+ACCEPTANCE_UNVERIFIED: /Users/elviszoz/.codex/worktrees/de89/versat-ai-harness/specs/changes/harness-user-documentation/tasks.md: {"local":{"requirement":"REQ-006","scenario":4}}
+ACCEPTANCE_UNVERIFIED: /Users/elviszoz/.codex/worktrees/de89/versat-ai-harness/specs/changes/harness-user-documentation/tasks.md: {"local":{"requirement":"REQ-007","scenario":1}}
+ACCEPTANCE_UNVERIFIED: /Users/elviszoz/.codex/worktrees/de89/versat-ai-harness/specs/changes/harness-user-documentation/tasks.md: {"local":{"requirement":"REQ-007","scenario":2}}
+ACCEPTANCE_UNVERIFIED: /Users/elviszoz/.codex/worktrees/de89/versat-ai-harness/specs/changes/harness-user-documentation/tasks.md: {"local":{"requirement":"REQ-007","scenario":3}}
+ACCEPTANCE_UNVERIFIED: /Users/elviszoz/.codex/worktrees/de89/versat-ai-harness/specs/changes/harness-user-documentation/tasks.md: {"local":{"requirement":"REQ-007","scenario":4}}
+ACCEPTANCE_UNVERIFIED: /Users/elviszoz/.codex/worktrees/de89/versat-ai-harness/specs/changes/harness-user-documentation/tasks.md: {"local":{"requirement":"REQ-007","scenario":5}}
+ACCEPTANCE_UNVERIFIED: /Users/elviszoz/.codex/worktrees/de89/versat-ai-harness/specs/changes/harness-user-documentation/tasks.md: {"local":{"requirement":"REQ-007","scenario":6}}
+ACCEPTANCE_UNVERIFIED: /Users/elviszoz/.codex/worktrees/de89/versat-ai-harness/specs/changes/harness-user-documentation/tasks.md: {"regression":{"impact":1,"scenario":1}}
+ACCEPTANCE_UNVERIFIED: /Users/elviszoz/.codex/worktrees/de89/versat-ai-harness/specs/changes/harness-user-documentation/tasks.md: {"regression":{"impact":1,"scenario":2}}
+ACCEPTANCE_UNVERIFIED: /Users/elviszoz/.codex/worktrees/de89/versat-ai-harness/specs/changes/harness-user-documentation/tasks.md: {"regression":{"impact":1,"scenario":3}}
+ACCEPTANCE_UNVERIFIED: /Users/elviszoz/.codex/worktrees/de89/versat-ai-harness/specs/changes/harness-user-documentation/tasks.md: {"regression":{"impact":2,"scenario":1}}
+ACCEPTANCE_UNVERIFIED: /Users/elviszoz/.codex/worktrees/de89/versat-ai-harness/specs/changes/harness-user-documentation/tasks.md: {"regression":{"impact":2,"scenario":2}}
+ACCEPTANCE_UNVERIFIED: /Users/elviszoz/.codex/worktrees/de89/versat-ai-harness/specs/changes/harness-user-documentation/tasks.md: {"regression":{"impact":2,"scenario":3}}
+ACCEPTANCE_UNVERIFIED: /Users/elviszoz/.codex/worktrees/de89/versat-ai-harness/specs/changes/harness-user-documentation/tasks.md: {"regression":{"impact":2,"scenario":4}}
+ACCEPTANCE_UNVERIFIED: /Users/elviszoz/.codex/worktrees/de89/versat-ai-harness/specs/changes/harness-user-documentation/tasks.md: {"regression":{"impact":3,"scenario":1}}
+ACCEPTANCE_UNVERIFIED: /Users/elviszoz/.codex/worktrees/de89/versat-ai-harness/specs/changes/harness-user-documentation/tasks.md: {"regression":{"impact":3,"scenario":2}}
+ACCEPTANCE_UNVERIFIED: /Users/elviszoz/.codex/worktrees/de89/versat-ai-harness/specs/changes/harness-user-documentation/tasks.md: {"regression":{"impact":4,"scenario":1}}
+ACCEPTANCE_UNVERIFIED: /Users/elviszoz/.codex/worktrees/de89/versat-ai-harness/specs/changes/harness-user-documentation/tasks.md: {"regression":{"impact":4,"scenario":2}}
+ACCEPTANCE_UNVERIFIED: /Users/elviszoz/.codex/worktrees/de89/versat-ai-harness/specs/changes/harness-user-documentation/tasks.md: {"regression":{"impact":5,"scenario":1}}
+ACCEPTANCE_UNVERIFIED: /Users/elviszoz/.codex/worktrees/de89/versat-ai-harness/specs/changes/harness-user-documentation/tasks.md: {"regression":{"impact":5,"scenario":2}}
+ACCEPTANCE_UNVERIFIED: /Users/elviszoz/.codex/worktrees/de89/versat-ai-harness/specs/changes/harness-user-documentation/tasks.md: {"regression":{"impact":6,"scenario":0}}
+ACCEPTANCE_UNVERIFIED: /Users/elviszoz/.codex/worktrees/de89/versat-ai-harness/specs/changes/harness-user-documentation/tasks.md: {"regression":{"impact":7,"scenario":1}}
+ACCEPTANCE_UNVERIFIED: /Users/elviszoz/.codex/worktrees/de89/versat-ai-harness/specs/changes/harness-user-documentation/tasks.md: {"regression":{"impact":7,"scenario":2}}
+ACCEPTANCE_UNVERIFIED: /Users/elviszoz/.codex/worktrees/de89/versat-ai-harness/specs/changes/harness-user-documentation/tasks.md: {"regression":{"impact":7,"scenario":3}}
+ACCEPTANCE_UNVERIFIED: /Users/elviszoz/.codex/worktrees/de89/versat-ai-harness/specs/changes/harness-user-documentation/tasks.md: {"regression":{"impact":7,"scenario":4}}
+ACCEPTANCE_UNVERIFIED: /Users/elviszoz/.codex/worktrees/de89/versat-ai-harness/specs/changes/harness-user-documentation/tasks.md: {"regression":{"impact":8,"scenario":0}}
+ACCEPTANCE_GAP: /Users/elviszoz/.codex/worktrees/de89/versat-ai-harness/specs/changes/harness-user-documentation/tasks.md: FIND-001: After user confirmation and runtime reset, CUA still reports Mac locked and local browser use disabled; representative visual and complete usage observations are unavailable.
+ACCEPTANCE_GAP: /Users/elviszoz/.codex/worktrees/de89/versat-ai-harness/specs/changes/harness-user-documentation/tasks.md: FIND-002: Source publication is now authorized and observed; all 16 unique linked files were fetched at the exact commit and compared with local content. Full CHECK-004 evidence, intended-reader/public-path observations and coordinated delivery assessment remain pending.
+WARNING LEGACY_EXEMPT: /Users/elviszoz/.codex/worktrees/de89/versat-ai-harness/specs/archive/agent-project-layout: Immutable legacy dossier: v2 approval and evidence gates were not verified
+WARNING LEGACY_HISTORICAL_ARCHIVE: /Users/elviszoz/.codex/worktrees/de89/versat-ai-harness/specs/archive/agent-project-layout: Historical archive record preserved; merge evidence requires human review and v2 readiness remains unverified
+WARNING LEGACY_EXEMPT: /Users/elviszoz/.codex/worktrees/de89/versat-ai-harness/specs/archive/align-language-standard: Immutable legacy dossier: v2 approval and evidence gates were not verified
+WARNING LEGACY_HISTORICAL_ARCHIVE: /Users/elviszoz/.codex/worktrees/de89/versat-ai-harness/specs/archive/align-language-standard: Historical archive record preserved; merge evidence requires human review and v2 readiness remains unverified
+WARNING LEGACY_EXEMPT: /Users/elviszoz/.codex/worktrees/de89/versat-ai-harness/specs/archive/bootstrap-product-context: Immutable legacy dossier: v2 approval and evidence gates were not verified
+WARNING LEGACY_HISTORICAL_ARCHIVE: /Users/elviszoz/.codex/worktrees/de89/versat-ai-harness/specs/archive/bootstrap-product-context: Historical archive record preserved; merge evidence requires human review and v2 readiness remains unverified
+WARNING LEGACY_EXEMPT: /Users/elviszoz/.codex/worktrees/de89/versat-ai-harness/specs/archive/consolidate-sdd-workflow: Immutable legacy dossier: v2 approval and evidence gates were not verified
+WARNING LEGACY_HISTORICAL_ARCHIVE: /Users/elviszoz/.codex/worktrees/de89/versat-ai-harness/specs/archive/consolidate-sdd-workflow: Historical archive record preserved; merge evidence requires human review and v2 readiness remains unverified
+WARNING V2_COMPATIBILITY: /Users/elviszoz/.codex/worktrees/de89/versat-ai-harness/specs/archive/quickstart-scenario-coverage: Reviewed v2 contract only; v3 acceptance/regression assurance not verified
+WARNING LEGACY_EXEMPT: /Users/elviszoz/.codex/worktrees/de89/versat-ai-harness/specs/archive/root-plugin-package: Immutable legacy dossier: v2 approval and evidence gates were not verified
+WARNING LEGACY_HISTORICAL_ARCHIVE: /Users/elviszoz/.codex/worktrees/de89/versat-ai-harness/specs/archive/root-plugin-package: Historical archive record preserved; merge evidence requires human review and v2 readiness remains unverified
+WARNING V2_COMPATIBILITY: /Users/elviszoz/.codex/worktrees/de89/versat-ai-harness/specs/archive/sdd-acceptance-regression: Reviewed v2 contract only; v3 acceptance/regression assurance not verified
+WARNING LEGACY_EXEMPT: /Users/elviszoz/.codex/worktrees/de89/versat-ai-harness/specs/archive/shortcut-git-convention: Immutable legacy dossier: v2 approval and evidence gates were not verified
+WARNING LEGACY_HISTORICAL_ARCHIVE: /Users/elviszoz/.codex/worktrees/de89/versat-ai-harness/specs/archive/shortcut-git-convention: Historical archive record preserved; merge evidence requires human review and v2 readiness remains unverified
+...................................................................................................................................
+----------------------------------------------------------------------
+Ran 131 tests in 21.452s
+
+OK
+................................................
+----------------------------------------------------------------------
+Ran 48 tests in 11.329s
+
+OK
+Validation failed with 1 error(s).

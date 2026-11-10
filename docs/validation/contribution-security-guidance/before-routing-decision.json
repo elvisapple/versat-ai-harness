@@ -1,0 +1,137 @@
+{
+  "plan_digest": "d969a531b3de153e562ff06d72c4ad0568b3a88caabbb52ca7b465bd05c2d284",
+  "results": [
+    {
+      "check": "CHECK-001",
+      "result": "unverified",
+      "evidence": "docs/validation/contribution-security-guidance/check-001.md",
+      "revision": "2026-11-10 private working tree on 597b81c71a0fc0908ff5264fe9987bb5c0d8feec",
+      "input_digest_before": "3e7c3b8983be23edfdfe8b5d767f9d97343dad245cc24383d7f854c0c65f396a",
+      "input_digest_after": "3e7c3b8983be23edfdfe8b5d767f9d97343dad245cc24383d7f854c0c65f396a",
+      "context": {
+        "execution": "local",
+        "environment": "macOS-26.5.2-arm64-arm-64bit; Python 3.11.4; private documentary checkout; no channel test",
+        "observed": true
+      }
+    },
+    {
+      "check": "CHECK-002",
+      "result": "unverified",
+      "evidence": "docs/validation/contribution-security-guidance/check-002.md",
+      "revision": "2026-11-10 private working tree on 597b81c71a0fc0908ff5264fe9987bb5c0d8feec",
+      "input_digest_before": "3e7c3b8983be23edfdfe8b5d767f9d97343dad245cc24383d7f854c0c65f396a",
+      "input_digest_after": "3e7c3b8983be23edfdfe8b5d767f9d97343dad245cc24383d7f854c0c65f396a",
+      "context": {
+        "execution": "local",
+        "environment": "macOS-26.5.2-arm64-arm-64bit; Python 3.11.4; private documentary checkout; no channel test",
+        "observed": true
+      }
+    },
+    {
+      "check": "CHECK-003",
+      "result": "unverified",
+      "evidence": "docs/validation/contribution-security-guidance/check-003.md",
+      "revision": "2026-11-10 private working tree on 597b81c71a0fc0908ff5264fe9987bb5c0d8feec",
+      "input_digest_before": "05b8a4fed072ae8e3c5070b4bbe12093966f0bb4f297a37db2243cdcec572edb",
+      "input_digest_after": "05b8a4fed072ae8e3c5070b4bbe12093966f0bb4f297a37db2243cdcec572edb",
+      "context": {
+        "execution": "local",
+        "environment": "macOS-26.5.2-arm64-arm-64bit; Python 3.11.4; private documentary checkout; no channel test",
+        "observed": true
+      }
+    },
+    {
+      "check": "CHECK-004",
+      "result": "unverified",
+      "evidence": "docs/validation/contribution-security-guidance/check-004.md",
+      "revision": "2026-11-10 private working tree on 597b81c71a0fc0908ff5264fe9987bb5c0d8feec",
+      "input_digest_before": "3e7c3b8983be23edfdfe8b5d767f9d97343dad245cc24383d7f854c0c65f396a",
+      "input_digest_after": "3e7c3b8983be23edfdfe8b5d767f9d97343dad245cc24383d7f854c0c65f396a",
+      "context": {
+        "execution": "local",
+        "environment": "macOS-26.5.2-arm64-arm-64bit; Python 3.11.4; private documentary checkout; no channel test",
+        "observed": true
+      }
+    },
+    {
+      "check": "CHECK-005",
+      "result": "fail",
+      "evidence": "docs/validation/contribution-security-guidance/check-005.md",
+      "revision": "2026-11-10 private working tree on 597b81c71a0fc0908ff5264fe9987bb5c0d8feec",
+      "input_digest_before": "4315e28ad911a4df0dd842fd8a49b4b6f16508ee8b41af8d0658e33a7a69d5e0",
+      "input_digest_after": "4315e28ad911a4df0dd842fd8a49b4b6f16508ee8b41af8d0658e33a7a69d5e0",
+      "context": {
+        "execution": "local",
+        "environment": "macOS-26.5.2-arm64-arm-64bit; Python 3.11.4; private documentary checkout; no channel test",
+        "observed": true
+      }
+    },
+    {
+      "check": "CHECK-006",
+      "result": "unverified",
+      "evidence": "docs/validation/contribution-security-guidance/check-006.md",
+      "revision": "2026-11-10 private working tree on 597b81c71a0fc0908ff5264fe9987bb5c0d8feec",
+      "input_digest_before": "f95e35f781dbc72cd6e4f916d04c2276693b808a00a049387d33e2abbcd9ff87",
+      "input_digest_after": "f95e35f781dbc72cd6e4f916d04c2276693b808a00a049387d33e2abbcd9ff87",
+      "context": {
+        "execution": "local",
+        "environment": "macOS-26.5.2-arm64-arm-64bit; Python 3.11.4; private documentary checkout; no channel test",
+        "observed": true
+      }
+    }
+  ],
+  "assessments": [],
+  "findings": [
+    {
+      "id": "FIND-001",
+      "source": {
+        "plan": "Exact terms approval and component rights evidence"
+      },
+      "category": "missing",
+      "state": "open",
+      "evidence": "docs/validation/contribution-security-guidance/review.md",
+      "description": "Required exact-text approval and complete component rights/notices evidence remain absent. Owner permission/identity decisions were received and reflected in draft-0.2.",
+      "tasks": [
+        "TASK-003"
+      ],
+      "checks": [
+        "CHECK-002"
+      ]
+    },
+    {
+      "id": "FIND-002",
+      "source": {
+        "plan": "Confidential reporting route verification"
+      },
+      "category": "missing",
+      "state": "open",
+      "evidence": "docs/validation/contribution-security-guidance/review.md",
+      "description": "Selected email lacks confirmed reporter/recipient/monitoring scope and actual authorized confidential receipt/access evidence.",
+      "tasks": [
+        "TASK-004"
+      ],
+      "checks": [
+        "CHECK-003"
+      ]
+    },
+    {
+      "id": "FIND-003",
+      "source": {
+        "plan": "Final acceptance scenario assessment"
+      },
+      "category": "missing",
+      "state": "open",
+      "evidence": "docs/validation/contribution-security-guidance/review.md",
+      "description": "Final scenario acceptance is not complete; required checks and owner/reviewer evidence remain unavailable. Partial local checks do not complete all acceptance/regression obligations.",
+      "tasks": [
+        "TASK-006"
+      ],
+      "checks": [
+        "CHECK-001",
+        "CHECK-002",
+        "CHECK-003",
+        "CHECK-004"
+      ]
+    }
+  ]
+}

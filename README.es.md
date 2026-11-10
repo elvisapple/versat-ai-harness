@@ -19,6 +19,8 @@ Para quienes desarrollan, revisan y mantienen proyectos en Versat. Mantenido por
 - [Revisar la arquitectura](docs/user-docs/guides/architecture-review.es.md)
 - [Validación y evaluaciones](docs/user-docs/guides/validation-and-evaluations.es.md)
 
+Candidatos privados de H01/H02 (no adoptados ni publicados): [revisión de licencias](docs/user-docs/guides/licensing.es.md), [contribución](docs/user-docs/guides/contributing.es.md) y [reporte de seguridad](docs/user-docs/guides/security-reporting.es.md). El responsable aprobó el candidato de términos; la evidencia de derechos de componentes y la verificación operativa de canales siguen siendo independientes.
+
 ## Estado actual y adopción
 
 VERSION declara 0.3.0. El marketplace selecciona la etiqueta exacta v0.3.0; verifica la etiqueta y su contenido antes de distribuir. La ejecución de consumidores y evaluaciones supervisadas del código actual son explícitamente no publicadas. Cambiar el código o hacer merge no actualiza Plugins instalados ni pins de consumidores. Adopta otra release exacta mediante un cambio revisado.

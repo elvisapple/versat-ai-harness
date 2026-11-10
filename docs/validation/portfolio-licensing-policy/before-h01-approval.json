@@ -1,0 +1,80 @@
+{
+  "plan_digest": "ac2e801e4908448c2e534f8865970d979dbb751097b11b89532ee7a26299c138",
+  "results": [
+    {
+      "check": "CHECK-003",
+      "result": "pass",
+      "evidence": "docs/validation/portfolio-licensing-policy/check-003.md",
+      "revision": "2026-11-10 private working tree on 597b81c71a0fc0908ff5264fe9987bb5c0d8feec",
+      "input_digest_before": "ea585b7f21de8358c14702dc62c28100f71ebcb65f2d2b60b0b09d949d5aa6e6",
+      "input_digest_after": "ea585b7f21de8358c14702dc62c28100f71ebcb65f2d2b60b0b09d949d5aa6e6",
+      "context": {
+        "execution": "local",
+        "environment": "macOS-26.5.2-arm64-arm-64bit; Python 3.11.4; private documentary checkout; no channel test",
+        "observed": true
+      }
+    },
+    {
+      "check": "CHECK-004",
+      "result": "unverified",
+      "evidence": "docs/validation/portfolio-licensing-policy/routing-review.md",
+      "revision": "2026-11-10 routing decision working tree on 597b81c71a0fc0908ff5264fe9987bb5c0d8feec",
+      "input_digest_before": "4c03fd40b46e5620c9da79a82d9912cac243d15ecce54176ea441538b364fc3d",
+      "input_digest_after": "4c03fd40b46e5620c9da79a82d9912cac243d15ecce54176ea441538b364fc3d",
+      "context": {
+        "execution": "local",
+        "environment": "macOS-26.5.2-arm64-arm-64bit; Python 3.11.4; no external channel activation or test",
+        "observed": true
+      }
+    },
+    {
+      "check": "CHECK-005",
+      "result": "fail",
+      "evidence": "docs/validation/portfolio-licensing-policy/routing-package.txt",
+      "revision": "2026-11-10 routing decision working tree on 597b81c71a0fc0908ff5264fe9987bb5c0d8feec",
+      "input_digest_before": "d0550eef8fa7a6ae0acacbf7a0f2c7adfc707d028d110320f287b38e2c6b1ae7",
+      "input_digest_after": "d0550eef8fa7a6ae0acacbf7a0f2c7adfc707d028d110320f287b38e2c6b1ae7",
+      "context": {
+        "execution": "local",
+        "environment": "macOS-26.5.2-arm64-arm-64bit; Python 3.11.4; no external channel activation or test",
+        "observed": true
+      }
+    }
+  ],
+  "assessments": [],
+  "findings": [
+    {
+      "id": "FIND-001",
+      "source": {
+        "plan": "Exact terms approval and component rights evidence"
+      },
+      "category": "missing",
+      "state": "open",
+      "evidence": "docs/validation/portfolio-licensing-policy/review.md",
+      "description": "Required exact-text approval and complete component rights/notices evidence remain absent. Owner permission/identity decisions were received and reflected in draft-0.2.",
+      "tasks": [
+        "TASK-003"
+      ],
+      "checks": [
+        "CHECK-002"
+      ]
+    },
+    {
+      "id": "FIND-003",
+      "source": {
+        "plan": "Final acceptance scenario assessment"
+      },
+      "category": "missing",
+      "state": "open",
+      "evidence": "docs/validation/portfolio-licensing-policy/review.md",
+      "description": "Final scenario acceptance is not complete; required checks and owner/reviewer evidence remain unavailable. Partial local checks do not complete all acceptance/regression obligations.",
+      "tasks": [
+        "TASK-005"
+      ],
+      "checks": [
+        "CHECK-001",
+        "CHECK-002"
+      ]
+    }
+  ]
+}

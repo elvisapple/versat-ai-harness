@@ -1,0 +1,475 @@
+{
+  "plan_digest": "ac2e801e4908448c2e534f8865970d979dbb751097b11b89532ee7a26299c138",
+  "results": [
+    {
+      "check": "CHECK-001",
+      "result": "pass",
+      "evidence": "docs/validation/portfolio-licensing-policy/technical-001.md",
+      "revision": "2026-11-10 final documentary review, base 597b81c71a0fc0908ff5264fe9987bb5c0d8feec",
+      "input_digest_before": "3c7fb49bb6629a334a18c40eced236c0d2efc5e55c7ac931ddfdded0a6c0989e",
+      "input_digest_after": "3c7fb49bb6629a334a18c40eced236c0d2efc5e55c7ac931ddfdded0a6c0989e",
+      "context": {
+        "execution": "local",
+        "environment": "macOS-26.5.2-arm64-arm-64bit; Python 3.11.4; authenticated private refs plus anonymous public baseline reads; no live route test",
+        "observed": true
+      }
+    },
+    {
+      "check": "CHECK-002",
+      "result": "pass",
+      "evidence": "docs/validation/portfolio-licensing-policy/technical-002.md",
+      "revision": "2026-11-10 final documentary review, base 597b81c71a0fc0908ff5264fe9987bb5c0d8feec",
+      "input_digest_before": "3c7fb49bb6629a334a18c40eced236c0d2efc5e55c7ac931ddfdded0a6c0989e",
+      "input_digest_after": "3c7fb49bb6629a334a18c40eced236c0d2efc5e55c7ac931ddfdded0a6c0989e",
+      "context": {
+        "execution": "local",
+        "environment": "macOS-26.5.2-arm64-arm-64bit; Python 3.11.4; authenticated private refs plus anonymous public baseline reads; no live route test",
+        "observed": true
+      }
+    },
+    {
+      "check": "CHECK-003",
+      "result": "pass",
+      "evidence": "docs/validation/portfolio-licensing-policy/technical-003.md",
+      "revision": "2026-11-10 final documentary review, base 597b81c71a0fc0908ff5264fe9987bb5c0d8feec",
+      "input_digest_before": "ea585b7f21de8358c14702dc62c28100f71ebcb65f2d2b60b0b09d949d5aa6e6",
+      "input_digest_after": "ea585b7f21de8358c14702dc62c28100f71ebcb65f2d2b60b0b09d949d5aa6e6",
+      "context": {
+        "execution": "local",
+        "environment": "macOS-26.5.2-arm64-arm-64bit; Python 3.11.4; authenticated private refs plus anonymous public baseline reads; no live route test",
+        "observed": true
+      }
+    },
+    {
+      "check": "CHECK-004",
+      "result": "pass",
+      "evidence": "docs/validation/portfolio-licensing-policy/technical-004.md",
+      "revision": "2026-11-10 final documentary review, base 597b81c71a0fc0908ff5264fe9987bb5c0d8feec",
+      "input_digest_before": "3c7fb49bb6629a334a18c40eced236c0d2efc5e55c7ac931ddfdded0a6c0989e",
+      "input_digest_after": "3c7fb49bb6629a334a18c40eced236c0d2efc5e55c7ac931ddfdded0a6c0989e",
+      "context": {
+        "execution": "local",
+        "environment": "macOS-26.5.2-arm64-arm-64bit; Python 3.11.4; authenticated private refs plus anonymous public baseline reads; no live route test",
+        "observed": true
+      }
+    },
+    {
+      "check": "CHECK-005",
+      "result": "fail",
+      "evidence": "docs/validation/portfolio-licensing-policy/technical-005.md",
+      "revision": "2026-11-10 final documentary review, base 597b81c71a0fc0908ff5264fe9987bb5c0d8feec",
+      "input_digest_before": "481078816955fd8f706127089268d42d988d913058658604973e39b85dcecfc7",
+      "input_digest_after": "481078816955fd8f706127089268d42d988d913058658604973e39b85dcecfc7",
+      "context": {
+        "execution": "local",
+        "environment": "macOS-26.5.2-arm64-arm-64bit; Python 3.11.4; authenticated private refs plus anonymous public baseline reads; no live route test",
+        "observed": true
+      }
+    },
+    {
+      "check": "CHECK-006",
+      "result": "unverified",
+      "evidence": "docs/validation/portfolio-licensing-policy/technical-006.md",
+      "revision": "2026-11-10 final documentary review, base 597b81c71a0fc0908ff5264fe9987bb5c0d8feec",
+      "input_digest_before": "6fdcc0e067f56a56882a2a3a7bfbce7fbe0e5bda21255e45e785e9cc085062d8",
+      "input_digest_after": "6fdcc0e067f56a56882a2a3a7bfbce7fbe0e5bda21255e45e785e9cc085062d8",
+      "context": {
+        "execution": "local",
+        "environment": "macOS-26.5.2-arm64-arm-64bit; Python 3.11.4; authenticated private refs plus anonymous public baseline reads; no live route test",
+        "observed": true
+      }
+    }
+  ],
+  "assessments": [
+    {
+      "obligation": {
+        "local": {
+          "requirement": "REQ-001",
+          "scenario": 1
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-001"
+      ],
+      "evidence": "docs/validation/portfolio-licensing-policy/technical-review.md",
+      "explanation": "Ledger retains Apache-2.0 intent separately for Platform and Workspace with individual adoption/export evidence."
+    },
+    {
+      "obligation": {
+        "local": {
+          "requirement": "REQ-001",
+          "scenario": 2
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-001"
+      ],
+      "evidence": "docs/validation/portfolio-licensing-policy/technical-review.md",
+      "explanation": "Ledger and terms preserve proprietary/private Harness, Discover and CRM; public plugin installation is distinct from source licensing."
+    },
+    {
+      "obligation": {
+        "local": {
+          "requirement": "REQ-001",
+          "scenario": 3
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-001",
+        "CHECK-004"
+      ],
+      "evidence": "docs/validation/portfolio-licensing-policy/technical-review.md",
+      "explanation": "Policy/guide separate recommended disposition from license application, public export, SDK and other handoffs; no operation occurred."
+    },
+    {
+      "obligation": {
+        "local": {
+          "requirement": "REQ-002",
+          "scenario": 1
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-001"
+      ],
+      "evidence": "docs/validation/portfolio-licensing-policy/technical-review.md",
+      "explanation": "Baseline CSV identifies all 1,040 source files; owner attestation identifies first-party provenance; seven installed validation packages have exact versions/license texts, external to source."
+    },
+    {
+      "obligation": {
+        "local": {
+          "requirement": "REQ-002",
+          "scenario": 2
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-001"
+      ],
+      "evidence": "docs/validation/portfolio-licensing-policy/technical-review.md",
+      "explanation": "Synthetic missing-grant, incompatible-dependency, secret-history, missing-reviewer and unknown-control cases all defer; private scope remains restricted."
+    },
+    {
+      "obligation": {
+        "local": {
+          "requirement": "REQ-002",
+          "scenario": 3
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-001"
+      ],
+      "evidence": "docs/validation/portfolio-licensing-policy/technical-review.md",
+      "explanation": "Policy explicitly requires tree/history/tags/releases/LFS/fixtures/CI/attachments scope; technical source inventory does not claim H03 export clearance."
+    },
+    {
+      "obligation": {
+        "local": {
+          "requirement": "REQ-003",
+          "scenario": 1
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-002"
+      ],
+      "evidence": "docs/validation/portfolio-licensing-policy/technical-review.md",
+      "explanation": "Approved draft-0.2 and status-only current version retain exact installation/use/modification/redistribution clauses; reviewed notices identify source and external dependency boundaries."
+    },
+    {
+      "obligation": {
+        "local": {
+          "requirement": "REQ-003",
+          "scenario": 2
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-002"
+      ],
+      "evidence": "docs/validation/portfolio-licensing-policy/technical-review.md",
+      "explanation": "Actual user approval follows presentation of exact draft; original SHA-256 and current administrative hash verify. CODEOWNERS/planning were not used as text approval."
+    },
+    {
+      "obligation": {
+        "local": {
+          "requirement": "REQ-003",
+          "scenario": 3
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-002",
+        "CHECK-004"
+      ],
+      "evidence": "docs/validation/portfolio-licensing-policy/technical-review.md",
+      "explanation": "Terms and guides preserve destination-project terms, including Apache projects, independently of proprietary tool permissions."
+    },
+    {
+      "obligation": {
+        "local": {
+          "requirement": "REQ-004",
+          "scenario": 1
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-001",
+        "CHECK-002"
+      ],
+      "evidence": "docs/validation/portfolio-licensing-policy/technical-review.md",
+      "explanation": "Ledger identifies owner/executor/company approver, technical CODEOWNERS, source evidence and limits; technical review is by this agent and owner approval is attributable."
+    },
+    {
+      "obligation": {
+        "local": {
+          "requirement": "REQ-004",
+          "scenario": 2
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-001",
+        "CHECK-004"
+      ],
+      "evidence": "docs/validation/portfolio-licensing-policy/technical-review.md",
+      "explanation": "Policy keeps P01/P03 evidence separate and H03 distribution separate; no unrelated product delivery is claimed."
+    },
+    {
+      "obligation": {
+        "local": {
+          "requirement": "REQ-004",
+          "scenario": 3
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-001",
+        "CHECK-002"
+      ],
+      "evidence": "docs/validation/portfolio-licensing-policy/technical-review.md",
+      "explanation": "Unknown controls/authority remain explicit in policy; current owner attestation resolves documentary provenance only, not future operational controls."
+    },
+    {
+      "obligation": {
+        "local": {
+          "requirement": "REQ-005",
+          "scenario": 1
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-003"
+      ],
+      "evidence": "docs/validation/portfolio-licensing-policy/technical-review.md",
+      "explanation": "Both new core policies occur exactly once in core.always; no Skills copied or altered."
+    },
+    {
+      "obligation": {
+        "local": {
+          "requirement": "REQ-005",
+          "scenario": 2
+        }
+      },
+      "result": "unverified",
+      "checks": [
+        "CHECK-003",
+        "CHECK-005"
+      ],
+      "evidence": "docs/validation/portfolio-licensing-policy/technical-review.md",
+      "explanation": "Root package/schema/SDD/template/validator paths and manifests are unchanged; technical suites exercise them. Required mapped checks not passing: CHECK-005. No complete acceptance claimed."
+    },
+    {
+      "obligation": {
+        "local": {
+          "requirement": "REQ-005",
+          "scenario": 3
+        }
+      },
+      "result": "unverified",
+      "checks": [
+        "CHECK-003",
+        "CHECK-005"
+      ],
+      "evidence": "docs/validation/portfolio-licensing-policy/technical-review.md",
+      "explanation": "VERSION/marketplace v0.3.0 and consumer locks are unchanged; no release or implicit consumer update occurred. Required mapped checks not passing: CHECK-005. No complete acceptance claimed."
+    },
+    {
+      "obligation": {
+        "local": {
+          "requirement": "REQ-006",
+          "scenario": 1
+        }
+      },
+      "result": "unverified",
+      "checks": [
+        "CHECK-004",
+        "CHECK-006"
+      ],
+      "evidence": "docs/validation/portfolio-licensing-policy/technical-review.md",
+      "explanation": "Actual later implementation authorization permits private docs/tracking; no effective license, release, public write or access change occurred. Required mapped checks not passing: CHECK-006. No complete acceptance claimed."
+    },
+    {
+      "obligation": {
+        "local": {
+          "requirement": "REQ-006",
+          "scenario": 2
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-002",
+        "CHECK-004"
+      ],
+      "evidence": "docs/validation/portfolio-licensing-policy/technical-review.md",
+      "explanation": "Owner text approval and technical source review are explicit; effective adoption/distribution remain separately scoped, and unavailable operational evidence stays unverified."
+    },
+    {
+      "obligation": {
+        "local": {
+          "requirement": "REQ-006",
+          "scenario": 3
+        }
+      },
+      "result": "unverified",
+      "checks": [
+        "CHECK-004",
+        "CHECK-005",
+        "CHECK-006"
+      ],
+      "evidence": "docs/validation/portfolio-licensing-policy/technical-review.md",
+      "explanation": "Guides, all 24 obligations and current check evidence are reviewed; final delivery claim remains withheld while required aggregate/lineage results are not passing. Required mapped checks not passing: CHECK-005, CHECK-006. No complete acceptance claimed."
+    },
+    {
+      "obligation": {
+        "regression": {
+          "impact": 1,
+          "scenario": 0
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-001",
+        "CHECK-002",
+        "CHECK-004"
+      ],
+      "evidence": "docs/validation/portfolio-licensing-policy/technical-review.md",
+      "explanation": "Inspected retained source/current-contract mapping: Add the absent portfolio policy and concrete-terms approval path without treating strategic selection as operative licensing. Compare the specific historical acceptance position or captured baseline with current observable behavior; do not reuse historical results as fresh evidence. Observed unchanged historical dossiers/root/version inputs and preserved current contribution/security/language boundaries; see the actual linked check reports."
+    },
+    {
+      "obligation": {
+        "regression": {
+          "impact": 2,
+          "scenario": 0
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-001",
+        "CHECK-004"
+      ],
+      "evidence": "docs/validation/portfolio-licensing-policy/technical-review.md",
+      "explanation": "Inspected retained source/current-contract mapping: Preserve least privilege, secret handling, provenance and explicit high-impact authorization while specifying evidence for publication decisions. Compare the specific historical acceptance position or captured baseline with current observable behavior; do not reuse historical results as fresh evidence. Observed unchanged historical dossiers/root/version inputs and preserved current contribution/security/language boundaries; see the actual linked check reports."
+    },
+    {
+      "obligation": {
+        "regression": {
+          "impact": 3,
+          "scenario": 1
+        }
+      },
+      "result": "unverified",
+      "checks": [
+        "CHECK-003",
+        "CHECK-005"
+      ],
+      "evidence": "docs/validation/portfolio-licensing-policy/technical-review.md",
+      "explanation": "Inspected retained source/current-contract mapping: New policy must retain canonical root resources and avoid copied Standards. Compare the specific historical acceptance position or captured baseline with current observable behavior; do not reuse historical results as fresh evidence. Observed unchanged historical dossiers/root/version inputs and preserved current contribution/security/language boundaries; see the actual linked check reports. Complete retained-obligation acceptance remains unverified because required mapped checks are not passing: CHECK-005."
+    },
+    {
+      "obligation": {
+        "regression": {
+          "impact": 3,
+          "scenario": 2
+        }
+      },
+      "result": "unverified",
+      "checks": [
+        "CHECK-003",
+        "CHECK-005"
+      ],
+      "evidence": "docs/validation/portfolio-licensing-policy/technical-review.md",
+      "explanation": "Inspected retained source/current-contract mapping: New policy must retain canonical root resources and avoid copied Standards. Compare the specific historical acceptance position or captured baseline with current observable behavior; do not reuse historical results as fresh evidence. Observed unchanged historical dossiers/root/version inputs and preserved current contribution/security/language boundaries; see the actual linked check reports. Complete retained-obligation acceptance remains unverified because required mapped checks are not passing: CHECK-005."
+    },
+    {
+      "obligation": {
+        "regression": {
+          "impact": 3,
+          "scenario": 3
+        }
+      },
+      "result": "unverified",
+      "checks": [
+        "CHECK-003",
+        "CHECK-005"
+      ],
+      "evidence": "docs/validation/portfolio-licensing-policy/technical-review.md",
+      "explanation": "Inspected retained source/current-contract mapping: New policy must retain canonical root resources and avoid copied Standards. Compare the specific historical acceptance position or captured baseline with current observable behavior; do not reuse historical results as fresh evidence. Observed unchanged historical dossiers/root/version inputs and preserved current contribution/security/language boundaries; see the actual linked check reports. Complete retained-obligation acceptance remains unverified because required mapped checks are not passing: CHECK-005."
+    },
+    {
+      "obligation": {
+        "regression": {
+          "impact": 4,
+          "scenario": 2
+        }
+      },
+      "result": "unverified",
+      "checks": [
+        "CHECK-003",
+        "CHECK-005"
+      ],
+      "evidence": "docs/validation/portfolio-licensing-policy/technical-review.md",
+      "explanation": "Inspected retained source/current-contract mapping: Retain the exact semantic release selection contract; this proposal neither releases nor enables public distribution. Compare the specific historical acceptance position or captured baseline with current observable behavior; do not reuse historical results as fresh evidence. Observed unchanged historical dossiers/root/version inputs and preserved current contribution/security/language boundaries; see the actual linked check reports. Complete retained-obligation acceptance remains unverified because required mapped checks are not passing: CHECK-005."
+    }
+  ],
+  "findings": [
+    {
+      "id": "FIND-001",
+      "source": {
+        "plan": "Exact terms approval and component rights evidence"
+      },
+      "category": "missing",
+      "state": "resolved",
+      "evidence": "docs/validation/portfolio-licensing-policy/technical-review.md",
+      "description": "Owner approved the presented H01 wording on 2026-11-10; exact approval is recorded. Remaining gap: complete component rights/notices evidence, not another text-approval request.",
+      "tasks": [
+        "TASK-003"
+      ],
+      "checks": [
+        "CHECK-002"
+      ],
+      "resolution": "Actual exact-text approval plus owner first-party provenance attestation, bounded 1,040-file inventory and seven inspected dependency license texts resolve the documentary gap. See docs/governance/h01-approval.md and docs/licensing/technical-review/README.md; final CHECK-002 report records current review."
+    },
+    {
+      "id": "FIND-003",
+      "source": {
+        "plan": "Final acceptance scenario assessment"
+      },
+      "category": "missing",
+      "state": "open",
+      "evidence": "docs/validation/portfolio-licensing-policy/technical-review.md",
+      "description": "Final delivery acceptance remains incomplete while mandatory package/lineage checks surface active operational gaps; documentary review and individual assessments are being recorded without waiving those requirements.",
+      "tasks": [
+        "TASK-005"
+      ],
+      "checks": [
+        "CHECK-001",
+        "CHECK-002"
+      ]
+    }
+  ]
+}

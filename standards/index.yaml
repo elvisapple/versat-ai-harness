@@ -7,6 +7,8 @@ core:
     - core/agent-artifacts.md
     - core/git.md
     - core/security.md
+    - core/licensing-publication.md
+    - core/contribution.md
     - core/testing.md
     - core/observability.md
 

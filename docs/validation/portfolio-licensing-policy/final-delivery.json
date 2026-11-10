@@ -1,0 +1,235 @@
+{
+  "status": "fail",
+  "phase": "delivery",
+  "checked": [
+    "portfolio-licensing-policy"
+  ],
+  "findings": [
+    {
+      "code": "TASK_INCOMPLETE",
+      "message": "TASK-003 is not completed",
+      "path": "/private/tmp/versat-handoffs-20261110-harness/specs/changes/portfolio-licensing-policy/tasks.md",
+      "severity": "error"
+    },
+    {
+      "code": "TASK_INCOMPLETE",
+      "message": "TASK-004 is not completed",
+      "path": "/private/tmp/versat-handoffs-20261110-harness/specs/changes/portfolio-licensing-policy/tasks.md",
+      "severity": "error"
+    },
+    {
+      "code": "TASK_INCOMPLETE",
+      "message": "TASK-005 is not completed",
+      "path": "/private/tmp/versat-handoffs-20261110-harness/specs/changes/portfolio-licensing-policy/tasks.md",
+      "severity": "error"
+    },
+    {
+      "code": "TASK_INCOMPLETE",
+      "message": "TASK-006 is not completed",
+      "path": "/private/tmp/versat-handoffs-20261110-harness/specs/changes/portfolio-licensing-policy/tasks.md",
+      "severity": "error"
+    },
+    {
+      "code": "VALIDATION_FAILED",
+      "message": "CHECK-005 has a recorded failure",
+      "path": "/private/tmp/versat-handoffs-20261110-harness/specs/changes/portfolio-licensing-policy/tasks.md",
+      "severity": "error"
+    },
+    {
+      "code": "VALIDATION_MISSING",
+      "message": "CHECK-001 requires a passing result with evidence",
+      "path": "/private/tmp/versat-handoffs-20261110-harness/specs/changes/portfolio-licensing-policy/tasks.md",
+      "severity": "unverified"
+    },
+    {
+      "code": "VALIDATION_MISSING",
+      "message": "CHECK-002 requires a passing result with evidence",
+      "path": "/private/tmp/versat-handoffs-20261110-harness/specs/changes/portfolio-licensing-policy/tasks.md",
+      "severity": "unverified"
+    },
+    {
+      "code": "VALIDATION_MISSING",
+      "message": "CHECK-006 requires a passing result with evidence",
+      "path": "/private/tmp/versat-handoffs-20261110-harness/specs/changes/portfolio-licensing-policy/tasks.md",
+      "severity": "unverified"
+    },
+    {
+      "code": "ASSESSMENT_MISSING",
+      "message": "{\"local\":{\"requirement\":\"REQ-002\",\"scenario\":3}}",
+      "path": "/private/tmp/versat-handoffs-20261110-harness/specs/changes/portfolio-licensing-policy/tasks.md",
+      "severity": "unverified"
+    },
+    {
+      "code": "ASSESSMENT_MISSING",
+      "message": "{\"regression\":{\"impact\":2,\"scenario\":0}}",
+      "path": "/private/tmp/versat-handoffs-20261110-harness/specs/changes/portfolio-licensing-policy/tasks.md",
+      "severity": "unverified"
+    },
+    {
+      "code": "ASSESSMENT_MISSING",
+      "message": "{\"local\":{\"requirement\":\"REQ-002\",\"scenario\":2}}",
+      "path": "/private/tmp/versat-handoffs-20261110-harness/specs/changes/portfolio-licensing-policy/tasks.md",
+      "severity": "unverified"
+    },
+    {
+      "code": "ASSESSMENT_MISSING",
+      "message": "{\"local\":{\"requirement\":\"REQ-001\",\"scenario\":2}}",
+      "path": "/private/tmp/versat-handoffs-20261110-harness/specs/changes/portfolio-licensing-policy/tasks.md",
+      "severity": "unverified"
+    },
+    {
+      "code": "ASSESSMENT_MISSING",
+      "message": "{\"local\":{\"requirement\":\"REQ-004\",\"scenario\":3}}",
+      "path": "/private/tmp/versat-handoffs-20261110-harness/specs/changes/portfolio-licensing-policy/tasks.md",
+      "severity": "unverified"
+    },
+    {
+      "code": "ASSESSMENT_MISSING",
+      "message": "{\"local\":{\"requirement\":\"REQ-003\",\"scenario\":3}}",
+      "path": "/private/tmp/versat-handoffs-20261110-harness/specs/changes/portfolio-licensing-policy/tasks.md",
+      "severity": "unverified"
+    },
+    {
+      "code": "ASSESSMENT_MISSING",
+      "message": "{\"regression\":{\"impact\":4,\"scenario\":2}}",
+      "path": "/private/tmp/versat-handoffs-20261110-harness/specs/changes/portfolio-licensing-policy/tasks.md",
+      "severity": "unverified"
+    },
+    {
+      "code": "ASSESSMENT_MISSING",
+      "message": "{\"local\":{\"requirement\":\"REQ-002\",\"scenario\":1}}",
+      "path": "/private/tmp/versat-handoffs-20261110-harness/specs/changes/portfolio-licensing-policy/tasks.md",
+      "severity": "unverified"
+    },
+    {
+      "code": "ASSESSMENT_MISSING",
+      "message": "{\"local\":{\"requirement\":\"REQ-005\",\"scenario\":1}}",
+      "path": "/private/tmp/versat-handoffs-20261110-harness/specs/changes/portfolio-licensing-policy/tasks.md",
+      "severity": "unverified"
+    },
+    {
+      "code": "ASSESSMENT_MISSING",
+      "message": "{\"local\":{\"requirement\":\"REQ-001\",\"scenario\":3}}",
+      "path": "/private/tmp/versat-handoffs-20261110-harness/specs/changes/portfolio-licensing-policy/tasks.md",
+      "severity": "unverified"
+    },
+    {
+      "code": "ASSESSMENT_MISSING",
+      "message": "{\"local\":{\"requirement\":\"REQ-006\",\"scenario\":1}}",
+      "path": "/private/tmp/versat-handoffs-20261110-harness/specs/changes/portfolio-licensing-policy/tasks.md",
+      "severity": "unverified"
+    },
+    {
+      "code": "ASSESSMENT_MISSING",
+      "message": "{\"local\":{\"requirement\":\"REQ-001\",\"scenario\":1}}",
+      "path": "/private/tmp/versat-handoffs-20261110-harness/specs/changes/portfolio-licensing-policy/tasks.md",
+      "severity": "unverified"
+    },
+    {
+      "code": "ASSESSMENT_MISSING",
+      "message": "{\"local\":{\"requirement\":\"REQ-006\",\"scenario\":2}}",
+      "path": "/private/tmp/versat-handoffs-20261110-harness/specs/changes/portfolio-licensing-policy/tasks.md",
+      "severity": "unverified"
+    },
+    {
+      "code": "ASSESSMENT_MISSING",
+      "message": "{\"regression\":{\"impact\":3,\"scenario\":2}}",
+      "path": "/private/tmp/versat-handoffs-20261110-harness/specs/changes/portfolio-licensing-policy/tasks.md",
+      "severity": "unverified"
+    },
+    {
+      "code": "ASSESSMENT_MISSING",
+      "message": "{\"local\":{\"requirement\":\"REQ-003\",\"scenario\":2}}",
+      "path": "/private/tmp/versat-handoffs-20261110-harness/specs/changes/portfolio-licensing-policy/tasks.md",
+      "severity": "unverified"
+    },
+    {
+      "code": "ASSESSMENT_MISSING",
+      "message": "{\"regression\":{\"impact\":1,\"scenario\":0}}",
+      "path": "/private/tmp/versat-handoffs-20261110-harness/specs/changes/portfolio-licensing-policy/tasks.md",
+      "severity": "unverified"
+    },
+    {
+      "code": "ASSESSMENT_MISSING",
+      "message": "{\"local\":{\"requirement\":\"REQ-004\",\"scenario\":1}}",
+      "path": "/private/tmp/versat-handoffs-20261110-harness/specs/changes/portfolio-licensing-policy/tasks.md",
+      "severity": "unverified"
+    },
+    {
+      "code": "ASSESSMENT_MISSING",
+      "message": "{\"local\":{\"requirement\":\"REQ-005\",\"scenario\":3}}",
+      "path": "/private/tmp/versat-handoffs-20261110-harness/specs/changes/portfolio-licensing-policy/tasks.md",
+      "severity": "unverified"
+    },
+    {
+      "code": "ASSESSMENT_MISSING",
+      "message": "{\"regression\":{\"impact\":3,\"scenario\":1}}",
+      "path": "/private/tmp/versat-handoffs-20261110-harness/specs/changes/portfolio-licensing-policy/tasks.md",
+      "severity": "unverified"
+    },
+    {
+      "code": "ASSESSMENT_MISSING",
+      "message": "{\"regression\":{\"impact\":3,\"scenario\":3}}",
+      "path": "/private/tmp/versat-handoffs-20261110-harness/specs/changes/portfolio-licensing-policy/tasks.md",
+      "severity": "unverified"
+    },
+    {
+      "code": "ASSESSMENT_MISSING",
+      "message": "{\"local\":{\"requirement\":\"REQ-006\",\"scenario\":3}}",
+      "path": "/private/tmp/versat-handoffs-20261110-harness/specs/changes/portfolio-licensing-policy/tasks.md",
+      "severity": "unverified"
+    },
+    {
+      "code": "ASSESSMENT_MISSING",
+      "message": "{\"local\":{\"requirement\":\"REQ-003\",\"scenario\":1}}",
+      "path": "/private/tmp/versat-handoffs-20261110-harness/specs/changes/portfolio-licensing-policy/tasks.md",
+      "severity": "unverified"
+    },
+    {
+      "code": "ASSESSMENT_MISSING",
+      "message": "{\"local\":{\"requirement\":\"REQ-005\",\"scenario\":2}}",
+      "path": "/private/tmp/versat-handoffs-20261110-harness/specs/changes/portfolio-licensing-policy/tasks.md",
+      "severity": "unverified"
+    },
+    {
+      "code": "ASSESSMENT_MISSING",
+      "message": "{\"local\":{\"requirement\":\"REQ-004\",\"scenario\":2}}",
+      "path": "/private/tmp/versat-handoffs-20261110-harness/specs/changes/portfolio-licensing-policy/tasks.md",
+      "severity": "unverified"
+    },
+    {
+      "code": "ACCEPTANCE_GAP",
+      "message": "FIND-001: Required exact-text approval and complete component rights/notices evidence remain absent. Owner permission/identity decisions were received and reflected in draft-0.2.",
+      "path": "/private/tmp/versat-handoffs-20261110-harness/specs/changes/portfolio-licensing-policy/tasks.md",
+      "severity": "error"
+    },
+    {
+      "code": "ACCEPTANCE_GAP",
+      "message": "FIND-003: Final scenario acceptance is not complete; required checks and owner/reviewer evidence remain unavailable. Partial local checks do not complete all acceptance/regression obligations.",
+      "path": "/private/tmp/versat-handoffs-20261110-harness/specs/changes/portfolio-licensing-policy/tasks.md",
+      "severity": "error"
+    }
+  ],
+  "warnings": [],
+  "metrics": {
+    "portfolio-licensing-policy": {
+      "local_scenarios": 18,
+      "regression_obligations": 6,
+      "assessed": 0,
+      "results": 6,
+      "open_findings": 2,
+      "stale_results": 0,
+      "requirements": {
+        "REQ-001": "unverified",
+        "REQ-002": "unverified",
+        "REQ-003": "unverified",
+        "REQ-004": "unverified",
+        "REQ-005": "unverified",
+        "REQ-006": "unverified"
+      }
+    }
+  },
+  "live_archives": [],
+  "archive_required": [],
+  "scope": "Declared contract checks only; archive inventory is historical unless selected for live delivery. No proof of semantic adequacy, execution authenticity, human identity, remote CI, merge or deployment."
+}

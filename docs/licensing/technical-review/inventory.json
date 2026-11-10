@@ -1,0 +1,180 @@
+{
+  "base": "597b81c71a0fc0908ff5264fe9987bb5c0d8feec",
+  "tracked_files": 1040,
+  "commits": 46,
+  "shallow": false,
+  "authors": [
+    "Elvis Zoz",
+    "elviszoz"
+  ],
+  "root_counts": {
+    ".agents": 1,
+    ".codex-plugin": 1,
+    ".github": 3,
+    ".gitignore": 1,
+    "AGENTS.md": 1,
+    "CHANGELOG.md": 1,
+    "README.es.md": 1,
+    "README.md": 1,
+    "README.pt.md": 1,
+    "VERSION": 1,
+    "agents": 4,
+    "docs": 850,
+    "plugin.json": 1,
+    "project-templates": 22,
+    "requirements-validation.txt": 1,
+    "resources": 2,
+    "schemas": 5,
+    "scripts": 7,
+    "sdd": 26,
+    "skills": 7,
+    "specs": 41,
+    "standards": 26,
+    "tests": 23,
+    "validators": 13
+  },
+  "non_utf8_or_nul_files": [],
+  "notice_or_vendor_path_matches": [],
+  "python": "3.11.4",
+  "dependency_scope": "Installed validation environment, extras disabled; external to tracked source, not H03 distribution SBOM",
+  "dependencies": [
+    {
+      "name": "jsonschema",
+      "version": "4.23.0",
+      "active_requires": [
+        "attrs>=22.2.0",
+        "jsonschema-specifications>=2023.03.6",
+        "referencing>=0.28.4",
+        "rpds-py>=0.7.1"
+      ],
+      "all_requires": [
+        "attrs>=22.2.0",
+        "importlib-resources>=1.4.0; python_version < '3.9'",
+        "jsonschema-specifications>=2023.03.6",
+        "pkgutil-resolve-name>=1.3.10; python_version < '3.9'",
+        "referencing>=0.28.4",
+        "rpds-py>=0.7.1",
+        "fqdn; extra == 'format'",
+        "idna; extra == 'format'",
+        "isoduration; extra == 'format'",
+        "jsonpointer>1.13; extra == 'format'",
+        "rfc3339-validator; extra == 'format'",
+        "rfc3987; extra == 'format'",
+        "uri-template; extra == 'format'",
+        "webcolors>=1.11; extra == 'format'",
+        "fqdn; extra == 'format-nongpl'",
+        "idna; extra == 'format-nongpl'",
+        "isoduration; extra == 'format-nongpl'",
+        "jsonpointer>1.13; extra == 'format-nongpl'",
+        "rfc3339-validator; extra == 'format-nongpl'",
+        "rfc3986-validator>0.1.0; extra == 'format-nongpl'",
+        "uri-template; extra == 'format-nongpl'",
+        "webcolors>=24.6.0; extra == 'format-nongpl'"
+      ],
+      "license_expression": "MIT",
+      "license_texts": [
+        {
+          "installed_path": "jsonschema-4.23.0.dist-info/licenses/COPYING",
+          "evidence": "dependency-license-texts/jsonschema-4.23.0-COPYING.txt",
+          "sha256": "4f92a015a13c4d1a040bef018aa13430b4f1bc73b41b16bb846c346766de7439"
+        }
+      ]
+    },
+    {
+      "name": "rpds-py",
+      "version": "2026.9.1",
+      "active_requires": [],
+      "all_requires": [],
+      "license_expression": "MIT",
+      "license_texts": [
+        {
+          "installed_path": "rpds_py-2026.9.1.dist-info/licenses/LICENSE",
+          "evidence": "dependency-license-texts/rpds-py-2026.9.1-LICENSE.txt",
+          "sha256": "314e4e91be3baa93c0fb4bccc9e4e97cd643eb839b065af921782c2175fe9909"
+        }
+      ]
+    },
+    {
+      "name": "referencing",
+      "version": "0.37.0",
+      "active_requires": [
+        "attrs>=22.2.0",
+        "rpds-py>=0.7.0",
+        "typing-extensions>=4.4.0; python_version < \"3.13\""
+      ],
+      "all_requires": [
+        "attrs>=22.2.0",
+        "rpds-py>=0.7.0",
+        "typing-extensions>=4.4.0; python_version < '3.13'"
+      ],
+      "license_expression": "MIT",
+      "license_texts": [
+        {
+          "installed_path": "referencing-0.37.0.dist-info/licenses/COPYING",
+          "evidence": "dependency-license-texts/referencing-0.37.0-COPYING.txt",
+          "sha256": "42dcd63495f87b4eb7c7757afa379bb55a53f94afd7a5f657d9adf57236e515c"
+        }
+      ]
+    },
+    {
+      "name": "typing_extensions",
+      "version": "4.16.0",
+      "active_requires": [],
+      "all_requires": [],
+      "license_expression": "PSF-2.0",
+      "license_texts": [
+        {
+          "installed_path": "typing_extensions-4.16.0.dist-info/licenses/LICENSE",
+          "evidence": "dependency-license-texts/typing_extensions-4.16.0-LICENSE.txt",
+          "sha256": "3b2f81fe21d181c499c59a256c8e1968455d6689d269aa85373bfb6af41da3bf"
+        }
+      ]
+    },
+    {
+      "name": "attrs",
+      "version": "26.1.0",
+      "active_requires": [],
+      "all_requires": [],
+      "license_expression": "MIT",
+      "license_texts": [
+        {
+          "installed_path": "attrs-26.1.0.dist-info/licenses/LICENSE",
+          "evidence": "dependency-license-texts/attrs-26.1.0-LICENSE.txt",
+          "sha256": "882115c95dfc2af1eeb6714f8ec6d5cbcabf667caff8729f42420da63f714e9f"
+        }
+      ]
+    },
+    {
+      "name": "jsonschema-specifications",
+      "version": "2025.9.1",
+      "active_requires": [
+        "referencing>=0.31.0"
+      ],
+      "all_requires": [
+        "referencing>=0.31.0"
+      ],
+      "license_expression": "MIT",
+      "license_texts": [
+        {
+          "installed_path": "jsonschema_specifications-2025.9.1.dist-info/licenses/COPYING",
+          "evidence": "dependency-license-texts/jsonschema-specifications-2025.9.1-COPYING.txt",
+          "sha256": "42dcd63495f87b4eb7c7757afa379bb55a53f94afd7a5f657d9adf57236e515c"
+        }
+      ]
+    },
+    {
+      "name": "PyYAML",
+      "version": "6.0.2",
+      "active_requires": [],
+      "all_requires": [],
+      "license_expression": "MIT",
+      "license_texts": [
+        {
+          "installed_path": "PyYAML-6.0.2.dist-info/LICENSE",
+          "evidence": "dependency-license-texts/PyYAML-6.0.2-LICENSE.txt",
+          "sha256": "8d3928f9dc4490fd635707cb88eb26bd764102a7282954307d3e5167a577e8a4"
+        }
+      ]
+    }
+  ]
+}

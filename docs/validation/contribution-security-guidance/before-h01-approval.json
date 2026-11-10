@@ -1,0 +1,85 @@
+{
+  "plan_digest": "d969a531b3de153e562ff06d72c4ad0568b3a88caabbb52ca7b465bd05c2d284",
+  "results": [
+    {
+      "check": "CHECK-004",
+      "result": "unverified",
+      "evidence": "docs/validation/contribution-security-guidance/routing-review.md",
+      "revision": "2026-11-10 routing decision working tree on 597b81c71a0fc0908ff5264fe9987bb5c0d8feec",
+      "input_digest_before": "62926aef8f2ac7db72075d6d799911dec50289b2dbc35910a7f216087f334dfd",
+      "input_digest_after": "62926aef8f2ac7db72075d6d799911dec50289b2dbc35910a7f216087f334dfd",
+      "context": {
+        "execution": "local",
+        "environment": "macOS-26.5.2-arm64-arm-64bit; Python 3.11.4; no external channel activation or test",
+        "observed": true
+      }
+    },
+    {
+      "check": "CHECK-005",
+      "result": "fail",
+      "evidence": "docs/validation/contribution-security-guidance/routing-package.txt",
+      "revision": "2026-11-10 routing decision working tree on 597b81c71a0fc0908ff5264fe9987bb5c0d8feec",
+      "input_digest_before": "c303a7e29879a81f7b23e68cc8ebc744551525ef9479f8d2b7a936fda278d986",
+      "input_digest_after": "c303a7e29879a81f7b23e68cc8ebc744551525ef9479f8d2b7a936fda278d986",
+      "context": {
+        "execution": "local",
+        "environment": "macOS-26.5.2-arm64-arm-64bit; Python 3.11.4; no external channel activation or test",
+        "observed": true
+      }
+    }
+  ],
+  "assessments": [],
+  "findings": [
+    {
+      "id": "FIND-001",
+      "source": {
+        "plan": "Exact terms approval and component rights evidence"
+      },
+      "category": "missing",
+      "state": "open",
+      "evidence": "docs/validation/contribution-security-guidance/review.md",
+      "description": "Required exact-text approval and complete component rights/notices evidence remain absent. Owner permission/identity decisions were received and reflected in draft-0.2.",
+      "tasks": [
+        "TASK-003"
+      ],
+      "checks": [
+        "CHECK-002"
+      ]
+    },
+    {
+      "id": "FIND-002",
+      "source": {
+        "plan": "Confidential reporting route verification"
+      },
+      "category": "missing",
+      "state": "open",
+      "evidence": "docs/validation/contribution-security-guidance/review.md",
+      "description": "Public GitHub PVR and private CODEOWNERS/internal-email routes are selected; actual per-repository enablement, recipients, authorized receipt/access observations remain pending.",
+      "tasks": [
+        "TASK-004"
+      ],
+      "checks": [
+        "CHECK-003"
+      ]
+    },
+    {
+      "id": "FIND-003",
+      "source": {
+        "plan": "Final acceptance scenario assessment"
+      },
+      "category": "missing",
+      "state": "open",
+      "evidence": "docs/validation/contribution-security-guidance/review.md",
+      "description": "Final scenario acceptance is not complete; required checks and owner/reviewer evidence remain unavailable. Partial local checks do not complete all acceptance/regression obligations.",
+      "tasks": [
+        "TASK-006"
+      ],
+      "checks": [
+        "CHECK-001",
+        "CHECK-002",
+        "CHECK-003",
+        "CHECK-004"
+      ]
+    }
+  ]
+}

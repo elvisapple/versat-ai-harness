@@ -1,0 +1,7 @@
+Index keys: ['schema_version', 'core', 'profiles', 'domains', 'technologies', 'criticality']
+Both additive core.always entries occur once and resolve.
+Protected package/version/provider/history paths unchanged from baseline.
+Resolved 236 local Markdown links/anchors in 26 reviewed files. External intended-reader access is not certified.
+Manifest verifies all 24 source/candidate copies; only CONTRIBUTING locale files differ.
+No root LICENSE or NOTICE: True True
+Terms draft-0.2 SHA256: ba84ea407a9402c2e653bb4450ca79e0e9032582bf5c0283e16b3b45a3ddbb2c

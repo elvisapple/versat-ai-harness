@@ -1,6 +1,6 @@
 # H02 operational verification attempt — 2026-11-10
 
-Status: in progress; not an acceptance pass. Source PR heads: Harness `abde65cc25346108b32edb883f6ae5a0ca413503`; organization `97d7f4c1ceb76ea42cc37250fc47bdecec7a677b`. Both remain draft and unmerged.
+Status: blocked by reporter-account availability; not an acceptance pass. Initial source PR heads: Harness `abde65cc25346108b32edb883f6ae5a0ca413503`; organization `97d7f4c1ceb76ea42cc37250fc47bdecec7a677b`. Both remain draft and unmerged. Initial partial evidence was published in Harness commit `2a91262d310ee4822fb475b9bfd78a81699210ad`.
 
 ## Authority and scope
 
@@ -18,7 +18,9 @@ The authorization covers PVR enablement in `versat-labs/.github` and non-sensiti
 - Repository collaborators observed: `elviszoz` and `evertonspohrversat` have admin access; `PabloSalinasV` and `rafaelalmeida-versat` have read access. No membership or role was changed.
 - `GET /orgs/versat-labs/security-managers` returned an empty list. This records the API observation, not a claim that organization-owner rights cease to apply.
 - Reading the authenticated account's repository subscription returned HTTP 404 with an explicit missing `notifications` OAuth scope diagnostic. Notification preferences are unverified; no token scope or subscription was changed.
-- A non-administrator reporter observation has been requested from the owner using the private reporting flow and marker `H02-20261110-PVR-01`. No test report has yet been observed. Administrator access alone is not substituted for intended-reporter access.
+- The owner answered the reporter-availability question: "Não tenho uma conta ou pessoa disponível para esse teste". No non-administrator reporter is available. Administrator access alone is not substituted for intended-reporter access.
+- A single authorized real submission attempt was subsequently made as `elviszoz` through `POST /repos/versat-labs/.github/security-advisories/reports`, with the clearly synthetic title `TESTE AUTORIZADO H02 — sem vulnerabilidade real`, marker `H02-20261110-PVR-01`, no affected packages or CWE, and no CVE request.
+- GitHub returned HTTP 403: `You are not authorized to report advisories in this repository via private vulnerability reporting`. No success or receipt is claimed. A subsequent repository-advisory listing found no H02 test advisory. The agent did not substitute direct maintainer advisory creation, create an account or change roles.
 - The custom organization form remains in unmerged PR #4. Enabling PVR does not deploy that candidate or prove its rendered inheritance.
 
 ## Observed Harness internal email
@@ -32,6 +34,6 @@ The authorization covers PVR enablement in `versat-labs/.github` and non-sensiti
 
 ## Remaining evidence and current disposition
 
-Obtain a real private PVR report from the intended non-administrator audience, verify its reception and permitted visibility, and inspect actual notification evidence. Complete the internal-route receipt/access observations within available authorized access. Exercise and record denied/unavailable-channel recovery. Then update current source status, capture fresh check input snapshots and rerun affected checks before assigning passes.
+Obtain an authorized available reporter account capable of using PVR, then verify actual reception, permitted visibility and notification evidence. The owner currently has no such account/person. Complete the internal-route receipt/access observations within available authorized access. The actual 403 establishes denied-submission behavior only; the safe fallback is to keep details private and request appropriate private routing, not post them to an ordinary issue. Then update current source status, capture fresh check input snapshots and rerun affected checks before assigning passes.
 
 TASK-004 and CHECK-003 remain incomplete. No other result is relabeled from this partial attempt. The known CI failure remains until genuine acceptance evidence and the corresponding H01/H02 checks are completed. No merge, effective terms, consumer update or public advisory publication occurred.

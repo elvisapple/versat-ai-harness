@@ -1,0 +1,23 @@
+Fresh execution after preserving sdd/.DS_Store outside the repository. The current input digest also matches a clean Git clone.
+Command: /private/tmp/versat-pr36-validation-venv/bin/python validators/plugin/validate.py
+Portable Plugin package validation passed.
+
+Exit: 0
+
+Command: /private/tmp/versat-pr36-validation-venv/bin/python -m unittest discover -s tests/validators -p test_*.py
+...................................................................................................................................
+----------------------------------------------------------------------
+Ran 131 tests in 23.143s
+
+OK
+
+Exit: 0
+
+Command: /private/tmp/versat-pr36-validation-venv/bin/python -m unittest discover -s tests/execution -p test_*.py
+................................................
+----------------------------------------------------------------------
+Ran 48 tests in 12.740s
+
+OK
+
+Exit: 0

@@ -20,12 +20,12 @@ WARNING LEGACY_EXEMPT: /Users/elviszoz/Projects/versat-labs/versat-ai-harness/sp
 WARNING LEGACY_HISTORICAL_ARCHIVE: /Users/elviszoz/Projects/versat-labs/versat-ai-harness/specs/archive/shortcut-git-convention: Historical archive record preserved; merge evidence requires human review and v2 readiness remains unverified
 ...................................................................................................................................
 ----------------------------------------------------------------------
-Ran 131 tests in 22.372s
+Ran 131 tests in 22.097s
 
 OK
 ................................................
 ----------------------------------------------------------------------
-Ran 48 tests in 13.792s
+Ran 48 tests in 12.468s
 
 OK
 Versat AI Harness package, SDD contract and validator tests passed.

@@ -1,3 +1,4 @@
+Original local attempt; superseded by rerun-suites.txt after the remote input mismatch.
 Python 3.11.4; macOS-26.5.2-arm64-arm-64bit
 Review: current stage digests match actual approved content. Proposal R2, Design R3 and Tasks R3 quotes match the chat. No changes to validators, tests, scripts, workflow or SDD policy against the PR base. Empty-selection regression is maintained.
 Command: PYTHON=<validation-venv>/bin/python ./scripts/validate/run.sh

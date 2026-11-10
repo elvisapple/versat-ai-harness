@@ -52,11 +52,11 @@ validation:
       observed: true
   - check: CHECK-002
     result: pass
-    evidence: docs/validation/default-codeowner-elviszoz/suite.txt
-    revision: e21976a2f7d4ba17239d76565078c12148d8d9ac plus approved local dossier
-      (Proposal R2, Design R3, Tasks R3)
-    input_digest_before: e6eb7a18107239f8ad295c4141fc7955e33c660f4b8395487682a6609639b484
-    input_digest_after: e6eb7a18107239f8ad295c4141fc7955e33c660f4b8395487682a6609639b484
+    evidence: docs/validation/default-codeowner-elviszoz/rerun-suites.txt
+    revision: f79328f4ce3abe005702b020341a7c841a0da1d8 working tree after removing
+      local Finder metadata from check inputs; fresh suite execution
+    input_digest_before: 53161a2a7e0440bdd1fa3e31e2012a14506d9530191aea935ba7b6f9b4cfa0f9
+    input_digest_after: 53161a2a7e0440bdd1fa3e31e2012a14506d9530191aea935ba7b6f9b4cfa0f9
     context:
       execution: local
       environment: macOS arm64, Python 3.11, validation virtual environment with requirements-validation.txt
@@ -108,7 +108,7 @@ validation:
     result: pass
     checks:
     - CHECK-002
-    evidence: docs/validation/default-codeowner-elviszoz/suite.txt
+    evidence: docs/validation/default-codeowner-elviszoz/rerun-suites.txt
     explanation: Recorded approval quotes match the chat and current canonical stage
       digests.
   - obligation:
@@ -129,7 +129,7 @@ validation:
     result: pass
     checks:
     - CHECK-002
-    evidence: docs/validation/default-codeowner-elviszoz/suite.txt
+    evidence: docs/validation/default-codeowner-elviszoz/rerun-suites.txt
     explanation: Guard, workflow and regression are unchanged; all 131 validator and
       48 execution tests passed.
   - obligation:
@@ -149,7 +149,7 @@ validation:
     result: pass
     checks:
     - CHECK-002
-    evidence: docs/validation/default-codeowner-elviszoz/suite.txt
+    evidence: docs/validation/default-codeowner-elviszoz/rerun-suites.txt
     explanation: 'Run the existing complete suite, including the empty-selection regression,
       and review that governance enforcement is unchanged. Actual observed result:
       pass.'
@@ -181,4 +181,4 @@ CHECK-001 and CHECK-002 passed with matching before/after snapshots. Durable evi
 
 ## Delivery
 
-Pre-move selected delivery validation passed. The unique dossier is now in specs/archive/default-codeowner-elviszoz with closure prepared. Final post-move selected delivery and baseline-aware submission preflight passed, including all 179 tests. Local preparation is complete; remote CI has not been rerun. Remote publication remains separately authorized.
+Pre-move selected delivery validation passed. The unique dossier is now in specs/archive/default-codeowner-elviszoz with closure prepared. Final post-move selected delivery and baseline-aware submission preflight passed, including all 179 tests. Local preparation is complete; the first remote run failed INPUT_STALE because a local Finder file was in the recorded scope. Fresh suites passed after preserving that file outside the repository; the new snapshot matches a clean Git checkout. Final preflight and a new remote run follow. Remote publication remains separately authorized.

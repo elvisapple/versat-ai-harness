@@ -1,0 +1,11 @@
+Bounded review of the actual patterns using last matching rule precedence.
+Base: 597b81c71a0fc0908ff5264fe9987bb5c0d8feec
+Head: e21976a2f7d4ba17239d76565078c12148d8d9ac
+Only additions are the leading fallback and blank line. All 12 existing specific rules and both owners are byte-preserved.
+README.md: @elviszoz
+new/path/file.md: @elviszoz
+.github/CODEOWNERS: @elviszoz @evertonspohrversat
+standards/core/git.md: @elviszoz @evertonspohrversat
+skills/versat-sdd/SKILL.md: @elviszoz @evertonspohrversat
+tests/validators/test_sdd.py: @elviszoz @evertonspohrversat
+This checks the listed concrete patterns, not a general GitHub matcher.

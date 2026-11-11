@@ -3,7 +3,7 @@ sdd_version: 3
 change: contribution-security-guidance
 tasks:
 - id: TASK-001
-  description: Reconcile the current Harness and organization baselines and collect reporting-route inputs.
+  description: Reconcile current Harness and organization sources and retained reporting evidence.
   requirements:
   - REQ-001
   - REQ-002
@@ -12,7 +12,7 @@ tasks:
   - REQ-006
   status: pending
 - id: TASK-002
-  description: Implement common contribution/security rules and localized guides using maintained sources.
+  description: Reconcile existing contribution/security guidance and exact R2 snapshot scopes.
   requirements:
   - REQ-001
   - REQ-002
@@ -22,20 +22,20 @@ tasks:
   - REQ-006
   status: pending
 - id: TASK-003
-  description: Bind contribution guidance to the approved H01 terms and verify provenance boundaries.
+  description: Reverify H01 terms consumption and contribution provenance boundaries.
   requirements:
   - REQ-002
   - REQ-003
   - REQ-006
   status: pending
 - id: TASK-004
-  description: Verify the actual confidential reporting route with explicitly authorized evidence.
+  description: Revalidate the bounded reporting observations and safe fallback without new submissions.
   requirements:
   - REQ-004
   - REQ-006
   status: pending
 - id: TASK-005
-  description: Prepare and review the private organization candidate and its coordinated adoption record.
+  description: Reverify the seven-file public candidate and coordinated rollout boundaries.
   requirements:
   - REQ-001
   - REQ-002
@@ -43,7 +43,7 @@ tasks:
   - REQ-006
   status: pending
 - id: TASK-006
-  description: Execute all approved checks and assess the complete acceptance and regression set.
+  description: Execute R2 checks and record all 35 current acceptance and regression assessments.
   requirements:
   - REQ-001
   - REQ-002
@@ -53,17 +53,17 @@ tasks:
   - REQ-006
   status: pending
 - id: TASK-007
-  description: Prepare the verified acceptance package and reconcile the private handoff state.
+  description: Prepare the H02 acceptance package and coordinated private handoff.
   requirements:
   - REQ-006
   status: pending
 review:
-  revision: 1
-  state: superseded
+  revision: 2
+  state: awaiting-approval
   blockers: []
   upstream:
     proposal: 6bed2e92d705d83385b31d27364cfcda2b05549678818801c6082132d6dbc8d2
-    design: 6f120a41ac76673587dff9355ab7fddc4e40f6f2a1e43af75a0cffa23314f3e2
+    design: fa67e58e5e75d6d2e42757919b126690368d2654b25f48352eaf0a3b5f7ee844
   approval: null
 validation:
   plan_digest: null
@@ -73,145 +73,120 @@ validation:
 closure: active
 ---
 
-# Tasks — H02
+# Tasks — H02 R2
 
-Change `contribution-security-guidance` · [Harness #35](https://github.com/versat-labs/versat-ai-harness/issues/35) · Tasks R1.
-Executor and accountable security/licensing contact: Elvis Zoz (`@elviszoz`); technical review follows the existing CODEOWNERS. Terms approval is an input from H01, not an approval implied by this assignment.
+Change `contribution-security-guidance` · [Harness #35](https://github.com/versat-labs/versat-ai-harness/issues/35) · Tasks revision 2, awaiting Gate 3 approval.
 
-## Authorized stage and execution boundary
+Executor/accountable contact: Elvis Luis Zoz (`@elviszoz`); technical review follows actual CODEOWNERS. This revision revalidates existing documentary work under the approved Design R2. It does not repeat already accepted licensing decisions or claim that previous completed work never occurred.
 
-Proposal/Requirements R1 and Design R1 are approved. This stage prepares Tasks only. Every task is pending, and no execution is authorized by the latest Design approval. After reviewing this Tasks revision, the user may approve it and separately or jointly authorize a bounded implementation scope.
+## Stage and execution boundary
 
-This plan covers common guidance and a private organization candidate. It does not authorize public `.github` changes, live channel configuration, synthetic messages, access changes, licenses, releases or consumer/product adoption. The real route check has its own explicit authorization prerequisite; no fallback-only guide can complete H02.
+Proposal/Requirements R1 remains approved. The user approved both exact Design R2 revisions with “aprovado.” after their presentation. This authorizes preparing these Tasks, not execution of previously unseen Tasks R2. All tasks below are pending for the current revision, with no prefilled check results or assessments. Historical approvals, completed work, green draft CI and route evidence remain attributable in the R1 records.
+
+The proposed execution scope is bounded revalidation, joint documentary closure and preparation of the two existing PRs for review under the authority actually given after this plan is reviewed. No merge, license application, new legal grant, new live report/email, channel activation, role change, release or product-wide adoption is included. Public custom-form deployment/inheritance remains a later consequence/check of an authorized merge, not a fabricated pre-merge observation.
 
 ## Ordered work
 
-- [ ] TASK-001 — Reconcile the current Harness and organization baselines and collect reporting-route inputs.
+- [ ] TASK-001 — Reconcile current Harness and organization sources and retained reporting evidence.
 
-  **Depends on:** current three planning approvals and explicit implementation authorization before starting.
+  **Depends on:** Current Tasks R2 approval and applicable execution authorization for both coordinated changes.
 
-  **Work:** inspect drift from selected Harness source `597b81c71a0fc0908ff5264fe9987bb5c0d8feec` and preserve the exact provider and unrelated work. Refresh the read-only `.github` baseline, AGENTS instructions, CONTRIBUTING/README locale files and relevant source references before preparing a patch. Record actual repository/ref/blob and intended-reader access; preserve Issue 22, PR 33 and organization PR 3 as delivered history. Inspect the existing guidelines and obtain the owner's actual reporting-route inputs: destination/provider if any, audience, responder/access boundary, retention/minimization instructions, operational commitments and authorized verification scope. Record only safe metadata in `docs/governance/security-reporting.md`; mark missing or unverified inputs explicitly. Do not choose a fictional endpoint or activate one.
+  **Work:** Refresh the same private/public heads and trusted main baseline identified in H01 TASK-001. Re-read target instructions, actual seven-file candidate and source access. Preserve Issue 22/PR33/.github PR3 as delivered history and Issue35 as current H02 coordination. Inspect existing private route evidence and later closure records without exporting internal details. Preserve repository-specific precedence and independent product adoption.
 
-  **Complete when:** current baselines and useful retained behavior are identified; available channel inputs and concrete missing-input follow-ups are recorded; a public/private audience can be identified for every proposed route. This task inventories prerequisites and does not certify an operational channel. A material baseline/contract change reopens the affected gate.
+  **Complete when:** Current source/ref/access and concrete drift are identified; retained route facts are attributable without implying a new test or current universal rollout.
 
-  **Evidence/checks:** baseline/candidate source record for CHECK-001/004/006 and safe reporting record for CHECK-003.
+  **Evidence/checks:** CHECK-001/003/004/006.
 
-- [ ] TASK-002 — Implement common contribution/security rules and localized guides using maintained sources.
+- [ ] TASK-002 — Reconcile existing contribution/security guidance and exact R2 snapshot scopes.
 
-  **Depends on:** TASK-001 and the agreed H01 common-policy contract; draft text may proceed while H01's concrete terms approval is pending.
+  **Depends on:** TASK-001 and coordinated H01 policy sources.
 
-  **Work:** add `standards/core/contribution.md` and its single `core.always` entry; extend the existing Security Standard for verified confidential reporting and safe failure behavior. Create the `contributing` and `security-reporting` user guides in EN/PT/ES using the approved Design paths. Reuse existing setup, SDD, GitHub delivery and validation guides. Preserve repository-specific precedence, provenance/notices, actual review/check requirements, optional labeled private resources and a usable public route for a contributor without the tool. Do not introduce a CLA, DCO, IP assignment or unprovided rights grant. Unknown terms/channel details remain explicitly unavailable in drafts; those drafts cannot be called final accepted guidance.
+  **Work:** Review canonical contribution/security rules, index and EN/PT/ES guides against the approved contracts. Confirm only specs/archive/portfolio-licensing-policy/tasks.md is newly excluded from CHECK-005/006. Keep all product inputs and other archive plans included. Preserve CODEOWNERS responsibility, safe private-contact recovery, public tool-free participation and source ownership. No validator/workflow rewrite, CLA/DCO, new rights mechanism or broader exclusion.
 
-  **Complete when:** common rules resolve through the index and all six guide files provide useful, aligned journeys with truthful current access/route status, no copied SDD manual and no invented legal or security capability. Final exact terms/active-route content is completed by TASK-003/004; completion here does not satisfy their acceptance.
+  **Complete when:** Current guidance and the exact scoped correction match Design R2 with no unsupported route, access or licensing claims.
 
-  **Evidence/checks:** CHECK-001/004 and relevant CHECK-002/003 behavior; final passes are recorded after the dependent facts and source text stabilize.
+  **Evidence/checks:** CHECK-001/003/004/005/006.
 
-- [ ] TASK-003 — Bind contribution guidance to the approved H01 terms and verify provenance boundaries.
+- [ ] TASK-003 — Reverify H01 terms consumption and contribution provenance boundaries.
 
-  **Depends on:** TASK-002 and H01 TASK-003's genuinely approved terms/notices candidate, with accessible approval evidence and exact version/hash.
+  **Depends on:** TASK-002 and H01 TASK-003 actual approved terms/evidence.
 
-  **Work:** incorporate the actual approved H01 references and applicable audience limits; distinguish tool permissions from destination-project licensing. Verify first-party, third-party and missing-rights examples. Check that a tool-free public contribution does not require access to private terms or internal resources. Do not copy/rewrite approved legal text or invent a public terms URL. If H01 wording, approval or access changes, invalidate the affected references/evidence and rerun the check.
+  **Work:** Inspect approved H01 version/hashes and source approval references. Revisit first-party, third-party and missing-rights cases; distinguish tool permission from target-project terms. Preserve the public path without mandatory private access and do not introduce a public terms endpoint. Actual terms/provenance/access drift invalidates affected evidence.
 
-  **Complete when:** every approved-terms assertion has the correct version/hash and actual approval reference, provenance/notice responsibilities are clear, and missing-rights/review cases prevent acceptance without creating a new legal mechanism. A pending H01 candidate blocks this task; neither H01 archive/merge nor H03 distribution is required merely to bind correct private-source references with truthful public-access limits.
+  **Complete when:** Approved references and provenance cases remain correct; no new text approval is invented or requested for unchanged terms.
 
-  **Evidence/checks:** CHECK-002, including its contribution to REQ-006's final evidence assessment.
+  **Evidence/checks:** CHECK-002.
 
-- [ ] TASK-004 — Verify the actual confidential reporting route with explicitly authorized evidence.
+- [ ] TASK-004 — Revalidate the bounded reporting observations and safe fallback without new submissions.
 
-  **Depends on:** TASK-001's owner-approved real route and verification scope, TASK-002's guide, available configuration/access observations and explicit authorization for the concrete synthetic submission. Private-document implementation authorization alone is insufficient.
+  **Depends on:** TASK-001/002, existing actual operational evidence and authorized read-only access.
 
-  **Work:** finalize safe source configuration/decision metadata before its input digest. Follow CHECK-003 exactly: an authorized performer sends a non-sensitive unique marker through the actual chosen route; observe intended-responder receipt and permitted access/configuration evidence for the intended reporter audience. Record performer, authorization, actual destination scope, time/environment, safe receipt reference and verification limits without credentials or real vulnerability payloads. Exercise unavailable/unverified route, denied access and safe public-contact fallback. Update all guide locales to verified status only after genuine evidence; freeze source changes and repeat affected checks as needed. Do not enable a new service, modify access or send unapproved messages. If a setting change is necessary, stop and obtain that distinct operational authorization first.
+  **Work:** Inspect the recorded genuine PVR submissions by oscarcareaga89, read-only reporter role, maintainer visibility, anonymous denial and received notification; verify current permitted configuration/receipt records read-only where available. Inspect the internal Harness email marker and Elvis inbox receipt with their documented limits; do not claim Everton receipt or a forwarding audit. Preserve original performers/timestamps and both subsequent private test closures. Closing synthetic reports is not evidence that PVR was disabled. Reassess current source scope and unavailable/denied routing. Design R2 explicitly requires no repeated live report/notification solely for this correction: distinguish the current review from retained actual submission/receipt observations and never label an old event as a new execution. If material external drift or unavailable evidence prevents the required method, record unverified and the exact gap; obtain specific authority only for genuinely new operations.
 
-  **Complete when:** actual route, receipt and supported access boundary are observed and attributable; safe fallback works; operational promises are owner-approved; no active claim exceeds the evidence. A mock, administrator-only access assumption, supplied address without receipt, or fallback-only guide is insufficient. If prerequisites or permission are unavailable, this task becomes blocked during execution and the required check remains unverified; other independent documentation work can continue.
+  **Complete when:** The actual bounded method, original authorization/receipt/access evidence and current source claims remain supportable. No new report/email, channel activation or role change occurs. Unsupported scopes stay unverified; no fallback-only acceptance.
 
-  **Evidence/checks:** CHECK-003 and the authorization-boundary observations in CHECK-006. Owner-performed evidence is usable only if its actual method, inputs, authorization, receipt and limits can be inspected; no execution is fabricated.
+  **Evidence/checks:** CHECK-003 and authorization review in CHECK-006.
 
-- [ ] TASK-005 — Prepare and review the private organization candidate and its coordinated adoption record.
+- [ ] TASK-005 — Reverify the seven-file public candidate and coordinated rollout boundaries.
 
-  **Depends on:** TASK-001/002 for drafting; TASK-003/004 for final approved-terms and verified-route claims.
+  **Depends on:** TASK-001–004 and real H01 reference evidence.
 
-  **Work:** prepare the EN/PT/ES CONTRIBUTING candidate, source baseline/diff and non-sensitive handoff record under `docs/handoffs/contribution-security-guidance/organization/`. Adjust organization README candidate siblings only if their navigation/description actually changes. Keep the profile, issue forms/fields/types/project associations and repository precedence unchanged. Add Harness README locale links only when targets exist. Review the candidate independently of private strategy; preserve a self-contained public route, optional clearly private detail and actual intended-reader access. Verify replacement dependencies and record pending public activation separately; do not create a URL for an uncommitted candidate or write to the public repository.
+  **Work:** Compare public PR #4 bytes with the reviewed private candidate, refreshed baseline, native YAML, EN/PT/ES navigation, terms/access/recovery and patch applicability. Preserve existing forms/profile/CODEOWNERS/README and the independently usable public route. Keep operational evidence, internal contacts and source inventories private. The unmerged custom form rendering/inheritance remains a deployment check, distinct from the tested native form; no new service or public operational claim is introduced.
 
-  **Complete when:** candidate text, localized navigation and reviewed diff preserve the delivered organization behavior; source/reference/access evidence is explicit; a missing replacement target retains the old usable live route. The record identifies separate future organization review/rollout and product adoption responsibilities. Local candidate completion is not public adoption or distribution.
+  **Complete when:** Exactly the authorized seven-file scope and its documentary checks are verified. No deployment/inheritance or automatic product adoption is claimed.
 
-  **Evidence/checks:** CHECK-001/004; retain all old useful paths and Issue 35 traceability for new coordination without reopening Issue 22.
+  **Evidence/checks:** CHECK-001/004.
 
-- [ ] TASK-006 — Execute all approved checks and assess the complete acceptance and regression set.
+- [ ] TASK-006 — Execute R2 checks and record all 35 current acceptance and regression assessments.
 
-  **Depends on:** TASK-001–005 and stable source inputs, including real H01 text approval and actual confidential-route evidence.
+  **Depends on:** TASK-001–005; both approved task plans and stable relevant sources.
 
-  **Work:** execute all six approved Design methods with actual before/after canonical input digests, environment, revision and safe evidence paths under `docs/validation/contribution-security-guidance/`. Reuse adequate existing methods, not prior passing results. Run the full maintained `./scripts/validate/run.sh`; check the organization candidate through its actual diff, links, translations and intended-access review rather than inventing an application test suite. Assess every one of the 21 local and 14 retained obligations. Retain the planned replacement of new-delivery Issue 22 linkage with Issue 35 while preserving historical delivery. Track failures/unverified findings and fix in-scope defects through the responsible task; rerun affected checks after shared-source, terms, route or remote-state changes.
+  **Work:** Execute all six approved methods with actual before/after snapshots, context and safe evidence. Coordinate the same CHECK-005 full suite and CHECK-006 cycle/source/plan/failure diagnostics with H01 without replacing either change's individual ledger. Verify current stage bindings for both changes. Record all 21 local and 14 retained obligations and preserve failures/unverified attempts. Keep public candidate checks proportionate; no application suite or remote CI is invented for .github. No result is refreshed by copying an old digest or labeling retained receipt as a new submission.
 
-  **Complete when:** six current required results pass, all 35 applicable assessments pass, no open finding or stale result remains and actual Tasks/input digests bind the evidence. Structural success cannot replace approval, public-reader usability, live reporting-route verification or translation review. Required unavailable checks remain unverified, not excluded. CHECK-006 has no dependency on delivery/archive success.
+  **Complete when:** Six current checks and all 35 obligations pass, with matching snapshots, current task/approval bindings and no open findings. Final delivery/archive is a separate later audit.
 
-  **Evidence/checks:** CHECK-001–006; planned `check-001.md` through `check-006.md` or equivalent stable observed evidence. Complete statuses are never inferred from documentation preparation alone.
+  **Evidence/checks:** CHECK-001–006.
 
-- [ ] TASK-007 — Prepare the verified acceptance package and reconcile the private handoff state.
+- [ ] TASK-007 — Prepare the H02 acceptance package and coordinated private handoff.
 
   **Depends on:** TASK-006.
 
-  **Work:** inspect task completion, current upstream approvals, six results, all 35 assessments, accessible evidence and source/terms references, unchanged historical dossiers and zero unresolved findings. Prepare the review summary distinguishing common guidance from the still separately authorized organization rollout, per-product adoption and H03 distribution. Reconcile authorized private tracking without closing unrelated issues or claiming live changes. Confirm the independent closure procedure below is ready to follow after accurate task completion.
+  **Work:** Review task outcomes, six results, 35 assessments, actual route limits and term/source lineage. Prepare a truthful private PR/issue summary retaining the separation of tested pilot, unmerged public template, product adoption and H03. Do not expose private test details in the public PR. The independent joint closure steps follow completion; they are not a task precondition.
 
-  **Complete when:** the reviewed acceptance package and truthful handoff summary are ready and all preceding work is actually complete. The final delivery/archive guard is not a prerequisite of this task. If review changes declared source inputs, reopen affected validation before recording completion.
+  **Complete when:** The current acceptance package is accurate and reviewable with no fabricated approval, operational result or integration claim.
 
-  **Evidence/checks:** reuse CHECK-001–006 and current assessments. No invented new approval or test result is introduced merely to prepare the summary.
+  **Evidence/checks:** Current CHECK-001–006 evidence.
 
-## Dependencies and concurrent work
+## Joint validation and closure sequence
 
-TASK-001 precedes TASK-002. TASK-003 and TASK-004 address independent terms and channel inputs and can progress concurrently where authorized. TASK-005 drafting may proceed after TASK-002, but its final claims depend on TASK-003/004. TASK-006 follows all finalized source work; TASK-007 follows complete acceptance.
+This procedure coordinates the two existing changes without creating a task that requires its own completion result. Both have approved Designs R2; execution waits for current Tasks approval and its applicable authority.
 
-H01's actual terms approval is necessary for CHECK-002, but its final archive/merge is not a prerequisite to prepare H02 privately. The confidentiality requirement cannot be satisfied by waiting for unrelated product bootstrap or by assuming H03 will solve it. Platform, Workspace, Discover and CRM retain their own terms/access/adoption evidence through P01/P03.
+1. Preserve the complete R1 ledger and all real attempts. Reconcile baselines and finish actual source work; freeze relevant plans, terms, guidance and shared sources before snapshots. Reuse existing work and actual operational observations with their original scope, not blanket historical passes.
+2. Execute all approved methods on current inputs, record truthful results and individual assessments, resolve actual findings, and finish each acceptance-package task. Selected planning/implementation checks and full maintained suites remain required. No passing placeholder, test exclusion or validator modification may resolve a ledger/closure failure.
+3. Run selected pre-move `--phase delivery` for each eligible change. Move only an eligible unique dossier to archive and set `closure: prepared`. Recheck references and rerun any affected source-dependent check after a sibling move; do not silently give a previous run a new digest. If a guard fails, reopen affected work honestly under the canonical workflow before claiming readiness. A dossier move may change peer plan paths once; evidence-only updates must not retain the R1 hash cycle.
+4. On the final combined layout, verify every actual before/after snapshot remains current after recording both result sets. Verify both stage/Tasks approvals and run selected `--phase delivery --require-archive` for both IDs plus the maintained full suite with the trusted PR baseline and `--require-archive`. These are final lifecycle audits, independent of CHECK-006's completed execution. Stop and report a concrete failure rather than weakening a gate or inventing a run.
+5. Reuse private PR #37 for the resulting authorized implementation; preserve public PR #4's seven-file payload. Reconcile private metadata/evidence and only documentary public summaries. When transition to review is authorized and both final local guards pass, mark the existing PRs ready for review and observe all resulting required CI. Human/platform reviews remain separate; their absence cannot be filled by an agent-authored approval. Do not merge.
 
-Serialize shared index/README edits with H01 and revalidate the final relevant combined source. Changes to H01 terms/review records, organization baseline, channel configuration or a sibling archive included in declared scopes require affected checks to be rerun. Do not introduce a circular requirement that either dossier's archive must already be complete before the other can finish its own task work.
+Common work can be observed once when its method, inputs and context genuinely satisfy both mappings; each change still needs its own accurate results and individual assessments. H01 exact terms approval, H02 reporting verification, other-product adoption and H03 distribution remain distinct. No automatic consumer upgrade or effective license follows from archival or PR readiness.
 
-## Risks and execution stop conditions
+## Stop conditions and rollback
 
-Missing H01 approval, unavailable or unapproved reporting destination, absent synthetic-test authorization, inaccessible evidence and unverified intended-reader access block the affected task/check. Public organization writes, access changes, channel setup and synthetic communications remain separately scoped operational actions. No endpoint, response SLA, retention policy, legal mechanism or reviewer qualification is invented to bypass a gap.
+No technical blocker prevents review of this Tasks revision. Actual material source drift, missing approvals, changed legal wording, unavailable external evidence, failing/stale checks or unmet repository controls block the affected execution step. Preserve evidence and name the concrete gap. Existing valid permissions and unchanged text approvals are not requested again. New operational actions require their actual scope; merge and license application remain excluded.
 
-No blocker prevents reviewing Tasks R1; this is not a declaration that route verification or operational prerequisites are already satisfied. Material source drift, new legal mechanism or architectural service requires reopening the applicable planning gate. Scoped documentary execution can progress useful independent work while a genuinely unavailable required external prerequisite remains blocked and visible.
-
-## Independent closure procedure
-
-After actual task completion, all evidence/assessments and resolved findings are recorded, run selected `--phase delivery --json`. On eligibility, move the unique dossier to `specs/archive/contribution-security-guidance/`, apply canonical closure bookkeeping, verify references and run selected `--phase delivery --require-archive --json`. These mandatory lifecycle operations follow task completion; neither a task nor CHECK-006 requires its own final delivery result as a prerequisite. A failing guard reopens the affected work; missing terms/channel evidence is never waived.
-
-Any later PR publication needs its own scoped authorization and required remote CI/review. Organization rollout must keep the old usable route until the actual approved replacement is available and reviewed under that repository's instructions. No merge, release, public activation, consumer migration or product adoption is inferred from local closure.
+Before execution, this local plan may be revised or discarded without changing remote PRs. During execution, restore a truthful active/pending state when required and preserve prior successful/failed records; never treat a revert as license or access revocation. Do not delete the closed private test reports or reopen unrelated completed issues.
 
 ## Planning review
 
-Tasks R1 is presented for Gate 3 after the actual Proposal/Requirements R1 and Design R1 approvals. All seven tasks are pending and unchecked, with empty implementation validation arrays. The user's latest “Aprovado.” approved Design; it is not approval of this previously unseen Tasks revision or an instruction to execute it.
-
-2026-11-10: the user approved both presented Tasks R1 revisions and explicitly authorized private documentary implementation with the quote: "Aprovado. Inicie a implementação documental privada de H01/H02, sem publicar, aplicar licenças ou ativar canais. Sinalize as decisões que dependerem de mim.". The canonical Tasks digest matched the presented revision: `d969a531b3de153e562ff06d72c4ad0568b3a88caabbb52ca7b465bd05c2d284`. This is current Gate 3 approval and scoped execution authority; earlier presentation-stage wording above is historical. Publication, license application, channel activation and synthetic messages remain outside the authorized scope.
+Tasks R2 is presented after actual Design R2 approval. No R2 Tasks approval is recorded before the user reviews this revision. Original Tasks R1 approval, substantive plan and completed ledger remain in `docs/validation/contribution-security-guidance/design-r2/r1-tasks.md`; the superseded pre-R2 state is preserved in `docs/validation/contribution-security-guidance/tasks-r2/pre-r2-tasks.md`. Their old passes are not current R2 results.
 
 ## Progress
 
-Design R2 is awaiting approval. The R1 substantive task plan is superseded and retained unchanged; its completed work and actual outcomes remain in the historical r1-tasks.md record. Current progress is pending for this reopened revision, not a claim that earlier work or operational evidence never existed. No Tasks R2 is prepared yet.
+Planning only: all current tasks pending. Design R2 approval recorded with the exact presented digest; Tasks R2 awaits approval. No implementation, archive move, remote publication or PR-state change performed by this preparation.
 
 ## Validation evidence
 
-Current ledger intentionally empty. R1 execution records remain in docs/validation and in the preserved r1-tasks.md copy. Design diagnostics are planning evidence only; no R2 check result, acceptance or delivery is claimed.
+Current results, assessments and findings remain empty. Planning validation is recorded outside this ledger; it cannot prove implementation or operational readiness.
 
 ## Delivery
 
-Active local review candidate, not ready for delivery. Remote draft PRs and the previous green CI remain unchanged. No merge or license application.
-
-## Planning review
-
-The downstream R1 review is superseded by pending Design R2. Its substantive task plan remains unchanged; R1 completion statuses are preserved in the historical copy. Current statuses are pending because R2 has not been approved or executed; no Tasks R2 is drafted before Gate 2. Previous approval and complete evidence ledger are preserved at `docs/validation/contribution-security-guidance/design-r2/r1-tasks.md`. Empty current validation records mean R2 has not executed; prior successful checks are not relabeled. Historical approval:
-
-```json
-{
-  "revision": 1,
-  "state": "approved",
-  "blockers": [],
-  "upstream": {
-    "proposal": "6bed2e92d705d83385b31d27364cfcda2b05549678818801c6082132d6dbc8d2",
-    "design": "6f120a41ac76673587dff9355ab7fddc4e40f6f2a1e43af75a0cffa23314f3e2"
-  },
-  "approval": {
-    "source": "User reply in this chat on 2026-11-10 after presentation of Tasks R1 for both handoffs and the Gate 3 question.",
-    "quote": "Aprovado. Inicie a implementação documental privada de H01/H02, sem publicar, aplicar licenças ou ativar canais. Sinalize as decisões que dependerem de mim.",
-    "revision": 1,
-    "digest": "d969a531b3de153e562ff06d72c4ad0568b3a88caabbb52ca7b465bd05c2d284"
-  }
-}
-```
+Both local dossiers remain active. Remote PRs remain draft and unmerged; their existing CI does not establish R2 combined archival readiness. No effective license application.

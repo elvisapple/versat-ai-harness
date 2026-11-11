@@ -402,11 +402,16 @@ regression:
     behavior; do not reuse historical results as fresh evidence.
 review:
   revision: 2
-  state: awaiting-approval
+  state: approved
   blockers: []
   upstream:
     proposal: 5c6662b60f01a33fb143e481dbe0aa13551177a71c91c73b87e8f422c1f982e7
-  approval: null
+  approval:
+    source: Actual user reply in this chat immediately after presentation of both Design R2 documents and the Gate
+      2 approval question.
+    quote: aprovado.
+    revision: 2
+    digest: 5c77e32078568a63d9bde6361e72edd485c47dd10ca7ef7f1c490181720f920e
 ---
 
 # Design — H01
@@ -579,3 +584,8 @@ R1 was approved by the actual user reply recorded below. It is retained as histo
 ```
 
 R2 is presented for approval under the user instruction to prepare a correction for the H01/H02 circular dependency. Gate 1 remains approved and unchanged. No R2 approval, Tasks revision, implementation or new operational result is asserted. The original R1 design sections describe their planning baseline; subsequent authorized implementation, PRs, terms approval and bounded route evidence are preserved at commit 1198c2cd2d39f69a12e4f5abae727725b577593a. R2 changes only the bounded input/lineage contract specified above.
+
+
+### Design R2 approval recorded
+
+The user replied "aprovado." to the explicit request to approve both presented Design R2 documents and prepare Tasks R2. The recomputed Design digest is `5c77e32078568a63d9bde6361e72edd485c47dd10ca7ef7f1c490181720f920e`. This supersedes earlier awaiting-approval wording in this artifact. The approval unlocks Tasks preparation; it does not approve the previously unseen Tasks R2 or authorize merge/license application.

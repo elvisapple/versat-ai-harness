@@ -180,6 +180,7 @@ validation:
     exclude:
     - docs/validation/portfolio-licensing-policy
     - docs/validation/contribution-security-guidance
+    - specs/archive/contribution-security-guidance/tasks.md
   outputs:
   - docs/validation/portfolio-licensing-policy
   execution: local
@@ -190,13 +191,23 @@ validation:
   required: true
   method:
     kind: review
-    procedure: Use the canonical digest helpers to verify the three stage revisions/approvals once they exist, qualified
-      historical source digests, every local scenario and retained obligation mapping, unique active dossier and
-      referenced evidence paths. Run --root . --change portfolio-licensing-policy --phase planning --json; after
+    procedure: 'Use the canonical digest helpers to verify the three stage revisions/approvals once they exist,
+      qualified historical source digests, every local scenario and retained obligation mapping, unique active dossier
+      and referenced evidence paths. Run --root . --change portfolio-licensing-policy --phase planning --json; after
       actual Tasks approval and implementation authorization also run --phase implementation --json. Compare files
       to authorization and keep planned, observed, unavailable and approved states distinct. Expected structural
       pass at the applicable stage and unchanged historical dossiers. This check never requires its own passing
       result, completed Tasks, delivery or archival; final closure gates execute separately after acceptance completion.
+      R2: during this check, verify canonical Proposal/Design/Tasks digests and real approvals for BOTH portfolio-licensing-policy
+      and contribution-security-guidance; run selected planning and implementation for both after their actual gates
+      permit execution. A peer Tasks plan/approval change blocks readiness until its own gate and affected checks
+      are current; exclusion of its raw evidence-bearing tasks.md never waives that independent contract. Diagnose
+      snapshot behavior on disposable copies: sibling evidence-only edits must not change CHECK-005/006 inputs;
+      real source and sibling Proposal/Requirements/Design edits must still invalidate applicable snapshots; a substantive
+      sibling task edit must invalidate its canonical Tasks approval. Do not substitute this diagnostic for the
+      complete required suite or final delivery/archive guards. Rechecking final records is a separate closure audit
+      after this check has actually finished; no part of CHECK-006 requires its own result or final delivery to
+      exist.'
     reason: Recorded approvals and semantic evidence need review in addition to the deterministic metadata checker;
       this procedure must not depend on final delivery.
   inputs:
@@ -209,6 +220,7 @@ validation:
     exclude:
     - docs/validation/portfolio-licensing-policy
     - docs/validation/contribution-security-guidance
+    - specs/archive/contribution-security-guidance/tasks.md
   outputs:
   - docs/validation/portfolio-licensing-policy
   execution: local
@@ -389,17 +401,12 @@ regression:
     distribution. Compare the specific historical acceptance position or captured baseline with current observable
     behavior; do not reuse historical results as fresh evidence.
 review:
-  revision: 1
-  state: approved
+  revision: 2
+  state: awaiting-approval
   blockers: []
   upstream:
     proposal: 5c6662b60f01a33fb143e481dbe0aa13551177a71c91c73b87e8f422c1f982e7
-  approval:
-    source: User reply in this chat on 2026-11-10 immediately after presentation of both Design R1 documents and
-      the Gate 2 approval request.
-    quote: Aprovado.
-    revision: 1
-    digest: 801894d789455496c072bc19b29947ff2c5900df09e4725d9d9e7c8d5f8acd55
+  approval: null
 ---
 
 # Design — H01
@@ -506,8 +513,69 @@ At future closure, finish actual task work, required evidence, individual assess
 
 No blocker prevents Gate 2 review. Concrete terms decisions, rights verification, actual reviewer acceptance and future operational permission remain explicit delivery inputs; the design does not claim them complete.
 
+## Design R2 — acyclic evidence inputs
+
+### Exact problem and bounded decision
+
+This revision prepares joint documentary closure in the existing private Harness PR #37. It changes only the input contract and lineage verification of CHECK-005 and CHECK-006. Proposal/Requirements, all six check IDs per change, required flags, 24 H01 and 35 H02 scenario/regression obligations, their mappings, terms, live reporting rules and product boundaries are unchanged. Harness 0.3.0 validators, schemas, CI and required suites remain unchanged; no new runtime or ADR is needed.
+
+At reviewed commit `1198c2cd2d39f69a12e4f5abae727725b577593a`, `input_digest` excludes its own dossier but traverses other files in `specs/archive`. A sibling `tasks.md` combines approved task planning with mutable results, assessments, findings and closure bookkeeping. Once both dossiers are archived, updating either result changes the other's CHECK-005/006 inputs, preventing both records from remaining fresh together. The earlier green draft CI tested H02 archived and H01 active; it is valid for that state, not proof of joint archival readiness.
+
+For this change, add exactly `specs/archive/contribution-security-guidance/tasks.md` to the existing exclusions of CHECK-005 and CHECK-006. Keep `specs/archive` included. Do not exclude the sibling directory, its Proposal/Requirements/Design, any other dossier's Tasks, product sources, Standards, documentation, approved terms, validators, tests, scripts or workflow configuration. The sibling active Tasks path is not beneath the existing included archive root; no wildcard or global exclusion is introduced. The current dossier remains excluded by the existing canonical algorithm.
+
+### Separate evidence bytes from approval enforcement
+
+The excluded file is not discarded or exempted from validation. Its schema, task coverage, substantive Tasks digest, real review/upstream approvals, results, assessments, findings and closure continue to be checked by the unchanged SDD validator for its own change. CHECK-006 explicitly checks both changes' current stage bindings before recording its observed result. A separate closure audit rechecks the bindings after final records are written; that audit is not a prerequisite of CHECK-006 or its own result. Final selected delivery/archive guards must pass for each change; event-baseline CI must pass for the combined result. A changed task description, unapproved Design, missing result, open finding or incomplete task must still prevent readiness. A snapshot exclusion does not grant approval or turn an unavailable check into a pass.
+
+The H01-to-H02 source dependency stays intact: concrete terms/notices, the exact approval record and governance/guidance inputs remain hashed. This does not exclude any acceptance or retained regression scenario. Historical source bindings remain unchanged. An unrelated archived dossier's `tasks.md` remains hashed as before.
+
+### Planned observable checks and convergence
+
+Reuse CHECK-005's full maintained command and CHECK-006's review; add no second suite or validator implementation. In disposable copies with both dossiers in archive storage:
+
+1. Reproduce R1: an evidence-only edit in either sibling Tasks changes the other's CHECK-005/006 snapshot.
+2. Under R2, perform the same edit: those sibling snapshots remain equal. The edited change's own evidence must still satisfy its current validator; a failing/missing result is never waived.
+3. Change a real term/source file or sibling Design/Requirements: affected snapshots must change. Edit a sibling task description: its canonical Tasks digest must change and the unchanged approval must no longer match. An unrelated archived Tasks edit must still affect CHECK-005/006.
+4. Restore every probe byte. With both dossiers in their final locations and source plans frozen, execute actual affected checks with before/after snapshots, record each result once, and verify both current snapshots still equal their observed values. Record order must not require relabeling a prior run or repeatedly rewriting the peer's result hash.
+5. Run selected `--phase delivery --require-archive` for both IDs and the complete maintained validation with the trusted PR baseline and `--require-archive`. Only then transition the existing draft PR toward review and observe its final CI. Approval of this Design alone does not authorize that transition.
+
+The raw path of a sibling plan still matters: moving a dossier can invalidate the other's checks once. Repeat affected verification on the final layout rather than promising relocation-invariant hashes. Final evidence-only updates then converge because neither check hashes the other's result container.
+
+### Revision, rollout and rollback
+
+This is Design R2 awaiting Gate 2 approval, not completed implementation. Preserve R1 designs, Tasks approvals and observed evidence as historical records. In this local review branch only, reopen H02 from archive to active storage, set closure active and mark both downstream Tasks reviews superseded; preserve their substantive plans and do not draft Tasks R2 before Design approval. Historical checks and authorized PVR/email observations remain evidence of their original scope, not new R2 check results. No repeated live report or notification is required solely by this planning correction; known external drift would reopen affected verification under its actual authority.
+
+After Gate 2, prepare Tasks R2 with the approved upstream digests and existing stable task IDs; obtain the applicable Tasks approval/implementation authority before executing. During validation, preserve previous attempts outside the input scope, start a truthful pending ledger for the new attempt, and record results only after observation. Pre-move delivery, unique archive moves and final guards remain separate lifecycle steps. The `.github` seven-file candidate is unaffected.
+
+Rollback before approval discards this local planning candidate and retains the existing remote PR heads. Later rejection/failure restores an honestly pending state; it never relabels R1 evidence as current R2 validation. No merge, effective licensing, public publication, new channel action or broader repository rollout is part of this revision.
+
+### Alternatives
+
+- Keep alternating evidence updates: rejected; raw sibling result bytes retain the cycle.
+- Exclude all of `specs/archive` or the whole sibling dossier: rejected; unnecessarily removes real plan/history inputs.
+- Merge one change first to evade the simultaneous check: rejected; merge is unauthorized and does not correct the declared dependency.
+- Change the generic snapshot algorithm to normalize all dossiers: deferred; wider runtime/schema/regression scope is unnecessary for this bounded correction.
+- Exclude only the exact sibling Tasks file, plus independent canonical plan/approval and final-delivery checks: selected; reuses existing enforcement while separating source inputs from mutable result bookkeeping.
+
 ## Planning review
 
-Design R1 awaits review. Proposal/Requirements R1 approval is recorded with the actual user reply and unchanged canonical digest. No Tasks file exists. Approval of this Design allows preparation of Tasks; it does not approve concrete terms or authorize implementation, publication or license application.
+R1 was approved by the actual user reply recorded below. It is retained as history, not current R2 approval.
 
-2026-11-10: after both Design R1 documents were presented with the Gate 2 question, the user replied "Aprovado." The recomputed canonical Design digest matched the presented revision: `801894d789455496c072bc19b29947ff2c5900df09e4725d9d9e7c8d5f8acd55`. This records Gate 2 approval and authorizes Tasks preparation only. Earlier awaiting-review wording in this bookkeeping section describes the presentation; it is superseded by this actual approval. No implementation or operational authorization is inferred.
+```json
+{
+  "revision": 1,
+  "state": "approved",
+  "blockers": [],
+  "upstream": {
+    "proposal": "5c6662b60f01a33fb143e481dbe0aa13551177a71c91c73b87e8f422c1f982e7"
+  },
+  "approval": {
+    "source": "User reply in this chat on 2026-11-10 immediately after presentation of both Design R1 documents and the Gate 2 approval request.",
+    "quote": "Aprovado.",
+    "revision": 1,
+    "digest": "801894d789455496c072bc19b29947ff2c5900df09e4725d9d9e7c8d5f8acd55"
+  }
+}
+```
+
+R2 is presented for approval under the user instruction to prepare a correction for the H01/H02 circular dependency. Gate 1 remains approved and unchanged. No R2 approval, Tasks revision, implementation or new operational result is asserted. The original R1 design sections describe their planning baseline; subsequent authorized implementation, PRs, terms approval and bounded route evidence are preserved at commit 1198c2cd2d39f69a12e4f5abae727725b577593a. R2 changes only the bounded input/lineage contract specified above.

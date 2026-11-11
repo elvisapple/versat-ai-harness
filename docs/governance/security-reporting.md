@@ -1,47 +1,28 @@
 # H02 security-reporting record
 
-Private, non-sensitive implementation record · Observed 2026-11-10.
-Accountable contact: Elvis Luis Zoz (@elviszoz), as appointed by the user.
+Observed 2026-11-11. Accountable contact: Elvis Luis Zoz (@elviszoz).
 
-## Current state
+## Selected routing and responsibility
 
-**Owner-selected routing on 2026-11-10:** public repositories use GitHub Private Vulnerability Reporting; private repositories email the relevant CODEOWNERS using existing internal Versat channels. This supersedes the earlier tentative selection of info@versat.ag. Do not advertise that address as the selected route.
+The owner selected GitHub Private Vulnerability Reporting for public repositories and email to relevant CODEOWNERS through existing internal Versat channels for private repositories. This supersedes the tentative info@versat.ag route. CODEOWNERS monitor, triage and coordinate remediation; assigning CODEOWNERS alone does not configure permissions or notifications.
 
-The user's instruction: "Então vamos adotar essa solução para os repositórios públicos, criando um template no repositório .github. Para os repositórios privados mantemos instrução para enviar email aos codeowners pelos canais internos da Versat."
+## Verified scope
 
-This is the concrete route decision anticipated by H02 TASK-001/002/004/005, within the approved common-guidance/candidate approach. Existing issue forms and their fields/types/project associations remain unchanged. No new service, public central intake repository, CLA or runtime is introduced; the approved planning scope/digests remain unchanged.
+The authorized .github pilot received two synthetic reports from oscarcareaga89, whose repository permission is read. Maintainer visibility, a credential-free anonymous denial, saved Security alerts subscription and actual notification delivery to Elvis were observed. The private Harness synthetic email was observed in Elvis's inbox with the intended To/Cc; Elvis is the accountable owner and current default CODEOWNER. See [actual methods, timestamps, references and limits](../validation/contribution-security-guidance/final-20261111/operational.md).
 
-| Required input/evidence | Current status |
+| Boundary | Observation and limit |
 |---|---|
-| Public route | GitHub PVR on the affected public repository; default native form prepared at candidate/.github/VULNERABILITY_REPORT.yml. No automatic enabling or verified reception claimed. |
-| Private route | Relevant CODEOWNERS via internal Versat email contacts. No addresses guessed or copied into the public candidate. Monitoring/triage responsibility is assigned to those CODEOWNERS; actual contact availability remains an operational observation. |
-| Reporter access | Public GitHub reporting audience subject to enabled feature; private reporters need an existing internal contact route. Missing contact/owner uses non-sensitive routing request. |
-| Responsibility and operational configuration | The relevant CODEOWNERS own monitoring, triage and remediation coordination for both routes. This responsibility is settled. Actual GitHub permissions/subscriptions, internal access and receipt remain unverified operational facts. |
-| Minimization, retention and response commitment | Minimize sensitive data; no retention period or SLA invented. |
-| Synthetic submission, receipt and access observations | Not authorized or performed in this documentary phase. |
-| Live configuration, activation or publication | None performed; previous private-documentary boundary retained. |
+| Public pilot | PVR enabled only in versat-labs/.github; actual non-administrator report and owner receipt verified. No rollout to other repositories implied. |
+| Confidential access | Authenticated maintainer visibility and anonymous HTTP 404; existing administrator/organization rights remain. No roles changed. |
+| Private route | Internal recipient headers and Elvis inbox verified; Everton acknowledgment and mailbox forwarding/delegation not asserted. Internal addresses are not exported. |
+| Notification | Custom Security alerts saved; GitHub email notification received and independently found in INBOX. |
+| Template | Seven reviewed files in public draft PR #4; unmerged custom form rendering/inheritance remains pending rollout. Pilot used native default form. |
+| Data and response | Non-sensitive synthetic markers only; minimize data, no invented retention period, SLA or continuous monitoring promise. |
 
-Prepared SECURITY EN/PT/ES and localized contribution/reporting instructions. Native form text is canonical English and accepts reports in EN/PT/ES. Its destination is the private security workflow, not .github/ISSUE_TEMPLATE or a Bug report issue. Repository-specific forms/policies take precedence; template inheritance does not enable PVR.
+## Safe failure and re-verification
 
-Sources checked 2026-11-10: [GitHub PVR configuration and organization-default form](https://docs.github.com/en/code-security/how-tos/report-and-fix-vulnerabilities/configure-vulnerability-reporting/configure-for-a-repository), [default community health files and precedence](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/creating-a-default-community-health-file). These verify documented platform capability, not live Versat configuration.
+Ordinary bugs use Bug report; vulnerabilities never use ordinary public issues. If PVR is unavailable/denied or an internal contact is missing, use an existing visible maintainer contact only to ask for confidential instructions without vulnerability details. Keep the report private until an appropriate route exists. A changed, failed or withdrawn route invalidates its active claim and requires bounded re-verification.
 
-## State and publication behavior
+Configuration, permission changes, messages and publication require their own authorization. The owner's explicit operational authorization covered this pilot and the subsequent test cleanup; it does not authorize merge, license application, wider deployment or publication of advisories. Closing synthetic reports after CI succeeds preserves their receipt evidence.
 
-- **Unselected/unverified:** guides state that no route has been verified here. Use only an existing repository/maintainer contact to request private instructions without vulnerability details.
-- **Selected, unverified:** record the actual route privately; do not advertise it as verified or submit a test without explicit scoped authorization.
-- **Verified:** only after authorized configuration/access observations and safe synthetic receipt evidence. Record the exact scope, performer, authorization, time/environment, destination version and safe evidence reference.
-- **Changed/failed/withdrawn:** remove the active claim, restore safe fallback and rerun affected verification under appropriate authority.
-
-Fallback is safe failure behavior, not full H02 acceptance. Never place exploit details, credentials or customer data in a public issue. Do not infer public reporter access from an authenticated administrator request. Missing intended-user observations remain unverified.
-
-## Future bounded verification
-
-After a concrete route and explicit test authorization exist, an authorized performer sends only a non-sensitive unique marker. Observe receipt by the intended responder and permitted access/configuration evidence. Do not include real vulnerabilities or secrets. Record limits and inaccessible observations honestly; environment changes invalidate affected evidence even if local document hashes match.
-
-This procedure is not permission to configure a route or send a marker now. Additional access/configuration changes require their own scope. The public organization candidate and each product's adoption remain separate and pending.
-
-## Responsibility clarification — 2026-11-10
-
-The user clarified that reporting to CODEOWNERS includes their duty to monitor the reports. No additional appointment or confirmation of that duty is needed. The agent had incorrectly presented responsibility as undecided; this record corrects it. Only actual delivery/access/receipt remains to be checked under future operational authorization.
-
-Read-only observation during final documentary review: organization .github at a762582c6585ae967c37f7f7f1c69c06c07e9071 contains `.github/CODEOWNERS` with `* @elviszoz`. This confirms the target repository owner and is preserved unchanged. It does not establish live PVR permissions, subscriptions or receipt.
+Prepared EN/PT/ES policies and native English form accept reports in all three languages. Repository-specific policies/forms take precedence; organization defaults do not enable PVR. Platform, Workspace, Discover and CRM retain separate adoption evidence.

@@ -46,13 +46,13 @@ tasks:
   - REQ-004
   - REQ-005
   - REQ-006
-  status: in-progress
+  status: completed
 - id: TASK-006
   description: Prepare the verified acceptance package and reconcile the private handoff state.
   requirements:
   - REQ-004
   - REQ-006
-  status: pending
+  status: completed
 review:
   revision: 1
   state: approved
@@ -72,69 +72,63 @@ validation:
   results:
   - check: CHECK-001
     result: pass
-    evidence: docs/validation/portfolio-licensing-policy/technical-001.md
-    revision: 2026-11-10 final documentary review, base 597b81c71a0fc0908ff5264fe9987bb5c0d8feec
-    input_digest_before: af7aaf6ac2b93d6819f4430eb23c4599c90496db5bc1260a3ac0e7f5f17c5279
-    input_digest_after: af7aaf6ac2b93d6819f4430eb23c4599c90496db5bc1260a3ac0e7f5f17c5279
+    evidence: docs/validation/portfolio-licensing-policy/final-20261111/check-001.md
+    revision: 2026-11-11 final bounded verification; base 0ed31390cc415c3c50c83c9e87bf347ad50fb608
+    input_digest_before: b9acafb81b563e3e4578f76c1642798662ec39c46f048a40778fbc39d43f9e57
+    input_digest_after: b9acafb81b563e3e4578f76c1642798662ec39c46f048a40778fbc39d43f9e57
     context:
       execution: local
-      environment: macOS-26.5.2-arm64-arm-64bit; Python 3.11.4; authenticated private refs plus anonymous public
-        baseline reads; no live route test
+      environment: macOS; Python 3.11.4; actual authorized GitHub/Gmail observations with recorded limits
       observed: true
   - check: CHECK-002
     result: pass
-    evidence: docs/validation/portfolio-licensing-policy/technical-002.md
-    revision: 2026-11-10 final documentary review, base 597b81c71a0fc0908ff5264fe9987bb5c0d8feec
-    input_digest_before: af7aaf6ac2b93d6819f4430eb23c4599c90496db5bc1260a3ac0e7f5f17c5279
-    input_digest_after: af7aaf6ac2b93d6819f4430eb23c4599c90496db5bc1260a3ac0e7f5f17c5279
+    evidence: docs/validation/portfolio-licensing-policy/final-20261111/check-002.md
+    revision: 2026-11-11 final bounded verification; base 0ed31390cc415c3c50c83c9e87bf347ad50fb608
+    input_digest_before: b9acafb81b563e3e4578f76c1642798662ec39c46f048a40778fbc39d43f9e57
+    input_digest_after: b9acafb81b563e3e4578f76c1642798662ec39c46f048a40778fbc39d43f9e57
     context:
       execution: local
-      environment: macOS-26.5.2-arm64-arm-64bit; Python 3.11.4; authenticated private refs plus anonymous public
-        baseline reads; no live route test
+      environment: macOS; Python 3.11.4; actual authorized GitHub/Gmail observations with recorded limits
       observed: true
   - check: CHECK-003
     result: pass
-    evidence: docs/validation/portfolio-licensing-policy/technical-003.md
-    revision: 2026-11-10 final documentary review, base 597b81c71a0fc0908ff5264fe9987bb5c0d8feec
+    evidence: docs/validation/portfolio-licensing-policy/final-20261111/check-003.md
+    revision: 2026-11-11 final bounded verification; base 0ed31390cc415c3c50c83c9e87bf347ad50fb608
     input_digest_before: ea585b7f21de8358c14702dc62c28100f71ebcb65f2d2b60b0b09d949d5aa6e6
     input_digest_after: ea585b7f21de8358c14702dc62c28100f71ebcb65f2d2b60b0b09d949d5aa6e6
     context:
       execution: local
-      environment: macOS-26.5.2-arm64-arm-64bit; Python 3.11.4; authenticated private refs plus anonymous public
-        baseline reads; no live route test
+      environment: macOS; Python 3.11.4; actual authorized GitHub/Gmail observations with recorded limits
       observed: true
   - check: CHECK-004
     result: pass
-    evidence: docs/validation/portfolio-licensing-policy/technical-004.md
-    revision: 2026-11-10 final documentary review, base 597b81c71a0fc0908ff5264fe9987bb5c0d8feec
-    input_digest_before: af7aaf6ac2b93d6819f4430eb23c4599c90496db5bc1260a3ac0e7f5f17c5279
-    input_digest_after: af7aaf6ac2b93d6819f4430eb23c4599c90496db5bc1260a3ac0e7f5f17c5279
+    evidence: docs/validation/portfolio-licensing-policy/final-20261111/check-004.md
+    revision: 2026-11-11 final bounded verification; base 0ed31390cc415c3c50c83c9e87bf347ad50fb608
+    input_digest_before: b9acafb81b563e3e4578f76c1642798662ec39c46f048a40778fbc39d43f9e57
+    input_digest_after: b9acafb81b563e3e4578f76c1642798662ec39c46f048a40778fbc39d43f9e57
     context:
       execution: local
-      environment: macOS-26.5.2-arm64-arm-64bit; Python 3.11.4; authenticated private refs plus anonymous public
-        baseline reads; no live route test
+      environment: macOS; Python 3.11.4; actual authorized GitHub/Gmail observations with recorded limits
       observed: true
   - check: CHECK-005
-    result: fail
-    evidence: docs/validation/portfolio-licensing-policy/technical-005.md
-    revision: 2026-11-10 final documentary review, base 597b81c71a0fc0908ff5264fe9987bb5c0d8feec
-    input_digest_before: e081c268c9bd22f68599c03cfa5f613c6feeae524eafa20661d8fb38348ff0ab
-    input_digest_after: e081c268c9bd22f68599c03cfa5f613c6feeae524eafa20661d8fb38348ff0ab
+    result: pass
+    evidence: docs/validation/portfolio-licensing-policy/final-20261111/check-005.md
+    revision: 2026-11-11 final bounded verification; base 0ed31390cc415c3c50c83c9e87bf347ad50fb608
+    input_digest_before: cb671180e1d3399342af595c3ce04474c47f2f9af32590353a5d6126c49ba103
+    input_digest_after: cb671180e1d3399342af595c3ce04474c47f2f9af32590353a5d6126c49ba103
     context:
       execution: local
-      environment: macOS-26.5.2-arm64-arm-64bit; Python 3.11.4; authenticated private refs plus anonymous public
-        baseline reads; no live route test
+      environment: macOS; Python 3.11.4; actual authorized GitHub/Gmail observations with recorded limits
       observed: true
   - check: CHECK-006
-    result: unverified
-    evidence: docs/validation/portfolio-licensing-policy/technical-006.md
-    revision: 2026-11-10 final documentary review, base 597b81c71a0fc0908ff5264fe9987bb5c0d8feec
-    input_digest_before: 42a42b91442e6104ce43712965ebdb6acdac7cb2dbb84d5f7e0f39af0146dc0b
-    input_digest_after: 42a42b91442e6104ce43712965ebdb6acdac7cb2dbb84d5f7e0f39af0146dc0b
+    result: pass
+    evidence: docs/validation/portfolio-licensing-policy/final-20261111/check-006.md
+    revision: 2026-11-11 final bounded verification; base 0ed31390cc415c3c50c83c9e87bf347ad50fb608
+    input_digest_before: 639a8d818f036a78d2a0df02608fece53019f00a92eda6eeb04f4c0c68111497
+    input_digest_after: 639a8d818f036a78d2a0df02608fece53019f00a92eda6eeb04f4c0c68111497
     context:
       execution: local
-      environment: macOS-26.5.2-arm64-arm-64bit; Python 3.11.4; authenticated private refs plus anonymous public
-        baseline reads; no live route test
+      environment: macOS; Python 3.11.4; actual authorized GitHub/Gmail observations with recorded limits
       observed: true
   assessments:
   - obligation:
@@ -144,7 +138,7 @@ validation:
     result: pass
     checks:
     - CHECK-001
-    evidence: docs/validation/portfolio-licensing-policy/technical-review.md
+    evidence: docs/validation/portfolio-licensing-policy/final-20261111/review.md
     explanation: Ledger retains Apache-2.0 intent separately for Platform and Workspace with individual adoption/export
       evidence.
   - obligation:
@@ -154,7 +148,7 @@ validation:
     result: pass
     checks:
     - CHECK-001
-    evidence: docs/validation/portfolio-licensing-policy/technical-review.md
+    evidence: docs/validation/portfolio-licensing-policy/final-20261111/review.md
     explanation: Ledger and terms preserve proprietary/private Harness, Discover and CRM; public plugin installation
       is distinct from source licensing.
   - obligation:
@@ -165,7 +159,7 @@ validation:
     checks:
     - CHECK-001
     - CHECK-004
-    evidence: docs/validation/portfolio-licensing-policy/technical-review.md
+    evidence: docs/validation/portfolio-licensing-policy/final-20261111/review.md
     explanation: Policy/guide separate recommended disposition from license application, public export, SDK and
       other handoffs; no operation occurred.
   - obligation:
@@ -175,7 +169,7 @@ validation:
     result: pass
     checks:
     - CHECK-001
-    evidence: docs/validation/portfolio-licensing-policy/technical-review.md
+    evidence: docs/validation/portfolio-licensing-policy/final-20261111/review.md
     explanation: Baseline CSV identifies all 1,040 source files; owner attestation identifies first-party provenance;
       seven installed validation packages have exact versions/license texts, external to source.
   - obligation:
@@ -185,7 +179,7 @@ validation:
     result: pass
     checks:
     - CHECK-001
-    evidence: docs/validation/portfolio-licensing-policy/technical-review.md
+    evidence: docs/validation/portfolio-licensing-policy/final-20261111/review.md
     explanation: Synthetic missing-grant, incompatible-dependency, secret-history, missing-reviewer and unknown-control
       cases all defer; private scope remains restricted.
   - obligation:
@@ -195,7 +189,7 @@ validation:
     result: pass
     checks:
     - CHECK-001
-    evidence: docs/validation/portfolio-licensing-policy/technical-review.md
+    evidence: docs/validation/portfolio-licensing-policy/final-20261111/review.md
     explanation: Policy explicitly requires tree/history/tags/releases/LFS/fixtures/CI/attachments scope; technical
       source inventory does not claim H03 export clearance.
   - obligation:
@@ -205,7 +199,7 @@ validation:
     result: pass
     checks:
     - CHECK-002
-    evidence: docs/validation/portfolio-licensing-policy/technical-review.md
+    evidence: docs/validation/portfolio-licensing-policy/final-20261111/review.md
     explanation: Approved draft-0.2 and status-only current version retain exact installation/use/modification/redistribution
       clauses; reviewed notices identify source and external dependency boundaries.
   - obligation:
@@ -215,7 +209,7 @@ validation:
     result: pass
     checks:
     - CHECK-002
-    evidence: docs/validation/portfolio-licensing-policy/technical-review.md
+    evidence: docs/validation/portfolio-licensing-policy/final-20261111/review.md
     explanation: Actual user approval follows presentation of exact draft; original SHA-256 and current administrative
       hash verify. CODEOWNERS/planning were not used as text approval.
   - obligation:
@@ -226,7 +220,7 @@ validation:
     checks:
     - CHECK-002
     - CHECK-004
-    evidence: docs/validation/portfolio-licensing-policy/technical-review.md
+    evidence: docs/validation/portfolio-licensing-policy/final-20261111/review.md
     explanation: Terms and guides preserve destination-project terms, including Apache projects, independently of
       proprietary tool permissions.
   - obligation:
@@ -237,7 +231,7 @@ validation:
     checks:
     - CHECK-001
     - CHECK-002
-    evidence: docs/validation/portfolio-licensing-policy/technical-review.md
+    evidence: docs/validation/portfolio-licensing-policy/final-20261111/review.md
     explanation: Ledger identifies owner/executor/company approver, technical CODEOWNERS, source evidence and limits;
       technical review is by this agent and owner approval is attributable.
   - obligation:
@@ -248,7 +242,7 @@ validation:
     checks:
     - CHECK-001
     - CHECK-004
-    evidence: docs/validation/portfolio-licensing-policy/technical-review.md
+    evidence: docs/validation/portfolio-licensing-policy/final-20261111/review.md
     explanation: Policy keeps P01/P03 evidence separate and H03 distribution separate; no unrelated product delivery
       is claimed.
   - obligation:
@@ -259,7 +253,7 @@ validation:
     checks:
     - CHECK-001
     - CHECK-002
-    evidence: docs/validation/portfolio-licensing-policy/technical-review.md
+    evidence: docs/validation/portfolio-licensing-policy/final-20261111/review.md
     explanation: Unknown controls/authority remain explicit in policy; current owner attestation resolves documentary
       provenance only, not future operational controls.
   - obligation:
@@ -269,42 +263,42 @@ validation:
     result: pass
     checks:
     - CHECK-003
-    evidence: docs/validation/portfolio-licensing-policy/technical-review.md
+    evidence: docs/validation/portfolio-licensing-policy/final-20261111/review.md
     explanation: Both new core policies occur exactly once in core.always; no Skills copied or altered.
   - obligation:
       local:
         requirement: REQ-005
         scenario: 2
-    result: unverified
+    result: pass
     checks:
     - CHECK-003
     - CHECK-005
-    evidence: docs/validation/portfolio-licensing-policy/technical-review.md
-    explanation: 'Root package/schema/SDD/template/validator paths and manifests are unchanged; technical suites
-      exercise them. Required mapped checks not passing: CHECK-005. No complete acceptance claimed.'
+    evidence: docs/validation/portfolio-licensing-policy/final-20261111/review.md
+    explanation: Root package/schema/SDD/template/validator paths and manifests are unchanged; technical suites
+      exercise them.
   - obligation:
       local:
         requirement: REQ-005
         scenario: 3
-    result: unverified
+    result: pass
     checks:
     - CHECK-003
     - CHECK-005
-    evidence: docs/validation/portfolio-licensing-policy/technical-review.md
-    explanation: 'VERSION/marketplace v0.3.0 and consumer locks are unchanged; no release or implicit consumer update
-      occurred. Required mapped checks not passing: CHECK-005. No complete acceptance claimed.'
+    evidence: docs/validation/portfolio-licensing-policy/final-20261111/review.md
+    explanation: VERSION/marketplace v0.3.0 and consumer locks are unchanged; no release or implicit consumer update
+      occurred.
   - obligation:
       local:
         requirement: REQ-006
         scenario: 1
-    result: unverified
+    result: pass
     checks:
     - CHECK-004
     - CHECK-006
-    evidence: docs/validation/portfolio-licensing-policy/technical-review.md
-    explanation: 'Actual later implementation authorization permits private docs/tracking; no effective license,
-      release, public write or access change occurred. Required mapped checks not passing: CHECK-006. No complete
-      acceptance claimed.'
+    evidence: docs/validation/portfolio-licensing-policy/final-20261111/review.md
+    explanation: Planning itself performed no operation; subsequent explicit authorization permitted private implementation,
+      two draft PRs and bounded H02 route tests. No license application, release, merge, product distribution or
+      broader access grant occurred.
   - obligation:
       local:
         requirement: REQ-006
@@ -313,22 +307,22 @@ validation:
     checks:
     - CHECK-002
     - CHECK-004
-    evidence: docs/validation/portfolio-licensing-policy/technical-review.md
+    evidence: docs/validation/portfolio-licensing-policy/final-20261111/review.md
     explanation: Owner text approval and technical source review are explicit; effective adoption/distribution remain
       separately scoped, and unavailable operational evidence stays unverified.
   - obligation:
       local:
         requirement: REQ-006
         scenario: 3
-    result: unverified
+    result: pass
     checks:
     - CHECK-004
     - CHECK-005
     - CHECK-006
-    evidence: docs/validation/portfolio-licensing-policy/technical-review.md
-    explanation: 'Guides, all 24 obligations and current check evidence are reviewed; final delivery claim remains
-      withheld while required aggregate/lineage results are not passing. Required mapped checks not passing: CHECK-005,
-      CHECK-006. No complete acceptance claimed.'
+    evidence: docs/validation/portfolio-licensing-policy/final-20261111/review.md
+    explanation: All 18 local scenarios and six retained obligations were reviewed against current source; package
+      and selected planning/implementation checks actually passed. This is documentary acceptance, not merge, effective
+      terms or distribution.
   - obligation:
       regression:
         impact: 1
@@ -338,12 +332,12 @@ validation:
     - CHECK-001
     - CHECK-002
     - CHECK-004
-    evidence: docs/validation/portfolio-licensing-policy/technical-review.md
-    explanation: 'Inspected retained source/current-contract mapping: Add the absent portfolio policy and concrete-terms
-      approval path without treating strategic selection as operative licensing. Compare the specific historical
-      acceptance position or captured baseline with current observable behavior; do not reuse historical results
-      as fresh evidence. Observed unchanged historical dossiers/root/version inputs and preserved current contribution/security/language
-      boundaries; see the actual linked check reports.'
+    evidence: docs/validation/portfolio-licensing-policy/final-20261111/review.md
+    explanation: 'Reviewed retained behavior against current source and rerun mapped checks: Add the absent portfolio
+      policy and concrete-terms approval path without treating strategic selection as operative licensing. Compare
+      the specific historical acceptance position or captured baseline with current observable behavior; do not
+      reuse historical results as fresh evidence. Actual source/diff/navigation, approved terms, authorized route
+      and package evidence are recorded in the mapped reports; historical delivery is not reused as a new test result.'
   - obligation:
       regression:
         impact: 2
@@ -352,79 +346,76 @@ validation:
     checks:
     - CHECK-001
     - CHECK-004
-    evidence: docs/validation/portfolio-licensing-policy/technical-review.md
-    explanation: 'Inspected retained source/current-contract mapping: Preserve least privilege, secret handling,
-      provenance and explicit high-impact authorization while specifying evidence for publication decisions. Compare
-      the specific historical acceptance position or captured baseline with current observable behavior; do not
-      reuse historical results as fresh evidence. Observed unchanged historical dossiers/root/version inputs and
-      preserved current contribution/security/language boundaries; see the actual linked check reports.'
+    evidence: docs/validation/portfolio-licensing-policy/final-20261111/review.md
+    explanation: 'Reviewed retained behavior against current source and rerun mapped checks: Preserve least privilege,
+      secret handling, provenance and explicit high-impact authorization while specifying evidence for publication
+      decisions. Compare the specific historical acceptance position or captured baseline with current observable
+      behavior; do not reuse historical results as fresh evidence. Actual source/diff/navigation, approved terms,
+      authorized route and package evidence are recorded in the mapped reports; historical delivery is not reused
+      as a new test result.'
   - obligation:
       regression:
         impact: 3
         scenario: 1
-    result: unverified
+    result: pass
     checks:
     - CHECK-003
     - CHECK-005
-    evidence: docs/validation/portfolio-licensing-policy/technical-review.md
-    explanation: 'Inspected retained source/current-contract mapping: New policy must retain canonical root resources
-      and avoid copied Standards. Compare the specific historical acceptance position or captured baseline with
-      current observable behavior; do not reuse historical results as fresh evidence. Observed unchanged historical
-      dossiers/root/version inputs and preserved current contribution/security/language boundaries; see the actual
-      linked check reports. Complete retained-obligation acceptance remains unverified because required mapped checks
-      are not passing: CHECK-005.'
+    evidence: docs/validation/portfolio-licensing-policy/final-20261111/review.md
+    explanation: 'Reviewed retained behavior against current source and rerun mapped checks: New policy must retain
+      canonical root resources and avoid copied Standards. Compare the specific historical acceptance position or
+      captured baseline with current observable behavior; do not reuse historical results as fresh evidence. Actual
+      source/diff/navigation, approved terms, authorized route and package evidence are recorded in the mapped reports;
+      historical delivery is not reused as a new test result.'
   - obligation:
       regression:
         impact: 3
         scenario: 2
-    result: unverified
+    result: pass
     checks:
     - CHECK-003
     - CHECK-005
-    evidence: docs/validation/portfolio-licensing-policy/technical-review.md
-    explanation: 'Inspected retained source/current-contract mapping: New policy must retain canonical root resources
-      and avoid copied Standards. Compare the specific historical acceptance position or captured baseline with
-      current observable behavior; do not reuse historical results as fresh evidence. Observed unchanged historical
-      dossiers/root/version inputs and preserved current contribution/security/language boundaries; see the actual
-      linked check reports. Complete retained-obligation acceptance remains unverified because required mapped checks
-      are not passing: CHECK-005.'
+    evidence: docs/validation/portfolio-licensing-policy/final-20261111/review.md
+    explanation: 'Reviewed retained behavior against current source and rerun mapped checks: New policy must retain
+      canonical root resources and avoid copied Standards. Compare the specific historical acceptance position or
+      captured baseline with current observable behavior; do not reuse historical results as fresh evidence. Actual
+      source/diff/navigation, approved terms, authorized route and package evidence are recorded in the mapped reports;
+      historical delivery is not reused as a new test result.'
   - obligation:
       regression:
         impact: 3
         scenario: 3
-    result: unverified
+    result: pass
     checks:
     - CHECK-003
     - CHECK-005
-    evidence: docs/validation/portfolio-licensing-policy/technical-review.md
-    explanation: 'Inspected retained source/current-contract mapping: New policy must retain canonical root resources
-      and avoid copied Standards. Compare the specific historical acceptance position or captured baseline with
-      current observable behavior; do not reuse historical results as fresh evidence. Observed unchanged historical
-      dossiers/root/version inputs and preserved current contribution/security/language boundaries; see the actual
-      linked check reports. Complete retained-obligation acceptance remains unverified because required mapped checks
-      are not passing: CHECK-005.'
+    evidence: docs/validation/portfolio-licensing-policy/final-20261111/review.md
+    explanation: 'Reviewed retained behavior against current source and rerun mapped checks: New policy must retain
+      canonical root resources and avoid copied Standards. Compare the specific historical acceptance position or
+      captured baseline with current observable behavior; do not reuse historical results as fresh evidence. Actual
+      source/diff/navigation, approved terms, authorized route and package evidence are recorded in the mapped reports;
+      historical delivery is not reused as a new test result.'
   - obligation:
       regression:
         impact: 4
         scenario: 2
-    result: unverified
+    result: pass
     checks:
     - CHECK-003
     - CHECK-005
-    evidence: docs/validation/portfolio-licensing-policy/technical-review.md
-    explanation: 'Inspected retained source/current-contract mapping: Retain the exact semantic release selection
-      contract; this proposal neither releases nor enables public distribution. Compare the specific historical
-      acceptance position or captured baseline with current observable behavior; do not reuse historical results
-      as fresh evidence. Observed unchanged historical dossiers/root/version inputs and preserved current contribution/security/language
-      boundaries; see the actual linked check reports. Complete retained-obligation acceptance remains unverified
-      because required mapped checks are not passing: CHECK-005.'
+    evidence: docs/validation/portfolio-licensing-policy/final-20261111/review.md
+    explanation: 'Reviewed retained behavior against current source and rerun mapped checks: Retain the exact semantic
+      release selection contract; this proposal neither releases nor enables public distribution. Compare the specific
+      historical acceptance position or captured baseline with current observable behavior; do not reuse historical
+      results as fresh evidence. Actual source/diff/navigation, approved terms, authorized route and package evidence
+      are recorded in the mapped reports; historical delivery is not reused as a new test result.'
   findings:
   - id: FIND-001
     source:
       plan: Exact terms approval and component rights evidence
     category: missing
     state: resolved
-    evidence: docs/validation/portfolio-licensing-policy/technical-review.md
+    evidence: docs/validation/portfolio-licensing-policy/final-20261111/review.md
     description: 'Owner approved the presented H01 wording on 2026-11-10; exact approval is recorded. Remaining
       gap: complete component rights/notices evidence, not another text-approval request.'
     tasks:
@@ -438,8 +429,8 @@ validation:
     source:
       plan: Final acceptance scenario assessment
     category: missing
-    state: open
-    evidence: docs/validation/portfolio-licensing-policy/technical-review.md
+    state: resolved
+    evidence: docs/validation/portfolio-licensing-policy/final-20261111/review.md
     description: Final delivery acceptance remains incomplete while mandatory package/lineage checks surface active
       operational gaps; documentary review and individual assessments are being recorded without waiving those requirements.
     tasks:
@@ -447,6 +438,12 @@ validation:
     checks:
     - CHECK-001
     - CHECK-002
+    - CHECK-003
+    - CHECK-004
+    - CHECK-005
+    - CHECK-006
+    resolution: Fresh input-bound review, full maintained suite and selected planning/implementation checks pass;
+      every local and retained obligation assessed. Earlier failed/incomplete ledger is preserved in previous-tasks.md.
 closure: active
 ---
 
@@ -503,7 +500,7 @@ The plan implements the approved private policy/terms candidate scope. It does n
 
   **Evidence/checks:** CHECK-004, plus CHECK-002/003 where terms or canonical references are affected.
 
-- [ ] TASK-005 — Execute all approved checks and assess the complete acceptance and regression set.
+- [x] TASK-005 — Execute all approved checks and assess the complete acceptance and regression set.
 
   **Depends on:** TASK-001–004 and stable source inputs, including the real text approval. A blocked earlier task blocks complete acceptance.
 
@@ -513,7 +510,7 @@ The plan implements the approved private policy/terms candidate scope. It does n
 
   **Evidence/checks:** CHECK-001–006; planned reports `docs/validation/portfolio-licensing-policy/check-001.md` through `check-006.md` or equivalent stable evidence paths. Reports are created only from actual execution.
 
-- [ ] TASK-006 — Prepare the verified acceptance package and reconcile the private handoff state.
+- [x] TASK-006 — Prepare the verified acceptance package and reconcile the private handoff state.
 
   **Depends on:** TASK-005.
 
@@ -551,18 +548,17 @@ Tasks R1 is presented for Gate 3 after actual approval of Proposal/Requirements 
 
 ## Progress
 
-2026-11-10 technical review: owner provenance confirmed; H01 terms/notices documentary work and localized guidance complete. H02 approved-terms binding and private organization package complete. H02 channel verification stays blocked by the current no-activation/no-message scope; no new owner decision is needed. Current final acceptance guards remain separate from documentary completion.
-
-2026-11-10: actual user approval “H01 revisado e aprovado.” recorded against the reviewed draft-0.2 hash; current terms differ only in administrative approval status. Relevant CODEOWNERS own monitoring/triage/remediation for both H02 routes; no role-definition question remains. Remaining component evidence and operational checks are separate. Affected previous check results were preserved and invalidated, not relabeled.
-
-2026-11-10 routing decision implemented privately: public GitHub PVR with organization-default native template; private repositories email relevant CODEOWNERS through internal Versat contacts. Earlier tentative info@versat.ag selection is superseded. Affected prior check results are preserved in before-routing-decision.json, removed from current results pending fresh checks; no old result is relabeled with new inputs. Existing forms unchanged. No publication/activation/test message.
-
-Private documentary implementation authorized by the actual Gate 3 reply on 2026-11-10. TASK-001/002 completed within their bounded inventory/rules completion criteria; no rights clearance or final acceptance implied. Remaining task statuses distinguish prepared drafts from blocked terms/channel and pending final acceptance. Owner decisions received: free official plugin use for Versat Labs contributions; authorized Versat developers may modify; users may not redistribute, commercialize or fork; company Paraguay, approver Elvis Luis Zoz. The earlier tentative info@versat.ag choice was superseded by the public-PVR/private-CODEOWNERS decision above. No public writing, license application, channel activation or synthetic message occurred. Earlier planning-only wording is historical; this Progress and structured status record are current.
+Final verification on 2026-11-11 supersedes earlier incomplete states preserved in the validation history. All planned implementation tasks and mapped local/regression obligations are complete for the authorized documentary scope. The original stage approvals remain unchanged. Later actual user instructions authorized the private Harness draft PR, seven-file public organization draft PR, bounded PVR/internal-email tests and notification setup. No merge, effective licensing, broader product adoption or distribution occurred.
 
 ## Validation evidence
 
-Current final documentary observations and individual assessments are in `docs/validation/portfolio-licensing-policy/technical-review.md`, with current check reports, stable before/after input snapshots and selected validator outputs. The owner approved H01 wording and confirmed first-party provenance. No concrete user-input gap remains for this documentary scope. All planned local/regression obligations are assessed, without exclusions. Technical suites pass (131 validator plus 48 execution tests); aggregate acceptance remains blocked by required operational/lineage checks. Prior attempts remain preserved as historical evidence. H02's private package is complete; no publication, activation or message occurred.
+Current results, individual assessments and resolved findings are bound to actual input snapshots in metadata. See `docs/validation/portfolio-licensing-policy/final-20261111/review.md`. The original failed/pending ledger remains in `previous-tasks.md`; its observations are not relabeled. All 179 tests passed in the maintained full suite. Final remote CI is separately observed in PR #37.
 
 ## Delivery
 
-Closure remains active. No archive, commit, PR, merge, policy adoption, effective license change or publication is claimed for this change.
+H01 documentary checks are current; its dossier remains active while H02 is archived. Exact approved terms remain non-operative. H02 pilot and the public candidate do not apply a license. Final H01 archive readiness is distinct from these current checks.
+
+
+### Final verification — 2026-11-11
+
+All planned tasks and mapped local/regression checks are complete for the authorized documentary scope. Evidence: `docs/validation/portfolio-licensing-policy/final-20261111/review.md`. Prior attempts and their failures remain historical. No merge or license application performed. Final remote CI is recorded separately in the existing PR.

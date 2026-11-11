@@ -2,7 +2,7 @@
 
 [English](security-reporting.md) | [Português](security-reporting.pt.md) | [Español](security-reporting.es.md)
 
-Current H02 candidate status: **the owner selected a destination, but no confidential route has been verified in this work**. No channel was activated and no test/report was sent. This guide does not promise a response time or continuous monitoring.
+Current verified H02 scope (2026-11-11): **the `.github` PVR pilot and receipt by the Harness owner through internal email were verified with authorized synthetic tests**. Other repositories require their own checks. The custom form remains in an unmerged PR; its deployment and inheritance were not tested. This guide does not promise a response time or continuous monitoring.
 
 The relevant CODEOWNERS are responsible for monitoring, triaging and coordinating the resolution of security reports for their owned components, through both public-repository PVR and private-repository internal email. Maintainers configure the necessary permissions and notifications; CODEOWNERS assignment alone does not configure GitHub delivery.
 
@@ -24,7 +24,7 @@ Expected result: a non-sensitive request for instructions, not a verified report
 
 An actual destination, accountable responder, intended reporter audience, permitted recipients/access boundary and owner-approved data handling must be recorded. Configuration/access observations and an explicitly authorized non-sensitive synthetic marker/receipt must support any verified claim. Do not infer public reporter access from an administrator session.
 
-The [private route record (English)](../../governance/security-reporting.md) lists the missing inputs. Fallback-only guidance does not complete H02. A changed or failed route needs re-verification and withdrawal of unsupported active claims.
+The [private route record (English)](../../governance/security-reporting.md) lists the actual evidence and its limits. Fallback-only guidance does not complete H02. A changed or failed route needs re-verification and withdrawal of unsupported active claims.
 
 Canonical rules: [Security (English)](../../../standards/core/security.md). Channel setup, permission changes and test messages require separate scoped authorization. Each product verifies its own adopted scope.
 

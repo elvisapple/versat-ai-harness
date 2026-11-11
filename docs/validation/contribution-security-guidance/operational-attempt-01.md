@@ -1,8 +1,26 @@
 # H02 operational verification attempt — 2026-11-10
 
-Status: blocked by reporter-account availability; not an acceptance pass. Initial source PR heads: Harness `abde65cc25346108b32edb883f6ae5a0ca413503`; organization `97d7f4c1ceb76ea42cc37250fc47bdecec7a677b`. Both remain draft and unmerged. Initial partial evidence was published in Harness commit `2a91262d310ee4822fb475b9bfd78a81699210ad`.
+Historical sequence: earlier pending statements below describe their observation time. Final bounded receipt/access evidence is recorded in final-20261111/operational.md; it supersedes the pending state without deleting failed attempts. Initial source PR heads: Harness `abde65cc25346108b32edb883f6ae5a0ca413503`; organization `97d7f4c1ceb76ea42cc37250fc47bdecec7a677b`. Initial partial evidence was published in Harness commit `2a91262d310ee4822fb475b9bfd78a81699210ad`. The observations below dated 2026-11-10 preserve the earlier blocked attempt.
+
+## Follow-up evidence — 2026-11-11
+
+Subsequent successful notification observation supersedes the earlier email-delivery gap: the owner confirmed "Notificação recebida." An independent Gmail search found the notification for the second synthetic report `GHSA-73mc-fm4x-p58f`, authored by `oscarcareaga89`, created at `2026-11-11T12:00:31Z`. The subscribed notification arrived at `2026-11-11T12:00:53Z` from GitHub, Gmail message `1a1ca7b7e8a4def1`, present in INBOX. A related collaborator event notification is message `1a1ca7b7d8005b54`. The GitHub notification inbox also displayed the matching report with reason `subscribed`.
+
+Authenticated API inspection found two reports with the exact H02 test title and marker: `GHSA-435c-c8r3-9mw8` and `GHSA-73mc-fm4x-p58f`, both in triage, with null publication timestamps and CVE IDs. Both descriptions explicitly identify non-sensitive synthetic tests. The owner requested cleanup; clarification distinguishes marking notifications Done from closing the private test reports. The single matching H02 inbox notification was selected and marked Done in GitHub; the refreshed UI showed it removed while unrelated notifications remained. Neither advisory was closed or deleted. A request to clarify whether the reports should also be closed remains pending. Original report receipt, notification configuration and observed email delivery remain evidence even after notification cleanup.
+
+The owner reported: "Pude visualizar o teste enviado pelo usuário oscarcareaga89. Porém não recebi notificação por e-mail. Como configurar?"
+
+An authenticated repository-advisory API read independently returned `GHSA-435c-c8r3-9mw8`, author `oscarcareaga89`, title `TESTE AUTORIZADO H02 — sem vulnerabilidade real`, created at `2026-11-11T11:39:42Z`, state `triage`, with null `published_at` and `cve_id`. Private URL: https://github.com/versat-labs/.github/security/advisories/GHSA-435c-c8r3-9mw8. This resolves the absence of a submitted test report and records actual maintainer visibility. Reporter permissions, full marker/content and anonymous denial still require bounded inspection before a complete access claim. No public advisory or CVE is recorded.
+
+The owner has not received an email notification. Official GitHub configuration documentation checked on 2026-11-11 requires a repository subscription to All Activity or Custom / Security alerts, plus account Settings / Notifications / Subscriptions / Watching / Notify me / Email. Guidance was prepared for the owner; no preference was changed by this read. Email receipt remains unverified and must not be inferred from browser visibility.
 
 ## Authority and scope
+
+### Notification configuration observed on 2026-11-11
+
+The owner explicitly asked the agent to configure the notification. In the authenticated GitHub browser session for `elviszoz`, the repository subscription initially showed Participating and @mentions. The agent selected Custom, checked only Security alerts and applied it. After navigating away and reopening the repository subscription dialog, Security alerts remained checked; Issues, Pull requests, Releases and Discussions were unchecked. This verifies saved subscription state for `versat-labs/.github`.
+
+Account notification settings already had Email and on-GitHub delivery enabled for both Watching and Participating/@mentions/custom. The default notification destination was the owner's existing corporate `versat.ag` address, and Custom Routing showed no organization overrides. No email address, account-wide delivery option, credential, role, PVR setting or repository content was changed by this browser operation. Actual receipt of a new notification email remains unverified; saved configuration does not retrospectively prove delivery of the original report notification.
 
 Actual owner instruction in this chat:
 

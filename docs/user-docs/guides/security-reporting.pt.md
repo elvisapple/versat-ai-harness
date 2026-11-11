@@ -2,7 +2,7 @@
 
 [English](security-reporting.md) | [Português](security-reporting.pt.md) | [Español](security-reporting.es.md)
 
-Estado atual do candidato H02: **o responsável indicou um destino, mas nenhuma rota confidencial foi verificada neste trabalho**. Nenhum canal foi ativado e nenhum teste/relato foi enviado. Este guia não promete prazo de resposta nem monitoramento contínuo.
+Escopo verificado de H02 (2026-11-11): **o piloto de PVR do `.github` e o recebimento por email interno pelo responsável do Harness foram verificados com testes sintéticos autorizados**. Os demais repositórios precisam de verificações próprias. O formulário personalizado permanece em PR sem merge; sua implantação e herança não foram testadas. Este guia não promete prazo de resposta nem monitoramento contínuo.
 
 Os CODEOWNERS relevantes são responsáveis por acompanhar, triar e coordenar a resolução dos relatos de segurança dos componentes sob sua responsabilidade, tanto pelo PVR dos repositórios públicos quanto pelo email interno dos privados. Os mantenedores configuram as permissões e notificações necessárias; a atribuição em CODEOWNERS não configura sozinha o recebimento no GitHub.
 
@@ -24,7 +24,7 @@ Resultado esperado: um pedido não sensível de instruções, não um relato ver
 
 Devem ser registrados destino real, responsável pelo recebimento, público autorizado a reportar, destinatários/limite de acesso e tratamento de dados aprovado pelo responsável. Observações de configuração/acesso e marcador sintético não sensível com recebimento, explicitamente autorizado, devem sustentar qualquer afirmação de verificação. Não suponha acesso público a partir de uma sessão administrativa.
 
-O [registro privado da rota (inglês)](../../governance/security-reporting.md) lista as pendências. Orientação alternativa sem canal verificado não conclui H02. Uma rota alterada ou com falha exige nova verificação e retirada de afirmações de atividade sem suporte.
+O [registro privado da rota (inglês)](../../governance/security-reporting.md) registra as evidências reais e seus limites. Orientação alternativa sem canal verificado não conclui H02. Uma rota alterada ou com falha exige nova verificação e retirada de afirmações de atividade sem suporte.
 
 Regras canônicas: [Security (inglês)](../../../standards/core/security.md). Configuração de canal, alteração de permissões e mensagens de teste exigem autorização específica separada. Cada produto verifica seu próprio escopo adotado.
 

@@ -1,0 +1,155 @@
+{
+  "base": "1198c2cd2d39f69a12e4f5abae727725b577593a",
+  "r2_design_sha256": {
+    "portfolio-licensing-policy": "2fcb549e59ee5856ef5259a58d1399376ed6c589af1ae5b7ce1b4adf1331e4ca",
+    "contribution-security-guidance": "01d22c76ca0cdaa7b99d120a11e2520a5597248ab1ddf6c265b01035c4296e86"
+  },
+  "purpose": "Design-only disposable diagnostic. Low-level input function compares proposed scopes without asserting approved CHECK execution. No R2 approval or acceptance results fabricated. No source mutation survives probes.",
+  "results": [
+    {
+      "observer": "portfolio-licensing-policy",
+      "scope_revision": 1,
+      "probe": "sibling evidence-only revision",
+      "changed": {
+        "CHECK-005": true,
+        "CHECK-006": true
+      }
+    },
+    {
+      "observer": "portfolio-licensing-policy",
+      "scope_revision": 2,
+      "probe": "sibling evidence-only revision",
+      "changed": {
+        "CHECK-005": false,
+        "CHECK-006": false
+      }
+    },
+    {
+      "observer": "portfolio-licensing-policy",
+      "scope_revision": 2,
+      "probe": "real terms source",
+      "changed": {
+        "CHECK-005": true,
+        "CHECK-006": true
+      }
+    },
+    {
+      "observer": "portfolio-licensing-policy",
+      "scope_revision": 2,
+      "probe": "sibling Design source",
+      "changed": {
+        "CHECK-005": true,
+        "CHECK-006": true
+      }
+    },
+    {
+      "observer": "portfolio-licensing-policy",
+      "scope_revision": 2,
+      "probe": "sibling Requirements source",
+      "changed": {
+        "CHECK-005": true,
+        "CHECK-006": true
+      }
+    },
+    {
+      "observer": "portfolio-licensing-policy",
+      "scope_revision": 2,
+      "probe": "unrelated historical Tasks",
+      "changed": {
+        "CHECK-005": true,
+        "CHECK-006": true
+      }
+    },
+    {
+      "observer": "portfolio-licensing-policy",
+      "probe": "sibling substantive task change",
+      "canonical_tasks_digest_changed": true,
+      "original_approval_no_longer_matches": true
+    },
+    {
+      "observer": "portfolio-licensing-policy",
+      "probe": "sibling failed result still rejected by its own guard",
+      "observed": {
+        "status": "fail",
+        "codes": [
+          "ACCEPTANCE_UNVERIFIED",
+          "INPUT_STALE",
+          "RESOLUTION_UNVERIFIED",
+          "VALIDATION_FAILED"
+        ]
+      }
+    },
+    {
+      "observer": "contribution-security-guidance",
+      "scope_revision": 1,
+      "probe": "sibling evidence-only revision",
+      "changed": {
+        "CHECK-005": true,
+        "CHECK-006": true
+      }
+    },
+    {
+      "observer": "contribution-security-guidance",
+      "scope_revision": 2,
+      "probe": "sibling evidence-only revision",
+      "changed": {
+        "CHECK-005": false,
+        "CHECK-006": false
+      }
+    },
+    {
+      "observer": "contribution-security-guidance",
+      "scope_revision": 2,
+      "probe": "real terms source",
+      "changed": {
+        "CHECK-005": true,
+        "CHECK-006": true
+      }
+    },
+    {
+      "observer": "contribution-security-guidance",
+      "scope_revision": 2,
+      "probe": "sibling Design source",
+      "changed": {
+        "CHECK-005": true,
+        "CHECK-006": true
+      }
+    },
+    {
+      "observer": "contribution-security-guidance",
+      "scope_revision": 2,
+      "probe": "sibling Requirements source",
+      "changed": {
+        "CHECK-005": true,
+        "CHECK-006": true
+      }
+    },
+    {
+      "observer": "contribution-security-guidance",
+      "scope_revision": 2,
+      "probe": "unrelated historical Tasks",
+      "changed": {
+        "CHECK-005": true,
+        "CHECK-006": true
+      }
+    },
+    {
+      "observer": "contribution-security-guidance",
+      "probe": "sibling substantive task change",
+      "canonical_tasks_digest_changed": true,
+      "original_approval_no_longer_matches": true
+    },
+    {
+      "observer": "contribution-security-guidance",
+      "probe": "sibling failed result still rejected by its own guard",
+      "observed": {
+        "status": "fail",
+        "codes": [
+          "ACCEPTANCE_UNVERIFIED",
+          "RESOLUTION_UNVERIFIED",
+          "VALIDATION_FAILED"
+        ]
+      }
+    }
+  ]
+}

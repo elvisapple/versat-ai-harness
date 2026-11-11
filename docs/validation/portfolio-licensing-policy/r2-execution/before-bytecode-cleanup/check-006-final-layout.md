@@ -1,0 +1,3 @@
+# CHECK-006: pass on final layout
+
+Executed canonical stage digests/real approval review, all mapped scenario/source bindings, both selected planning and implementation commands, and the 16 diagnostic observations on the final combined archive layout. All expected commands passed. Snapshot before/after a2a7fc0c3fdd1b8ecb840f7177e8d5add990b02bb20fc220862e5a20d8d104f4 matched. These selected planning/implementation checks preserve stored archive consistency; final live delivery/archive guards are separately mandatory and are not a prerequisite of this check. See planning.json, implementation.json, diagnostic-final.json. No old result was relabeled and no validator was changed.

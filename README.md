@@ -19,6 +19,8 @@ For Versat developers, reviewers and maintainers. Maintained by Versat; governed
 - [Review architecture](docs/user-docs/guides/architecture-review.md)
 - [Validation and evaluations](docs/user-docs/guides/validation-and-evaluations.md)
 
+Private H01/H02 candidates (not adopted or released): [licensing review](docs/user-docs/guides/licensing.md), [contribution](docs/user-docs/guides/contributing.md) and [security reporting](docs/user-docs/guides/security-reporting.md). The owner approved the terms candidate; component rights evidence and operational channel verification remain separate.
+
 ## Current state and adoption
 
 VERSION declares 0.3.0. The marketplace selects the exact tag v0.3.0; verify that tag and its contents before distribution. Consumer execution and supervised evaluations in the current source are explicitly unreleased. A source change or merge does not update installed Plugins or consumer pins. Adopt another exact release through a reviewed change.

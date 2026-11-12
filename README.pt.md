@@ -19,6 +19,8 @@ Para quem desenvolve, revisa e mantém projetos na Versat. Mantido pela Versat; 
 - [Revisar a arquitetura](docs/user-docs/guides/architecture-review.pt.md)
 - [Validação e avaliações](docs/user-docs/guides/validation-and-evaluations.pt.md)
 
+Candidatos privados de H01/H02 (não adotados nem lançados): [revisão de licenciamento](docs/user-docs/guides/licensing.pt.md), [contribuição](docs/user-docs/guides/contributing.pt.md) e [reporte de segurança](docs/user-docs/guides/security-reporting.pt.md). O responsável aprovou o candidato de termos; evidências de direitos dos componentes e verificação operacional dos canais permanecem separadas.
+
 ## Estado atual e adoção
 
 VERSION declara 0.3.0. O marketplace seleciona a tag exata v0.3.0; verifique a tag e seu conteúdo antes da distribuição. Execução de consumidores e avaliações supervisionadas da fonte atual são explicitamente não lançadas. Mudar a fonte ou fazer merge não atualiza Plugins instalados nem pins de consumidores. Adote outra release exata por uma mudança revisada.

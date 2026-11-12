@@ -1,0 +1,28 @@
+{
+  "scope": "Read-only reinspection of the original authorized tests; no new submission. IDs refer to the connected private mailbox. No delivery to the second CODEOWNER or forwarding/delegation audit is asserted.",
+  "observations": [
+    {
+      "message_id": "1a1c76b2731e70ac",
+      "labels": [
+        "UNREAD",
+        "SENT",
+        "INBOX"
+      ],
+      "original_internal_date": "1794347050000",
+      "marker_present": true,
+      "reason": "internal",
+      "new_submission": false
+    },
+    {
+      "message_id": "1a1ca7b7e8a4def1",
+      "labels": [
+        "CATEGORY_UPDATES",
+        "INBOX"
+      ],
+      "original_internal_date": "1794398453000",
+      "marker_present": true,
+      "reason": "subscribed",
+      "new_submission": false
+    }
+  ]
+}

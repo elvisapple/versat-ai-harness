@@ -1,0 +1,169 @@
+--- a/CONTRIBUTING.md
++++ b/CONTRIBUTING.md
+@@ -18,3 +18,11 @@
+ - [GitHub delivery](https://github.com/versat-labs/versat-ai-harness/blob/27735687a37e896cd6b0c95cd9d2d848ee166d90/docs/user-docs/guides/github-delivery.md)
+ - [Validation](https://github.com/versat-labs/versat-ai-harness/blob/27735687a37e896cd6b0c95cd9d2d848ee166d90/docs/user-docs/guides/validation-and-evaluations.md)
+ - [Canonical language policy (English)](https://github.com/versat-labs/versat-ai-harness/blob/27735687a37e896cd6b0c95cd9d2d848ee166d90/standards/core/language.md)
++
++## Rights and provenance
++
++Before proposing code, text or assets, identify their source, applicable permissions and required notices. If you cannot establish permission to contribute an illustration, omit it and ask the repository owner; an issue or technical review does not supply missing rights. Follow the target repository's actual terms. Permission to use an internal development tool is separate from the destination project's license, and installing that tool is not required for the public contribution route above. This guidance introduces no CLA, DCO or rights assignment.
++
++## Security reports
++
++For ordinary bugs, use Bug report. For suspected vulnerabilities in public repositories, use GitHub Private Vulnerability Reporting when enabled. For private repositories, email the relevant CODEOWNERS through existing internal Versat channels. Do not disclose vulnerability details in ordinary issues. See [security reporting](SECURITY.md) for routing and unavailable-channel recovery.
+--- a/CONTRIBUTING.pt.md
++++ b/CONTRIBUTING.pt.md
+@@ -18,3 +18,11 @@
+ - [Entrega pelo GitHub](https://github.com/versat-labs/versat-ai-harness/blob/27735687a37e896cd6b0c95cd9d2d848ee166d90/docs/user-docs/guides/github-delivery.pt.md)
+ - [Validação](https://github.com/versat-labs/versat-ai-harness/blob/27735687a37e896cd6b0c95cd9d2d848ee166d90/docs/user-docs/guides/validation-and-evaluations.pt.md)
+ - [Política canônica de idiomas (inglês)](https://github.com/versat-labs/versat-ai-harness/blob/27735687a37e896cd6b0c95cd9d2d848ee166d90/standards/core/language.md)
++
++## Direitos e procedência
++
++Antes de propor código, texto ou recursos, identifique a origem, as permissões aplicáveis e os avisos exigidos. Se não conseguir comprovar a permissão para contribuir com uma ilustração, retire-a e consulte o responsável pelo repositório; uma issue ou revisão técnica não supre direitos ausentes. Siga os termos efetivos do repositório de destino. A permissão para usar uma ferramenta interna de desenvolvimento é distinta da licença do projeto de destino, e instalar essa ferramenta não é requisito para a contribuição pública descrita acima. Esta orientação não introduz CLA, DCO ou cessão de direitos.
++
++## Relatos de segurança
++
++Para bugs comuns, use Bug report. Para suspeitas de vulnerabilidade em repositórios públicos, use o Private Vulnerability Reporting do GitHub quando habilitado. Nos privados, envie email aos CODEOWNERS relevantes pelos canais internos existentes da Versat. Não divulgue detalhes de vulnerabilidade em issues comuns. Consulte [reporte de segurança](SECURITY.pt.md) para encaminhamento e recuperação quando o canal estiver indisponível.
+--- a/CONTRIBUTING.es.md
++++ b/CONTRIBUTING.es.md
+@@ -18,3 +18,11 @@
+ - [Entrega mediante GitHub](https://github.com/versat-labs/versat-ai-harness/blob/27735687a37e896cd6b0c95cd9d2d848ee166d90/docs/user-docs/guides/github-delivery.es.md)
+ - [Validación](https://github.com/versat-labs/versat-ai-harness/blob/27735687a37e896cd6b0c95cd9d2d848ee166d90/docs/user-docs/guides/validation-and-evaluations.es.md)
+ - [Política canónica de idiomas (inglés)](https://github.com/versat-labs/versat-ai-harness/blob/27735687a37e896cd6b0c95cd9d2d848ee166d90/standards/core/language.md)
++
++## Derechos y procedencia
++
++Antes de proponer código, texto o recursos, identifique su origen, los permisos aplicables y los avisos exigidos. Si no puede acreditar el permiso para contribuir una ilustración, omítala y consulte al responsable del repositorio; una issue o revisión técnica no aporta derechos ausentes. Siga los términos efectivos del repositorio de destino. El permiso para usar una herramienta interna de desarrollo es distinto de la licencia del proyecto de destino, e instalar esa herramienta no es un requisito para la contribución pública descrita arriba. Esta guía no introduce CLA, DCO ni cesión de derechos.
++
++## Informes de seguridad
++
++Para bugs comunes, usa Bug report. Para sospechas de vulnerabilidad en repositorios públicos, usa Private Vulnerability Reporting de GitHub cuando esté habilitado. En los privados, envía email a los CODEOWNERS pertinentes por los canales internos existentes de Versat. No divulgues detalles de vulnerabilidades en issues comunes. Consulta [reportes de seguridad](SECURITY.es.md) para encaminamiento y recuperación cuando el canal no esté disponible.
+--- /dev/null
++++ b/.github/VULNERABILITY_REPORT.yml
+@@ -0,0 +1,46 @@
++name: Private vulnerability report
++description: Report a suspected security vulnerability in a public Versat Labs repository privately.
++body:
++  - type: markdown
++    attributes:
++      value: |
++        Use this form only through GitHub's private "Report a vulnerability" flow.
++        For ordinary functional bugs, use the repository's Bug report issue form.
++        For private repositories, email the relevant CODEOWNERS using existing internal Versat channels.
++        Do not include credentials, personal or customer data, or unnecessary sensitive attachments.
++        Reports may be written in English, Portuguese or Spanish.
++  - type: input
++    id: affected_component
++    attributes:
++      label: Affected component and version
++      description: Identify the public repository, component and affected version or commit.
++    validations:
++      required: true
++  - type: textarea
++    id: summary
++    attributes:
++      label: Summary
++      description: Describe the suspected vulnerability and expected security boundary.
++    validations:
++      required: true
++  - type: textarea
++    id: reproduction
++    attributes:
++      label: Reproduction or proof of concept
++      description: Provide minimal safe reproduction steps using synthetic data. Do not test third-party systems or include secrets.
++    validations:
++      required: true
++  - type: textarea
++    id: impact
++    attributes:
++      label: Impact
++      description: Explain who or what could be affected and any required conditions or access.
++    validations:
++      required: true
++  - type: textarea
++    id: mitigation
++    attributes:
++      label: Suggested mitigation or additional context
++      description: Include relevant non-sensitive context or a possible correction, if known.
++    validations:
++      required: false
+--- /dev/null
++++ b/SECURITY.md
+@@ -0,0 +1,23 @@
++# Security reporting
++
++[English](SECURITY.md) | [Português](SECURITY.pt.md) | [Español](SECURITY.es.md)
++
++Use the target repository's security instructions when present. Ordinary functional bugs belong in its **Bug report** issue form. Suspected vulnerabilities must not be disclosed in public issues, discussions or pull requests.
++
++The relevant CODEOWNERS are responsible for monitoring, triaging and coordinating the resolution of security reports for their owned components, through both public-repository PVR and private-repository internal email. Maintainers configure the necessary permissions and notifications; CODEOWNERS assignment alone does not configure GitHub delivery.
++
++## Public repositories
++
++Use the affected public repository's **Security and quality → Report a vulnerability** flow when Private Vulnerability Reporting is enabled. Submit the affected version, summary, safe reproduction and impact through that private form. Reports may be written in English, Portuguese or Spanish. Do not include secrets, customer data or unnecessary sensitive attachments.
++
++The organization provides a default `.github/VULNERABILITY_REPORT.yml`; a repository-specific form takes precedence. A template does not enable the feature or prove that responders are monitoring it. If the private reporting option is absent or unavailable, request private reporting instructions from a maintainer without disclosing the vulnerability. Do not substitute an ordinary issue containing security details.
++
++## Private repositories
++
++Email the relevant **CODEOWNERS** using existing internal Versat channels. Identify the owners responsible for the affected paths from the repository's CODEOWNERS file, then obtain their email addresses through the internal directory or an established internal contact. Do not guess email addresses from GitHub usernames or publish internal contacts.
++
++If CODEOWNERS is missing, ownership is unclear or internal contact access is unavailable, ask the repository maintainer or your existing Versat contact for private routing instructions without disclosing sensitive details. A private repository issue is not a substitute for this route: its audience may exceed the intended recipients.
++
++## Receipt and scope
++
++This policy does not grant access to private repositories or permission to conduct tests. No response deadline or continuous monitoring is promised here. Maintainers must establish permitted recipients, notifications and actual receipt before claiming a route is verified. Keep vulnerability details private while coordinating remediation.
+--- /dev/null
++++ b/SECURITY.pt.md
+@@ -0,0 +1,23 @@
++# Reporte de segurança
++
++[English](SECURITY.md) | [Português](SECURITY.pt.md) | [Español](SECURITY.es.md)
++
++Siga as instruções de segurança próprias do repositório de destino, quando existirem. Bugs funcionais comuns devem usar o formulário de issue **Bug report**. Suspeitas de vulnerabilidade não devem ser divulgadas em issues, discussões ou pull requests públicos.
++
++Os CODEOWNERS relevantes são responsáveis por acompanhar, triar e coordenar a resolução dos relatos de segurança dos componentes sob sua responsabilidade, tanto pelo PVR dos repositórios públicos quanto pelo email interno dos privados. Os mantenedores configuram as permissões e notificações necessárias; a atribuição em CODEOWNERS não configura sozinha o recebimento no GitHub.
++
++## Repositórios públicos
++
++Use **Security and quality → Report a vulnerability** no repositório público afetado quando o Private Vulnerability Reporting estiver habilitado. Envie versão afetada, resumo, reprodução segura e impacto nesse formulário privado. Os relatos podem ser escritos em inglês, português ou espanhol. Não inclua segredos, dados de clientes ou anexos sensíveis desnecessários.
++
++A organização fornece um padrão `.github/VULNERABILITY_REPORT.yml`; o formulário próprio do repositório tem prioridade. Um template não habilita o recurso nem comprova que responsáveis o acompanham. Se a opção privada estiver ausente ou indisponível, solicite instruções de reporte privado a um mantenedor sem revelar a vulnerabilidade. Não substitua essa rota por uma issue comum com detalhes de segurança.
++
++## Repositórios privados
++
++Envie email aos **CODEOWNERS** relevantes pelos canais internos já existentes da Versat. Identifique os responsáveis pelos caminhos afetados no arquivo CODEOWNERS do repositório e obtenha os emails no diretório interno ou por um contato interno estabelecido. Não deduza emails a partir dos nomes de usuário do GitHub nem publique contatos internos.
++
++Se faltar CODEOWNERS, houver dúvida sobre responsabilidade ou você não tiver acesso aos contatos internos, solicite instruções privadas ao mantenedor do repositório ou ao seu contato existente na Versat, sem revelar detalhes sensíveis. Uma issue em repositório privado não substitui essa rota: seu público pode ser maior que o dos destinatários previstos.
++
++## Recebimento e escopo
++
++Esta política não concede acesso a repositórios privados nem permissão para realizar testes. Não promete prazo de resposta ou monitoramento contínuo. Os mantenedores devem estabelecer destinatários permitidos, notificações e recebimento real antes de afirmar que a rota foi verificada. Mantenha os detalhes privados durante a coordenação da correção.
+--- /dev/null
++++ b/SECURITY.es.md
+@@ -0,0 +1,23 @@
++# Reportes de seguridad
++
++[English](SECURITY.md) | [Português](SECURITY.pt.md) | [Español](SECURITY.es.md)
++
++Sigue las instrucciones de seguridad propias del repositorio destinatario cuando existan. Los bugs funcionales comunes corresponden al formulario de issue **Bug report**. No divulgues sospechas de vulnerabilidades en issues, discusiones ni pull requests públicos.
++
++Los CODEOWNERS pertinentes son responsables de supervisar, clasificar y coordinar la resolución de reportes de seguridad de sus componentes, tanto mediante PVR en repositorios públicos como por email interno en los privados. Los mantenedores configuran los permisos y notificaciones necesarios; la asignación en CODEOWNERS no configura por sí sola la recepción en GitHub.
++
++## Repositorios públicos
++
++Usa **Security and quality → Report a vulnerability** en el repositorio público afectado cuando Private Vulnerability Reporting esté habilitado. Envía versión afectada, resumen, reproducción segura e impacto mediante ese formulario privado. Los reportes pueden escribirse en inglés, portugués o español. No incluyas secretos, datos de clientes ni adjuntos sensibles innecesarios.
++
++La organización proporciona un formulario predeterminado `.github/VULNERABILITY_REPORT.yml`; el formulario propio del repositorio tiene prioridad. Una plantilla no habilita la función ni acredita que responsables la supervisen. Si la opción privada está ausente o no está disponible, solicita instrucciones privadas a un mantenedor sin revelar la vulnerabilidad. No sustituyas esa ruta por un issue común con detalles de seguridad.
++
++## Repositorios privados
++
++Envía email a los **CODEOWNERS** pertinentes mediante los canales internos existentes de Versat. Identifica a los responsables de las rutas afectadas en el archivo CODEOWNERS y obtén sus emails del directorio interno o de un contacto interno establecido. No deduzcas emails desde nombres de usuario de GitHub ni publiques contactos internos.
++
++Si falta CODEOWNERS, la responsabilidad no está clara o no tienes acceso a contactos internos, solicita instrucciones privadas al mantenedor o a tu contacto existente en Versat sin revelar detalles sensibles. Un issue en un repositorio privado no sustituye esta ruta: su público puede exceder a los destinatarios previstos.
++
++## Recepción y alcance
++
++Esta política no concede acceso a repositorios privados ni permiso para realizar pruebas. No promete plazo de respuesta ni monitoreo continuo. Los mantenedores deben establecer destinatarios permitidos, notificaciones y recepción real antes de afirmar que la ruta está verificada. Conserva privados los detalles durante la coordinación de la corrección.

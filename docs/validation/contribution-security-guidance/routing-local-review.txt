@@ -1,0 +1,10 @@
+Native PVR form parses; five unique fields, four required; correct security-form location; existing forms/profile/README unchanged; manifest verified.
+96 local links verified; external platform documentation reviewed separately, no live Versat route claim.
+No selected old mailbox or internal email addresses added to public candidates.
+Historical dossiers, Skills and package version unchanged.
+portfolio-licensing-policy proposal 5c6662b60f01a33fb143e481dbe0aa13551177a71c91c73b87e8f422c1f982e7
+portfolio-licensing-policy design 801894d789455496c072bc19b29947ff2c5900df09e4725d9d9e7c8d5f8acd55
+portfolio-licensing-policy tasks ac2e801e4908448c2e534f8865970d979dbb751097b11b89532ee7a26299c138
+contribution-security-guidance proposal 6bed2e92d705d83385b31d27364cfcda2b05549678818801c6082132d6dbc8d2
+contribution-security-guidance design 6f120a41ac76673587dff9355ab7fddc4e40f6f2a1e43af75a0cffa23314f3e2
+contribution-security-guidance tasks d969a531b3de153e562ff06d72c4ad0568b3a88caabbb52ca7b465bd05c2d284

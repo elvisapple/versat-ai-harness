@@ -1,0 +1,128 @@
+{
+  "repository": "versat-labs/.github",
+  "ref": "a762582c6585ae967c37f7f7f1c69c06c07e9071",
+  "observed": "2026-11-10",
+  "files": [
+    {
+      "path": "AGENTS.md",
+      "blob": "cbd9b4dfbdb3a59ea8aa81dcee3c1c167817d8ec",
+      "source": "https://github.com/versat-labs/.github/blob/a762582c6585ae967c37f7f7f1c69c06c07e9071/AGENTS.md",
+      "baseline_sha256": "32712e0dd8fac7cae467fece85fb553fcc6f7995a83be3b8d5a16fd2e5b7e7d5",
+      "candidate_sha256": "32712e0dd8fac7cae467fece85fb553fcc6f7995a83be3b8d5a16fd2e5b7e7d5"
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "blob": "444ee0ddcadaae8ebb6cc616d6041587ec4563b5",
+      "source": "https://github.com/versat-labs/.github/blob/a762582c6585ae967c37f7f7f1c69c06c07e9071/CONTRIBUTING.md",
+      "baseline_sha256": "b2260af52b83364d4c7b3f13f3befbb4110b6f1d389f1cda7720696683c86bf1",
+      "candidate_sha256": "786c2bc8e607c87b72b3c6613c596254a869fd141e6efd9e1eaebe0f70f4520b"
+    },
+    {
+      "path": "CONTRIBUTING.pt.md",
+      "blob": "72d3fff2a659ecf0bd675c95da1da85c5e7ce792",
+      "source": "https://github.com/versat-labs/.github/blob/a762582c6585ae967c37f7f7f1c69c06c07e9071/CONTRIBUTING.pt.md",
+      "baseline_sha256": "0ea27ac2d74885ecfa29957d46843b418f4af27d26f45bc85a7ddf9e7db06d1b",
+      "candidate_sha256": "c881b4ba8b3c7382e9187ce1ddd6baf366afc3d5626d617135dc1c68641f92cb"
+    },
+    {
+      "path": "CONTRIBUTING.es.md",
+      "blob": "1b1b417957253cc8b89d397582ac9e84b1687f8f",
+      "source": "https://github.com/versat-labs/.github/blob/a762582c6585ae967c37f7f7f1c69c06c07e9071/CONTRIBUTING.es.md",
+      "baseline_sha256": "61c07ffab3f5c444a824bec4fdc7882102a38ba2220666b87f493f455cdbc465",
+      "candidate_sha256": "38c751556f1b9e645cfbbf97cdbeaf6d815dd9d03c6840a80c38b06cc21351b6"
+    },
+    {
+      "path": "README.md",
+      "blob": "d22afcf8cfc2fb4b8f7f2d1d98d72997f719878b",
+      "source": "https://github.com/versat-labs/.github/blob/a762582c6585ae967c37f7f7f1c69c06c07e9071/README.md",
+      "baseline_sha256": "9e8146d9ac7beec68bb91d4e2a3baddd1028e30c20017fa92fb56bd2dd129a36",
+      "candidate_sha256": "9e8146d9ac7beec68bb91d4e2a3baddd1028e30c20017fa92fb56bd2dd129a36"
+    },
+    {
+      "path": "README.pt.md",
+      "blob": "c95ea7b8edc8778464e1f7444ce15e22f6991ec1",
+      "source": "https://github.com/versat-labs/.github/blob/a762582c6585ae967c37f7f7f1c69c06c07e9071/README.pt.md",
+      "baseline_sha256": "872e4f3d22f78e4c4268e57a2e6fe669f3a8d1ff4a9b4016e160ad6dfc8a7d2c",
+      "candidate_sha256": "872e4f3d22f78e4c4268e57a2e6fe669f3a8d1ff4a9b4016e160ad6dfc8a7d2c"
+    },
+    {
+      "path": "README.es.md",
+      "blob": "6571b9178863f4ef62efddaf89766b078e9cfe76",
+      "source": "https://github.com/versat-labs/.github/blob/a762582c6585ae967c37f7f7f1c69c06c07e9071/README.es.md",
+      "baseline_sha256": "6f348544e6ca51a0ef523f8de5d54cee4ec9aef93b480285e7c6417f7a5e3f6c",
+      "candidate_sha256": "6f348544e6ca51a0ef523f8de5d54cee4ec9aef93b480285e7c6417f7a5e3f6c"
+    },
+    {
+      "path": "profile/README.md",
+      "blob": "6a412d23f8949d95edddab6b964829452d05b872",
+      "source": "https://github.com/versat-labs/.github/blob/a762582c6585ae967c37f7f7f1c69c06c07e9071/profile/README.md",
+      "baseline_sha256": "aa5d51b889d36b2fb301ddf87cb4cadce97a1a0e0f1fcf82a668a6426533e98c",
+      "candidate_sha256": "aa5d51b889d36b2fb301ddf87cb4cadce97a1a0e0f1fcf82a668a6426533e98c"
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/bug_report.yaml",
+      "blob": "6a646e75d669ef451ed765a879c8ac136fc324aa",
+      "source": "https://github.com/versat-labs/.github/blob/a762582c6585ae967c37f7f7f1c69c06c07e9071/.github/ISSUE_TEMPLATE/bug_report.yaml",
+      "baseline_sha256": "d2d81baffa9a6ddb4a2af16ccba7a889dcd2f93654eacf280bed11ff1687c622",
+      "candidate_sha256": "d2d81baffa9a6ddb4a2af16ccba7a889dcd2f93654eacf280bed11ff1687c622"
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/chore.yaml",
+      "blob": "b52d32f1f5d6361a9540f4f39f5d9eb800872600",
+      "source": "https://github.com/versat-labs/.github/blob/a762582c6585ae967c37f7f7f1c69c06c07e9071/.github/ISSUE_TEMPLATE/chore.yaml",
+      "baseline_sha256": "6496caaa3eb28c9dbbe58ec471cc61d2938fb15f2fa92a89154e29dc3c3c1eb6",
+      "candidate_sha256": "6496caaa3eb28c9dbbe58ec471cc61d2938fb15f2fa92a89154e29dc3c3c1eb6"
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/feature_request.yaml",
+      "blob": "0e3a495e58b678fba6f0b04754be545a3a030de9",
+      "source": "https://github.com/versat-labs/.github/blob/a762582c6585ae967c37f7f7f1c69c06c07e9071/.github/ISSUE_TEMPLATE/feature_request.yaml",
+      "baseline_sha256": "9426e3de0fa1a2c0d843fa3d5c5432ef2618a17190c632bcff26686565134722",
+      "candidate_sha256": "9426e3de0fa1a2c0d843fa3d5c5432ef2618a17190c632bcff26686565134722"
+    },
+    {
+      "path": ".gitignore",
+      "blob": "25bf43d782af7ad3a4c61d887a6ded724788f5e6",
+      "source": "https://github.com/versat-labs/.github/blob/a762582c6585ae967c37f7f7f1c69c06c07e9071/.gitignore",
+      "baseline_sha256": "520b2119df8cf47aa9533237314859bb50ce5d4f927ac665270310c15e0ee6c7",
+      "candidate_sha256": "520b2119df8cf47aa9533237314859bb50ce5d4f927ac665270310c15e0ee6c7"
+    },
+    {
+      "path": ".github/VULNERABILITY_REPORT.yml",
+      "blob": null,
+      "baseline_sha256": null,
+      "baseline_status": "GitHub contents API 404 at selected ref, observed 2026-11-10",
+      "candidate_sha256": "c64ac86719175d5aac700a4e11a3cabc4341bd82b84dcac4618dedfe2a7940d1"
+    },
+    {
+      "path": "SECURITY.md",
+      "blob": null,
+      "baseline_sha256": null,
+      "baseline_status": "GitHub contents API 404 at selected ref, observed 2026-11-10",
+      "candidate_sha256": "a1cbdfc4408bfa931a58b0712fb11eeca5682b417ddc839be444a60d6b9e9deb"
+    },
+    {
+      "path": "SECURITY.pt.md",
+      "blob": null,
+      "baseline_sha256": null,
+      "baseline_status": "GitHub contents API 404 at selected ref, observed 2026-11-10",
+      "candidate_sha256": "e7d7a4e721c8da59683cc365250bba44a68c293fa33f003e364624364e6e84ac"
+    },
+    {
+      "path": "SECURITY.es.md",
+      "blob": null,
+      "baseline_sha256": null,
+      "baseline_status": "GitHub contents API 404 at selected ref, observed 2026-11-10",
+      "candidate_sha256": "a5aab3fa47344aa44064eb4327233a63c610180386675dbaa01fb6cf9df93cbc"
+    },
+    {
+      "path": ".github/CODEOWNERS",
+      "blob": "f2250f1356a7b0068bd8c6f9ba0f5faef5dab339",
+      "source": "https://github.com/versat-labs/.github/blob/a762582c6585ae967c37f7f7f1c69c06c07e9071/.github/CODEOWNERS",
+      "baseline_sha256": "52eb3bdb75771b4d2f138f284f34a326aa5d305cb4975d9bd84f9b03231d1768",
+      "candidate_sha256": "52eb3bdb75771b4d2f138f284f34a326aa5d305cb4975d9bd84f9b03231d1768"
+    }
+  ],
+  "previous_ref": "4410a8d38ac98bdbc7b17ed8f0c0053052a8ebb5",
+  "refresh_note": "Twelve previously inventoried files unchanged by exact blob; .github/CODEOWNERS added with * @elviszoz and retained unchanged; four candidate additions absent at new ref."
+}

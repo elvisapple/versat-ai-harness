@@ -1,0 +1,11 @@
+# Routing decision implementation — 2026-11-10
+
+Current owner choice: public repositories use GitHub Private Vulnerability Reporting; private repositories email the relevant CODEOWNERS through existing internal Versat contacts. This supersedes the tentative info@versat.ag choice. No public repository write, feature activation, access change or message/test was performed.
+
+Prepared the native organization-default .github/VULNERABILITY_REPORT.yml, SECURITY EN/PT/ES, contribution/reporting instructions, refreshed manifest and candidate diff. Existing issue forms, profile and README are byte-identical. This is implementation of the previously open route input within the approved H02 candidate work; the six approved stage digests remain unchanged.
+
+Observed local review: YAML parses, five unique field IDs, four required questions, no issue-only metadata or wrong issue-form placement; old files and source/candidate hashes verified. 96 local links resolve. Compared EN/PT/ES public/private routing, absent-feature recovery, missing owner/internal access recovery, non-disclosure and no active-channel/SLA assertions. The native English form accepts EN/PT/ES responses. No internal email addresses or old mailbox were added to the public candidate. No central public .github intake is assumed. Platform documentation confirms default-form support and per-repository override; live GitHub rendering/inheritance, responder visibility and actual receipt remain unverified.
+
+Full ./scripts/validate/run.sh: 131 validator and 48 execution tests pass; aggregate exit 1 because existing SDD acceptance findings remain open. No technical test failure was suppressed. Terms approval/rights, per-repository channel enablement/contacts and authorized receipt/access verification are pending. Final acceptance assessments and delivery remain incomplete.
+
+Prior affected results are retained in before-routing-decision.json and their original reports. They were removed from current results rather than assigned new hashes. H01 CHECK-003 is unaffected and retains its original valid snapshot. New CHECK-004 is unverified for incomplete final method; CHECK-005 records the observed aggregate failure. Partial observations do not certify acceptance.

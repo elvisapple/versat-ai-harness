@@ -1,0 +1,119 @@
+{
+  "plan_digest": "ac2e801e4908448c2e534f8865970d979dbb751097b11b89532ee7a26299c138",
+  "results": [
+    {
+      "check": "CHECK-001",
+      "result": "unverified",
+      "evidence": "docs/validation/portfolio-licensing-policy/check-001.md",
+      "revision": "2026-11-10 private working tree on 597b81c71a0fc0908ff5264fe9987bb5c0d8feec",
+      "input_digest_before": "5a97206666d86a964c4136515487cb0a1e5f6968aea512db08c3a61bdc2a7e31",
+      "input_digest_after": "5a97206666d86a964c4136515487cb0a1e5f6968aea512db08c3a61bdc2a7e31",
+      "context": {
+        "execution": "local",
+        "environment": "macOS-26.5.2-arm64-arm-64bit; Python 3.11.4; private documentary checkout; no channel test",
+        "observed": true
+      }
+    },
+    {
+      "check": "CHECK-002",
+      "result": "unverified",
+      "evidence": "docs/validation/portfolio-licensing-policy/check-002.md",
+      "revision": "2026-11-10 private working tree on 597b81c71a0fc0908ff5264fe9987bb5c0d8feec",
+      "input_digest_before": "5a97206666d86a964c4136515487cb0a1e5f6968aea512db08c3a61bdc2a7e31",
+      "input_digest_after": "5a97206666d86a964c4136515487cb0a1e5f6968aea512db08c3a61bdc2a7e31",
+      "context": {
+        "execution": "local",
+        "environment": "macOS-26.5.2-arm64-arm-64bit; Python 3.11.4; private documentary checkout; no channel test",
+        "observed": true
+      }
+    },
+    {
+      "check": "CHECK-003",
+      "result": "pass",
+      "evidence": "docs/validation/portfolio-licensing-policy/check-003.md",
+      "revision": "2026-11-10 private working tree on 597b81c71a0fc0908ff5264fe9987bb5c0d8feec",
+      "input_digest_before": "ea585b7f21de8358c14702dc62c28100f71ebcb65f2d2b60b0b09d949d5aa6e6",
+      "input_digest_after": "ea585b7f21de8358c14702dc62c28100f71ebcb65f2d2b60b0b09d949d5aa6e6",
+      "context": {
+        "execution": "local",
+        "environment": "macOS-26.5.2-arm64-arm-64bit; Python 3.11.4; private documentary checkout; no channel test",
+        "observed": true
+      }
+    },
+    {
+      "check": "CHECK-004",
+      "result": "pass",
+      "evidence": "docs/validation/portfolio-licensing-policy/check-004.md",
+      "revision": "2026-11-10 private working tree on 597b81c71a0fc0908ff5264fe9987bb5c0d8feec",
+      "input_digest_before": "5a97206666d86a964c4136515487cb0a1e5f6968aea512db08c3a61bdc2a7e31",
+      "input_digest_after": "5a97206666d86a964c4136515487cb0a1e5f6968aea512db08c3a61bdc2a7e31",
+      "context": {
+        "execution": "local",
+        "environment": "macOS-26.5.2-arm64-arm-64bit; Python 3.11.4; private documentary checkout; no channel test",
+        "observed": true
+      }
+    },
+    {
+      "check": "CHECK-005",
+      "result": "fail",
+      "evidence": "docs/validation/portfolio-licensing-policy/check-005.md",
+      "revision": "2026-11-10 private working tree on 597b81c71a0fc0908ff5264fe9987bb5c0d8feec",
+      "input_digest_before": "7ec222e0fa6a1363aa6011ce957e1ea78eb2df1c6422462895fed976e72442c1",
+      "input_digest_after": "7ec222e0fa6a1363aa6011ce957e1ea78eb2df1c6422462895fed976e72442c1",
+      "context": {
+        "execution": "local",
+        "environment": "macOS-26.5.2-arm64-arm-64bit; Python 3.11.4; private documentary checkout; no channel test",
+        "observed": true
+      }
+    },
+    {
+      "check": "CHECK-006",
+      "result": "unverified",
+      "evidence": "docs/validation/portfolio-licensing-policy/check-006.md",
+      "revision": "2026-11-10 private working tree on 597b81c71a0fc0908ff5264fe9987bb5c0d8feec",
+      "input_digest_before": "f381eb242204fbdac38d9ef0bbc3423c965336a247c5d519b62a217556ec10e2",
+      "input_digest_after": "f381eb242204fbdac38d9ef0bbc3423c965336a247c5d519b62a217556ec10e2",
+      "context": {
+        "execution": "local",
+        "environment": "macOS-26.5.2-arm64-arm-64bit; Python 3.11.4; private documentary checkout; no channel test",
+        "observed": true
+      }
+    }
+  ],
+  "assessments": [],
+  "findings": [
+    {
+      "id": "FIND-001",
+      "source": {
+        "plan": "Exact terms approval and component rights evidence"
+      },
+      "category": "missing",
+      "state": "open",
+      "evidence": "docs/validation/portfolio-licensing-policy/review.md",
+      "description": "Required exact-text approval and complete component rights/notices evidence remain absent. Owner permission/identity decisions were received and reflected in draft-0.2.",
+      "tasks": [
+        "TASK-003"
+      ],
+      "checks": [
+        "CHECK-002"
+      ]
+    },
+    {
+      "id": "FIND-003",
+      "source": {
+        "plan": "Final acceptance scenario assessment"
+      },
+      "category": "missing",
+      "state": "open",
+      "evidence": "docs/validation/portfolio-licensing-policy/review.md",
+      "description": "Final scenario acceptance is not complete; required checks and owner/reviewer evidence remain unavailable. Partial local checks do not complete all acceptance/regression obligations.",
+      "tasks": [
+        "TASK-005"
+      ],
+      "checks": [
+        "CHECK-001",
+        "CHECK-002"
+      ]
+    }
+  ]
+}

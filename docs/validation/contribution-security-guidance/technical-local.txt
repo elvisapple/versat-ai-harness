@@ -1,0 +1,7 @@
+Anonymous HTTP retrieval: all three public CONTRIBUTING locale files exactly match baseline blobs; no credentials used.
+Native form parses: five unique fields, four required; exactly seven payload changes; existing forms/profile/README preserved.
+Forward patch check/application and reverse check pass in isolated baseline copy; every resulting file matches candidate.
+259 current local Markdown paths/anchors resolve, excluding immutable frozen reviewed-text links interpreted in original source context.
+Both approved terms hashes and seven exact dependency-license text records verify; no terms clause changed.
+Canonical policy resolution and unchanged root/version/Skills/history invariants verified.
+GitHub rendering/inheritance, activation, effective permissions and receipt: NOT performed; no operational acceptance claimed.

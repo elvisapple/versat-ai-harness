@@ -1,0 +1,651 @@
+{
+  "plan_digest": "d969a531b3de153e562ff06d72c4ad0568b3a88caabbb52ca7b465bd05c2d284",
+  "results": [
+    {
+      "check": "CHECK-001",
+      "result": "pass",
+      "evidence": "docs/validation/contribution-security-guidance/technical-001.md",
+      "revision": "2026-11-10 final documentary review, base 597b81c71a0fc0908ff5264fe9987bb5c0d8feec",
+      "input_digest_before": "65d2d33c782460602bab35066b9873ebe910c6c994d5963d236f525cb1393bfe",
+      "input_digest_after": "65d2d33c782460602bab35066b9873ebe910c6c994d5963d236f525cb1393bfe",
+      "context": {
+        "execution": "local",
+        "environment": "macOS-26.5.2-arm64-arm-64bit; Python 3.11.4; authenticated private refs plus anonymous public baseline reads; no live route test",
+        "observed": true
+      }
+    },
+    {
+      "check": "CHECK-002",
+      "result": "pass",
+      "evidence": "docs/validation/contribution-security-guidance/technical-002.md",
+      "revision": "2026-11-10 final documentary review, base 597b81c71a0fc0908ff5264fe9987bb5c0d8feec",
+      "input_digest_before": "65d2d33c782460602bab35066b9873ebe910c6c994d5963d236f525cb1393bfe",
+      "input_digest_after": "65d2d33c782460602bab35066b9873ebe910c6c994d5963d236f525cb1393bfe",
+      "context": {
+        "execution": "local",
+        "environment": "macOS-26.5.2-arm64-arm-64bit; Python 3.11.4; authenticated private refs plus anonymous public baseline reads; no live route test",
+        "observed": true
+      }
+    },
+    {
+      "check": "CHECK-003",
+      "result": "unverified",
+      "evidence": "docs/validation/contribution-security-guidance/technical-003.md",
+      "revision": "2026-11-10 final documentary review, base 597b81c71a0fc0908ff5264fe9987bb5c0d8feec",
+      "input_digest_before": "7ee7a8b54f0a38c5749612980d1fcdf78f59ae5424e08b01af9733bff81c2fd4",
+      "input_digest_after": "7ee7a8b54f0a38c5749612980d1fcdf78f59ae5424e08b01af9733bff81c2fd4",
+      "context": {
+        "execution": "local",
+        "environment": "macOS-26.5.2-arm64-arm-64bit; Python 3.11.4; authenticated private refs plus anonymous public baseline reads; no live route test",
+        "observed": true
+      }
+    },
+    {
+      "check": "CHECK-004",
+      "result": "pass",
+      "evidence": "docs/validation/contribution-security-guidance/technical-004.md",
+      "revision": "2026-11-10 final documentary review, base 597b81c71a0fc0908ff5264fe9987bb5c0d8feec",
+      "input_digest_before": "65d2d33c782460602bab35066b9873ebe910c6c994d5963d236f525cb1393bfe",
+      "input_digest_after": "65d2d33c782460602bab35066b9873ebe910c6c994d5963d236f525cb1393bfe",
+      "context": {
+        "execution": "local",
+        "environment": "macOS-26.5.2-arm64-arm-64bit; Python 3.11.4; authenticated private refs plus anonymous public baseline reads; no live route test",
+        "observed": true
+      }
+    },
+    {
+      "check": "CHECK-005",
+      "result": "fail",
+      "evidence": "docs/validation/contribution-security-guidance/technical-005.md",
+      "revision": "2026-11-10 final documentary review, base 597b81c71a0fc0908ff5264fe9987bb5c0d8feec",
+      "input_digest_before": "9eff159a62105af53f30be4ce21ff3f60125104aa104990ad73e36f4890fd530",
+      "input_digest_after": "9eff159a62105af53f30be4ce21ff3f60125104aa104990ad73e36f4890fd530",
+      "context": {
+        "execution": "local",
+        "environment": "macOS-26.5.2-arm64-arm-64bit; Python 3.11.4; authenticated private refs plus anonymous public baseline reads; no live route test",
+        "observed": true
+      }
+    },
+    {
+      "check": "CHECK-006",
+      "result": "unverified",
+      "evidence": "docs/validation/contribution-security-guidance/technical-006.md",
+      "revision": "2026-11-10 final documentary review, base 597b81c71a0fc0908ff5264fe9987bb5c0d8feec",
+      "input_digest_before": "a48f78f4462f7e95672b4275e9e021c439710201e1e5f6f1d2ac2e5fcfa65430",
+      "input_digest_after": "a48f78f4462f7e95672b4275e9e021c439710201e1e5f6f1d2ac2e5fcfa65430",
+      "context": {
+        "execution": "local",
+        "environment": "macOS-26.5.2-arm64-arm-64bit; Python 3.11.4; authenticated private refs plus anonymous public baseline reads; no live route test",
+        "observed": true
+      }
+    }
+  ],
+  "assessments": [
+    {
+      "obligation": {
+        "local": {
+          "requirement": "REQ-001",
+          "scenario": 1
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-001"
+      ],
+      "evidence": "docs/validation/contribution-security-guidance/technical-review.md",
+      "explanation": "Existing issue22/PR33/orgPR3 history and baseline instructions are retained; issue35 owns only new coordination."
+    },
+    {
+      "obligation": {
+        "local": {
+          "requirement": "REQ-001",
+          "scenario": 2
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-001"
+      ],
+      "evidence": "docs/validation/contribution-security-guidance/technical-review.md",
+      "explanation": "Candidate names target README/AGENTS, real existing bug/feature/chore forms, setup/checks and actual issue-to-PR linkage."
+    },
+    {
+      "obligation": {
+        "local": {
+          "requirement": "REQ-001",
+          "scenario": 3
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-001",
+        "CHECK-004"
+      ],
+      "evidence": "docs/validation/contribution-security-guidance/technical-review.md",
+      "explanation": "Repository-specific instructions/forms take precedence; 13 baseline files and seven-file patch preserve forms/profile/README and newly added CODEOWNERS."
+    },
+    {
+      "obligation": {
+        "local": {
+          "requirement": "REQ-001",
+          "scenario": 4
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-001"
+      ],
+      "evidence": "docs/validation/contribution-security-guidance/technical-review.md",
+      "explanation": "Six immutable optional private Harness references were fetched at their existing revision; detailed manuals remain maintained there."
+    },
+    {
+      "obligation": {
+        "local": {
+          "requirement": "REQ-002",
+          "scenario": 1
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-001"
+      ],
+      "evidence": "docs/validation/contribution-security-guidance/technical-review.md",
+      "explanation": "Anonymous retrieval of all public CONTRIBUTING locales matches baseline; self-contained contribution text does not require private Harness or installed tooling."
+    },
+    {
+      "obligation": {
+        "local": {
+          "requirement": "REQ-002",
+          "scenario": 2
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-001",
+        "CHECK-004"
+      ],
+      "evidence": "docs/validation/contribution-security-guidance/technical-review.md",
+      "explanation": "Existing public instructions remain live; uncommitted replacement has no claimed public URL/activation, and unavailable reporting uses non-sensitive request only."
+    },
+    {
+      "obligation": {
+        "local": {
+          "requirement": "REQ-002",
+          "scenario": 3
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-004"
+      ],
+      "evidence": "docs/validation/contribution-security-guidance/technical-review.md",
+      "explanation": "Seven-file public payload contains no strategy/customer data, credentials or mandatory private resources; existing private links are explicitly optional."
+    },
+    {
+      "obligation": {
+        "local": {
+          "requirement": "REQ-003",
+          "scenario": 1
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-002"
+      ],
+      "evidence": "docs/validation/contribution-security-guidance/technical-review.md",
+      "explanation": "Original/third-party contributions require source/terms/notices and actual review; H01 inventory/owner attestation and copied-illustration missing-permission example cover evidence and refusal."
+    },
+    {
+      "obligation": {
+        "local": {
+          "requirement": "REQ-003",
+          "scenario": 2
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-002"
+      ],
+      "evidence": "docs/validation/contribution-security-guidance/technical-review.md",
+      "explanation": "Guide links actual approved terms and approval record; both hashes verify and project/tool permissions remain separate. Candidate effectiveness is not claimed."
+    },
+    {
+      "obligation": {
+        "local": {
+          "requirement": "REQ-003",
+          "scenario": 3
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-002"
+      ],
+      "evidence": "docs/validation/contribution-security-guidance/technical-review.md",
+      "explanation": "Missing rights/review prevents acceptance; no CLA/DCO/IP assignment was introduced. Actual H01 wording is approved rather than treated as perpetually missing."
+    },
+    {
+      "obligation": {
+        "local": {
+          "requirement": "REQ-004",
+          "scenario": 1
+        }
+      },
+      "result": "unverified",
+      "checks": [
+        "CHECK-003"
+      ],
+      "evidence": "docs/validation/contribution-security-guidance/technical-review.md",
+      "explanation": "Actual PVR/internal-email access/receipt is not tested under the current scope; route choice and CODEOWNERS duty alone do not complete verification. Required mapped checks not passing: CHECK-003. No complete acceptance claimed."
+    },
+    {
+      "obligation": {
+        "local": {
+          "requirement": "REQ-004",
+          "scenario": 2
+        }
+      },
+      "result": "unverified",
+      "checks": [
+        "CHECK-003",
+        "CHECK-004"
+      ],
+      "evidence": "docs/validation/contribution-security-guidance/technical-review.md",
+      "explanation": "All locales keep exploit details/secrets out of issues and provide non-sensitive private-routing recovery; live route method is still unavailable. Required mapped checks not passing: CHECK-003. No complete acceptance claimed."
+    },
+    {
+      "obligation": {
+        "local": {
+          "requirement": "REQ-004",
+          "scenario": 3
+        }
+      },
+      "result": "unverified",
+      "checks": [
+        "CHECK-003"
+      ],
+      "evidence": "docs/validation/contribution-security-guidance/technical-review.md",
+      "explanation": "Guides state no route was verified here, avoid response promises and retain missing-feature/contact/owner fallback; full required route check is pending. Required mapped checks not passing: CHECK-003. No complete acceptance claimed."
+    },
+    {
+      "obligation": {
+        "local": {
+          "requirement": "REQ-004",
+          "scenario": 4
+        }
+      },
+      "result": "unverified",
+      "checks": [
+        "CHECK-006"
+      ],
+      "evidence": "docs/validation/contribution-security-guidance/technical-review.md",
+      "explanation": "No report, synthetic message, channel activation, access edit or third-party communication occurred. Required mapped checks not passing: CHECK-006. No complete acceptance claimed."
+    },
+    {
+      "obligation": {
+        "local": {
+          "requirement": "REQ-005",
+          "scenario": 1
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-004"
+      ],
+      "evidence": "docs/validation/contribution-security-guidance/technical-review.md",
+      "explanation": "EN/PT/ES policies and guides preserve identical public/private routes, CODEOWNERS duty, recovery, permission and approval boundaries; native form is English and accepts three response languages."
+    },
+    {
+      "obligation": {
+        "local": {
+          "requirement": "REQ-005",
+          "scenario": 2
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-004"
+      ],
+      "evidence": "docs/validation/contribution-security-guidance/technical-review.md",
+      "explanation": "Current local paths/anchors resolve; public source was read anonymously, private immutable references with authenticated access; canonical English links are identified."
+    },
+    {
+      "obligation": {
+        "local": {
+          "requirement": "REQ-005",
+          "scenario": 3
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-004"
+      ],
+      "evidence": "docs/validation/contribution-security-guidance/technical-review.md",
+      "explanation": "Issue23 documentation automation and issue26 multilingual CI remain separate; no claim of their completion."
+    },
+    {
+      "obligation": {
+        "local": {
+          "requirement": "REQ-006",
+          "scenario": 1
+        }
+      },
+      "result": "unverified",
+      "checks": [
+        "CHECK-001",
+        "CHECK-006"
+      ],
+      "evidence": "docs/validation/contribution-security-guidance/technical-review.md",
+      "explanation": "Common guides retain independent P01/P03 adoption and H03 distribution responsibilities. Required mapped checks not passing: CHECK-006. No complete acceptance claimed."
+    },
+    {
+      "obligation": {
+        "local": {
+          "requirement": "REQ-006",
+          "scenario": 2
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-001",
+        "CHECK-004"
+      ],
+      "evidence": "docs/validation/contribution-security-guidance/technical-review.md",
+      "explanation": "Current .github baseline refreshed to a762582c6585ae967c37f7f7f1c69c06c07e9071; newly added CODEOWNERS preserved; forward/reverse patch checked; activation withheld."
+    },
+    {
+      "obligation": {
+        "local": {
+          "requirement": "REQ-006",
+          "scenario": 3
+        }
+      },
+      "result": "unverified",
+      "checks": [
+        "CHECK-001",
+        "CHECK-002",
+        "CHECK-003",
+        "CHECK-004",
+        "CHECK-005",
+        "CHECK-006"
+      ],
+      "evidence": "docs/validation/contribution-security-guidance/technical-review.md",
+      "explanation": "All 35 obligations assessed; technical suites pass but actual reporting route and aggregate/lineage acceptance remain incomplete. No full delivery asserted. Required mapped checks not passing: CHECK-003, CHECK-005, CHECK-006. No complete acceptance claimed."
+    },
+    {
+      "obligation": {
+        "local": {
+          "requirement": "REQ-006",
+          "scenario": 4
+        }
+      },
+      "result": "unverified",
+      "checks": [
+        "CHECK-006"
+      ],
+      "evidence": "docs/validation/contribution-security-guidance/technical-review.md",
+      "explanation": "Historical planning-only state is preserved; later explicit scoped private implementation is recorded, without inferring public publication/license/release authority. Required mapped checks not passing: CHECK-006. No complete acceptance claimed."
+    },
+    {
+      "obligation": {
+        "regression": {
+          "impact": 1,
+          "scenario": 1
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-001",
+        "CHECK-004"
+      ],
+      "evidence": "docs/validation/contribution-security-guidance/technical-review.md",
+      "explanation": "Inspected retained source/current-contract mapping: Extend maintained contribution routes with rights and confidential reporting while retaining source ownership, access conditions and safe replacement behavior. Compare the specific historical acceptance position or captured baseline with current observable behavior; do not reuse historical results as fresh evidence. Observed unchanged historical dossiers/root/version inputs and preserved current contribution/security/language boundaries; see the actual linked check reports."
+    },
+    {
+      "obligation": {
+        "regression": {
+          "impact": 1,
+          "scenario": 2
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-001",
+        "CHECK-004"
+      ],
+      "evidence": "docs/validation/contribution-security-guidance/technical-review.md",
+      "explanation": "Inspected retained source/current-contract mapping: Extend maintained contribution routes with rights and confidential reporting while retaining source ownership, access conditions and safe replacement behavior. Compare the specific historical acceptance position or captured baseline with current observable behavior; do not reuse historical results as fresh evidence. Observed unchanged historical dossiers/root/version inputs and preserved current contribution/security/language boundaries; see the actual linked check reports."
+    },
+    {
+      "obligation": {
+        "regression": {
+          "impact": 1,
+          "scenario": 3
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-001",
+        "CHECK-004"
+      ],
+      "evidence": "docs/validation/contribution-security-guidance/technical-review.md",
+      "explanation": "Inspected retained source/current-contract mapping: Extend maintained contribution routes with rights and confidential reporting while retaining source ownership, access conditions and safe replacement behavior. Compare the specific historical acceptance position or captured baseline with current observable behavior; do not reuse historical results as fresh evidence. Observed unchanged historical dossiers/root/version inputs and preserved current contribution/security/language boundaries; see the actual linked check reports."
+    },
+    {
+      "obligation": {
+        "regression": {
+          "impact": 1,
+          "scenario": 4
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-001",
+        "CHECK-004"
+      ],
+      "evidence": "docs/validation/contribution-security-guidance/technical-review.md",
+      "explanation": "Inspected retained source/current-contract mapping: Extend maintained contribution routes with rights and confidential reporting while retaining source ownership, access conditions and safe replacement behavior. Compare the specific historical acceptance position or captured baseline with current observable behavior; do not reuse historical results as fresh evidence. Observed unchanged historical dossiers/root/version inputs and preserved current contribution/security/language boundaries; see the actual linked check reports."
+    },
+    {
+      "obligation": {
+        "regression": {
+          "impact": 1,
+          "scenario": 6
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-001",
+        "CHECK-004"
+      ],
+      "evidence": "docs/validation/contribution-security-guidance/technical-review.md",
+      "explanation": "Inspected retained source/current-contract mapping: Extend maintained contribution routes with rights and confidential reporting while retaining source ownership, access conditions and safe replacement behavior. Compare the specific historical acceptance position or captured baseline with current observable behavior; do not reuse historical results as fresh evidence. Observed unchanged historical dossiers/root/version inputs and preserved current contribution/security/language boundaries; see the actual linked check reports."
+    },
+    {
+      "obligation": {
+        "regression": {
+          "impact": 3,
+          "scenario": 1
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-004"
+      ],
+      "evidence": "docs/validation/contribution-security-guidance/technical-review.md",
+      "explanation": "Inspected retained source/current-contract mapping: Retain canonical English and semantically aligned localized community entry points. Compare the specific historical acceptance position or captured baseline with current observable behavior; do not reuse historical results as fresh evidence. Observed unchanged historical dossiers/root/version inputs and preserved current contribution/security/language boundaries; see the actual linked check reports."
+    },
+    {
+      "obligation": {
+        "regression": {
+          "impact": 3,
+          "scenario": 2
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-004"
+      ],
+      "evidence": "docs/validation/contribution-security-guidance/technical-review.md",
+      "explanation": "Inspected retained source/current-contract mapping: Retain canonical English and semantically aligned localized community entry points. Compare the specific historical acceptance position or captured baseline with current observable behavior; do not reuse historical results as fresh evidence. Observed unchanged historical dossiers/root/version inputs and preserved current contribution/security/language boundaries; see the actual linked check reports."
+    },
+    {
+      "obligation": {
+        "regression": {
+          "impact": 3,
+          "scenario": 3
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-004"
+      ],
+      "evidence": "docs/validation/contribution-security-guidance/technical-review.md",
+      "explanation": "Inspected retained source/current-contract mapping: Retain canonical English and semantically aligned localized community entry points. Compare the specific historical acceptance position or captured baseline with current observable behavior; do not reuse historical results as fresh evidence. Observed unchanged historical dossiers/root/version inputs and preserved current contribution/security/language boundaries; see the actual linked check reports."
+    },
+    {
+      "obligation": {
+        "regression": {
+          "impact": 3,
+          "scenario": 4
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-004"
+      ],
+      "evidence": "docs/validation/contribution-security-guidance/technical-review.md",
+      "explanation": "Inspected retained source/current-contract mapping: Retain canonical English and semantically aligned localized community entry points. Compare the specific historical acceptance position or captured baseline with current observable behavior; do not reuse historical results as fresh evidence. Observed unchanged historical dossiers/root/version inputs and preserved current contribution/security/language boundaries; see the actual linked check reports."
+    },
+    {
+      "obligation": {
+        "regression": {
+          "impact": 4,
+          "scenario": 2
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-001",
+        "CHECK-004"
+      ],
+      "evidence": "docs/validation/contribution-security-guidance/technical-review.md",
+      "explanation": "Inspected retained source/current-contract mapping: Keep canonical procedures, human gates, exact-version and availability limits in reused guidance. Compare the specific historical acceptance position or captured baseline with current observable behavior; do not reuse historical results as fresh evidence. Observed unchanged historical dossiers/root/version inputs and preserved current contribution/security/language boundaries; see the actual linked check reports."
+    },
+    {
+      "obligation": {
+        "regression": {
+          "impact": 4,
+          "scenario": 3
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-001",
+        "CHECK-004"
+      ],
+      "evidence": "docs/validation/contribution-security-guidance/technical-review.md",
+      "explanation": "Inspected retained source/current-contract mapping: Keep canonical procedures, human gates, exact-version and availability limits in reused guidance. Compare the specific historical acceptance position or captured baseline with current observable behavior; do not reuse historical results as fresh evidence. Observed unchanged historical dossiers/root/version inputs and preserved current contribution/security/language boundaries; see the actual linked check reports."
+    },
+    {
+      "obligation": {
+        "regression": {
+          "impact": 4,
+          "scenario": 4
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-001",
+        "CHECK-004"
+      ],
+      "evidence": "docs/validation/contribution-security-guidance/technical-review.md",
+      "explanation": "Inspected retained source/current-contract mapping: Keep canonical procedures, human gates, exact-version and availability limits in reused guidance. Compare the specific historical acceptance position or captured baseline with current observable behavior; do not reuse historical results as fresh evidence. Observed unchanged historical dossiers/root/version inputs and preserved current contribution/security/language boundaries; see the actual linked check reports."
+    },
+    {
+      "obligation": {
+        "regression": {
+          "impact": 5,
+          "scenario": 0
+        }
+      },
+      "result": "unverified",
+      "checks": [
+        "CHECK-002",
+        "CHECK-003"
+      ],
+      "evidence": "docs/validation/contribution-security-guidance/technical-review.md",
+      "explanation": "Inspected retained source/current-contract mapping: Extend provenance and confidential handling to contribution/reporting guidance without claiming a configured channel. Compare the specific historical acceptance position or captured baseline with current observable behavior; do not reuse historical results as fresh evidence. Observed unchanged historical dossiers/root/version inputs and preserved current contribution/security/language boundaries; see the actual linked check reports. Complete retained-obligation acceptance remains unverified because required mapped checks are not passing: CHECK-003."
+    },
+    {
+      "obligation": {
+        "regression": {
+          "impact": 6,
+          "scenario": 0
+        }
+      },
+      "result": "unverified",
+      "checks": [
+        "CHECK-002",
+        "CHECK-003",
+        "CHECK-004",
+        "CHECK-006"
+      ],
+      "evidence": "docs/validation/contribution-security-guidance/technical-review.md",
+      "explanation": "Inspected retained source/current-contract mapping: Add the missing approved-terms references, actual channel verification and per-product adoption evidence. Compare the specific historical acceptance position or captured baseline with current observable behavior; do not reuse historical results as fresh evidence. Observed unchanged historical dossiers/root/version inputs and preserved current contribution/security/language boundaries; see the actual linked check reports. Complete retained-obligation acceptance remains unverified because required mapped checks are not passing: CHECK-003, CHECK-006."
+    }
+  ],
+  "findings": [
+    {
+      "id": "FIND-001",
+      "source": {
+        "plan": "Exact terms approval and component rights evidence"
+      },
+      "category": "missing",
+      "state": "resolved",
+      "evidence": "docs/validation/contribution-security-guidance/technical-review.md",
+      "description": "Owner approved the presented H01 wording on 2026-11-10; exact approval is recorded. Remaining gap: complete component rights/notices evidence, not another text-approval request.",
+      "tasks": [
+        "TASK-003"
+      ],
+      "checks": [
+        "CHECK-002"
+      ],
+      "resolution": "Actual exact-text approval plus owner first-party provenance attestation, bounded 1,040-file inventory and seven inspected dependency license texts resolve the documentary gap. See docs/governance/h01-approval.md and docs/licensing/technical-review/README.md; final CHECK-002 report records current review."
+    },
+    {
+      "id": "FIND-002",
+      "source": {
+        "plan": "Confidential reporting route verification"
+      },
+      "category": "missing",
+      "state": "open",
+      "evidence": "docs/validation/contribution-security-guidance/technical-review.md",
+      "description": "CODEOWNERS responsibility is settled. Actual PVR/internal-email permissions, notifications and authorized receipt/access verification remain pending.",
+      "tasks": [
+        "TASK-004"
+      ],
+      "checks": [
+        "CHECK-003"
+      ]
+    },
+    {
+      "id": "FIND-003",
+      "source": {
+        "plan": "Final acceptance scenario assessment"
+      },
+      "category": "missing",
+      "state": "open",
+      "evidence": "docs/validation/contribution-security-guidance/technical-review.md",
+      "description": "Final delivery acceptance remains incomplete while mandatory package/lineage checks surface active operational gaps; documentary review and individual assessments are being recorded without waiving those requirements.",
+      "tasks": [
+        "TASK-006"
+      ],
+      "checks": [
+        "CHECK-001",
+        "CHECK-002",
+        "CHECK-003",
+        "CHECK-004"
+      ]
+    }
+  ]
+}

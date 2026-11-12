@@ -1,0 +1,103 @@
+{
+  "status": "fail",
+  "phase": "planning",
+  "checked": [
+    "contribution-security-guidance"
+  ],
+  "findings": [
+    {
+      "code": "VALIDATION_FAILED",
+      "message": "CHECK-005 has a recorded failure",
+      "path": "/private/tmp/versat-handoffs-20261110-harness/specs/changes/contribution-security-guidance/tasks.md",
+      "severity": "error"
+    },
+    {
+      "code": "ACCEPTANCE_UNVERIFIED",
+      "message": "{\"local\":{\"requirement\":\"REQ-004\",\"scenario\":1}}",
+      "path": "/private/tmp/versat-handoffs-20261110-harness/specs/changes/contribution-security-guidance/tasks.md",
+      "severity": "unverified"
+    },
+    {
+      "code": "ACCEPTANCE_UNVERIFIED",
+      "message": "{\"local\":{\"requirement\":\"REQ-004\",\"scenario\":2}}",
+      "path": "/private/tmp/versat-handoffs-20261110-harness/specs/changes/contribution-security-guidance/tasks.md",
+      "severity": "unverified"
+    },
+    {
+      "code": "ACCEPTANCE_UNVERIFIED",
+      "message": "{\"local\":{\"requirement\":\"REQ-004\",\"scenario\":3}}",
+      "path": "/private/tmp/versat-handoffs-20261110-harness/specs/changes/contribution-security-guidance/tasks.md",
+      "severity": "unverified"
+    },
+    {
+      "code": "ACCEPTANCE_UNVERIFIED",
+      "message": "{\"local\":{\"requirement\":\"REQ-004\",\"scenario\":4}}",
+      "path": "/private/tmp/versat-handoffs-20261110-harness/specs/changes/contribution-security-guidance/tasks.md",
+      "severity": "unverified"
+    },
+    {
+      "code": "ACCEPTANCE_UNVERIFIED",
+      "message": "{\"local\":{\"requirement\":\"REQ-006\",\"scenario\":1}}",
+      "path": "/private/tmp/versat-handoffs-20261110-harness/specs/changes/contribution-security-guidance/tasks.md",
+      "severity": "unverified"
+    },
+    {
+      "code": "ACCEPTANCE_UNVERIFIED",
+      "message": "{\"local\":{\"requirement\":\"REQ-006\",\"scenario\":3}}",
+      "path": "/private/tmp/versat-handoffs-20261110-harness/specs/changes/contribution-security-guidance/tasks.md",
+      "severity": "unverified"
+    },
+    {
+      "code": "ACCEPTANCE_UNVERIFIED",
+      "message": "{\"local\":{\"requirement\":\"REQ-006\",\"scenario\":4}}",
+      "path": "/private/tmp/versat-handoffs-20261110-harness/specs/changes/contribution-security-guidance/tasks.md",
+      "severity": "unverified"
+    },
+    {
+      "code": "ACCEPTANCE_UNVERIFIED",
+      "message": "{\"regression\":{\"impact\":5,\"scenario\":0}}",
+      "path": "/private/tmp/versat-handoffs-20261110-harness/specs/changes/contribution-security-guidance/tasks.md",
+      "severity": "unverified"
+    },
+    {
+      "code": "ACCEPTANCE_UNVERIFIED",
+      "message": "{\"regression\":{\"impact\":6,\"scenario\":0}}",
+      "path": "/private/tmp/versat-handoffs-20261110-harness/specs/changes/contribution-security-guidance/tasks.md",
+      "severity": "unverified"
+    },
+    {
+      "code": "ACCEPTANCE_GAP",
+      "message": "FIND-002: CODEOWNERS responsibility is settled. Actual PVR/internal-email permissions, notifications and authorized receipt/access verification remain pending.",
+      "path": "/private/tmp/versat-handoffs-20261110-harness/specs/changes/contribution-security-guidance/tasks.md",
+      "severity": "error"
+    },
+    {
+      "code": "ACCEPTANCE_GAP",
+      "message": "FIND-003: Final delivery acceptance remains incomplete while mandatory package/lineage checks surface active operational gaps; documentary review and individual assessments are being recorded without waiving those requirements.",
+      "path": "/private/tmp/versat-handoffs-20261110-harness/specs/changes/contribution-security-guidance/tasks.md",
+      "severity": "error"
+    }
+  ],
+  "warnings": [],
+  "metrics": {
+    "contribution-security-guidance": {
+      "local_scenarios": 21,
+      "regression_obligations": 14,
+      "assessed": 35,
+      "results": 6,
+      "open_findings": 2,
+      "stale_results": 0,
+      "requirements": {
+        "REQ-001": "pass",
+        "REQ-002": "pass",
+        "REQ-003": "pass",
+        "REQ-004": "unverified",
+        "REQ-005": "pass",
+        "REQ-006": "unverified"
+      }
+    }
+  },
+  "live_archives": [],
+  "archive_required": [],
+  "scope": "Declared contract checks only; archive inventory is historical unless selected for live delivery. No proof of semantic adequacy, execution authenticity, human identity, remote CI, merge or deployment."
+}

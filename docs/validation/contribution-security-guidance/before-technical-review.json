@@ -1,0 +1,58 @@
+{
+  "plan_digest": "d969a531b3de153e562ff06d72c4ad0568b3a88caabbb52ca7b465bd05c2d284",
+  "results": [],
+  "assessments": [],
+  "findings": [
+    {
+      "id": "FIND-001",
+      "source": {
+        "plan": "Exact terms approval and component rights evidence"
+      },
+      "category": "missing",
+      "state": "open",
+      "evidence": "docs/validation/contribution-security-guidance/review.md",
+      "description": "Owner approved the presented H01 wording on 2026-11-10; exact approval is recorded. Remaining gap: complete component rights/notices evidence, not another text-approval request.",
+      "tasks": [
+        "TASK-003"
+      ],
+      "checks": [
+        "CHECK-002"
+      ]
+    },
+    {
+      "id": "FIND-002",
+      "source": {
+        "plan": "Confidential reporting route verification"
+      },
+      "category": "missing",
+      "state": "open",
+      "evidence": "docs/validation/contribution-security-guidance/review.md",
+      "description": "CODEOWNERS responsibility is settled. Actual PVR/internal-email permissions, notifications and authorized receipt/access verification remain pending.",
+      "tasks": [
+        "TASK-004"
+      ],
+      "checks": [
+        "CHECK-003"
+      ]
+    },
+    {
+      "id": "FIND-003",
+      "source": {
+        "plan": "Final acceptance scenario assessment"
+      },
+      "category": "missing",
+      "state": "open",
+      "evidence": "docs/validation/contribution-security-guidance/review.md",
+      "description": "Final scenario acceptance is not complete; required checks and owner/reviewer evidence remain unavailable. Partial local checks do not complete all acceptance/regression obligations.",
+      "tasks": [
+        "TASK-006"
+      ],
+      "checks": [
+        "CHECK-001",
+        "CHECK-002",
+        "CHECK-003",
+        "CHECK-004"
+      ]
+    }
+  ]
+}

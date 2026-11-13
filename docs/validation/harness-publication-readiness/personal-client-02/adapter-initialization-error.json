@@ -1,0 +1,6 @@
+{
+  "error": "FileExistsError: old output path remained in corrected helper",
+  "phase": "before installer/native execution",
+  "writes": "empty temporary run directory only",
+  "correction": "Distinct personal-client-03 output path and assert temporary directory empty; retained original errors."
+}

@@ -1,6 +1,6 @@
 # Licensing and Publication Standard
 
-Status: private H01 implementation candidate; not yet adopted or released. These rules define the review contract. They do not apply a license, activate terms or authorize publication.
+Status: governed preparation source, extending H01 for the reviewed public-Harness direction; not an adopted license or released policy update. These rules define the review contract. They do not apply a license, activate terms or authorize publication.
 
 ## Scope and canonical ownership
 
@@ -34,6 +34,14 @@ A public-export decision MUST cover the actual tree and relevant history, tags, 
 | `publish` | The identified surface has documented evidence and actual required review for the proposed public release. | Obtain separately scoped operational authorization and execute the relevant product/distribution handoff; record the actual outcome. |
 
 Unknown rights, incompatible dependencies, sensitive material, missing reviewer authority or unknown required controls MUST prevent a `publish` disposition. A disposition is neither license application nor an instruction to publish. Do not convert a synthetic example into clearance of a real component.
+
+## Preparation of an existing repository for public distribution
+
+The complete proposed exposure MUST include reachable branches/tags and deleted history, releases/assets, LFS, fixtures, governance/SDD/evaluation records, issues/PRs/comments/attachments, wiki/discussions/Pages where present, packages and CI logs/artifacts/caches plus relevant metadata/integrations. Record actual observations and access limits by category; inaccessible evidence remains unverified. A negative assessment with `defer` does not pass a missing required preparation check.
+
+Sensitive evidence MUST remain in the approved restricted system with verified reviewer access. Public-safe records use scope, status and opaque references without confidential payloads. Preserve immutable approvals and historical evidence; an exposure conflict requires separately governed remediation and re-review, not silent deletion or a changed publication destination.
+
+Concrete text review, rights/surface/control disposition, private rehearsal, source merge, license adoption, visibility, release, external-user verification and consumer migration MUST be recorded as distinct states. Preparation MUST NOT activate a license or claim availability of an unobserved release. Independent products retain their own selected models and adoption decisions.
 
 ## Terms and approvals
 

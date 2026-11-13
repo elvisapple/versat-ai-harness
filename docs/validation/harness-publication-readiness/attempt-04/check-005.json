@@ -1,0 +1,16 @@
+{
+  "check": "CHECK-005",
+  "result": "pass",
+  "input_digest_before": "7e15904840093447562ef625076f0b2212cad4c6ceff9b827b47abcb690b4fd4",
+  "input_digest_after": "7e15904840093447562ef625076f0b2212cad4c6ceff9b827b47abcb690b4fd4",
+  "title": "Walk contribution route and actual controls",
+  "observations": [
+    "contribution-control-review.json",
+    "synthetic-contribution/change.patch"
+  ],
+  "reviewer": "Codex bounded technical/documentary review; actual user text approval retained separately",
+  "explanation": "Actual synthetic local diff plus guide walkthrough cover target/issues/provenance/terms/setup/fork/SDD/checks/review. Local read-token workflow does not prove branch rules; actual main/protection gaps defer operations. Missing grant/control and unsupported write/merge-authority cases stop acceptance. Organization defaults remain unchanged.",
+  "observed_at": "2026-11-13T19:17:54.441686+00:00",
+  "disposition": "Preparation evidence accepted; public operations remain deferred",
+  "execution": "local"
+}

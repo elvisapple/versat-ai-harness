@@ -1,0 +1,44 @@
+[
+  {
+    "name": "PyYAML",
+    "version": "6.0.2",
+    "retained_text_sha256": "8d3928f9dc4490fd635707cb88eb26bd764102a7282954307d3e5167a577e8a4",
+    "matches_installed_license": true
+  },
+  {
+    "name": "jsonschema",
+    "version": "4.23.0",
+    "retained_text_sha256": "4f92a015a13c4d1a040bef018aa13430b4f1bc73b41b16bb846c346766de7439",
+    "matches_installed_license": true
+  },
+  {
+    "name": "attrs",
+    "version": "26.1.0",
+    "retained_text_sha256": "882115c95dfc2af1eeb6714f8ec6d5cbcabf667caff8729f42420da63f714e9f",
+    "matches_installed_license": true
+  },
+  {
+    "name": "jsonschema-specifications",
+    "version": "2025.9.1",
+    "retained_text_sha256": "42dcd63495f87b4eb7c7757afa379bb55a53f94afd7a5f657d9adf57236e515c",
+    "matches_installed_license": true
+  },
+  {
+    "name": "referencing",
+    "version": "0.37.0",
+    "retained_text_sha256": "42dcd63495f87b4eb7c7757afa379bb55a53f94afd7a5f657d9adf57236e515c",
+    "matches_installed_license": true
+  },
+  {
+    "name": "rpds-py",
+    "version": "2026.9.1",
+    "retained_text_sha256": "314e4e91be3baa93c0fb4bccc9e4e97cd643eb839b065af921782c2175fe9909",
+    "matches_installed_license": true
+  },
+  {
+    "name": "typing_extensions",
+    "version": "4.16.0",
+    "retained_text_sha256": "3b2f81fe21d181c499c59a256c8e1968455d6689d269aa85373bfb6af41da3bf",
+    "matches_installed_license": true
+  }
+]

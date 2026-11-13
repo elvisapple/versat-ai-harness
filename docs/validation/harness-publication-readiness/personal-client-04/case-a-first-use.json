@@ -1,0 +1,76 @@
+{
+  "result": "pass",
+  "case": "a-initial-install-and-new-intent",
+  "input_digest_before": "7e15904840093447562ef625076f0b2212cad4c6ceff9b827b47abcb690b4fd4",
+  "input_digest_after": "7e15904840093447562ef625076f0b2212cad4c6ceff9b827b47abcb690b4fd4",
+  "candidate_input_before": "4a3ad1cd40800b443ec2ca252fe1363d99cba7b85c83fcc5794fd11e1ad27401",
+  "candidate_input_after": "4a3ad1cd40800b443ec2ca252fe1363d99cba7b85c83fcc5794fd11e1ad27401",
+  "installation": "current-installation.json",
+  "provider": "current-provider.json",
+  "native_invocations": 1,
+  "native_agent": "candidate_bound_first_use",
+  "model": null,
+  "reasoning": null,
+  "token_usage": null,
+  "elapsed_including_independent_verification_seconds": 152.34317111968994,
+  "independent_delta": {
+    "diff": {
+      "docs/evidence/first-use-report.md": {
+        "before": null,
+        "after": "45b76e4931f0606041114b49a4cc77f81b5fafb5acb57e9039fd11c700067380"
+      },
+      "docs/evidence/planning-validation.json": {
+        "before": null,
+        "after": "23d94ee4b177ab69dec17ce517b9d1e3e30b17adaa397ccaf2e37c4fab64e33a"
+      },
+      "docs/evidence/proposal-digest.txt": {
+        "before": null,
+        "after": "5abce5ea96a4435d4184a07b51e71ab44aeac4986eba3725ac26add90494082c"
+      },
+      "specs/changes/payment-validation-coverage/proposal.md": {
+        "before": null,
+        "after": "5d04868a8dfd0e1d8660241422f83eb3656df47927708361effeff70280a9ef1"
+      },
+      "specs/changes/payment-validation-coverage/requirements.md": {
+        "before": null,
+        "after": "e5b0066fc7c0022ee032a102d9ca683d1c8adf635bbf90ee03479a253f208095"
+      }
+    },
+    "controls_unchanged": true,
+    "source_tests_unchanged": true,
+    "plan_unchanged": null
+  },
+  "planning_validator": {
+    "exit": 0,
+    "output": {
+      "status": "pass",
+      "phase": "planning",
+      "checked": [
+        "payment-validation-coverage"
+      ],
+      "findings": [],
+      "warnings": [],
+      "metrics": {
+        "payment-validation-coverage": {
+          "local_scenarios": 7,
+          "regression_obligations": 1
+        }
+      },
+      "live_archives": [],
+      "archive_required": [],
+      "scope": "Declared contract checks only; archive inventory is historical unless selected for live delivery. No proof of semantic adequacy, execution authenticity, human identity, remote CI, merge or deployment."
+    }
+  },
+  "semantic_review": [
+    "Empty key rejection preserves state.",
+    "Zero/negative errors and subsequent valid retry.",
+    "Key-based duplicate prevention across amount changes.",
+    "New/distinct success and existing tests retained.",
+    "Only Proposal/Requirements; actual Gate 1 stop with null approval."
+  ],
+  "actual_stop": "Native final response asks for Gate 1 approval and ends; coordinator grants no synthetic approval.",
+  "unknowns": [
+    "Exact model/reasoning/token telemetry unavailable.",
+    "No security isolation or external/public-access proof."
+  ]
+}

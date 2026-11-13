@@ -1,0 +1,21 @@
+{
+  "check": "CHECK-009",
+  "result": "pass",
+  "input_digest_before": "7e15904840093447562ef625076f0b2212cad4c6ceff9b827b47abcb690b4fd4",
+  "input_digest_after": "7e15904840093447562ef625076f0b2212cad4c6ceff9b827b47abcb690b4fd4",
+  "roots": {
+    "preparation": "suite-preparation.json",
+    "candidate": "suite-candidate-final.json"
+  },
+  "counts_per_root": {
+    "validator": 131,
+    "execution": 48
+  },
+  "candidate_own_input": "4a3ad1cd40800b443ec2ca252fe1363d99cba7b85c83fcc5794fd11e1ad27401",
+  "candidate_context": "Private patched root has its own actually captured CHECK-004 input record; it is not a copied preparation hash or a candidate delivery claim. Only excluded rehearsal/progress bookkeeping differs.",
+  "limitations": [
+    "Local suites; not remote CI, legal clearance or anonymous/public access.",
+    "Historical legacy/v2 warnings retained.",
+    "Earlier failed setup/inventory/dossier-bookkeeping attempts preserved."
+  ]
+}

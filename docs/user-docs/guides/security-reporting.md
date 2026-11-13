@@ -2,30 +2,24 @@
 
 [English](security-reporting.md) | [Português](security-reporting.pt.md) | [Español](security-reporting.es.md)
 
-Current verified H02 scope (2026-11-11): **the `.github` PVR pilot and receipt by the Harness owner through internal email were verified with authorized synthetic tests**. Other repositories require their own checks. The custom form remains in an unmerged PR; its deployment and inheritance were not tested. This guide does not promise a response time or continuous monitoring.
+The public Harness reporting route is **unverified**. The intended route is this repository's GitHub Private Vulnerability Reporting, subject to actual availability and verification for the intended reporter audience. No new report was sent and no channel was activated by this preparation.
 
-The relevant CODEOWNERS are responsible for monitoring, triaging and coordinating the resolution of security reports for their owned components, through both public-repository PVR and private-repository internal email. Maintainers configure the necessary permissions and notifications; CODEOWNERS assignment alone does not configure GitHub delivery.
-
-## Selected routing — private implementation candidate
-
-For ordinary bugs, use Bug report. For suspected vulnerabilities in public repositories, use GitHub Private Vulnerability Reporting when enabled. For private repositories, email the relevant CODEOWNERS through existing internal Versat channels. Do not disclose vulnerability details in ordinary issues. See [security reporting](../../handoffs/contribution-security-guidance/organization/candidate/SECURITY.md) for routing and unavailable-channel recovery.
+Earlier H02 observations covered a different public pilot and an internal Harness receipt. They remain historical evidence and do not establish a public Harness route. Relevant CODEOWNERS remain responsible for monitoring, triage and coordination; assignment alone does not configure delivery or prove receipt. The accountable Harness contact is @elviszoz.
 
 ## Before sharing details
 
-Read the target repository's actual security instructions and confirm their scope. A maintainer name or authenticated working link alone is not evidence of a confidential reporting route. Do not put exploit details, credentials, customer data or sensitive attachments in a public issue.
+Read the target repository's actual security instructions. Confirm a confidential destination, intended reporters, permitted recipients and data-handling scope before sending sensitive information. Do not post exploit details, credentials, customer information or sensitive attachments in ordinary issues. An administrator session or working URL cannot establish external-reporter access or confidentiality.
 
-## When a verified route is unavailable
+## When the route is unavailable
 
-Use an existing visible repository/maintainer contact only to ask for private reporting instructions, without revealing the vulnerability. Example safe request: “I need confidential security-reporting instructions for this repository.” Wait for an appropriate route before sending sensitive details. This example does not send a message or authorize an agent to do so.
+Use an existing visible maintainer contact only for a non-sensitive request: “I need confidential security-reporting instructions for this repository.” Wait for a verified appropriate route before sharing details. If access is denied or the destination changes, stop and request updated instructions. Keep the report private if no suitable route is available. This example does not send a message or authorize an agent to do so.
 
-Expected result: a non-sensitive request for instructions, not a verified report or an active service. If you cannot establish an appropriate route, keep the report private and the verification gap explicit.
+Expected result: safe instructions or an explicit verification gap, not an assumed report receipt. No internal email address, new endpoint, response-time promise or retention period is supplied here.
 
-## What a verified route must establish
+## Maintainer verification
 
-An actual destination, accountable responder, intended reporter audience, permitted recipients/access boundary and owner-approved data handling must be recorded. Configuration/access observations and an explicitly authorized non-sensitive synthetic marker/receipt must support any verified claim. Do not infer public reporter access from an administrator session.
+Record the actual destination, accountable responder, audience, permitted recipients and approved data handling. After separate operational authorization, verify configuration/access and send a non-sensitive synthetic marker from an intended reporter account; confirm private visibility, recipient receipt and absence of access by an unauthorized account. Retain minimal safe evidence, withdraw unsupported claims after failure/change and reverify after visibility changes. Never use real vulnerability payloads for this test.
 
-The [private route record (English)](../../governance/security-reporting.md) lists the actual evidence and its limits. Fallback-only guidance does not complete H02. A changed or failed route needs re-verification and withdrawal of unsupported active claims.
+Controls, channel activation, permission changes and messages require their own scoped authority. A fallback guide does not complete required route verification. Every product verifies its own scope. See [Security](../../../standards/core/security.md), [preparation status](../../handoffs/harness-publication-readiness/README.md) and [contribution](contributing.md).
 
-Canonical rules: [Security (English)](../../../standards/core/security.md). Channel setup, permission changes and test messages require separate scoped authorization. Each product verifies its own adopted scope.
-
-[Contribution](contributing.md) · [Harness](../../../README.md)
+[Quickstart](../quickstart.md) · [Harness](../../../README.md)

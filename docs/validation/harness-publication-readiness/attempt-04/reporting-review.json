@@ -1,0 +1,19 @@
+{
+  "historical_scope": "H02 .github pilot and private Harness receipt remain immutable and scoped; public Harness route unverified",
+  "intended_destination": "Repository GitHub Private Vulnerability Reporting after actual availability verification",
+  "accountable": "@elviszoz; existing CODEOWNERS monitor/triage/coordinate",
+  "protocol": [
+    "Separately authorize non-sensitive synthetic marker and exact repository/audience",
+    "Check intended reporter access and permitted recipient scope",
+    "Observe private recipient receipt and unauthorized-viewer exclusion",
+    "Retain minimal evidence and reverify after visibility/route changes"
+  ],
+  "walkthroughs": {
+    "unavailable": "keep unverified, request only confidential-reporting instructions from visible maintainer",
+    "denied": "stop before sensitive details; do not post exploit in public issue",
+    "changed": "withdraw prior active claim and reverify new actual destination"
+  },
+  "messages_sent": 0,
+  "sla_or_retention_invented": false,
+  "new_endpoint_or_internal_address_published": false
+}

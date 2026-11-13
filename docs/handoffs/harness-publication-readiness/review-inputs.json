@@ -1,0 +1,23 @@
+{
+  "revision": 1,
+  "source_base_commit": "d61317d9220b002f0dc3aa606e18a62dd4230477",
+  "approved_text_package_digest": "894308c5f1921f28677d55d39b9bf5fb386467dc652e5dca5908d54756fe9f48",
+  "adoption_patch_sha256": "24dd504d47fc83d5530110d22651576bb12582447ad7e569efceacef684d80b6",
+  "restricted_evidence": {
+    "id": "HPR-PRIVATE-01",
+    "assessment_sha256": "284e32a79cff971238c354e94a4ef01dcd87e22ae8ac9df5fbc83e54f2075943",
+    "integrity_manifest_sha256": "01ce4a4c21248c88715a227b8763e7c8ae85a16c39ed39b0960f49a56bb09c62",
+    "access": "Selected system private and accountable reviewer admin access observed before collection; no sharing changes",
+    "collection_authority": "Actual user answer: Autorizar invent\u00e1rio privado",
+    "reviewer": "Codex bounded technical/documentary review; @elviszoz actual candidate text approval in previously declared capacity",
+    "disposition": "defer",
+    "categories": 16,
+    "limits": [
+      "Package listing unavailable under current access",
+      "Cache payloads and alternate externally hosted attachment bodies unverified",
+      "Internal references in immutable current/history records prevent public clearance without disposition",
+      "No independent specialist qualification or legal clearance asserted"
+    ]
+  },
+  "snapshot_contract": "Full current candidate/source identities belong only in excluded run evidence. This manifest does not hash itself or a tree containing itself. Known external drift requires re-review."
+}

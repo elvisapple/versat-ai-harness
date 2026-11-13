@@ -1,0 +1,27 @@
+{
+  "local_diff_created": true,
+  "remote_pr_created": false,
+  "target_precedence": true,
+  "reviewed_files": [
+    "docs/user-docs/guides/contributing.md",
+    ".github/CODEOWNERS",
+    ".github/workflows/validate.yml",
+    "standards/core/contribution.md"
+  ],
+  "workflow": "pull_request and push; contents read; no pull_request_target, secret references or write token in reviewed workflow",
+  "actual_remote_assessment": "HPR-PRIVATE-01: main unprotected; protection/ruleset API unavailable; default read token and no fork secret/write forwarding observed. Effective required review/check enforcement deferred.",
+  "negative_walkthroughs": [
+    {
+      "case": "missing grant",
+      "decision": "do not accept contribution; obtain attributable grant and notices"
+    },
+    {
+      "case": "missing effective protection",
+      "decision": "defer operational publication; local CODEOWNERS/YAML not proof"
+    },
+    {
+      "case": "public fork without maintainer permission",
+      "decision": "no upstream write/merge/release authority inferred"
+    }
+  ]
+}

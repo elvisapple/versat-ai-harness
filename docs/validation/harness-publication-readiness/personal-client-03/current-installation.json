@@ -1,0 +1,19 @@
+{
+  "observations": [
+    {
+      "argv": [
+        "<selected-desktop-bundled-cli>",
+        "plugin",
+        "add",
+        "versat-ai-harness@versat-internal",
+        "--json"
+      ],
+      "exit": 0,
+      "stdout": "{\n  \"pluginId\": \"versat-ai-harness@versat-internal\",\n  \"name\": \"versat-ai-harness\",\n  \"marketplaceName\": \"versat-internal\",\n  \"version\": \"0.4.0\",\n  \"installedPath\": \"<user-plugin-cache>/versat-internal/versat-ai-harness/0.4.0\",\n  \"authPolicy\": \"ON_INSTALL\"\n}\n",
+      "stderr": ""
+    }
+  ],
+  "files_equal": 1452,
+  "workspace_unchanged": true,
+  "reason": "Separately bounded source-refresh attempt after correcting retained product provenance and final handoff status. Successful prior six cases and failed catalog registration setup in personal-client-02 preserved. Corrected adapter reuses the already registered task-owned catalog; no marketplace removal."
+}

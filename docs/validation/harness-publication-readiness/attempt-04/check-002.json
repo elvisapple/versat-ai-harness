@@ -1,0 +1,18 @@
+{
+  "check": "CHECK-002",
+  "result": "pass",
+  "input_digest_before": "7e15904840093447562ef625076f0b2212cad4c6ceff9b827b47abcb690b4fd4",
+  "input_digest_after": "7e15904840093447562ef625076f0b2212cad4c6ceff9b827b47abcb690b4fd4",
+  "title": "Review full exposed surface and private evidence boundary",
+  "observations": [
+    "rights-integrity.json",
+    "candidate-files.json",
+    "history-integrity.json",
+    "additional-history-review.json"
+  ],
+  "reviewer": "Codex bounded technical/documentary review; actual user text approval retained separately",
+  "explanation": "All 16 private assessment categories have attributable observation/access/disposition. Current delta inspected; reachable history, logs and other queried surfaces are bounded, missing package/cache/external payloads unverified. Historical internal-reference exposure remains defer. Old-commit, inaccessible-attachment and fingerprint-drift cases require separate remediation/review. No raw sensitive records copied into new public-facing output.",
+  "observed_at": "2026-11-13T19:17:52.343336+00:00",
+  "disposition": "Preparation evidence accepted; public operations remain deferred",
+  "execution": "local"
+}

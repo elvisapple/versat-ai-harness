@@ -1,0 +1,8 @@
+{
+  "result": "pass",
+  "case": "c",
+  "original": "case-c-unavailable-version.json",
+  "reason": "Independent reviewer confirms the actual Git checkout rejected the exact unavailable v0.4.0 ref. The initial literal classifier did not recognize Git pathspec wording. No retry or changed runtime result.",
+  "original_classification": "unverified",
+  "actual_exit": 1
+}

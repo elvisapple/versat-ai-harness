@@ -1,24 +1,28 @@
-# Contribua com procedência clara
+# Contribuir com procedência clara
 
 [English](contributing.md) | [Português](contributing.pt.md) | [Español](contributing.es.md)
 
-Use este guia para preparar uma contribuição em um repositório ao qual você tenha acesso. Este guia privado de H02 é um candidato pendente de revisão/adoção. Não concede acesso nem direitos. A organização já possui uma rota pública de participação; os recursos privados detalhados do Harness são opcionais para contribuir sem a ferramenta.
+Esta é a orientação mantida para contribuir no candidato do Harness e selecionar um projeto de destino. Disponibilidade pública e adoção Apache do Harness estão pendentes. Até existirem, utilize apenas repositórios e termos autorizados; este guia não promete fork público nem instalação disponível.
 
-## Prepare e experimente
+## Preparar e contribuir
 
-1. Leia README, AGENTS e orientações de contribuição disponíveis no repositório de destino. As orientações próprias prevalecem sobre os padrões da organização.
-2. Escolha uma issue real existente ou use os formulários disponíveis de bug, funcionalidade ou manutenção. Descreva o problema e o resultado esperado; inclua reprodução para bugs.
-3. Liste material original e de terceiros, fontes/versões, termos aplicáveis e avisos. Exemplo: para uma ilustração copiada sem permissão verificada, identifique a lacuna e solicite revisão antes de incluí-la; uma URL pública não comprova permissão.
-4. Siga a preparação e os checks do destino. Quando SDD se aplicar, revise as etapas de planejamento antes da implementação explicitamente autorizada. Vincule a issue real no PR e informe checks observados e verificações ausentes.
+1. Escolha o repositório real e leia README, AGENTS e instruções de contribuição. Suas regras prevalecem sobre padrões da organização. Outros produtos mantêm termos e rotas independentes.
+2. Selecione uma issue existente ou formulário disponível de bug, funcionalidade ou manutenção. Descreva necessidade, resultado esperado e reprodução quando pertinente. Não invente números de issue ou Story.
+3. Identifique material próprio/de terceiros, fontes, versões, permissões e avisos. Direitos ausentes impedem aceitação. Leia [licenciamento](licensing.pt.md); a licença da ferramenta não determina termos de material independente no destino.
+4. Siga a [preparação](workspace-setup.pt.md). No checkout do Harness, use Python 3.11+, instale `requirements-validation.txt` em ambiente virtual e execute `./scripts/validate/run.sh` na raiz. Em outros projetos, use suas verificações próprias.
+5. Quando repositório e permissões permitirem, use fork autorizado ou branch de trabalho e a [convenção Git](../../../standards/core/git.md). Acesso público de leitura/fork não concede escrita, merge ou release no repositório original.
+6. Para mudanças materiais, siga os [três gates do SDD](sdd-with-codex.pt.md); solicite implementação explicitamente após aprovar Tasks. Inclua documentação mantida e verificações relevantes. Siga a [entrega](github-delivery.pt.md) para arquivo documental, revisão do PR e verificações finais, com autorização efetiva para operações remotas.
 
-Resultado esperado: proposta/contribuição revisável com procedência, escopo e evidências verdadeiras. Uma issue pode ser útil sem implementação.
+Resultado esperado: contribuição revisável com referências reais de issue/procedência e verificações observadas. Informe verificações indisponíveis; aprovação local não comprova proteção de branch nem aceitação.
 
-## Termos, acesso privado e recuperação
+## Termos candidatos de contribuição
 
-Os termos da ferramenta são separados dos termos de contribuição/licença do projeto de destino. O [candidato de termos do Harness (inglês)](../../licensing/harness-plugin-terms.md) teve o texto aprovado pelo responsável, com hash no [registro de aprovação (inglês)](../../governance/h01-approval.md). Ainda não está vigente nem autoriza usar a ferramenta. Use os termos aprovados realmente aplicáveis, quando estabelecidos. Se faltarem acesso/termos da ferramenta, use a rota pública do destino sem ela ou consulte o responsável sobre o pré-requisito ausente.
+Se e quando este candidato Apache for adotado, a seção 5 do [texto Apache exato](../../licensing/candidates/apache-2.0/LICENSE.txt) regerá contribuições intencionalmente submetidas para inclusão, salvo indicação explícita em contrário, conforme as definições da licença e eventual acordo separado. Este guia não acrescenta CLA, DCO ou cessão de propriedade intelectual. Até a adoção, utilize os termos efetivos do repositório/versão e esclareça ausências. A aprovação proprietária anterior e estas instruções não constituem uma licença efetiva.
 
-Direitos ou revisão obrigatória ausentes impedem a aceitação. Este guia não cria CLA, DCO ou transferência de propriedade intelectual. Mantenha detalhes de vulnerabilidades fora de issues públicas comuns; consulte [reporte de segurança](security-reporting.pt.md).
+## Revisão e recuperação
 
-Reutilize [preparação do ambiente](workspace-setup.pt.md), [SDD](sdd-with-codex.pt.md), [entrega pelo GitHub](github-delivery.pt.md) e [validação](validation-and-evaluations.pt.md). Regras canônicas: [Contribution (inglês)](../../../standards/core/contribution.md). Adoção por produto e distribuição do plugin exigem evidências separadas.
+O mantenedor deve revisar escopo, procedência e verificações obrigatórias. CODEOWNERS identifica contatos técnicos, sem comprovar qualificação jurídica ou proteção ativa. Direitos ou revisão obrigatória ausentes impedem aceitação. Corrija falhas e obtenha novas evidências; mudanças de escopo reabrem o gate pertinente. Sem acesso, use a rota pública existente do destino sem o Harness quando apropriado, ou solicite instruções ao mantenedor visível sem divulgar informações confidenciais.
 
-[Início rápido](../quickstart.pt.md) · [Harness](../../../README.pt.md)
+Não exponha vulnerabilidades em issues públicas; use [reporte de segurança](security-reporting.pt.md). Política canônica: [Contribution](../../../standards/core/contribution.md).
+
+[Quickstart](../quickstart.pt.md) · [Harness](../../../README.pt.md)

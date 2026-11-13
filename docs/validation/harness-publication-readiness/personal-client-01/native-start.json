@@ -1,0 +1,7 @@
+{
+  "check_input_before": "3cf8e6ab88956bbcb3d29e3cbb7b82671a01c588bd7d2a93a21c47e862fe184a",
+  "native_start_epoch": 1794596075.5836968,
+  "case": "new-intent",
+  "provider": "Installed personal candidate 0.4.0",
+  "mode": "One fresh native invocation; no inherited implementation context"
+}

@@ -1,0 +1,19 @@
+{
+  "check": "CHECK-004",
+  "result": "pass",
+  "input_digest_before": "7e15904840093447562ef625076f0b2212cad4c6ceff9b827b47abcb690b4fd4",
+  "input_digest_after": "7e15904840093447562ef625076f0b2212cad4c6ceff9b827b47abcb690b4fd4",
+  "cases": {
+    "a": "pass",
+    "b": "pass",
+    "c": "pass",
+    "d": "pass",
+    "e": "pass",
+    "f": "pass"
+  },
+  "runtime": "Codex desktop 26.915.31945/build 9922; bundled CLI 0.155.0-alpha.9.2; macOS arm64; Python 3.11.4",
+  "native_invocations": 1,
+  "native_seconds": 266.99620723724365,
+  "suite_seconds": 282.3642177581787,
+  "scope": "Private personal exact-source test; no anonymous access/release/reporting proof."
+}

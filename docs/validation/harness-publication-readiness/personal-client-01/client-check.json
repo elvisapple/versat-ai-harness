@@ -1,0 +1,22 @@
+{
+  "check": "CHECK-004",
+  "result": "pass",
+  "input_digest_before": "3cf8e6ab88956bbcb3d29e3cbb7b82671a01c588bd7d2a93a21c47e862fe184a",
+  "input_digest_after": "3cf8e6ab88956bbcb3d29e3cbb7b82671a01c588bd7d2a93a21c47e862fe184a",
+  "cases": {
+    "a": "case-a-first-use.json",
+    "b": "case-b-missing-provider.json",
+    "c": "case-c-independent-review.json",
+    "d": "case-d-missing-resources.json",
+    "e": "case-e-explicit-migration.json",
+    "f": "case-f-failed-update.json"
+  },
+  "native_invocations": 1,
+  "runtime": "Codex desktop 26.915.31945/build 9922; bundled CLI 0.155.0-alpha.9.2; macOS arm64; prepared Python 3.11.4",
+  "review": "Independent artifact/resource/diff inspection and actual wrapper/client outputs; synthetic migration only.",
+  "limitations": [
+    "Private same-user rehearsal; external access, public release and reporting remain unverified.",
+    "No exact token/model telemetry available."
+  ],
+  "suite_elapsed_seconds": 423.32906103134155
+}

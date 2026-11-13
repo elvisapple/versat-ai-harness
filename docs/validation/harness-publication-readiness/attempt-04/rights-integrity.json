@@ -1,0 +1,47 @@
+{
+  "approved_files_unchanged": 16,
+  "package_digest": "894308c5f1921f28677d55d39b9bf5fb386467dc652e5dca5908d54756fe9f48",
+  "dependencies": [
+    {
+      "name": "PyYAML",
+      "version": "6.0.2",
+      "upstream_text_matches_installed": true
+    },
+    {
+      "name": "jsonschema",
+      "version": "4.23.0",
+      "upstream_text_matches_installed": true
+    },
+    {
+      "name": "attrs",
+      "version": "26.1.0",
+      "upstream_text_matches_installed": true
+    },
+    {
+      "name": "jsonschema-specifications",
+      "version": "2025.9.1",
+      "upstream_text_matches_installed": true
+    },
+    {
+      "name": "referencing",
+      "version": "0.37.0",
+      "upstream_text_matches_installed": true
+    },
+    {
+      "name": "rpds-py",
+      "version": "2026.9.1",
+      "upstream_text_matches_installed": true
+    },
+    {
+      "name": "typing_extensions",
+      "version": "4.16.0",
+      "upstream_text_matches_installed": true
+    }
+  ],
+  "private_record": "HPR-PRIVATE-01",
+  "private_bound_revisions_match": true,
+  "review_capacity": "Actual user text approval; Codex bounded technical/documentary assessment; independent specialist clearance not asserted",
+  "disposition": "defer",
+  "final_candidate_manifest": "candidate-files.json",
+  "later_delta": "Maintained authorized documentation and synthetic output records; unseen final distribution still needs adoption review. No expanded human text approval claimed."
+}

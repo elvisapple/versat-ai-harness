@@ -1,0 +1,28 @@
+{
+  "base": "d61317d9220b002f0dc3aa606e18a62dd4230477",
+  "frozen_file_count": 178,
+  "all_byte_identical": true,
+  "scopes": [
+    "specs/archive",
+    "docs/governance",
+    "docs/licensing/reviewed",
+    "docs/licensing/technical-review",
+    "skills",
+    "sdd",
+    "validators",
+    "tests",
+    "schemas",
+    "scripts",
+    ".github",
+    "standards/index.yaml",
+    "VERSION",
+    "plugin.json",
+    ".codex-plugin/plugin.json",
+    ".agents/plugins/marketplace.json",
+    "project-templates"
+  ],
+  "root_license_absent": true,
+  "root_notice_absent": true,
+  "adr_0016_sha256": "86166b314d26787aa488385a6c41544661ff0abc8e53eb2eb1bc1eb96abef743",
+  "scope": "Original approved ADR acceptance annotation preserved; no historical approval rewritten."
+}

@@ -2,7 +2,7 @@
 
 [English](quickstart.md) | [Português](quickstart.pt.md) | [Español](quickstart.es.md)
 
-For a Versat developer planning a first story. You need repository access, a prepared local project and the exact Harness provider with versat-sdd available. Complete [workspace setup](guides/workspace-setup.md).
+For a developer with authorized repository access planning a first change, including an external contributor once access and applicable terms are available. You need repository access, a prepared local project and the exact Harness provider with versat-sdd available. Complete [workspace setup](guides/workspace-setup.md).
 
 ## Plan one small change
 

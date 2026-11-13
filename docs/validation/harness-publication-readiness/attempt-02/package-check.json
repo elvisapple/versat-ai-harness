@@ -1,0 +1,86 @@
+{
+  "check": "CHECK-003",
+  "result": "pass",
+  "input_digest_before": "3fcad19aa8ade004030271066938003b4f4d9304fa19ca17bb77f23891e15907",
+  "input_digest_after": "3fcad19aa8ade004030271066938003b4f4d9304fa19ca17bb77f23891e15907",
+  "base": "d61317d9220b002f0dc3aa606e18a62dd4230477",
+  "patch_sha256": "24dd504d47fc83d5530110d22651576bb12582447ad7e569efceacef684d80b6",
+  "candidate_tree_sha256": "d5f04dff62329c1d20d417e4b5051c87eb6cf1983b4c74e035b13e09cfb1a3fa",
+  "elapsed_seconds": 3.815800189971924,
+  "preparation": {
+    "argv": [
+      "<python-3.11.4>",
+      "validators/plugin/validate.py"
+    ],
+    "exit": 0,
+    "stdout": "Portable Plugin package validation passed.\n",
+    "stderr": ""
+  },
+  "candidate": {
+    "argv": [
+      "<python-3.11.4>",
+      "validators/plugin/validate.py"
+    ],
+    "exit": 0,
+    "stdout": "Portable Plugin package validation passed.\n",
+    "stderr": ""
+  },
+  "applicability": {
+    "argv": [
+      "git",
+      "apply",
+      "--check",
+      "<preparation-root>/docs/handoffs/harness-publication-readiness/adoption.patch"
+    ],
+    "exit": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  "applied_to_private_copy": {
+    "argv": [
+      "git",
+      "apply",
+      "<preparation-root>/docs/handoffs/harness-publication-readiness/adoption.patch"
+    ],
+    "exit": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  "negative_version": {
+    "argv": [
+      "<python-3.11.4>",
+      "validators/plugin/validate.py"
+    ],
+    "exit": 1,
+    "stdout": "Plugin package validation failed:\n- portable Plugin version: expected '0.4.0', found '0.4.1'\n",
+    "stderr": ""
+  },
+  "negative_nested": {
+    "argv": [
+      "<python-3.11.4>",
+      "validators/plugin/validate.py"
+    ],
+    "exit": 1,
+    "stdout": "Plugin package validation failed:\n- legacy nested Plugin path must be removed: plugin/versat-ai-harness\n",
+    "stderr": ""
+  },
+  "supported_skills": [
+    "architecture-review",
+    "project-audit",
+    "project-bootstrap",
+    "project-maintenance",
+    "versat-sdd"
+  ],
+  "canonical_directories": [
+    "skills",
+    "standards",
+    "sdd",
+    "validators",
+    "project-templates",
+    "schemas"
+  ],
+  "limits": [
+    "Private checkout only; no root adoption, tag or installation observed.",
+    "Counterexamples modify only disposable copies."
+  ]
+}

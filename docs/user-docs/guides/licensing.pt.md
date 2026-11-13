@@ -2,24 +2,22 @@
 
 [English](licensing.md) | [Português](licensing.pt.md) | [Español](licensing.es.md)
 
-Use este guia para preparar a revisão de um componente. A política e os termos nesta fonte privada são candidatos em implementação, não licenças adotadas nem uma release pública. O [candidato de termos (inglês)](../../licensing/harness-plugin-terms.md) teve o texto aprovado pelo responsável; consulte o [registro de aprovação (inglês)](../../governance/h01-approval.md). Ainda não está vigente; a verificação de direitos e avisos dos componentes é separada.
+O Harness prepara um candidato Apache-2.0 para código, documentação e templates próprios elegíveis. Ele **não foi adotado**, e a versão 0.4.0 **não está disponível**. O candidato proprietário anterior é histórico; sua aprovação não aprova o novo texto. Revise o [candidato concreto](../../licensing/candidates/apache-2.0/APPROVAL.md), com avisos, escopo e hashes dos arquivos.
 
-## Prepare
+## Preparar e revisar
 
-Identifique o componente, a revisão exata, público/distribuição pretendidos, material original e de terceiros, referências de direitos/autorizações e avisos. Um revisor autorizado precisa acessar as evidências reais; não copie contratos, credenciais ou dados pessoais para o pacote.
+Identifique componente/revisão, material próprio e de terceiros, distribuição pretendida e permissões/avisos aplicáveis. A [política canônica](../../../standards/core/licensing-publication.md) rege a revisão. Revisores autorizados consultam evidências sensíveis em armazenamento restrito; esta orientação pública não depende de registros ou treinamentos privados para explicar o processo.
 
-Use a [política comum (inglês)](../../../standards/core/licensing-publication.md), o [inventário de avisos (inglês)](../../licensing/harness-plugin-notices.md) e o [registro privado de revisão (inglês)](../../governance/licensing-review.md). Separe os termos da ferramenta dos termos do projeto de destino.
+Os termos Apache propostos permitem uso geral e comercial, modificação, redistribuição e forks do material coberto, sujeitos às condições da licença. Terceiros mantêm seus próprios termos. A ferramenta não impõe sua licença a material independente do projeto de destino; templates copiados mantêm as obrigações aplicáveis. Não se introduz CLA, DCO ou cessão de propriedade intelectual adicional. O texto oficial em inglês rege o candidato, inclusive contribuições, patentes, avisos, marcas e garantias; estas traduções são explicativas.
 
-## Experimente uma revisão
+## Experimentar uma revisão
 
-Exemplo: um componente proposto para publicação contém um template copiado sem autorização verificada. Registre o componente/revisão e a evidência ausente, use a decisão `defer`, identifique o responsável e exija verificação antes de reconsiderar. Não suponha permissão a partir de uma URL pública ou commit.
+Exemplo: um template copiado não tem permissão verificada. Registre revisão, evidência ausente, responsável e condição para reconsideração; use `defer`. URL pública, indicação de proprietário, varredura sem achados ou validador aprovado não comprovam permissão. Resultado esperado: decisão de revisão atribuível, sem aplicar a licença.
 
-Resultado esperado: um registro atribuível com a lacuna e a próxima ação, não aplicação de licença ou publicação. Uma superfície hipotética inteiramente revisada poderia receber recomendação `publish`, mas publicar ainda exige autorização e evidência separadas do executor.
+## Recuperar e encaminhar
 
-## Resolva pendências e encaminhe
+Falta de direitos, aprovação do texto ou verificações privadas obrigatórias mantém a preparação incompleta. Histórico confidencial ou controles desconhecidos adiam a publicação mesmo com uma avaliação negativa documentada. Revise toda a superfície exposta do repositório e dos serviços. Preserve o histórico e solicite decisão separada de remediação quando necessário.
 
-Se faltarem direitos, dependências, autoridade do revisor ou revisão completa da superfície de exportação, mantenha a decisão pendente. Histórico, tags, releases, LFS, fixtures, CI e anexos relevantes fazem parte do handoff de publicação real; uma árvore atual limpa é insuficiente.
+Aprovação do texto, revisão do patch exato, adoção, release/visibilidade, testes com usuários externos e atualizações de consumidores são eventos distintos. Outros produtos mantêm termos e evidências próprios. Veja o [estado da preparação](../../handoffs/harness-publication-readiness/README.md) e [contribuição](contributing.pt.md).
 
-Platform, Workspace, Discover e CRM precisam de termos/evidências de adoção próprios. A distribuição do Harness/plugin é separada. Mudar a fonte não atualiza consumidores instalados nem concede direitos. Consulte [contribuição](contributing.pt.md) para participar e [entrega pelo GitHub](github-delivery.pt.md) para o processo governado.
-
-[Início rápido](../quickstart.pt.md) · [Harness](../../../README.pt.md)
+[Quickstart](../quickstart.pt.md) · [Harness](../../../README.pt.md)

@@ -1,0 +1,54 @@
+{
+  "scenario": "bounded synthetic first-use planning",
+  "change": "payment-validation-tests",
+  "phase": "Proposal/Requirements",
+  "revision": 1,
+  "review_state": "awaiting-approval",
+  "approval": null,
+  "provider": "/Users/elviszoz/.codex/plugins/cache/versat-internal/versat-ai-harness/0.4.0",
+  "harness_version": "0.4.0",
+  "selected_standards": {
+    "index_resolution": "matches all 12 locked paths",
+    "content_digests": "all 12 match lockfile"
+  },
+  "observed_at": "2026-11-13T18:59:10.069408+00:00",
+  "planning_validation": {
+    "command": "PYTHONDONTWRITEBYTECODE=1 /private/tmp/versat-pr36-validation-venv/bin/python validators/sdd/validate.py --root /private/tmp/harness-personal-client-01/first-use --change payment-validation-tests --phase planning --json",
+    "attempts": 1,
+    "exit_code": 0,
+    "status": "pass",
+    "findings": [],
+    "warnings": [],
+    "local_scenarios": 9,
+    "regression_obligations": 3
+  },
+  "artifacts": [
+    {
+      "path": "specs/changes/payment-validation-tests/proposal.md",
+      "sha256": "6e099649ba4ad54892650659444b24d80273064b1ac4c53b43e6f79af8e7b6ba"
+    },
+    {
+      "path": "specs/changes/payment-validation-tests/requirements.md",
+      "sha256": "c0084dd19c8fd2a6c811f27b26c547ab2fc2aa9cc71844eea2946aa49980c5c5"
+    }
+  ],
+  "boundary_observations": {
+    "later_stage_artifacts_created": false,
+    "product_or_test_code_modified": false,
+    "living_specification_modified": false,
+    "remote_or_connector_operations": false,
+    "provider_edits": false,
+    "functional_tests_executed": false,
+    "approval_fabricated": false,
+    "fresh_context_is_security_isolation": false
+  },
+  "unavailable_observations": [
+    "Human approval is pending; a synthetic fixture is not real-human evidence.",
+    "Functional test execution and runtime behavior were not observed in this planning-only case.",
+    "Remote CI, branch protection, PR, merge and deployment were not inspected.",
+    "Host-level access telemetry, denied-action telemetry and independent security isolation were not available to this agent.",
+    "Independent artifact/test verification is reserved for the coordinator."
+  ],
+  "inspection_issue": "An initial schema read guessed .json names and failed. A directory listing identified the actual .yaml schemas, which were then read. No scenario or validator retry occurred.",
+  "next_permitted_action": "Present Gate 1 revision 1 for approval; Design requires actual approval and implementation remains unauthorized."
+}

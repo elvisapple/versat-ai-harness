@@ -1,0 +1,99 @@
+{
+  "from": "specs/changes/harness-publication-readiness",
+  "to": "specs/archive/harness-publication-readiness",
+  "closure": "prepared",
+  "unique_dossier": true,
+  "stage_digests_before": {
+    "proposal": "41081278df433db671e12b7d442b78a446f792977cc976a37407a5113ee62443",
+    "design": "007c4ba449c55cbdf7bd45e139973d678142d5a24bd5e18ed2c6aa53aec87aa0",
+    "tasks": "3f412d99870c180bf629e21f5501787cf8dbcfebcf2304e1553c0d71f80f6eba"
+  },
+  "stage_digests_after": {
+    "proposal": "41081278df433db671e12b7d442b78a446f792977cc976a37407a5113ee62443",
+    "design": "007c4ba449c55cbdf7bd45e139973d678142d5a24bd5e18ed2c6aa53aec87aa0",
+    "tasks": "3f412d99870c180bf629e21f5501787cf8dbcfebcf2304e1553c0d71f80f6eba"
+  },
+  "input_digests_before": {
+    "CHECK-001": "7e15904840093447562ef625076f0b2212cad4c6ceff9b827b47abcb690b4fd4",
+    "CHECK-002": "7e15904840093447562ef625076f0b2212cad4c6ceff9b827b47abcb690b4fd4",
+    "CHECK-003": "7e15904840093447562ef625076f0b2212cad4c6ceff9b827b47abcb690b4fd4",
+    "CHECK-004": "7e15904840093447562ef625076f0b2212cad4c6ceff9b827b47abcb690b4fd4",
+    "CHECK-005": "7e15904840093447562ef625076f0b2212cad4c6ceff9b827b47abcb690b4fd4",
+    "CHECK-006": "7e15904840093447562ef625076f0b2212cad4c6ceff9b827b47abcb690b4fd4",
+    "CHECK-007": "7e15904840093447562ef625076f0b2212cad4c6ceff9b827b47abcb690b4fd4",
+    "CHECK-008": "7e15904840093447562ef625076f0b2212cad4c6ceff9b827b47abcb690b4fd4",
+    "CHECK-009": "7e15904840093447562ef625076f0b2212cad4c6ceff9b827b47abcb690b4fd4",
+    "CHECK-010": "7e15904840093447562ef625076f0b2212cad4c6ceff9b827b47abcb690b4fd4"
+  },
+  "input_digests_after": {
+    "CHECK-001": "7e15904840093447562ef625076f0b2212cad4c6ceff9b827b47abcb690b4fd4",
+    "CHECK-002": "7e15904840093447562ef625076f0b2212cad4c6ceff9b827b47abcb690b4fd4",
+    "CHECK-003": "7e15904840093447562ef625076f0b2212cad4c6ceff9b827b47abcb690b4fd4",
+    "CHECK-004": "7e15904840093447562ef625076f0b2212cad4c6ceff9b827b47abcb690b4fd4",
+    "CHECK-005": "7e15904840093447562ef625076f0b2212cad4c6ceff9b827b47abcb690b4fd4",
+    "CHECK-006": "7e15904840093447562ef625076f0b2212cad4c6ceff9b827b47abcb690b4fd4",
+    "CHECK-007": "7e15904840093447562ef625076f0b2212cad4c6ceff9b827b47abcb690b4fd4",
+    "CHECK-008": "7e15904840093447562ef625076f0b2212cad4c6ceff9b827b47abcb690b4fd4",
+    "CHECK-009": "7e15904840093447562ef625076f0b2212cad4c6ceff9b827b47abcb690b4fd4",
+    "CHECK-010": "7e15904840093447562ef625076f0b2212cad4c6ceff9b827b47abcb690b4fd4"
+  },
+  "links": [
+    {
+      "source": "design.md",
+      "target": "../../../docs/decisions/0016-public-harness-preparation-boundary.md",
+      "exists": true
+    },
+    {
+      "source": "design.md",
+      "target": "../../../docs/guides/skill-evaluations.md",
+      "exists": true
+    },
+    {
+      "source": "proposal.md",
+      "target": "requirements.md",
+      "exists": true
+    },
+    {
+      "source": "proposal.md",
+      "target": "../../../AGENTS.md",
+      "exists": true
+    },
+    {
+      "source": "proposal.md",
+      "target": "../../../docs/architecture/overview.md",
+      "exists": true
+    },
+    {
+      "source": "proposal.md",
+      "target": "../../../docs/decisions/0011-root-portable-plugin-package.md",
+      "exists": true
+    },
+    {
+      "source": "proposal.md",
+      "target": "../../../sdd/process.md",
+      "exists": true
+    },
+    {
+      "source": "proposal.md",
+      "target": "../../../sdd/workflows/new-change.md",
+      "exists": true
+    },
+    {
+      "source": "proposal.md",
+      "target": "../../../sdd/metadata.md",
+      "exists": true
+    },
+    {
+      "source": "proposal.md",
+      "target": "../../../validators/sdd/README.md",
+      "exists": true
+    },
+    {
+      "source": "proposal.md",
+      "target": "../../../standards/index.yaml",
+      "exists": true
+    }
+  ],
+  "missing_links": [],
+  "observed_at": "2026-11-13T19:36:36.076544+00:00"
+}

@@ -1,0 +1,9 @@
+{
+  "result": "fail",
+  "phase": "setup-before-native-invocation",
+  "actual_exit": 1,
+  "error": "marketplace 'versat-internal' is already added from a different source; remove it before adding this source",
+  "native_invocations": 0,
+  "installed_plugin_changed": false,
+  "resolution": "Use the already registered, task-owned catalog path. Preserve this failed setup and start a separately bounded attempt; do not remove the marketplace or user configuration."
+}

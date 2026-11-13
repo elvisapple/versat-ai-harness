@@ -1,0 +1,10 @@
+{
+  "local_links_checked": 377,
+  "errors": [],
+  "active_private_reference_hits": [],
+  "approved_candidate_files_unchanged": 16,
+  "limitations": [
+    "Static links and public-reference patterns do not prove installation behavior or complete history clearance.",
+    "Reviewed EN/PT/ES sections preserve matching permission, failure, recovery and authority states."
+  ]
+}

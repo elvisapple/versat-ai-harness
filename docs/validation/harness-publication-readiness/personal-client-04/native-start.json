@@ -1,0 +1,7 @@
+{
+  "check_input_before": "7e15904840093447562ef625076f0b2212cad4c6ceff9b827b47abcb690b4fd4",
+  "candidate_input_before": "4a3ad1cd40800b443ec2ca252fe1363d99cba7b85c83fcc5794fd11e1ad27401",
+  "native_start_epoch": 1794597090.640817,
+  "native_invocations": 0,
+  "mode": "One fresh invocation for dual-root snapshot attempt"
+}

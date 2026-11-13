@@ -2,7 +2,7 @@
 
 [English](quickstart.md) | [Português](quickstart.pt.md) | [Español](quickstart.es.md)
 
-Para quem desenvolve na Versat e vai planejar uma primeira história. Você precisa de acesso ao repositório, projeto local preparado e provedor exato do Harness com versat-sdd disponível. Conclua [a preparação do ambiente](guides/workspace-setup.pt.md).
+Para um desenvolvedor com acesso autorizado ao repositório planejando sua primeira mudança, inclusive um contribuidor externo quando acesso e termos aplicáveis estiverem disponíveis. Você precisa de acesso ao repositório, projeto local preparado e provedor exato do Harness com versat-sdd disponível. Conclua [a preparação do ambiente](guides/workspace-setup.pt.md).
 
 ## Planejar uma mudança pequena
 

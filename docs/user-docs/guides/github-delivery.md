@@ -26,6 +26,4 @@ Report failed or unavailable checks in the PR. Review feedback stays with the sa
 - [SDD (English)](../../../sdd/README.md)
 - [SDD validation (English)](../../../validators/sdd/README.md)
 
-[Team recording](https://versat.slack.com/archives/C0B7G255DPY/p1793910356829109) — requires Slack access. Supplemental training; video contents have not been verified for this guide. The written steps are sufficient to continue.
-
 [Quickstart](../quickstart.md) · [Harness](../../../README.md)

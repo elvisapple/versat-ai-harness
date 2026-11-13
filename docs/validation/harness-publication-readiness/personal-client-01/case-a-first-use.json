@@ -1,0 +1,66 @@
+{
+  "result": "pass",
+  "case": "a-initial-install-and-new-intent",
+  "input_digest_before": "3cf8e6ab88956bbcb3d29e3cbb7b82671a01c588bd7d2a93a21c47e862fe184a",
+  "input_digest_after": "3cf8e6ab88956bbcb3d29e3cbb7b82671a01c588bd7d2a93a21c47e862fe184a",
+  "installation": "current-installation.json",
+  "provider": "current-provider.json",
+  "native_invocations": 1,
+  "native_agent": "private_first_use",
+  "model": null,
+  "reasoning": null,
+  "token_usage": null,
+  "elapsed_including_independent_verification_seconds": 310.78861021995544,
+  "independent_delta": {
+    "diff": {
+      "docs/validation/first-use/report.json": {
+        "before": null,
+        "after": "0601ab7a474f1f00f69315b64ab1f90782f46962dd48b035f79e5d50638d346c"
+      },
+      "specs/changes/payment-validation-tests/proposal.md": {
+        "before": null,
+        "after": "6e099649ba4ad54892650659444b24d80273064b1ac4c53b43e6f79af8e7b6ba"
+      },
+      "specs/changes/payment-validation-tests/requirements.md": {
+        "before": null,
+        "after": "c0084dd19c8fd2a6c811f27b26c547ab2fc2aa9cc71844eea2946aa49980c5c5"
+      }
+    },
+    "controls_unchanged": true,
+    "source_tests_unchanged": true,
+    "plan_unchanged": null
+  },
+  "planning_validator": {
+    "exit": 0,
+    "output": {
+      "status": "pass",
+      "phase": "planning",
+      "checked": [
+        "payment-validation-tests"
+      ],
+      "findings": [],
+      "warnings": [],
+      "metrics": {
+        "payment-validation-tests": {
+          "local_scenarios": 9,
+          "regression_obligations": 3
+        }
+      },
+      "live_archives": [],
+      "archive_required": [],
+      "scope": "Declared contract checks only; archive inventory is historical unless selected for live delivery. No proof of semantic adequacy, execution authenticity, human identity, remote CI, merge or deployment."
+    }
+  },
+  "semantic_review": [
+    "Empty key raises ValueError and preserves state.",
+    "Zero/negative values reject without consuming key.",
+    "Duplicate valid requests return False without state mutation.",
+    "Existing valid and distinct-key successes retained.",
+    "Only first-stage Proposal/Requirements produced; review awaits real approval."
+  ],
+  "actual_stop": "Native final response presented Gate 1 approval request and ended. Coordinator does not approve this synthetic plan.",
+  "unknowns": [
+    "Exact model reasoning identity and token usage not exposed.",
+    "Fresh context is not security isolation."
+  ]
+}

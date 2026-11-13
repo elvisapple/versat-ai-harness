@@ -1,0 +1,23 @@
+{
+  "patch_sha256": "24dd504d47fc83d5530110d22651576bb12582447ad7e569efceacef684d80b6",
+  "review_inputs": "docs/handoffs/harness-publication-readiness/review-inputs.json",
+  "runbook": "docs/handoffs/harness-publication-readiness/README.md",
+  "source_candidate_states_separate": true,
+  "disposition": "Preparation assessment may pass with defer; no publish readiness.",
+  "walkthroughs": {
+    "missing_rights_or_surface": "defer; owner resolves actual evidence before publication",
+    "wrong_revision": "stop; re-review exact patch/preimages/source/remote drift",
+    "unauthorized_publication": "stop; implementation/text approvals grant no visibility/release authority",
+    "post_visibility_failure": "stop dependent operations; separately authorize containment; public copies cannot be recalled",
+    "missing_public_reporting": "keep route unverified; authorized intended-audience test still required"
+  },
+  "non_circular": "CHECK-010 inspects immutable inputs and concrete runbook, not final task completion or its own result; delivery guard comes after ledger completion.",
+  "not_performed": [
+    "root adoption",
+    "visibility changes",
+    "tag/release",
+    "remote PR/merge",
+    "real consumer migration",
+    "report submission"
+  ]
+}

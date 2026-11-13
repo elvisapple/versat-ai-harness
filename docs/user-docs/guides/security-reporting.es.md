@@ -1,31 +1,25 @@
-# Reportar una preocupación de seguridad con cuidado
+# Comunicar un problema de seguridad de forma segura
 
 [English](security-reporting.md) | [Português](security-reporting.pt.md) | [Español](security-reporting.es.md)
 
-Alcance verificado de H02 (2026-11-11): **el piloto PVR de `.github` y la recepción por email interno por el responsable del Harness se verificaron con pruebas sintéticas autorizadas**. Los demás repositorios requieren sus propias verificaciones. El formulario personalizado permanece en un PR sin merge; no se probaron su despliegue ni su herencia. Esta guía no promete plazo de respuesta ni monitoreo continuo.
+La ruta pública de reporte del Harness está **sin verificar**. La ruta prevista es GitHub Private Vulnerability Reporting de este repositorio, sujeta a disponibilidad y verificación para el público previsto. Esta preparación no envió reportes ni activó canales.
 
-Los CODEOWNERS pertinentes son responsables de supervisar, clasificar y coordinar la resolución de reportes de seguridad de sus componentes, tanto mediante PVR en repositorios públicos como por email interno en los privados. Los mantenedores configuran los permisos y notificaciones necesarios; la asignación en CODEOWNERS no configura por sí sola la recepción en GitHub.
-
-## Encaminamiento elegido — candidato privado
-
-Para bugs comunes, usa Bug report. Para sospechas de vulnerabilidad en repositorios públicos, usa Private Vulnerability Reporting de GitHub cuando esté habilitado. En los privados, envía email a los CODEOWNERS pertinentes por los canales internos existentes de Versat. No divulgues detalles de vulnerabilidades en issues comunes. Consulta [reportes de seguridad](../../handoffs/contribution-security-guidance/organization/candidate/SECURITY.es.md) para encaminamiento y recuperación cuando el canal no esté disponible.
+Las observaciones anteriores de H02 cubrieron otro piloto público y una recepción interna del Harness. Son evidencia histórica y no establecen una ruta pública del Harness. Los CODEOWNERS pertinentes siguen responsables de monitoreo, triaje y coordinación; la asignación no configura entrega ni demuestra recepción. El contacto responsable del Harness es @elviszoz.
 
 ## Antes de compartir detalles
 
-Lee las instrucciones reales de seguridad del repositorio destinatario y confirma su alcance. El nombre de un mantenedor o un enlace accesible con autenticación no acredita una ruta confidencial. No incluyas detalles de explotación, credenciales, datos de clientes ni adjuntos sensibles en un issue público.
+Lea las instrucciones reales de seguridad del destino. Confirme destino confidencial, reportantes previstos, destinatarios permitidos y tratamiento de datos antes de enviar información sensible. No publique detalles de explotación, credenciales, información de clientes ni adjuntos sensibles en issues comunes. Una sesión administrativa o URL funcional no demuestra acceso externo ni confidencialidad.
 
-## Cuando no exista una ruta verificada
+## Cuando la ruta no esté disponible
 
-Usa un contacto existente y visible del repositorio/mantenedor sólo para solicitar instrucciones de reporte privado, sin revelar la vulnerabilidad. Ejemplo seguro: “Necesito instrucciones confidenciales de reporte de seguridad para este repositorio.” Espera una ruta adecuada antes de enviar detalles sensibles. Este ejemplo no envía un mensaje ni autoriza a un agente a hacerlo.
+Use un contacto de mantenedor ya visible solamente para pedir, sin detalles sensibles: “Necesito instrucciones confidenciales para reportar un problema de seguridad en este repositorio.” Espere una ruta apropiada y verificada. Ante acceso denegado o cambio de destino, deténgase y solicite instrucciones actualizadas. Mantenga el reporte privado si no existe una ruta adecuada. El ejemplo no envía mensajes ni autoriza a un agente a hacerlo.
 
-Resultado esperado: una solicitud no sensible de instrucciones, no un reporte verificado ni servicio activo. Si no puedes establecer una ruta adecuada, conserva el reporte privado y la carencia de verificación explícita.
+Resultado esperado: instrucciones seguras o una brecha explícita de verificación, sin presumir recepción. Aquí no se proporciona correo interno, endpoint nuevo, plazo de respuesta ni período de retención.
 
-## Qué debe acreditar una ruta verificada
+## Verificación del mantenedor
 
-Deben registrarse destino real, responsable de recepción, público autorizado a reportar, destinatarios/límite de acceso y tratamiento de datos aprobado por el responsable. Observaciones de configuración/acceso y un marcador sintético no sensible con recepción, explícitamente autorizado, deben sustentar cualquier afirmación de verificación. No supongas acceso público desde una sesión administrativa.
+Registre destino real, responsable, público, destinatarios permitidos y tratamiento aprobado de datos. Tras autorización operativa separada, verifique configuración/acceso y envíe un marcador sintético no sensible desde una cuenta del público previsto; confirme visibilidad privada, recepción y ausencia de acceso por una cuenta no autorizada. Retenga evidencia mínima segura, retire afirmaciones sin respaldo tras fallo/cambio y verifique nuevamente después de cambios de visibilidad. Nunca use vulnerabilidades reales en la prueba.
 
-El [registro privado de la ruta (inglés)](../../governance/security-reporting.md) registra la evidencia real y sus límites. La orientación alternativa sin canal verificado no completa H02. Una ruta cambiada o fallida exige nueva verificación y retirada de afirmaciones de actividad sin respaldo.
+Controles, activación de canales, permisos y mensajes requieren autorización específica. Una alternativa documental no completa la verificación de la ruta. Cada producto verifica su alcance. Consulte [Security](../../../standards/core/security.md), [estado de preparación](../../handoffs/harness-publication-readiness/README.md) y [contribución](contributing.es.md).
 
-Reglas canónicas: [Security (inglés)](../../../standards/core/security.md). Configurar canales, cambiar permisos y enviar mensajes de prueba requiere autorización específica separada. Cada producto verifica su propio alcance adoptado.
-
-[Contribución](contributing.es.md) · [Harness](../../../README.es.md)
+[Quickstart](../quickstart.es.md) · [Harness](../../../README.es.md)

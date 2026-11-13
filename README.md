@@ -4,7 +4,7 @@
 
 Versat’s source of truth for AI-assisted development: a portable Plugin containing Standards, Spec Driven Development (SDD), reusable Skills, composable project templates and deterministic validation.
 
-For Versat developers, reviewers and maintainers. Maintained by Versat; governed-component review contacts are @elviszoz and @evertonspohrversat in .github/CODEOWNERS.
+For developers, reviewers and maintainers, including external contributors when access and applicable terms are available. Maintained by Versat; governed-component review contacts are @elviszoz and @evertonspohrversat in .github/CODEOWNERS.
 
 ## Start here
 
@@ -19,7 +19,9 @@ For Versat developers, reviewers and maintainers. Maintained by Versat; governed
 - [Review architecture](docs/user-docs/guides/architecture-review.md)
 - [Validation and evaluations](docs/user-docs/guides/validation-and-evaluations.md)
 
-Private H01/H02 candidates (not adopted or released): [licensing review](docs/user-docs/guides/licensing.md), [contribution](docs/user-docs/guides/contributing.md) and [security reporting](docs/user-docs/guides/security-reporting.md). The owner approved the terms candidate; component rights evidence and operational channel verification remain separate.
+## Publication preparation in progress
+
+The public Apache-2.0 direction is approved. The [concrete candidate](docs/licensing/candidates/apache-2.0/APPROVAL.md) has text approval and has not been adopted. The existing repository remains private; 0.4.0 is a future candidate, not an available release. See [licensing](docs/user-docs/guides/licensing.md), [contribution](docs/user-docs/guides/contributing.md), [security reporting](docs/user-docs/guides/security-reporting.md) and the [preparation status](docs/handoffs/harness-publication-readiness/README.md).
 
 ## Current state and adoption
 

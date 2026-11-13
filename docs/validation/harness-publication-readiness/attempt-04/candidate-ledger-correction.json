@@ -1,0 +1,8 @@
+{
+  "failure": "Fixture-only explanatory section accidentally entered the hashed task-plan body; validator correctly rejected stale approval.",
+  "fix": "Removed the newly added explanatory section from the disposable fixture; original approved Tasks digest restored. Own actually captured candidate CHECK-004 remains in excluded validation metadata. No source/plan/check requirement changed.",
+  "original_failed_run": "suite-candidate.json",
+  "original_fixture": "candidate-task-before-annotation-fix.md",
+  "restored_tasks_digest": "3f412d99870c180bf629e21f5501787cf8dbcfebcf2304e1553c0d71f80f6eba",
+  "rerun": "suite-candidate-final.json"
+}

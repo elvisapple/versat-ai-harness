@@ -26,6 +26,4 @@ If review evidence is missing, review the presented revision rather than recreat
 - [Process (English)](../../../sdd/process.md)
 - [Metadata (English)](../../../sdd/metadata.md)
 
-[Team recording](https://versat.slack.com/files/U04PSSJ2W/F0CF8AH2SVC/pantalla_compartida_-_2026-11-05_16_09_27.mp4) — requires Slack access. Supplemental training; video contents have not been verified for this guide. The written steps are sufficient to continue.
-
 [Quickstart](../quickstart.md) · [Harness](../../../README.md)

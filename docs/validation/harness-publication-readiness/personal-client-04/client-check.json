@@ -1,0 +1,21 @@
+{
+  "check": "CHECK-004",
+  "result": "pass",
+  "input_digest_before": "7e15904840093447562ef625076f0b2212cad4c6ceff9b827b47abcb690b4fd4",
+  "input_digest_after": "7e15904840093447562ef625076f0b2212cad4c6ceff9b827b47abcb690b4fd4",
+  "candidate_input_before": "4a3ad1cd40800b443ec2ca252fe1363d99cba7b85c83fcc5794fd11e1ad27401",
+  "candidate_input_after": "4a3ad1cd40800b443ec2ca252fe1363d99cba7b85c83fcc5794fd11e1ad27401",
+  "cases": {
+    "a": "pass",
+    "b": "pass",
+    "c": "pass",
+    "d": "pass",
+    "e": "pass",
+    "f": "pass"
+  },
+  "runtime": "Codex desktop 26.915.31945/build 9922; bundled CLI 0.155.0-alpha.9.2; macOS arm64; Python 3.11.4",
+  "native_invocations": 1,
+  "native_seconds": 152.34317111968994,
+  "suite_seconds": 165.18754410743713,
+  "scope": "Private personal test bound to both actual roots before/after execution. No public access/release/reporting proof."
+}

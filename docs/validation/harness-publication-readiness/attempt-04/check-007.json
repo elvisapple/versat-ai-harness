@@ -1,0 +1,16 @@
+{
+  "check": "CHECK-007",
+  "result": "pass",
+  "input_digest_before": "7e15904840093447562ef625076f0b2212cad4c6ceff9b827b47abcb690b4fd4",
+  "input_digest_after": "7e15904840093447562ef625076f0b2212cad4c6ceff9b827b47abcb690b4fd4",
+  "title": "Review multilingual guidance, navigation and observed actions",
+  "observations": [
+    "documentation-links.json",
+    "../personal-client-04/client-check.json"
+  ],
+  "reviewer": "Codex bounded technical/documentary review; actual user text approval retained separately",
+  "explanation": "EN/PT/ES audience, permissions, gates, candidate/adoption state, safe reporting and exact-version/recovery semantics compared. 365 relative links resolve. Maintained workflow context and English canonical sources preserved. Actual same-user installer, new-intent Gate 1 and five wrapper/client failure/migration/recovery cases match steps; external access remains unverified. Optional Issue 22 provenance and social/environmental limits retained.",
+  "observed_at": "2026-11-13T19:17:58.661080+00:00",
+  "disposition": "Preparation evidence accepted; public operations remain deferred",
+  "execution": "local"
+}

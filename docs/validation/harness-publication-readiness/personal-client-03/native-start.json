@@ -1,0 +1,7 @@
+{
+  "check_input_before": "7e15904840093447562ef625076f0b2212cad4c6ceff9b827b47abcb690b4fd4",
+  "native_start_epoch": 1794596622.8107488,
+  "case": "new-intent",
+  "provider": "Installed personal candidate 0.4.0 final source",
+  "mode": "One fresh native invocation for this source revision; initial success retained"
+}

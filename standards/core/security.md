@@ -10,7 +10,7 @@
 
 ## Confidential vulnerability reporting
 
-The following reporting extension is a private H02 implementation candidate pending governed adoption.
+The following reporting extension is preparation source extending H02; each route still requires its own governed adoption and verification.
 
 - Each adopted reporting route MUST identify its actual destination, accountable owner, intended reporters, permitted recipients and supported repository/product scope.
 - Do not describe a route as verified until actual configuration/access observations and an explicitly authorized non-sensitive synthetic submission/receipt support that claim.
@@ -20,5 +20,7 @@ The following reporting extension is a private H02 implementation candidate pend
 - Real vulnerability payloads and credentials MUST NOT enter test fixtures, public issues or routine validation reports. Record minimal safe evidence and use approved restricted storage for sensitive material.
 - Channel setup, permission changes and synthetic messages require their actual scoped authorization. Planning or documentary implementation approval does not authorize them automatically.
 - Each product MUST verify the route applicable to its own scope; common guidance is not automatic adoption or evidence of an operational service.
+
+Existing pilot/internal receipt evidence MUST retain its original repository and audience scope. It MUST NOT establish a public Harness route or replace post-visibility verification. Control assessment MUST examine actual reviews, branch protection/rulesets, required checks and fork token/secret boundaries; local configuration alone is insufficient.
 
 See the [reporting guide](../../docs/user-docs/guides/security-reporting.md) for the current documented status and safe steps.

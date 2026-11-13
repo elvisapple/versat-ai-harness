@@ -1,7 +1,11 @@
 # Harness and Codex plugin terms — private candidate
 
-Candidate revision: draft-0.2 · State: approved-candidate · Effective date: none.
+Candidate revision: draft-0.2 · State: superseded for the proposed public Harness scope · Effective date: none.
 Approved by Elvis Luis Zoz in this chat on 2026-11-10. The [approval record](../governance/h01-approval.md) binds the exact reviewed text and documents this administrative status update. The candidate has not been applied, published or made effective. It does not itself activate the permissions described below.
+
+## Prospective successor — 2026-11-13
+
+The approved public preparation plan selects an [Apache-2.0 successor candidate](candidates/apache-2.0/README.md), whose exact text is awaiting separate review. This status/routing annotation preserves the original clauses below and the frozen reviewed copy. It does not undo the historical approval, apply either candidate, grant new rights or clear publication. The former proprietary restrictions are historical proposed terms, not the selected future public model.
 
 ## 1. Holder, scope and approver
 

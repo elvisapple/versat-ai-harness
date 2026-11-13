@@ -1,6 +1,6 @@
 # Contribution Standard
 
-Status: private H02 implementation candidate; not yet adopted or released.
+Status: governed preparation source extending H02 for the public-Harness candidate; per-repository adoption remains separate.
 
 ## Entry and precedence
 
@@ -16,6 +16,8 @@ Contributors MUST identify original and third-party material, source/version, ap
 Harness/plugin users MUST follow the actual approved terms applicable to their tool version. The target project's license and contribution terms remain separate. A new tool-terms draft, file presence or SDD approval does not establish an approved grant.
 
 This Standard creates no CLA, DCO, IP transfer or new contribution-license mechanism. Such a mechanism needs an explicit owner decision and appropriate review. Do not infer authorization from public visibility, successful download or being named in CODEOWNERS.
+
+Public Harness contribution guidance MUST identify candidate versus adopted terms and preserve the reviewed Apache contribution wording without adding another agreement. It MUST provide a self-contained route for its intended audience without depending on private strategy records or training. Actual rights and required review remain prerequisites to acceptance. Other repositories retain their own models and usable entry routes.
 
 ## Review and delivery
 

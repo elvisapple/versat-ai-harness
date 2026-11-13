@@ -16,6 +16,26 @@ A OpenAI documenta a seleção de pastas em [Projects and chats (inglês)](https
 
 Peça ao Codex para informar diretório de trabalho, versão do provedor e onde encontrou versat-sdd. Os caminhos devem pertencer ao projeto/provedor pretendido. Se faltar acesso ou uma Skill, pare esse fluxo e procure o responsável pelo repositório ou workspace. Não copie políticas de outra release nem presuma instalação automática. Um repositório sem metadados de identidade precisa ser classificado antes de bootstrap ou migração.
 
-[Gravação da equipe](https://versat.slack.com/files/U04PSSJ2W/F0CF8AH2SVC/pantalla_compartida_-_2026-11-05_16_09_27.mp4) — requer acesso ao Slack. Treinamento complementar; o conteúdo do vídeo não foi verificado para este guia. Os passos escritos permitem continuar.
-
 [Continuar para o início rápido](../quickstart.pt.md)
+
+## Instalação candidata, atualizações exatas e recuperação
+
+O texto do candidato Apache foi aprovado, mas não há release público 0.4.0 nem adoção da licença na raiz. Código atual e v0.3.0 instalado são snapshots diferentes; confirme a versão real do SDD e os recursos do provedor selecionado. O alvo local de ensaio é Codex desktop 26.915.31945/build 9922 em macOS arm64, não uma matriz de suporte comprovada.
+
+O proprietário escolheu uma instalação individual com o mesmo usuário da Versat para o ensaio privado. No Codex desktop 26.915.31945/build 9922, o CLI incluído instalou `versat-ai-harness@versat-internal` versão 0.4.0 em um cache local separado; os arquivos do plugin 0.3.0 do workspace permaneceram iguais. A cópia instalada correspondeu a todos os arquivos da origem e resolveu as cinco Skills e os recursos canônicos. Isso verifica a etapa de instalação privada, não acesso anônimo, release público nem toda a suíte comportamental.
+
+Neste build macOS, os comandos observados foram:
+
+```sh
+harness_test_catalog=/absolute/path/to/reviewed-private-catalog
+/Applications/Codex.app/Contents/Resources/codex plugin marketplace add "$harness_test_catalog" --json
+/Applications/Codex.app/Contents/Resources/codex plugin add versat-ai-harness@versat-internal --json
+```
+
+O catálogo local revisado se chama `versat-internal` e aponta `source.path` para o candidato privado exato dentro de sua raiz; é um adaptador de teste, não substituto do marketplace versionado do repositório. Antes de executar, confirme que a entrada/cache pessoal não existe ou tem substituição explicitamente autorizada, preservando a instalação do workspace. Confira identidade, versão e caminho retornados, compare os arquivos reais e inicie um contexto sintético novo com esse provedor instalado exato. Não confunda duas instalações de mesmo nome nem use a Skill de outro provedor. Uma instalação local pode ser individual mesmo quando o usuário pertence a um workspace.
+
+A [documentação oficial](https://developers.openai.com/plugins/build/plugins) descreve catálogos locais; o [registro de preparação](../../handoffs/harness-publication-readiness/README.md) identifica escopo observado e verificações pendentes. O contexto local compartilha permissões do usuário e não é isolamento de segurança. Primeiro uso, falhas, atualização explícita e recuperação exigem observações próprias. Uma conta externa não é necessária neste ensaio privado; a aceitação pública posterior ainda deve usar um usuário externo sem vínculo privado.
+
+Para uma atualização explícita, registre o provedor exato anterior e o par lock/config do projeto; revise a substituição exata e compatibilidade antes de alterar o consumidor. Teste primeiro em contexto descartável. Após falha, preserve ou restaure o último par compatível verificado e registre o resultado. Acesso ausente, referência indisponível, runtime incompatível ou recursos canônicos ausentes devem interromper o fluxo, sem escolher `latest`. Consumidor com registros SDD v3 ativos deve manter provedor compatível verificado; não use tag incapaz de lê-los nem remova marcadores de versão. Publicação ou atualização do marketplace não migra consumidores por si só.
+
+Resultado esperado: provedor selecionado e locais reais dos recursos identificados, ou pré-requisito específico marcado como não verificado. Acesso anônimo, instalação externa e recuperação após publicação continuam sendo verificações operacionais autorizadas separadamente.

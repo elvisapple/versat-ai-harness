@@ -1,0 +1,19 @@
+{
+  "check": "CHECK-008",
+  "result": "pass",
+  "input_digest_before": "7e15904840093447562ef625076f0b2212cad4c6ceff9b827b47abcb690b4fd4",
+  "input_digest_after": "7e15904840093447562ef625076f0b2212cad4c6ceff9b827b47abcb690b4fd4",
+  "title": "Review individual retained contracts and immutable history",
+  "observations": [
+    "semantic-assessments.json",
+    "history-integrity.json",
+    "additional-history-review.json",
+    "package-check.json",
+    "full-suites.json"
+  ],
+  "reviewer": "Codex bounded technical/documentary review; actual user text approval retained separately",
+  "explanation": "Individually reviewed all 72 retained obligations against their exact historical scenario and current implementation/evidence, plus seven superseded scenarios across six impact items. Canonical Skills/SDD/enforcement/templates and 1,069 historical validation files unchanged. Current package, real-client, guide and complete-suite observations support retained behavior. Historical approval/pass is not transferred.",
+  "observed_at": "2026-11-13T19:18:00.766010+00:00",
+  "disposition": "Preparation evidence accepted; public operations remain deferred",
+  "execution": "local"
+}

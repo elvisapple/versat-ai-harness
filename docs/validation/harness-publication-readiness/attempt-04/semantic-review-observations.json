@@ -1,0 +1,31 @@
+{
+  "started_inputs": {
+    "CHECK-001": "7e15904840093447562ef625076f0b2212cad4c6ceff9b827b47abcb690b4fd4",
+    "CHECK-002": "7e15904840093447562ef625076f0b2212cad4c6ceff9b827b47abcb690b4fd4",
+    "CHECK-005": "7e15904840093447562ef625076f0b2212cad4c6ceff9b827b47abcb690b4fd4",
+    "CHECK-006": "7e15904840093447562ef625076f0b2212cad4c6ceff9b827b47abcb690b4fd4",
+    "CHECK-007": "7e15904840093447562ef625076f0b2212cad4c6ceff9b827b47abcb690b4fd4",
+    "CHECK-008": "7e15904840093447562ef625076f0b2212cad4c6ceff9b827b47abcb690b4fd4",
+    "CHECK-010": "7e15904840093447562ef625076f0b2212cad4c6ceff9b827b47abcb690b4fd4"
+  },
+  "finished_inputs": {
+    "CHECK-001": "7e15904840093447562ef625076f0b2212cad4c6ceff9b827b47abcb690b4fd4",
+    "CHECK-002": "7e15904840093447562ef625076f0b2212cad4c6ceff9b827b47abcb690b4fd4",
+    "CHECK-005": "7e15904840093447562ef625076f0b2212cad4c6ceff9b827b47abcb690b4fd4",
+    "CHECK-006": "7e15904840093447562ef625076f0b2212cad4c6ceff9b827b47abcb690b4fd4",
+    "CHECK-007": "7e15904840093447562ef625076f0b2212cad4c6ceff9b827b47abcb690b4fd4",
+    "CHECK-008": "7e15904840093447562ef625076f0b2212cad4c6ceff9b827b47abcb690b4fd4",
+    "CHECK-010": "7e15904840093447562ef625076f0b2212cad4c6ceff9b827b47abcb690b4fd4"
+  },
+  "observed_at": "2026-11-13T19:06:06.525908+00:00",
+  "observations": [
+    "rights-integrity.json",
+    "history-integrity.json",
+    "documentation-links.json",
+    "contribution-control-review.json",
+    "reporting-review.json",
+    "handoff-review.json"
+  ],
+  "reviewer": "Codex documentary/technical review; exact candidate text approval remains actual user evidence",
+  "remaining": "Current CHECK-004 and CHECK-009 final outcomes and individual 38/72 semantic assessments must be reconciled before preparation completion."
+}

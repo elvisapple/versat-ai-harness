@@ -1,0 +1,16 @@
+{
+  "check": "CHECK-006",
+  "result": "pass",
+  "input_digest_before": "7e15904840093447562ef625076f0b2212cad4c6ceff9b827b47abcb690b4fd4",
+  "input_digest_after": "7e15904840093447562ef625076f0b2212cad4c6ceff9b827b47abcb690b4fd4",
+  "title": "Review scoped confidential-reporting protocol",
+  "observations": [
+    "reporting-review.json",
+    "history-integrity.json"
+  ],
+  "reviewer": "Codex bounded technical/documentary review; actual user text approval retained separately",
+  "explanation": "H02 pilot and private receipt remain scoped. Current Harness public route explicitly unverified; named responder, intended PVR destination, audience/recipient/data boundaries and separately authorized synthetic access/receipt/exclusion test specified. Missing, denied and changed routes retain safe non-sensitive fallback. No messages, activation, SLA or invented endpoint.",
+  "observed_at": "2026-11-13T19:17:56.541972+00:00",
+  "disposition": "Preparation evidence accepted; public operations remain deferred",
+  "execution": "local"
+}

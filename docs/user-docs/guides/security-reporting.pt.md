@@ -1,31 +1,25 @@
-# Relate uma preocupação de segurança com cuidado
+# Relatar uma preocupação de segurança com cuidado
 
 [English](security-reporting.md) | [Português](security-reporting.pt.md) | [Español](security-reporting.es.md)
 
-Escopo verificado de H02 (2026-11-11): **o piloto de PVR do `.github` e o recebimento por email interno pelo responsável do Harness foram verificados com testes sintéticos autorizados**. Os demais repositórios precisam de verificações próprias. O formulário personalizado permanece em PR sem merge; sua implantação e herança não foram testadas. Este guia não promete prazo de resposta nem monitoramento contínuo.
+A rota pública de reporte do Harness está **não verificada**. A rota pretendida é o GitHub Private Vulnerability Reporting deste repositório, sujeito à disponibilidade e verificação para o público previsto. Esta preparação não enviou relatos nem ativou canais.
 
-Os CODEOWNERS relevantes são responsáveis por acompanhar, triar e coordenar a resolução dos relatos de segurança dos componentes sob sua responsabilidade, tanto pelo PVR dos repositórios públicos quanto pelo email interno dos privados. Os mantenedores configuram as permissões e notificações necessárias; a atribuição em CODEOWNERS não configura sozinha o recebimento no GitHub.
-
-## Encaminhamento escolhido — candidato privado
-
-Para bugs comuns, use Bug report. Para suspeitas de vulnerabilidade em repositórios públicos, use o Private Vulnerability Reporting do GitHub quando habilitado. Nos privados, envie email aos CODEOWNERS relevantes pelos canais internos existentes da Versat. Não divulgue detalhes de vulnerabilidade em issues comuns. Consulte [reporte de segurança](../../handoffs/contribution-security-guidance/organization/candidate/SECURITY.pt.md) para encaminhamento e recuperação quando o canal estiver indisponível.
+Observações anteriores do H02 cobriram outro piloto público e um recebimento interno do Harness. São evidências históricas, sem comprovar uma rota pública do Harness. CODEOWNERS pertinentes continuam responsáveis por monitoramento, triagem e coordenação; a atribuição não configura entrega nem comprova recebimento. O contato responsável pelo Harness é @elviszoz.
 
 ## Antes de compartilhar detalhes
 
-Leia as instruções reais de segurança do repositório de destino e confirme seu escopo. O nome de um mantenedor ou um link acessível com autenticação não comprova uma rota confidencial. Não coloque detalhes de exploração, credenciais, dados de clientes ou anexos sensíveis em uma issue pública.
+Leia as instruções reais de segurança do destino. Confirme destino confidencial, relatores previstos, destinatários permitidos e tratamento dos dados antes de enviar informações sensíveis. Não coloque detalhes de exploração, credenciais, dados de clientes ou anexos sensíveis em issues comuns. Sessão administrativa ou URL funcional não comprova acesso externo ou confidencialidade.
 
-## Quando não houver rota verificada
+## Quando a rota estiver indisponível
 
-Use um contato existente e visível do repositório/mantenedor apenas para solicitar instruções de reporte privado, sem revelar a vulnerabilidade. Exemplo seguro: “Preciso de instruções confidenciais de reporte de segurança para este repositório.” Aguarde uma rota adequada antes de enviar detalhes sensíveis. Este exemplo não envia mensagem nem autoriza um agente a fazê-lo.
+Use um contato de mantenedor já visível somente para pedir, sem detalhes sensíveis: “Preciso de instruções confidenciais para relatar um problema de segurança neste repositório.” Aguarde uma rota apropriada e verificada. Se houver acesso negado ou mudança de destino, pare e peça instruções atualizadas. Mantenha o relato privado se não houver rota adequada. O exemplo não envia mensagem nem autoriza um agente a fazê-lo.
 
-Resultado esperado: um pedido não sensível de instruções, não um relato verificado ou serviço ativo. Se não conseguir estabelecer uma rota adequada, mantenha o relato privado e a lacuna de verificação explícita.
+Resultado esperado: instruções seguras ou uma lacuna explícita de verificação, sem presumir recebimento. Nenhum email interno, endpoint novo, prazo de resposta ou período de retenção é fornecido aqui.
 
-## O que uma rota verificada deve comprovar
+## Verificação pelo mantenedor
 
-Devem ser registrados destino real, responsável pelo recebimento, público autorizado a reportar, destinatários/limite de acesso e tratamento de dados aprovado pelo responsável. Observações de configuração/acesso e marcador sintético não sensível com recebimento, explicitamente autorizado, devem sustentar qualquer afirmação de verificação. Não suponha acesso público a partir de uma sessão administrativa.
+Registre destino real, responsável, público, destinatários permitidos e tratamento aprovado dos dados. Após autorização operacional separada, verifique configuração/acesso e envie um marcador sintético não sensível por uma conta do público previsto; confirme visibilidade privada, recebimento e ausência de acesso por conta não autorizada. Retenha evidência mínima e segura, retire afirmações sem suporte após falha/mudança e verifique novamente após alterações de visibilidade. Nunca use vulnerabilidades reais no teste.
 
-O [registro privado da rota (inglês)](../../governance/security-reporting.md) registra as evidências reais e seus limites. Orientação alternativa sem canal verificado não conclui H02. Uma rota alterada ou com falha exige nova verificação e retirada de afirmações de atividade sem suporte.
+Controles, ativação de canais, permissões e mensagens exigem autorização específica. Uma alternativa documental não completa a verificação da rota. Cada produto verifica seu escopo. Veja [Security](../../../standards/core/security.md), [estado da preparação](../../handoffs/harness-publication-readiness/README.md) e [contribuição](contributing.pt.md).
 
-Regras canônicas: [Security (inglês)](../../../standards/core/security.md). Configuração de canal, alteração de permissões e mensagens de teste exigem autorização específica separada. Cada produto verifica seu próprio escopo adotado.
-
-[Contribuição](contributing.pt.md) · [Harness](../../../README.pt.md)
+[Quickstart](../quickstart.pt.md) · [Harness](../../../README.pt.md)

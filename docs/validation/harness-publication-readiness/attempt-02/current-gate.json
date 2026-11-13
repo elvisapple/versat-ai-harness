@@ -1,0 +1,43 @@
+{
+  "status": "fail",
+  "phase": "implementation",
+  "checked": [
+    "harness-publication-readiness"
+  ],
+  "findings": [
+    {
+      "code": "ACCEPTANCE_GAP",
+      "message": "FIND-001: Required installation and six-case client rehearsal lack a confirmed disposable supported desktop context; help inspection is not a behavioral pass. All cases remain unverified and block preparation acceptance.",
+      "path": "<repository>/specs/changes/harness-publication-readiness/tasks.md",
+      "severity": "error"
+    }
+  ],
+  "warnings": [],
+  "metrics": {
+    "harness-publication-readiness": {
+      "local_scenarios": 38,
+      "regression_obligations": 72,
+      "assessed": 0,
+      "results": 3,
+      "open_findings": 1,
+      "stale_results": 0,
+      "requirements": {
+        "REQ-001": "unverified",
+        "REQ-002": "unverified",
+        "REQ-003": "unverified",
+        "REQ-004": "unverified",
+        "REQ-005": "fail",
+        "REQ-006": "unverified",
+        "REQ-007": "unverified",
+        "REQ-008": "unverified",
+        "REQ-009": "unverified",
+        "REQ-010": "unverified",
+        "REQ-011": "unverified",
+        "REQ-012": "unverified"
+      }
+    }
+  },
+  "live_archives": [],
+  "archive_required": [],
+  "scope": "Declared contract checks only; archive inventory is historical unless selected for live delivery. No proof of semantic adequacy, execution authenticity, human identity, remote CI, merge or deployment."
+}

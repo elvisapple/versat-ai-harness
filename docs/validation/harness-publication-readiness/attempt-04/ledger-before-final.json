@@ -1,0 +1,182 @@
+{
+  "sdd_version": 3,
+  "change": "harness-publication-readiness",
+  "tasks": [
+    {
+      "id": "TASK-001",
+      "description": "Reconcile the approved baseline, actual authority and restricted evidence setup",
+      "requirements": [
+        "REQ-002",
+        "REQ-003",
+        "REQ-004",
+        "REQ-009",
+        "REQ-010",
+        "REQ-011",
+        "REQ-012"
+      ],
+      "status": "completed"
+    },
+    {
+      "id": "TASK-002",
+      "description": "Assess component rights, dependencies and the complete intended public surface",
+      "requirements": [
+        "REQ-002",
+        "REQ-003",
+        "REQ-009",
+        "REQ-010",
+        "REQ-011"
+      ],
+      "status": "completed"
+    },
+    {
+      "id": "TASK-003",
+      "description": "Prepare and obtain review of concrete Apache candidates and reconcile active policy",
+      "requirements": [
+        "REQ-001",
+        "REQ-002",
+        "REQ-008",
+        "REQ-010",
+        "REQ-011"
+      ],
+      "status": "completed"
+    },
+    {
+      "id": "TASK-004",
+      "description": "Prepare public contribution/reporting guidance and assess actual controls",
+      "requirements": [
+        "REQ-006",
+        "REQ-007",
+        "REQ-008",
+        "REQ-009",
+        "REQ-011",
+        "REQ-012"
+      ],
+      "status": "completed"
+    },
+    {
+      "id": "TASK-005",
+      "description": "Assemble maintained multilingual guidance, the exact adoption candidate and operational handoff",
+      "requirements": [
+        "REQ-001",
+        "REQ-004",
+        "REQ-005",
+        "REQ-006",
+        "REQ-007",
+        "REQ-008",
+        "REQ-009",
+        "REQ-010",
+        "REQ-011"
+      ],
+      "status": "completed"
+    },
+    {
+      "id": "TASK-006",
+      "description": "Execute the bounded private package/client rehearsals and retained technical suites",
+      "requirements": [
+        "REQ-004",
+        "REQ-005",
+        "REQ-009",
+        "REQ-011",
+        "REQ-012"
+      ],
+      "status": "in-progress"
+    },
+    {
+      "id": "TASK-007",
+      "description": "Complete current semantic reviews, all required checks and retained-contract assessment",
+      "requirements": [
+        "REQ-001",
+        "REQ-002",
+        "REQ-003",
+        "REQ-004",
+        "REQ-005",
+        "REQ-006",
+        "REQ-007",
+        "REQ-008",
+        "REQ-009",
+        "REQ-010",
+        "REQ-011",
+        "REQ-012"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "TASK-008",
+      "description": "Reconcile the final validation ledger and report preparation acceptance and remaining operations",
+      "requirements": [
+        "REQ-001",
+        "REQ-002",
+        "REQ-003",
+        "REQ-004",
+        "REQ-005",
+        "REQ-006",
+        "REQ-007",
+        "REQ-008",
+        "REQ-009",
+        "REQ-010",
+        "REQ-011",
+        "REQ-012"
+      ],
+      "status": "pending"
+    }
+  ],
+  "review": {
+    "revision": 1,
+    "state": "approved",
+    "blockers": [],
+    "upstream": {
+      "proposal": "41081278df433db671e12b7d442b78a446f792977cc976a37407a5113ee62443",
+      "design": "007c4ba449c55cbdf7bd45e139973d678142d5a24bd5e18ed2c6aa53aec87aa0"
+    },
+    "approval": {
+      "source": "User reply in this chat on 2026-11-13 to the explicit request to approve Tasks R1 while keeping implementation and publication suspended.",
+      "quote": "sim",
+      "revision": 1,
+      "digest": "3f412d99870c180bf629e21f5501787cf8dbcfebcf2304e1553c0d71f80f6eba"
+    }
+  },
+  "validation": {
+    "plan_digest": "3f412d99870c180bf629e21f5501787cf8dbcfebcf2304e1553c0d71f80f6eba",
+    "results": [
+      {
+        "check": "CHECK-004",
+        "result": "pass",
+        "evidence": "docs/validation/harness-publication-readiness/personal-client-03/client-check.json",
+        "revision": "final private candidate; preparation input 7e15904840093447562ef625076f0b2212cad4c6ceff9b827b47abcb690b4fd4",
+        "input_digest_before": "7e15904840093447562ef625076f0b2212cad4c6ceff9b827b47abcb690b4fd4",
+        "input_digest_after": "7e15904840093447562ef625076f0b2212cad4c6ceff9b827b47abcb690b4fd4",
+        "context": {
+          "execution": "local",
+          "environment": "Codex desktop 26.915.31945/build 9922; bundled CLI 0.155.0-alpha.9.2; macOS arm64; Python 3.11.4",
+          "observed": true
+        }
+      }
+    ],
+    "assessments": [],
+    "findings": [
+      {
+        "id": "FIND-001",
+        "source": {
+          "local": {
+            "requirement": "REQ-005",
+            "scenario": 1
+          }
+        },
+        "category": "missing",
+        "state": "resolved",
+        "evidence": "docs/validation/harness-publication-readiness/personal-client-03/client-check.json",
+        "description": "Required installation and six-case client rehearsal lack a confirmed disposable supported desktop context; help inspection is not a behavioral pass. All cases remain unverified and block preparation acceptance.",
+        "tasks": [
+          "TASK-006",
+          "TASK-007",
+          "TASK-008"
+        ],
+        "checks": [
+          "CHECK-004"
+        ],
+        "resolution": "Actual owner-selected personal installation and all six bounded cases passed on current source. Corrective finding links now identify CHECK-004 directly; CHECK-007/008/010 remain mandatory in the unchanged Design and cannot be waived. Original finding/attempts remain preserved. No publication or external access inferred."
+      }
+    ]
+  },
+  "closure": "active"
+}

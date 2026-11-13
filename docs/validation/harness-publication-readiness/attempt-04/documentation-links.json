@@ -1,0 +1,1495 @@
+{
+  "changed_markdown_files": 45,
+  "relative_links": 365,
+  "anchors": 0,
+  "errors": [],
+  "external_targets": [
+    {
+      "url": "https://developers.openai.com/plugins/build/plugins",
+      "access": "Canonical external reference; no claim of anonymous candidate access"
+    },
+    {
+      "url": "https://github.com/versat-labs/.github/blob/main/CONTRIBUTING.md",
+      "access": "Canonical external reference; no claim of anonymous candidate access"
+    },
+    {
+      "url": "https://github.com/versat-labs/versat-ai-harness/issues/22",
+      "access": "Known private repository reference; optional provenance, not public proof"
+    },
+    {
+      "url": "https://learn.chatgpt.com/docs/environments/local-environment",
+      "access": "Canonical external reference; no claim of anonymous candidate access"
+    },
+    {
+      "url": "https://learn.chatgpt.com/docs/projects",
+      "access": "Canonical external reference; no claim of anonymous candidate access"
+    },
+    {
+      "url": "https://www.apache.org/licenses/LICENSE-2.0.txt",
+      "access": "Canonical external reference; no claim of anonymous candidate access"
+    }
+  ],
+  "links": [
+    {
+      "source": "README.es.md",
+      "target": "README.md"
+    },
+    {
+      "source": "README.es.md",
+      "target": "README.pt.md"
+    },
+    {
+      "source": "README.es.md",
+      "target": "README.es.md"
+    },
+    {
+      "source": "README.es.md",
+      "target": "docs/user-docs/quickstart.es.md"
+    },
+    {
+      "source": "README.es.md",
+      "target": "docs/product/overview.es.md"
+    },
+    {
+      "source": "README.es.md",
+      "target": "docs/user-docs/guides/workspace-setup.es.md"
+    },
+    {
+      "source": "README.es.md",
+      "target": "docs/user-docs/guides/sdd-with-codex.es.md"
+    },
+    {
+      "source": "README.es.md",
+      "target": "docs/user-docs/guides/github-delivery.es.md"
+    },
+    {
+      "source": "README.es.md",
+      "target": "docs/user-docs/guides/project-bootstrap.es.md"
+    },
+    {
+      "source": "README.es.md",
+      "target": "docs/user-docs/guides/project-maintenance.es.md"
+    },
+    {
+      "source": "README.es.md",
+      "target": "docs/user-docs/guides/project-audit.es.md"
+    },
+    {
+      "source": "README.es.md",
+      "target": "docs/user-docs/guides/architecture-review.es.md"
+    },
+    {
+      "source": "README.es.md",
+      "target": "docs/user-docs/guides/validation-and-evaluations.es.md"
+    },
+    {
+      "source": "README.es.md",
+      "target": "docs/licensing/candidates/apache-2.0/APPROVAL.md"
+    },
+    {
+      "source": "README.es.md",
+      "target": "docs/user-docs/guides/licensing.es.md"
+    },
+    {
+      "source": "README.es.md",
+      "target": "docs/user-docs/guides/contributing.es.md"
+    },
+    {
+      "source": "README.es.md",
+      "target": "docs/user-docs/guides/security-reporting.es.md"
+    },
+    {
+      "source": "README.es.md",
+      "target": "docs/handoffs/harness-publication-readiness/README.md"
+    },
+    {
+      "source": "README.es.md",
+      "target": "docs/user-docs/guides/workspace-setup.es.md"
+    },
+    {
+      "source": "README.es.md",
+      "target": "docs/architecture/overview.md"
+    },
+    {
+      "source": "README.es.md",
+      "target": "standards/core/agent-artifacts.md"
+    },
+    {
+      "source": "README.es.md",
+      "target": "sdd/README.md"
+    },
+    {
+      "source": "README.es.md",
+      "target": "AGENTS.md"
+    },
+    {
+      "source": "README.es.md",
+      "target": "docs/decisions/README.md"
+    },
+    {
+      "source": "README.md",
+      "target": "README.md"
+    },
+    {
+      "source": "README.md",
+      "target": "README.pt.md"
+    },
+    {
+      "source": "README.md",
+      "target": "README.es.md"
+    },
+    {
+      "source": "README.md",
+      "target": "docs/user-docs/quickstart.md"
+    },
+    {
+      "source": "README.md",
+      "target": "docs/product/overview.md"
+    },
+    {
+      "source": "README.md",
+      "target": "docs/user-docs/guides/workspace-setup.md"
+    },
+    {
+      "source": "README.md",
+      "target": "docs/user-docs/guides/sdd-with-codex.md"
+    },
+    {
+      "source": "README.md",
+      "target": "docs/user-docs/guides/github-delivery.md"
+    },
+    {
+      "source": "README.md",
+      "target": "docs/user-docs/guides/project-bootstrap.md"
+    },
+    {
+      "source": "README.md",
+      "target": "docs/user-docs/guides/project-maintenance.md"
+    },
+    {
+      "source": "README.md",
+      "target": "docs/user-docs/guides/project-audit.md"
+    },
+    {
+      "source": "README.md",
+      "target": "docs/user-docs/guides/architecture-review.md"
+    },
+    {
+      "source": "README.md",
+      "target": "docs/user-docs/guides/validation-and-evaluations.md"
+    },
+    {
+      "source": "README.md",
+      "target": "docs/licensing/candidates/apache-2.0/APPROVAL.md"
+    },
+    {
+      "source": "README.md",
+      "target": "docs/user-docs/guides/licensing.md"
+    },
+    {
+      "source": "README.md",
+      "target": "docs/user-docs/guides/contributing.md"
+    },
+    {
+      "source": "README.md",
+      "target": "docs/user-docs/guides/security-reporting.md"
+    },
+    {
+      "source": "README.md",
+      "target": "docs/handoffs/harness-publication-readiness/README.md"
+    },
+    {
+      "source": "README.md",
+      "target": "docs/user-docs/guides/workspace-setup.md"
+    },
+    {
+      "source": "README.md",
+      "target": "docs/architecture/overview.md"
+    },
+    {
+      "source": "README.md",
+      "target": "standards/core/agent-artifacts.md"
+    },
+    {
+      "source": "README.md",
+      "target": "sdd/README.md"
+    },
+    {
+      "source": "README.md",
+      "target": "AGENTS.md"
+    },
+    {
+      "source": "README.md",
+      "target": "docs/decisions/README.md"
+    },
+    {
+      "source": "README.pt.md",
+      "target": "README.md"
+    },
+    {
+      "source": "README.pt.md",
+      "target": "README.pt.md"
+    },
+    {
+      "source": "README.pt.md",
+      "target": "README.es.md"
+    },
+    {
+      "source": "README.pt.md",
+      "target": "docs/user-docs/quickstart.pt.md"
+    },
+    {
+      "source": "README.pt.md",
+      "target": "docs/product/overview.pt.md"
+    },
+    {
+      "source": "README.pt.md",
+      "target": "docs/user-docs/guides/workspace-setup.pt.md"
+    },
+    {
+      "source": "README.pt.md",
+      "target": "docs/user-docs/guides/sdd-with-codex.pt.md"
+    },
+    {
+      "source": "README.pt.md",
+      "target": "docs/user-docs/guides/github-delivery.pt.md"
+    },
+    {
+      "source": "README.pt.md",
+      "target": "docs/user-docs/guides/project-bootstrap.pt.md"
+    },
+    {
+      "source": "README.pt.md",
+      "target": "docs/user-docs/guides/project-maintenance.pt.md"
+    },
+    {
+      "source": "README.pt.md",
+      "target": "docs/user-docs/guides/project-audit.pt.md"
+    },
+    {
+      "source": "README.pt.md",
+      "target": "docs/user-docs/guides/architecture-review.pt.md"
+    },
+    {
+      "source": "README.pt.md",
+      "target": "docs/user-docs/guides/validation-and-evaluations.pt.md"
+    },
+    {
+      "source": "README.pt.md",
+      "target": "docs/licensing/candidates/apache-2.0/APPROVAL.md"
+    },
+    {
+      "source": "README.pt.md",
+      "target": "docs/user-docs/guides/licensing.pt.md"
+    },
+    {
+      "source": "README.pt.md",
+      "target": "docs/user-docs/guides/contributing.pt.md"
+    },
+    {
+      "source": "README.pt.md",
+      "target": "docs/user-docs/guides/security-reporting.pt.md"
+    },
+    {
+      "source": "README.pt.md",
+      "target": "docs/handoffs/harness-publication-readiness/README.md"
+    },
+    {
+      "source": "README.pt.md",
+      "target": "docs/user-docs/guides/workspace-setup.pt.md"
+    },
+    {
+      "source": "README.pt.md",
+      "target": "docs/architecture/overview.md"
+    },
+    {
+      "source": "README.pt.md",
+      "target": "standards/core/agent-artifacts.md"
+    },
+    {
+      "source": "README.pt.md",
+      "target": "sdd/README.md"
+    },
+    {
+      "source": "README.pt.md",
+      "target": "AGENTS.md"
+    },
+    {
+      "source": "README.pt.md",
+      "target": "docs/decisions/README.md"
+    },
+    {
+      "source": "docs/architecture/overview.md",
+      "target": "../../standards/core/agent-artifacts.md"
+    },
+    {
+      "source": "docs/architecture/overview.md",
+      "target": "../../project-templates/README.md"
+    },
+    {
+      "source": "docs/architecture/overview.md",
+      "target": "../decisions/0012-consumer-agent-artifacts.md"
+    },
+    {
+      "source": "docs/architecture/overview.md",
+      "target": "../../sdd/process.md"
+    },
+    {
+      "source": "docs/architecture/overview.md",
+      "target": "../../sdd/README.md"
+    },
+    {
+      "source": "docs/architecture/overview.md",
+      "target": "../decisions/0013-consolidated-sdd-workflow.md"
+    },
+    {
+      "source": "docs/architecture/overview.md",
+      "target": "../decisions/0014-sdd-acceptance-and-regression.md"
+    },
+    {
+      "source": "docs/architecture/overview.md",
+      "target": "../decisions/0015-explicit-test-execution-and-skill-evaluations.md"
+    },
+    {
+      "source": "docs/architecture/overview.md",
+      "target": "../guides/project-validation.md"
+    },
+    {
+      "source": "docs/architecture/overview.md",
+      "target": "../guides/skill-evaluations.md"
+    },
+    {
+      "source": "docs/architecture/overview.md",
+      "target": "../decisions/0016-public-harness-preparation-boundary.md"
+    },
+    {
+      "source": "docs/decisions/README.md",
+      "target": "0001-single-source-repository.md"
+    },
+    {
+      "source": "docs/decisions/README.md",
+      "target": "0002-separate-policy-capability-process-enforcement.md"
+    },
+    {
+      "source": "docs/decisions/README.md",
+      "target": "0003-declarative-context-resolution.md"
+    },
+    {
+      "source": "docs/decisions/README.md",
+      "target": "0004-versioned-snapshots-and-lockfiles.md"
+    },
+    {
+      "source": "docs/decisions/README.md",
+      "target": "0005-three-level-knowledge-governance.md"
+    },
+    {
+      "source": "docs/decisions/README.md",
+      "target": "0006-unified-sdd-lifecycle.md"
+    },
+    {
+      "source": "docs/decisions/README.md",
+      "target": "0007-composable-project-templates.md"
+    },
+    {
+      "source": "docs/decisions/README.md",
+      "target": "0008-hybrid-language-policy.md"
+    },
+    {
+      "source": "docs/decisions/README.md",
+      "target": "0009-execution-adapters.md"
+    },
+    {
+      "source": "docs/decisions/README.md",
+      "target": "0010-refine-language-policy.md"
+    },
+    {
+      "source": "docs/decisions/README.md",
+      "target": "0011-root-portable-plugin-package.md"
+    },
+    {
+      "source": "docs/decisions/README.md",
+      "target": "0012-consumer-agent-artifacts.md"
+    },
+    {
+      "source": "docs/decisions/README.md",
+      "target": "0013-consolidated-sdd-workflow.md"
+    },
+    {
+      "source": "docs/decisions/README.md",
+      "target": "0014-sdd-acceptance-and-regression.md"
+    },
+    {
+      "source": "docs/decisions/README.md",
+      "target": "0015-explicit-test-execution-and-skill-evaluations.md"
+    },
+    {
+      "source": "docs/decisions/README.md",
+      "target": "0016-public-harness-preparation-boundary.md"
+    },
+    {
+      "source": "docs/licensing/harness-plugin-terms.md",
+      "target": "../governance/h01-approval.md"
+    },
+    {
+      "source": "docs/licensing/harness-plugin-terms.md",
+      "target": "candidates/apache-2.0/README.md"
+    },
+    {
+      "source": "docs/licensing/harness-plugin-terms.md",
+      "target": "harness-plugin-notices.md"
+    },
+    {
+      "source": "docs/licensing/harness-plugin-terms.md",
+      "target": "../governance/h01-approval.md"
+    },
+    {
+      "source": "docs/licensing/harness-plugin-terms.md",
+      "target": "../governance/licensing-review.md"
+    },
+    {
+      "source": "docs/product/overview.es.md",
+      "target": "overview.md"
+    },
+    {
+      "source": "docs/product/overview.es.md",
+      "target": "overview.pt.md"
+    },
+    {
+      "source": "docs/product/overview.es.md",
+      "target": "overview.es.md"
+    },
+    {
+      "source": "docs/product/overview.es.md",
+      "target": "../decisions/README.md"
+    },
+    {
+      "source": "docs/product/overview.es.md",
+      "target": "../licensing/candidates/apache-2.0/APPROVAL.md"
+    },
+    {
+      "source": "docs/product/overview.es.md",
+      "target": "../user-docs/quickstart.es.md"
+    },
+    {
+      "source": "docs/product/overview.es.md",
+      "target": "../user-docs/guides/workspace-setup.es.md"
+    },
+    {
+      "source": "docs/product/overview.es.md",
+      "target": "../handoffs/harness-publication-readiness/README.md"
+    },
+    {
+      "source": "docs/product/overview.md",
+      "target": "overview.md"
+    },
+    {
+      "source": "docs/product/overview.md",
+      "target": "overview.pt.md"
+    },
+    {
+      "source": "docs/product/overview.md",
+      "target": "overview.es.md"
+    },
+    {
+      "source": "docs/product/overview.md",
+      "target": "../decisions/README.md"
+    },
+    {
+      "source": "docs/product/overview.md",
+      "target": "../licensing/candidates/apache-2.0/APPROVAL.md"
+    },
+    {
+      "source": "docs/product/overview.md",
+      "target": "../user-docs/quickstart.md"
+    },
+    {
+      "source": "docs/product/overview.md",
+      "target": "../user-docs/guides/workspace-setup.md"
+    },
+    {
+      "source": "docs/product/overview.md",
+      "target": "../handoffs/harness-publication-readiness/README.md"
+    },
+    {
+      "source": "docs/product/overview.pt.md",
+      "target": "overview.md"
+    },
+    {
+      "source": "docs/product/overview.pt.md",
+      "target": "overview.pt.md"
+    },
+    {
+      "source": "docs/product/overview.pt.md",
+      "target": "overview.es.md"
+    },
+    {
+      "source": "docs/product/overview.pt.md",
+      "target": "../decisions/README.md"
+    },
+    {
+      "source": "docs/product/overview.pt.md",
+      "target": "../licensing/candidates/apache-2.0/APPROVAL.md"
+    },
+    {
+      "source": "docs/product/overview.pt.md",
+      "target": "../user-docs/quickstart.pt.md"
+    },
+    {
+      "source": "docs/product/overview.pt.md",
+      "target": "../user-docs/guides/workspace-setup.pt.md"
+    },
+    {
+      "source": "docs/product/overview.pt.md",
+      "target": "../handoffs/harness-publication-readiness/README.md"
+    },
+    {
+      "source": "docs/user-docs/guides/contributing.es.md",
+      "target": "contributing.md"
+    },
+    {
+      "source": "docs/user-docs/guides/contributing.es.md",
+      "target": "contributing.pt.md"
+    },
+    {
+      "source": "docs/user-docs/guides/contributing.es.md",
+      "target": "contributing.es.md"
+    },
+    {
+      "source": "docs/user-docs/guides/contributing.es.md",
+      "target": "licensing.es.md"
+    },
+    {
+      "source": "docs/user-docs/guides/contributing.es.md",
+      "target": "workspace-setup.es.md"
+    },
+    {
+      "source": "docs/user-docs/guides/contributing.es.md",
+      "target": "../../../standards/core/git.md"
+    },
+    {
+      "source": "docs/user-docs/guides/contributing.es.md",
+      "target": "sdd-with-codex.es.md"
+    },
+    {
+      "source": "docs/user-docs/guides/contributing.es.md",
+      "target": "github-delivery.es.md"
+    },
+    {
+      "source": "docs/user-docs/guides/contributing.es.md",
+      "target": "../../licensing/candidates/apache-2.0/LICENSE.txt"
+    },
+    {
+      "source": "docs/user-docs/guides/contributing.es.md",
+      "target": "security-reporting.es.md"
+    },
+    {
+      "source": "docs/user-docs/guides/contributing.es.md",
+      "target": "../../../standards/core/contribution.md"
+    },
+    {
+      "source": "docs/user-docs/guides/contributing.es.md",
+      "target": "../quickstart.es.md"
+    },
+    {
+      "source": "docs/user-docs/guides/contributing.es.md",
+      "target": "../../../README.es.md"
+    },
+    {
+      "source": "docs/user-docs/guides/contributing.md",
+      "target": "contributing.md"
+    },
+    {
+      "source": "docs/user-docs/guides/contributing.md",
+      "target": "contributing.pt.md"
+    },
+    {
+      "source": "docs/user-docs/guides/contributing.md",
+      "target": "contributing.es.md"
+    },
+    {
+      "source": "docs/user-docs/guides/contributing.md",
+      "target": "licensing.md"
+    },
+    {
+      "source": "docs/user-docs/guides/contributing.md",
+      "target": "workspace-setup.md"
+    },
+    {
+      "source": "docs/user-docs/guides/contributing.md",
+      "target": "../../../standards/core/git.md"
+    },
+    {
+      "source": "docs/user-docs/guides/contributing.md",
+      "target": "sdd-with-codex.md"
+    },
+    {
+      "source": "docs/user-docs/guides/contributing.md",
+      "target": "github-delivery.md"
+    },
+    {
+      "source": "docs/user-docs/guides/contributing.md",
+      "target": "../../licensing/candidates/apache-2.0/LICENSE.txt"
+    },
+    {
+      "source": "docs/user-docs/guides/contributing.md",
+      "target": "security-reporting.md"
+    },
+    {
+      "source": "docs/user-docs/guides/contributing.md",
+      "target": "../../../standards/core/contribution.md"
+    },
+    {
+      "source": "docs/user-docs/guides/contributing.md",
+      "target": "../quickstart.md"
+    },
+    {
+      "source": "docs/user-docs/guides/contributing.md",
+      "target": "../../../README.md"
+    },
+    {
+      "source": "docs/user-docs/guides/contributing.pt.md",
+      "target": "contributing.md"
+    },
+    {
+      "source": "docs/user-docs/guides/contributing.pt.md",
+      "target": "contributing.pt.md"
+    },
+    {
+      "source": "docs/user-docs/guides/contributing.pt.md",
+      "target": "contributing.es.md"
+    },
+    {
+      "source": "docs/user-docs/guides/contributing.pt.md",
+      "target": "licensing.pt.md"
+    },
+    {
+      "source": "docs/user-docs/guides/contributing.pt.md",
+      "target": "workspace-setup.pt.md"
+    },
+    {
+      "source": "docs/user-docs/guides/contributing.pt.md",
+      "target": "../../../standards/core/git.md"
+    },
+    {
+      "source": "docs/user-docs/guides/contributing.pt.md",
+      "target": "sdd-with-codex.pt.md"
+    },
+    {
+      "source": "docs/user-docs/guides/contributing.pt.md",
+      "target": "github-delivery.pt.md"
+    },
+    {
+      "source": "docs/user-docs/guides/contributing.pt.md",
+      "target": "../../licensing/candidates/apache-2.0/LICENSE.txt"
+    },
+    {
+      "source": "docs/user-docs/guides/contributing.pt.md",
+      "target": "security-reporting.pt.md"
+    },
+    {
+      "source": "docs/user-docs/guides/contributing.pt.md",
+      "target": "../../../standards/core/contribution.md"
+    },
+    {
+      "source": "docs/user-docs/guides/contributing.pt.md",
+      "target": "../quickstart.pt.md"
+    },
+    {
+      "source": "docs/user-docs/guides/contributing.pt.md",
+      "target": "../../../README.pt.md"
+    },
+    {
+      "source": "docs/user-docs/guides/github-delivery.es.md",
+      "target": "github-delivery.md"
+    },
+    {
+      "source": "docs/user-docs/guides/github-delivery.es.md",
+      "target": "github-delivery.pt.md"
+    },
+    {
+      "source": "docs/user-docs/guides/github-delivery.es.md",
+      "target": "github-delivery.es.md"
+    },
+    {
+      "source": "docs/user-docs/guides/github-delivery.es.md",
+      "target": "../../../standards/core/git.md"
+    },
+    {
+      "source": "docs/user-docs/guides/github-delivery.es.md",
+      "target": "../../../sdd/README.md"
+    },
+    {
+      "source": "docs/user-docs/guides/github-delivery.es.md",
+      "target": "../../../validators/sdd/README.md"
+    },
+    {
+      "source": "docs/user-docs/guides/github-delivery.es.md",
+      "target": "../quickstart.es.md"
+    },
+    {
+      "source": "docs/user-docs/guides/github-delivery.es.md",
+      "target": "../../../README.es.md"
+    },
+    {
+      "source": "docs/user-docs/guides/github-delivery.md",
+      "target": "github-delivery.md"
+    },
+    {
+      "source": "docs/user-docs/guides/github-delivery.md",
+      "target": "github-delivery.pt.md"
+    },
+    {
+      "source": "docs/user-docs/guides/github-delivery.md",
+      "target": "github-delivery.es.md"
+    },
+    {
+      "source": "docs/user-docs/guides/github-delivery.md",
+      "target": "../../../standards/core/git.md"
+    },
+    {
+      "source": "docs/user-docs/guides/github-delivery.md",
+      "target": "../../../sdd/README.md"
+    },
+    {
+      "source": "docs/user-docs/guides/github-delivery.md",
+      "target": "../../../validators/sdd/README.md"
+    },
+    {
+      "source": "docs/user-docs/guides/github-delivery.md",
+      "target": "../quickstart.md"
+    },
+    {
+      "source": "docs/user-docs/guides/github-delivery.md",
+      "target": "../../../README.md"
+    },
+    {
+      "source": "docs/user-docs/guides/github-delivery.pt.md",
+      "target": "github-delivery.md"
+    },
+    {
+      "source": "docs/user-docs/guides/github-delivery.pt.md",
+      "target": "github-delivery.pt.md"
+    },
+    {
+      "source": "docs/user-docs/guides/github-delivery.pt.md",
+      "target": "github-delivery.es.md"
+    },
+    {
+      "source": "docs/user-docs/guides/github-delivery.pt.md",
+      "target": "../../../standards/core/git.md"
+    },
+    {
+      "source": "docs/user-docs/guides/github-delivery.pt.md",
+      "target": "../../../sdd/README.md"
+    },
+    {
+      "source": "docs/user-docs/guides/github-delivery.pt.md",
+      "target": "../../../validators/sdd/README.md"
+    },
+    {
+      "source": "docs/user-docs/guides/github-delivery.pt.md",
+      "target": "../quickstart.pt.md"
+    },
+    {
+      "source": "docs/user-docs/guides/github-delivery.pt.md",
+      "target": "../../../README.pt.md"
+    },
+    {
+      "source": "docs/user-docs/guides/licensing.es.md",
+      "target": "licensing.md"
+    },
+    {
+      "source": "docs/user-docs/guides/licensing.es.md",
+      "target": "licensing.pt.md"
+    },
+    {
+      "source": "docs/user-docs/guides/licensing.es.md",
+      "target": "licensing.es.md"
+    },
+    {
+      "source": "docs/user-docs/guides/licensing.es.md",
+      "target": "../../licensing/candidates/apache-2.0/APPROVAL.md"
+    },
+    {
+      "source": "docs/user-docs/guides/licensing.es.md",
+      "target": "../../../standards/core/licensing-publication.md"
+    },
+    {
+      "source": "docs/user-docs/guides/licensing.es.md",
+      "target": "../../handoffs/harness-publication-readiness/README.md"
+    },
+    {
+      "source": "docs/user-docs/guides/licensing.es.md",
+      "target": "contributing.es.md"
+    },
+    {
+      "source": "docs/user-docs/guides/licensing.es.md",
+      "target": "../quickstart.es.md"
+    },
+    {
+      "source": "docs/user-docs/guides/licensing.es.md",
+      "target": "../../../README.es.md"
+    },
+    {
+      "source": "docs/user-docs/guides/licensing.md",
+      "target": "licensing.md"
+    },
+    {
+      "source": "docs/user-docs/guides/licensing.md",
+      "target": "licensing.pt.md"
+    },
+    {
+      "source": "docs/user-docs/guides/licensing.md",
+      "target": "licensing.es.md"
+    },
+    {
+      "source": "docs/user-docs/guides/licensing.md",
+      "target": "../../licensing/candidates/apache-2.0/APPROVAL.md"
+    },
+    {
+      "source": "docs/user-docs/guides/licensing.md",
+      "target": "../../../standards/core/licensing-publication.md"
+    },
+    {
+      "source": "docs/user-docs/guides/licensing.md",
+      "target": "../../handoffs/harness-publication-readiness/README.md"
+    },
+    {
+      "source": "docs/user-docs/guides/licensing.md",
+      "target": "contributing.md"
+    },
+    {
+      "source": "docs/user-docs/guides/licensing.md",
+      "target": "../quickstart.md"
+    },
+    {
+      "source": "docs/user-docs/guides/licensing.md",
+      "target": "../../../README.md"
+    },
+    {
+      "source": "docs/user-docs/guides/licensing.pt.md",
+      "target": "licensing.md"
+    },
+    {
+      "source": "docs/user-docs/guides/licensing.pt.md",
+      "target": "licensing.pt.md"
+    },
+    {
+      "source": "docs/user-docs/guides/licensing.pt.md",
+      "target": "licensing.es.md"
+    },
+    {
+      "source": "docs/user-docs/guides/licensing.pt.md",
+      "target": "../../licensing/candidates/apache-2.0/APPROVAL.md"
+    },
+    {
+      "source": "docs/user-docs/guides/licensing.pt.md",
+      "target": "../../../standards/core/licensing-publication.md"
+    },
+    {
+      "source": "docs/user-docs/guides/licensing.pt.md",
+      "target": "../../handoffs/harness-publication-readiness/README.md"
+    },
+    {
+      "source": "docs/user-docs/guides/licensing.pt.md",
+      "target": "contributing.pt.md"
+    },
+    {
+      "source": "docs/user-docs/guides/licensing.pt.md",
+      "target": "../quickstart.pt.md"
+    },
+    {
+      "source": "docs/user-docs/guides/licensing.pt.md",
+      "target": "../../../README.pt.md"
+    },
+    {
+      "source": "docs/user-docs/guides/sdd-with-codex.es.md",
+      "target": "sdd-with-codex.md"
+    },
+    {
+      "source": "docs/user-docs/guides/sdd-with-codex.es.md",
+      "target": "sdd-with-codex.pt.md"
+    },
+    {
+      "source": "docs/user-docs/guides/sdd-with-codex.es.md",
+      "target": "sdd-with-codex.es.md"
+    },
+    {
+      "source": "docs/user-docs/guides/sdd-with-codex.es.md",
+      "target": "../../../sdd/README.md"
+    },
+    {
+      "source": "docs/user-docs/guides/sdd-with-codex.es.md",
+      "target": "../../../sdd/process.md"
+    },
+    {
+      "source": "docs/user-docs/guides/sdd-with-codex.es.md",
+      "target": "../../../sdd/metadata.md"
+    },
+    {
+      "source": "docs/user-docs/guides/sdd-with-codex.es.md",
+      "target": "../quickstart.es.md"
+    },
+    {
+      "source": "docs/user-docs/guides/sdd-with-codex.es.md",
+      "target": "../../../README.es.md"
+    },
+    {
+      "source": "docs/user-docs/guides/sdd-with-codex.md",
+      "target": "sdd-with-codex.md"
+    },
+    {
+      "source": "docs/user-docs/guides/sdd-with-codex.md",
+      "target": "sdd-with-codex.pt.md"
+    },
+    {
+      "source": "docs/user-docs/guides/sdd-with-codex.md",
+      "target": "sdd-with-codex.es.md"
+    },
+    {
+      "source": "docs/user-docs/guides/sdd-with-codex.md",
+      "target": "../../../sdd/README.md"
+    },
+    {
+      "source": "docs/user-docs/guides/sdd-with-codex.md",
+      "target": "../../../sdd/process.md"
+    },
+    {
+      "source": "docs/user-docs/guides/sdd-with-codex.md",
+      "target": "../../../sdd/metadata.md"
+    },
+    {
+      "source": "docs/user-docs/guides/sdd-with-codex.md",
+      "target": "../quickstart.md"
+    },
+    {
+      "source": "docs/user-docs/guides/sdd-with-codex.md",
+      "target": "../../../README.md"
+    },
+    {
+      "source": "docs/user-docs/guides/sdd-with-codex.pt.md",
+      "target": "sdd-with-codex.md"
+    },
+    {
+      "source": "docs/user-docs/guides/sdd-with-codex.pt.md",
+      "target": "sdd-with-codex.pt.md"
+    },
+    {
+      "source": "docs/user-docs/guides/sdd-with-codex.pt.md",
+      "target": "sdd-with-codex.es.md"
+    },
+    {
+      "source": "docs/user-docs/guides/sdd-with-codex.pt.md",
+      "target": "../../../sdd/README.md"
+    },
+    {
+      "source": "docs/user-docs/guides/sdd-with-codex.pt.md",
+      "target": "../../../sdd/process.md"
+    },
+    {
+      "source": "docs/user-docs/guides/sdd-with-codex.pt.md",
+      "target": "../../../sdd/metadata.md"
+    },
+    {
+      "source": "docs/user-docs/guides/sdd-with-codex.pt.md",
+      "target": "../quickstart.pt.md"
+    },
+    {
+      "source": "docs/user-docs/guides/sdd-with-codex.pt.md",
+      "target": "../../../README.pt.md"
+    },
+    {
+      "source": "docs/user-docs/guides/security-reporting.es.md",
+      "target": "security-reporting.md"
+    },
+    {
+      "source": "docs/user-docs/guides/security-reporting.es.md",
+      "target": "security-reporting.pt.md"
+    },
+    {
+      "source": "docs/user-docs/guides/security-reporting.es.md",
+      "target": "security-reporting.es.md"
+    },
+    {
+      "source": "docs/user-docs/guides/security-reporting.es.md",
+      "target": "../../../standards/core/security.md"
+    },
+    {
+      "source": "docs/user-docs/guides/security-reporting.es.md",
+      "target": "../../handoffs/harness-publication-readiness/README.md"
+    },
+    {
+      "source": "docs/user-docs/guides/security-reporting.es.md",
+      "target": "contributing.es.md"
+    },
+    {
+      "source": "docs/user-docs/guides/security-reporting.es.md",
+      "target": "../quickstart.es.md"
+    },
+    {
+      "source": "docs/user-docs/guides/security-reporting.es.md",
+      "target": "../../../README.es.md"
+    },
+    {
+      "source": "docs/user-docs/guides/security-reporting.md",
+      "target": "security-reporting.md"
+    },
+    {
+      "source": "docs/user-docs/guides/security-reporting.md",
+      "target": "security-reporting.pt.md"
+    },
+    {
+      "source": "docs/user-docs/guides/security-reporting.md",
+      "target": "security-reporting.es.md"
+    },
+    {
+      "source": "docs/user-docs/guides/security-reporting.md",
+      "target": "../../../standards/core/security.md"
+    },
+    {
+      "source": "docs/user-docs/guides/security-reporting.md",
+      "target": "../../handoffs/harness-publication-readiness/README.md"
+    },
+    {
+      "source": "docs/user-docs/guides/security-reporting.md",
+      "target": "contributing.md"
+    },
+    {
+      "source": "docs/user-docs/guides/security-reporting.md",
+      "target": "../quickstart.md"
+    },
+    {
+      "source": "docs/user-docs/guides/security-reporting.md",
+      "target": "../../../README.md"
+    },
+    {
+      "source": "docs/user-docs/guides/security-reporting.pt.md",
+      "target": "security-reporting.md"
+    },
+    {
+      "source": "docs/user-docs/guides/security-reporting.pt.md",
+      "target": "security-reporting.pt.md"
+    },
+    {
+      "source": "docs/user-docs/guides/security-reporting.pt.md",
+      "target": "security-reporting.es.md"
+    },
+    {
+      "source": "docs/user-docs/guides/security-reporting.pt.md",
+      "target": "../../../standards/core/security.md"
+    },
+    {
+      "source": "docs/user-docs/guides/security-reporting.pt.md",
+      "target": "../../handoffs/harness-publication-readiness/README.md"
+    },
+    {
+      "source": "docs/user-docs/guides/security-reporting.pt.md",
+      "target": "contributing.pt.md"
+    },
+    {
+      "source": "docs/user-docs/guides/security-reporting.pt.md",
+      "target": "../quickstart.pt.md"
+    },
+    {
+      "source": "docs/user-docs/guides/security-reporting.pt.md",
+      "target": "../../../README.pt.md"
+    },
+    {
+      "source": "docs/user-docs/guides/workspace-setup.es.md",
+      "target": "workspace-setup.md"
+    },
+    {
+      "source": "docs/user-docs/guides/workspace-setup.es.md",
+      "target": "workspace-setup.pt.md"
+    },
+    {
+      "source": "docs/user-docs/guides/workspace-setup.es.md",
+      "target": "workspace-setup.es.md"
+    },
+    {
+      "source": "docs/user-docs/guides/workspace-setup.es.md",
+      "target": "../quickstart.es.md"
+    },
+    {
+      "source": "docs/user-docs/guides/workspace-setup.es.md",
+      "target": "../../handoffs/harness-publication-readiness/README.md"
+    },
+    {
+      "source": "docs/user-docs/guides/workspace-setup.md",
+      "target": "workspace-setup.md"
+    },
+    {
+      "source": "docs/user-docs/guides/workspace-setup.md",
+      "target": "workspace-setup.pt.md"
+    },
+    {
+      "source": "docs/user-docs/guides/workspace-setup.md",
+      "target": "workspace-setup.es.md"
+    },
+    {
+      "source": "docs/user-docs/guides/workspace-setup.md",
+      "target": "../quickstart.md"
+    },
+    {
+      "source": "docs/user-docs/guides/workspace-setup.md",
+      "target": "../../handoffs/harness-publication-readiness/README.md"
+    },
+    {
+      "source": "docs/user-docs/guides/workspace-setup.pt.md",
+      "target": "workspace-setup.md"
+    },
+    {
+      "source": "docs/user-docs/guides/workspace-setup.pt.md",
+      "target": "workspace-setup.pt.md"
+    },
+    {
+      "source": "docs/user-docs/guides/workspace-setup.pt.md",
+      "target": "workspace-setup.es.md"
+    },
+    {
+      "source": "docs/user-docs/guides/workspace-setup.pt.md",
+      "target": "../quickstart.pt.md"
+    },
+    {
+      "source": "docs/user-docs/guides/workspace-setup.pt.md",
+      "target": "../../handoffs/harness-publication-readiness/README.md"
+    },
+    {
+      "source": "docs/user-docs/quickstart.es.md",
+      "target": "quickstart.md"
+    },
+    {
+      "source": "docs/user-docs/quickstart.es.md",
+      "target": "quickstart.pt.md"
+    },
+    {
+      "source": "docs/user-docs/quickstart.es.md",
+      "target": "quickstart.es.md"
+    },
+    {
+      "source": "docs/user-docs/quickstart.es.md",
+      "target": "guides/workspace-setup.es.md"
+    },
+    {
+      "source": "docs/user-docs/quickstart.es.md",
+      "target": "guides/sdd-with-codex.es.md"
+    },
+    {
+      "source": "docs/user-docs/quickstart.es.md",
+      "target": "guides/github-delivery.es.md"
+    },
+    {
+      "source": "docs/user-docs/quickstart.es.md",
+      "target": "guides/validation-and-evaluations.es.md"
+    },
+    {
+      "source": "docs/user-docs/quickstart.es.md",
+      "target": "../../sdd/README.md"
+    },
+    {
+      "source": "docs/user-docs/quickstart.md",
+      "target": "quickstart.md"
+    },
+    {
+      "source": "docs/user-docs/quickstart.md",
+      "target": "quickstart.pt.md"
+    },
+    {
+      "source": "docs/user-docs/quickstart.md",
+      "target": "quickstart.es.md"
+    },
+    {
+      "source": "docs/user-docs/quickstart.md",
+      "target": "guides/workspace-setup.md"
+    },
+    {
+      "source": "docs/user-docs/quickstart.md",
+      "target": "guides/sdd-with-codex.md"
+    },
+    {
+      "source": "docs/user-docs/quickstart.md",
+      "target": "guides/github-delivery.md"
+    },
+    {
+      "source": "docs/user-docs/quickstart.md",
+      "target": "guides/validation-and-evaluations.md"
+    },
+    {
+      "source": "docs/user-docs/quickstart.md",
+      "target": "../../sdd/README.md"
+    },
+    {
+      "source": "docs/user-docs/quickstart.pt.md",
+      "target": "quickstart.md"
+    },
+    {
+      "source": "docs/user-docs/quickstart.pt.md",
+      "target": "quickstart.pt.md"
+    },
+    {
+      "source": "docs/user-docs/quickstart.pt.md",
+      "target": "quickstart.es.md"
+    },
+    {
+      "source": "docs/user-docs/quickstart.pt.md",
+      "target": "guides/workspace-setup.pt.md"
+    },
+    {
+      "source": "docs/user-docs/quickstart.pt.md",
+      "target": "guides/sdd-with-codex.pt.md"
+    },
+    {
+      "source": "docs/user-docs/quickstart.pt.md",
+      "target": "guides/github-delivery.pt.md"
+    },
+    {
+      "source": "docs/user-docs/quickstart.pt.md",
+      "target": "guides/validation-and-evaluations.pt.md"
+    },
+    {
+      "source": "docs/user-docs/quickstart.pt.md",
+      "target": "../../sdd/README.md"
+    },
+    {
+      "source": "standards/core/contribution.md",
+      "target": "git.md"
+    },
+    {
+      "source": "standards/core/contribution.md",
+      "target": "testing.md"
+    },
+    {
+      "source": "standards/core/contribution.md",
+      "target": "../../sdd/process.md"
+    },
+    {
+      "source": "standards/core/contribution.md",
+      "target": "licensing-publication.md"
+    },
+    {
+      "source": "standards/core/contribution.md",
+      "target": "security.md"
+    },
+    {
+      "source": "standards/core/contribution.md",
+      "target": "language.md"
+    },
+    {
+      "source": "standards/core/contribution.md",
+      "target": "../../docs/user-docs/guides/contributing.md"
+    },
+    {
+      "source": "standards/core/contribution.md",
+      "target": "../../docs/user-docs/guides/security-reporting.md"
+    },
+    {
+      "source": "standards/core/licensing-publication.md",
+      "target": "../index.yaml"
+    },
+    {
+      "source": "standards/core/licensing-publication.md",
+      "target": "security.md"
+    },
+    {
+      "source": "standards/core/licensing-publication.md",
+      "target": "git.md"
+    },
+    {
+      "source": "standards/core/licensing-publication.md",
+      "target": "testing.md"
+    },
+    {
+      "source": "standards/core/licensing-publication.md",
+      "target": "documentation.md"
+    },
+    {
+      "source": "standards/core/licensing-publication.md",
+      "target": "language.md"
+    },
+    {
+      "source": "standards/core/licensing-publication.md",
+      "target": "../../docs/user-docs/guides/licensing.md"
+    },
+    {
+      "source": "standards/core/security.md",
+      "target": "../../docs/user-docs/guides/security-reporting.md"
+    },
+    {
+      "source": "CONTRIBUTING.es.md",
+      "target": "CONTRIBUTING.md"
+    },
+    {
+      "source": "CONTRIBUTING.es.md",
+      "target": "CONTRIBUTING.pt.md"
+    },
+    {
+      "source": "CONTRIBUTING.es.md",
+      "target": "CONTRIBUTING.es.md"
+    },
+    {
+      "source": "CONTRIBUTING.es.md",
+      "target": "docs/user-docs/guides/contributing.es.md"
+    },
+    {
+      "source": "CONTRIBUTING.md",
+      "target": "CONTRIBUTING.md"
+    },
+    {
+      "source": "CONTRIBUTING.md",
+      "target": "CONTRIBUTING.pt.md"
+    },
+    {
+      "source": "CONTRIBUTING.md",
+      "target": "CONTRIBUTING.es.md"
+    },
+    {
+      "source": "CONTRIBUTING.md",
+      "target": "docs/user-docs/guides/contributing.md"
+    },
+    {
+      "source": "CONTRIBUTING.pt.md",
+      "target": "CONTRIBUTING.md"
+    },
+    {
+      "source": "CONTRIBUTING.pt.md",
+      "target": "CONTRIBUTING.pt.md"
+    },
+    {
+      "source": "CONTRIBUTING.pt.md",
+      "target": "CONTRIBUTING.es.md"
+    },
+    {
+      "source": "CONTRIBUTING.pt.md",
+      "target": "docs/user-docs/guides/contributing.pt.md"
+    },
+    {
+      "source": "SECURITY.es.md",
+      "target": "SECURITY.md"
+    },
+    {
+      "source": "SECURITY.es.md",
+      "target": "SECURITY.pt.md"
+    },
+    {
+      "source": "SECURITY.es.md",
+      "target": "SECURITY.es.md"
+    },
+    {
+      "source": "SECURITY.es.md",
+      "target": "docs/user-docs/guides/security-reporting.es.md"
+    },
+    {
+      "source": "SECURITY.md",
+      "target": "SECURITY.md"
+    },
+    {
+      "source": "SECURITY.md",
+      "target": "SECURITY.pt.md"
+    },
+    {
+      "source": "SECURITY.md",
+      "target": "SECURITY.es.md"
+    },
+    {
+      "source": "SECURITY.md",
+      "target": "docs/user-docs/guides/security-reporting.md"
+    },
+    {
+      "source": "SECURITY.pt.md",
+      "target": "SECURITY.md"
+    },
+    {
+      "source": "SECURITY.pt.md",
+      "target": "SECURITY.pt.md"
+    },
+    {
+      "source": "SECURITY.pt.md",
+      "target": "SECURITY.es.md"
+    },
+    {
+      "source": "SECURITY.pt.md",
+      "target": "docs/user-docs/guides/security-reporting.pt.md"
+    },
+    {
+      "source": "docs/handoffs/harness-publication-readiness/README.md",
+      "target": "../../licensing/candidates/apache-2.0/APPROVAL.md"
+    },
+    {
+      "source": "docs/handoffs/harness-publication-readiness/README.md",
+      "target": "adoption.patch"
+    },
+    {
+      "source": "docs/handoffs/harness-publication-readiness/README.md",
+      "target": "adoption.json"
+    },
+    {
+      "source": "docs/handoffs/harness-publication-readiness/README.md",
+      "target": "review-inputs.json"
+    },
+    {
+      "source": "docs/handoffs/harness-publication-readiness/README.md",
+      "target": "../../validation/harness-publication-readiness/"
+    },
+    {
+      "source": "docs/handoffs/harness-publication-readiness/README.md",
+      "target": "review-inputs.json"
+    },
+    {
+      "source": "docs/licensing/candidates/apache-2.0/APPROVAL.md",
+      "target": "review.json"
+    },
+    {
+      "source": "docs/licensing/candidates/apache-2.0/APPROVAL.md",
+      "target": "README.md"
+    },
+    {
+      "source": "docs/licensing/candidates/apache-2.0/README.md",
+      "target": "LICENSE.txt"
+    },
+    {
+      "source": "docs/licensing/candidates/apache-2.0/README.md",
+      "target": "NOTICE.txt"
+    },
+    {
+      "source": "docs/licensing/candidates/apache-2.0/README.md",
+      "target": "THIRD-PARTY-NOTICES.md"
+    },
+    {
+      "source": "docs/licensing/candidates/apache-2.0/README.md",
+      "target": "SCOPE.md"
+    },
+    {
+      "source": "docs/licensing/candidates/apache-2.0/README.md",
+      "target": "scope-files.csv"
+    },
+    {
+      "source": "docs/licensing/candidates/apache-2.0/README.md",
+      "target": "review.json"
+    },
+    {
+      "source": "docs/licensing/candidates/apache-2.0/README.md",
+      "target": "../../../handoffs/harness-publication-readiness/README.md"
+    },
+    {
+      "source": "docs/licensing/candidates/apache-2.0/README.md",
+      "target": "../../../user-docs/guides/licensing.md"
+    },
+    {
+      "source": "docs/licensing/candidates/apache-2.0/README.md",
+      "target": "../../../user-docs/guides/licensing.pt.md"
+    },
+    {
+      "source": "docs/licensing/candidates/apache-2.0/README.md",
+      "target": "../../../user-docs/guides/licensing.es.md"
+    },
+    {
+      "source": "docs/licensing/candidates/apache-2.0/SCOPE.md",
+      "target": "LICENSE.txt"
+    },
+    {
+      "source": "docs/licensing/candidates/apache-2.0/THIRD-PARTY-NOTICES.md",
+      "target": "../../technical-review/dependency-license-texts/"
+    }
+  ],
+  "semantic_review": "EN/PT/ES permissions, candidate status, independent product terms, gates, fallback, current private client route and public limitations compared; Issue 22 provenance and environmental caution retained. English-only canonical technical sources remain English."
+}

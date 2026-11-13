@@ -1,0 +1,1799 @@
+{
+  "status": "Prepared semantic observations; not entered as final acceptance until all current checks pass",
+  "records": [
+    {
+      "obligation": {
+        "local": {
+          "requirement": "REQ-001",
+          "scenario": 1
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-001"
+      ],
+      "evidence": "docs/validation/harness-publication-readiness/attempt-04/semantic-assessments.json",
+      "explanation": "Apache scope identifies replacement of former sections 2\u20134; approved exact 16-file package and frozen proprietary evidence remain separately attributable."
+    },
+    {
+      "obligation": {
+        "local": {
+          "requirement": "REQ-001",
+          "scenario": 2
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-001"
+      ],
+      "evidence": "docs/validation/harness-publication-readiness/attempt-04/semantic-assessments.json",
+      "explanation": "LICENSE/NOTICE/SCOPE cover eligible first-party code, docs and templates; upstream texts preserved; commercial use and forks conditional on terms; unrelated destination material independent."
+    },
+    {
+      "obligation": {
+        "local": {
+          "requirement": "REQ-001",
+          "scenario": 3
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-001"
+      ],
+      "evidence": "docs/validation/harness-publication-readiness/attempt-04/semantic-assessments.json",
+      "explanation": "Actual user answer binds R1 digest and declared company-approver capacity. No effective date, specialist clearance, extra CLA/DCO or root license inferred."
+    },
+    {
+      "obligation": {
+        "local": {
+          "requirement": "REQ-002",
+          "scenario": 1
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-001",
+        "CHECK-002"
+      ],
+      "evidence": "docs/validation/harness-publication-readiness/attempt-04/semantic-assessments.json",
+      "explanation": "Private component assessment reuses bounded H01 owner declaration and seven exact upstream texts. Current candidate manifest includes authorized documentation delta; installed packages remain separately distributed."
+    },
+    {
+      "obligation": {
+        "local": {
+          "requirement": "REQ-002",
+          "scenario": 2
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-001",
+        "CHECK-002"
+      ],
+      "evidence": "docs/validation/harness-publication-readiness/attempt-04/semantic-assessments.json",
+      "explanation": "Missing grants, incompatible bundling and missing reviewer walkthroughs defer to owner and actual evidence; no scan or authorship substitutes for clearance."
+    },
+    {
+      "obligation": {
+        "local": {
+          "requirement": "REQ-002",
+          "scenario": 3
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-001",
+        "CHECK-002"
+      ],
+      "evidence": "docs/validation/harness-publication-readiness/attempt-04/semantic-assessments.json",
+      "explanation": "HPR-PRIVATE-01 bound revision records source, date/method, declared capacity, dependency mode and limitations; sensitive source evidence stays outside Harness."
+    },
+    {
+      "obligation": {
+        "local": {
+          "requirement": "REQ-003",
+          "scenario": 1
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-002"
+      ],
+      "evidence": "docs/validation/harness-publication-readiness/attempt-04/semantic-assessments.json",
+      "explanation": "Sixteen categories cover current tree, all reachable blobs, refs, service content, CI and controls with observed/inaccessible distinctions."
+    },
+    {
+      "obligation": {
+        "local": {
+          "requirement": "REQ-003",
+          "scenario": 2
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-002"
+      ],
+      "evidence": "docs/validation/harness-publication-readiness/attempt-04/semantic-assessments.json",
+      "explanation": "Sensitive historical-reference findings remain privately retained and defer exposure; unchanged original history is not cleared by current-guide cleanup."
+    },
+    {
+      "obligation": {
+        "local": {
+          "requirement": "REQ-003",
+          "scenario": 3
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-002"
+      ],
+      "evidence": "docs/validation/harness-publication-readiness/attempt-04/semantic-assessments.json",
+      "explanation": "Unavailable packages/cache/external payloads remain unverified. Runbook stops on drift and requires separately governed remediation/destination changes."
+    },
+    {
+      "obligation": {
+        "local": {
+          "requirement": "REQ-004",
+          "scenario": 1
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-003",
+        "CHECK-004",
+        "CHECK-009"
+      ],
+      "evidence": "docs/validation/harness-publication-readiness/attempt-04/semantic-assessments.json",
+      "explanation": "Both roots pass package validation; private patch coherently selects 0.4.0 and all five installed Skills resolve canonical same-root resources."
+    },
+    {
+      "obligation": {
+        "local": {
+          "requirement": "REQ-004",
+          "scenario": 2
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-003",
+        "CHECK-004",
+        "CHECK-009"
+      ],
+      "evidence": "docs/validation/harness-publication-readiness/attempt-04/semantic-assessments.json",
+      "explanation": "Preparation metadata remains 0.3.0 and marketplace identity unchanged; actual installer rejects unavailable v0.4.0. No tag or automatic consumer update."
+    },
+    {
+      "obligation": {
+        "local": {
+          "requirement": "REQ-004",
+          "scenario": 3
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-003",
+        "CHECK-004",
+        "CHECK-009"
+      ],
+      "evidence": "docs/validation/harness-publication-readiness/attempt-04/semantic-assessments.json",
+      "explanation": "Synthetic compatible provider/config pair migrated explicitly, unsafe old-provider selection refused; prior verified state retained on failed personal update."
+    },
+    {
+      "obligation": {
+        "local": {
+          "requirement": "REQ-005",
+          "scenario": 1
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-004",
+        "CHECK-007"
+      ],
+      "evidence": "docs/validation/harness-publication-readiness/attempt-04/semantic-assessments.json",
+      "explanation": "Actual personal installation plus fresh native scenario produced only Proposal/Requirements, null approval and Gate 1 stop; independent validator and file comparison passed."
+    },
+    {
+      "obligation": {
+        "local": {
+          "requirement": "REQ-005",
+          "scenario": 2
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-004",
+        "CHECK-007"
+      ],
+      "evidence": "docs/validation/harness-publication-readiness/attempt-04/semantic-assessments.json",
+      "explanation": "Real wrapper rejects missing provider/resources and wrong pinned provider; actual client rejects missing ref/source and preserves installed cache/config."
+    },
+    {
+      "obligation": {
+        "local": {
+          "requirement": "REQ-005",
+          "scenario": 3
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-004",
+        "CHECK-007"
+      ],
+      "evidence": "docs/validation/harness-publication-readiness/attempt-04/semantic-assessments.json",
+      "explanation": "Synthetic old/new full commits and Standards locks recorded; full wrapper succeeds before and after explicit migration, failed update retains verified candidate pair."
+    },
+    {
+      "obligation": {
+        "local": {
+          "requirement": "REQ-005",
+          "scenario": 4
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-010"
+      ],
+      "evidence": "docs/validation/harness-publication-readiness/attempt-04/semantic-assessments.json",
+      "explanation": "Runbook requires future intended external user without private membership; same-user rehearsal explicitly provides no anonymous/public acceptance."
+    },
+    {
+      "obligation": {
+        "local": {
+          "requirement": "REQ-006",
+          "scenario": 1
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-005"
+      ],
+      "evidence": "docs/validation/harness-publication-readiness/attempt-04/semantic-assessments.json",
+      "explanation": "Contribution route covers real target/issue, provenance, terms, setup, SDD, fork/branch/PR/checks and maintainer decisions; synthetic local patch exercised without submission."
+    },
+    {
+      "obligation": {
+        "local": {
+          "requirement": "REQ-006",
+          "scenario": 2
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-005"
+      ],
+      "evidence": "docs/validation/harness-publication-readiness/attempt-04/semantic-assessments.json",
+      "explanation": "Reviewed CODEOWNERS and read-only PR workflow against actual private control observations; unprotected main/inaccessible rules remain operational blockers."
+    },
+    {
+      "obligation": {
+        "local": {
+          "requirement": "REQ-006",
+          "scenario": 3
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-005"
+      ],
+      "evidence": "docs/validation/harness-publication-readiness/attempt-04/semantic-assessments.json",
+      "explanation": "No controls or external PR changed; runbook requires separate scope and post-visibility verification. Missing rights/control walkthroughs prevent acceptance."
+    },
+    {
+      "obligation": {
+        "local": {
+          "requirement": "REQ-007",
+          "scenario": 1
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-006"
+      ],
+      "evidence": "docs/validation/harness-publication-readiness/attempt-04/semantic-assessments.json",
+      "explanation": "Original H02 pilot/internal-receipt files byte-identical; existing owner and CODEOWNERS retained, no transferred public proof."
+    },
+    {
+      "obligation": {
+        "local": {
+          "requirement": "REQ-007",
+          "scenario": 2
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-006"
+      ],
+      "evidence": "docs/validation/harness-publication-readiness/attempt-04/semantic-assessments.json",
+      "explanation": "PVR is intended, not active-verified; protocol specifies actual destination/audience/recipients, non-sensitive marker, receipt and unauthorized-viewer exclusion under separate authority."
+    },
+    {
+      "obligation": {
+        "local": {
+          "requirement": "REQ-007",
+          "scenario": 3
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-006"
+      ],
+      "evidence": "docs/validation/harness-publication-readiness/attempt-04/semantic-assessments.json",
+      "explanation": "Unavailable/denied/changed-route walkthroughs retain unverified state and non-sensitive instructions fallback; no internal address, exploit payload or invented SLA."
+    },
+    {
+      "obligation": {
+        "local": {
+          "requirement": "REQ-008",
+          "scenario": 1
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-002",
+        "CHECK-007"
+      ],
+      "evidence": "docs/validation/harness-publication-readiness/attempt-04/semantic-assessments.json",
+      "explanation": "Reviewed EN/PT/ES purpose, ownership, status, setup, results and recovery; relative navigation/anchors checked and original Issue 22/social-environment context retained."
+    },
+    {
+      "obligation": {
+        "local": {
+          "requirement": "REQ-008",
+          "scenario": 2
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-002",
+        "CHECK-007"
+      ],
+      "evidence": "docs/validation/harness-publication-readiness/attempt-04/semantic-assessments.json",
+      "explanation": "New maintained guides remove private recording dependencies and use safe optional provenance; immutable internal history remains a separate exposure blocker."
+    },
+    {
+      "obligation": {
+        "local": {
+          "requirement": "REQ-008",
+          "scenario": 3
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-002",
+        "CHECK-007"
+      ],
+      "evidence": "docs/validation/harness-publication-readiness/attempt-04/semantic-assessments.json",
+      "explanation": "Actual private installer/wrapper/native observations match documented steps; translations preserve gates and limits; maintained guides stay outside movable dossier."
+    },
+    {
+      "obligation": {
+        "local": {
+          "requirement": "REQ-009",
+          "scenario": 1
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-010",
+        "CHECK-009"
+      ],
+      "evidence": "docs/validation/harness-publication-readiness/attempt-04/semantic-assessments.json",
+      "explanation": "Exact private candidate manifest, patch, text review and private assessment references distinguish preparation, defer, adoption, release and migration states."
+    },
+    {
+      "obligation": {
+        "local": {
+          "requirement": "REQ-009",
+          "scenario": 2
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-010",
+        "CHECK-009"
+      ],
+      "evidence": "docs/validation/harness-publication-readiness/attempt-04/semantic-assessments.json",
+      "explanation": "Rights/surface/control unknowns produce explicit defer, while all required local checks need actual current observations; no H03/public-ready claim."
+    },
+    {
+      "obligation": {
+        "local": {
+          "requirement": "REQ-009",
+          "scenario": 3
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-010",
+        "CHECK-009"
+      ],
+      "evidence": "docs/validation/harness-publication-readiness/attempt-04/semantic-assessments.json",
+      "explanation": "Runbook sequences drift, authority, review, adoption, visibility, external verification and recovery separately; no task requires its own merge/publication."
+    },
+    {
+      "obligation": {
+        "local": {
+          "requirement": "REQ-009",
+          "scenario": 4
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-010",
+        "CHECK-009"
+      ],
+      "evidence": "docs/validation/harness-publication-readiness/attempt-04/semantic-assessments.json",
+      "explanation": "Failure/containment walkthrough preserves evidence and requires bounded authority; runbook states public copies/forks/grants cannot be recalled by reverting visibility."
+    },
+    {
+      "obligation": {
+        "local": {
+          "requirement": "REQ-010",
+          "scenario": 1
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-008",
+        "CHECK-001",
+        "CHECK-002"
+      ],
+      "evidence": "docs/validation/harness-publication-readiness/attempt-04/semantic-assessments.json",
+      "explanation": "All archived dossiers, frozen terms and governance records byte-identical to approved base; old results retained without relabelling current acceptance."
+    },
+    {
+      "obligation": {
+        "local": {
+          "requirement": "REQ-010",
+          "scenario": 2
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-008",
+        "CHECK-001",
+        "CHECK-002"
+      ],
+      "evidence": "docs/validation/harness-publication-readiness/attempt-04/semantic-assessments.json",
+      "explanation": "Active candidate status and maintained guidance route to actual Apache R1 review; original proprietary clauses and frozen approval remain reconstructable/preserved."
+    },
+    {
+      "obligation": {
+        "local": {
+          "requirement": "REQ-010",
+          "scenario": 3
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-008",
+        "CHECK-001",
+        "CHECK-002"
+      ],
+      "evidence": "docs/validation/harness-publication-readiness/attempt-04/semantic-assessments.json",
+      "explanation": "Private source/history inventory records exposure concerns; new safe reports use opaque HPR identity, no destructive cleanup or confidential evidence export."
+    },
+    {
+      "obligation": {
+        "local": {
+          "requirement": "REQ-011",
+          "scenario": 1
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-008",
+        "CHECK-003",
+        "CHECK-005",
+        "CHECK-007"
+      ],
+      "evidence": "docs/validation/harness-publication-readiness/attempt-04/semantic-assessments.json",
+      "explanation": "Standards and handoff retain independent Platform/Workspace/Discover/CRM terms and per-repository evidence; no other product changed."
+    },
+    {
+      "obligation": {
+        "local": {
+          "requirement": "REQ-011",
+          "scenario": 2
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-008",
+        "CHECK-003",
+        "CHECK-005",
+        "CHECK-007"
+      ],
+      "evidence": "docs/validation/harness-publication-readiness/attempt-04/semantic-assessments.json",
+      "explanation": "Existing organization route/forms/repository precedence preserved; no cross-repository edit or activation; missing access retains usable target-owned guidance."
+    },
+    {
+      "obligation": {
+        "local": {
+          "requirement": "REQ-011",
+          "scenario": 3
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-008",
+        "CHECK-003",
+        "CHECK-005",
+        "CHECK-007"
+      ],
+      "evidence": "docs/validation/harness-publication-readiness/attempt-04/semantic-assessments.json",
+      "explanation": "No dependency engine, language CI, infrastructure, business or hiring work introduced; canonical Skills/SDD/enforcement/templates unchanged and full suites retained."
+    },
+    {
+      "obligation": {
+        "local": {
+          "requirement": "REQ-012",
+          "scenario": 1
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-008",
+        "CHECK-010"
+      ],
+      "evidence": "docs/validation/harness-publication-readiness/attempt-04/semantic-assessments.json",
+      "explanation": "Historical Gate 1 artifact/approval provenance remains the original event, not reenacted; current changes follow later explicit implementation authority."
+    },
+    {
+      "obligation": {
+        "local": {
+          "requirement": "REQ-012",
+          "scenario": 2
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-008",
+        "CHECK-010"
+      ],
+      "evidence": "docs/validation/harness-publication-readiness/attempt-04/semantic-assessments.json",
+      "explanation": "All three approved stage digests unchanged; actual implementation request follows Tasks approval, and exact candidate text received its own later approval."
+    },
+    {
+      "obligation": {
+        "local": {
+          "requirement": "REQ-012",
+          "scenario": 3
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-008",
+        "CHECK-010"
+      ],
+      "evidence": "docs/validation/harness-publication-readiness/attempt-04/semantic-assessments.json",
+      "explanation": "No source commit/push/PR, merge, root adoption, release, visibility, channel message or real consumer update; only authorized private test adapters and synthetic local commits."
+    },
+    {
+      "obligation": {
+        "regression": {
+          "impact": 1,
+          "scenario": 1
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-008",
+        "CHECK-010"
+      ],
+      "evidence": "docs/validation/harness-publication-readiness/attempt-04/semantic-assessments.json",
+      "explanation": "Licensing Standard retains independent Apache intent and evidence for Platform/Workspace."
+    },
+    {
+      "obligation": {
+        "regression": {
+          "impact": 1,
+          "scenario": 3
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-008",
+        "CHECK-010"
+      ],
+      "evidence": "docs/validation/harness-publication-readiness/attempt-04/semantic-assessments.json",
+      "explanation": "Runbook and root metadata separate policy/text from effective adoption and operations."
+    },
+    {
+      "obligation": {
+        "regression": {
+          "impact": 3,
+          "scenario": 1
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-001",
+        "CHECK-002",
+        "CHECK-008"
+      ],
+      "evidence": "docs/validation/harness-publication-readiness/attempt-04/semantic-assessments.json",
+      "explanation": "Component assessment and seven dependency records identify versions, declared ownership, notices and nonbundled mode."
+    },
+    {
+      "obligation": {
+        "regression": {
+          "impact": 3,
+          "scenario": 2
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-001",
+        "CHECK-002",
+        "CHECK-008"
+      ],
+      "evidence": "docs/validation/harness-publication-readiness/attempt-04/semantic-assessments.json",
+      "explanation": "Private assessment and negative grant/dependency/reviewer cases explicitly defer with owner and exit conditions."
+    },
+    {
+      "obligation": {
+        "regression": {
+          "impact": 3,
+          "scenario": 3
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-001",
+        "CHECK-002",
+        "CHECK-008"
+      ],
+      "evidence": "docs/validation/harness-publication-readiness/attempt-04/semantic-assessments.json",
+      "explanation": "Sixteen categories include full reachable history and remote limitations, beyond current-tree scan."
+    },
+    {
+      "obligation": {
+        "regression": {
+          "impact": 5,
+          "scenario": 2
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-001",
+        "CHECK-008"
+      ],
+      "evidence": "docs/validation/harness-publication-readiness/attempt-04/semantic-assessments.json",
+      "explanation": "Actual user text approval binds exact R1 bytes; CODEOWNERS/SDD approval remain insufficient and specialist limits explicit."
+    },
+    {
+      "obligation": {
+        "regression": {
+          "impact": 6,
+          "scenario": 1
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-001",
+        "CHECK-008",
+        "CHECK-010"
+      ],
+      "evidence": "docs/validation/harness-publication-readiness/attempt-04/semantic-assessments.json",
+      "explanation": "Owner-declared capacity, actual candidate response, Codex technical review and missing specialist verification are separately recorded."
+    },
+    {
+      "obligation": {
+        "regression": {
+          "impact": 6,
+          "scenario": 2
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-001",
+        "CHECK-008",
+        "CHECK-010"
+      ],
+      "evidence": "docs/validation/harness-publication-readiness/attempt-04/semantic-assessments.json",
+      "explanation": "No other product adopted or blocked by this preparation; P01/P03 remain independent."
+    },
+    {
+      "obligation": {
+        "regression": {
+          "impact": 6,
+          "scenario": 3
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-001",
+        "CHECK-008",
+        "CHECK-010"
+      ],
+      "evidence": "docs/validation/harness-publication-readiness/attempt-04/semantic-assessments.json",
+      "explanation": "Unknown reviewer grants/controls remain defer; no unconfirmed role promoted to clearance."
+    },
+    {
+      "obligation": {
+        "regression": {
+          "impact": 7,
+          "scenario": 1
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-003",
+        "CHECK-008",
+        "CHECK-009"
+      ],
+      "evidence": "docs/validation/harness-publication-readiness/attempt-04/semantic-assessments.json",
+      "explanation": "Index and Skill bytes unchanged; changed policy stays in canonical Standards."
+    },
+    {
+      "obligation": {
+        "regression": {
+          "impact": 7,
+          "scenario": 2
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-003",
+        "CHECK-008",
+        "CHECK-009"
+      ],
+      "evidence": "docs/validation/harness-publication-readiness/attempt-04/semantic-assessments.json",
+      "explanation": "Installed candidate equality and resource checks cover Standards, SDD, templates, schemas and validators."
+    },
+    {
+      "obligation": {
+        "regression": {
+          "impact": 7,
+          "scenario": 3
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-003",
+        "CHECK-008",
+        "CHECK-009"
+      ],
+      "evidence": "docs/validation/harness-publication-readiness/attempt-04/semantic-assessments.json",
+      "explanation": "Exact source metadata unchanged; synthetic migration is explicit and no real consumer repinned."
+    },
+    {
+      "obligation": {
+        "regression": {
+          "impact": 8,
+          "scenario": 1
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-008",
+        "CHECK-009",
+        "CHECK-010"
+      ],
+      "evidence": "docs/validation/harness-publication-readiness/attempt-04/semantic-assessments.json",
+      "explanation": "Original planning-only event and dossier preserved; later user implementation instruction is distinct authority."
+    },
+    {
+      "obligation": {
+        "regression": {
+          "impact": 8,
+          "scenario": 2
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-008",
+        "CHECK-009",
+        "CHECK-010"
+      ],
+      "evidence": "docs/validation/harness-publication-readiness/attempt-04/semantic-assessments.json",
+      "explanation": "Text acceptance, preparation, adoption and publication remain separate; inaccessible surfaces explicitly unverified."
+    },
+    {
+      "obligation": {
+        "regression": {
+          "impact": 8,
+          "scenario": 3
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-008",
+        "CHECK-009",
+        "CHECK-010"
+      ],
+      "evidence": "docs/validation/harness-publication-readiness/attempt-04/semantic-assessments.json",
+      "explanation": "Current 38/72 review, multilingual checks, actual client cases and full package/test execution supply new evidence; historical pass alone not reused."
+    },
+    {
+      "obligation": {
+        "regression": {
+          "impact": 9,
+          "scenario": 1
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-005",
+        "CHECK-007",
+        "CHECK-008"
+      ],
+      "evidence": "docs/validation/harness-publication-readiness/attempt-04/semantic-assessments.json",
+      "explanation": "Delivered Issue 22/PR history retained; existing guides extended without reopening delivered H02."
+    },
+    {
+      "obligation": {
+        "regression": {
+          "impact": 9,
+          "scenario": 2
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-005",
+        "CHECK-007",
+        "CHECK-008"
+      ],
+      "evidence": "docs/validation/harness-publication-readiness/attempt-04/semantic-assessments.json",
+      "explanation": "Maintained contribution steps cover target/issues/provenance/setup/checks and real linkage, with no invented Story."
+    },
+    {
+      "obligation": {
+        "regression": {
+          "impact": 9,
+          "scenario": 3
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-005",
+        "CHECK-007",
+        "CHECK-008"
+      ],
+      "evidence": "docs/validation/harness-publication-readiness/attempt-04/semantic-assessments.json",
+      "explanation": "Repository precedence and organization-owned forms/identity remain intact; no organization edits."
+    },
+    {
+      "obligation": {
+        "regression": {
+          "impact": 9,
+          "scenario": 4
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-005",
+        "CHECK-007",
+        "CHECK-008"
+      ],
+      "evidence": "docs/validation/harness-publication-readiness/attempt-04/semantic-assessments.json",
+      "explanation": "Guide links canonical setup/SDD/validation/language sources instead of duplicating policy."
+    },
+    {
+      "obligation": {
+        "regression": {
+          "impact": 10,
+          "scenario": 1
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-004",
+        "CHECK-007",
+        "CHECK-008"
+      ],
+      "evidence": "docs/validation/harness-publication-readiness/attempt-04/semantic-assessments.json",
+      "explanation": "Contributor without private access can use target-owned instructions; Harness availability is qualified and no private evidence required."
+    },
+    {
+      "obligation": {
+        "regression": {
+          "impact": 10,
+          "scenario": 2
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-004",
+        "CHECK-007",
+        "CHECK-008"
+      ],
+      "evidence": "docs/validation/harness-publication-readiness/attempt-04/semantic-assessments.json",
+      "explanation": "Workspace route and fallback retained; private candidate install is distinct from future public replacement."
+    },
+    {
+      "obligation": {
+        "regression": {
+          "impact": 10,
+          "scenario": 3
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-004",
+        "CHECK-007",
+        "CHECK-008"
+      ],
+      "evidence": "docs/validation/harness-publication-readiness/attempt-04/semantic-assessments.json",
+      "explanation": "Active community docs contain no internal recordings/strategy evidence; actual access remains separate from instructions."
+    },
+    {
+      "obligation": {
+        "regression": {
+          "impact": 11,
+          "scenario": 1
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-001",
+        "CHECK-005",
+        "CHECK-008"
+      ],
+      "evidence": "docs/validation/harness-publication-readiness/attempt-04/semantic-assessments.json",
+      "explanation": "Provenance/rights/notices and maintainer responsibilities specified; synthetic local contribution demonstrates reviewable change."
+    },
+    {
+      "obligation": {
+        "regression": {
+          "impact": 11,
+          "scenario": 3
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-001",
+        "CHECK-005",
+        "CHECK-008"
+      ],
+      "evidence": "docs/validation/harness-publication-readiness/attempt-04/semantic-assessments.json",
+      "explanation": "Missing grants/terms/review prevent acceptance; no extra agreement or invented grant added."
+    },
+    {
+      "obligation": {
+        "regression": {
+          "impact": 13,
+          "scenario": 1
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-006",
+        "CHECK-008"
+      ],
+      "evidence": "docs/validation/harness-publication-readiness/attempt-04/semantic-assessments.json",
+      "explanation": "Public Harness PVR remains unverified until separately authorized configuration/access/marker/receipt checks."
+    },
+    {
+      "obligation": {
+        "regression": {
+          "impact": 13,
+          "scenario": 2
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-006",
+        "CHECK-008"
+      ],
+      "evidence": "docs/validation/harness-publication-readiness/attempt-04/semantic-assessments.json",
+      "explanation": "Guides prohibit public exploit/credential/customer payloads and offer confidential-instructions request."
+    },
+    {
+      "obligation": {
+        "regression": {
+          "impact": 13,
+          "scenario": 3
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-006",
+        "CHECK-008"
+      ],
+      "evidence": "docs/validation/harness-publication-readiness/attempt-04/semantic-assessments.json",
+      "explanation": "Unavailable-route example discloses no internal address, invented endpoint, SLA or activation."
+    },
+    {
+      "obligation": {
+        "regression": {
+          "impact": 13,
+          "scenario": 4
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-006",
+        "CHECK-008"
+      ],
+      "evidence": "docs/validation/harness-publication-readiness/attempt-04/semantic-assessments.json",
+      "explanation": "No report or channel/access mutation made; original planning-only authority event preserved."
+    },
+    {
+      "obligation": {
+        "regression": {
+          "impact": 14,
+          "scenario": 1
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-007",
+        "CHECK-008"
+      ],
+      "evidence": "docs/validation/harness-publication-readiness/attempt-04/semantic-assessments.json",
+      "explanation": "All language siblings preserve permissions, gates, access limits and recovery/status semantics."
+    },
+    {
+      "obligation": {
+        "regression": {
+          "impact": 14,
+          "scenario": 2
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-007",
+        "CHECK-008"
+      ],
+      "evidence": "docs/validation/harness-publication-readiness/attempt-04/semantic-assessments.json",
+      "explanation": "Local links/anchors verified; canonical English references remain English, private optional provenance qualified."
+    },
+    {
+      "obligation": {
+        "regression": {
+          "impact": 14,
+          "scenario": 3
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-007",
+        "CHECK-008"
+      ],
+      "evidence": "docs/validation/harness-publication-readiness/attempt-04/semantic-assessments.json",
+      "explanation": "No documentation automation or multilingual CI added; Issues 23/26 scope remains separate."
+    },
+    {
+      "obligation": {
+        "regression": {
+          "impact": 15,
+          "scenario": 1
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-006",
+        "CHECK-008",
+        "CHECK-010"
+      ],
+      "evidence": "docs/validation/harness-publication-readiness/attempt-04/semantic-assessments.json",
+      "explanation": "Common guidance does not adopt other products or complete H03 distribution."
+    },
+    {
+      "obligation": {
+        "regression": {
+          "impact": 15,
+          "scenario": 2
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-006",
+        "CHECK-008",
+        "CHECK-010"
+      ],
+      "evidence": "docs/validation/harness-publication-readiness/attempt-04/semantic-assessments.json",
+      "explanation": "No organization routing activation; existing fallback retained pending independent work."
+    },
+    {
+      "obligation": {
+        "regression": {
+          "impact": 15,
+          "scenario": 3
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-006",
+        "CHECK-008",
+        "CHECK-010"
+      ],
+      "evidence": "docs/validation/harness-publication-readiness/attempt-04/semantic-assessments.json",
+      "explanation": "Current semantic review combines actual private client evidence and honest reporting status; no structural-only public receipt claim."
+    },
+    {
+      "obligation": {
+        "regression": {
+          "impact": 15,
+          "scenario": 4
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-006",
+        "CHECK-008",
+        "CHECK-010"
+      ],
+      "evidence": "docs/validation/harness-publication-readiness/attempt-04/semantic-assessments.json",
+      "explanation": "Original Gate 1 preserved; actual later implementation authority and text approval distinguish current allowed preparation."
+    },
+    {
+      "obligation": {
+        "regression": {
+          "impact": 17,
+          "scenario": 2
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-003",
+        "CHECK-008",
+        "CHECK-009"
+      ],
+      "evidence": "docs/validation/harness-publication-readiness/attempt-04/semantic-assessments.json",
+      "explanation": "All five supported Skills present in candidate and verified installed copy."
+    },
+    {
+      "obligation": {
+        "regression": {
+          "impact": 17,
+          "scenario": 3
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-003",
+        "CHECK-008",
+        "CHECK-009"
+      ],
+      "evidence": "docs/validation/harness-publication-readiness/attempt-04/semantic-assessments.json",
+      "explanation": "Codex compatibility manifest passes maintained validator and actual installation."
+    },
+    {
+      "obligation": {
+        "regression": {
+          "impact": 18,
+          "scenario": 1
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-003",
+        "CHECK-008",
+        "CHECK-009"
+      ],
+      "evidence": "docs/validation/harness-publication-readiness/attempt-04/semantic-assessments.json",
+      "explanation": "Canonical directories exist at package root in source, patched copy and installed candidate."
+    },
+    {
+      "obligation": {
+        "regression": {
+          "impact": 18,
+          "scenario": 2
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-003",
+        "CHECK-008",
+        "CHECK-009"
+      ],
+      "evidence": "docs/validation/harness-publication-readiness/attempt-04/semantic-assessments.json",
+      "explanation": "Actual fresh installed Skill uses same-root Standards and SDD; exact resource hashes verified."
+    },
+    {
+      "obligation": {
+        "regression": {
+          "impact": 18,
+          "scenario": 3
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-003",
+        "CHECK-008",
+        "CHECK-009"
+      ],
+      "evidence": "docs/validation/harness-publication-readiness/attempt-04/semantic-assessments.json",
+      "explanation": "Skills unchanged; no embedded copied Standards subtree introduced."
+    },
+    {
+      "obligation": {
+        "regression": {
+          "impact": 19,
+          "scenario": 1
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-003",
+        "CHECK-004",
+        "CHECK-008"
+      ],
+      "evidence": "docs/validation/harness-publication-readiness/attempt-04/semantic-assessments.json",
+      "explanation": "Root repository marketplace includes Harness and keeps versat-internal identity."
+    },
+    {
+      "obligation": {
+        "regression": {
+          "impact": 19,
+          "scenario": 2
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-003",
+        "CHECK-004",
+        "CHECK-008"
+      ],
+      "evidence": "docs/validation/harness-publication-readiness/attempt-04/semantic-assessments.json",
+      "explanation": "Preparation ref v0.3.0 preserved; private patch proposes exact v0.4.0 without publishing it."
+    },
+    {
+      "obligation": {
+        "regression": {
+          "impact": 19,
+          "scenario": 3
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-003",
+        "CHECK-004",
+        "CHECK-008"
+      ],
+      "evidence": "docs/validation/harness-publication-readiness/attempt-04/semantic-assessments.json",
+      "explanation": "Workspace instructions retained and individual private test route documented with observed commands."
+    },
+    {
+      "obligation": {
+        "regression": {
+          "impact": 20,
+          "scenario": 1
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-003",
+        "CHECK-008",
+        "CHECK-009"
+      ],
+      "evidence": "docs/validation/harness-publication-readiness/attempt-04/semantic-assessments.json",
+      "explanation": "Older ADRs byte-identical; accepted ADR-0016 adds preparation boundary without changing package history."
+    },
+    {
+      "obligation": {
+        "regression": {
+          "impact": 20,
+          "scenario": 2
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-003",
+        "CHECK-008",
+        "CHECK-009"
+      ],
+      "evidence": "docs/validation/harness-publication-readiness/attempt-04/semantic-assessments.json",
+      "explanation": "ADR-0011 remains root-package authority; ADR-0016 explicitly retains it."
+    },
+    {
+      "obligation": {
+        "regression": {
+          "impact": 20,
+          "scenario": 3
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-003",
+        "CHECK-008",
+        "CHECK-009"
+      ],
+      "evidence": "docs/validation/harness-publication-readiness/attempt-04/semantic-assessments.json",
+      "explanation": "Disposable mismatched version and legacy nested package both rejected by unchanged package validator."
+    },
+    {
+      "obligation": {
+        "regression": {
+          "impact": 21,
+          "scenario": 1
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-004",
+        "CHECK-007",
+        "CHECK-008"
+      ],
+      "evidence": "docs/validation/harness-publication-readiness/attempt-04/semantic-assessments.json",
+      "explanation": "README retains purpose, accountable team, lifecycle/version boundaries and actual validation command while extending audience."
+    },
+    {
+      "obligation": {
+        "regression": {
+          "impact": 21,
+          "scenario": 2
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-004",
+        "CHECK-007",
+        "CHECK-008"
+      ],
+      "evidence": "docs/validation/harness-publication-readiness/attempt-04/semantic-assessments.json",
+      "explanation": "README local navigation resolves to maintained quickstart/product/guides/SDD reference."
+    },
+    {
+      "obligation": {
+        "regression": {
+          "impact": 21,
+          "scenario": 3
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-004",
+        "CHECK-007",
+        "CHECK-008"
+      ],
+      "evidence": "docs/validation/harness-publication-readiness/attempt-04/semantic-assessments.json",
+      "explanation": "Preparation/release/consumer distinctions remain discoverable; no unreleased source capability advertised as old installed release."
+    },
+    {
+      "obligation": {
+        "regression": {
+          "impact": 22,
+          "scenario": 1
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-004",
+        "CHECK-007",
+        "CHECK-008"
+      ],
+      "evidence": "docs/validation/harness-publication-readiness/attempt-04/semantic-assessments.json",
+      "explanation": "Fresh installed-provider scenario identifies stable change Proposal/Requirements and actual Gate 1 stop."
+    },
+    {
+      "obligation": {
+        "regression": {
+          "impact": 22,
+          "scenario": 2
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-004",
+        "CHECK-007",
+        "CHECK-008"
+      ],
+      "evidence": "docs/validation/harness-publication-readiness/attempt-04/semantic-assessments.json",
+      "explanation": "Missing provider/ref/resources fail explicitly; guide directs prerequisite recovery without implicit latest selection."
+    },
+    {
+      "obligation": {
+        "regression": {
+          "impact": 22,
+          "scenario": 3
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-004",
+        "CHECK-007",
+        "CHECK-008"
+      ],
+      "evidence": "docs/validation/harness-publication-readiness/attempt-04/semantic-assessments.json",
+      "explanation": "Quickstart retains focused canonical guide navigation; existing organization route not replaced with a fictitious path."
+    },
+    {
+      "obligation": {
+        "regression": {
+          "impact": 23,
+          "scenario": 1
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-004",
+        "CHECK-007",
+        "CHECK-008"
+      ],
+      "evidence": "docs/validation/harness-publication-readiness/attempt-04/semantic-assessments.json",
+      "explanation": "All existing workflow guide siblings retained; only setup/audience/policy pointers and optional recording dependencies changed."
+    },
+    {
+      "obligation": {
+        "regression": {
+          "impact": 23,
+          "scenario": 2
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-004",
+        "CHECK-007",
+        "CHECK-008"
+      ],
+      "evidence": "docs/validation/harness-publication-readiness/attempt-04/semantic-assessments.json",
+      "explanation": "Specialized guide and canonical source bytes retained rather than copied into a new manual."
+    },
+    {
+      "obligation": {
+        "regression": {
+          "impact": 23,
+          "scenario": 3
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-004",
+        "CHECK-007",
+        "CHECK-008"
+      ],
+      "evidence": "docs/validation/harness-publication-readiness/attempt-04/semantic-assessments.json",
+      "explanation": "SDD/PR guides retain three approvals, explicit execution, archive-before-delivery and observed review/merge boundaries."
+    },
+    {
+      "obligation": {
+        "regression": {
+          "impact": 23,
+          "scenario": 4
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-004",
+        "CHECK-007",
+        "CHECK-008"
+      ],
+      "evidence": "docs/validation/harness-publication-readiness/attempt-04/semantic-assessments.json",
+      "explanation": "Source-only v3/execution and unsupported public outcomes remain explicitly limited; no automatic upgrades claimed."
+    },
+    {
+      "obligation": {
+        "regression": {
+          "impact": 24,
+          "scenario": 1
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-007",
+        "CHECK-008"
+      ],
+      "evidence": "docs/validation/harness-publication-readiness/attempt-04/semantic-assessments.json",
+      "explanation": "Overview retains Versat onboarding persona, problem, solution, ownership and optional Issue 22 provenance alongside external audience."
+    },
+    {
+      "obligation": {
+        "regression": {
+          "impact": 24,
+          "scenario": 2
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-007",
+        "CHECK-008"
+      ],
+      "evidence": "docs/validation/harness-publication-readiness/attempt-04/semantic-assessments.json",
+      "explanation": "Alternatives/scalability and social/environmental limits retained; market/pricing/returns explicitly unestablished."
+    },
+    {
+      "obligation": {
+        "regression": {
+          "impact": 24,
+          "scenario": 3
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-007",
+        "CHECK-008"
+      ],
+      "evidence": "docs/validation/harness-publication-readiness/attempt-04/semantic-assessments.json",
+      "explanation": "Productivity/defect benefits remain hypotheses with onboarding/support measurement; unreviewed recordings not promoted to instructions."
+    },
+    {
+      "obligation": {
+        "regression": {
+          "impact": 25,
+          "scenario": 1
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-007",
+        "CHECK-008"
+      ],
+      "evidence": "docs/validation/harness-publication-readiness/attempt-04/semantic-assessments.json",
+      "explanation": "English pages have PT/ES siblings, including README/quickstart/overview/feature guides."
+    },
+    {
+      "obligation": {
+        "regression": {
+          "impact": 25,
+          "scenario": 2
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-007",
+        "CHECK-008"
+      ],
+      "evidence": "docs/validation/harness-publication-readiness/attempt-04/semantic-assessments.json",
+      "explanation": "Language switches and localized guide links resolve; English-only canonical technical references remain explicit."
+    },
+    {
+      "obligation": {
+        "regression": {
+          "impact": 25,
+          "scenario": 3
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-007",
+        "CHECK-008"
+      ],
+      "evidence": "docs/validation/harness-publication-readiness/attempt-04/semantic-assessments.json",
+      "explanation": "Commands/identifiers/gates/access/recovery and exact-version status compared across languages."
+    },
+    {
+      "obligation": {
+        "regression": {
+          "impact": 25,
+          "scenario": 4
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-007",
+        "CHECK-008"
+      ],
+      "evidence": "docs/validation/harness-publication-readiness/attempt-04/semantic-assessments.json",
+      "explanation": "Organization-owned EN/PT/ES entry files untouched; no unsupported cross-repository consolidation claim."
+    },
+    {
+      "obligation": {
+        "regression": {
+          "impact": 27,
+          "scenario": 2
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-004",
+        "CHECK-007",
+        "CHECK-008",
+        "CHECK-009"
+      ],
+      "evidence": "docs/validation/harness-publication-readiness/attempt-04/semantic-assessments.json",
+      "explanation": "Actual final private installation and failure/migration/recovery outcomes compared to documented actions."
+    },
+    {
+      "obligation": {
+        "regression": {
+          "impact": 27,
+          "scenario": 3
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-004",
+        "CHECK-007",
+        "CHECK-008",
+        "CHECK-009"
+      ],
+      "evidence": "docs/validation/harness-publication-readiness/attempt-04/semantic-assessments.json",
+      "explanation": "Current relative links/anchors plus semantic parity and complete suites support acceptance, beyond structural checks alone."
+    },
+    {
+      "obligation": {
+        "regression": {
+          "impact": 27,
+          "scenario": 4
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-004",
+        "CHECK-007",
+        "CHECK-008",
+        "CHECK-009"
+      ],
+      "evidence": "docs/validation/harness-publication-readiness/attempt-04/semantic-assessments.json",
+      "explanation": "Living guidance stays in normal docs paths; operational navigation does not depend on moving current dossier."
+    },
+    {
+      "obligation": {
+        "regression": {
+          "impact": 28,
+          "scenario": 1
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-005",
+        "CHECK-007",
+        "CHECK-008"
+      ],
+      "evidence": "docs/validation/harness-publication-readiness/attempt-04/semantic-assessments.json",
+      "explanation": "Existing maintained destinations remain usable; no second organization manual or new cross-repository rewrite."
+    },
+    {
+      "obligation": {
+        "regression": {
+          "impact": 28,
+          "scenario": 2
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-005",
+        "CHECK-007",
+        "CHECK-008"
+      ],
+      "evidence": "docs/validation/harness-publication-readiness/attempt-04/semantic-assessments.json",
+      "explanation": "Organization identity/participation/forms/local checks unchanged and target-specific precedence explicit."
+    },
+    {
+      "obligation": {
+        "regression": {
+          "impact": 28,
+          "scenario": 3
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-005",
+        "CHECK-007",
+        "CHECK-008"
+      ],
+      "evidence": "docs/validation/harness-publication-readiness/attempt-04/semantic-assessments.json",
+      "explanation": "Public fallback explains target repository/forms/instructions without requiring internal Harness access."
+    },
+    {
+      "obligation": {
+        "regression": {
+          "impact": 28,
+          "scenario": 4
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-005",
+        "CHECK-007",
+        "CHECK-008"
+      ],
+      "evidence": "docs/validation/harness-publication-readiness/attempt-04/semantic-assessments.json",
+      "explanation": "Documented actual bundled CLI and Gate 1 observation support limited claims; canonical gates/archive preserved."
+    },
+    {
+      "obligation": {
+        "regression": {
+          "impact": 28,
+          "scenario": 6
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-005",
+        "CHECK-007",
+        "CHECK-008"
+      ],
+      "evidence": "docs/validation/harness-publication-readiness/attempt-04/semantic-assessments.json",
+      "explanation": "Existing organization route retained; unknown future destination cannot be advertised as completed consolidation."
+    },
+    {
+      "obligation": {
+        "regression": {
+          "impact": 30,
+          "scenario": 0
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-008",
+        "CHECK-009"
+      ],
+      "evidence": "docs/validation/harness-publication-readiness/attempt-04/semantic-assessments.json",
+      "explanation": "The exact maintained validation entry point and full deterministic suites remain unchanged and execute on both roots; package checks are not legal or public-access clearance."
+    }
+  ],
+  "supersessions": [
+    {
+      "impact": 2,
+      "source": {
+        "change": "portfolio-licensing-policy",
+        "requirement": "REQ-001",
+        "scenarios": [
+          2
+        ],
+        "requirements_digest": "62a65c23002c671422bffc464765f3ed5aa537a2a26d8950cbd343000ba4dee8"
+      },
+      "replacement_review": [
+        "Apache successor replaces Harness-only private/proprietary intent; Discover/CRM remain independent private proprietary products."
+      ]
+    },
+    {
+      "impact": 4,
+      "source": {
+        "change": "portfolio-licensing-policy",
+        "requirement": "REQ-003",
+        "scenarios": [
+          1,
+          3
+        ],
+        "requirements_digest": "62a65c23002c671422bffc464765f3ed5aa537a2a26d8950cbd343000ba4dee8"
+      },
+      "replacement_review": [
+        "Concrete Apache scope replaces proprietary permissions prospectively, naming covered components and retained third-party notices.",
+        "Tool/project separation retained under new Apache candidate; unrelated project terms unaffected."
+      ]
+    },
+    {
+      "impact": 12,
+      "source": {
+        "change": "contribution-security-guidance",
+        "requirement": "REQ-003",
+        "scenarios": [
+          2
+        ],
+        "requirements_digest": "65986d898e8209f80081a5e8522e14d5f54ec040ad2b56391dcb892972b672f3"
+      },
+      "replacement_review": [
+        "Actual Apache R1 candidate approval replaces obsolete H01 routing; tool/destination independence retained."
+      ]
+    },
+    {
+      "impact": 16,
+      "source": {
+        "change": "root-plugin-package",
+        "requirement": "REQ-001",
+        "scenarios": [
+          1
+        ],
+        "requirements_digest": "6f5faf87eb5260aad8df82d300a32216becffca7ae2d318b989342cc737a506d"
+      },
+      "replacement_review": [
+        "Obsolete 0.2.0 value superseded by coherent candidate 0.4.0 while preparation stays 0.3.0; portable schema retained."
+      ]
+    },
+    {
+      "impact": 26,
+      "source": {
+        "change": "harness-user-documentation",
+        "requirement": "REQ-006",
+        "scenarios": [
+          1
+        ],
+        "requirements_digest": "d37584fff5b035004dcb6fb020f9099f1411ef7cd612ae667c7e1ffc21595773"
+      },
+      "replacement_review": [
+        "Intentional supersession removes private recording dependency from active guides; original provenance retained privately/frozen and Issue 22 link kept."
+      ]
+    },
+    {
+      "impact": 29,
+      "source": {
+        "change": "harness-user-documentation",
+        "requirement": "REQ-007",
+        "scenarios": [
+          5
+        ],
+        "requirements_digest": "d37584fff5b035004dcb6fb020f9099f1411ef7cd612ae667c7e1ffc21595773"
+      },
+      "replacement_review": [
+        "Obsolete Issue 22 future coordination link superseded; real future issue/PR and verified activation required independently."
+      ]
+    }
+  ]
+}

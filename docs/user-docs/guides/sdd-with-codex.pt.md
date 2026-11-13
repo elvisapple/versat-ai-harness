@@ -26,6 +26,4 @@ Se faltar evidência de revisão, revise a versão apresentada em vez de recriar
 - [Process (inglês)](../../../sdd/process.md)
 - [Metadata (inglês)](../../../sdd/metadata.md)
 
-[Gravação da equipe](https://versat.slack.com/files/U04PSSJ2W/F0CF8AH2SVC/pantalla_compartida_-_2026-11-05_16_09_27.mp4) — requer acesso ao Slack. Treinamento complementar; o conteúdo do vídeo não foi verificado para este guia. Os passos escritos permitem continuar.
-
 [Início rápido](../quickstart.pt.md) · [Harness](../../../README.pt.md)

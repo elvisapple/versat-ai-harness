@@ -1,0 +1,50 @@
+{
+  "revision": 1,
+  "state": "approved-candidate",
+  "prepared_at": "2026-11-13",
+  "scope_baseline": "d61317d9220b002f0dc3aa606e18a62dd4230477",
+  "candidate_version": "0.4.0",
+  "effective_adoption": false,
+  "official_source": "https://www.apache.org/licenses/LICENSE-2.0.txt",
+  "prepared_by": "Codex under explicit implementation authority",
+  "requested_reviewer": "@elviszoz",
+  "reviewer_capacity": "Previously owner-declared company approver; no independent specialist qualification asserted",
+  "files": {
+    "docs/licensing/candidates/apache-2.0/LICENSE.txt": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+    "docs/licensing/candidates/apache-2.0/NOTICE.txt": "ff43bbc1f6467a783cff030a8ed6442cf2dda21c289754cec828714ff2b63edb",
+    "docs/licensing/candidates/apache-2.0/THIRD-PARTY-NOTICES.md": "aeec31268f118df212e48c0e678d8c7e51211c8441b9cee1fc70a018ca23f3da",
+    "docs/licensing/candidates/apache-2.0/SCOPE.md": "db94f1fcad7e1bcf1bc54d3cb92fec2cde6b412fc18b9ead51b7e16f5dab128d",
+    "docs/licensing/candidates/apache-2.0/README.md": "94c1327f0b61872eed3200b6f8f2cdf55bd317f00fbe223971b803002e934614",
+    "docs/licensing/candidates/apache-2.0/scope-files.csv": "f95c199589522821dc2c860b7a2f57f20a9888f435fc4c62ebb28be6fe9bca9e",
+    "docs/user-docs/guides/contributing.md": "4fb9391c841c7d6ca7db7354d323cd3e2dd988fbe7d35e9ca01fce3559de8333",
+    "docs/user-docs/guides/contributing.pt.md": "da4fb4214b4879a5f504507facc738c88a939b10b9e4f80088266e10009310ea",
+    "docs/user-docs/guides/contributing.es.md": "e7146201715441b35396b685491004637d7b1960d011e9a02af3e43a48b2eb05",
+    "docs/licensing/technical-review/dependency-license-texts/PyYAML-6.0.2-LICENSE.txt": "8d3928f9dc4490fd635707cb88eb26bd764102a7282954307d3e5167a577e8a4",
+    "docs/licensing/technical-review/dependency-license-texts/attrs-26.1.0-LICENSE.txt": "882115c95dfc2af1eeb6714f8ec6d5cbcabf667caff8729f42420da63f714e9f",
+    "docs/licensing/technical-review/dependency-license-texts/jsonschema-4.23.0-COPYING.txt": "4f92a015a13c4d1a040bef018aa13430b4f1bc73b41b16bb846c346766de7439",
+    "docs/licensing/technical-review/dependency-license-texts/jsonschema-specifications-2025.9.1-COPYING.txt": "42dcd63495f87b4eb7c7757afa379bb55a53f94afd7a5f657d9adf57236e515c",
+    "docs/licensing/technical-review/dependency-license-texts/referencing-0.37.0-COPYING.txt": "42dcd63495f87b4eb7c7757afa379bb55a53f94afd7a5f657d9adf57236e515c",
+    "docs/licensing/technical-review/dependency-license-texts/rpds-py-2026.9.1-LICENSE.txt": "314e4e91be3baa93c0fb4bccc9e4e97cd643eb839b065af921782c2175fe9909",
+    "docs/licensing/technical-review/dependency-license-texts/typing_extensions-4.16.0-LICENSE.txt": "3b2f81fe21d181c499c59a256c8e1968455d6689d269aa85373bfb6af41da3bf"
+  },
+  "package_digest": "894308c5f1921f28677d55d39b9bf5fb386467dc652e5dca5908d54756fe9f48",
+  "approval": {
+    "source": "User response in this chat to the exact Apache-2.0 R1 package review question on 2026-11-13",
+    "quote": "Aprovar o candidato R1",
+    "reviewer": "@elviszoz",
+    "capacity": "Previously owner-declared company approver; no independent specialist qualification asserted",
+    "revision": 1,
+    "package_digest": "894308c5f1921f28677d55d39b9bf5fb386467dc652e5dca5908d54756fe9f48",
+    "effective_adoption": false
+  },
+  "inventory_exclusions": [
+    "Self-referential inventory/review bookkeeping",
+    "Current SDD approval/progress dossier",
+    "Current implementation run evidence"
+  ],
+  "limits": [
+    "File inventory is an exact inspected snapshot, not rights or confidentiality clearance.",
+    "Future edits and the exact adoption patch require current review.",
+    "No root license, release, visibility or public reporting operation authorized."
+  ]
+}

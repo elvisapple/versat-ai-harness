@@ -1,0 +1,10 @@
+{
+  "authorization": "Explicit user request to open private PR for review; no merge, release or public visibility",
+  "repository": "versat-labs/versat-ai-harness",
+  "observed_visibility": "private",
+  "base": "main",
+  "base_commit": "d61317d9220b002f0dc3aa606e18a62dd4230477",
+  "head": "codex/harness-publication-design",
+  "existing_open_pr_for_head": false,
+  "remote_ci": "Pending actual PR workflow observation; no result inferred"
+}

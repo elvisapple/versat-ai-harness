@@ -1,0 +1,16 @@
+{
+  "check": "CHECK-001",
+  "result": "pass",
+  "input_digest_before": "7e15904840093447562ef625076f0b2212cad4c6ceff9b827b47abcb690b4fd4",
+  "input_digest_after": "7e15904840093447562ef625076f0b2212cad4c6ceff9b827b47abcb690b4fd4",
+  "title": "Review concrete text, actual approval and bounded rights assessment",
+  "observations": [
+    "rights-integrity.json",
+    "additional-history-review.json"
+  ],
+  "reviewer": "Codex bounded technical/documentary review; actual user text approval retained separately",
+  "explanation": "Actual R1 user approval binds all 16 unchanged files. Seven installed dependency license texts match. Full current tree is inventoried separately from immutable approved text scope; new/unverified rights remain defer. Missing grant, incompatible bundled dependency and absent-review cases preserve owner/exit requirements. No effective adoption or specialist qualification inferred.",
+  "observed_at": "2026-11-13T19:17:50.241337+00:00",
+  "disposition": "Preparation evidence accepted; public operations remain deferred",
+  "execution": "local"
+}

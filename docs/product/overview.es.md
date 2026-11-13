@@ -1,41 +1,37 @@
-# Visión del producto
+# Visión general del producto
 
 [English](overview.md) | [Português](overview.pt.md) | [Español](overview.es.md)
 
 ## Producto y responsabilidad
 
-Versat AI Harness ayuda al equipo Versat a convertir intenciones de desarrollo en cambios revisados y trazables. Versat mantiene el producto; los contactos incluyen elviszoz y evertonspohrversat, indicados en CODEOWNERS para componentes gobernados. Esta visión describe el repositorio fuente, sin suponer que todas las capacidades estén instaladas en cada workspace.
+Versat AI Harness ayuda a desarrolladores, revisores y mantenedores a convertir intenciones en cambios revisados y trazables. Versat lo mantiene; @elviszoz y @evertonspohrversat son contactos técnicos en CODEOWNERS. El público previsto incluye desarrolladores externos. El repositorio sigue privado durante la preparación de la distribución pública.
 
-## Problema, trabajo y persona
+## Problema, trabajo y público
 
-La [Issue #22](https://github.com/versat-labs/versat-ai-harness/issues/22) indica que el equipo no sabe usar el nuevo Harness. La persona principal es el equipo Versat, especialmente quienes desarrollan con SDD. Al planificar o implementar una historia, necesitan consultar la documentación del repositorio para comprender y seguir el proceso. La frecuencia y el costo de este problema de onboarding no se midieron; valídalos con comentarios del equipo después del primer uso.
+Un contribuidor necesita identificar el proyecto correcto, preparar su primer plan SDD, comprender las aprobaciones humanas y aportar evidencia actual. Las instrucciones mantenidas deben explicar estos pasos sin grabaciones privadas ni pertenencia a la organización. El acceso real a herramienta/repositorio es un requisito separado; este documento no lo concede.
+
+La necesidad original de onboarding del equipo Versat está registrada en la [Issue #22](https://github.com/versat-labs/versat-ai-harness/issues/22), historial entregado cuyo acceso sigue la visibilidad del repositorio. Es procedencia, no un requisito para usar esta guía. Frecuencia y costo de esa necesidad siguen sin medirse; valídelos con el equipo después del primer uso. Esto motiva la documentación actual sin afirmar nueva evidencia de mercado.
 
 ## Solución y valor
 
-Un Plugin versionado reúne Standards canónicos, ciclo SDD, cinco Skills, plantillas compuestas y validación determinista. El equipo recibe orientación reutilizable para bootstrap, cambios, mantenimiento, auditoría y revisión arquitectónica. El valor esperado es mayor claridad en decisiones y verificaciones reproducibles; más productividad y menos defectos son resultados por medir, no resultados comprobados.
+Un Plugin versionado en la raíz reúne Standards canónicos, ciclo SDD, cinco Skills, plantillas compuestas y validación determinista. Apoya bootstrap, cambios, mantenimiento, auditoría y revisión arquitectónica. Decisiones más claras y verificaciones reproducibles son beneficios previstos; mejoras de productividad y reducción de defectos necesitan medición.
 
-## Origen y momento
+## Origen y límites actuales
 
-El historial de ADR registra la evolución hacia un paquete portátil y un ciclo gobernado único. La issue y las capacitaciones muestran una necesidad actual de una entrada más clara. Consolidar ese conocimiento apoya la adopción sin crear un proceso paralelo. Otras afirmaciones sobre el origen requieren evidencia del responsable del producto.
+Los [ADRs](../decisions/README.md) registran decisiones de paquete y proceso. El código actual incluye validación SDD v3 y ejecución explícita de pruebas aún no publicadas, posteriores a la etiqueta 0.3.0. VERSION/manifiestos permanecen en 0.3.0 durante la preparación; 0.4.0 es un candidato privado, no una release disponible. Identidad del marketplace y referencias de consumidores permanecen iguales.
 
-## Límites actuales
+El [candidato Apache](../licensing/candidates/apache-2.0/APPROVAL.md) tiene aprobación real del texto, pero no está adoptado. Términos de terceros y licencias de material independiente del proyecto de destino siguen separados. Confidencialidad, controles reales y verificación por usuarios externos aún limitan la preparación pública. El Harness no proporciona publicación automática, actualizaciones automáticas ni motor operativo de workflows. La validación estructural no autentica aprobación humana ni demuestra comportamiento, CI remoto o merge.
 
-VERSION declara 0.3.0. La ejecución de pruebas de consumidores y evaluación supervisada presentes en el código fuente se identifican explícitamente como no publicadas en sus guías. El Harness no proporciona por sí mismo un motor de workflows operativos, aprovisionamiento remoto automático ni actualizaciones automáticas de consumidores. El éxito local del validador no demuestra aceptación semántica, autenticidad de aprobación, CI remoto ni merge.
+## Aplicabilidad y alternativas
 
-## Valor interno y aplicabilidad de mercado
+El público previsto se amplía más allá del equipo Versat sin cambiar modelos de otros productos. No se han establecido precio externo, comisión, tamaño de mercado ni retorno financiero. Alternativas incluyen instrucciones dispersas, checklists por proyecto y asistencia genérica de programación. El Harness reúne políticas por contexto y aprobaciones/evidencia explícitas; es una elección de integración, no superioridad de mercado demostrada.
 
-El alcance es una herramienta interna de desarrollo, sin precio externo ni modelo de comisión proporcionado. TAM, SAM, SOM y take rate no aplican a esta entrega documental. Evalúa el valor interno mediante finalización del onboarding, tiempo hasta el primer plan revisado y preguntas recurrentes; no hay baseline ni retorno financiero comprobado.
+## Escala y responsabilidad
 
-## Alternativas, diferenciación e innovación
+Versiones exactas y plantillas compuestas facilitan la adopción entre proyectos. Revisión humana, traducciones, compatibilidad del cliente y acceso siguen siendo restricciones. Mida finalización del onboarding, tiempo hasta un primer plan revisado y consultas de soporte antes de afirmar valor. Proteja registros confidenciales; un ensayo privado no demuestra acceso anónimo. Directorios de prueba nuevos comparten permisos y no constituyen aislamiento de seguridad.
 
-Las alternativas incluyen instrucciones dispersas del equipo, listas propias de cada repositorio y asistencia genérica de código. El Harness combina Standards resueltos por contexto, gates explícitos y verificaciones vinculadas a la versión en un paquete. Es una elección de integración, sin afirmar novedad de mercado ni superioridad demostrada.
+Las instrucciones accesibles y multilingües pueden reducir barreras de participación. El uso de modelos y las evaluaciones repetidas consumen recursos; mida su impacto antes de afirmar mejoras ambientales.
 
-## Escalabilidad y responsabilidad
+## Verificaciones pendientes y siguiente paso
 
-La adopción de releases exactas y plantillas compartidas apoya más repositorios; mantenimiento de traducciones, revisión humana, acceso y compatibilidad siguen siendo restricciones. La accesibilidad y orientación multilingüe pueden reducir barreras. El uso de modelos y evaluaciones repetidas consume recursos; mide antes de afirmar beneficios ambientales. Protege capacitaciones privadas e información de clientes.
-
-## Preguntas abiertas y validación
-
-Pide al responsable del producto confirmar baseline de adopción y medidas de éxito después de que el equipo siga el quickstart. Pide a la administración del workspace confirmar release instalada y política de distribución. Revisa transcripciones accesibles antes de usar pasos específicos de los videos. Estos vacíos de investigación no implican capacidades adicionales implementadas.
-
-[Comenzar a usar el Harness](../user-docs/quickstart.es.md) · [ADRs (inglés)](../decisions/README.md)
+Instalación, actualización, recuperación y resultados operativos públicos deben observarse antes de anunciar esas capacidades para el candidato. El contexto faltante sigue sin verificar. Use [quickstart](../user-docs/quickstart.es.md), [preparación](../user-docs/guides/workspace-setup.es.md) y [estado de preparación](../handoffs/harness-publication-readiness/README.md). Release pública y adopción por cada consumidor requieren decisiones explícitas separadas.

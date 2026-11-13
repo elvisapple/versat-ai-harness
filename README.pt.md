@@ -4,7 +4,7 @@
 
 Fonte de verdade da Versat para desenvolvimento assistido por IA: um Plugin portátil com Standards, Spec Driven Development (SDD), Skills reutilizáveis, templates compostos e validação determinística.
 
-Para quem desenvolve, revisa e mantém projetos na Versat. Mantido pela Versat; os contatos de revisão dos componentes governados são @elviszoz e @evertonspohrversat em .github/CODEOWNERS.
+Para quem desenvolve, revisa e mantém projetos, incluindo contribuidores externos quando acesso e termos aplicáveis estiverem disponíveis. Mantido pela Versat; os contatos de revisão dos componentes governados são @elviszoz e @evertonspohrversat em .github/CODEOWNERS.
 
 ## Comece aqui
 
@@ -19,7 +19,9 @@ Para quem desenvolve, revisa e mantém projetos na Versat. Mantido pela Versat; 
 - [Revisar a arquitetura](docs/user-docs/guides/architecture-review.pt.md)
 - [Validação e avaliações](docs/user-docs/guides/validation-and-evaluations.pt.md)
 
-Candidatos privados de H01/H02 (não adotados nem lançados): [revisão de licenciamento](docs/user-docs/guides/licensing.pt.md), [contribuição](docs/user-docs/guides/contributing.pt.md) e [reporte de segurança](docs/user-docs/guides/security-reporting.pt.md). O responsável aprovou o candidato de termos; evidências de direitos dos componentes e verificação operacional dos canais permanecem separadas.
+## Preparação da publicação em andamento
+
+A direção pública Apache-2.0 foi aprovada. O [candidato concreto](docs/licensing/candidates/apache-2.0/APPROVAL.md) tem aprovação do texto e não foi adotado. O repositório continua privado; 0.4.0 é um candidato futuro, não uma versão disponível. Veja [licenciamento](docs/user-docs/guides/licensing.pt.md), [contribuição](docs/user-docs/guides/contributing.pt.md), [reporte de segurança](docs/user-docs/guides/security-reporting.pt.md) e o [estado da preparação](docs/handoffs/harness-publication-readiness/README.md).
 
 ## Estado atual e adoção
 

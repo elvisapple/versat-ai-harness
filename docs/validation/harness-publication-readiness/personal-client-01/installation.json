@@ -1,0 +1,31 @@
+{
+  "kind": "development installation observation; no public access claim",
+  "observations": [
+    {
+      "argv": [
+        "<selected-desktop-bundled-cli>",
+        "plugin",
+        "marketplace",
+        "add",
+        "<private-client-fixture>/catalog",
+        "--json"
+      ],
+      "exit": 0,
+      "stdout": "{\n  \"marketplaceName\": \"versat-internal\",\n  \"installedRoot\": \"<private-client-fixture>/catalog\",\n  \"alreadyAdded\": false\n}\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "<selected-desktop-bundled-cli>",
+        "plugin",
+        "add",
+        "versat-ai-harness@versat-internal",
+        "--json"
+      ],
+      "exit": 0,
+      "stdout": "{\n  \"pluginId\": \"versat-ai-harness@versat-internal\",\n  \"name\": \"versat-ai-harness\",\n  \"marketplaceName\": \"versat-internal\",\n  \"version\": \"0.4.0\",\n  \"installedPath\": \"<user-plugin-cache>/versat-internal/versat-ai-harness/0.4.0\",\n  \"authPolicy\": \"ON_INSTALL\"\n}\n",
+      "stderr": ""
+    }
+  ],
+  "elapsed_seconds": 0.4319115839898586
+}

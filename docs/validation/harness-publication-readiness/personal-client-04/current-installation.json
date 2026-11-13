@@ -1,0 +1,6 @@
+{
+  "exit": 0,
+  "stdout": "{\n  \"pluginId\": \"versat-ai-harness@versat-internal\",\n  \"name\": \"versat-ai-harness\",\n  \"marketplaceName\": \"versat-internal\",\n  \"version\": \"0.4.0\",\n  \"installedPath\": \"<user-plugin-cache>/versat-internal/versat-ai-harness/0.4.0\",\n  \"authPolicy\": \"ON_INSTALL\"\n}\n",
+  "stderr": "",
+  "reason": "Separate dual-root snapshot capture to validate the patched root live SDD ledger without relabelling preparation-root hashes. Prior successful source tests and setup failures retained."
+}

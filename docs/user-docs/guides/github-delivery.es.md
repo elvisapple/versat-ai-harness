@@ -26,6 +26,4 @@ Informa en el PR las verificaciones fallidas o no disponibles. Los comentarios d
 - [SDD (inglés)](../../../sdd/README.md)
 - [SDD validation (inglés)](../../../validators/sdd/README.md)
 
-[Grabación del equipo](https://versat.slack.com/archives/C0B7G255DPY/p1793910356829109) — requiere acceso a Slack. Capacitación complementaria; el contenido del video no fue verificado para esta guía. Los pasos escritos permiten continuar.
-
 [Inicio rápido](../quickstart.es.md) · [Harness](../../../README.es.md)

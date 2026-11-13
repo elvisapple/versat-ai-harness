@@ -1,0 +1,15 @@
+{
+  "old_commit": "6c271a5e1c81695327f871e2ecb93cc2bebad5de",
+  "new_commit": "cb34f5c62c02315ce32bbb08af087cd6299f6857",
+  "result": {
+    "argv": [
+      "bash",
+      "scripts/validate/run.sh"
+    ],
+    "exit": 0,
+    "stdout": "{\"result\": \"pass\", \"version\": \"0.3.0\", \"commit\": \"6c271a5e1c81695327f871e2ecb93cc2bebad5de\", \"standards\": [\"core/agent-artifacts.md\", \"core/contribution.md\", \"core/documentation.md\", \"core/git.md\", \"core/language.md\", \"core/licensing-publication.md\", \"core/observability.md\", \"core/security.md\", \"core/testing.md\", \"domains/finance.md\", \"profiles/software.md\", \"technologies/python.md\"]}\n{\"result\": \"pass\", \"scope\": \"full\", \"report\": \"<private-rehearsal>/migration-consumer/.versat/validation-runs/4e818e08b2c14713949457e1975b79c5/result.json\"}\n",
+    "stderr": "",
+    "elapsed_seconds": 0.33336496353149414
+  },
+  "scope": "Disposable local commits only; unreleased v3 source on both versions; no release or deployment."
+}

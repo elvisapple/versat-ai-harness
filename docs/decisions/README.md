@@ -30,3 +30,4 @@ Do not silently rewrite an accepted decision. Create a new ADR, reference the pr
 - [ADR-0013 — Consolidate SDD routing and prepare documentary closure before merge](0013-consolidated-sdd-workflow.md)
 - [ADR-0014 — Bind SDD acceptance and retained behavior to current validation evidence](0014-sdd-acceptance-and-regression.md)
 - [ADR-0015 — Separate explicit test execution from validation and evaluate real skill behavior](0015-explicit-test-execution-and-skill-evaluations.md)
+- [ADR-0016 — Separate public Harness preparation from adoption and publication](0016-public-harness-preparation-boundary.md) (accepted; preparation implementation in progress)

@@ -45,7 +45,7 @@ Use Python 3.11+ em ambiente virtual a partir da raiz deste repositório:
 python3 -m venv .venv
 source .venv/bin/activate
 python -m pip install -r requirements-validation.txt
-./scripts/validate/run.sh
+./scripts/validate/run.sh --quality-base origin/main
 ```
 
 Um interpretador existente pode ser selecionado com PYTHON=/absolute/path/to/python. A entrada verifica pacote, registros SDD e regressões de validadores/execução. Não comprova aprovação humana, CI remoto, merge nem comportamento de outra aplicação. Exceções históricas de compatibilidade são explícitas.

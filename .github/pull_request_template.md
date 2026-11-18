@@ -31,6 +31,8 @@ Revisa la convención de ramas y commits en el [Git Standard](https://github.com
 - [ ] Si este PR es de planificación o trabajo incompleto, permanece en borrador y declara el archivo pendiente
 - [ ] Tests y evals aplicables
 - [ ] Standards resueltos y revisados
+- [ ] Se revisaron la legibilidad, las responsabilidades y los contratos aplicables según el [estándar de código](../standards/core/coding.md)
+- [ ] Se comprobó el impacto descrito en `Unreleased` o se indicó el motivo de la exención
 - [ ] ADR creado o actualizado cuando corresponde
 - [ ] Rama, commits y vínculo con la historia revisados según el Git Standard
 - [ ] Si se usa squash, mensaje final del commit preparado según el Git Standard

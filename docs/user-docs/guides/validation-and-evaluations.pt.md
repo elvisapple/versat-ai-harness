@@ -14,7 +14,7 @@ Use $versat-sdd para validar <change-id> conforme o plano aprovado. Informe evid
 
 ## Resultado esperado
 
-Na raiz do Harness, ./scripts/validate/run.sh verifica pacote, registros SDD e regressões mantidas. Ele não executa testes da aplicação de outro projeto. Execução de consumidores e avaliação supervisionada dos guias especializados são capacidades de fonte ainda não lançadas: use um provedor exato que as contenha e siga os pré-requisitos de adoção. Suítes obrigatórias completas, execuções direcionadas e observações supervisionadas têm limites de evidência distintos.
+Na raiz do Harness, `./scripts/validate/run.sh --quality-base origin/main` verifica pacote, registros SDD e regressões mantidas. Ele não executa testes da aplicação de outro projeto. Execução de consumidores e avaliação supervisionada dos guias especializados são capacidades de fonte ainda não lançadas: use um provedor exato que as contenha e siga os pré-requisitos de adoção. Suítes obrigatórias completas, execuções direcionadas e observações supervisionadas têm limites de evidência distintos.
 
 ## Recuperação e limites
 

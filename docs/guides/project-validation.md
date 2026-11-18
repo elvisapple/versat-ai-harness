@@ -1,6 +1,6 @@
 # Project validation
 
-Use this guide to adopt explicit test execution in a consumer project. The Harness package's own check is `./scripts/validate/run.sh`; it does not execute another project's tests. Execution support described here is an unreleased source change, not an update to installed consumers.
+Use this guide to adopt quality checks and explicit test execution in a consumer project. Run `./scripts/validate/run.sh --quality-base origin/main` to validate the Harness source itself. Consumer validation requires a reviewed provider revision containing the integration.
 
 ## Prerequisites and adoption
 
@@ -17,10 +17,18 @@ export VERSAT_HARNESS_ROOT=/absolute/path/to/reviewed-harness
 export PYTHON=/absolute/path/to/validation-venv/bin/python
 "$PYTHON" "$VERSAT_HARNESS_ROOT/scripts/testing/provider.py" --root .
 "$PYTHON" "$VERSAT_HARNESS_ROOT/scripts/testing/run.py" inspect --root .
-bash scripts/validate/run.sh
+bash scripts/validate/run.sh --quality-base origin/main
 ```
 
 `inspect` checks configuration and command prerequisites without executing project commands. A missing identity, mismatched pin or unavailable executable must be fixed before a usable consumer run. For Harness development fixtures only, invoking `scripts/testing/run.py` directly records the provider source digest without asserting a released clean installation. Do not describe those fixtures as a deployed consumer.
+
+## Coding conventions and changelog
+
+Review the [Coding and Changelog Standard](../../standards/core/coding.md) and the applicable technology Standard. Reviewers assess SOLID, clarity and note accuracy. Ruff checks lint and formatting for complete added, modified and renamed Python files using the pinned dependency and the project's `ruff.toml`. The command checks the tracked working tree, including staged additions and tracked edits without a commit. Stage new files before checking. Review any formatter exclusions with their rationale.
+
+Local full validation needs an explicit comparison revision. Use a fetched `origin/main` for integration review or `HEAD` for edits relative to the current commit. Replace `origin/main` if your project uses a different base. For a quality-only diagnostic, use `bash "$VERSAT_HARNESS_ROOT/scripts/validate/quality.sh" --root . --base origin/main` with the same interpreter. For a missing Ruff or base error, install the pinned dependencies or fetch the required history and rerun. A format diagnostic identifies files to format and recheck. Neither check writes changes.
+
+A change limited to a planning dossier under `specs/changes/` is exempt from an Unreleased entry. A change to application behavior under `src/` requires a new bullet under `## [Unreleased]` in `CHANGELOG.md`. Updating a prior release entry alone fails. The check reports its classification and any missing entry.
 
 ## Configuration
 
@@ -49,22 +57,22 @@ The executor inherits only basic process environment (PATH, locale and temporary
 
 ## Full, targeted and SDD runs
 
-The project wrapper runs all `required_suites`. During development, `bash scripts/validate/run.sh --suite unit` is targeted even when it selects the only required suite. Targeted success never claims full readiness and cannot export SDD evidence. Independent required suites still execute after an assertion failure; cancellation stops the attempt. No automatic retries occur.
+The full project wrapper runs the quality check and all `required_suites` independently. The JSON report describes the suites. Check the quality diagnostics and final wrapper exit status for the aggregate outcome. During development, `bash scripts/validate/run.sh --suite unit` is targeted even when it selects the only required suite. Targeted success never claims full readiness and cannot export SDD evidence. Independent required suites still execute after an assertion failure; cancellation stops the attempt. No automatic retries occur.
 
 For an approved automated SDD v3 check with matching inputs, execution context and stable outputs:
 
 ```bash
-bash scripts/validate/run.sh --change example-change --check CHECK-001
+bash scripts/validate/run.sh --quality-base origin/main --change example-change --check CHECK-001
 ```
 
 The full attempt exports `sdd-result.json` containing the Tasks plan digest and one observed result. Review it before recording it in Tasks. The executor does not edit the dossier, approve plans, complete tasks, assess scenarios or resolve findings. A manual check cannot be exported as automated execution. CI uses `--execution ci` only for checks approved in that context.
 
 Each attempt has a unique directory with `result.json`, per-suite bounded stdout/stderr, structured counts and, when eligible, the SDD fragment. The terminal reports its path. Exit codes are 0 pass, 1 failure, 2 unavailable/unverified. A `running` file without finalization is incomplete, never passing. A timeout/interruption terminates the process group. Configuration, provider or input changes during execution prevent fresh success and SDD export. Preserve failed attempts; an explicit rerun creates another directory.
 
-Successful full execution means the configured suites passed. Assess new behavior, retained regressions, errors and boundaries against actual assertions. Add missing coverage; reuse adequate tests. A new happy-path test cannot replace retained checks. Apply the index-resolved Testing Standard for manual checks and reviewed retirement. See [SDD usage](../../sdd/README.md).
+Successful full validation means the quality check and configured suites passed. Assess new behavior, retained regressions, errors and boundaries against actual assertions. Add missing coverage; reuse adequate tests. A new happy-path test cannot replace retained checks. Apply the index-resolved Testing Standard for manual checks and reviewed retirement. See [SDD usage](../../sdd/README.md).
 
 ## CI and rollback
 
-Adapt the reference CI to existing project authentication and framework setup. Replace its explicit commit placeholder with the reviewed provider commit; do not add broad credentials or an unpinned fallback. CI runs the same complete wrapper, not a targeted selection. The Harness source also has separate [supervised Skill evaluations](skill-evaluations.md).
+Adapt the reference CI to existing project authentication and framework setup. Replace its explicit commit placeholder with the reviewed provider commit; do not add broad credentials or an unpinned fallback. CI runs the complete wrapper. Give the project checkout full Git history and pass the GitHub event file through `VERSAT_QUALITY_EVENT`. The base is the PR base for its merge revision, the previous tip for an existing branch push, or the merge base against the remote default branch for a new branch. A first single root commit on the default branch can use an empty-tree comparison. A multi-commit push checks its final revision. Missing history fails the quality check. The Harness keeps structural and archive checks scoped to PRs and main pushes. Check the remote ruleset before relying on required-check enforcement. The Harness source also has separate [supervised Skill evaluations](skill-evaluations.md).
 
-Before adoption, retain the original wrapper/configuration/CI and lockfile in the reviewable Git change. Roll back those files and the provider reference together; rerun the restored original suite. Do not delete maintained regressions or failed evidence to make adoption appear successful. Source changes alone neither publish a release nor migrate consumers.
+Before adoption, retain the original wrapper, Ruff and suite configuration, CI and lockfile in the reviewable Git change. Roll back those files and the provider reference together; rerun the restored original suite. Do not delete maintained regressions or failed evidence to make adoption appear successful. Source changes alone neither publish a release nor migrate consumers.

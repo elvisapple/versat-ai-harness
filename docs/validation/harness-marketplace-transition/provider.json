@@ -1,0 +1,15 @@
+{
+  "commit": "c13b2f9a8e3188a2e3f74e6a84f87c7ad59189aa",
+  "declared_version": "0.4.0",
+  "release_exists": false,
+  "anchors": {
+    "VERSION": "40b8eb4000a913a7791090535f291d3d369874162a89ef3c9e3d4e887a1b9e79",
+    "sdd/process.md": "488b63b3ad26e4779db69d4b6ea9bd28b629936f58ccb42493cdaa99c940ccdb",
+    "sdd/metadata.md": "788c3a0ae8ac265a66546d3dddbf35e2c0c81bfa932940f3e5eae34990a0a064",
+    "validators/sdd/validate.py": "94f152e14dbe1dbb60fcd3d0ef40ba896fd9a71234d28d44ac8ba1d172d329bb",
+    "validators/sdd/sdd_inputs.py": "301a451e4346905df782aa76109c997e0a61da67752157f6cb0cb9a6203097f5",
+    "sdd/schemas/v3/proposal.schema.yaml": "03cfe376ca0dc8b8362d448501b22ff717544881db4a8bc7dc06d911d331988f",
+    "sdd/templates/proposal.md": "59d1363b081893025a1ef335207d6a6574867dc9758f56072b29d50756b70f68",
+    "standards/index.yaml": "0a70db972dc3ba14cecf27a1617e404f63ab32ec1222ae8632c30698ecbcccee"
+  }
+}

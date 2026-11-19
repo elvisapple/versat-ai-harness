@@ -1,0 +1,13 @@
+{
+  "command": [
+    "bash",
+    "scripts/validate/quality.sh",
+    "--root",
+    ".",
+    "--base",
+    "a7d80172b3aeb054464a7ea3075d0ce6af4f223d"
+  ],
+  "exit_code": 0,
+  "stdout": "Quality comparison base: a7d80172b3aeb054464a7ea3075d0ce6af4f223d\nChangelog: required by 24 path(s), including '.agents/plugins/marketplace.json'.\nChangelog: found a new Unreleased entry.\nRuff: checking 2 changed Python source file(s).\nAll checks passed!\n2 files already formatted\n",
+  "stderr": ""
+}

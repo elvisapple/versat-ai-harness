@@ -10,15 +10,22 @@ The format follows Keep a Changelog, and the project follows Semantic Versioning
 
 - index-resolved coding and changelog standards, with pinned Python lint and formatting checks and Git-based changelog validation in the Harness and Python reference integration.
 
-## [0.4.0] - Private preparation candidate (unreleased)
+### Changed
+
+- rename the candidate marketplace to `versat` while keeping plugin `versat-ai-harness`; document later manual reinstallation for the two current users and retain explicit pending native/external checks.
+
+## [0.4.0] - Unreleased candidate
 
 ### Prepared
 
+- integrated Apache-2.0 license/notices on public main and shared CODEOWNERS; main protection and the internal review-control test were verified operationally;
+- changed the local candidate catalog identity to `versat` / `Versat Plugins`, retaining plugin `versat-ai-harness`, policy and exact `v0.4.0` selection; existing `versat-internal` installations are not migrated;
+- added marketplace identity/label regression checks and EN/PT/ES transition guidance; the approved two-user handoff accepts main synchronization and later manual reinstallation, while native/external observations remain pending and v0.4.0 is not yet available;
 - public Apache-2.0 candidate for eligible first-party Harness material, with retained third-party notices and independent destination-project terms;
 - multilingual contribution, reporting, setup and recovery guidance with explicit pending external-user verification;
 - separate preparation, adoption and operational handoff with private evidence and no automatic consumer migration.
 
-This candidate entry does not assert a release date, effective adoption, public availability or completion of missing checks. The following previously unreleased source capabilities are included in the candidate review.
+The reviewed license/notices are integrated on public main. This candidate entry does not assert a versioned release date or completion of pending external checks. The following previously unreleased source capabilities are included in the candidate review.
 
 
 ### Added

@@ -18,6 +18,8 @@ SEMVER = re.compile(
     r"(?:\+[0-9A-Za-z-]+(?:\.[0-9A-Za-z-]+)*)?$"
 )
 PLUGIN_NAME = "versat-ai-harness"
+MARKETPLACE_NAME = "versat"
+MARKETPLACE_LABEL = "Versat Plugins"
 PORTABLE_SCHEMA = "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json"
 EXPECTED_SKILLS = {
     "architecture-review",
@@ -102,7 +104,9 @@ def validate() -> list[str]:
             re.MULTILINE,
         )
         if lock_version is None:
-            errors.append("project template standards.lock must declare harness.version")
+            errors.append(
+                "project template standards.lock must declare harness.version"
+            )
         else:
             require_equal(
                 lock_version.group(1),
@@ -124,13 +128,21 @@ def validate() -> list[str]:
             errors.append(f"legacy nested Plugin path must be removed: {relative_path}")
 
     if portable is not None:
-        require_equal(portable.get("$schema"), PORTABLE_SCHEMA, "portable schema", errors)
+        require_equal(
+            portable.get("$schema"), PORTABLE_SCHEMA, "portable schema", errors
+        )
         require_equal(portable.get("name"), PLUGIN_NAME, "portable Plugin name", errors)
-        require_equal(portable.get("version"), version, "portable Plugin version", errors)
+        require_equal(
+            portable.get("version"), version, "portable Plugin version", errors
+        )
         extensions = portable.get("extensions")
-        openai_extension = extensions.get("com.openai") if isinstance(extensions, dict) else None
+        openai_extension = (
+            extensions.get("com.openai") if isinstance(extensions, dict) else None
+        )
         portable_interface = (
-            openai_extension.get("interface") if isinstance(openai_extension, dict) else None
+            openai_extension.get("interface")
+            if isinstance(openai_extension, dict)
+            else None
         )
         if not isinstance(portable_interface, dict):
             errors.append("plugin.json must define extensions.com.openai.interface")
@@ -138,11 +150,21 @@ def validate() -> list[str]:
         portable_interface = None
 
     if compatibility is not None:
-        require_equal(compatibility.get("name"), PLUGIN_NAME, "compatibility Plugin name", errors)
         require_equal(
-            compatibility.get("version"), version, "compatibility Plugin version", errors
+            compatibility.get("name"), PLUGIN_NAME, "compatibility Plugin name", errors
         )
-        require_equal(compatibility.get("skills"), "./skills/", "compatibility skills path", errors)
+        require_equal(
+            compatibility.get("version"),
+            version,
+            "compatibility Plugin version",
+            errors,
+        )
+        require_equal(
+            compatibility.get("skills"),
+            "./skills/",
+            "compatibility skills path",
+            errors,
+        )
         compatibility_interface = compatibility.get("interface")
         if not isinstance(compatibility_interface, dict):
             errors.append(".codex-plugin/plugin.json must define interface")
@@ -158,6 +180,19 @@ def validate() -> list[str]:
         )
 
     if marketplace is not None:
+        require_equal(
+            marketplace.get("name"), MARKETPLACE_NAME, "marketplace name", errors
+        )
+        interface = marketplace.get("interface")
+        if not isinstance(interface, dict):
+            errors.append("marketplace interface must be an object")
+        else:
+            require_equal(
+                interface.get("displayName"),
+                MARKETPLACE_LABEL,
+                "marketplace display name",
+                errors,
+            )
         entries = marketplace.get("plugins")
         if not isinstance(entries, list):
             errors.append("marketplace plugins must be an array")
@@ -168,14 +203,18 @@ def validate() -> list[str]:
                 if isinstance(entry, dict) and entry.get("name") == PLUGIN_NAME
             ]
             if len(matching) != 1:
-                errors.append("marketplace must contain exactly one versat-ai-harness entry")
+                errors.append(
+                    "marketplace must contain exactly one versat-ai-harness entry"
+                )
             else:
                 entry = matching[0]
                 source = entry.get("source")
                 if not isinstance(source, dict):
                     errors.append("marketplace Plugin source must be an object")
                 else:
-                    require_equal(source.get("source"), "url", "marketplace source type", errors)
+                    require_equal(
+                        source.get("source"), "url", "marketplace source type", errors
+                    )
                     require_equal(
                         source.get("url"),
                         "https://github.com/versat-labs/versat-ai-harness.git",
@@ -183,7 +222,10 @@ def validate() -> list[str]:
                         errors,
                     )
                     require_equal(
-                        source.get("ref"), f"v{version}", "marketplace release reference", errors
+                        source.get("ref"),
+                        f"v{version}",
+                        "marketplace release reference",
+                        errors,
                     )
                 policy = entry.get("policy")
                 if not isinstance(policy, dict):
@@ -199,7 +241,9 @@ def validate() -> list[str]:
                         errors.append("marketplace authentication policy is invalid")
                 category = entry.get("category")
                 if not isinstance(category, str) or not category.strip():
-                    errors.append("marketplace Plugin category must be a non-empty string")
+                    errors.append(
+                        "marketplace Plugin category must be a non-empty string"
+                    )
 
     return errors
 

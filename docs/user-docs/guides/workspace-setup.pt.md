@@ -20,7 +20,11 @@ Peça ao Codex para informar diretório de trabalho, versão do provedor e onde 
 
 ## Instalação candidata, atualizações exatas e recuperação
 
-A licença e os avisos aprovados estão aplicados na branch local de entrega, mas a integração na main e uma release pública 0.4.0 continuam pendentes. Não ative a referência local v0.4.0 do catálogo antes de existir a release exata autorizada separadamente. Código atual e v0.3.0 instalado são snapshots diferentes; confirme a versão real do SDD e os recursos do provedor selecionado. O alvo local de ensaio é Codex desktop 26.915.31945/build 9922 em macOS arm64, não uma matriz de suporte comprovada.
+A candidata local 0.4.0 usa o marketplace `versat` / `Versat Plugins`, preservando o plugin `versat-ai-harness`. A tag exata v0.4.0 ainda não está disponível. O proprietário informa que somente Elvis e Everton usam o Harness; ambos reinstalarão manualmente depois. O acompanhamento da main é aceito neste escopo, incluindo possível interrupção/reparo manual; pin prévio ou ensaio isolado não são requisitos para entregar o código. Identidade/sincronização nativa continuam não verificadas. Veja o [guia de transição e recuperação](marketplace-transition.pt.md).
+
+## Ensaio legado histórico — não são instruções de transição
+
+Os comandos e observações abaixo pertencem ao ensaio legado autorizado anteriormente. Não os execute no perfil atual nesta transição; siga os pré-requisitos da reinstalação manual posterior no guia de transição.
 
 O proprietário escolheu uma instalação individual com o mesmo usuário da Versat para o ensaio privado. No Codex desktop 26.915.31945/build 9922, o CLI incluído instalou `versat-ai-harness@versat-internal` versão 0.4.0 em um cache local separado; os arquivos do plugin 0.3.0 do workspace permaneceram iguais. A cópia instalada correspondeu a todos os arquivos da origem e resolveu as cinco Skills e os recursos canônicos. Isso verifica a etapa de instalação privada, não acesso anônimo, release público nem toda a suíte comportamental.
 

@@ -1,0 +1,18 @@
+{
+  "check": "CHECK-002",
+  "result": "unverified",
+  "observed_at": "2026-11-18T22:16:09.990749+00:00",
+  "input_digest_before": "6a1a9e2195038b7613564f184796df46aa44e89472f48539046a2bc595de001b",
+  "input_digest_after": "6a1a9e2195038b7613564f184796df46aa44e89472f48539046a2bc595de001b",
+  "context": {
+    "execution": "local",
+    "environment": "macOS-26.5.2-arm64-arm-64bit; Python 3.11.4; verified PyYAML/jsonschema environment",
+    "observed": true
+  },
+  "details": {
+    "review": "Read-only inventory reviewed. Owner reports managed catalog follows main; exact Source/Path/sync and containment remain unverified. Remote v0.4.0 tag absent at observation. No activation eligibility claimed.",
+    "inventory": "docs/validation/harness-marketplace-transition/inputs/inventory.json",
+    "guidance": "docs/user-docs/guides/marketplace-transition.md",
+    "next_action": "Administrator resolves main tracking before activation; operator supplies supported isolated runtime before rehearsal."
+  }
+}

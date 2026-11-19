@@ -1,0 +1,592 @@
+---
+sdd_version: 3
+change: harness-marketplace-transition
+tasks:
+- id: TASK-001
+  description: Reconcile the exact candidate, provider and bounded installation/sync inventory.
+  requirements:
+  - REQ-001
+  - REQ-002
+  - REQ-004
+  - REQ-006
+  status: completed
+- id: TASK-002
+  description: Implement the two-field catalog rename and meaningful package-validation regressions.
+  requirements:
+  - REQ-001
+  - REQ-005
+  - REQ-006
+  status: completed
+- id: TASK-003
+  description: Reconcile the existing documentary candidate and write aligned transition/recovery guidance.
+  requirements:
+  - REQ-001
+  - REQ-004
+  - REQ-005
+  - REQ-006
+  status: completed
+- id: TASK-004
+  description: Verify disposable native compatibility, conflict handling and recovery without using the real profile.
+  requirements:
+  - REQ-001
+  - REQ-003
+  - REQ-004
+  - REQ-006
+  status: blocked
+- id: TASK-005
+  description: Review the opt-in handoff, preserved history and complete scenario/regression evidence.
+  requirements:
+  - REQ-002
+  - REQ-003
+  - REQ-004
+  - REQ-005
+  - REQ-006
+  status: blocked
+- id: TASK-006
+  description: Collect local suite evidence, verify complete acceptance and prepare documentary delivery before
+    mandatory PR CI.
+  requirements:
+  - REQ-001
+  - REQ-002
+  - REQ-003
+  - REQ-004
+  - REQ-005
+  - REQ-006
+  status: blocked
+review:
+  revision: 2
+  state: superseded
+  blockers: []
+  upstream:
+    proposal: 1f6c413f32b209cc764ef3d2ba92ab30412c01c080f02d8fbe8379d421fe8a2e
+    design: 5ad1056a9bf2689839292e03767f9a480ab8c30efcac4b4c60340cf1e37db9cb
+  approval: null
+validation:
+  plan_digest: 61b7c6c5226f98795c740d251e36f95e31ffa3e33b5089b05b5cd8c0d435bf8d
+  results:
+  - check: CHECK-001
+    result: pass
+    evidence: docs/validation/harness-marketplace-transition/execution-01/check-001/report.json
+    revision: Local working tree on c13b2f9a8e3188a2e3f74e6a84f87c7ad59189aa; exact input snapshots recorded
+    input_digest_before: d392fd7c66d84f3869112bf152cf781a8a3c78b3d0d4836f62854e46d489e3c5
+    input_digest_after: d392fd7c66d84f3869112bf152cf781a8a3c78b3d0d4836f62854e46d489e3c5
+    context:
+      execution: local
+      environment: macOS-26.5.2-arm64-arm-64bit; Python 3.11.4; verified PyYAML/jsonschema environment
+      observed: true
+  - check: CHECK-002
+    result: unverified
+    evidence: docs/validation/harness-marketplace-transition/execution-01/check-002/report.json
+    revision: Local working tree on c13b2f9a8e3188a2e3f74e6a84f87c7ad59189aa; exact input snapshots recorded
+    input_digest_before: 6a1a9e2195038b7613564f184796df46aa44e89472f48539046a2bc595de001b
+    input_digest_after: 6a1a9e2195038b7613564f184796df46aa44e89472f48539046a2bc595de001b
+    context:
+      execution: local
+      environment: macOS-26.5.2-arm64-arm-64bit; Python 3.11.4; verified PyYAML/jsonschema environment
+      observed: true
+  - check: CHECK-003
+    result: unverified
+    evidence: docs/validation/harness-marketplace-transition/execution-01/check-003/report.json
+    revision: Local working tree on c13b2f9a8e3188a2e3f74e6a84f87c7ad59189aa; exact input snapshots recorded
+    input_digest_before: ce7e5fa907edb2543c59d9bdecb8ea0c23774348f82d8af8bccb2e3486ac2be2
+    input_digest_after: ce7e5fa907edb2543c59d9bdecb8ea0c23774348f82d8af8bccb2e3486ac2be2
+    context:
+      execution: local
+      environment: macOS-26.5.2-arm64-arm-64bit; Python 3.11.4; verified PyYAML/jsonschema environment
+      observed: true
+  - check: CHECK-004
+    result: unverified
+    evidence: docs/validation/harness-marketplace-transition/execution-01/check-004/report.json
+    revision: Local working tree on c13b2f9a8e3188a2e3f74e6a84f87c7ad59189aa; exact input snapshots recorded
+    input_digest_before: b90dae0c85ed4267a8c6ea4b41c4ebcc9a3b57c4e52de238f7f10ef856905da2
+    input_digest_after: b90dae0c85ed4267a8c6ea4b41c4ebcc9a3b57c4e52de238f7f10ef856905da2
+    context:
+      execution: local
+      environment: macOS-26.5.2-arm64-arm-64bit; Python 3.11.4; verified PyYAML/jsonschema environment
+      observed: true
+  - check: CHECK-005
+    result: pass
+    evidence: docs/validation/harness-marketplace-transition/execution-01/check-005/report.json
+    revision: Local working tree on c13b2f9a8e3188a2e3f74e6a84f87c7ad59189aa; exact input snapshots recorded
+    input_digest_before: fe9b8b060e9da6ff2ca1cdd767601c0f56d897014279a6ff08b9c837e0d5fe4f
+    input_digest_after: fe9b8b060e9da6ff2ca1cdd767601c0f56d897014279a6ff08b9c837e0d5fe4f
+    context:
+      execution: local
+      environment: macOS-26.5.2-arm64-arm-64bit; Python 3.11.4; verified PyYAML/jsonschema environment
+      observed: true
+  - check: CHECK-006
+    result: pass
+    evidence: docs/validation/harness-marketplace-transition/execution-01/check-006/report.json
+    revision: Local working tree on c13b2f9a8e3188a2e3f74e6a84f87c7ad59189aa; exact input snapshots recorded
+    input_digest_before: 77245f5d8bc3a32f5e1b48011725e92f35e0074b27518217efc429f319f10dad
+    input_digest_after: 77245f5d8bc3a32f5e1b48011725e92f35e0074b27518217efc429f319f10dad
+    context:
+      execution: local
+      environment: macOS-26.5.2-arm64-arm-64bit; Python 3.11.4; verified PyYAML/jsonschema environment
+      observed: true
+  assessments:
+  - obligation:
+      local:
+        requirement: REQ-001
+        scenario: 1
+    result: pass
+    checks:
+    - CHECK-001
+    evidence: docs/validation/harness-marketplace-transition/execution-01/review.md
+    explanation: Actual catalog delta contains only the approved two fields; preserved package/legal/policy files
+      checked against baseline.
+  - obligation:
+      local:
+        requirement: REQ-001
+        scenario: 2
+    result: unverified
+    checks:
+    - CHECK-001
+    - CHECK-003
+    - CHECK-005
+    evidence: docs/validation/harness-marketplace-transition/execution-01/review.md
+    explanation: Source constraints and stop rules are documented, but one or more required planned checks still
+      lack complete managed-sync or isolated native observations. No pass inferred from metadata tests.
+  - obligation:
+      local:
+        requirement: REQ-001
+        scenario: 3
+    result: unverified
+    checks:
+    - CHECK-002
+    - CHECK-006
+    evidence: docs/validation/harness-marketplace-transition/execution-01/review.md
+    explanation: Source constraints and stop rules are documented, but one or more required planned checks still
+      lack complete managed-sync or isolated native observations. No pass inferred from metadata tests.
+  - obligation:
+      local:
+        requirement: REQ-002
+        scenario: 1
+    result: unverified
+    checks:
+    - CHECK-002
+    evidence: docs/validation/harness-marketplace-transition/execution-01/review.md
+    explanation: Source constraints and stop rules are documented, but one or more required planned checks still
+      lack complete managed-sync or isolated native observations. No pass inferred from metadata tests.
+  - obligation:
+      local:
+        requirement: REQ-002
+        scenario: 2
+    result: unverified
+    checks:
+    - CHECK-002
+    - CHECK-004
+    evidence: docs/validation/harness-marketplace-transition/execution-01/review.md
+    explanation: Source constraints and stop rules are documented, but one or more required planned checks still
+      lack complete managed-sync or isolated native observations. No pass inferred from metadata tests.
+  - obligation:
+      local:
+        requirement: REQ-002
+        scenario: 3
+    result: unverified
+    checks:
+    - CHECK-002
+    - CHECK-004
+    evidence: docs/validation/harness-marketplace-transition/execution-01/review.md
+    explanation: Source constraints and stop rules are documented, but one or more required planned checks still
+      lack complete managed-sync or isolated native observations. No pass inferred from metadata tests.
+  - obligation:
+      local:
+        requirement: REQ-003
+        scenario: 1
+    result: unverified
+    checks:
+    - CHECK-003
+    evidence: docs/validation/harness-marketplace-transition/execution-01/review.md
+    explanation: Source constraints and stop rules are documented, but one or more required planned checks still
+      lack complete managed-sync or isolated native observations. No pass inferred from metadata tests.
+  - obligation:
+      local:
+        requirement: REQ-003
+        scenario: 2
+    result: unverified
+    checks:
+    - CHECK-003
+    evidence: docs/validation/harness-marketplace-transition/execution-01/review.md
+    explanation: Source constraints and stop rules are documented, but one or more required planned checks still
+      lack complete managed-sync or isolated native observations. No pass inferred from metadata tests.
+  - obligation:
+      local:
+        requirement: REQ-003
+        scenario: 3
+    result: unverified
+    checks:
+    - CHECK-003
+    - CHECK-004
+    evidence: docs/validation/harness-marketplace-transition/execution-01/review.md
+    explanation: Source constraints and stop rules are documented, but one or more required planned checks still
+      lack complete managed-sync or isolated native observations. No pass inferred from metadata tests.
+  - obligation:
+      local:
+        requirement: REQ-003
+        scenario: 4
+    result: unverified
+    checks:
+    - CHECK-003
+    - CHECK-006
+    evidence: docs/validation/harness-marketplace-transition/execution-01/review.md
+    explanation: Source constraints and stop rules are documented, but one or more required planned checks still
+      lack complete managed-sync or isolated native observations. No pass inferred from metadata tests.
+  - obligation:
+      local:
+        requirement: REQ-004
+        scenario: 1
+    result: unverified
+    checks:
+    - CHECK-002
+    - CHECK-003
+    - CHECK-004
+    evidence: docs/validation/harness-marketplace-transition/execution-01/review.md
+    explanation: Source constraints and stop rules are documented, but one or more required planned checks still
+      lack complete managed-sync or isolated native observations. No pass inferred from metadata tests.
+  - obligation:
+      local:
+        requirement: REQ-004
+        scenario: 2
+    result: unverified
+    checks:
+    - CHECK-003
+    - CHECK-004
+    - CHECK-005
+    evidence: docs/validation/harness-marketplace-transition/execution-01/review.md
+    explanation: Source constraints and stop rules are documented, but one or more required planned checks still
+      lack complete managed-sync or isolated native observations. No pass inferred from metadata tests.
+  - obligation:
+      local:
+        requirement: REQ-004
+        scenario: 3
+    result: unverified
+    checks:
+    - CHECK-002
+    - CHECK-004
+    evidence: docs/validation/harness-marketplace-transition/execution-01/review.md
+    explanation: Source constraints and stop rules are documented, but one or more required planned checks still
+      lack complete managed-sync or isolated native observations. No pass inferred from metadata tests.
+  - obligation:
+      local:
+        requirement: REQ-004
+        scenario: 4
+    result: unverified
+    checks:
+    - CHECK-004
+    evidence: docs/validation/harness-marketplace-transition/execution-01/review.md
+    explanation: Source constraints and stop rules are documented, but one or more required planned checks still
+      lack complete managed-sync or isolated native observations. No pass inferred from metadata tests.
+  - obligation:
+      local:
+        requirement: REQ-005
+        scenario: 1
+    result: pass
+    checks:
+    - CHECK-005
+    evidence: docs/validation/harness-marketplace-transition/execution-01/review.md
+    explanation: Changed active EN/PT/ES guidance was reviewed with local links, anchors, historical references
+      and truthful unavailable native status.
+  - obligation:
+      local:
+        requirement: REQ-005
+        scenario: 2
+    result: pass
+    checks:
+    - CHECK-001
+    - CHECK-006
+    evidence: docs/validation/harness-marketplace-transition/execution-01/review.md
+    explanation: New maintained identity/label negative cases plus full 191-test suites passed; metadata validation
+      is not native migration evidence.
+  - obligation:
+      local:
+        requirement: REQ-005
+        scenario: 3
+    result: unverified
+    checks:
+    - CHECK-005
+    - CHECK-006
+    evidence: docs/validation/harness-marketplace-transition/execution-01/review.md
+    explanation: Original 17-file candidate and failure record were preserved and reconciled, but successful documentary
+      delivery remains blocked by inventory/native gaps.
+  - obligation:
+      local:
+        requirement: REQ-006
+        scenario: 1
+    result: unverified
+    checks:
+    - CHECK-001
+    - CHECK-003
+    - CHECK-006
+    evidence: docs/validation/harness-marketplace-transition/execution-01/review.md
+    explanation: Source constraints and stop rules are documented, but one or more required planned checks still
+      lack complete managed-sync or isolated native observations. No pass inferred from metadata tests.
+  - obligation:
+      local:
+        requirement: REQ-006
+        scenario: 2
+    result: unverified
+    checks:
+    - CHECK-004
+    - CHECK-005
+    evidence: docs/validation/harness-marketplace-transition/execution-01/review.md
+    explanation: Source constraints and stop rules are documented, but one or more required planned checks still
+      lack complete managed-sync or isolated native observations. No pass inferred from metadata tests.
+  - obligation:
+      local:
+        requirement: REQ-006
+        scenario: 3
+    result: unverified
+    checks:
+    - CHECK-004
+    - CHECK-006
+    evidence: docs/validation/harness-marketplace-transition/execution-01/review.md
+    explanation: Source constraints and stop rules are documented, but one or more required planned checks still
+      lack complete managed-sync or isolated native observations. No pass inferred from metadata tests.
+  - obligation:
+      regression:
+        impact: 2
+        scenario: 2
+    result: pass
+    checks: &id001
+    - CHECK-005
+    - CHECK-006
+    evidence: docs/validation/harness-marketplace-transition/execution-01/review.md
+    explanation: Active multilingual guidance, historical evidence and unchanged independent consumer/product scope
+      reviewed; maintained suites pass.
+  - obligation:
+      regression:
+        impact: 2
+        scenario: 3
+    result: pass
+    checks: *id001
+    evidence: docs/validation/harness-marketplace-transition/execution-01/review.md
+    explanation: Active multilingual guidance, historical evidence and unchanged independent consumer/product scope
+      reviewed; maintained suites pass.
+  - obligation:
+      regression:
+        impact: 3
+        scenario: 1
+    result: unverified
+    checks: &id002
+    - CHECK-001
+    - CHECK-003
+    - CHECK-006
+    evidence: docs/validation/harness-marketplace-transition/execution-01/review.md
+    explanation: Retained source contracts checked, but native resource resolution or managed handoff remains unverified
+      under required planned checks.
+  - obligation:
+      regression:
+        impact: 3
+        scenario: 2
+    result: unverified
+    checks: *id002
+    evidence: docs/validation/harness-marketplace-transition/execution-01/review.md
+    explanation: Retained source contracts checked, but native resource resolution or managed handoff remains unverified
+      under required planned checks.
+  - obligation:
+      regression:
+        impact: 3
+        scenario: 3
+    result: unverified
+    checks: *id002
+    evidence: docs/validation/harness-marketplace-transition/execution-01/review.md
+    explanation: Retained source contracts checked, but native resource resolution or managed handoff remains unverified
+      under required planned checks.
+  - obligation:
+      regression:
+        impact: 4
+        scenario: 1
+    result: unverified
+    checks: &id003
+    - CHECK-002
+    - CHECK-004
+    - CHECK-005
+    - CHECK-006
+    evidence: docs/validation/harness-marketplace-transition/execution-01/review.md
+    explanation: Retained source contracts checked, but native resource resolution or managed handoff remains unverified
+      under required planned checks.
+  - obligation:
+      regression:
+        impact: 4
+        scenario: 2
+    result: unverified
+    checks: *id003
+    evidence: docs/validation/harness-marketplace-transition/execution-01/review.md
+    explanation: Retained source contracts checked, but native resource resolution or managed handoff remains unverified
+      under required planned checks.
+  - obligation:
+      regression:
+        impact: 4
+        scenario: 3
+    result: unverified
+    checks: *id003
+    evidence: docs/validation/harness-marketplace-transition/execution-01/review.md
+    explanation: Retained source contracts checked, but native resource resolution or managed handoff remains unverified
+      under required planned checks.
+  findings:
+  - id: FIND-001
+    source:
+      plan: Managed main tracking and unresolved synchronization exposure
+    category: missing
+    state: open
+    evidence: docs/validation/harness-marketplace-transition/inputs/inventory.json
+    description: Owner reports the managed source follows main; exact sync and approved containment/disposition
+      are missing. Rename activation/merge remains blocked.
+    tasks:
+    - TASK-005
+    - TASK-006
+    checks:
+    - CHECK-002
+    - CHECK-004
+  - id: FIND-002
+    source:
+      plan: Supported isolated native rehearsal unavailable
+    category: missing
+    state: open
+    evidence: docs/validation/harness-marketplace-transition/execution-01/check-003/report.json
+    description: Owner confirms no disposable native environment. Seven client compatibility/recovery scenarios
+      and evidence-based handoff remain unverified.
+    tasks:
+    - TASK-004
+    - TASK-005
+    - TASK-006
+    checks:
+    - CHECK-003
+    - CHECK-004
+closure: active
+---
+
+# Tasks
+
+Proposal/Requirements R1 and Design R2 are approved. The owner authorized only Tasks R2 preparation. All six tasks remain pending and unchecked; no native scenario, implementation check, workflow or migration was run to prepare this plan. The approved CHECK-006 correction is decomposed below without changing the Design or requirements.
+
+- [x] TASK-001 — Reconcile the exact candidate, provider and bounded installation/sync inventory.
+- [x] TASK-002 — Implement the two-field catalog rename and meaningful package-validation regressions.
+- [x] TASK-003 — Reconcile the existing documentary candidate and write aligned transition/recovery guidance.
+- [ ] TASK-004 — Verify disposable native compatibility, conflict handling and recovery without using the real profile.
+- [ ] TASK-005 — Review the opt-in handoff, preserved history and complete scenario/regression evidence.
+- [ ] TASK-006 — Collect local suite evidence, verify complete acceptance and prepare documentary delivery before mandatory PR CI.
+
+## Approved evidence sequence and scope
+
+The approved [Design R2](design.md) removes the former CHECK-006 evidence/closure cycle: collect genuine local Plugin-validator and full regression-suite results, record actual results and assessments, then run the unchanged full entry point and selected live SDD/archive delivery checks. The required `structural-validation` CI and applicable review controls must pass on the actual current PR revision before merge. No workflow, validator gate, required check or branch protection is weakened.
+
+TASK-001 through TASK-005 retain their source, inventory, guide, native and handoff scope. TASK-005 reviews CHECK-001 through CHECK-005 and identifies the remaining CHECK-006 evidence; TASK-006 collects it and performs the final complete acceptance review before documentary closure. A task does not require its own future closure report in order to collect its test evidence. No passing result is pre-populated, and local output is never labeled CI.
+
+No unresolved planning decision blocks this Tasks review. Actual managed Source/Path/ref/sync facts and a supported isolated native environment remain execution prerequisites, not assumed successes. Unknown sync prevents activation/merge; unavailable required native observations prevent complete delivery readiness. Authorized isolated source/document preparation can proceed without treating those unknowns as resolved.
+
+## Ordered work and completion conditions
+
+### TASK-001 — Candidate and inventory baseline
+
+Dependencies: approved Tasks and explicit implementation authority; verify planning provider anchors before use. Read-only inventory needs its applicable scope, not permission changes.
+
+Work: reconcile the approved base, actual refs and the previous 0.4.0 source/patch manifest. Confirm whether v0.4.0 is still absent; if it exists, stop the version choice rather than retag. Review the installation inventory by personal/project/managed scope, exact-versus-moving catalog ref, package ref, enabled state, effective provider and responsible authority. Preserve dated private identifiers only in restricted evidence and put minimal status in the Design's sanitized input record. Keep previous legal/exposure decisions within their actual scope.
+
+Completion: a traceable baseline and inventory record exists; every unknown has a next action and owner. Missing managed Source/Path/ref/sync may be recorded but must not yield a passing pre-merge activation assessment. CHECK-002 readiness remains unverified until required facts are actually known. Main tracking or an unidentified automatic sync stops source activation, not other authorized local preparation. No pinning, pausing or import occurs as part of this task.
+
+Requirements: REQ-001, REQ-002, REQ-004, REQ-006. Checks: CHECK-002, CHECK-004; preservation also feeds CHECK-006.
+
+### TASK-002 — Source metadata and deterministic validation
+
+Dependencies: TASK-001 establishes the source/version baseline; unresolved external inventory does not authorize or prevent isolated file preparation. No implementation starts before its explicit authority.
+
+Work: change only the catalog name to `versat` and display label to `Versat Plugins`; retain plugin name, URL, policies, category, root package and exact-version alignment. Extend `validators/plugin/validate.py` and add the planned `tests/validators/test_plugin_marketplace.py` plus disposable fixtures. Include valid target, wrong/empty/missing marketplace name, wrong label, plugin-name mismatch and ref/version mismatch; keep canonical root/resource assertions. Legacy fixtures use their recorded provider instead of a permissive alias in the current package validator.
+
+Completion: CHECK-001 has actual reproducible results for successful and rejecting cases, with restored test state and no writes outside disposable fixtures. Diff review confirms no legal, historical approval, workflow, main protection or consumer edits. No duplicated primary entry, automatic alias, cache relocation or permissive-name bypass is introduced.
+
+Requirements: REQ-001, REQ-005, REQ-006. Checks: CHECK-001 and the eventual full-suite portion of CHECK-006.
+
+### TASK-003 — Active documentation and transition procedure
+
+Dependencies: TASK-001 source baseline and TASK-002 selected identity; may draft the runbook before TASK-004, but revise it to observed behavior before completion. TASK-004 uses that draft without claiming it already verified.
+
+Work: inspect the original 17-file documentary patch, transfer only applicable status corrections and preserve the original artifact/failure record. Align root README, release notes, setup/security/licensing/status guidance in EN/PT/ES with the approved identity change. Add the planned `docs/user-docs/guides/marketplace-transition.md` and aligned translations. Separate catalog/package refs, personal/project/managed identities, known source availability and future authority. Preserve historical `versat-internal` references, prior approvals and prior failed evidence rather than mass-replacing them.
+
+Completion: full diff and affected links/anchors pass review; translated instructions have equivalent scope, failures, recovery and pending status. Native instructions are backed by actual TASK-004 observations where claimed; unavailable paths are clearly unverified. The procedure does not direct installation in the real profile, delete/reimport of a workspace marketplace, silent consumer updates or downgrade of active v3 work. CHECK-005 is truthful about every known limitation.
+
+Requirements: REQ-001, REQ-004, REQ-005, REQ-006. Checks: CHECK-004, CHECK-005; current package checks are retained.
+
+### TASK-004 — Isolated native compatibility and recovery
+
+Dependencies: TASK-002 candidate, TASK-003 draft runbook, verified old package/provider pair and a supported disposable native environment under separately applicable authority. Provisioning/authentication needs are identified before any operation. This task must not reuse the current user/workspace or repurpose HOME/CODEX_HOME.
+
+Work: execute the seven Design scenarios: new discovery; legacy retained; same Git URL refresh/registration; target-name collision; two installed providers with one effective provider; unavailable exact ref; actual recovery. Local-path adapters may test pre-tag resources; they do not establish same-Git-source behavior or public tag availability. Use a supported disposable Git endpoint for that separate case, without creating a tag or changing the real GitHub source. Record native version, scoped source refs, qualified IDs, effective provider paths/hashes and synthetic project state before/after.
+
+Completion: CHECK-003 records genuine observations and each covered scenario has a disposition. Do not complete the task with a fixture-only substitute for native behavior. Missing client, account isolation, endpoint or required model session stays unverified and blocks complete delivery readiness; failure preserves the previous usable pair. Do not delete or rename existing caches to unblock it. Return observations to TASK-003 for final guidance review. External-user coverage remains pending even if all internal isolated cases pass.
+
+Requirements: REQ-001, REQ-003, REQ-004, REQ-006. Checks: CHECK-003 and recovery decisions in CHECK-004.
+
+### TASK-005 — Handoff and complete evidence review
+
+Dependencies: TASK-001 inventory and TASK-002/003/004 actual results. Unresolved native or necessary inventory evidence remains an open gap.
+
+Work: review the planned per-installation opt-in against success and adverse outcomes; require a preserved old catalog/package/project pair. Separate managed-ID continuity evidence from local qualified-name behavior and prohibit generic `pluginId` workarounds. Verify that unknown sync cannot consume a renamed main accidentally. Record CHECK-004/005 observations and required CHECK-002 facts without performing a managed migration. Reuse one meaningful result for multiple obligations where justified.
+
+Completion: CHECK-001 through CHECK-005 have evidence-backed dispositions against their assigned local scenarios and retained regressions using the approved Design mapping; the remaining CHECK-006 suite evidence is explicitly assigned to TASK-006. This review does not claim complete acceptance before that result exists. No missing result is called not-applicable to clear delivery. Actual migration is not required before source delivery and is not claimed to have occurred. Preserve rights/history and explicitly pending external fork, security report and native external installation/update/recovery tests. Review input snapshots and pass the remaining full-suite obligation to TASK-006; final acceptance is established there only after genuine CHECK-006 execution.
+
+Requirements: REQ-002, REQ-003, REQ-004, REQ-005, REQ-006. Checks: CHECK-002, CHECK-003, CHECK-004, CHECK-005, followed by CHECK-006.
+
+### TASK-006 — Local suite evidence and documentary delivery
+
+Dependencies: current Tasks approval and explicit implementation authority, TASK-001 through TASK-005 complete for their assigned work with required real evidence, and a current trusted base. Design R2 already resolves the earlier planning cycle; no repeated approval of unchanged upstream scope is required.
+
+Work, in this order:
+
+1. On final source inputs, verify the interpreter/dependencies and capture CHECK-006's declared input snapshot. Run `validators/plugin/validate.py` and both complete maintained discovery suites, `tests/validators` and `tests/execution`, using `test_*.py`. Use the exact verified interpreter and `PYTHONDONTWRITEBYTECODE=1`. Record each actual command, exit status, log, count, runtime/revision and the matching after-input snapshot. A failed command or changed input is not a pass. These are the genuine local suite results, not a delivery/CI assertion.
+2. Record CHECK-006 with `context.execution: local` and the current Tasks plan digest. Verify all six required checks, all 20 local scenarios and eight retained regression obligations against current evidence. Record genuine assessments/findings and resolve actual failures within authorized scope; missing inventory/native evidence stays unverified and prevents complete delivery. Do not attribute the earlier 179-test result to the changed candidate or fabricate closure/CI output.
+3. Prepare the local delivery documentation and a review summary identifying exact candidate inputs, actual local results, preserved historical failures and outstanding external observations. Recheck affected links, translations and input freshness. This is local preparation only; remote submission requires separate applicable authority.
+
+Completion: the genuine local Plugin-validator and both complete regression suites pass on final inputs, all six checks and the 20 local scenario/eight regression obligations have valid evidence-backed acceptance, and the local delivery documentation is ready for the subsequent mandatory closure checks. Record task completion only when this work is actually done. This does not yet claim archive eligibility, remote CI or merge readiness.
+
+Requirements: all REQ-001 through REQ-006. Check: CHECK-006 and final consistency of CHECK-001 through CHECK-005. Documentary closure and required remote CI are distinct subsequent gates below; neither is fabricated inside this local result.
+
+## Mandatory documentary delivery checks after task completion
+
+Once all six tasks are actually complete and real evidence is recorded, prepare the unique dossier under `specs/archive/harness-marketplace-transition/` in the same branch with `closure: prepared` for delivery validation. Review links and input freshness after the move; rerun affected evidence if declared inputs changed. No new task-completion assertion depends on its own future archive-validation report.
+
+Run the unchanged full `scripts/validate/run.sh --baseline <reviewed-base-sha> --require-archive` with the verified Python environment, and run `validators/sdd/validate.py --root . --change harness-marketplace-transition --phase delivery --require-archive --json` using the same verified interpreter. Preserve actual closure reports separately. These commands consume already-recorded evidence and completed work; they are not prerequisites for producing CHECK-006's local result. Successful task execution alone is insufficient for delivery: both gates must pass before the dossier is reported ready for submission.
+
+A failing gate means delivery is not ready. Preserve the report, reopen any affected work/evidence and correct it within authority, then recheck; never bypass a guard or pre-populate a pass. Preserve the earlier ARCHIVE_SELECTION failure. Once closure checks pass, preserve the final portable transfer patch and review summary as local artifacts. CI and applicable review controls on the actual future PR revision remain mandatory before merge; no commit, push, PR, merge or CI dispatch is performed without applicable later authority. No task requires this change's own merge, release or consumer migration as a completion condition.
+
+## Dependencies and permitted parallel preparation
+
+TASK-001 establishes the source baseline; TASK-002 then prepares the candidate. TASK-003 has a draft used by TASK-004 and a final review incorporating TASK-004 observations, so it is not a circular completion prerequisite. TASK-005 consumes completed source, native and guidance evidence for CHECK-001 through CHECK-005. TASK-006 then collects CHECK-006 and completes the overall acceptance review and delivery documentation. The separate mandatory documentary closure gates follow completed work under approved Design R2.
+
+Source/guide work can progress locally while inventory or disposable environment prerequisites are being resolved, once implementation is actually authorized. No task may claim readiness while those required observations remain unknown. All six tasks remain pending because execution is not authorized or started. When execution begins, record any concrete unavailable prerequisite as blocked/unverified instead of marking its task complete.
+
+## Separate operational follow-up
+
+These are not tasks to execute under this plan-preparation instruction and are not requirements to perform a post-merge operation before local completion:
+
+- A future authorized source PR uses protected review and the mandatory existing `structural-validation` CI; inspect the actual current revision, successful required check and real reviewer approval before merge. New commits require current checks and applicable renewed review; local passes do not replace them.
+- Before source activation/merge, verify actual moving-source exposure; any required workspace pin/pause needs administrator authority and is not silently applied.
+- Tag/release creation, workspace import/sync, personal/project adoption and consumer lock migrations each retain their own scoped authorization and observed acceptance.
+- External fork/CI, private report receipt/confidentiality and native external installation/update/recovery remain pending. Internal rehearsal cannot close them.
+- Legacy retirement remains optional and separately authorized after recovery and dependency checks; no deletion is a rename mechanism.
+
+## Planning review
+
+Tasks R2 awaits Gate 3 approval. The owner approved the exact Design R2 digest recorded upstream with: “Aprovo o Design R2 de harness-marketplace-transition. Prepare somente as Tasks revisadas, sem implementar, alterar o workspace, migrar consumidores ou criar tag ou release.” The approved Proposal/Requirements R1 digest and Design R2 substantive digest remain unchanged. This instruction authorizes preparation only, not approval of these Tasks or their implementation.
+
+Tasks R1 remains preserved as a historical unstarted draft with digest `08d42c63c4ac92fe1dca3726730c13c235345c1171388d8c4aa30b2d828bb0ff`; its original blocked version and the superseded version are retained in private evidence. R2 replaces its obsolete planning conflict with the approved local-evidence, closure and mandatory-CI sequence, preserving six stable task IDs and their requirement mappings. All validation results, assessments and findings remain empty; closure remains active.
+
+Approval of these Tasks completes planning only. Execution still requires an explicit implementation instruction within its stated scope; workspace operations, consumer migration, remote delivery and tag/release each retain separate authority.
+
+The owner subsequently approved Tasks R2 under digest `61b7c6c5226f98795c740d251e36f95e31ffa3e33b5089b05b5cd8c0d435bf8d` and authorized local implementation: “Aprovo as Tasks R2 de harness-marketplace-transition. Prossiga com a implementação local, sem alterar o workspace, migrar consumidores ou criar tag ou release.” This supersedes the earlier preparation-only authority for local execution, while preserving all operational exclusions.
+
+
+This stage is superseded while Proposal/Requirements R2 is reviewed. The prior actual approval remains preserved under digest `61b7c6c5226f98795c740d251e36f95e31ffa3e33b5089b05b5cd8c0d435bf8d`: “Aprovo as Tasks R2 de harness-marketplace-transition. Prossiga com a implementação local, sem alterar o workspace, migrar consumidores ou criar tag ou release.” Existing substantive content, upstream bindings, task progress and observed results are historical, not authority to bypass the revised gate. No implementation status is reset to pending and no past result is rewritten.
+
+## Progress
+
+TASK-001, TASK-002 and TASK-003 are completed for the bounded inventory, implemented metadata/regressions and truthful multilingual documentation. TASK-004 is blocked by unavailable isolated runtime. TASK-005 is blocked by missing actual native and complete synchronization evidence. TASK-006 has passing local suites, but full acceptance and delivery remain blocked by those gaps. The owner reports managed main tracking and no available disposable environment; no workspace action is inferred. Source, fixture and documentation work is preserved locally.
+
+## Validation evidence
+
+CHECK-001, CHECK-005 and CHECK-006 pass on their final recorded inputs. CHECK-002, CHECK-003 and CHECK-004 are unverified. All 20 local scenarios and eight regression obligations have explicit dispositions; no missing native/managed evidence is marked not-applicable. The maintained suites passed 143 validator tests and 48 executor tests, 191 total, including 12 new marketplace tests. Earlier CHECK-005/006 outputs before a documentation correction remain preserved as historical attempts. See [execution review](../../../docs/validation/harness-marketplace-transition/execution-01/review.md). These actual local results do not establish remote CI or delivery readiness.
+
+## Delivery
+
+Closure remains active. The incomplete dossier is not archived or submitted. Managed main tracking must be addressed and the isolated native rehearsal completed before complete delivery readiness. No commit, push, PR, merge, workflow dispatch, workspace/consumer migration, tag or release occurred. Actual required CI and eligible review remain mandatory before any later authorized merge.

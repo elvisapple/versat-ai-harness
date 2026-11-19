@@ -1,0 +1,56 @@
+{
+  "check": "CHECK-006",
+  "result": "pass",
+  "observed_at": "2026-11-19T18:14:21.154885+00:00",
+  "input_digest_before": "573e885e14a4830c9c1d3eef30c5bdeb479dfb811ce36f50d2e735f9a4417ccd",
+  "input_digest_after": "573e885e14a4830c9c1d3eef30c5bdeb479dfb811ce36f50d2e735f9a4417ccd",
+  "context": {
+    "execution": "local",
+    "environment": "macOS-26.5.2-arm64-arm-64bit; Python 3.11.4; PyYAML 6.0.2; jsonschema 4.23.0",
+    "observed": true
+  },
+  "details": {
+    "runs": [
+      {
+        "command": [
+          "/private/tmp/hpb-replan-r2-venv/bin/python",
+          "validators/plugin/validate.py"
+        ],
+        "exit_code": 0,
+        "stdout": "Portable Plugin package validation passed.\n",
+        "stderr": ""
+      },
+      {
+        "command": [
+          "/private/tmp/hpb-replan-r2-venv/bin/python",
+          "-m",
+          "unittest",
+          "discover",
+          "-s",
+          "tests/validators",
+          "-p",
+          "test_*.py"
+        ],
+        "exit_code": 0,
+        "stdout": "",
+        "stderr": ".................................................................................................................................................\n----------------------------------------------------------------------\nRan 145 tests in 24.094s\n\nOK\n"
+      },
+      {
+        "command": [
+          "/private/tmp/hpb-replan-r2-venv/bin/python",
+          "-m",
+          "unittest",
+          "discover",
+          "-s",
+          "tests/execution",
+          "-p",
+          "test_*.py"
+        ],
+        "exit_code": 0,
+        "stdout": "",
+        "stderr": "................................................\n----------------------------------------------------------------------\nRan 48 tests in 13.249s\n\nOK\n"
+      }
+    ],
+    "limitation": "Local pinned-source suites only; archive guards run afterward. Current main has advanced and its updated checks must be reconciled before a future authorized PR. No remote CI/native result is claimed."
+  }
+}

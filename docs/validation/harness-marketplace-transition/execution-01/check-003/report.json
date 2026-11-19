@@ -1,0 +1,18 @@
+{
+  "check": "CHECK-003",
+  "result": "unverified",
+  "observed_at": "2026-11-18T22:16:10.973263+00:00",
+  "input_digest_before": "ce7e5fa907edb2543c59d9bdecb8ea0c23774348f82d8af8bccb2e3486ac2be2",
+  "input_digest_after": "ce7e5fa907edb2543c59d9bdecb8ea0c23774348f82d8af8bccb2e3486ac2be2",
+  "context": {
+    "execution": "local",
+    "environment": "macOS-26.5.2-arm64-arm-64bit; Python 3.11.4; verified PyYAML/jsonschema environment",
+    "observed": true
+  },
+  "details": {
+    "review": "Owner confirmed no disposable native environment. Seven native cases remain unexercised, including same-Git-source handling and recovery. No real profile/workspace used.",
+    "inventory": "docs/validation/harness-marketplace-transition/inputs/inventory.json",
+    "guidance": "docs/user-docs/guides/marketplace-transition.md",
+    "next_action": "Administrator resolves main tracking before activation; operator supplies supported isolated runtime before rehearsal."
+  }
+}

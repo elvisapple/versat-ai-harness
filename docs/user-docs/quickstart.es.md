@@ -4,6 +4,8 @@
 
 Para un desarrollador con acceso autorizado al repositorio que planifica su primer cambio, incluido un contribuidor externo cuando acceso y términos aplicables estén disponibles. Necesitas acceso al repositorio, proyecto local preparado y proveedor exacto del Harness con versat-sdd disponible. Completa [la preparación del entorno](guides/workspace-setup.es.md).
 
+[Transición del marketplace: identidades nueva y heredada](guides/marketplace-transition.es.md)
+
 ## Planificar un cambio pequeño
 
 Usa un proyecto preparado desechable en este ejemplo. En un proyecto real, describe la historia verdadera y vincula su issue. Envía:

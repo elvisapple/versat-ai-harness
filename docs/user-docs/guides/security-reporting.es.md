@@ -2,13 +2,13 @@
 
 [English](security-reporting.md) | [Português](security-reporting.pt.md) | [Español](security-reporting.es.md)
 
-La ruta pública de reporte del Harness está **sin verificar**. La ruta prevista es GitHub Private Vulnerability Reporting de este repositorio, sujeta a disponibilidad y verificación para el público previsto. Esta preparación no envió reportes ni activó canales.
+GitHub Private Vulnerability Reporting está habilitado en este repositorio público. El acceso del informante externo, la recepción y la confidencialidad siguen **sin verificarse** hasta realizar la prueba externa aplazada. Habilitar el canal y completar la prueba interna de revisión de PR no demuestra la entrega de reportes externos.
 
 Las observaciones anteriores de H02 cubrieron otro piloto público y una recepción interna del Harness. Son evidencia histórica y no establecen una ruta pública del Harness. @elviszoz y @evertonspohrversat comparten monitoreo, triaje y coordinación; Elvis mantiene la coordinación responsable. Cualquiera puede atender un reporte. Registre un responsable efectivo y un traspaso de atención explícitamente reconocido si esa persona no está disponible; no se requieren dos respuestas. La asignación y CODEOWNERS no configuran notificaciones ni demuestran acceso o recepción. El responsable confirmó la participación de ambos en el triaje compartido y en las pruebas futuras. La recepción pública sigue sin verificar. Un traspaso real se registra cuando sea necesario; no exige una simulación separada antes de publicar.
 
 La política de revisión exige una aprobación de CODEOWNER elegible que no sea autor de la PR; es independiente del triaje de seguridad. La aprobación del propio autor no satisface el requisito, y la responsabilidad compartida no exige dos aprobaciones. La rama base efectiva determina la elegibilidad; consulte la [transición de responsables](../../handoffs/harness-publication-blockers/transition.md#general-ownership-and-base-branch-transition).
 
-En la secuencia aprobada en GitHub Free, la preparación privada confirma responsables, destinatarios reales y la alternativa segura. La activación del PVR nativo y la prueba externa de envío, recepción y exclusión de acceso ocurren solamente después de visibilidad pública autorizada por separado y controles verificados. Un 404 en estado privado no exige activación privada de pago ni demuestra una ruta pública de reporte. Consulte la [transición delimitada](../../handoffs/harness-publication-blockers/transition.md).
+El procedimiento anterior de transición en GitHub Free es histórico: la apertura pública, la protección de main y la activación del canal ya ocurrieron. La prueba externa de reporte/recepción/exclusión sigue pendiente; las [notas de la candidata](../../releases/0.4.0-candidate.es.md) distinguen estos estados.
 
 ## Antes de compartir detalles
 

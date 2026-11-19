@@ -4,7 +4,7 @@
 
 Fonte de verdade da Versat para desenvolvimento assistido por IA: um Plugin portátil com Standards, Spec Driven Development (SDD), Skills reutilizáveis, templates compostos e validação determinística.
 
-Para quem desenvolve, revisa e mantém projetos, incluindo contribuidores externos quando acesso e termos aplicáveis estiverem disponíveis. Mantido pela Versat; os CODEOWNERS gerais e responsáveis pela triagem de segurança são @elviszoz e @evertonspohrversat, com coordenação de Elvis. A política exige uma aprovação elegível de quem não abriu a PR. A elegibilidade segue o CODEOWNERS da branch base; esta preparação local não ativa controles no GitHub nem comprova entrega de relatos de segurança. Veja o [handoff atual](docs/handoffs/harness-publication-blockers/README.md).
+Para quem desenvolve, revisa e mantém projetos, incluindo contribuidores externos. Mantido pela Versat. @elviszoz e @evertonspohrversat são os CODEOWNERS gerais e responsáveis pela triagem compartilhada; Elvis coordena. A main exige uma aprovação elegível de CODEOWNER que não abriu a PR e CI aprovada. O teste interno de aprovação, descarte e nova aprovação foi concluído. O recebimento externo de relatos de segurança permanece não verificado.
 
 ## Comece aqui
 
@@ -19,15 +19,21 @@ Para quem desenvolve, revisa e mantém projetos, incluindo contribuidores extern
 - [Revisar a arquitetura](docs/user-docs/guides/architecture-review.pt.md)
 - [Validação e avaliações](docs/user-docs/guides/validation-and-evaluations.pt.md)
 
-## Preparação da publicação em andamento
+- [Transição do marketplace: identidades nova e legada](docs/user-docs/guides/marketplace-transition.pt.md)
 
-A licença Apache-2.0 e os avisos aprovados estão aplicados nesta branch local de entrega. A integração na main e a distribuição pública continuam pendentes; 0.4.0 não é uma release disponível. A [aprovação do texto](docs/licensing/candidates/apache-2.0/APPROVAL.md) permanece como revisão histórica inalterada. Veja [licenciamento](docs/user-docs/guides/licensing.pt.md), [contribuição](docs/user-docs/guides/contributing.pt.md), [reporte de segurança](docs/user-docs/guides/security-reporting.pt.md) e a [resolução atual das pendências](docs/handoffs/harness-publication-blockers/README.md).
+## Repositório público; candidata 0.4.0 sem release
 
-A sequência aprovada no GitHub Free mantém a preparação e a revisão privadas; depois exige autorização separada para tornar o repositório público e proteger/verificar a main imediatamente, em até 15 minutos. As verificações reais dos controles, do reporte e do uso externo precedem qualquer release posterior. A sequência está preparada, não executada; veja o [handoff operacional atual](docs/handoffs/harness-publication-blockers/README.md).
+O repositório está público e a licença Apache-2.0 e os avisos revisados estão integrados na main. A versão 0.4.0 continua sendo uma candidata sem release: a tag v0.4.0 e a release ainda não estão disponíveis. As aprovações de texto e evidências históricas mantêm seu escopo original.
+
+A proteção da main e o teste interno de controles de PR foram verificados. Private Vulnerability Reporting está habilitado; comportamento de fork/CI externo, recebimento/confidencialidade de relatos e instalação/atualização/recuperação nativa do Plugin permanecem pendentes. A pausa de escritas terminou; o trabalho normal segue por PRs protegidas.
+
+[Notas da candidata 0.4.0 e verificações pendentes](docs/releases/0.4.0-candidate.pt.md)
+
+[Licença](LICENSE) · [Contribuição](docs/user-docs/guides/contributing.pt.md) · [Reporte de segurança](docs/user-docs/guides/security-reporting.pt.md)
 
 ## Estado atual e adoção
 
-VERSION e manifests agora declaram o candidato local 0.4.0. Seu catálogo no repositório seleciona v0.4.0, que não deve ser importada como release disponível antes de essa tag exata ser criada e verificada sob autorização separada. Instalações existentes e pins de consumidores permanecem iguais; a referência anteriormente lançada é v0.3.0.
+VERSION e manifests agora declaram o candidato local 0.4.0. Seu catálogo no repositório seleciona v0.4.0, que não deve ser importada como release disponível antes de essa tag exata ser criada e verificada sob autorização separada. Esta preparação local não altera instalações ou pins de consumidores; a referência anteriormente lançada é v0.3.0. Os dois usuários atuais planejam reinstalação manual posterior; a sincronização da main pode interromper a configuração existente. O guia de transição explica o escopo aceito e os testes nativos pendentes.
 
 Administradores gerenciam importação do marketplace e política de instalação. Use este repositório como fonte, autentique com acesso de leitura, revise a release exata importada e confirme disponibilidade aos membros. Siga a interface atual de administração; a política do marketplace é AVAILABLE e não comprova instalação automática. Os membros podem usar [a preparação do ambiente](docs/user-docs/guides/workspace-setup.pt.md).
 

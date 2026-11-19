@@ -1,0 +1,23 @@
+{
+  "check": "CHECK-003",
+  "result": "pass",
+  "observed_at": "2026-11-19T18:45:21.276857+00:00",
+  "input_digest_before": "0037236323f2ec17f0cf9a43ab094ce6fef0f31d2241f820a55ccf179021154a",
+  "input_digest_after": "0037236323f2ec17f0cf9a43ab094ce6fef0f31d2241f820a55ccf179021154a",
+  "context": {
+    "execution": "local",
+    "environment": "macOS-26.5.2-arm64-arm-64bit; Python 3.11.4; PyYAML 6.0.2; jsonschema 4.23.0",
+    "observed": true
+  },
+  "details": {
+    "method": "Document review with structural corroboration; no native execution",
+    "observations": [
+      "Reviewed all seven named native cases with executed=false, status=unverified and evidence=null; none was recast as passed or not-applicable. This check reviews honest deferral, not native compatibility.",
+      "Elvis and Everton have separate pending records with empty actual identity/version/provider/resources/Skill/failure evidence. The guide gives a synthetic versat-sdd planning action, observable draft/gate or recorded failure, and one intended effective provider.",
+      "No VM/container/account, native command execution or completed seven-case simulation is required for bounded source delivery. Later manual reinstall observations cover only cases actually encountered. External cases remain pending separately."
+    ],
+    "input": "docs/validation/harness-marketplace-transition/inputs/transition-r2.json",
+    "guidance": "docs/user-docs/guides/marketplace-transition.md",
+    "limitation": "Pass covers the approved source-review method only; native/managed/per-user/external behavior remains unverified."
+  }
+}

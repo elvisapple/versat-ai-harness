@@ -1,0 +1,153 @@
+{
+  "recorded_at": "2026-11-19T18:12:07.179724+00:00",
+  "authority": "Approved Proposal/Requirements R2, Design R3 and Tasks R3; local implementation only",
+  "owner_reports": {
+    "users": [
+      "Elvis",
+      "Everton"
+    ],
+    "scope_quote": "Somente eu e Everton estamos utilizando o harness por enquanto. Então, prossiga com a atualização que depois nós reinstalamos o plugin manualmente.",
+    "managed_ref": "main",
+    "source": "Owner replies in the current conversation; not an independent membership audit or individual acceptance",
+    "manual_reinstallation": "later, by each user"
+  },
+  "approved_disposition": {
+    "preliminary_pin_or_pause_required": false,
+    "isolated_native_rehearsal_required_before_source_delivery": false,
+    "accepted_risk": "Main synchronization may expose the renamed catalog before later manual reinstallation, causing temporary interruption or manual repair. No continuity guarantee.",
+    "scope_stop": "If any additional affected user is identified, stop activation and reassess expanded scope.",
+    "supersedes": "Only earlier source-delivery pin/containment and isolated-rehearsal prerequisites; original inventory.json and execution-01 remain dated observations."
+  },
+  "installations": {
+    "personal": "Historical observed legacy qualified key; cached 0.4.0; not refreshed in this turn",
+    "managed": "Historical observed cached 0.3.0; reported main source; effective sessions and managed identity unknown",
+    "project": "Exact project/provider locks and snapshots remain unchanged; active SDD v3 needs a capable matching provider"
+  },
+  "unknowns": [
+    "actual managed Source/Path/sync configuration",
+    "managed IDs/sharing/roles continuity",
+    "effective provider per active session",
+    "same Git URL handling",
+    "native qualified enablement and collision behavior"
+  ],
+  "remote_refs": {
+    "observation_date": "2026-11-19",
+    "method": "git ls-remote --heads --tags origin; read-only",
+    "target": "v0.4.0",
+    "target_tag_exists": false,
+    "observed_tags": [
+      "v0.2.0",
+      "v0.3.0"
+    ],
+    "release_inventory": "Not queried in this turn; tag absence establishes candidate-ref eligibility only",
+    "reviewed_base": "c13b2f9a8e3188a2e3f74e6a84f87c7ad59189aa",
+    "main": "a7d80172b3aeb054464a7ea3075d0ce6af4f223d",
+    "delta": "PR #43 coding/changelog standards added after the pinned baseline; no marketplace/version change",
+    "delivery_limit": "Current work remains on the approved provider/base. Reconcile the newer main and run its applicable quality/structural controls before a future PR; no current-main CI readiness claim."
+  },
+  "deferred_native": [
+    {
+      "id": "NATIVE-001",
+      "scenario": "Fresh discovery and canonical resources",
+      "status": "unverified",
+      "executed": false,
+      "evidence": null,
+      "followup": "Record only actual observations during later scoped manual reinstallation; no seven-case simulation prerequisite for source delivery."
+    },
+    {
+      "id": "NATIVE-002",
+      "scenario": "Legacy installation retained",
+      "status": "unverified",
+      "executed": false,
+      "evidence": null,
+      "followup": "Record only actual observations during later scoped manual reinstallation; no seven-case simulation prerequisite for source delivery."
+    },
+    {
+      "id": "NATIVE-003",
+      "scenario": "Same Git URL rename/refresh/registration",
+      "status": "unverified",
+      "executed": false,
+      "evidence": null,
+      "followup": "Record only actual observations during later scoped manual reinstallation; no seven-case simulation prerequisite for source delivery."
+    },
+    {
+      "id": "NATIVE-004",
+      "scenario": "Target-name collision",
+      "status": "unverified",
+      "executed": false,
+      "evidence": null,
+      "followup": "Record only actual observations during later scoped manual reinstallation; no seven-case simulation prerequisite for source delivery."
+    },
+    {
+      "id": "NATIVE-005",
+      "scenario": "Two providers with one effective provider",
+      "status": "unverified",
+      "executed": false,
+      "evidence": null,
+      "followup": "Record only actual observations during later scoped manual reinstallation; no seven-case simulation prerequisite for source delivery."
+    },
+    {
+      "id": "NATIVE-006",
+      "scenario": "Unavailable exact package reference",
+      "status": "unverified",
+      "executed": false,
+      "evidence": null,
+      "followup": "Record only actual observations during later scoped manual reinstallation; no seven-case simulation prerequisite for source delivery."
+    },
+    {
+      "id": "NATIVE-007",
+      "scenario": "Recovery after failure",
+      "status": "unverified",
+      "executed": false,
+      "evidence": null,
+      "followup": "Record only actual observations during later scoped manual reinstallation; no seven-case simulation prerequisite for source delivery."
+    }
+  ],
+  "per_user_acceptance": [
+    {
+      "user": "Elvis",
+      "status": "pending",
+      "qualified_identity": null,
+      "exact_version": null,
+      "effective_provider": null,
+      "canonical_resources": null,
+      "representative_skill": null,
+      "failure_or_recovery": null,
+      "evidence": null,
+      "expected": "versat-ai-harness@versat with exact available package; one intended provider; locate five matching Skills/resources and prepare a small versat-sdd Proposal/Requirements on synthetic data, stopping before implementation; record errors or recovery honestly."
+    },
+    {
+      "user": "Everton",
+      "status": "pending",
+      "qualified_identity": null,
+      "exact_version": null,
+      "effective_provider": null,
+      "canonical_resources": null,
+      "representative_skill": null,
+      "failure_or_recovery": null,
+      "evidence": null,
+      "expected": "versat-ai-harness@versat with exact available package; one intended provider; locate five matching Skills/resources and prepare a small versat-sdd Proposal/Requirements on synthetic data, stopping before implementation; record errors or recovery honestly."
+    }
+  ],
+  "external_followup": {
+    "status": "unverified",
+    "cases": [
+      "external fork/CI",
+      "private security-report receipt/confidentiality",
+      "external native install/update/recovery"
+    ]
+  },
+  "handoff": {
+    "success": "After available supported exact package and later manual reinstall, record identity/version, one effective provider, matching resources and representative synthetic Skill outcome separately for each user.",
+    "failure": "Stop on collision, unavailable ref, ambiguous provider, incompatible runtime/resources or unsupported/admin/destructive action. Preserve/reselect verified compatible provider/project through supported controls; record recovery or unresolved failure.",
+    "unavailable_recovery": "Current main selecting absent v0.4.0 is not a verified recovery pair; do not silently select latest or downgrade active v3.",
+    "separate_authority": [
+      "remote push/PR/merge",
+      "tag/release",
+      "workspace import/ref/policy or managed deletion",
+      "automated install/uninstall",
+      "consumer migration",
+      "optional legacy cleanup"
+    ]
+  }
+}

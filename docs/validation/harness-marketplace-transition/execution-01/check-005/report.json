@@ -1,0 +1,20 @@
+{
+  "check": "CHECK-005",
+  "result": "pass",
+  "observed_at": "2026-11-18T22:17:17.812950+00:00",
+  "input_digest_before": "fe9b8b060e9da6ff2ca1cdd767601c0f56d897014279a6ff08b9c837e0d5fe4f",
+  "input_digest_after": "fe9b8b060e9da6ff2ca1cdd767601c0f56d897014279a6ff08b9c837e0d5fe4f",
+  "context": {
+    "execution": "local",
+    "environment": "macOS-26.5.2-arm64-arm-64bit; Python 3.11.4; verified PyYAML/jsonschema environment",
+    "observed": true
+  },
+  "details": {
+    "changed_markdown_files": 30,
+    "local_links_and_anchors": 236,
+    "whitespace": "pass including untracked documents",
+    "candidate_reconciliation": "All 17 prior documentary files incorporated; active identity paragraphs updated; original candidate untouched",
+    "semantic_review": "EN/PT/ES aligned for two identities, two refs, main-tracking stop, unavailable native runtime, opt-in, no destructive migration, external pending and mandatory CI. Historical legacy commands explicitly labeled; no unobserved transition commands claimed usable.",
+    "limitation": "This document review does not verify native behavior; CHECK-003/004 remain unverified."
+  }
+}

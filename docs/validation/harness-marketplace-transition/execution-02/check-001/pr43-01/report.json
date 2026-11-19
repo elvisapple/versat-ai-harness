@@ -1,0 +1,55 @@
+{
+  "check": "CHECK-001",
+  "result": "pass",
+  "observed_at": "2026-11-19T18:45:20.208931+00:00",
+  "input_digest_before": "691fdfe7d25f5679eaeaf0a97b62800260325608b9464bf1f464b2fce8a5373d",
+  "input_digest_after": "691fdfe7d25f5679eaeaf0a97b62800260325608b9464bf1f464b2fce8a5373d",
+  "context": {
+    "execution": "local",
+    "environment": "macOS-26.5.2-arm64-arm-64bit; Python 3.11.4; PyYAML 6.0.2; jsonschema 4.23.0",
+    "observed": true
+  },
+  "details": {
+    "runs": [
+      {
+        "command": [
+          "/private/tmp/hpb-replan-r2-venv/bin/python",
+          "validators/plugin/validate.py"
+        ],
+        "exit_code": 0,
+        "stdout": "Portable Plugin package validation passed.\n",
+        "stderr": ""
+      },
+      {
+        "command": [
+          "/private/tmp/hpb-replan-r2-venv/bin/python",
+          "-m",
+          "unittest",
+          "discover",
+          "-s",
+          "tests/validators",
+          "-p",
+          "test_plugin_marketplace.py"
+        ],
+        "exit_code": 0,
+        "stdout": "",
+        "stderr": "..............\n----------------------------------------------------------------------\nRan 14 tests in 1.814s\n\nOK\n"
+      }
+    ],
+    "catalog_delta": "Only name and interface.displayName changed",
+    "preserved_files": [
+      "VERSION",
+      "plugin.json",
+      ".codex-plugin/plugin.json",
+      "project-templates/base/.versat/standards.lock",
+      "LICENSE",
+      "NOTICE",
+      "THIRD-PARTY-NOTICES.md",
+      ".github/CODEOWNERS",
+      ".github/workflows/validate.yml",
+      "scripts/validate/run.sh"
+    ],
+    "canonical_resources_and_historical_approvals": "unchanged against reviewed HEAD",
+    "coverage": "12 existing metadata cases retained; 2 added copied-package cases exercise actual relative links/resources for all five Skills and detect a missing Standards index. These are deterministic paths, not native Skill execution."
+  }
+}

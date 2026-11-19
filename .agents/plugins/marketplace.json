@@ -1,7 +1,7 @@
 {
-  "name": "versat-internal",
+  "name": "versat",
   "interface": {
-    "displayName": "Versat Internal Plugins"
+    "displayName": "Versat Plugins"
   },
   "plugins": [
     {

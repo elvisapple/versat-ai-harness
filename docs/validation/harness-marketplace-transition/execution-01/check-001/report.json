@@ -1,0 +1,54 @@
+{
+  "check": "CHECK-001",
+  "result": "pass",
+  "observed_at": "2026-11-18T22:16:08.956907+00:00",
+  "input_digest_before": "d392fd7c66d84f3869112bf152cf781a8a3c78b3d0d4836f62854e46d489e3c5",
+  "input_digest_after": "d392fd7c66d84f3869112bf152cf781a8a3c78b3d0d4836f62854e46d489e3c5",
+  "context": {
+    "execution": "local",
+    "environment": "macOS-26.5.2-arm64-arm-64bit; Python 3.11.4; verified PyYAML/jsonschema environment",
+    "observed": true
+  },
+  "details": {
+    "runs": [
+      {
+        "command": [
+          "/private/tmp/hpb-replan-r2-venv/bin/python",
+          "validators/plugin/validate.py"
+        ],
+        "exit_code": 0,
+        "stdout": "Portable Plugin package validation passed.\n",
+        "stderr": ""
+      },
+      {
+        "command": [
+          "/private/tmp/hpb-replan-r2-venv/bin/python",
+          "-m",
+          "unittest",
+          "discover",
+          "-s",
+          "tests/validators",
+          "-p",
+          "test_plugin_marketplace.py"
+        ],
+        "exit_code": 0,
+        "stdout": "",
+        "stderr": "............\n----------------------------------------------------------------------\nRan 12 tests in 0.063s\n\nOK\n"
+      }
+    ],
+    "catalog_delta": "Only name and interface.displayName changed",
+    "preserved_files": [
+      "VERSION",
+      "plugin.json",
+      ".codex-plugin/plugin.json",
+      "project-templates/base/.versat/standards.lock",
+      "LICENSE",
+      "NOTICE",
+      "THIRD-PARTY-NOTICES.md",
+      ".github/CODEOWNERS",
+      ".github/workflows/validate.yml"
+    ],
+    "canonical_resources_and_historical_approvals": "unchanged against reviewed HEAD",
+    "fixtures": "12 maintained tests; metadata only, no native claim"
+  }
+}

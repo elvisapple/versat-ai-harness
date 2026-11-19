@@ -4,6 +4,8 @@
 
 For a developer with authorized repository access planning a first change, including an external contributor once access and applicable terms are available. You need repository access, a prepared local project and the exact Harness provider with versat-sdd available. Complete [workspace setup](guides/workspace-setup.md).
 
+[Marketplace transition: new and legacy identities](guides/marketplace-transition.md)
+
 ## Plan one small change
 
 Use a disposable prepared project for this example. In a real project, describe the actual user story and link its real issue. Send:

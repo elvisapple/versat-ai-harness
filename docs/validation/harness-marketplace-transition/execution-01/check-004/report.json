@@ -1,0 +1,18 @@
+{
+  "check": "CHECK-004",
+  "result": "unverified",
+  "observed_at": "2026-11-18T22:16:11.938344+00:00",
+  "input_digest_before": "b90dae0c85ed4267a8c6ea4b41c4ebcc9a3b57c4e52de238f7f10ef856905da2",
+  "input_digest_after": "b90dae0c85ed4267a8c6ea4b41c4ebcc9a3b57c4e52de238f7f10ef856905da2",
+  "context": {
+    "execution": "local",
+    "environment": "macOS-26.5.2-arm64-arm-64bit; Python 3.11.4; verified PyYAML/jsonschema environment",
+    "observed": true
+  },
+  "details": {
+    "review": "Decision rules retain owner opt-in, old provider/project pair, one effective provider and separate managed authority. Successful/failed native rehearsal evidence is unavailable; therefore the full evidence-based handoff check remains unverified.",
+    "inventory": "docs/validation/harness-marketplace-transition/inputs/inventory.json",
+    "guidance": "docs/user-docs/guides/marketplace-transition.md",
+    "next_action": "Administrator resolves main tracking before activation; operator supplies supported isolated runtime before rehearsal."
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "baseline": "a7d80172b3aeb054464a7ea3075d0ce6af4f223d",
+  "original_provider_preserved": "provider.json",
+  "original_anchor_match": {
+    "VERSION": true,
+    "sdd/process.md": true,
+    "sdd/metadata.md": true,
+    "validators/sdd/validate.py": true,
+    "validators/sdd/sdd_inputs.py": true,
+    "sdd/schemas/v3/proposal.schema.yaml": true,
+    "sdd/templates/proposal.md": true,
+    "standards/index.yaml": false
+  },
+  "intentional_index_change": "PR #43 adds core/coding.md; no SDD engine/schema/process change",
+  "new_anchors": {
+    "standards/index.yaml": "ac263c4e648db94360ff85157eb4a85367830eac8ee19f1861e7044f26cb1c91",
+    "standards/core/coding.md": "b5c766d9fb511d917cb9ae0483a4392b5d92e85187750515e9760322a85f464c",
+    "standards/technologies/python.md": "1de5c4e31cfe5c0612441068c4171865272fbb010e1e12bfdb0d9abe6163a929",
+    "validators/quality/validate.py": "03355e2f108762f30509e93d02046185dd47f082baa8062aa937d18b4ccb4bc8",
+    "scripts/validate/run.sh": "43ae3f6b88d917235e5a57fbd9d79f5dc3225f08580e068263b614f323de8f9a",
+    "scripts/validate/quality.sh": "a41d487e86a7134befd5f5ea0803e7d54146a376890824db79b9fb1af40c9598",
+    "ruff.toml": "643f421ad9d0c3eccbda833ecb09186d4bf02603339df825350e81bb4919e588",
+    "requirements-validation.txt": "32b985d71a912860df87f49b24b7c17ff02b6615581a0f09a7d9be6cf0850707"
+  },
+  "quality_dependency": "ruff==0.14.14"
+}

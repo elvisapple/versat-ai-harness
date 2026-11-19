@@ -4,7 +4,7 @@
 
 Versat’s source of truth for AI-assisted development: a portable Plugin containing Standards, Spec Driven Development (SDD), reusable Skills, composable project templates and deterministic validation.
 
-For developers, reviewers and maintainers, including external contributors when access and applicable terms are available. Maintained by Versat; general CODEOWNERS and shared security-triage maintainers are @elviszoz and @evertonspohrversat, with Elvis coordinating. The review policy requires one eligible approval from someone other than the PR author. Review eligibility follows the base branch’s CODEOWNERS; this local preparation does not activate GitHub enforcement or verify security-report delivery. See the [current handoff](docs/handoffs/harness-publication-blockers/README.md).
+For developers, reviewers and maintainers, including external contributors. Maintained by Versat. @elviszoz and @evertonspohrversat are the general CODEOWNERS and shared security-triage maintainers; Elvis coordinates. Main requires one eligible nonauthor CODEOWNER approval and passing CI. The internal approval/dismissal/renewed-approval test is complete. External security-report receipt remains unverified.
 
 ## Start here
 
@@ -19,15 +19,21 @@ For developers, reviewers and maintainers, including external contributors when 
 - [Review architecture](docs/user-docs/guides/architecture-review.md)
 - [Validation and evaluations](docs/user-docs/guides/validation-and-evaluations.md)
 
-## Publication preparation in progress
+- [Marketplace transition: new and legacy identities](docs/user-docs/guides/marketplace-transition.md)
 
-The approved Apache-2.0 license and notices are now applied in this local delivery branch. Integration on main and public distribution remain pending; 0.4.0 is not an available release. The [text approval](docs/licensing/candidates/apache-2.0/APPROVAL.md) remains the unchanged historical review. See [licensing](docs/user-docs/guides/licensing.md), [contribution](docs/user-docs/guides/contributing.md), [security reporting](docs/user-docs/guides/security-reporting.md) and the [current blocker resolution](docs/handoffs/harness-publication-blockers/README.md).
+## Repository published; 0.4.0 candidate unreleased
 
-The approved GitHub Free sequence keeps preparation and review private, then requires separately authorized public visibility followed immediately by main protection/readback within 15 minutes. Actual public control, reporting and external-use checks precede any later release. This sequence is prepared, not executed; see the [current operational handoff](docs/handoffs/harness-publication-blockers/README.md).
+The repository is public and the reviewed Apache-2.0 license and notices are integrated on main. Version 0.4.0 remains an unreleased candidate: no v0.4.0 tag or release is available. Existing text approvals and historical evidence retain their original scope.
+
+Main protection and the internal PR control test have been verified. Private Vulnerability Reporting is enabled; external fork/CI behavior, security-report receipt/confidentiality and native Plugin installation/update/recovery remain pending. The opening write pause has ended; ordinary work follows protected PRs.
+
+[0.4.0 candidate notes and remaining checks](docs/releases/0.4.0-candidate.md)
+
+[License](LICENSE) · [Contribution](docs/user-docs/guides/contributing.md) · [Security reporting](docs/user-docs/guides/security-reporting.md)
 
 ## Current state and adoption
 
-VERSION and manifests now declare the local 0.4.0 candidate. Its repository catalog selects v0.4.0, which must not be imported as an available release before that exact tag is created and verified under separate authority. Existing installations and consumer pins remain unchanged; the previous released reference is v0.3.0.
+VERSION and manifests now declare the local 0.4.0 candidate. Its repository catalog selects v0.4.0, which must not be imported as an available release before that exact tag is created and verified under separate authority. This local preparation changes no installation or consumer pin; the previous released reference is v0.3.0. The two current users plan later manual reinstallation; main synchronization may interrupt their existing setup. See the transition guide for the accepted scope and pending native checks.
 
 Workspace administrators manage marketplace import and member installation policy. Use this repository as the source, authenticate with read access, review the imported exact release and confirm member availability. Follow the current workspace administration interface; the repository marketplace policy is AVAILABLE and does not prove automatic installation. Members can use [workspace setup](docs/user-docs/guides/workspace-setup.md).
 

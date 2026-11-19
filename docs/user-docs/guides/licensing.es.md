@@ -2,13 +2,13 @@
 
 [English](licensing.md) | [Português](licensing.pt.md) | [Español](licensing.es.md)
 
-La licencia y los avisos aprobados están aplicados solamente en la rama local de entrega 0.4.0; integración en main y release siguen pendientes. Consulte la [licencia raíz](../../../LICENSE), el [aviso](../../../NOTICE), los [avisos de terceros](../../../THIRD-PARTY-NOTICES.md) y el [handoff actual](../../handoffs/harness-publication-blockers/README.md). Las aprobaciones y el texto de contribución preservados describen su etapa original; este estado actual no los reescribe.
+La licencia Apache-2.0 y los avisos revisados están integrados en main pública. La etiqueta/release 0.4.0 sigue pendiente. Consulte la [licencia raíz](../../../LICENSE), el [aviso](../../../NOTICE), los [avisos de terceros](../../../THIRD-PARTY-NOTICES.md) y el [estado de la candidata](../../releases/0.4.0-candidate.es.md). Las aprobaciones históricas se conservan; esta actualización de estado no modifica el texto jurídico.
 
 ## Preparar y revisar
 
 Identifique componente/revisión, material propio y de terceros, distribución prevista y permisos/avisos aplicables. La [política canónica](../../../standards/core/licensing-publication.md) rige la revisión. Revisores autorizados consultan evidencia sensible en almacenamiento restringido; esta orientación pública no depende de registros ni formación privados para explicar el proceso.
 
-Los términos Apache propuestos permiten uso general y comercial, modificación, redistribución y forks del material cubierto, sujetos a sus condiciones. Los terceros conservan sus términos. La herramienta no impone su licencia al material independiente del proyecto de destino; las plantillas copiadas mantienen las obligaciones aplicables. No se introduce CLA, DCO ni cesión de propiedad intelectual adicional. El texto oficial inglés rige el candidato, incluidas contribuciones, patentes, avisos, marcas y garantías; estas traducciones son explicativas.
+Los términos Apache adoptados permiten uso general y comercial, modificación, redistribución y forks del material cubierto, sujetos a sus condiciones. Los terceros conservan sus términos. La herramienta no impone su licencia al material independiente del proyecto de destino; las plantillas copiadas mantienen las obligaciones aplicables. No se introduce CLA, DCO ni cesión de propiedad intelectual adicional. El texto oficial inglés rige el candidato, incluidas contribuciones, patentes, avisos, marcas y garantías; estas traducciones son explicativas.
 
 Solo para este Harness, el handoff R2 aprobado selecciona GitHub Free con una secuencia delimitada: completar primero la revisión privada y la adopción/integración exacta; después autorizar por separado la visibilidad pública y la protección/verificación inmediata de main en un máximo de 15 minutos. Las verificaciones reales de controles públicos, reporte y uso externo siguen siendo obligatorias antes de una release posterior. Esta excepción de secuencia no exime derechos, confidencialidad ni revisión humana y no modifica el Standard canónico. Consulte el [handoff actual](../../handoffs/harness-publication-blockers/README.md).
 

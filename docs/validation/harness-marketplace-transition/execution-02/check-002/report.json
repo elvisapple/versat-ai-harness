@@ -1,0 +1,23 @@
+{
+  "check": "CHECK-002",
+  "result": "pass",
+  "observed_at": "2026-11-19T18:13:38.904707+00:00",
+  "input_digest_before": "959e75949313f396a52c978745a7281de5fe714ea9a543478ed107f191bd7438",
+  "input_digest_after": "959e75949313f396a52c978745a7281de5fe714ea9a543478ed107f191bd7438",
+  "context": {
+    "execution": "local",
+    "environment": "macOS-26.5.2-arm64-arm-64bit; Python 3.11.4; PyYAML 6.0.2; jsonschema 4.23.0",
+    "observed": true
+  },
+  "details": {
+    "method": "Document review with structural corroboration; no native execution",
+    "observations": [
+      "Reviewed owner quote, main-tracking report, prior sanitized inventory and current approved Proposal/Requirements R2. Reported users are Elvis/Everton only, not independently audited membership. Prior cached personal 0.4.0 and managed 0.3.0 observations remain dated; session/managed ID and Source/Path/sync remain unknown.",
+      "The approved interruption/manual-repair tradeoff and stop-on-extra-user condition explicitly replace the old preliminary pin/pause prerequisite. No state changed in the workspace.",
+      "Read-only remote refs on 2026-11-19 show no v0.4.0 tag; source selection remains exact v0.4.0, not latest. Release inventory was not refreshed. Main advanced through PR #43; the pinned local provider remains c13b2f9 and newer coding/quality controls need reconciliation before submission."
+    ],
+    "input": "docs/validation/harness-marketplace-transition/inputs/transition-r2.json",
+    "guidance": "docs/user-docs/guides/marketplace-transition.md",
+    "limitation": "Pass covers the approved source-review method only; native/managed/per-user/external behavior remains unverified."
+  }
+}

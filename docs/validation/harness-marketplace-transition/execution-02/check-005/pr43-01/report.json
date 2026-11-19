@@ -1,0 +1,21 @@
+{
+  "check": "CHECK-005",
+  "result": "pass",
+  "observed_at": "2026-11-19T18:45:22.458570+00:00",
+  "input_digest_before": "6ec9e40ff6772c24c786dc6697c9b9bc756d03324755d45886e5df626eea1ed5",
+  "input_digest_after": "6ec9e40ff6772c24c786dc6697c9b9bc756d03324755d45886e5df626eea1ed5",
+  "context": {
+    "execution": "local",
+    "environment": "macOS-26.5.2-arm64-arm-64bit; Python 3.11.4; PyYAML 6.0.2; jsonschema 4.23.0",
+    "observed": true
+  },
+  "details": {
+    "changed_markdown_files": 32,
+    "local_links_and_anchors": 238,
+    "whitespace": "pass including untracked documents",
+    "candidate_reconciliation": "17-file original preserved byte-for-byte; active updates incorporated into this candidate",
+    "historical_files_unchanged": 12,
+    "semantic_review": "EN/PT/ES reviewed for equal two-user reported scope, accepted main interruption/manual repair, no preliminary pin or isolated rehearsal, exact available package prerequisite, legacy/new keys without alias, synthetic per-user acceptance and failure recovery. Root READMEs no longer promise unchanged future installations. Historical command blocks unchanged. External/native cases remain pending. CI/nonauthor review and separate release authority retained. PR #43 changes and the Unreleased entry are integrated, with actual Ruff format/lint and changelog checks passing; remote CI remains separate.",
+    "limitation": "No native route/continuity or remote CI success is claimed."
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "check": "CHECK-004",
+  "result": "pass",
+  "observed_at": "2026-11-19T18:13:40.890463+00:00",
+  "input_digest_before": "40a0e6c11b6fc4cc32e32aa59462aa016c24cb10f8879c3410a9e0cb93e679e2",
+  "input_digest_after": "40a0e6c11b6fc4cc32e32aa59462aa016c24cb10f8879c3410a9e0cb93e679e2",
+  "context": {
+    "execution": "local",
+    "environment": "macOS-26.5.2-arm64-arm-64bit; Python 3.11.4; PyYAML 6.0.2; jsonschema 4.23.0",
+    "observed": true
+  },
+  "details": {
+    "method": "Document review with structural corroboration; no native execution",
+    "observations": [
+      "Walked the success path as document review: available exact package and compatible saved source/provider/project record precede supported-client verification and manual reinstall; check identity/version, one effective provider, matching resources and synthetic Skill outcome separately for each user.",
+      "Walked error paths as document review: unavailable tag, collision, ambiguous provider, missing resources or incompatible runtime stop the affected installation; preserve/reselect a verified compatible pair through supported controls, otherwise record unresolved failure. No silent latest, incompatible v3 downgrade or lock edit.",
+      "Unsupported/destructive/admin operations and additional affected users stop the affected action and require scoped reassessment. Workspace import/ref/policy/deletion, automated install, cleanup and remote actions remain separately authorized; no generic pluginId/delete-reimport workaround. Local qualified identity proves no managed continuity.",
+      "Original FIND-001 and FIND-002 observations remain in history; their earlier source gate is superseded by approved bounded scope plus this completed review and CHECK-002/003. Underlying native/managed unknowns remain in the pending register, without a native pass."
+    ],
+    "input": "docs/validation/harness-marketplace-transition/inputs/transition-r2.json",
+    "guidance": "docs/user-docs/guides/marketplace-transition.md",
+    "limitation": "Pass covers the approved source-review method only; native/managed/per-user/external behavior remains unverified."
+  }
+}

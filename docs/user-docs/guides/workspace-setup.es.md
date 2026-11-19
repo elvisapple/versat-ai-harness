@@ -20,7 +20,11 @@ Pide a Codex informar directorio de trabajo, versión del proveedor y dónde enc
 
 ## Instalación candidata, actualizaciones exactas y recuperación
 
-La licencia y los avisos aprobados están aplicados en la rama local de entrega, pero la integración en main y una release pública 0.4.0 siguen pendientes. No active la referencia local v0.4.0 del catálogo antes de existir la release exacta autorizada por separado. Código actual y v0.3.0 instalado son snapshots diferentes; confirme la versión real del SDD y los recursos del proveedor seleccionado. El objetivo local del ensayo es Codex desktop 26.915.31945/build 9922 en macOS arm64, no una matriz de soporte demostrada.
+La candidata local 0.4.0 usa el marketplace `versat` / `Versat Plugins`, conservando el plugin `versat-ai-harness`. La etiqueta exacta v0.4.0 aún no está disponible. El propietario informa que solo Elvis y Everton usan el Harness; ambos reinstalarán manualmente después. Se acepta el seguimiento de main para este alcance, incluida posible interrupción/reparación manual; no se exige fijación previa ni ensayo aislado para entregar el código. Identidad/sincronización nativa siguen sin verificar. Consulte la [guía de transición y recuperación](marketplace-transition.es.md).
+
+## Ensayo heredado histórico — no son instrucciones de transición
+
+Los comandos y observaciones siguientes pertenecen al ensayo heredado autorizado anteriormente. No los ejecute en el perfil actual para esta transición; siga los prerrequisitos de la reinstalación manual posterior en la guía de transición.
 
 El propietario eligió una instalación individual con el mismo usuario de Versat para el ensayo privado. En Codex desktop 26.915.31945/build 9922, el CLI incluido instaló `versat-ai-harness@versat-internal` versión 0.4.0 en una caché local separada; los archivos del plugin 0.3.0 del workspace permanecieron iguales. La copia instalada coincidió con todos los archivos de origen y resolvió las cinco Skills y recursos canónicos. Esto verifica la instalación privada, no acceso anónimo, release pública ni toda la suite de comportamiento.
 

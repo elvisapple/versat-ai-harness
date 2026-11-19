@@ -1,0 +1,51 @@
+{
+  "observed_at": "2026-11-18T22:15:25.704954+00:00",
+  "restricted_evidence_id": "hmt-implementation-01",
+  "base_commit": "c13b2f9a8e3188a2e3f74e6a84f87c7ad59189aa",
+  "release_ref": {
+    "target": "v0.4.0",
+    "exists": false,
+    "source": "read-only remote tag listing"
+  },
+  "installations": [
+    {
+      "id": "personal-01",
+      "scope": "personal",
+      "marketplace": "versat-internal",
+      "plugin": "versat-ai-harness",
+      "version": "0.4.0",
+      "enabled": true,
+      "catalog": "previous local rehearsal source; private evidence records path",
+      "package_provider": "cached manifest observed; effective provider per active session not established",
+      "owner": "installation owner",
+      "next_action": "preserve verified catalog/package/project pair before any future migration"
+    },
+    {
+      "id": "managed-01",
+      "scope": "managed",
+      "cached_version": "0.3.0",
+      "catalog_ref": "main",
+      "ref_evidence": "owner reported in current conversation",
+      "source_path_sync_policy": "not independently verified",
+      "enabled_and_managed_identity": "unknown; cache presence insufficient",
+      "owner": "workspace administrator",
+      "next_action": "review sync and authorize containment or explicit disposition before merge; do not modify workspace here"
+    },
+    {
+      "id": "strategy-01",
+      "scope": "project",
+      "version": "0.3.0",
+      "catalog": "not a project adoption mechanism",
+      "provider": "exact pinned Standards snapshot and per-dossier provider; unchanged",
+      "owner": "repository owner",
+      "next_action": "retain current exact locks; future consumer migration separately authorized"
+    }
+  ],
+  "native_environment": {
+    "status": "unavailable",
+    "source": "owner confirmed; no supported VM/container tools found on PATH",
+    "next_action": "operator supplies supported disposable environment and scoped authentication authority"
+  },
+  "pre_merge_activation": "unverified; main tracking is reported and containment has not been established",
+  "external_tests": "pending; unchanged approved scope"
+}

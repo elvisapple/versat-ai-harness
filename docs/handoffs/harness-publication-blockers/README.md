@@ -1,4 +1,11 @@
-# Harness publication blockers — R4 local delivery preparation
+# Harness publication — current operational status
+
+As of 2026-11-18, the reviewed Apache candidate is integrated on public main via [PR #40](https://github.com/versat-labs/versat-ai-harness/pull/40). Main protection is enabled. [PR #41](https://github.com/versat-labs/versat-ai-harness/pull/41) completed the internal CI/review/dismissal/renewed-approval test and was closed without merge. The owner ended the exceptional write pause; ordinary work resumes through protected PRs. Private Vulnerability Reporting is enabled, but the external fork, report receipt/confidentiality and native Plugin installation/update/recovery tests remain pending.
+
+Version 0.4.0 is a technical candidate, not an available tag/release. The local marketplace-transition candidate changes the catalog to `versat` / `Versat Plugins` while retaining plugin `versat-ai-harness`; the change is not integrated or activated. The owner reports Elvis and Everton as the only current users and accepts main tracking with possible interruption/manual repair and later manual reinstallation. Prior pin/rehearsal source-delivery prerequisites are superseded for this bounded scope; native behavior and per-user outcomes remain unverified; see the [transition guide](../../user-docs/guides/marketplace-transition.md). See the [candidate notes](../../releases/0.4.0-candidate.md). No workspace or consumer migration is included. This status supersedes the operational pending statements below; it does not rewrite their historical approvals or test outcomes.
+
+## Historical R4 local delivery preparation
+
 
 R4 Proposal/Requirements, Design and Tasks are approved. The owner authorized private implementation only, with no GitHub mutation or publication. The owner subsequently authorized local patch application and documentary delivery preparation with “Ok avance”; remote operations remain unauthorized. Current work reuses earlier decisions and existing implementation; [Tasks](../../../specs/archive/harness-publication-blockers/tasks.md) records actual progress. [R4 evidence](../../validation/harness-publication-blockers/run-r4-01/README.md) distinguishes private checks from unexecuted operations.
 

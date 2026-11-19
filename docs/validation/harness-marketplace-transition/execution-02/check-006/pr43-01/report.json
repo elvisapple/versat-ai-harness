@@ -1,0 +1,56 @@
+{
+  "check": "CHECK-006",
+  "result": "pass",
+  "observed_at": "2026-11-19T18:46:08.215635+00:00",
+  "input_digest_before": "0e215377b116e3f26e24e86266c045b072b46d8e86fea2e976711acd1af35af8",
+  "input_digest_after": "0e215377b116e3f26e24e86266c045b072b46d8e86fea2e976711acd1af35af8",
+  "context": {
+    "execution": "local",
+    "environment": "macOS-26.5.2-arm64-arm-64bit; Python 3.11.4; PyYAML 6.0.2; jsonschema 4.23.0",
+    "observed": true
+  },
+  "details": {
+    "runs": [
+      {
+        "command": [
+          "/private/tmp/hpb-replan-r2-venv/bin/python",
+          "validators/plugin/validate.py"
+        ],
+        "exit_code": 0,
+        "stdout": "Portable Plugin package validation passed.\n",
+        "stderr": ""
+      },
+      {
+        "command": [
+          "/private/tmp/hpb-replan-r2-venv/bin/python",
+          "-m",
+          "unittest",
+          "discover",
+          "-s",
+          "tests/validators",
+          "-p",
+          "test_*.py"
+        ],
+        "exit_code": 0,
+        "stdout": "",
+        "stderr": "............................................................................................................................................................\n----------------------------------------------------------------------\nRan 156 tests in 28.155s\n\nOK\n"
+      },
+      {
+        "command": [
+          "/private/tmp/hpb-replan-r2-venv/bin/python",
+          "-m",
+          "unittest",
+          "discover",
+          "-s",
+          "tests/execution",
+          "-p",
+          "test_*.py"
+        ],
+        "exit_code": 0,
+        "stdout": "",
+        "stderr": "................................................\n----------------------------------------------------------------------\nRan 48 tests in 16.339s\n\nOK\n"
+      }
+    ],
+    "limitation": "Local integrated PR #43 source suites; archive and quality guards run afterward. No remote CI/native result is claimed."
+  }
+}

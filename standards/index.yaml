@@ -9,6 +9,7 @@ core:
     - core/security.md
     - core/licensing-publication.md
     - core/contribution.md
+    - core/coding.md
     - core/testing.md
     - core/observability.md
 

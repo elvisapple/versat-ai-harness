@@ -4,18 +4,20 @@ on:
   pull_request:
     types: [opened, synchronize, reopened, ready_for_review, converted_to_draft]
   push:
-    branches: [main]
+    branches: ['**']
 
 permissions:
   contents: read
 
 jobs:
   structural-validation:
+    if: github.event_name == 'pull_request' || (github.ref == 'refs/heads/main' && !github.event.deleted)
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
+          persist-credentials: false
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
@@ -27,6 +29,7 @@ jobs:
         env:
           SDD_REQUIRE_ARCHIVE: ${{ github.event_name == 'push' || github.event.pull_request.draft == false }}
           SDD_BASELINE: ${{ github.event.pull_request.base.sha || github.event.before }}
+          VERSAT_STRUCTURAL_ONLY: '1'
         run: |
           test -n "$SDD_BASELINE"
           if [[ "$SDD_REQUIRE_ARCHIVE" == "true" ]]; then
@@ -34,3 +37,20 @@ jobs:
           else
             ./scripts/validate/run.sh --baseline "$SDD_BASELINE"
           fi
+  quality:
+    if: github.event_name == 'pull_request' || !github.event.deleted
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: pip
+          cache-dependency-path: requirements-validation.txt
+      - name: Install validation dependencies
+        run: python -m pip install -r requirements-validation.txt
+      - name: Check coding conventions and changelog
+        run: bash scripts/validate/quality.sh --root . --github-event "$GITHUB_EVENT_PATH"

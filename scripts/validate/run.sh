@@ -5,14 +5,26 @@ repo_root="$(cd "$(dirname "${BASH_SOURCE[0]}")/../.." && pwd)"
 failures=0
 validation_python="${PYTHON:-python3}"
 sdd_args=(--phase planning)
+quality_base="${VERSAT_QUALITY_BASE:-}"
 while [[ "$#" -gt 0 ]]; do
   case "$1" in
+    --quality-base)
+      if [[ "$#" -lt 2 || -z "$2" || "$2" == --* ]]; then
+        echo "--quality-base requires a Git comparison revision" >&2
+        exit 1
+      fi
+      quality_base="$2"
+      shift 2
+      ;;
     --baseline)
       if [[ "$#" -lt 2 || -z "$2" || "$2" == --* ]]; then
         echo "--baseline requires a trusted Git revision" >&2
         exit 1
       fi
       sdd_args+=(--baseline "$2")
+      if [[ -z "$quality_base" ]]; then
+        quality_base="$2"
+      fi
       shift 2
       ;;
     --require-archive)
@@ -20,11 +32,20 @@ while [[ "$#" -gt 0 ]]; do
       shift
       ;;
     *)
-      echo "Usage: $0 [--baseline trusted-git-revision] [--require-archive]" >&2
+      echo "Usage: $0 [--quality-base git-revision] [--baseline trusted-git-revision] [--require-archive]" >&2
       exit 1
       ;;
   esac
 done
+
+if [[ "${VERSAT_STRUCTURAL_ONLY:-}" != "1" ]]; then
+  if [[ -z "$quality_base" ]]; then
+    echo "FAIL quality comparison needs --quality-base (for example, origin/main)." >&2
+    failures=$((failures + 1))
+  elif ! bash "${repo_root}/scripts/validate/quality.sh" --root "$repo_root" --base "$quality_base"; then
+    failures=$((failures + 1))
+  fi
+fi
 
 required_files=(
   "AGENTS.md"

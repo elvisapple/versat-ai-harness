@@ -14,7 +14,7 @@ Use $versat-sdd to validate <change-id> against its approved plan. Report actual
 
 ## Expected result
 
-In the Harness root, ./scripts/validate/run.sh checks the package, SDD records and maintained regressions. It does not run another project’s application tests. Consumer execution and supervised evaluation described in the specialized guides are unreleased source capabilities: use an exact provider containing them and follow their adoption prerequisites. Full required suites, targeted runs and supervised observations have different evidence limits.
+In the Harness root, `./scripts/validate/run.sh --quality-base origin/main` checks the package, SDD records and maintained regressions. It does not run another project’s application tests. Consumer execution and supervised evaluation described in the specialized guides are unreleased source capabilities: use an exact provider containing them and follow their adoption prerequisites. Full required suites, targeted runs and supervised observations have different evidence limits.
 
 ## Recovery and limits
 

@@ -6,6 +6,10 @@ The format follows Keep a Changelog, and the project follows Semantic Versioning
 
 ## [Unreleased]
 
+### Added
+
+- index-resolved coding and changelog standards, with pinned Python lint and formatting checks and Git-based changelog validation in the Harness and Python reference integration.
+
 ## [0.4.0] - Private preparation candidate (unreleased)
 
 ### Prepared

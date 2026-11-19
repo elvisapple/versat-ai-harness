@@ -8,18 +8,18 @@ import sys
 import tempfile
 import unittest
 import yaml
-from support import PACKAGE, runner, write_config
+from support import PACKAGE, runner
 import provider
 
-GOOD='''def charge(seen, key, amount):
+GOOD = """def charge(seen, key, amount):
     if not key or amount <= 0:
         raise ValueError("key and positive amount required")
     if key in seen:
         return False
     seen.add(key)
     return True
-'''
-TESTS='''import unittest
+"""
+TESTS = """import unittest
 from src.payment import charge
 class Payment(unittest.TestCase):
     def test_new(self): self.assertTrue(charge(set(), 'a', 1))
@@ -30,73 +30,298 @@ class Payment(unittest.TestCase):
         with self.assertRaises(ValueError): charge(set(),'a',0)
     def test_error(self):
         with self.assertRaises(ValueError): charge(set(),'',1)
-'''
+"""
 
 
 class ConsumerTests(unittest.TestCase):
     def setUp(self):
-        self.temp=tempfile.TemporaryDirectory(); self.addCleanup(self.temp.cleanup)
-        self.root=Path(self.temp.name)
-        shutil.copytree(PACKAGE/'project-templates/base',self.root,dirs_exist_ok=True)
-        shutil.copytree(PACKAGE/'project-templates/artifacts/validation/python',self.root,dirs_exist_ok=True)
-        (self.root/'src').mkdir(); (self.root/'tests').mkdir()
-        (self.root/'src/payment.py').write_text(GOOD)
-        (self.root/'tests/test_payment.py').write_text(TESTS)
+        self.temp = tempfile.TemporaryDirectory()
+        self.addCleanup(self.temp.cleanup)
+        self.root = Path(self.temp.name)
+        shutil.copytree(
+            PACKAGE / "project-templates/base", self.root, dirs_exist_ok=True
+        )
+        shutil.copytree(
+            PACKAGE / "project-templates/artifacts/validation/python",
+            self.root,
+            dirs_exist_ok=True,
+        )
+        (self.root / "src").mkdir()
+        (self.root / "tests").mkdir()
+        (self.root / "src/payment.py").write_text(GOOD)
+        (self.root / "tests/test_payment.py").write_text(TESTS)
+
     def test_reference_and_seeded_regressions(self):
-        baseline,_=runner.run_project(self.root); self.assertEqual(baseline['result'],'pass')
-        for mutant in [GOOD.replace('if key in seen:','if False:'),GOOD.replace('amount <= 0','amount < 0'),GOOD.replace('not key or ','')]:
-            (self.root/'src/payment.py').write_text(mutant)
-            result,_=runner.run_project(self.root); self.assertEqual(result['result'],'fail')
-        (self.root/'src/payment.py').write_text(GOOD)
-        result,_=runner.run_project(self.root); self.assertEqual(result['result'],'pass')
+        baseline, _ = runner.run_project(self.root)
+        self.assertEqual(baseline["result"], "pass")
+        for mutant in [
+            GOOD.replace("if key in seen:", "if False:"),
+            GOOD.replace("amount <= 0", "amount < 0"),
+            GOOD.replace("not key or ", ""),
+        ]:
+            (self.root / "src/payment.py").write_text(mutant)
+            result, _ = runner.run_project(self.root)
+            self.assertEqual(result["result"], "fail")
+        (self.root / "src/payment.py").write_text(GOOD)
+        result, _ = runner.run_project(self.root)
+        self.assertEqual(result["result"], "pass")
+
     def test_adequate_coverage_reuse_and_missing_history(self):
-        tests=self.root/'tests/test_payment.py'; original=tests.read_bytes()
-        runner.run_project(self.root); runner.run_project(self.root)
-        self.assertEqual(tests.read_bytes(),original)
-        tests.write_text(TESTS.split('    def test_duplicate')[0])
-        (self.root/'src/payment.py').write_text(GOOD.replace('if key in seen:','if False:'))
-        insufficient,_=runner.run_project(self.root); self.assertEqual(insufficient['result'],'pass')
+        tests = self.root / "tests/test_payment.py"
+        original = tests.read_bytes()
+        runner.run_project(self.root)
+        runner.run_project(self.root)
+        self.assertEqual(tests.read_bytes(), original)
+        tests.write_text(TESTS.split("    def test_duplicate")[0])
+        (self.root / "src/payment.py").write_text(
+            GOOD.replace("if key in seen:", "if False:")
+        )
+        insufficient, _ = runner.run_project(self.root)
+        self.assertEqual(insufficient["result"], "pass")
         # Full command success cannot establish semantic coverage. Add the missing retained check.
         tests.write_text(TESTS)
-        covered,_=runner.run_project(self.root); self.assertEqual(covered['result'],'fail')
+        covered, _ = runner.run_project(self.root)
+        self.assertEqual(covered["result"], "fail")
+
     def test_custom_command_preserved_and_rollback(self):
-        config_path=self.root/'.versat/validation.yaml'; original=config_path.read_bytes()
-        config=yaml.safe_load(original)
-        config['suites'][0]['argv']+=['-p','test_payment.py']; config_path.write_text(yaml.safe_dump(config))
-        expected=config_path.read_bytes()
-        result,_=runner.run_project(self.root)
-        self.assertEqual(result['result'],'pass'); self.assertEqual(config_path.read_bytes(),expected)
+        config_path = self.root / ".versat/validation.yaml"
+        original = config_path.read_bytes()
+        config = yaml.safe_load(original)
+        config["suites"][0]["argv"] += ["-p", "test_payment.py"]
+        config_path.write_text(yaml.safe_dump(config))
+        expected = config_path.read_bytes()
+        result, _ = runner.run_project(self.root)
+        self.assertEqual(result["result"], "pass")
+        self.assertEqual(config_path.read_bytes(), expected)
         config_path.write_bytes(original)
-        self.assertEqual(runner.run_project(self.root)[0]['result'],'pass')
+        self.assertEqual(runner.run_project(self.root)[0]["result"], "pass")
+
     def test_provider_rejects_unresolved_pin(self):
-        with self.assertRaises(ValueError): provider.verify(self.root)
+        with self.assertRaises(ValueError):
+            provider.verify(self.root)
+
     def test_manual_and_replacement_dispositions_require_review(self):
         # Reuse the canonical SDD fixture so this integration does not invent a second policy.
-        sys.path.insert(0,str(PACKAGE/'tests/validators'))
+        sys.path.insert(0, str(PACKAGE / "tests/validators"))
         import test_sdd_v3
-        for method in ('test_manual_check_needs_reason_and_observed_result','test_supersession_uses_local_replacement','test_unapproved_exclusion_is_rejected'):
-            case=test_sdd_v3.V3Tests(method)
-            result=unittest.TestResult(); case.run(result)
-            self.assertTrue(result.wasSuccessful(),(method,result.errors,result.failures))
+
+        for method in (
+            "test_manual_check_needs_reason_and_observed_result",
+            "test_supersession_uses_local_replacement",
+            "test_unapproved_exclusion_is_rejected",
+        ):
+            case = test_sdd_v3.V3Tests(method)
+            result = unittest.TestResult()
+            case.run(result)
+            self.assertTrue(
+                result.wasSuccessful(), (method, result.errors, result.failures)
+            )
+
     def test_clean_provider_resolves_canonical_index(self):
         with tempfile.TemporaryDirectory() as directory:
-            package=Path(directory)
-            for name in ['standards','schemas','scripts/testing','validators','sdd']:
-                shutil.copytree(PACKAGE/name,package/name)
-            shutil.copy(PACKAGE/'VERSION',package/'VERSION')
-            def git(*args): return subprocess.check_output(['git','-C',str(package),*args],text=True).strip()
-            git('init','-q'); git('add','.')
-            git('-c','user.name=Synthetic','-c','user.email=fixture@example.invalid','-c','commit.gpgsign=false','commit','-qm','Synthetic provider')
-            identity={'schema_version':1,'project':{'name':'fixture','description':'Synthetic consumer','profile':'software','domain':'finance','owner':'Synthetic','visibility':'private','criticality':'medium'},'technologies':['python']}
-            index=yaml.safe_load((package/'standards/index.yaml').read_text()); paths=set(index['core']['always']+index['profiles']['software']+index['domains']['finance']+index['criticality']['medium']+index['technologies']['python'])
-            version=(package/'VERSION').read_text().strip()
-            lock={'schema_version':1,'harness':{'version':version,'commit':git('rev-parse','HEAD')},'resolved_at':'synthetic-fixture','standards':[{'path':p,'version':version,'digest':hashlib.sha256((package/'standards'/p).read_bytes()).hexdigest()} for p in sorted(paths)]}
-            (self.root/'.versat/project.yaml').write_text(yaml.safe_dump(identity)); (self.root/'.versat/standards.lock').write_text(yaml.safe_dump(lock))
-            self.assertEqual(provider.verify(self.root,package)['result'],'pass')
-            result=subprocess.run(['bash',str(self.root/'scripts/validate/run.sh')],
-                                  env={**os.environ,'VERSAT_HARNESS_ROOT':str(package),'PYTHON':sys.executable},
-                                  capture_output=True,text=True)
-            self.assertEqual(result.returncode,0,(result.stdout,result.stderr))
-            self.assertEqual(json.loads(result.stdout.splitlines()[-1])['scope'],'full')
-            (package/'standards/core/testing.md').write_text('changed')
-            with self.assertRaises(ValueError): provider.verify(self.root,package)
+            package = Path(directory)
+            for name in [
+                "standards",
+                "schemas",
+                "scripts/testing",
+                "scripts/validate",
+                "validators",
+                "sdd",
+            ]:
+                shutil.copytree(PACKAGE / name, package / name)
+            shutil.copy(PACKAGE / "VERSION", package / "VERSION")
+
+            def git(*args):
+                return subprocess.check_output(
+                    ["git", "-C", str(package), *args], text=True
+                ).strip()
+
+            git("init", "-q")
+            git("add", ".")
+            git(
+                "-c",
+                "user.name=Synthetic",
+                "-c",
+                "user.email=fixture@example.invalid",
+                "-c",
+                "commit.gpgsign=false",
+                "commit",
+                "-qm",
+                "Synthetic provider",
+            )
+            identity = {
+                "schema_version": 1,
+                "project": {
+                    "name": "fixture",
+                    "description": "Synthetic consumer",
+                    "profile": "software",
+                    "domain": "finance",
+                    "owner": "Synthetic",
+                    "visibility": "private",
+                    "criticality": "medium",
+                },
+                "technologies": ["python"],
+            }
+            index = yaml.safe_load((package / "standards/index.yaml").read_text())
+            paths = set(
+                index["core"]["always"]
+                + index["profiles"]["software"]
+                + index["domains"]["finance"]
+                + index["criticality"]["medium"]
+                + index["technologies"]["python"]
+            )
+            version = (package / "VERSION").read_text().strip()
+            lock = {
+                "schema_version": 1,
+                "harness": {"version": version, "commit": git("rev-parse", "HEAD")},
+                "resolved_at": "synthetic-fixture",
+                "standards": [
+                    {
+                        "path": p,
+                        "version": version,
+                        "digest": hashlib.sha256(
+                            (package / "standards" / p).read_bytes()
+                        ).hexdigest(),
+                    }
+                    for p in sorted(paths)
+                ],
+            }
+            (self.root / ".versat/project.yaml").write_text(yaml.safe_dump(identity))
+            (self.root / ".versat/standards.lock").write_text(yaml.safe_dump(lock))
+            self.assertEqual(provider.verify(self.root, package)["result"], "pass")
+
+            def project_git(*args):
+                return subprocess.check_output(
+                    ["git", "-C", str(self.root), *args], text=True
+                ).strip()
+
+            script = self.root / "scripts/validate/run.sh"
+            adopted = script.read_bytes()
+            script.write_text(
+                "#!/bin/bash\nset -eu\n"
+                '"$PYTHON" "$VERSAT_HARNESS_ROOT/scripts/testing/provider.py" --root .\n'
+                'exec "$PYTHON" "$VERSAT_HARNESS_ROOT/scripts/testing/run.py" run --root . "$@"\n'
+            )
+            original = script.read_bytes()
+            custom = self.root / ".versat/validation.yaml"
+            cfg = yaml.safe_load(custom.read_text())
+            cfg["suites"][0]["argv"] += ["-p", "test_payment.py"]
+            custom.write_text(yaml.safe_dump(cfg))
+            custom_before = custom.read_bytes()
+            changelog = self.root / "CHANGELOG.md"
+            changelog.write_text("# Changelog\n\n## [Unreleased]\n")
+            project_git("init", "-q")
+            project_git("add", ".")
+            project_git(
+                "-c",
+                "user.name=Synthetic",
+                "-c",
+                "user.email=fixture@example.invalid",
+                "-c",
+                "commit.gpgsign=false",
+                "commit",
+                "-qm",
+                "Consumer before adoption",
+            )
+            project_git(
+                "update-ref",
+                "refs/remotes/origin/main",
+                project_git("rev-parse", "HEAD"),
+            )
+            script.write_bytes(adopted)
+            source = self.root / "src/payment.py"
+            source.write_text(GOOD + '\n\nDEFAULT_CURRENCY = "PYG"\n')
+
+            def run(*args, **environment):
+                return subprocess.run(
+                    ["bash", str(script), *args],
+                    cwd=self.root,
+                    env={
+                        **os.environ,
+                        "VERSAT_HARNESS_ROOT": str(package),
+                        "PYTHON": sys.executable,
+                        **environment,
+                    },
+                    capture_output=True,
+                    text=True,
+                )
+
+            base = ("--quality-base", "origin/main")
+            no_note = run(*base)
+            self.assertEqual(no_note.returncode, 1, (no_note.stdout, no_note.stderr))
+            self.assertIn("Add a new entry", no_note.stderr)
+            self.assertEqual(
+                json.loads(no_note.stdout.splitlines()[-1])["result"], "pass"
+            )
+            partial = run("--suite", "unit")
+            self.assertEqual(partial.returncode, 0, (partial.stdout, partial.stderr))
+            self.assertEqual(
+                json.loads(partial.stdout.splitlines()[-1])["scope"], "targeted"
+            )
+            self.assertIn("Targeted suites only", partial.stderr)
+            changelog.write_text(
+                "# Changelog\n\n## [Unreleased]\n\n- Define the default currency.\n"
+            )
+            result = run(*base)
+            self.assertEqual(result.returncode, 0, (result.stdout, result.stderr))
+            self.assertIn("checking 1 changed Python source", result.stderr)
+            self.assertEqual(
+                json.loads(result.stdout.splitlines()[-1])["scope"], "full"
+            )
+            previous = project_git("rev-parse", "HEAD")
+            project_git(
+                "add", "CHANGELOG.md", "src/payment.py", "scripts/validate/run.sh"
+            )
+            project_git(
+                "-c",
+                "user.name=Synthetic",
+                "-c",
+                "user.email=fixture@example.invalid",
+                "-c",
+                "commit.gpgsign=false",
+                "commit",
+                "-qm",
+                "Adopt consumer quality validation",
+            )
+            event = self.root / "push.json"
+            event.write_text(
+                json.dumps(
+                    {
+                        "ref": "refs/heads/feature",
+                        "before": previous,
+                        "after": project_git("rev-parse", "HEAD"),
+                        "repository": {"default_branch": "main"},
+                    }
+                )
+            )
+            ci = run(
+                "--execution",
+                "ci",
+                VERSAT_QUALITY_EVENT=str(event),
+                GITHUB_EVENT_NAME="push",
+            )
+            self.assertEqual(ci.returncode, 0, (ci.stdout, ci.stderr))
+            self.assertIn(f"Quality comparison base: {previous}", ci.stderr)
+            self.assertEqual(json.loads(ci.stdout.splitlines()[-1])["scope"], "full")
+
+            source.write_text(
+                GOOD.replace("return True", "return False")
+                + '\n\nDEFAULT_CURRENCY = "PYG"\n'
+            )
+            regression = run(*base)
+            self.assertEqual(
+                regression.returncode, 1, (regression.stdout, regression.stderr)
+            )
+            self.assertIn("found a new Unreleased entry", regression.stderr)
+            self.assertIn("All checks passed!", regression.stderr)
+            self.assertEqual(
+                json.loads(regression.stdout.splitlines()[-1])["result"], "fail"
+            )
+            source.write_text(GOOD)
+            script.write_bytes(original)
+            restored = run()
+            self.assertEqual(restored.returncode, 0, (restored.stdout, restored.stderr))
+            self.assertEqual(custom.read_bytes(), custom_before)
+            (package / "standards/core/testing.md").write_text("changed")
+            with self.assertRaises(ValueError):
+                provider.verify(self.root, package)

@@ -14,6 +14,10 @@ The format follows Keep a Changelog, and the project follows Semantic Versioning
 
 - rename the candidate marketplace to `versat` while keeping plugin `versat-ai-harness`; document later manual reinstallation for the two current users and retain explicit pending native/external checks.
 
+### Fixed
+
+- correct the English, Portuguese, and Spanish contribution guides to reflect the public Harness repository, the adopted Apache-2.0 license, and the fork pull request workflow.
+
 ## [0.4.0] - Unreleased candidate
 
 ### Prepared
